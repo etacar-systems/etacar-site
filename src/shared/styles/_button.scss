@@ -1,0 +1,76 @@
+@import 'colors';
+
+.button {
+  font-family: 'Gotham Pro', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: $clr-bg;
+  gap: 8px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.default, .stroke, .menu, .link {
+  padding: 12px;
+}
+
+.default, .stroke {
+  padding: 16px 32px;
+}
+
+.default {
+  background-color: $clr-accent-blue;
+}
+
+.default:hover {
+  background-color: $clr-accent-blue-light;
+}
+
+.stroke {
+  background-color: transparent;
+  border: 2px solid $clr-accent-blue;
+  color: $clr-accent-blue;
+}
+
+.stroke:hover {
+  border: 2px solid $clr-accent-blue-light;
+  background-color: $clr-bg;
+  color: $clr-accent-blue-light;
+}
+
+.menu, .link {
+  background-color: transparent;
+  padding: 12px;
+}
+
+.menu {
+  color: $clr-light-grey;
+}
+
+.menu:hover, .menu:active {
+  background-color: $clr-bg;
+  color: $clr-accent-blue;
+}
+
+.link {
+  color: $clr-link;
+}
+
+.link:hover {
+  background-color: transparent;
+  color: $clr-link-hover;
+}
+
+.default-size {
+  height: 50px;
+}
+
+.big {
+  height: 88px;
+  padding: 16px 32px;
+}
