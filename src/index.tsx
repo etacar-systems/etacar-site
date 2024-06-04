@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '@fontsource/chakra-petch';
+import '@fontsource/chakra-petch/500.css';
+import '@fontsource/chakra-petch/600.css';
+import '@fontsource/chakra-petch/700.css';
 import './index.css';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
