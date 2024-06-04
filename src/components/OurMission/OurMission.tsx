@@ -1,6 +1,6 @@
 import '../../shared/styles/_all.scss';
 import {PointIcon} from "../../shared/ui/icons";
-import Button from "../../shared/ui/Button/Button";
+
 
 const missionItems = [
     "Customer is number one",
@@ -15,9 +15,9 @@ export default function OurMission() {
     return (
         <section className='our-mission'>
 
-                <div className='our-mission__main-text'>
-                    OUR MISSION
-                </div>
+            <div className='our-mission__main-text'>
+                OUR MISSION
+            </div>
 
 
             <div className='our-mission__content'>
@@ -41,8 +41,7 @@ export default function OurMission() {
                 </div>
 
 
-
-{/*
+                {/*
 
             <div className='our-mission_description-right'>
                     <div className='our-mission__description-right__block'>
