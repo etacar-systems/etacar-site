@@ -4,16 +4,16 @@ import '@fontsource/chakra-petch';
 import '@fontsource/chakra-petch/500.css';
 import '@fontsource/chakra-petch/600.css';
 import '@fontsource/chakra-petch/700.css';
-import './index.css';
+import './_index.scss';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+    document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>
 );
 

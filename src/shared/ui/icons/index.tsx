@@ -1,6 +1,8 @@
+import {Ref} from 'react';
+
 export interface IconProps {
     mainColor?: string;
-    ref: string;
+    ref?: null | Ref<SVGSVGElement>;
 }
 
 export {PointIcon} from './Point';

@@ -11,25 +11,25 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({
-                                           text,
-                                           onClick,
-                                           variant = 'default',
-                                           disabled = false,
-                                           type = 'button',
-                                           size = 'default'
-                                       }) => {
-    const className = `button ${variant} ${size}`;
+  text,
+  onClick,
+  variant = 'default',
+  disabled = false,
+  type = 'button',
+  size = 'default'
+}) => {
+  const className = `button ${variant} ${size}`;
 
-    return (
-        <button
-            className={className}
-            onClick={onClick}
-            disabled={disabled}
-            type={type}
-        >
-            {text}
-        </button>
-    );
-}
+  return (
+    <button
+      className={className}
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
+    >
+      {text}
+    </button>
+  );
+};
 
 export default Button;
