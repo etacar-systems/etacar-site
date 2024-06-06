@@ -1,0 +1,18 @@
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 12px #6868680A;
+  background-color: #FAFBFF;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+

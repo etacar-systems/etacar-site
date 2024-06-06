@@ -1,0 +1,19 @@
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(104, 104, 104, 0.0392156863);
+  background-color: #FAFBFF;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

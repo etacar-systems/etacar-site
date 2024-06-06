@@ -4,7 +4,7 @@ import '@fontsource/chakra-petch';
 import '@fontsource/chakra-petch/500.css';
 import '@fontsource/chakra-petch/600.css';
 import '@fontsource/chakra-petch/700.css';
-import './_index.scss';
+import './index.scss';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 

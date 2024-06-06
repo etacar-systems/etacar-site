@@ -1,38 +1,43 @@
 import '../../shared/styles/_all.scss';
 import {PointIcon} from '../../shared/ui/icons';
+import Button from '../../shared/ui/Button/Button';
+import team from '../../shared/assets/Number.svg';
+import styles from './OurMission.module.scss';
 
 
 const missionItems = [
   'Customer is number one',
-  'Customer satisfaction and our reputation are paramount',
+  `Customer satisfaction and our reputation 
+are paramount`,
   'Cost effective solutions',
   'Saving time and resources',
   'Transparency and communication',
   'Partnership and long term relationships'
 ];
 
+
 export default function OurMission() {
   return (
-    <section className='our-mission'>
+    <section className={styles.wrap}>
 
-      <div className='our-mission__main-text'>
+      <h2 className={styles.mainText}>
                 OUR MISSION
-      </div>
+      </h2>
 
 
-      <div className='our-mission__content'>
-        <div className='our-mission__description'>
-          <div className='our-mission__description-text'>
+      <div className={styles.content}>
+        <div className={styles.description}>
+          <div className={styles.text}>
                         We believe that teamwork and partnership
-                        are key to our joint success. Our passion is to
+            <br/> are key to our joint success. Our passion is to
                         deliver stable and functional products.
                         We build viable and competitive products from A to Z
                         using the following principles:
           </div>
 
-          <ul className="our-mission__mission-list">
+          <ul className={styles.list}>
             {missionItems.map((item, index) => (
-              <li className="our-mission__mission-list__li" key={index}>
+              <li className={styles.list__li} key={index}>
                 <PointIcon mainColor={'#1F1F1F'}/>
                 {item}
               </li>
@@ -41,23 +46,36 @@ export default function OurMission() {
         </div>
 
 
-        {/*
-
-            <div className='our-mission_description-right'>
-                    <div className='our-mission__description-right__block'>
-                        <div className='our-mission__description-right__block__div'> Блок 1 </div>
-                        <div className='our-mission__description-right__block__div'> Блок 2</div>
-                    </div>
-                <div className='our-mission__description-right__block'>
-                        <div className='our-mission__description-right__block__div'> Блок 3 </div>
-                        <div className='our-mission__description-right__block__div'> Блок 4</div>
-                    </div>
-                <Button text={'About us'} onClick={() => {
-                }}/>
+        <div className={styles.right}>
+          <div className={styles.block}>
+            <div className={styles.blockInfo}>
+              <span> <h2 className={styles.number}>50+</h2></span>
+              <span>  <h4 className={styles.h4}>Completed projects</h4> </span>
             </div>
-*/}
+            <div className={styles.blockInfo}>
+              <h2 className={styles.number}>9+</h2>
+              <h4 className={styles.h4}>Years of experience</h4>
+            </div>
+          </div>
+
+          <div className={styles.block}>
+            <div className={styles.blockInfo}>
+              <h2 className={styles.number}>9+</h2>
+              <h4 className={styles.h4}>Client countries</h4>
+            </div>
+            <div className={styles.photo}>
+              <img src={team} alt={'Team'}/>
+            </div>
+          </div>
+
+
+          <Button text={'About us'} variant='default' onClick={() => {
+          }}/>
+        </div>
+
 
       </div>
     </section>
   );
+
 }
