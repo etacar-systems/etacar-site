@@ -25,3 +25,6 @@ export {PointBoldIcon} from './PointBold';
 export {ComputerBoldIcon} from './ComputerBold';
 export {MobileBoldIcon} from './MobileBold';
 export {SupportBoldIcon} from './SupportBold';
+export {RightArrowIcon} from './RightArrow';
+export {LeftArrowIcon} from './LeftArrow';
+

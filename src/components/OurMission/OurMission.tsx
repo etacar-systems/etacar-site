@@ -1,8 +1,9 @@
 import '../../shared/styles/_all.scss';
-import {PointIcon} from '../../shared/ui/icons';
+import {PointIcon, RightArrowIcon} from '../../shared/ui/icons';
 import Button from '../../shared/ui/Button/Button';
 import team from '../../shared/assets/Number.svg';
 import styles from './OurMission.module.scss';
+import Heading from '../../shared/ui/Heading/Heading';
 
 
 const missionItems = [
@@ -19,12 +20,7 @@ are paramount`,
 export default function OurMission() {
   return (
     <section className={styles.wrap}>
-
-      <h2 className={styles.mainText}>
-                OUR MISSION
-      </h2>
-
-
+      <div className={styles.mainText}><Heading text={'OUR MISSION'}/></div>
       <div className={styles.content}>
         <div className={styles.description}>
           <div className={styles.text}>
@@ -67,10 +63,13 @@ export default function OurMission() {
               <img src={team} alt={'Team'}/>
             </div>
           </div>
+          <Button
+            text={'About us'}
+            onClick={() => console.log('Button clicked')}
+            icon={<RightArrowIcon/>}
+            variant={'iconButton'}
+          />
 
-
-          <Button text={'About us'} variant='default' onClick={() => {
-          }}/>
         </div>
 
 

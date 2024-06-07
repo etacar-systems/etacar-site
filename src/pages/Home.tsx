@@ -3,6 +3,7 @@ import GetStarted from '../components/GetStarted/GetStarted';
 import OurMission from '../components/OurMission/OurMission';
 import Cycle from '../components/Cycle/Cycle';
 import Techs from '../components/Techs/Techs';
+import CaseStudies from '../components/CaseStudies/CaseStudies';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <OurMission/>
       <Cycle/>
       <Techs/>
+      <CaseStudies/>
 
     </main>
 

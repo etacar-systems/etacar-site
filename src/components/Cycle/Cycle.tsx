@@ -1,5 +1,6 @@
 import styles from './Cycle.module.scss';
 import laptop from '../../shared/assets/Laptop.svg';
+import Heading from '../../shared/ui/Heading/Heading';
 
 export default function Cycle() {
   const steps = [
@@ -12,7 +13,7 @@ export default function Cycle() {
 
   return (
     <section className={styles.cycle}>
-      <h2 className={styles.mainText}>COMPREHENSIVE SOFTWARE DEVELOPMENT </h2>
+      <div className={styles.mainText}><Heading text={'COMPREHENSIVE SOFTWARE DEVELOPMENT'}/></div>
       <div className={styles.content}>
         <div>
           <img src={laptop} alt={'Laptop'}/>

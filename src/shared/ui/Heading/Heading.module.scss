@@ -1,0 +1,22 @@
+@import './src/shared/styles/colors';
+
+.heading {
+  color: $clr-primary-text;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-align: left;
+  background: linear-gradient(90deg, $clr-primary-text 0%, $clr-primary-text 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.heading:hover {
+  background: linear-gradient(90deg, #FAFBFF 0%, #1D14BF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}

@@ -4,10 +4,11 @@ import '../../styles/_all.scss';
 interface ButtonProps {
     text: string;
     onClick: () => void;
-    variant?: 'default' | 'stroke' | 'link' | 'menu';
+    variant?: 'default' | 'stroke' | 'link' | 'menu' | 'iconButton';
     disabled?: boolean;
     type?: 'button' | 'submit' | 'reset';
     size?: 'default' | 'big';
+    icon?: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,7 +17,8 @@ const Button: React.FC<ButtonProps> = ({
   variant = 'default',
   disabled = false,
   type = 'button',
-  size = 'default'
+  size = 'default',
+  icon
 }) => {
   const className = `button ${variant} ${size}`;
 
@@ -28,6 +30,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
     >
       {text}
+      {icon && <span className="button-icon">{icon}</span>}
     </button>
   );
 };

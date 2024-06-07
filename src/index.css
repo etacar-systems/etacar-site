@@ -65,4 +65,8 @@ body, html {
   font-family: "Chakra Petch", sans-serif, "GothamProBlack", "GothamProRegular";
 }
 
+button {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=index.css.map */
