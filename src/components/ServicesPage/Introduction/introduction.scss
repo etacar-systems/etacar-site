@@ -1,0 +1,53 @@
+@import "../../../shared/styles/_colors.scss";
+
+.introduction {
+    padding: 8.75rem 12.5rem 6.875rem;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        margin-bottom: 3.125rem;
+    }
+
+    .types-and-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.types-of-works {
+    text-align: right;
+    font-size: 1.5rem;
+    color: $clr-second-text;
+
+    span {
+        color: $clr-accent-blue;
+    }
+}
+
+.button-block {
+    display: grid;
+    justify-content: end;
+    justify-items: center;
+    gap: 0.5rem;
+
+    div {
+        color: $clr-accent-blue-light;
+        font-size: 0.875rem;
+    }
+
+    button {
+        padding: 1rem 2.875rem;
+        background-color: $clr-accent-blue;
+        color: $clr-bg;
+        font-weight: 700;
+        border-radius: 2.5rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: rgb(29 20 191 / 85%);
+        }
+    }
+}

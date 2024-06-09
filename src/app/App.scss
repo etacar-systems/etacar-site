@@ -1,7 +1,11 @@
+@import '../shared/fonts/gotham-pro/fonts';
+@import "../shared/styles/colors";
+
 body, html {
   height: 100%;
   margin: 0;
   background-color: #FAFBFF;
+  font-family: 'Gotham Pro', sans-serif;
 }
 
 .wrapper {
@@ -11,4 +15,20 @@ body, html {
   top: 0;
   left: 0;
   box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
+section {
+  padding: 8.75rem 12.5rem 6.875rem;
+}
+
+h2 {
+  font-family: "Chakra Petch";
+  color: $clr-primary-text;
+  font-size: 3.75rem;
+  line-height: 3.625rem;
+  margin: 0;
 }
