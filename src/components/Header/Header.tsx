@@ -10,8 +10,11 @@ export default function Header() {
       <div className={styles.header}>
         <img src={logo} alt={'Eta Car Systems'}/>
         <Menu/>
-        <Button text={'Get estimation'} onClick={() => {
-        }} variant={'stroke'}/></div>
+        <div>
+          <Button text={'Get estimation'} onClick={() => {
+          }} variant={'stroke'}/></div>
+      </div>
+
     </header>
   );
 }

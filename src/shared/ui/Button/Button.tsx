@@ -4,7 +4,7 @@ import '../../styles/_all.scss';
 interface ButtonProps {
     text: string;
     onClick: () => void;
-    variant?: 'default' | 'stroke' | 'link' | 'menu' | 'iconButton';
+    variant?: 'default' | 'stroke' | 'link' | 'menu' | 'iconButton' | 'new';
     disabled?: boolean;
     type?: 'button' | 'submit' | 'reset';
     size?: 'default' | 'big';
@@ -30,7 +30,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
     >
       {text}
-      {icon && <span className="button-icon">{icon}</span>}
+      {icon}
     </button>
   );
 };

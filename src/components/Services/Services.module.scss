@@ -8,4 +8,18 @@
   background-color: $clr-powder-blue;
   border-radius: 20px;
   gap: 80px;
+  margin-top: -98px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1201px;
+  height: 304px;
+  gap: 20px;
+}
+
+.serviceButton {
+  display: flex;
+  width: 387px;
 }
