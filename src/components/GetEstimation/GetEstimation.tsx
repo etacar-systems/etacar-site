@@ -1,4 +1,5 @@
 import styles from './GetEstimation.module.scss';
+import {ContactForm} from '../ContactForm/ContactForm';
 
 export function GetEstimation() {
   const {wrap, block, text, list, paragraph, round} = styles;
@@ -10,6 +11,7 @@ export function GetEstimation() {
     {step: 4, description: 'Project development'},
     {step: 5, description: 'Project release'}
   ];
+
 
   return (
     <section className={wrap}>
@@ -27,6 +29,7 @@ export function GetEstimation() {
           ))}
         </div>
       </div>
+      <ContactForm/>
     </section>
   );
 }

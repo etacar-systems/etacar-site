@@ -69,4 +69,8 @@ button {
   cursor: pointer;
 }
 
+input {
+  border: none;
+}
+
 /*# sourceMappingURL=index.css.map */
