@@ -9,10 +9,7 @@
   font-weight: 700;
   line-height: 58px;
   letter-spacing: -2px;
-
   display: inline-block;
-  background: black;
-  transition: background 0.5s, color 0.5s, -webkit-background-clip 0.5s;
   -webkit-background-clip: text;
 
 
@@ -27,7 +24,5 @@
     background: linear-gradient(90deg, #1F1F1F 0%, #1D14BF 100%);
     color: transparent;
     -webkit-background-clip: text;
-
-    transition: background 0.5s, color 0.5s, -webkit-background-clip 0.5s;
   }
 }

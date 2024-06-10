@@ -2,7 +2,7 @@ import {useState} from 'react';
 import styles from './Heading.module.scss';
 
 type HeadingPropsType = {
-  text: string;
+    text: string;
 };
 
 export default function Heading({text}: HeadingPropsType) {
@@ -14,7 +14,7 @@ export default function Heading({text}: HeadingPropsType) {
 
   const handleMouseLeave = () => {
     setIsLeaving(true);
-    setTimeout(() => setIsLeaving(false), 500); // вернуть к исходному состоянию после завершения анимации
+    setTimeout(() => setIsLeaving(false), 200);
   };
 
   return (

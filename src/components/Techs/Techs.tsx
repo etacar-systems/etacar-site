@@ -1,8 +1,8 @@
 import styles from './Techs.module.scss';
-import Ruby from '../../shared/assets/Techs/Ruby.svg';
-import JS from '../../shared/assets/Techs/JS.svg';
-import TS from '../../shared/assets/Techs/TS.svg';
-import DevOps from '../../shared/assets/Techs/DevOps.svg';
+import Ruby from '../../shared/assets/techs/Ruby.svg';
+import JS from '../../shared/assets/techs/JS.svg';
+import TS from '../../shared/assets/techs/TS.svg';
+import DevOps from '../../shared/assets/techs/DevOps.svg';
 
 const techs = [
   {src: Ruby, alt: 'Ruby'},
@@ -13,7 +13,7 @@ const techs = [
 
 export default function Techs() {
 
-  const totalBlocks = 14;
+  const totalBlocks = 18;
   const jsRepeats = totalBlocks - techs.length;
 
   return (

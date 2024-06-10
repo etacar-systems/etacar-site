@@ -8,6 +8,7 @@ export interface IconProps {
 export {PointIcon} from './Point';
 export {ArrowIcon} from './Arrow';
 export {TopRightArrowIcon} from './TopRightArrow';
+export {BottomRightArrowIcon} from './BottomRightArrow';
 export {ComputerIcon} from './Computer';
 export {MobileIcon} from './Mobile';
 export {SupportIcon} from './Supporte';
@@ -27,4 +28,5 @@ export {MobileBoldIcon} from './MobileBold';
 export {SupportBoldIcon} from './SupportBold';
 export {RightArrowIcon} from './RightArrow';
 export {LeftArrowIcon} from './LeftArrow';
+
 

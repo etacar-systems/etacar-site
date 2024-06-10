@@ -1,0 +1,48 @@
+@import './src/shared/styles/colors';
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 82px 212px;
+  background: $clr-primary-text;
+  color: $clr-bg;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.leftBlock {
+  display: flex;
+  gap: 40px;
+
+
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.blockHead {
+
+}
+
+.text {
+  
+}
+
+.link {
+  display: flex;
+  width: 162px;
+  height: 48px;
+  padding: 12px;
+  gap: 8px;
+  border-radius: 40px;
+}
