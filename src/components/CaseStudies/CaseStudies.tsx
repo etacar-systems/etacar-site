@@ -15,7 +15,7 @@ const description = [
   'Service businesses use the platform to identify new clients and prospects and to position their service offers using real market insights.'
 ];
 
-export default function CaseStudies() {
+export function CaseStudies() {
   return (
     <section className={styles.wrap}>
       <div className={styles.mainText}>

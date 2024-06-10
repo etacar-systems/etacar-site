@@ -11,7 +11,7 @@ const techs = [
   {src: DevOps, alt: 'DevOps'}
 ];
 
-export default function Techs() {
+export function Techs() {
 
   const totalBlocks = 18;
   const jsRepeats = totalBlocks - techs.length;

@@ -1,6 +1,5 @@
 @import './src/shared/styles/colors';
-
-$font-primary: 'Gotham Pro', sans-serif;
+@import './src/shared/styles/fonts';
 
 .wrap {
   display: flex;

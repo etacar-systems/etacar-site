@@ -2,7 +2,7 @@ import styles from './Cycle.module.scss';
 import laptop from '../../shared/assets/Laptop.svg';
 import Heading from '../../shared/ui/Heading/Heading';
 
-export default function Cycle() {
+export function Cycle() {
   const steps = [
     {number: '1/', text: ' Discovery'},
     {number: '2/', text: 'Definition'},

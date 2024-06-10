@@ -2,7 +2,7 @@ import Button from '../../shared/ui/Button/Button';
 import '../../shared/styles/_all.scss';
 import styles from './GetStarted.module.scss';
 
-export default function GetStarted() {
+export function GetStarted() {
   return (
     <>
       <section className={styles.wrap}>

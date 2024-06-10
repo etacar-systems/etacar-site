@@ -17,7 +17,7 @@ are paramount`,
 ];
 
 
-export default function OurMission() {
+export function OurMission() {
   return (
     <section className={styles.wrap}>
       <div className={styles.mainText}><Heading text={'OUR MISSION'}/></div>

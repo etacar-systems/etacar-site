@@ -25,7 +25,7 @@ const services = [
   {text: 'Consultations & Project management', icon: <PMIcon mainColor="#90A7FF"/>}
 ];
 
-export default function Services() {
+export function Services() {
   return (
     <section className={styles.wrap}>
       <div className={styles.mainText}><Heading text={'Services'}/></div>
