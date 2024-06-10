@@ -1,6 +1,7 @@
 import styles from './ContactForm.module.scss';
 import {useState} from 'react';
-import Input from '../../shared/ui/Input/Input';
+
+import Field from '../../shared/ui/Input/Field';
 
 export function ContactForm() {
 
@@ -12,7 +13,8 @@ export function ContactForm() {
   return (
     <form className={styles.form}>
 
-      <Input value={text} onChange={handleInputChange} placeholder='John Smith' variant={'bigGreyInput'}/>
+      <Field value={text} variant={'default'} onChange={handleInputChange} placeholder='John Smith'
+        label={'Name'}/>
     </form>
   );
 }

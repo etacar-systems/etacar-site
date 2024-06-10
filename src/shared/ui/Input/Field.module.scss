@@ -1,6 +1,31 @@
 @import './src/shared/styles/colors';
 @import './src/shared/styles/fonts';
 
+.fieldBase {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fieldOther {
+  @extend .fieldBase;
+  gap: 20px;
+}
+
+.labelBase {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  color: #4F4F4F;
+}
+
+.labelOther {
+  @extend .labelBase;
+  color: #FAFBFF;
+}
+
 .inputBase {
   width: 189px;
   box-sizing: border-box;
@@ -21,7 +46,6 @@
     font-family: $font-primary;
     font-size: 16px;
     font-weight: 400;
-    text-align: left;
   }
 
   &:focus {
@@ -67,13 +91,12 @@
   }
 }
 
-.inputAlternative {
+.inputBig {
   @extend .inputBase;
   height: 82px;
   border: 1px solid $clr-accent-blue-light;
   border-radius: 12px;
   color: $clr-accent-blue-light;
-
 
   &::placeholder {
     color: $clr-accent-blue-light;
