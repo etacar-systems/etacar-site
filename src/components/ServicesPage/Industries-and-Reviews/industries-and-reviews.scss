@@ -1,0 +1,14 @@
+@import "../../../shared/styles/_colors.scss";
+
+.industries-and-reviews {
+    background-color: $clr-primary-text;
+    border-radius: 1.25rem 1.25rem 0 0;
+    
+    section {
+        background-color: transparent;
+        
+        h2 {
+            color: $clr-bg;
+        }
+    }
+}

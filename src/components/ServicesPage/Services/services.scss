@@ -2,11 +2,13 @@
 
 .services {
     background-color: $clr-primary-text;
-    border-radius: 1.25rem;
+    border-radius: 1.25rem 1.25rem 0 0;
     display: flex;
     justify-content: center;
     gap: 1.25rem;
-
+    position: relative;
+    top: 1.25rem;
+    padding-bottom: 8.125rem;
 
     > div {
         display: grid;

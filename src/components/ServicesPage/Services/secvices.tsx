@@ -1,9 +1,9 @@
-import computer from "../../../shared/assets/Computer.svg";
-import design from "../../../shared/assets/Design.png";
-import mobile from "../../../shared/assets/Mobile.svg";
-import pm from "../../../shared/assets/PM.png";
-import point from "../../../shared/assets/Point.svg";
-import support from "../../../shared/assets/Support.svg";
+import computer from "../../../shared/assets/services-page/services/Computer.svg";
+import design from "../../../shared/assets/services-page/services/Design.png";
+import mobile from "../../../shared/assets/services-page/services/Mobile.svg";
+import pm from "../../../shared/assets/services-page/services/PM.png";
+import point from "../../../shared/assets/services-page/services/Point.svg";
+import support from "../../../shared/assets/services-page/services/Support.svg";
 import "./services.scss"
 
 export default function Services() {

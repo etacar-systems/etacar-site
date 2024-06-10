@@ -1,1 +1,97 @@
 @import "../../../shared/styles/_colors.scss";
+
+.models {
+    display: grid;
+    gap: 5rem;
+    padding: 8.75rem 0 6.875rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    position: relative;
+
+    h2 {
+        padding-left: 12.5rem;
+    }
+}
+
+.model {
+    display: flex;
+
+    img {
+        width: 50%;
+    }
+}
+
+.model:first-of-type {
+    img {
+        border-radius: 1.25rem 0 0 0;
+    }
+}
+
+.model:last-of-type {
+    img {
+        border-radius: 0 0 0 1.25rem;
+    }
+}
+
+.description-and-button {
+    display: grid;
+    justify-items: start;
+    align-content: center;
+    gap: 1.5rem;
+    margin: 5rem;
+
+    h3 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        margin: 0;
+    }
+
+    ul {
+        display: grid;
+        gap: 0.5rem;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        
+        li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 2.25rem;
+            line-height: 1.5rem;
+        }
+
+        li::before {
+            content: url('../../../shared/assets/services-page/models/Point.png');
+            padding-right: 0.75rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    }
+
+    button {
+        background-color: $clr-accent-blue-light;
+        padding: 1rem 2rem;
+        border-radius: 2.5rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        font-weight: 700;
+        color: $clr-bg;
+        font-size: 1rem;
+        letter-spacing: 0.6px;
+
+        img {
+            width: 1.5rem;
+        }
+    }
+}
+
+.left {
+    margin-left: 12.5rem;
+}
+
+.right {
+    margin-right: 12.5rem;
+}
