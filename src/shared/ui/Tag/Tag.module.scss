@@ -1,15 +1,23 @@
 @import './src/shared/styles/colors';
+@import './src/shared/styles/fonts';
 
 .tag {
   gap: 10px;
-  border: 1px solid #90A7FF;
-  color: #3F63EA;
+  color: $clr-light-blue;
   background: #FAFBFF66;
   padding: 8px 12px;
   border-radius: 100px;
-  font-family: GothamProRegular, serif;
+  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+
+  &.new {
+    padding: 10px 12px 10px 12px;
+    border-radius: 12px;
+    border: 1px solid $clr-accent-blue-light;
+    background-color: transparent;
+
+  }
 }

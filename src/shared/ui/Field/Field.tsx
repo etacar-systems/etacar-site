@@ -6,10 +6,11 @@ interface FieldProps {
     onChange: (value: string) => void,
     placeholder: string,
     variant?: 'default' | 'grey' | 'big' | 'bigGrey',
-    label: string
+    label: string,
+    status?: 'important' | undefined
 }
 
-const Field: React.FC<FieldProps> = ({value, onChange, placeholder, variant = 'default', label}) => {
+const Field: React.FC<FieldProps> = ({value, onChange, placeholder, variant = 'default', label, status}) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value);
   };
@@ -42,7 +43,10 @@ const Field: React.FC<FieldProps> = ({value, onChange, placeholder, variant = 'd
 
   return (
     <div className={fieldClass}>
-      <label className={labelClass}>{label}</label>
+      <label className={labelClass}>
+        {label}
+        {status === 'important' && <span>*</span>}
+      </label>
       <input
         className={inputClass}
         type="text"

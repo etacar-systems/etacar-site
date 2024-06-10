@@ -18,16 +18,24 @@
   font-weight: 700;
   line-height: 18px;
   text-align: left;
-  color: #4F4F4F;
+  color: $clr-second-text;
+
+  span {
+    color: $clr-accent-blue;
+  }
 }
 
 .labelOther {
   @extend .labelBase;
   color: #FAFBFF;
+
+  span {
+    color: $clr-accent-blue-light;
+  }
 }
 
 .inputBase {
-  width: 189px;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;

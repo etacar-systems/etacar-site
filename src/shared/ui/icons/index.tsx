@@ -28,5 +28,7 @@ export {MobileBoldIcon} from './MobileBold';
 export {SupportBoldIcon} from './SupportBold';
 export {RightArrowIcon} from './RightArrow';
 export {LeftArrowIcon} from './LeftArrow';
+export {CheckedBoxIcon} from './CheckedBox';
+export {UnCheckedBoxIcon} from './UnCheckedBox';
 
 

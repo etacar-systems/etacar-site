@@ -2,9 +2,9 @@ import React from 'react';
 import '../../styles/_all.scss';
 
 interface ButtonProps {
-    text: string;
+    text?: string;
     onClick: () => void;
-    variant?: 'default' | 'stroke' | 'link' | 'menu' | 'iconButton' | 'new';
+    variant?: 'default' | 'stroke' | 'link' | 'menu' | 'iconButton' | 'new' | 'addFile';
     disabled?: boolean;
     type?: 'button' | 'submit' | 'reset';
     size?: 'default' | 'big';
