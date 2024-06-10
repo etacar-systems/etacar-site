@@ -8,6 +8,7 @@ import {Industries} from '../components/Industries/Industries';
 import {Techs} from '../components/Techs/Techs';
 import {Footer} from '../components/Footer/Footer';
 import {Reviews} from '../components/Reviews/Reviews';
+import {GetEstimation} from '../components/GetEstimation/GetEstimation';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Services/>
       <Industries/>
       <Reviews/>
+      <GetEstimation/>
 
       <Footer/>
 

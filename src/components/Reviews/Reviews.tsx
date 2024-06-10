@@ -18,13 +18,8 @@ export function Reviews() {
             <RightArrowIcon/>
           </div>
         </div>
-
-
         <PersonList/>
-
-
       </div>
-
     </section>
   );
 }
