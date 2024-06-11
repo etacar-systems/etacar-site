@@ -7,21 +7,21 @@ export const MENU_DATA = [
   {
     id: 2,
     label: 'Services',
-    href: '/',
+    href: '/services',
   },
   {
     id: 3,
     label: 'Case study',
-    href: '/',
+    href: '/case-studies',
   },
   {
     id: 4,
     label: 'About us',
-    href: '/',
+    href: '/about',
   },
   {
     id: 5,
     label: 'Contact us',
-    href: '/',
+    href: '/contact',
   },
 ];

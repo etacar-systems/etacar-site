@@ -69,7 +69,7 @@ export function ContactForm() {
       </div>
       <div className={styles.block}>
         <h4>
-            Expected Budget
+                    Expected Budget
         </h4>
         <div className={styles.price}>
           <Tag variant={'new'} text={'Up to $25k'}/>
@@ -78,14 +78,14 @@ export function ContactForm() {
           <Tag variant={'new'} text={'Over $100k'}/>
         </div>
       </div>
-      <Field value={message} variant={'big'} onChange={handleMessageChange}
+      <Field value={message} variant={'grey'} onChange={handleMessageChange}
         placeholder='Message' label={'Tell us more about the project'}/>
 
       <div className={styles.block}>
         <h4>
-            Attached
+                    Attached
         </h4>
-        <Button variant={'addFile'} icon={<ClipIcon/>} onClick={() => {
+        <Button variant={'default'} icon={<ClipIcon/>} onClick={() => {
           console.log('добавить файл');
         }}/>
       </div>

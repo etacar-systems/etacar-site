@@ -1,5 +1,5 @@
 import '../../shared/styles/_all.scss';
-import styles from './CaseStudies.module.scss';
+import styles from './HomeCaseStudies.module.scss';
 import Heading from '../../shared/ui/Heading/Heading';
 import LaptopImg from '../../shared/assets/LaptopPhoto.svg';
 import {LeftArrowIcon, RightArrowIcon} from '../../shared/ui/icons';
@@ -15,7 +15,7 @@ const description = [
   'Service businesses use the platform to identify new clients and prospects and to position their service offers using real market insights.'
 ];
 
-export function CaseStudies() {
+export function HomeCaseStudies() {
   return (
     <section className={styles.wrap}>
       <div className={styles.mainText}>

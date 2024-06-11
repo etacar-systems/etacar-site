@@ -23,7 +23,7 @@ const LinkBlock: React.FC<FooterPropsType & { url?: string }> = ({title, url}) =
 
 export const Footer: React.FC = () => {
   return (
-    <section className={styles.wrap}>
+    <footer className={styles.wrap}>
       <div className={styles.contacts}>
         <div className={styles.leftBlock}>
           <ContactBlock title="Contacts">
@@ -45,6 +45,6 @@ export const Footer: React.FC = () => {
         <div className={styles.text}>© 2024 EtaCar Systems. All rights reserved.</div>
         <div className={styles.text}>Terms of use | Privacy policy</div>
       </div>
-    </section>
+    </footer>
   );
 };

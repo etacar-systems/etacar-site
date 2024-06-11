@@ -3,7 +3,7 @@ import '../../styles/_all.scss';
 
 interface ButtonProps {
     text?: string;
-    onClick: () => void;
+    onClick?: () => void;
     variant?: 'default' | 'stroke' | 'link' | 'menu' | 'iconButton' | 'new' | 'addFile';
     disabled?: boolean;
     type?: 'button' | 'submit' | 'reset';

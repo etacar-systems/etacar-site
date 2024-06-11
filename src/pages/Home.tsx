@@ -2,13 +2,13 @@ import '../shared/styles/_all.scss';
 import {GetStarted} from '../components/GetStarted/GetStarted';
 import {OurMission} from '../components/OurMission/OurMission';
 import {Cycle} from '../components/Cycle/Cycle';
-import {CaseStudies} from '../components/CaseStudies/CaseStudies';
 import {Services} from '../components/Services/Services';
 import {Industries} from '../components/Industries/Industries';
 import {Techs} from '../components/Techs/Techs';
-import {Footer} from '../components/Footer/Footer';
 import {Reviews} from '../components/Reviews/Reviews';
 import {GetEstimation} from '../components/GetEstimation/GetEstimation';
+import {HomeCaseStudies} from '../components/HomeCaseStudies/HomeCaseStudies';
+
 
 export default function Home() {
   return (
@@ -17,14 +17,11 @@ export default function Home() {
       <OurMission/>
       <Cycle/>
       <Techs/>
-      <CaseStudies/>
+      <HomeCaseStudies/>
       <Services/>
       <Industries/>
       <Reviews/>
       <GetEstimation/>
-
-      <Footer/>
-
     </main>
 
   );
