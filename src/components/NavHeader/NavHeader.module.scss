@@ -1,0 +1,22 @@
+@import '../../styles/colors.scss';
+
+.container {
+  padding: 32px 200px;
+  display: flex;
+  gap: 340px;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 42px;
+}
+.item {
+  text-decoration: none;
+  color: $color--lightgray;
+
+  &__active {
+    color: $color--blue;
+  }
+}
