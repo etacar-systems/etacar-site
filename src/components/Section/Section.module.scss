@@ -1,0 +1,13 @@
+@import '../../styles/colors.scss';
+
+.container {
+  padding: 150px 150px 50px;
+  border-radius: 20px 0px 0px 0px;
+}
+.title {
+  max-width: 500px;
+  color: $color--text-dark;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 150px;
+}
