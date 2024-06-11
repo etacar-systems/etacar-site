@@ -9,5 +9,9 @@
     color: $color--white !important;
     background-color: $color--lightblue;
     cursor: pointer;
+
+    &:hover {
+      background-color: $color--blue;
+    }
   }
 }

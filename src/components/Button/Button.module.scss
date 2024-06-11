@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
 .button {
   display: flex;
@@ -11,8 +11,9 @@
   border: none;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.2s;
 
-  &[data-full-width='true'] {
+  &[data-full-width="true"] {
     width: 100%;
   }
 
@@ -25,5 +26,8 @@
   }
   &__ghost {
     background-color: $color--lightblue;
+    &:hover {
+      background-color: $color--blue;
+    }
   }
 }

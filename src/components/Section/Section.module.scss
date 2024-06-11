@@ -2,19 +2,20 @@
 
 .container {
   padding: 100px 0 100px;
+  margin-top: -50px;
   border-radius: 20px 20px 0;
 
-  &[data-theme='light'] {
+  &[data-theme="light"] {
     background: $color--white;
   }
-  &[data-theme='dark'] {
+  &[data-theme="dark"] {
     background: $color--text-dark;
   }
-  &[data-theme='blueLight'] {
-    background: $color--container-blue
+  &[data-theme="blueLight"] {
+    background: $color--container-blue;
   }
-  &[data-theme='extraLight'] {
-    background: $color--extra-lightblue
+  &[data-theme="extraLight"] {
+    background: $color--extra-lightblue;
   }
 }
 .container_inner {
