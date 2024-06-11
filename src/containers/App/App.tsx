@@ -1,13 +1,18 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 import { NavHeader } from "../../components/NavHeader";
-import { Home } from "../Home";
+import { routesConfig } from "../../routes/routesConfig";
 
 export const App = () => {
   return (
     <>
       <NavHeader />
-      <Home />
+      <Routes>
+        {routesConfig.map((route, index) => (
+          <Route key={index} path={route.path} element={route.element} />
+        ))}
+      </Routes>
     </>
   );
 };
