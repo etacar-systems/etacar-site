@@ -1,0 +1,29 @@
+@import '../../styles/colors.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 16px 32px;
+  gap: 8px;
+  color: $color--white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+
+  &[data-full-width='true'] {
+    width: 100%;
+  }
+
+  &__solid {
+    background-color: $color--blue;
+  }
+  &__bordered {
+    color: $color--blue;
+    border: 2px solid $color--blue;
+  }
+  &__ghost {
+    background-color: $color--lightblue;
+  }
+}

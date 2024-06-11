@@ -2,7 +2,21 @@
 
 .container {
   padding: 150px 0 50px;
-  border-radius: 20px 0px 0px 0px;
+  border-radius: 20px 20px 0;
+
+  &[data-theme='light'] {
+    background: $color--white;
+  }
+  &[data-theme='dark'] {
+    background: $color--text-dark;
+  }
+  &[data-theme='blueLight'] {
+    background: $color--container-blue
+  }
+}
+.container_inner {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .title {
   max-width: 500px;
@@ -10,5 +24,7 @@
   font-family: $font-family-title;
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+  white-space: pre-line;
+  line-height: 58px;
 }
