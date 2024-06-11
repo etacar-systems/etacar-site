@@ -1,7 +1,7 @@
 @import "../../styles/colors.scss";
 
 .container {
-  padding: 150px 0 50px;
+  padding: 100px 0 100px;
   border-radius: 20px 20px 0;
 
   &[data-theme='light'] {
@@ -12,6 +12,9 @@
   }
   &[data-theme='blueLight'] {
     background: $color--container-blue
+  }
+  &[data-theme='extraLight'] {
+    background: $color--extra-lightblue
   }
 }
 .container_inner {

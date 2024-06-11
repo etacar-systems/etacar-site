@@ -4,7 +4,7 @@ import style from "./Section.module.scss";
 
 interface SectionProps {
   children: ReactNode;
-  theme?: 'blueLight' | 'light' | 'dark';
+  theme?: 'blueLight' | 'light' | 'dark' | 'extraLight';
   title?: string;
 }
 
