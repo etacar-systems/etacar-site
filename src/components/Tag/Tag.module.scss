@@ -1,0 +1,17 @@
+@import '../../styles/colors.scss';
+
+.tag {
+  border-radius: 100px;
+  padding: 8px 12px;
+  height: fit-content;
+  white-space: nowrap;
+
+  &[data-theme='light'] {
+    color: $color--text-blue;
+    background: $color--light;
+  }
+  &[data-theme='blue'] {
+    color: $color--container-blue;
+    background: $color--lightblue;
+  }
+}
