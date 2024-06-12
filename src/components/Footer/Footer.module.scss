@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
 @mixin flexContainer(
   $justify: flex-start,
@@ -25,6 +25,11 @@
   color: $color--white;
 }
 
+@mixin center {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 @mixin linkText {
   color: $color--lightblue;
   text-align: left;
@@ -48,13 +53,14 @@
 
 .footer {
   background-color: $color--text-dark;
-  padding: 40px 18% 0px;
+  padding: 40px 80px;
   overflow: hidden;
   box-shadow: 0px -4px 12px 0px #b2b2b20a;
 }
 
 .container {
   @include flexContainer(flex-start, flex-start, row, 66px);
+  @include center;
 }
 
 .address {
@@ -87,7 +93,8 @@
 
 .link__container {
   @include flexContainer(space-between, flex-start, row, 0px);
-  margin: 6px 0 0 0;
+  padding: 30px 0 80px;
+  @include center;
 }
 .info__links,
 .linkedIn__link {
@@ -123,6 +130,7 @@
 .footerEnd {
   @include flexContainer(space-between, flex-start, row, 0px);
   margin: 60px 0 100px 0;
+  @include center;
 }
 .container__copyright {
   @include flexContainer(flex-start, flex-start, row, 0px);

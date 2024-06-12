@@ -2,8 +2,8 @@ import React from 'react';
 
 import blackArrowIcon from '../../../../../../assets/icons/blackArrow.svg';
 
-import style from './Item.module.scss';
 import { TagsContainer } from '../../../../../../components/TagsContainer';
+import style from './Item.module.scss';
 
 interface ItemProps {
   description: string;
