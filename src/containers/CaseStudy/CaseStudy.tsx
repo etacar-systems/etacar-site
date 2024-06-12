@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Welcome } from "./components/Welcome";
+import { Welcome } from './components/Welcome';
 
 export const CaseStudy = () => {
   return (

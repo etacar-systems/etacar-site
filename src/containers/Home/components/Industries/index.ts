@@ -1,1 +1,1 @@
-export * from "./Industries";
+export * from './Industries';

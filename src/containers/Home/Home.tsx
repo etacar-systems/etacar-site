@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import { CaseStudies } from "./components/CaseStudies";
-import { Development } from "./components/Development";
-import { Footer } from "../../components/Footer";
-import { Industries } from "./components/Industries";
-import { Mission } from "./components/Mission";
-import { Reviews } from "./components/Reviews";
-import { Services } from "./components/Services";
-import { Welcome } from "./components/Welcome";
+import { CaseStudies } from './components/CaseStudies';
+import { Development } from './components/Development';
+import { Footer } from '../../components/Footer';
+import { Industries } from './components/Industries';
+import { Mission } from './components/Mission';
+import { Reviews } from './components/Reviews';
+import { Services } from './components/Services';
+import { Welcome } from './components/Welcome';
 
 export const Home = () => {
   return (
@@ -19,7 +19,7 @@ export const Home = () => {
       <Services />
       <Industries />
       <Reviews />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

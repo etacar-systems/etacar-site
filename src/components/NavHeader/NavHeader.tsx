@@ -1,21 +1,21 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import classNames from "classnames";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import classNames from 'classnames';
 
-import logoIcon from "../../assets/icons/Logo.svg";
+import logoIcon from '../../assets/icons/Logo.svg';
 
-import { navItems } from "./data";
-import style from "./NavHeader.module.scss";
+import { navItems } from './data';
+import style from './NavHeader.module.scss';
 
 export const NavHeader = () => {
   return (
     <header>
       <div className={style.container}>
         <div className={style.logo}>
-          <img src={logoIcon} alt={"logo"} />
+          <img src={logoIcon} alt={'logo'} />
         </div>
         <div className={style.navigation}>
-          {navItems.map((item) => (
+          {navItems.map(item => (
             <NavLink
               to={item.route}
               className={({ isActive }) =>

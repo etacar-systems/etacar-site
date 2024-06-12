@@ -25,17 +25,12 @@ export const Item = ({ image, paragraphs, tags, title }: ItemProps) => {
           <div className={style.title}>{title}</div>
           <TagsContainer tags={tags} type={'light'} />
           <div>
-            {paragraphs.map((paragraph) => (
+            {paragraphs.map(paragraph => (
               <p>{paragraph}</p>
             ))}
           </div>
         </div>
-        <Button
-          icon
-          onClick={() => navigate(CASE_STUDY)}
-          title={'All cases'}
-          type={'ghost'}
-        />
+        <Button icon onClick={() => navigate(CASE_STUDY)} title={'All cases'} type={'ghost'} />
       </div>
       <div className={style.image}>
         <img src={image} alt={`${title}_icon`} />

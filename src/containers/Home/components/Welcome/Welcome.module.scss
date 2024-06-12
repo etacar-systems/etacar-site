@@ -1,4 +1,4 @@
-@import "../../../../styles/colors.scss";
+@import '../../../../styles/colors.scss';
 
 .welcome_container {
   display: flex;
@@ -16,7 +16,7 @@
   line-height: 90px;
   font-family: $font-family-title;
   & > span::after {
-    content: "\A";
+    content: '\A';
     white-space: pre;
   }
   span {

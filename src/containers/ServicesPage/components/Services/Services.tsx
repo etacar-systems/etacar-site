@@ -13,14 +13,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Software development</div>
-            <img src={computerIcon} alt="" />
+            <img src={computerIcon} alt='' />
           </div>
           <div className={style.description}>
-            We offer comprehensive software development services, from concept
-            to deployment, catering to a wide range of business needs. Our
-            expertise spans across web, mobile, and enterprise applications,
-            ensuring you have the right solutions to drive your business
-            forward.
+            We offer comprehensive software development services, from concept to deployment, catering to a wide range
+            of business needs. Our expertise spans across web, mobile, and enterprise applications, ensuring you have
+            the right solutions to drive your business forward.
           </div>
           <div className={style.tags}>
             <div>JavaScript</div>
@@ -35,14 +33,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Mobile development</div>
-            <img src={mobileIcon} alt="" />
+            <img src={mobileIcon} alt='' />
           </div>
           <div className={style.description}>
-            We build native and cross-platform mobile applications that
-            seamlessly adapt to various devices and operating systems. Our
-            expertise lies in React Native, Capacitor, Flutter, and Kotlin,
-            enabling us to deliver tailored mobile solutions that meet your
-            specific requirements.
+            We build native and cross-platform mobile applications that seamlessly adapt to various devices and
+            operating systems. Our expertise lies in React Native, Capacitor, Flutter, and Kotlin, enabling us to
+            deliver tailored mobile solutions that meet your specific requirements.
           </div>
           <div className={style.tags}>
             <div>React Native</div>
@@ -59,14 +55,12 @@ export const Services = () => {
               UX/UI design <br />
               & Branding
             </div>
-            <img src={designIcon} alt="" />
+            <img src={designIcon} alt='' />
           </div>
           <div className={style.description}>
-            We craft intuitive and visually appealing user interfaces that
-            enhance user engagement and brand identity. Our UX/UI design
-            services encompass user research, wireframing, prototyping, and
-            visual design, ensuring your products and services are both
-            user-friendly and aesthetically pleasing.
+            We craft intuitive and visually appealing user interfaces that enhance user engagement and brand identity.
+            Our UX/UI design services encompass user research, wireframing, prototyping, and visual design, ensuring
+            your products and services are both user-friendly and aesthetically pleasing.
           </div>
           <div className={style.tags}>
             <div>Figma</div>
@@ -86,14 +80,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Maintenance & support</div>
-            <img src={supportIcon} alt="" />
+            <img src={supportIcon} alt='' />
           </div>
           <div className={style.description}>
-            We offer ongoing maintenance and support services to keep your
-            software applications running smoothly and up-to-date. Our team
-            provides proactive monitoring, bug fixes, and feature enhancements,
-            ensuring your software remains stable and aligned with your evolving
-            business needs.
+            We offer ongoing maintenance and support services to keep your software applications running smoothly and
+            up-to-date. Our team provides proactive monitoring, bug fixes, and feature enhancements, ensuring your
+            software remains stable and aligned with your evolving business needs.
           </div>
           <div className={style.tags}>
             <div>Version Control Systems</div>
@@ -111,14 +103,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Web development</div>
-            <img src={computerIcon} alt="" />
+            <img src={computerIcon} alt='' />
           </div>
           <div className={style.description}>
-            We specialize in creating high-performance, scalable, and
-            user-friendly web applications that deliver exceptional user
-            experiences. Our web development services encompass front-end,
-            back-end, and full-stack development, ensuring your web presence is
-            both engaging and effective.
+            We specialize in creating high-performance, scalable, and user-friendly web applications that deliver
+            exceptional user experiences. Our web development services encompass front-end, back-end, and full-stack
+            development, ensuring your web presence is both engaging and effective.
           </div>
           <div className={style.tags}>
             <div>JavaScript</div>
@@ -133,14 +123,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Software testing</div>
-            <img src={pointIcon} alt="" />
+            <img src={pointIcon} alt='' />
           </div>
           <div className={style.description}>
-            We provide comprehensive software testing services to ensure the
-            quality, reliability, and security of your software applications.
-            Our testing expertise encompasses manual, automated, and performance
-            testing, identifying and resolving defects before they impact your
-            users.
+            We provide comprehensive software testing services to ensure the quality, reliability, and security of your
+            software applications. Our testing expertise encompasses manual, automated, and performance testing,
+            identifying and resolving defects before they impact your users.
           </div>
           <div className={style.tags}>
             <div>Cypress</div>
@@ -154,14 +142,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Social Networks Integration</div>
-            <img src={pmIcon} alt="" />
+            <img src={pmIcon} alt='' />
           </div>
           <div className={style.description}>
-            We seamlessly integrate social networks into your applications,
-            enabling users to connect, share, and engage with your brand on
-            their preferred platforms. Our social media integration services
-            enhance user engagement, expand your reach, and boost brand
-            awareness.
+            We seamlessly integrate social networks into your applications, enabling users to connect, share, and engage
+            with your brand on their preferred platforms. Our social media integration services enhance user engagement,
+            expand your reach, and boost brand awareness.
           </div>
           <div className={style.tags}>
             <div>Facebook Graph API</div>
@@ -176,15 +162,13 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Support and maintain Cloud infrastructure</div>
-            <img src={pmIcon} alt="" />
+            <img src={pmIcon} alt='' />
           </div>
           <div className={style.description}>
-            We provide expert support and maintenance services for your cloud
-            infrastructure, ensuring your cloud environment is secure, reliable,
-            and optimized for performance. Our cloud infrastructure expertise
-            encompasses cloud provisioning, configuration management, and
-            ongoing monitoring, ensuring your cloud infrastructure supports your
-            business needs seamlessly.
+            We provide expert support and maintenance services for your cloud infrastructure, ensuring your cloud
+            environment is secure, reliable, and optimized for performance. Our cloud infrastructure expertise
+            encompasses cloud provisioning, configuration management, and ongoing monitoring, ensuring your cloud
+            infrastructure supports your business needs seamlessly.
           </div>
           <div className={style.tags}>
             <div>Amazon Web Services</div>
@@ -202,14 +186,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Microservices architecture</div>
-            <img src={computerIcon} alt="" />
+            <img src={computerIcon} alt='' />
           </div>
           <div className={style.description}>
-            We design and implement microservices architecture, breaking down
-            complex applications into smaller, independent services that are
-            easier to develop, maintain, and scale. Our microservices expertise
-            enables you to build agile, resilient, and scalable software
-            solutions.
+            We design and implement microservices architecture, breaking down complex applications into smaller,
+            independent services that are easier to develop, maintain, and scale. Our microservices expertise enables
+            you to build agile, resilient, and scalable software solutions.
           </div>
           <div className={style.tags}>
             <div>Docker</div>
@@ -225,13 +207,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Code audit</div>
-            <img src={pointIcon} alt="" />
+            <img src={pointIcon} alt='' />
           </div>
           <div className={style.description}>
-            We conduct rigorous code audits to identify and rectify potential
-            security vulnerabilities, coding errors, and performance bottlenecks
-            in your codebase. Our code audit services help ensure your software
-            is maintainable, secure, and performant.
+            We conduct rigorous code audits to identify and rectify potential security vulnerabilities, coding errors,
+            and performance bottlenecks in your codebase. Our code audit services help ensure your software is
+            maintainable, secure, and performant.
           </div>
           <div className={style.tags}>
             <div>ESLint</div>
@@ -246,14 +227,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Consultations</div>
-            <img src={pmIcon} alt="" />
+            <img src={pmIcon} alt='' />
           </div>
           <div className={style.description}>
-            We provide expert consultations to assist you in making informed
-            decisions about your software development projects. Our consultants
-            offer strategic guidance, technical expertise, and risk assessment,
-            helping you navigate the complexities of software development and
-            achieve your business goals.
+            We provide expert consultations to assist you in making informed decisions about your software development
+            projects. Our consultants offer strategic guidance, technical expertise, and risk assessment, helping you
+            navigate the complexities of software development and achieve your business goals.
           </div>
           <div className={style.tags}>
             <div>Software Architecture</div>
@@ -267,14 +246,12 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Project management</div>
-            <img src={pmIcon} alt="" />
+            <img src={pmIcon} alt='' />
           </div>
           <div className={style.description}>
-            We offer comprehensive project management services to ensure your
-            software development projects are executed efficiently, on time, and
-            within budget. Our project managers oversee planning, resource
-            allocation, task management, and risk mitigation, ensuring your
-            projects are delivered successfully.
+            We offer comprehensive project management services to ensure your software development projects are executed
+            efficiently, on time, and within budget. Our project managers oversee planning, resource allocation, task
+            management, and risk mitigation, ensuring your projects are delivered successfully.
           </div>
           <div className={style.tags}>
             <div>Agile</div>
@@ -290,4 +267,4 @@ export const Services = () => {
       </div>
     </section>
   );
-}
+};

@@ -1,17 +1,17 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import { Section } from "../../../../components/Section";
-import { CASE_STUDY } from "../../../../routes";
-import { IndustryCard } from "./components/IndustryCard";
-import { industries } from "./data";
-import styles from "./Industries.module.scss";
+import { Section } from '../../../../components/Section';
+import { CASE_STUDY } from '../../../../routes';
+import { IndustryCard } from './components/IndustryCard';
+import { industries } from './data';
+import styles from './Industries.module.scss';
 
 export const Industries = () => {
-    const navigate = useNavigate();
-    
+  const navigate = useNavigate();
+
   return (
-    <Section title={"INDUSTRIES"}>
+    <Section title={'INDUSTRIES'}>
       <div className={styles.cards}>
         {industries.map((data, index) => (
           <IndustryCard

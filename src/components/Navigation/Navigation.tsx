@@ -17,12 +17,7 @@ export const Navigation = () => {
         alt='back_icon'
         id='swiper-back'
       />
-      <img
-        className={style.button}
-        src={blackArrowIcon}
-        alt='next_icon'
-        id='swiper-forward'
-      />
+      <img className={style.button} src={blackArrowIcon} alt='next_icon' id='swiper-forward' />
     </div>
   );
 };

@@ -8,7 +8,7 @@ export const ServicesPage = () => {
     <div>
       <Introducion />
       <Services />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -11,7 +11,7 @@ interface TagsContainerProps {
 export const TagsContainer = ({ tags, type }: TagsContainerProps) => {
   return (
     <div className={style.container}>
-      {tags.map((tag) => (
+      {tags.map(tag => (
         <Tag title={tag} type={type} />
       ))}
     </div>

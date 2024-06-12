@@ -27,6 +27,6 @@ export const about = [
     subtitle: 'Client countries',
   },
   {
-    src: image
+    src: image,
   },
-]
+];

@@ -17,11 +17,11 @@
     }
   }
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     > div {
-    display: grid;
-    gap: 1.25rem;
-  }
+      display: grid;
+      gap: 1.25rem;
+    }
   }
 }
 
@@ -42,8 +42,6 @@
   padding: 1rem 1.5rem;
   color: $color--lightgray;
   gap: 1rem;
-
-  
 
   .title {
     display: flex;

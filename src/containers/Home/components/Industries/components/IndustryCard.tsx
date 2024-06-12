@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./IndustryCard.module.scss";
+import styles from './IndustryCard.module.scss';
 
 interface ItemProps {
   description: string;
@@ -9,17 +9,12 @@ interface ItemProps {
   onClick: () => void;
 }
 
-export const IndustryCard = ({
-  description,
-  icon,
-  image,
-  onClick,
-}: ItemProps) => {
+export const IndustryCard = ({ description, icon, image, onClick }: ItemProps) => {
   return (
     <div className={styles.card} onClick={onClick}>
-      <img src={image} alt="Avatar" />
+      <img src={image} alt='Avatar' />
       <div className={styles.container}>
-        <img src={icon} alt="description" />
+        <img src={icon} alt='description' />
         <h4>{description}</h4>
       </div>
     </div>

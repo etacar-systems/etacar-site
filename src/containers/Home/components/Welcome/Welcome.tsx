@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./Welcome.module.scss";
+import styles from './Welcome.module.scss';
 export const Welcome = () => {
   return (
     <div className={styles.welcome_container}>
@@ -10,9 +10,8 @@ export const Welcome = () => {
         <span>Partner</span>
       </div>
       <div className={styles.description}>
-        Expand your business capabilities with comprehensive world-class
-        software development, including thoughtful strategy, UX/UI design
-        and on-demand development
+        Expand your business capabilities with comprehensive world-class software development, including thoughtful
+        strategy, UX/UI design and on-demand development
       </div>
     </div>
   );

@@ -1,11 +1,6 @@
-@import "../../styles/colors.scss";
+@import '../../styles/colors.scss';
 
-@mixin flexContainer(
-  $justify: flex-start,
-  $align: flex-start,
-  $direction: row,
-  $gap: 0
-) {
+@mixin flexContainer($justify: flex-start, $align: flex-start, $direction: row, $gap: 0) {
   display: flex;
   justify-content: $justify;
   align-items: $align;

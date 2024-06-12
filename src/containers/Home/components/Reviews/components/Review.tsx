@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import blackArrowIcon from "../../../../../assets/icons/blackArrow.svg";
+import blackArrowIcon from '../../../../../assets/icons/blackArrow.svg';
 
-import styles from "./Review.module.scss";
+import styles from './Review.module.scss';
 
 interface ItemProps {
   avatar: string;
@@ -17,7 +17,7 @@ export const Review = ({ avatar, description, name, company }: ItemProps) => {
       <div className={styles.review}>
         <div className={styles.review_content}>
           <div className={styles.review_header}>
-            <img alt="avatar" className={styles.avatar} src={avatar} />
+            <img alt='avatar' className={styles.avatar} src={avatar} />
             <div className={styles.person}>
               <div className={styles.name}>{name}</div>
               <div className={styles.company}>{company}</div>

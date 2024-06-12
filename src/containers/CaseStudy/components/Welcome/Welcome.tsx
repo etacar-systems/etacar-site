@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./Welcome.module.scss";
+import styles from './Welcome.module.scss';
 export const Welcome = () => {
   return (
     <div className={styles.welcome_container}>
@@ -12,8 +12,8 @@ export const Welcome = () => {
         <span /> and startups
       </div>
       <div className={styles.description}>
-        We engage in numerous projects but due to NDAs we are unable to publish
-        details.<span /> References can be obtained upon request.
+        We engage in numerous projects but due to NDAs we are unable to publish details.
+        <span /> References can be obtained upon request.
       </div>
     </div>
   );

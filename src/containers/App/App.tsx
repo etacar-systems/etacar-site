@@ -1,8 +1,8 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-import { NavHeader } from "../../components/NavHeader";
-import { routesConfig } from "../../routes/routesConfig";
+import { NavHeader } from '../../components/NavHeader';
+import { routesConfig } from '../../routes/routesConfig';
 
 export const App = () => {
   return (
