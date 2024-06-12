@@ -1,0 +1,135 @@
+@import '../../styles/colors.scss';
+
+@mixin flexContainer(
+  $justify: flex-start,
+  $align: flex-start,
+  $direction: row,
+  $gap: 0
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin secondaryText {
+  font-size: 14px;
+  text-align: left;
+  color: $color--light;
+}
+
+@mixin primaryText {
+  font-weight: 700;
+  text-align: left;
+  color: $color--white;
+}
+
+@mixin linkText {
+  color: $color--lightblue;
+  text-align: left;
+  & a,
+  & a:visited {
+    color: $color--lightblue;
+    text-decoration: none;
+  }
+}
+
+@mixin linkBlock {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+@mixin footerText {
+  font-size: 12px;
+  color: $color--white;
+}
+
+.footer {
+  background-color: $color--text-dark;
+  padding: 40px 18% 0px;
+  overflow: hidden;
+  box-shadow: 0px -4px 12px 0px #b2b2b20a;
+}
+
+.container {
+  @include flexContainer(flex-start, flex-start, row, 66px);
+}
+
+.address {
+  @include flexContainer(flex-start, flex-start, column, 0px);
+}
+
+.address__title {
+  @include primaryText();
+}
+
+.addressAndContacts__textContext {
+  margin: 6px 0 0 0;
+  @include secondaryText();
+}
+
+.contacts {
+  @include flexContainer(flex-start, flex-start, column, 0);
+}
+.contacts__title {
+  @include primaryText();
+}
+
+.contacts__info {
+  @include flexContainer(flex-start, flex-start, column, 0px);
+}
+.addressAndContacts__textContext {
+  margin: 6px 0 0 0;
+  @include secondaryText();
+}
+
+.link__container {
+  @include flexContainer(space-between, flex-start, row, 0px);
+  margin: 6px 0 0 0;
+}
+.info__links,
+.linkedIn__link {
+  @include flexContainer(flex-start, flex-start, row, 0px);
+}
+
+.info__links {
+  @include flexContainer(flex-start, flex-start, row, 70px);
+}
+
+.linkGetInTouch,
+.linkGoogleMap,
+.linkLinkedIn {
+  @include linkBlock();
+}
+.getInTouch {
+  @include linkText();
+}
+.googleMap {
+  @include linkText();
+}
+
+.linkedIn__link {
+  @include flexContainer(flex-end, flex-start, row, 0px);
+}
+.linkedIn {
+  @include linkText();
+}
+
+.linkIcon {
+  @include flexContainer(flex-start, center, row, 0px);
+}
+.footerEnd {
+  @include flexContainer(space-between, flex-start, row, 0px);
+  margin: 60px 0 100px 0;
+}
+.container__copyright {
+  @include flexContainer(flex-start, flex-start, row, 0px);
+}
+.container__termsAndPrivacy {
+  @include flexContainer(space-between, flex-start, row, 16px);
+}
+.footerEnd__textContent {
+  @include footerText();
+}
