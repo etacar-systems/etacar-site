@@ -46,6 +46,10 @@
         margin: 0;
     }
 
+    .description, ul {
+        color: $clr-second-text;
+    }
+
     ul {
         display: grid;
         gap: 0.5rem;

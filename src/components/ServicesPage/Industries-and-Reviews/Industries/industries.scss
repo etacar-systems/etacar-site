@@ -1,2 +1,89 @@
 @import "../../../../shared/styles/_colors.scss";
 
+.industries {
+    display: grid;
+    gap: 5rem;
+    padding: 8.75rem 0 6.875rem;
+
+    h2 {
+        padding-left: 12.5rem;
+    }
+
+    .container {
+        position: relative;
+
+        .filter {
+            position: absolute;
+            width: 199px;
+            height: 343px;
+            background-color: $clr-primary-text;
+            opacity: 0.7;
+            top: 0;
+            margin: 0;
+        }
+
+        .filter.left {
+            left: 0;
+            // background: linear-gradient(to right, rgba(31, 31, 31, 0.7), rgba(31, 31, 31, 0.3));
+            // box-shadow: 4px 0 10px 0 rgba(31, 31, 31, 0.3);
+        }
+
+        .filter.right {
+            left: calc(100vw - 199px);
+            // background: linear-gradient(to right, rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.7));
+            // box-shadow: -4px 0 10px 0 rgba(31, 31, 31, 0.3);
+        }
+
+        .container-industries {
+            display: flex;
+            gap: 1.25rem;
+            padding-left: 12.5rem;
+            overflow: hidden;
+        }
+    }
+}
+
+.industrie {
+    display: grid;
+    background-color: rgba(234, 240, 255, 1);
+    border-radius: 1.25rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 285px;
+    
+    .img {
+        width: 269px;
+        height: 199px;
+        border-radius: 0.75rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .img.education {
+        background-image: url('../../../../shared/assets/services-page/industries/education.jpg');
+    }
+    .img.real-estate {
+        background-image: url('../../../../shared/assets/services-page/industries/real-estate.jpg');
+    }
+    .img.enterprise-applications {
+        background-image: url('../../../../shared/assets/services-page/industries/enterprise-applications.jpg');
+    }
+    .img.b2c {
+        background-image: url('../../../../shared/assets/services-page/industries/B2C.jpg');
+    }
+
+    figure {
+        margin: 1rem;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 1rem;
+
+        figcaption {
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            height: 3.5rem;
+        }
+    }
+}
