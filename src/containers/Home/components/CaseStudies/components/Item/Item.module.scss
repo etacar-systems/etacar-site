@@ -2,13 +2,22 @@
 
 .container {
   display: flex;
-  gap: 40px;
+  gap: 122px;
 }
 .inner {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
   justify-content: start;
+
+  p {
+    margin-top: 0;
+  }
+}
+.outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .title {
   color: $color--text-dark;
@@ -19,6 +28,11 @@
   padding: 16px;
   border: 1px solid;
   border-radius: 36px;
+  height: 434px;
+  
+  img {
+    height: 434px;
+  }
 }
 
 :global(.swiper-button-disabled) {

@@ -21,8 +21,8 @@ export const CaseStudies = () => {
           {caseStudies.map((item, index) => (
             <SwiperSlide area-hidden key={index}>
               <Item
-                description={item.description}
                 image={item.image}
+                paragraphs={item.paragraphs}
                 tags={item.tags}
                 title={item.title}
               />

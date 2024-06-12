@@ -1,28 +1,41 @@
 import React from 'react';
-
-import blackArrowIcon from '../../../../../../assets/icons/blackArrow.svg';
+import { useNavigate } from 'react-router-dom';
 
 import { TagsContainer } from '../../../../../../components/TagsContainer';
+import { Button } from '../../../../../../components/Button';
+import { CASE_STUDY } from '../../../../../../routes';
+import { Navigation } from '../../../../../../components/Navigation';
 import style from './Item.module.scss';
 
 interface ItemProps {
-  description: string;
   image: string;
+  paragraphs: string[];
   tags: string[];
   title: string;
 }
 
-export const Item = ({ description, image, tags, title }: ItemProps) => {
+export const Item = ({ image, paragraphs, tags, title }: ItemProps) => {
+  const navigate = useNavigate();
+
   return (
     <div className={style.container}>
-      <div className={style.inner}>
-        <div>
-          <img src={blackArrowIcon} alt='' id='swiper-back' />
-          <img src={blackArrowIcon} alt='' id='swiper-forward' />
+      <div className={style.outer}>
+        <Navigation />
+        <div className={style.inner}>
+          <div className={style.title}>{title}</div>
+          <TagsContainer tags={tags} type={'light'} />
+          <div>
+            {paragraphs.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+          </div>
         </div>
-        <div className={style.title}>{title}</div>
-        <TagsContainer tags={tags} type={'light'} />
-        <div>{description}</div>
+        <Button
+          icon
+          onClick={() => navigate(CASE_STUDY)}
+          title={'All cases'}
+          type={'ghost'}
+        />
       </div>
       <div className={style.image}>
         <img src={image} alt={`${title}_icon`} />
