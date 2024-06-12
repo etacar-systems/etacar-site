@@ -8,7 +8,7 @@ export const routesConfig = [
     element: <Home />,
   },
   {
-    path: "*",
-    element: <div></div>,
+    path: "/about",
+    element: <div>About</div>,
   },
 ];
