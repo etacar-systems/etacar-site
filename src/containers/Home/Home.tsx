@@ -1,10 +1,11 @@
 import React from "react";
 
+import { CaseStudies } from "./components/CaseStudies";
 import { Development } from "./components/Development";
+import { Industries } from "./components/Industries";
 import { Mission } from "./components/Mission";
 import { Services } from "./components/Services";
 import { Welcome } from "./components/Welcome";
-import { CaseStudies } from "./components/CaseStudies";
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
       <Development />
       <CaseStudies />
       <Services />
+      <Industries />
     </div>
   );
 };
