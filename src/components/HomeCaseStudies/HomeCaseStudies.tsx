@@ -1,7 +1,7 @@
 import '../../shared/styles/_all.scss';
 import styles from './HomeCaseStudies.module.scss';
 import Heading from '../../shared/ui/Heading/Heading';
-import LaptopImg from '../../shared/assets/LaptopPhoto.svg';
+import LaptopImg from '../../shared/assets/case/LaptopPhoto.svg';
 import {LeftArrowIcon, RightArrowIcon} from '../../shared/ui/icons';
 import Tag from '../../shared/ui/Tag/Tag';
 import Button from '../../shared/ui/Button/Button';
