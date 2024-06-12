@@ -8,15 +8,15 @@ import { industries } from './data';
 import styles from './Industries.module.scss';
 
 interface IndustryCardProps {
-  titleColor?: 'light' | 'dark';
+  textColor?: 'light' | 'dark';
   theme?: 'blueLight' | 'light' | 'dark' | 'extraLight';
 }
 
-export const Industries = ({ titleColor, theme }: IndustryCardProps) => {
+export const Industries = ({ textColor, theme }: IndustryCardProps) => {
   const navigate = useNavigate();
 
   return (
-    <Section titleColor={titleColor} theme={theme} title={'INDUSTRIES'}>
+    <Section textColor={textColor} theme={theme} title={'INDUSTRIES'}>
       <div className={styles.cards}>
         {industries.map((data, index) => (
           <IndustryCard

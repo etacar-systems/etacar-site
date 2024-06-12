@@ -1,13 +1,16 @@
 import React from 'react';
 
+// Alplabetical order is REQUIRED!
+
 import { CaseStudies } from './components/CaseStudies';
 import { Development } from './components/Development';
 import { Footer } from '../../components/Footer';
 import { Mission } from './components/Mission';
-import { Reviews } from './components/Reviews';
 import { Services } from './components/Services';
 import { Welcome } from './components/Welcome';
+
 import { Industries } from '../../commonSections/Industries';
+import { Reviews } from '../../commonSections/Reviews';
 
 export const Home = () => {
   return (

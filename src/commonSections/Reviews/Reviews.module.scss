@@ -1,4 +1,4 @@
-@import '../../../../../styles/colors.scss';
+@import '../../styles/colors.scss';
 
 .review {
   max-width: 500px;
@@ -29,12 +29,28 @@
   font-size: 12px;
 }
 
-.avatar {
-  width: 44px;
-  border-radius: 100px;
+.swiper {
+  overflow: hidden;
+}
+.swiper_wrapper {
+  display: inline-flex;
 }
 
-.container {
+.label {
+  font-size: 24px;
+  color: $color--text-dark;
+  &[data-text-color='dark'] {
+    color: $color--light;
+  }
+}
+
+.arrows {
+  display: flex;
+  justify-content: end;
+}
+
+.partners {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
