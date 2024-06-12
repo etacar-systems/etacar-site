@@ -1,5 +1,5 @@
-import { images } from '../../../../assets/images/Industries';
-import { icons } from '../../../../assets/icons/Industries';
+import { images } from '../../assets/images/Industries';
+import { icons } from '../../assets/icons/Industries';
 
 export const industries = [
   {

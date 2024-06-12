@@ -31,4 +31,8 @@
   margin-bottom: 100px;
   white-space: pre-line;
   line-height: 58px;
+
+  &[data-title-color='dark'] {
+    color: $color--light;
+  }
 }

@@ -1,17 +1,22 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { Section } from '../../../../components/Section';
-import { CASE_STUDY } from '../../../../routes';
+import { Section } from '../../components/Section';
+import { CASE_STUDY } from '../../routes';
 import { IndustryCard } from './components/IndustryCard';
 import { industries } from './data';
 import styles from './Industries.module.scss';
 
-export const Industries = () => {
+interface IndustryCardProps {
+  titleColor?: 'light' | 'dark';
+  theme?: 'blueLight' | 'light' | 'dark' | 'extraLight';
+}
+
+export const Industries = ({ titleColor, theme }: IndustryCardProps) => {
   const navigate = useNavigate();
 
   return (
-    <Section title={'INDUSTRIES'}>
+    <Section titleColor={titleColor} theme={theme} title={'INDUSTRIES'}>
       <div className={styles.cards}>
         {industries.map((data, index) => (
           <IndustryCard
