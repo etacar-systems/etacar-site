@@ -4,7 +4,7 @@ import { Home } from '../containers/Home';
 import { ServicesPage } from '../containers/ServicesPage';
 import { CaseStudy } from '../containers/CaseStudy';
 import { CASE_STUDY } from './routes';
-import { AboutUs } from '../containers/AboutUs';
+import { AboutUs } from '../containers/AboutUs/AboutUs';
 
 export const routesConfig = [
   {

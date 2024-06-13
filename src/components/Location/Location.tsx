@@ -14,20 +14,22 @@ interface LocationProps {
 
 export const Location = ({sectionHeader, geographyData}: LocationProps) => {
   return (
-    <div className={style.wrapper}>
-      <div className={style.contentContainer}>
-        {sectionHeader ? <div className={style.sectionHeader}>{sectionHeader}</div> : <></>}
-        <div className={style.geographyData}>
-          {geographyData.map(geographyElem =>
-          <div className={style.geographyDataElement}>
-            <div className={style.elementTitle}>{geographyElem.title}</div>
-            <div className={style.elementTags}>{geographyElem.tags}</div>
-          </div>)}
-        </div>
-        <div className={style.mapImage}>
-          <img src={aboutUsImages.map} alt='map'/>
-        </div>
+    <section className={style.section}>
+      <div className={style.wrapper}>
+        <div className={style.contentContainer}>
+          {sectionHeader ? <div className={style.sectionHeader}>{sectionHeader}</div> : undefined}
+          <div className={style.geographyData}>
+            {geographyData.map(geographyElem =>
+            <div className={style.geographyDataElement}>
+              <div className={style.elementTitle}>{geographyElem.title}</div>
+              <div className={style.elementTags}>{geographyElem.tags}</div>
+            </div>)}
+          </div>
+          <div className={style.mapImage}>
+            <img src={aboutUsImages.map} alt='map'/>
+          </div>
+        </div> 
       </div> 
-    </div> 
+    </section>
   )
 }
