@@ -1,9 +1,5 @@
 @import '../../../../styles/colors.scss';
 
-* {
-  box-sizing: border-box;
-}
-
 .wrapper {
   overflow: hidden;
 }
@@ -64,6 +60,11 @@
   }
 }
 
+.smallHighBlock, .smallTextBlock {
+  border: 1px solid $color--lightblue;
+  border-radius: 20px;
+}
+
 .smallHighBlock {
   height: 24vw;
   @media (max-width: 1024px) {
@@ -76,10 +77,13 @@
 }
 
 .smallTextBlock {
-  padding: 2vw 0;  
   @media (max-width: 1024px) {
     padding: 0;
   }
+}
+
+.primaryTextContainer, .secondaryTextContainer {
+  padding: 0 1rem;
 }
 
 .primaryTextContainer {
