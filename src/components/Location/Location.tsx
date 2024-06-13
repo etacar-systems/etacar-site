@@ -1,6 +1,5 @@
 
 import { aboutUsImages } from '../../assets/images/AboutUs';
-import { aboutUsIcons } from '../../assets/icons/AboutUs';
 import style from './Location.module.scss';
 
 
