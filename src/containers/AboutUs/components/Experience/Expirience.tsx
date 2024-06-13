@@ -13,7 +13,7 @@ export const Expirience = () => {
             <div className={style.smallHighBlock}>
               <img src={aboutUsImages.workExpirience1} alt='Work Expirience' />
             </div>
-            <div className={style.smallHighBlock}>
+            <div className={style.smallHighTextBlock}>
               {expirience.map(exp => (
                 <div className={style.primaryTextContainer}>
                   <div className={style.textPrimary}>{exp.number}</div>
