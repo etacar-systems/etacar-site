@@ -5,12 +5,14 @@
 }
 
 .container {
-  padding: 8.75rem 12.5vw 0;
+  margin: 15rem 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 .block {
+  width: 75rem;
   display: flex;
-  justify-content: center;
   gap: 7.5rem;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -21,8 +23,6 @@
 .columnLeft, .columnRight {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   @media (max-width: 768px) {
     align-items: center;
   }
@@ -42,12 +42,13 @@ font-size: 3.75rem;
 font-weight: 700;
 text-transform: uppercase;
 color: $color--text-dark;
+text-wrap: nowrap;
 
 }
 
 .aboutUsImage {
-  width: 30.5vw;
-  height: 40.6vw;
+  width: 30.5rem;
+  height: 40.6rem;
 
   & img {
     width: 100%;
@@ -61,8 +62,8 @@ color: $color--text-dark;
 }
 
 .ourTeamImage {
-  width: 36.875vw;
-  height: 25vw;
+  width: 36.875rem;
+  height: 25rem;
   margin: 0 0 2rem;
   & img {
     width: 100%;
