@@ -1,0 +1,82 @@
+@import '../../styles/colors.scss';
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: $color--extra-lightblue;
+  border-radius: 20px 20px 0 0;
+  margin: 15rem 0 0;
+}
+
+.contentContainer {
+  width: 75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionHeader {
+  width: 100%;
+  margin-top: 10rem;
+  text-align: left;
+  font-family: Chakra Petch;
+  font-size: 3.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    line-height: 3.625rem;
+  }
+}
+
+.geographyData {
+  width: 100%;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.geographyDataElement {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .elementTitle {
+    font-size: 1.5rem;
+  }
+
+  & .elementTags {
+    width: 25rem;
+    word-spacing: 1rem;
+
+
+  }
+}
+
+.mapImage {
+  margin-top: 10rem;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+}
