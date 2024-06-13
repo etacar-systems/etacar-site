@@ -26,7 +26,9 @@ export const Review = ({ avatar, company, description, name, textColor }: ItemPr
               <div className={styles.company}>{company}</div>
             </div>
           </div>
-          <div className={styles.review_body} data-text-color={textColor}>{description}</div>
+          <div className={styles.review_body} data-text-color={textColor}>
+            {description}
+          </div>
         </div>
       </div>
     </div>

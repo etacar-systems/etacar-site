@@ -21,7 +21,7 @@ export const Footer = () => {
         <div className={style.info__links}>
           <div className={style.linkGetInTouch}>
             <div className={style.getInTouch}>
-              <a target='_blank' href='info@etacar.io'>
+              <a target='_blank' href='mailto:info@etacar.io'>
                 Get in touch
               </a>
             </div>
