@@ -1,6 +1,7 @@
 import { aboutUsImages } from '../../../../assets/images/AboutUs';
 import { aboutUsIcons } from '../../../../assets/icons/AboutUs';
 import style from './Introduction.module.scss';
+import { Button } from '../../../../components/UI/Button';
 
 const infoText = [
   'EtaCar Systems is a privately held software development outsourcing company.',
@@ -27,10 +28,12 @@ export const Introduction = () => {
               <div className={style.info}>{string}</div>
             ))}
             <div className={style.buttonBlock}>
-              <button>
-                <div>Get In Touch</div>
-                <img src={aboutUsIcons.buttonArrow} alt='arrow' />
-              </button>
+              <Button 
+                buttonIcon={aboutUsIcons.buttonArrow}
+                buttonTheme={'lightblue'}
+              >
+                Get In Touch
+              </Button>
             </div>
           </div>
         </div>
