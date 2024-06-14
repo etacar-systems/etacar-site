@@ -13,7 +13,7 @@ export const Models = () => {
       <div className={style.rowsContainer}>
         {data.map(dataRow => 
           <div className={style.sectionRow}>
-            {dataRow.id % 2 === 0 ? <div className={style.sectionImage}><img src={dataRow.image} alt="Our Team"/></div> : undefined}
+            {dataRow.id % 2 === 0 ? <img className={style.image} src={dataRow.image} alt="Our Team"/> : undefined}
             <div className={style.textContainer}>
               <div className={style.title}>{dataRow.title}</div>
               <div>{dataRow.description}</div>  
@@ -30,7 +30,7 @@ export const Models = () => {
                 />
               </div>
             </div>
-            {dataRow.id % 2 === 1 ? <div className={style.sectionImage}><img src={dataRow.image} alt="Our Team"/></div> : undefined}
+            {dataRow.id % 2 === 1 ?<img className={style.image} src={dataRow.image} alt="Our Team"/> : undefined}
           </div>  
         )}
       </div>
