@@ -101,25 +101,6 @@ color: $color--text-light;
   display: flex;
   align-self: flex-end;
   margin-top: auto;
-
-  > button {
-    cursor: pointer;
-    width: 13rem;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.625rem;
-    color: $color--light;
-    background-color: $color--lightblue;
-    border: 1px solid $color--lightblue;
-    border-radius: 2.5rem;
-
-    > div {
-      font-weight: 700;
-    }
-
-  }
   
   @media (max-width: 1200px) {
     align-self: center;
