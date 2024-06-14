@@ -5,6 +5,7 @@ import { Footer } from '../../components/Footer/Footer';
 
 import { Reviews } from '../../commonSections/Reviews';
 import { Industries } from '../../commonSections/Industries';
+import { Models } from './components/Models';
 
 export const ServicesPage = () => {
   return (
@@ -12,6 +13,7 @@ export const ServicesPage = () => {
       <Introducion />
       <Services />
       <Industries textColor={'dark'} theme={'dark'} />
+      <Models/>
       <Reviews textColor={'dark'} theme={'dark'} />
       <Footer />
     </div>
