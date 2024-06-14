@@ -1,10 +1,13 @@
 import React from 'react';
 
+import { ABOUT } from './routes'
+import { AboutUs } from '../containers/AboutUs/AboutUs';
 import { Home } from '../containers/Home';
+import { SERVICES } from './routes';
 import { ServicesPage } from '../containers/ServicesPage';
 import { CaseStudy } from '../containers/CaseStudy';
 import { CASE_STUDY } from './routes';
-import { AboutUs } from '../containers/AboutUs';
+
 
 export const routesConfig = [
   {
@@ -12,7 +15,7 @@ export const routesConfig = [
     element: <Home />,
   },
   {
-    path: '/services',
+    path: SERVICES,
     element: <ServicesPage />,
   },
   {
@@ -20,7 +23,7 @@ export const routesConfig = [
     element: <CaseStudy />,
   },
   {
-    path: '/about',
+    path: ABOUT,
     element: <AboutUs />,
   },
 ];

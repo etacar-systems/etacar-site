@@ -91,3 +91,14 @@ export const caseStudies = [
     title: 'Delivery management system with automated order-to-delivery process',
   },
 ];
+
+export const caseStudiesGeographyData = [
+  {
+    title: '9 countries',
+    tags: 'USA UK Switzerland South Korea Canada Russia Georgia Kwait Denmark'
+  },
+  {
+    title: '11 cities',
+    tags: 'San Diego Chicago Baton Rouge London Baar Seoul Barrie (Ontario) Moscow Tbilisi Kuwait Aarhus'
+  },
+]
