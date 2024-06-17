@@ -14,13 +14,21 @@
 }
 
 .input {
+  box-sizing: border-box;
   display: block;
   border: none;
   border-bottom: 1px solid $color--lightblue;
+  outline:none;
   padding: 0.5rem 0.5rem;
-  text-align: left;
   color: $color--lightblue;
   width: 80%;
+  &:focus {
+    color: $color--blue;
+    border-bottom: 2px solid $color--blue;
+  }
+  &::placeholder {
+    color: $color--lightblue;
+  }
 
 
 }

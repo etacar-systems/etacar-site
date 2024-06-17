@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
+
 import { homePageIcons } from '../../../../assets/icons/Home';
 import { Button } from '../../../../components/Button';
 import { Input } from '../../../../components/UI/Input';
+import { CONTACT } from '../../../../routes';
 import { data } from './data';
 
 import style from './GetEstimationForm.module.scss';
@@ -8,6 +11,7 @@ import style from './GetEstimationForm.module.scss';
 
 
 export const GetEstimationForm = () => {
+  const navigate = useNavigate();
   return (
     <div className={style.container}>
       <div className={style.container_inner}>
@@ -27,16 +31,16 @@ export const GetEstimationForm = () => {
           <div className={style.column_right}>
             <form className={style.form}>
               <div className={style.form_row}>
-                <Input type='text' label='Full Name*' value='John Smith' required/>
-                <Input type='text' label='Company Name' value='IT Company'/>
+                <Input type='text' label='Full Name*' placeholder='John Smith' required/>
+                <Input type='text' label='Company Name' placeholder='IT Company'/>
               </div>  
               <div className={style.form_row}>
-                <Input type="phone" label='Phone Number*' value ='+1 (831) 333-6202' required/>
-                <Input type='email' label='Email*' value='Example@gmail.com' required/>
+                <Input type="phone" label='Phone Number*' placeholder ='+1 (831) 333-6202' required/>
+                <Input type='email' label='Email*' placeholder='Example@gmail.com' required/>
               </div>
               <div className={style.form_row}>
-                <Input type='date' label='Convenient time for contact' value='Month/Day/Time'/>
-                <Input type='text' label='Service' value='Development/Design'/>
+                <Input type='date' label='Convenient time for contact' placeholder='Month/Day/Time'/>
+                <Input type='text' label='Service' placeholder='Development/Design'/>
               </div>
               <div className={style.expected_budget}>
                 <div className={style.expected_budget_header}>Expected Budget</div>
@@ -68,7 +72,7 @@ export const GetEstimationForm = () => {
                   <input className={style.checkbox} type='checkbox'/>
                   <label>I agree with Terms of use and Privacy policy</label>
                 </div>
-                <Button onClick={() => {}} title='Get Estimation' type='solid' fullWidth/>
+                <Button onClick={() => navigate(CONTACT)} title='Get Estimation' type='solid' fullWidth/>
               </div>
             </form>
           </div>
