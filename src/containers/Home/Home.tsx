@@ -22,8 +22,8 @@ export const Home = () => {
       <CaseStudies />
       <Services />
       <Industries />
-      <Reviews />
       <GetEstimationForm/>
+      <Reviews arrowColor='dark' />
       <Footer />
     </div>
   );

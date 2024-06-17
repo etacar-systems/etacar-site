@@ -2,19 +2,19 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
-import blackArrowIcon from '../../assets/icons/blackArrow.svg';
-
 import { Section } from '../../components/Section';
+import { Navigation as NavigationArrows } from '../../components/Navigation';
 import { Review } from './components';
 import { people } from './data';
 import styles from './Reviews.module.scss';
 
 interface ReviewsProps {
-  theme?: 'blueLight' | 'light' | 'dark' | 'extraLight';
+  arrowColor?: 'light' | 'dark';
   textColor?: 'light' | 'dark';
+  theme?: 'blueLight' | 'light' | 'dark' | 'extraLight';
 }
 
-export const Reviews = ({ textColor, theme }: ReviewsProps) => {
+export const Reviews = ({ arrowColor, textColor, theme }: ReviewsProps) => {
   return (
     <Section textColor={textColor} theme={theme} title={'REVIEWS'}>
       <div className={styles.swiper}>
@@ -23,8 +23,7 @@ export const Reviews = ({ textColor, theme }: ReviewsProps) => {
             What our partners say
           </div>
           <div className={styles.arrows}>
-            <img src={blackArrowIcon} alt='' id='swiper-back' />
-            <img src={blackArrowIcon} alt='' id='swiper-forward' />
+            <NavigationArrows arrowColor={arrowColor} />
           </div>
         </div>
         <Swiper
@@ -32,7 +31,7 @@ export const Reviews = ({ textColor, theme }: ReviewsProps) => {
           wrapperClass={styles.swiper_wrapper}
           modules={[Navigation]}
           navigation={{ nextEl: '#swiper-forward', prevEl: '#swiper-back' }}
-          spaceBetween={10}
+          spaceBetween={8}
           slidesPerView={2}
         >
           {people.map((person, index) => (
