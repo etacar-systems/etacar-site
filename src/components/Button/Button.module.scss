@@ -23,6 +23,8 @@
   &__bordered {
     color: $color--blue;
     border: 2px solid $color--blue;
+    background-color: transparent;
+    font-weight: 700;
   }
   &__ghost {
     background-color: $color--lightblue;

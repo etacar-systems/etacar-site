@@ -1,13 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import classNames from 'classnames';
 
 import logoIcon from '../../assets/icons/Logo.svg';
 
 import { navItems } from './data';
+import { Button } from '../Button';
+import { CONTACT } from '../../routes';
 import style from './NavHeader.module.scss';
 
 export const NavHeader = () => {
+  const navigate = useNavigate();
+
   return (
     <header>
       <div className={style.container}>
@@ -29,6 +33,7 @@ export const NavHeader = () => {
             </NavLink>
           ))}
         </div>
+        <Button  onClick={() => navigate(CONTACT)} title={'Get estimation'} type={'bordered'} />
       </div>
     </header>
   );
