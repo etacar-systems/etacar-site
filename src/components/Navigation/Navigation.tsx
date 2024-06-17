@@ -1,11 +1,17 @@
 import React from 'react';
 
 import blackArrowIcon from '../../assets/icons/blackArrow.svg';
+import whiteArrowIcon from '../../assets/icons/arrow.svg';
 
 import style from './Navigation.module.scss';
 import classNames from 'classnames';
 
-export const Navigation = () => {
+type NavigatoinProps = {
+  arrowColor?: 'light' | 'dark';
+};
+
+export const Navigation = ({ arrowColor = 'light' }: NavigatoinProps) => {
+  const arrowImg = arrowColor === 'light' ? whiteArrowIcon : blackArrowIcon;
   return (
     <div className={style.container}>
       <img
@@ -13,11 +19,11 @@ export const Navigation = () => {
           [style.button]: true,
           [style.backButton]: true,
         })}
-        src={blackArrowIcon}
+        src={arrowImg}
         alt='back_icon'
         id='swiper-back'
       />
-      <img className={style.button} src={blackArrowIcon} alt='next_icon' id='swiper-forward' />
+      <img className={style.button} src={arrowImg} alt='next_icon' id='swiper-forward' />
     </div>
   );
 };

@@ -1,0 +1,32 @@
+@import '../../../../styles/colors.scss';
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: $color--text-dark;
+  line-height: 60px;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: $font-family-title;
+}
+
+.div1 {
+  text-align: end;
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div3 {
+  grid-area: 3 / 1 / 4 / 2;
+}
