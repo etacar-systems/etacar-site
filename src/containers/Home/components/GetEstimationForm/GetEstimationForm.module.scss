@@ -1,0 +1,178 @@
+@import "../../../../styles/colors.scss";
+
+.container {
+  padding: 100px 0 100px;
+  margin-top: -50px;
+  border-radius: 20px 20px 0 0;
+  background: $color--white;
+}
+.container_inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media (max-width: 1200px) {
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.column_left {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 2rem;
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+
+}
+
+.column_title {
+  color: $color--text-dark;
+  font-size: 1.5rem;
+}
+
+.column_desc {
+  max-width: 75%;
+
+}
+
+.column_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list_element {
+  display: flex; 
+  gap: 1rem;
+}
+
+.column_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 2rem;
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+
+.form_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  & > div {
+    width: 50%;
+  }
+}
+
+.expected_budget, .tell_us_more, .attach_file, .additional {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.expected_budget_header, .tell_us_more_header, .attach_file {
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+
+}
+
+.button {
+  transition: all 0.2s;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border-color: $color--lightblue;
+  color: $color--lightblue;
+  background-color: $color--light;
+  &:hover {
+    background-color: $color--lightblue;
+    color: $color--light;
+  }
+}
+
+.textarea {
+  resize: none;
+  width: 556px;
+  height: 65px;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border-color: $color--lightblue;
+  color: $color--lightblue;
+  outline: none;
+  &:focus {
+    color: $color--blue;
+    border: 1px solid $color--blue;
+  }
+  &::placeholder {
+    color: $color--lightblue;
+  }
+  @media (max-width: 1200px) {
+    width: 200px;
+  }
+}
+
+.attach_file_icon {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+}
+
+.checkbox_container {
+  display: flex;
+  position: relative;
+  &::before {
+      content: url('../../../../assets/icons/Home/checkbox.svg');
+      cursor: pointer;
+    }
+  
+
+  & > input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:checked {
+      content: url('../../../../assets/icons/Home/tick.svg');
+      position: absolute;
+      top: 4px;
+      left: 2px;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+    }
+  }
+
+  & > div {
+    position: absolute;
+    margin: 0 0 0 2rem;
+    min-width: 400px;
+    display: block;
+
+    color: $color--lightblue;
+  }
+
+}
