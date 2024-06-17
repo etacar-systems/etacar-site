@@ -24,7 +24,7 @@
   width: 80%;
   &:focus {
     color: $color--blue;
-    border-bottom: 2px solid $color--blue;
+    border-bottom: 1px solid $color--blue;
   }
   &::placeholder {
     color: $color--lightblue;
