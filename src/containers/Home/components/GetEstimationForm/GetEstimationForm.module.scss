@@ -102,6 +102,7 @@
 }
 
 .button {
+  transition: all 0.2s;
   cursor: pointer;
   border-radius: 10px;
   padding: 0.5rem 1rem;
@@ -122,7 +123,14 @@
   padding: 0.5rem 1rem;
   border-color: $color--lightblue;
   color: $color--lightblue;
-
+  outline: none;
+  &:focus {
+    color: $color--blue;
+    border: 1px solid $color--blue;
+  }
+  &::placeholder {
+    color: $color--lightblue;
+  }
   @media (max-width: 1200px) {
     width: 200px;
   }
@@ -136,21 +144,34 @@
 
 .checkbox_container {
   display: flex;
-  gap: 0.5rem;
+  position: relative;
+  &::before {
+      content: url('../../../../assets/icons/Home/checkbox.svg');
+      cursor: pointer;
+    }
+  
 
   & > input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    &::after {
-      content: url('../../../../assets/icons/Home/checkbox.svg');
-      display: block;
-      margin: -5px 0 0 0;
+    &:checked {
+      content: url('../../../../assets/icons/Home/tick.svg');
+      position: absolute;
+      top: 4px;
+      left: 2px;
+      width: 10px;
+      height: 10px;
       cursor: pointer;
     }
   }
 
-  & > label {
+  & > div {
+    position: absolute;
+    margin: 0 0 0 2rem;
+    min-width: 400px;
+    display: block;
+
     color: $color--lightblue;
   }
 

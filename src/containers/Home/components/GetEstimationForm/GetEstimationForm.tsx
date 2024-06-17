@@ -54,7 +54,7 @@ export const GetEstimationForm = () => {
               <div className={style.tell_us_more}>
                 <div className={style.tell_us_more_header}>Tell us more about your project</div>
                 <div className={style.buttons}>
-                  <textarea className={style.textarea}>Message</textarea>
+                  <textarea className={style.textarea} placeholder="Message"></textarea>
                 </div>
               </div>
               <div className={style.attach_file}>
@@ -64,14 +64,14 @@ export const GetEstimationForm = () => {
                 </div>
               </div>
               <div className={style.additional}>
-                <div className={style.checkbox_container}>
+                <label className={style.checkbox_container}>
                   <input className={style.checkbox} type='checkbox'/>
-                  <label>Do you need an NDA first?</label>
-                </div>
-                <div className={style.checkbox_container}>
+                  <div>Do you need an NDA first?</div>
+                </label>
+                <label className={style.checkbox_container}>
                   <input className={style.checkbox} type='checkbox'/>
-                  <label>I agree with Terms of use and Privacy policy</label>
-                </div>
+                  <div>I agree with Terms of use and Privacy policy</div>
+                </label>
                 <Button onClick={() => navigate(CONTACT)} title='Get Estimation' type='solid' fullWidth/>
               </div>
             </form>
