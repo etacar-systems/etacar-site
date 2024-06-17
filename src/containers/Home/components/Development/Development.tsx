@@ -3,6 +3,7 @@ import React from 'react';
 import { Section } from '../../../../components/Section';
 import appleSet from '../../../../assets/images/appleSet.png';
 import styles from './Development.module.scss';
+import { Carousel } from './components';
 
 export const Development = () => {
   return (
@@ -34,6 +35,7 @@ export const Development = () => {
           </div>
         </div>
       </div>
+      <Carousel />
     </Section>
   );
 };
