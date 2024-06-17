@@ -25,6 +25,10 @@
     border: 2px solid $color--blue;
     background-color: transparent;
     font-weight: 700;
+    &:hover {
+      background-color: $color--blue;
+      color: $color--white;
+    }
   }
   &__ghost {
     background-color: $color--lightblue;
