@@ -11,6 +11,9 @@
 .input_label {
   font-weight: 700;
   color: $color--text-light;
+  &[data-theme='true'] {
+    color: #fafbff;
+  }
 }
 
 .input {
@@ -18,10 +21,11 @@
   display: block;
   border: none;
   border-bottom: 1px solid $color--lightblue;
-  outline:none;
+  outline: none;
   padding: 0.5rem 0.5rem;
   color: $color--lightblue;
   width: 80%;
+  background: transparent;
   &:focus {
     color: $color--blue;
     border-bottom: 1px solid $color--blue;
@@ -29,6 +33,4 @@
   &::placeholder {
     color: $color--lightblue;
   }
-
-
 }

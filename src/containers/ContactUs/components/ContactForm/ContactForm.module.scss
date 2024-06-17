@@ -1,0 +1,84 @@
+@import '../../../../styles/colors.scss';
+
+.container {
+  background: #1f1f1f;
+  padding: 100px 0 100px;
+  margin-top: -50px;
+  border-radius: 20px 20px 0 0;
+}
+
+.contact_form_wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.form {
+  border-radius: 16px;
+  border: 1px solid $color--text-light;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 24px;
+}
+
+.form_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  & > div {
+    width: 50%;
+  }
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 700;
+  color: #fafbff;
+}
+
+.left_section,
+.right_section {
+  padding: 20px;
+  background-color: $color--text-light;
+  border-radius: 16px;
+  width: 300px;
+  gap: 20px;
+}
+
+.info__text {
+  font-size: 14px;
+  color: #fafbff;
+}
+.info__link {
+  color: #90a7ff;
+  text-align: right;
+}
+
+.textarea {
+  resize: none;
+  height: 65px;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border-color: $color--lightblue;
+  color: $color--lightblue;
+  outline: none;
+  background: transparent;
+  &:focus {
+    color: #fff;
+    border: 1px solid $color--blue;
+  }
+  &::placeholder {
+    color: $color--lightblue;
+  }
+}
