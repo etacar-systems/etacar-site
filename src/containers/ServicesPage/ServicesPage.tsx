@@ -12,8 +12,8 @@ export const ServicesPage = () => {
     <div>
       <Introducion />
       <Services />
-      <Industries textColor={'dark'} theme={'dark'} />
       <Models/>
+      <Industries textColor={'dark'} theme={'dark'} />
       <Reviews textColor={'dark'} theme={'dark'} />
       <Footer />
     </div>
