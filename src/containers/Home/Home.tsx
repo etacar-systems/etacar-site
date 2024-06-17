@@ -11,6 +11,7 @@ import { Welcome } from './components/Welcome';
 
 import { Industries } from '../../commonSections/Industries';
 import { Reviews } from '../../commonSections/Reviews';
+import { GetEstimationForm } from './components/GetEstimationForm';
 
 export const Home = () => {
   return (
@@ -22,6 +23,7 @@ export const Home = () => {
       <Services />
       <Industries />
       <Reviews />
+      <GetEstimationForm/>
       <Footer />
     </div>
   );
