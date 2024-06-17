@@ -21,7 +21,7 @@ export const Home = () => {
       <CaseStudies />
       <Services />
       <Industries />
-      <Reviews />
+      <Reviews arrowColor='dark' />
       <Footer />
     </div>
   );
