@@ -2,7 +2,23 @@
 
 .container {
   display: flex;
-  gap: 122px;
+  gap: 3rem;
+  background-color: $color--container-blue;
+  padding: 2rem;
+  border-radius: 40px;
+
+  &[order-reverse="true"] {
+    flex-direction: row-reverse;
+  }
+  &[order-reverse="false"] {
+    flex-direction: row;
+  }
+
+  @media (max-width: 768px) {
+    &[order-reverse="true"], &[order-reverse="false"] {
+      flex-direction: column;
+    }
+  }
 }
 .inner {
   display: flex;
@@ -26,12 +42,31 @@
 }
 .image {
   padding: 16px;
-  border: 1px solid;
+  border: 1px solid transparent;
   border-radius: 36px;
   height: 434px;
-
+  background-color: $color--light;
+  @media (max-width: 768px) {
+      text-align: center;
+    }
   img {
     height: 434px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.getStarted {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color--extra-lightblue;
+  border-radius: 40px;
+  & .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
