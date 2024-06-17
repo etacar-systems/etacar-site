@@ -6,11 +6,11 @@ import whiteArrowIcon from '../../assets/icons/arrow.svg';
 import style from './Navigation.module.scss';
 import classNames from 'classnames';
 
-type NavigatoinProps = {
+type NavigationProps = {
   arrowColor?: 'light' | 'dark';
 };
 
-export const Navigation = ({ arrowColor = 'light' }: NavigatoinProps) => {
+export const Navigation = ({ arrowColor = 'light' }: NavigationProps) => {
   const arrowImg = arrowColor === 'light' ? whiteArrowIcon : blackArrowIcon;
   return (
     <div className={style.container}>

@@ -20,7 +20,7 @@ export const Item = ({ image, paragraphs, tags, title }: ItemProps) => {
   return (
     <div className={style.container}>
       <div className={style.outer}>
-        <Navigation />
+        <Navigation arrowColor={'dark'} />
         <div className={style.inner}>
           <div className={style.title}>{title}</div>
           <TagsContainer tags={tags} type={'light'} />
