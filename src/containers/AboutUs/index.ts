@@ -1,2 +1,0 @@
-export { AboutUs } from "./AboutUs";
-

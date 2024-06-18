@@ -1,12 +1,11 @@
 import React from 'react';
 
-import { ABOUT } from './routes'
-import { AboutUs } from '../containers/AboutUs/AboutUs';
-import { Home } from '../containers/Home';
+import {ABOUT, CASE_STUDY} from './routes';
 import { SERVICES } from './routes';
-import { ServicesPage } from '../containers/ServicesPage';
-import { CaseStudy } from '../containers/CaseStudy';
-import { CASE_STUDY } from './routes';
+import Home from '../pages/Home';
+import {AboutUs} from '../pages/AboutUs';
+import {Services} from '../pages/Services';
+import {CaseStudy} from '../pages/CaseStudies';
 
 
 export const routesConfig = [
@@ -16,14 +15,14 @@ export const routesConfig = [
   },
   {
     path: SERVICES,
-    element: <ServicesPage />,
-  },
-  {
-    path: CASE_STUDY,
-    element: <CaseStudy />,
+    element: <Services />,
   },
   {
     path: ABOUT,
     element: <AboutUs />,
+  },
+  {
+    path: CASE_STUDY,
+    element: <CaseStudy />,
   },
 ];

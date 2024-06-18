@@ -1,0 +1,103 @@
+@import './src/shared/styles/colors';
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 200px 160px 200px;
+  color: $clr-primary-text;
+  background-color: $clr-light-powder-blue;
+  border-radius: 20px;
+  gap: 80px;
+}
+
+.mainText {
+  width: 346px;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.description {
+  width: 488px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text {
+  font-family: "GothamProRegular", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+
+  &__li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 12px;
+    font-family: "GothamProBold", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.block {
+  display: flex;
+  gap: 20px;
+}
+
+.blockInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 253px;
+  height: 96px;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid $clr-bg;
+}
+
+.number {
+  font-family: Chakra Petch, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #90A7FF;
+}
+
+.h4 {
+  font-family: 'GothamProRegular', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  color: $clr-second-text;
+
+}
+
+.photo {
+  height: 129px;
+  border-radius: 20px;
+  border: 1px solid $clr-bg;
+  gap: 16px;
+}
