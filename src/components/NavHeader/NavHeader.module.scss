@@ -1,0 +1,37 @@
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/fonts.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 200px;
+  padding-left: 200px;
+  font-family:$font-primary;
+  font-weight: 600;
+  max-width: 1200px;
+  position: fixed;
+  margin-bottom: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 12px #6868680A;
+  background-color: #FAFBFF;
+  z-index: 1;
+  height: 100px;
+}
+
+.navigation {
+  display: flex;
+  gap: 24px;
+  height: 42px;
+}
+
+.item {
+  text-decoration: none;
+  color: $clr-light-grey;
+
+  &__active {
+    color: $clr-accent-blue;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/fonts.scss';
+
+.container {
+  padding: 100px 0 100px;
+  margin-top: -50px;
+  border-radius: 20px 20px 0 0;
+
+  &[data-theme='light'] {
+    background: $color--white;
+  }
+
+  &[data-theme='dark'] {
+    background: $clr-primary-text;
+  }
+
+  &[data-theme='blueLight'] {
+    background: $clr-light-powder-blue;
+  }
+
+  &[data-theme='extraLight'] {
+    background: $clr-powder-blue;
+  }
+}
+
+.container_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  max-width: 500px;
+  color: $clr-primary-text;
+  font-family: $font-family-title;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  white-space: pre-line;
+  line-height: 58px;
+
+  &[data-title-color='dark'] {
+    color: $clr-bg;
+  }
+}

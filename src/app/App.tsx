@@ -1,26 +1,20 @@
 import React from 'react';
-import {Route, Routes} from 'react-router-dom';
-import Home from '../pages/Home';
-import {Services} from '../pages/Services';
-import {AboutUs} from '../pages/AboutUs';
-import {ContactUs} from '../pages/ContactUs';
-import {CaseStudies} from '../pages/CaseStudies';
-import Layout from '../layout/Layout';
+import { Routes, Route } from 'react-router-dom';
+import {NavHeader} from '../components/NavHeader';
+import {routesConfig} from '../routes/routesConfig';
+import {Footer} from '../components/Footer/Footer';
 
-function App() {
+
+export const App = () => {
   return (
     <>
+      <NavHeader />
       <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route index element={<Home/>}/>
-          <Route path="services" element={<Services/>}/>
-          <Route path="case-studies" element={<CaseStudies/>}/>
-          <Route path="about" element={<AboutUs/>}/>
-          <Route path="contact" element={<ContactUs/>}/>
-        </Route>
+        {routesConfig.map((route, index) => (
+          <Route key={index} path={route.path} element={route.element} />
+        ))}
       </Routes>
+      <Footer/>
     </>
   );
-}
-
-export default App;
+};

@@ -1,8 +1,8 @@
-import Button from '../../shared/ui/Button/Button';
-import '../../shared/styles/_all.scss';
+import Button from '../../../../shared/ui/Button/Button';
+import '../../../../shared/styles/_all.scss';
 import styles from './GetStarted.module.scss';
 
-export function GetStarted() {
+export const GetStarted = () => {
   return (
     <>
       <section className={styles.wrap}>
@@ -28,4 +28,4 @@ export function GetStarted() {
       </section>
     </>
   );
-}
+};

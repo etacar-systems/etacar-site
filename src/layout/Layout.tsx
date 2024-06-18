@@ -1,17 +1,16 @@
 import {Outlet} from 'react-router-dom';
-import Header from '../components/Header/Header';
 import {Footer} from '../components/Footer/Footer';
+import {NavHeader} from '../components/NavHeader';
 
-function Layout() {
+export const Layout = () => {
   return (
     <>
-      <Header/>
+      <NavHeader/>
       <main>
         <Outlet/>
       </main>
       <Footer/>
     </>
   );
-}
+};
 
-export default Layout;
