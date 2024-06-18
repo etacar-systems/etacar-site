@@ -6,6 +6,7 @@ import { Section } from '../../components/Section';
 import { Navigation as NavigationArrows } from '../../components/Navigation';
 import { Review } from './components';
 import { people } from './data';
+import { useViewportSize } from '../../hooks/useViewportSize';
 import styles from './Reviews.module.scss';
 
 interface ReviewsProps {
@@ -15,6 +16,8 @@ interface ReviewsProps {
 }
 
 export const Reviews = ({ arrowColor, textColor, theme }: ReviewsProps) => {
+  const { width } = useViewportSize();
+  const slidesCount = width < 768 ? 1 : 2;
   return (
     <Section textColor={textColor} theme={theme} title={'REVIEWS'}>
       <div className={styles.swiper}>
@@ -32,7 +35,7 @@ export const Reviews = ({ arrowColor, textColor, theme }: ReviewsProps) => {
           modules={[Navigation]}
           navigation={{ nextEl: '#swiper-forward', prevEl: '#swiper-back' }}
           spaceBetween={8}
-          slidesPerView={2}
+          slidesPerView={slidesCount}
         >
           {people.map((person, index) => (
             <SwiperSlide area-hidden key={index}>
