@@ -1,49 +1,65 @@
-import React, {ReactNode} from 'react';
-import styles from './Footer.module.scss';
-import {BottomRightArrowIcon} from '../../shared/ui/icons';
+import style from './Footer.module.scss';
+import linkArrow from '../../assets/icons/linkArrow.svg';
 
-type FooterPropsType = {
-    title: string,
-    children?: ReactNode,
-}
-
-const ContactBlock: React.FC<FooterPropsType> = ({title, children}) => (
-  <div className={styles.block}>
-    <div className={styles.blockHead}>{title}</div>
-    {children}
-  </div>
-);
-
-const LinkBlock: React.FC<FooterPropsType & { url?: string }> = ({title, url}) => (
-  <a className={styles.link} href={url} target="_blank" rel="noopener noreferrer">
-    <h4>{title}</h4>
-    <BottomRightArrowIcon/>
-  </a>
-);
-
-export const Footer: React.FC = () => {
+export const Footer = () => {
   return (
-    <footer className={styles.wrap}>
-      <div className={styles.contacts}>
-        <div className={styles.leftBlock}>
-          <ContactBlock title="Contacts">
-            <div className={styles.label}>info@etacar.io<br/>+1 (831) 333-6202</div>
-            <LinkBlock title="Get in touch"/>
-          </ContactBlock>
-
-          <ContactBlock title="Address">
-            <div className={styles.label}>313 Pasadera Court,<br/>Monterey, California 93940</div>
-            <LinkBlock title="Google map"
-              url="https://www.google.com/maps?q=313+Pasadera+Court,+Monterey,+California+93940"/>
-          </ContactBlock>
+    <footer className={style.footer}>
+      <div className={style.container}>
+        <div className={style.contacts}>
+          <div className={style.contacts__title}>Contacts</div>
+          <div className={style.contacts__info}>
+            <div className={style.addressAndContacts__textContext}>info@etacar.io</div>
+            <div className={style.addressAndContacts__textContext}>+1 (831) 333-6202</div>
+          </div>
         </div>
-        <LinkBlock title="Linkedin"
-          url='https://www.linkedin.com/company/etacarsystems/'
-        />
+        <div className={style.address}>
+          <div className={style.address__title}>Address</div>
+          <div className={style.addressAndContacts__textContext}>313 Pasadera Court, Monterey, California 93940</div>
+        </div>
       </div>
-      <div className={styles.contacts}>
-        <div className={styles.text}>© 2024 EtaCar Systems. All rights reserved.</div>
-        <div className={styles.text}>Terms of use | Privacy policy</div>
+      <div className={style.link__container}>
+        <div className={style.info__links}>
+          <div className={style.linkGetInTouch}>
+            <div className={style.getInTouch}>
+              <a target='_blank' href='mailto:info@etacar.io'>
+                Get in touch
+              </a>
+            </div>
+            <div className={style.linkIcon}>
+              <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
+            </div>
+          </div>
+          <div className={style.linkGoogleMap}>
+            <div className={style.googleMap}>
+              <a target='_blank' href='https://maps.app.goo.gl/38kmmrR4fv51q8XE9'>
+                Google map
+              </a>
+            </div>
+            <div className={style.linkIcon}>
+              <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
+            </div>
+          </div>
+        </div>
+        <div className={style.linkedIn__link}>
+          <div className={style.linkLinkedIn}>
+            <div className={style.linkedIn}>
+              <a target='_blank' href='https://www.linkedin.com/company/etacarsystems/'>
+                LinkedIn
+              </a>
+            </div>
+            <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
+          </div>
+        </div>
+      </div>
+      <div className={style.footerEnd}>
+        <div className={style.container__copyright}>
+          <div className={style.footerEnd__textContent}>© 2024 EtaCar Systems. All rights reserved.</div>
+        </div>
+        <div className={style.container__termsAndPrivacy}>
+          <div className={style.footerEnd__textContent}>Terms of use</div>
+          <div className={style.footerEnd__textContent}>|</div>
+          <div className={style.footerEnd__textContent}>Privacy policy</div>
+        </div>
       </div>
     </footer>
   );

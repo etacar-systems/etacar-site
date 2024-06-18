@@ -1,72 +1,138 @@
-@import './src/shared/styles/colors';
-@import './src/shared/styles/fonts';
+@import '../../styles/colors.scss';
 
-.wrap {
+@mixin flexContainer($justify: flex-start, $align: flex-start, $direction: row, $gap: 0) {
   display: flex;
-  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin secondaryText {
+  font-size: 14px;
+  text-align: left;
+  color: $color--light;
+}
+
+@mixin primaryText {
+  font-weight: 700;
+  text-align: left;
+  color: $color--white;
+}
+
+@mixin center {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@mixin linkText {
+  color: $color--lightblue;
+  text-align: left;
+  & a,
+  & a:visited {
+    color: $color--lightblue;
+    text-decoration: none;
+  }
+}
+
+@mixin linkBlock {
   justify-content: space-between;
-  padding: 82px 212px;
-  background: $clr-primary-text;
-  color: $clr-bg;
+  align-items: center;
+  display: flex;
+}
+
+@mixin footerText {
+  font-size: 12px;
+  color: $color--white;
+}
+
+.footer {
+  background-color: $color--text-dark;
+  padding: 40px 80px;
+  overflow: hidden;
+  box-shadow: 0px -4px 12px 0px #b2b2b20a;
+}
+
+.container {
+  @include flexContainer(flex-start, flex-start, row, 66px);
+  @include center;
+}
+
+.address {
+  @include flexContainer(flex-start, flex-start, column, 0px);
+}
+
+.address__title {
+  @include primaryText();
+}
+
+.addressAndContacts__textContext {
+  margin: 6px 0 0 0;
+  @include secondaryText();
 }
 
 .contacts {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
+  @include flexContainer(flex-start, flex-start, column, 0);
+}
+.contacts__title {
+  @include primaryText();
 }
 
-.leftBlock {
-  display: flex;
-  gap: 40px;
+.contacts__info {
+  @include flexContainer(flex-start, flex-start, column, 0px);
+}
+.addressAndContacts__textContext {
+  margin: 6px 0 0 0;
+  @include secondaryText();
 }
 
-.block {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
+.link__container {
+  @include flexContainer(space-between, flex-start, row, 0px);
+  padding: 30px 0 80px;
+  @include center;
+}
+.info__links,
+.linkedIn__link {
+  @include flexContainer(flex-start, flex-start, row, 0px);
 }
 
-.blockHead {
-  font-family: $font-primary;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 0.6px;
-  padding-left: 12px;
-  padding-right: 12px;
+.info__links {
+  @include flexContainer(flex-start, flex-start, row, 70px);
 }
 
-.label {
-  font-family: $font-primary;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  padding-left: 12px;
-  padding-right: 12px;
+.linkGetInTouch,
+.linkGoogleMap,
+.linkLinkedIn {
+  @include linkBlock();
+}
+.getInTouch {
+  @include linkText();
+}
+.googleMap {
+  @include linkText();
 }
 
-.link {
-  display: flex;
-  width: 162px;
-  height: 48px;
-  padding: 12px;
-  gap: 8px;
-  border-radius: 40px;
-  cursor: pointer;
-  color: $clr-link;
-  text-decoration: none;
+.linkedIn__link {
+  @include flexContainer(flex-end, flex-start, row, 0px);
+}
+.linkedIn {
+  @include linkText();
 }
 
-.link:hover {
-  color: $clr-light-powder-blue;
+.linkIcon {
+  @include flexContainer(flex-start, center, row, 0px);
 }
-
-.text {
-  font-family: $font-primary;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
+.footerEnd {
+  @include flexContainer(space-between, flex-start, row, 0px);
+  margin: 60px 0 100px 0;
+  @include center;
+}
+.container__copyright {
+  @include flexContainer(flex-start, flex-start, row, 0px);
+}
+.container__termsAndPrivacy {
+  @include flexContainer(space-between, flex-start, row, 16px);
+}
+.footerEnd__textContent {
+  @include footerText();
 }

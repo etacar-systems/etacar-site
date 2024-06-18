@@ -1,102 +1,10 @@
-@font-face {
-  font-family: "GothamProBlack";
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProBlack/GothamProBlack.eot");
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProBlack/GothamProBlack.eot?#iefix") format("embedded-opentype"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProBlack/GothamProBlack.woff") format("woff"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProBlack/GothamProBlack.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
+@import "./styles/colors.scss";
 
-@font-face {
-  font-family: "GothamProBold";
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProBold/GothamProBold.eot");
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProBold/GothamProBold.woff") format("woff"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProBold/GothamProBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GothamProBoldItalic";
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.eot");
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix") format("embedded-opentype"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.woff") format("woff"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProBoldItalic/GothamProBoldItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GothamProMedium";
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProMedium/GothamProMedium.eot");
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProMedium/GothamProMedium.woff") format("woff"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProMedium/GothamProMedium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GothamProRegular";
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProRegular/GothamProRegular.eot");
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProRegular/GothamProRegular.woff") format("woff"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProRegular/GothamProRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GothamProItalic";
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProItalic/GothamProItalic.eot");
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProItalic/GothamProItalic.eot?#iefix") format("embedded-opentype"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProItalic/GothamProItalic.woff") format("woff"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProItalic/GothamProItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GothamProLight";
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProLight/GothamProLight.eot");
-  src: url("../src/shared/assets/fonts/GothamPro/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProLight/GothamProLight.woff") format("woff"),
-  url("../src/shared/assets/fonts/GothamPro/GothamProLight/GothamProLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-* {
+body {
   margin: 0;
+  font-family: $font-family-main;
+  color: $color--text-light;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-body, html {
-  background-color: #FAFBFF;
-  font-family: "Chakra Petch", sans-serif, "GothamProBlack", "GothamProRegular"
-}
-
-button {
-  cursor: pointer;
-}
-
-input {
-  border: none;
-}
-
-main {
-  margin-top: 100px;
-  height: 100%;
-  width: 1600px;
-  max-width: 100%;
-}
-
-
