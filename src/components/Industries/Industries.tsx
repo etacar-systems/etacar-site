@@ -1,9 +1,9 @@
 import styles from './Industries.module.scss';
 import Heading from '../../shared/ui/Heading/Heading';
-import Education from '../../shared/assets/industries/Education.svg';
-import RealEstate from '../../shared/assets/industries/Real_Estate.svg';
-import Applications from '../../shared/assets/industries/applications.png';
-import eCommerce from '../../shared/assets/industries/eCommerce.svg';
+import Education from '../../shared/assets/images/industries/Education.svg';
+import RealEstate from '../../shared/assets/images/industries/Real_Estate.svg';
+import Applications from '../../shared/assets/images/industries/applications.png';
+import eCommerce from '../../shared/assets/images/industries/eCommerce.svg';
 import {BookIcon, CartIcon, EnterpriseIcon, HomeIcon} from '../../shared/ui/icons';
 
 const industriesData = [

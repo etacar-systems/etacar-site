@@ -1,0 +1,40 @@
+@import '../../../../../../shared/styles/colors';
+
+.container {
+  display: flex;
+  gap: 122px;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: start;
+
+  p {
+    margin-top: 0;
+  }
+}
+.outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  color: $clr-primary-text;
+  font-size: 24px;
+  font-weight: 500;
+}
+.image {
+  padding: 16px;
+  border: 1px solid;
+  border-radius: 36px;
+  height: 434px;
+
+  img {
+    height: 434px;
+  }
+}
+
+:global(.swiper-button-disabled) {
+  color: red;
+}

@@ -1,9 +1,9 @@
-import Michael from '../../../shared/assets/persons/MichaelFordyce.jpeg';
-import David from '../../../shared/assets/persons/DavidStark.jpeg';
-import Matthew from '../../../shared/assets/persons/Matthew.jpg';
-import Craig from '../../../shared/assets/persons/CraigSisilio.jpeg';
-import Vincent from '../../../shared/assets/persons/Vincent.jpg';
-import Uwe from '../../../shared/assets/persons/UweWeinkauf.jpeg';
+import Michael from '../../../shared/assets/images/persons/MichaelFordyce.jpeg';
+import David from '../../../shared/assets/images/persons/DavidStark.jpeg';
+import Matthew from '../../../shared/assets/images/persons/Matthew.jpg';
+import Craig from '../../../shared/assets/images/persons/CraigSisilio.jpeg';
+import Vincent from '../../../shared/assets/images/persons/Vincent.jpg';
+import Uwe from '../../../shared/assets/images/persons/UweWeinkauf.jpeg';
 
 export const PERSON_DATA = [
   {

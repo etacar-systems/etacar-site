@@ -2,7 +2,7 @@
 @import '../../shared/styles/fonts.scss';
 
 .container {
-  padding: 100px 0 100px;
+  padding: 140px 200px 160px 200px;
   margin-top: -50px;
   border-radius: 20px 20px 0 0;
 
@@ -29,14 +29,37 @@
 }
 
 .title {
-  max-width: 500px;
+  text-transform: uppercase;
   color: $clr-primary-text;
   font-family: $font-family-title;
+  margin-bottom: 100px;
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 100px;
-  white-space: pre-line;
   line-height: 58px;
+  letter-spacing: -2px;
+  display: inline-block;
+  -webkit-background-clip: text;
+
+  &:hover {
+    background: linear-gradient(90deg, #FAFBFF 0%, #1D14BF 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+
+  }
+
+  &.leave {
+    background: linear-gradient(90deg, #1F1F1F 0%, #1D14BF 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+  //max-width: 500px;
+  //color: $clr-primary-text;
+  //font-family: $font-family-title;
+  //font-size: 60px;
+  //font-weight: 700;
+  //margin-bottom: 100px;
+  //white-space: pre-line;
+  //line-height: 58px;
 
   &[data-title-color='dark'] {
     color: $clr-bg;

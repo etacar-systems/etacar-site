@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import classNames from 'classnames';
 
-import logoIcon from '../../shared/assets/Logo.svg';
+import logoIcon from '../../shared/assets/images/Logo.svg';
 
 import { navItems } from './data';
 import style from './NavHeader.module.scss';
 import Button from '../../shared/ui/Button/Button';
+import classNames from 'classnames';
 
 export const NavHeader = () => {
   return (

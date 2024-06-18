@@ -1,23 +1,17 @@
-@import './src/shared/styles/colors';
-@import './src/shared/styles/fonts';
+@import '../../styles/colors.scss';
 
 .tag {
-  gap: 10px;
-  color: $clr-light-blue;
-  background: #FAFBFF66;
-  padding: 8px 12px;
   border-radius: 100px;
-  font-family: $font-primary;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
+  padding: 8px 12px;
+  height: fit-content;
+  white-space: nowrap;
 
-  &.new {
-    padding: 10px 12px 10px 12px;
-    border-radius: 12px;
-    border: 1px solid $clr-accent-blue-light;
-    background-color: transparent;
-
+  &[data-theme='light'] {
+    color: $clr-light-blue;
+    background: $clr-bg;
+  }
+  &[data-theme='blue'] {
+    color: $clr-light-powder-blue;
+    background: $clr-accent-blue-light;
   }
 }

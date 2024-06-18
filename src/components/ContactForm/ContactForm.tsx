@@ -2,7 +2,7 @@ import styles from './ContactForm.module.scss';
 import {useState} from 'react';
 
 import Button from '../../shared/ui/Button/Button';
-import Tag from '../../shared/ui/Tag/Tag';
+import {Tag} from '../../shared/ui/Tag/Tag';
 import Field from '../../shared/ui/Field/Field';
 import {ClipIcon} from '../../shared/ui/icons';
 import Checkbox from '../../shared/ui/CheckBox/CheckBox';
@@ -72,10 +72,10 @@ export function ContactForm() {
                     Expected Budget
         </h4>
         <div className={styles.price}>
-          <Tag variant={'new'} text={'Up to $25k'}/>
-          <Tag variant={'new'} text={'$25k – $50k'}/>
-          <Tag variant={'new'} text={'$50k – $100k'}/>
-          <Tag variant={'new'} text={'Over $100k'}/>
+          <Tag title={'Up to $25k'} type={'light'}/>
+          <Tag  title={'$25k – $50k'} type={'light'}/>
+          <Tag  title={'$50k – $100k'} type={'light'}/>
+          <Tag title={'Over $100k'} type={'light'}/>
         </div>
       </div>
       <Field value={message} variant={'grey'} onChange={handleMessageChange}

@@ -1,14 +1,16 @@
-import styles from './Tag.module.scss';
+import React from 'react';
 
-type TagPropsType = {
-    text: string;
-    variant?: 'default' | 'new';
-};
+import style from './Tag.module.scss';
 
-export default function Tag({text, variant}: TagPropsType) {
+interface TagProps {
+  title: string;
+  type: 'light' | 'blue';
+}
+
+export const Tag = ({ title, type }: TagProps) => {
   return (
-    <div className={`${styles.tag} ${variant === 'new' ? styles.new : ''}`}>
-      {text}
+    <div className={style.tag} data-theme={type}>
+      {title}
     </div>
   );
-}
+};

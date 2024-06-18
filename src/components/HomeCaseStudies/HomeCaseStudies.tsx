@@ -1,9 +1,9 @@
 import '../../shared/styles/_all.scss';
 import styles from './HomeCaseStudies.module.scss';
 import Heading from '../../shared/ui/Heading/Heading';
-import LaptopImg from '../../shared/assets/case/LaptopPhoto.svg';
+import LaptopImg from '../../shared/assets/images/case/LaptopPhoto.svg';
 import {LeftArrowIcon, RightArrowIcon} from '../../shared/ui/icons';
-import Tag from '../../shared/ui/Tag/Tag';
+import {Tag} from '../../shared/ui/Tag/Tag';
 import Button from '../../shared/ui/Button/Button';
 
 const tags = [
@@ -30,7 +30,7 @@ export function HomeCaseStudies() {
           </div>
           <h4 className={styles.descHeading}>Business marketplace</h4>
           <div className={styles.tagList}>
-            {tags.map(tag => <Tag key={tag} text={tag}/>)}
+            {tags.map(tag => <Tag key={tag} title={tag} type={'light'}/>)}
           </div>
           <div className={styles.text}>
             {description.map((text, index) => <p key={index}>{text}</p>)}

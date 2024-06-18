@@ -1,28 +1,28 @@
 import '../../shared/styles/_all.scss';
 import {GetStarted} from './components/GetStarted/GetStarted';
 import {OurMission} from './components/OurMission/OurMission';
-import {Cycle} from '../../components/Cycle/Cycle';
 import {Services} from '../../components/Services/Services';
 import {Industries} from '../../components/Industries/Industries';
-import {Techs} from '../../components/Techs/Techs';
 import {Reviews} from '../../components/Reviews/Reviews';
-import {GetEstimation} from '../../components/GetEstimation/GetEstimation';
-import {HomeCaseStudies} from '../../components/HomeCaseStudies/HomeCaseStudies';
+import {GetEstimation} from './components/GetEstimation/GetEstimation';
+import {Development} from './components/Development';
+import {Scroller} from './components/Development/Scroller/Scroller';
+import {CaseStudies} from './components/CaseStudies';
 
 
 export const Home = () => {
   return (
-    <main className='home'>
+    <div>
       <GetStarted/>
       <OurMission/>
-      <Cycle/>
-      <Techs/>
-      <HomeCaseStudies/>
+      <Development/>
+      <Scroller/>
+      <CaseStudies/>
       <Services/>
       <Industries/>
       <Reviews/>
       <GetEstimation/>
-    </main>
+    </div>
 
   );
 

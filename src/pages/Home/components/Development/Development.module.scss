@@ -1,0 +1,65 @@
+@import '../../../../shared/styles/colors';
+
+.cycle {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 140px 200px 80px 200px;
+  gap: 80px;
+  margin-top: -90px;
+}
+
+.mainText {
+  width: 680px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  width: 1200px;
+}
+
+.description {
+  width: 590px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text {
+  font-family: "GothamProRegular", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+
+
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "GothamProRegular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: $clr-second-text;
+}
+
+.number {
+  color: $clr-light-grey;
+  width: 32px;
+}
+
+.blue {
+  color: $clr-accent-blue;
+}
+

@@ -1,7 +1,7 @@
 import '../../../../shared/styles/_all.scss';
 import {PointIcon, RightArrowIcon} from '../../../../shared/ui/icons';
 import Button from '../../../../shared/ui/Button/Button';
-import team from '../../../../shared/assets/Number.svg';
+import team from '../../../../shared/assets/images/Number.svg';
 import styles from './OurMission.module.scss';
 import Heading from '../../../../shared/ui/Heading/Heading';
 
