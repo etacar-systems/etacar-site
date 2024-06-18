@@ -1,7 +1,7 @@
-import React, {forwardRef, Ref} from 'react';
+import React, {forwardRef, ReactElement, Ref} from 'react';
 import {IconProps} from './index';
 
-const LeftArrowSvg: React.FC<IconProps> = ({mainColor = 'currentColor'}) => (
+const LeftArrowSvg= ({mainColor = 'currentColor'}: IconProps): ReactElement =>  (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
     <g opacity="0.4" clipPath="url(#clip0_290_2218)">
       <path

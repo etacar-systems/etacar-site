@@ -1,8 +1,8 @@
-import React, {forwardRef} from 'react';
+import React, {forwardRef, ReactElement} from 'react';
 import {IconProps} from './index';
 
 
-const BottomRightArrowSvg: React.FC<IconProps> = ({mainColor = 'currentColor'}) => (
+const BottomRightArrowSvg = ({mainColor = 'currentColor'}: IconProps): ReactElement => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
     <g clipPath="url(#clip0_551_1839)">
       <path

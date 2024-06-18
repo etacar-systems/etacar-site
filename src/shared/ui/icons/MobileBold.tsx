@@ -1,8 +1,8 @@
-import React, {forwardRef} from 'react';
+import React, {forwardRef, ReactElement} from 'react';
 import {IconProps} from './index';
 
 
-const MobileBoldSvg: React.FC<IconProps> = ({mainColor = '#1D14BF'}) => (
+const MobileBoldSvg= ({mainColor = 'currentColor'}: IconProps): ReactElement =>  (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
     <path
       d="M15 20.1729L13.6923 18.8652C13.3417 18.5146 12.7733 18.5146 12.4227 18.8652C12.0721 19.2158 12.0721 19.7842 12.4227 20.1348L14.6818 22.3939C14.8575 22.5697 15.1425 22.5697 15.3182 22.3939L20.5773 17.1348C20.9279 16.7842 20.9279 16.2158 20.5773 15.8652C20.2267 15.5146 19.6583 15.5146 19.3077 15.8652L15 20.1729Z"

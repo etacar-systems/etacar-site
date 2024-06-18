@@ -1,8 +1,8 @@
-import React, {forwardRef} from 'react';
+import React, {forwardRef, ReactElement} from 'react';
 import {IconProps} from './index';
 
 
-const TeamSvg: React.FC<IconProps> = ({mainColor = '#1D14BF'}) => (
+const TeamSvg= ({mainColor = 'currentColor'}: IconProps): ReactElement =>  (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
     <g clipPath="url(#clip0_106_316)">
       <mask id="path-1-outside-1_106_316" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"

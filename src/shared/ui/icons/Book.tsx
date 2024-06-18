@@ -1,8 +1,8 @@
-import React, {forwardRef, Ref} from 'react';
+import React, {forwardRef, ReactElement, Ref} from 'react';
 import {IconProps} from './index';
 
 
-const BookSvg: React.FC<IconProps> = ({mainColor = '#1D14BF'}) => (
+const BookSvg=({mainColor = '#1D14BF'}: IconProps): ReactElement => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
     <path
       d="M19.898 16H7.898C6.968 16 6.503 16 6.121 16.102C5.61231 16.2384 5.14849 16.5063 4.77618 16.8788C4.40386 17.2513 4.13616 17.7152 4 18.224"
