@@ -18,6 +18,10 @@
   font-weight: 700;
   text-transform: uppercase;
   font-family: $font-family-title;
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .div1 {

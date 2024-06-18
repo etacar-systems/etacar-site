@@ -16,6 +16,10 @@
   font-weight: 700;
   line-height: 60px;
   font-family: $font-family-title;
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
   & > span::after {
     content: '\A';
     white-space: pre;

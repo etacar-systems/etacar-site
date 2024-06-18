@@ -32,6 +32,11 @@
   white-space: pre-line;
   line-height: 58px;
 
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   &[data-title-color='dark'] {
     color: $color--light;
   }

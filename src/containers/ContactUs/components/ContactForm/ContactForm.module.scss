@@ -12,6 +12,9 @@
   margin: 0 auto;
   display: flex;
   gap: 20px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 }
 .form_wrapper {
   display: flex;
@@ -19,6 +22,18 @@
   justify-content: space-between;
   width: 100%;
 }
+
+.photo {
+  display: flex;
+  justify-content: center;
+  & > img {
+    @media (max-width: 768px) {
+      width: 50vw;
+    }
+  }
+
+}
+
 .form {
   border-radius: 16px;
   border: 1px solid $color--text-light;
@@ -40,6 +55,11 @@
 .contacts {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .title {
@@ -54,6 +74,9 @@
   border-radius: 16px;
   width: 300px;
   gap: 20px;
+  @media (max-width: 768px) {
+    width: 75vw;
+  }
 }
 
 .info__text {
