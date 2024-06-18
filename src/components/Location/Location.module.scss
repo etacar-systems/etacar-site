@@ -55,6 +55,13 @@
     align-items: center;
   }
 
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
 }
 
 .geographyDataElement {
