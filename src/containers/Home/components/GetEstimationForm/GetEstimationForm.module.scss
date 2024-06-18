@@ -143,11 +143,17 @@
 }
 
 .additional {
-  @media (max-width: 768px) {
-    gap: 1rem;
-  }
 
+  @media (max-width: 768px) {
+    gap: 2rem;
+  }
+  
 }
+
+.button {
+  margin-top: 1rem;
+}
+
 .checkbox_container {
   display: flex;
   position: relative;

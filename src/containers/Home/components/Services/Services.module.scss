@@ -5,6 +5,9 @@
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
   & > div:last-child {
     color: $color--white !important;
     background-color: $color--lightblue;
