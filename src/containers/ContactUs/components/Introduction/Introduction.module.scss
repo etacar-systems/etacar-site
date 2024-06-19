@@ -28,12 +28,15 @@
 }
 
 .div1 {
+  align-self: flex-end;
   text-align: end;
   grid-area: 1 / 1 / 2 / 2;
 }
 .div2 {
   grid-area: 2 / 2 / 3 / 3;
+  text-align: start;
 }
 .div3 {
   grid-area: 3 / 1 / 4 / 2;
+  text-align: end;
 }

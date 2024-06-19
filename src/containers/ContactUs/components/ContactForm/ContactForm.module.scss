@@ -1,5 +1,21 @@
 @import '../../../../styles/colors.scss';
 
+@mixin linkText {
+  color: $color--lightblue;
+  text-align: left;
+  & a,
+  & a:visited {
+    color: $color--lightblue;
+    text-decoration: none;
+  }
+}
+
+@mixin linkBlock {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 0;
+}
+
 .container {
   background: #1f1f1f;
   padding: 100px 0 100px;
@@ -83,10 +99,6 @@
   font-size: 14px;
   color: #fafbff;
 }
-.info__link {
-  color: #90a7ff;
-  text-align: right;
-}
 
 .textarea {
   resize: none;
@@ -104,4 +116,15 @@
   &::placeholder {
     color: $color--lightblue;
   }
+}
+
+.linkGetInTouch,
+.linkGoogleMap {
+  @include linkBlock();
+}
+.getInTouch {
+  @include linkText();
+}
+.googleMap {
+  @include linkText();
 }
