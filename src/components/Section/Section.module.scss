@@ -4,6 +4,9 @@
   padding: 100px 0 100px;
   margin-top: -50px;
   border-radius: 20px 20px 0 0;
+  @media (max-width: 1024px) {
+    padding: 100px 20px 100px;
+  }
 
   &[data-theme='light'] {
     background: $color--white;
@@ -31,6 +34,11 @@
   margin-bottom: 100px;
   white-space: pre-line;
   line-height: 58px;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
   &[data-title-color='dark'] {
     color: $color--light;

@@ -51,11 +51,17 @@
   padding: 40px 80px;
   overflow: hidden;
   box-shadow: 0px -4px 12px 0px #b2b2b20a;
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
 }
 
 .container {
   @include flexContainer(flex-start, flex-start, row, 66px);
   @include center;
+  @media (max-width: 768px) {
+    @include flexContainer(flex-start, flex-start, column, 1rem)
+  }
 }
 
 .address {
@@ -90,6 +96,9 @@
   @include flexContainer(space-between, flex-start, row, 0px);
   padding: 30px 0 80px;
   @include center;
+  @media (max-width: 768px) {
+    @include flexContainer(flex-start, flex-start, column, 1rem)
+  }
 }
 .info__links,
 .linkedIn__link {
@@ -98,6 +107,9 @@
 
 .info__links {
   @include flexContainer(flex-start, flex-start, row, 70px);
+  @media (max-width: 768px) {
+    @include flexContainer(flex-start, flex-start, column, 1rem)
+  }
 }
 
 .linkGetInTouch,

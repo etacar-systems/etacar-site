@@ -10,6 +10,9 @@
   justify-content: center;
   background-color: $color--extra-lightblue;
   border-radius: 20px 20px 0 0;
+  @media (max-width: 768px) {
+    padding: 0 20px 160px;
+  }
 }
 
 .contentContainer {
@@ -18,12 +21,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .sectionHeader {
-  width: 100%;
+  align-self: flex-start;
   padding-top: 10rem;
-  text-align: left;
   font-family: Chakra Petch;
   font-size: 3.75rem;
   font-weight: 700;
@@ -31,23 +36,30 @@
   color: $color--text-dark;
 
   @media (max-width: 768px) {
-    line-height: 3.625rem;
+    line-height: 3rem;
+    font-size: 3rem;
   }
 }
 
 .geographyData {
-  width: 100%;
   padding-top: 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
 }
@@ -57,22 +69,29 @@
   justify-content: flex-start;
   align-items: flex-start;
   
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
   }
 
   & .elementTitle {
     width: 10rem;
     color: $color--text-light;
     font-size: 1.5rem;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   & .elementTags {
     color: $color--text-dark;
     width: 25rem;
     word-spacing: 1rem;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 
 
   }
