@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import style from './Input.module.scss';
 
 interface InputProps {
@@ -7,15 +6,16 @@ interface InputProps {
   placeholder?: string;
   required?: boolean;
   theme?: 'light' | 'dark';
+  name?: string;
 }
 
-export const Input = ({ label, type, placeholder, theme = 'light' }: InputProps) => {
+export const Input = ({ label, type, required, placeholder, name, theme = 'light' }: InputProps) => {
   return (
     <div className={style.input_container}>
       <label data-theme={theme === 'dark' ? true : false} className={style.input_label}>
         {label}
       </label>
-      <input className={style.input} type={type} placeholder={placeholder} required />
+      <input name={name} className={style.input} type={type} placeholder={placeholder} required={required} />
     </div>
   );
 };
