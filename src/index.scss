@@ -3,7 +3,8 @@
 body {
   margin: 0;
   font-family: $font-family-main;
+  color: $color--text-light;
+  line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $color--text-light;
 }

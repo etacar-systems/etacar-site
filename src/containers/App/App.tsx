@@ -1,13 +1,18 @@
-import React from "react";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-import styles from "./App.module.scss";
-import { NavHeader } from "../../components/NavHeader";
+import { NavHeader } from '../../components/NavHeader';
+import { routesConfig } from '../../routes/routesConfig';
 
 export const App = () => {
   return (
-    <div className={styles.App}>
+    <>
       <NavHeader />
-      <h1>HELLO ETACAR</h1>
-    </div>
+      <Routes>
+        {routesConfig.map((route, index) => (
+          <Route key={index} path={route.path} element={route.element} />
+        ))}
+      </Routes>
+    </>
   );
 };

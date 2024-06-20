@@ -25,5 +25,5 @@ export const navItems: NavItem[] = [
   {
     title: 'Contact us',
     route: CONTACT,
-  }
+  },
 ];

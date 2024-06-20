@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  gap: 24px;
+}
+.button {
+  cursor: pointer;
+  margin-bottom: 24px;
+
+}
+.backButton {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,70 @@
+@import '../../../../styles/colors.scss';
+
+.services {
+  background-color: $color--text-dark;
+  border-radius: 1.25rem 1.25rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 8.75rem 12.5rem 10rem;
+
+  @media (max-width: 1250px) {
+    flex-wrap: wrap;
+    padding: 8.75rem 20px 10rem;
+
+    > div:nth-last-of-type(1) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 768px) {
+    > div {
+      display: grid;
+      gap: 1.25rem;
+    }
+  }
+}
+
+.container {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.service {
+  box-sizing: border-box;
+  display: grid;
+  border: solid 1px $color--text-light;
+  border-radius: 1rem;
+  max-width: 24.175rem;
+  padding: 1rem 1.5rem;
+  color: $color--lightgray;
+  gap: 1rem;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: left;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: $color--light;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    font-size: 0.75rem;
+
+    div {
+      padding: 0.375rem 0.625rem;
+      color: $color--text-light;
+    }
+  }
+}
