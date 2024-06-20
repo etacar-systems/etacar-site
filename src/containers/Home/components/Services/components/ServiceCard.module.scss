@@ -11,6 +11,9 @@
   justify-content: space-between;
   color: $color--text-dark;
   transition: all 0.2s;
+  @media (max-width: 815px) {
+    width: 100%;
+  }
 }
 
 .text {

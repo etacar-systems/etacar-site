@@ -4,6 +4,7 @@ import colton from '../../../../assets/images/ContactUs/colton_bollinger.png';
 import { Input } from '../../../../components/UI/Input';
 import style from './ContactForm.module.scss';
 import { Button } from '../../../../components/Button';
+import linkArrow from '../../../../assets/icons/linkArrow.svg';
 
 export const ContactForm = () => {
   return (
@@ -31,7 +32,16 @@ export const ContactForm = () => {
               <div className={style.info}>
                 <div className={style.info__text}>info@etacar.io</div>
                 <div className={style.info__text}>+1 (831) 333-6202</div>
-                <div className={style.info__link}>Get in touch</div>
+                <div className={style.linkGetInTouch}>
+                  <div className={style.getInTouch}>
+                    <a target='_blank' href='mailto:info@etacar.io'>
+                      Get in touch
+                    </a>
+                  </div>
+                  <div className={style.linkIcon}>
+                    <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
+                  </div>
+                </div>
               </div>
             </div>
             <div className={style.right_section}>
@@ -39,7 +49,16 @@ export const ContactForm = () => {
               <div className={style.info}>
                 <div className={style.info__text}>313 Pasadera Court, Monterey,</div>
                 <div className={style.info__text}>California 93940</div>
-                <div className={style.info__link}>Google map</div>
+                <div className={style.linkGoogleMap}>
+                <div className={style.googleMap}>
+                  <a target='_blank' href='https://maps.app.goo.gl/38kmmrR4fv51q8XE9'>
+                    Google map
+                  </a>
+                </div>
+                <div className={style.linkIcon}>
+                  <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
+                </div>
+              </div>
               </div>
             </div>
           </div>

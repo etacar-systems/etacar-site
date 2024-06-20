@@ -5,13 +5,13 @@
 }
 
 .wrapper {
-  padding: 0 0 160px;
+  padding: 0 0 100px;
   display: flex;
   justify-content: center;
   background-color: $color--extra-lightblue;
   border-radius: 20px 20px 0 0;
-  @media (max-width: 768px) {
-    padding: 0 20px 160px;
+  @media (max-width: 1200px) {
+    padding: 0 20px 100px;
   }
 }
 
@@ -28,9 +28,10 @@
 
 .sectionHeader {
   align-self: flex-start;
-  padding-top: 10rem;
+  padding-top: 100px;
   font-family: Chakra Petch;
   font-size: 3.75rem;
+  line-height: 3.625rem;
   font-weight: 700;
   text-transform: uppercase;
   color: $color--text-dark;
@@ -42,7 +43,7 @@
 }
 
 .geographyData {
-  padding-top: 10rem;
+  padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -98,7 +99,7 @@
 }
 
 .mapImage {
-  padding-top: 10rem;
+  padding-top: 80px;
 
   & > img {
     width: 100%;

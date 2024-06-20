@@ -17,7 +17,7 @@ interface ReviewsProps {
 
 export const Reviews = ({ arrowColor, textColor, theme }: ReviewsProps) => {
   const { width } = useViewportSize();
-  const slidesCount = width < 768 ? 1 : 2;
+  const slidesCount = width < 1200 ? 1 : 2;
   return (
     <Section textColor={textColor} theme={theme} title={'REVIEWS'}>
       <div className={styles.swiper}>

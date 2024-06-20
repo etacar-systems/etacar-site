@@ -4,6 +4,7 @@ header {
   position: sticky;
   top: 0;
   background-color: $color--white;
+  z-index: 100;
 }
 .container {
   padding: 32px 0;
@@ -14,6 +15,10 @@ header {
   font-weight: 600;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    padding: 32px 20px;
+  }
 }
 .navigation {
   display: flex;
@@ -28,4 +33,39 @@ header {
   &__active {
     color: $color--blue;
   }
+}
+
+.burger_button {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+
+  & span {
+    position: absolute;
+    top: 9px;
+    width: 30px;
+    height: 2px;
+    background-color: $color--blue;
+  }
+}
+
+.burger_button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 2px;
+  background-color: $color--blue;
+
+}
+
+.burger_button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: $color--blue;
+  
 }

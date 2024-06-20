@@ -1,10 +1,29 @@
 @import '../../../../styles/colors.scss';
 
+@mixin linkText {
+  color: $color--lightblue;
+  text-align: left;
+  & a,
+  & a:visited {
+    color: $color--lightblue;
+    text-decoration: none;
+  }
+}
+
+@mixin linkBlock {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 0;
+}
+
 .container {
   background: #1f1f1f;
   padding: 100px 0 100px;
   margin-top: -50px;
   border-radius: 20px 20px 0 0;
+  @media (max-width: 1200px) {
+    padding: 100px 20px 100px;
+  }
 }
 
 .contact_form_wrapper {
@@ -21,6 +40,9 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  @media (max-width: 1200px) {
+    gap: 20px;
+  }
 }
 
 .photo {
@@ -83,10 +105,6 @@
   font-size: 14px;
   color: #fafbff;
 }
-.info__link {
-  color: #90a7ff;
-  text-align: right;
-}
 
 .textarea {
   resize: none;
@@ -104,4 +122,15 @@
   &::placeholder {
     color: $color--lightblue;
   }
+}
+
+.linkGetInTouch,
+.linkGoogleMap {
+  @include linkBlock();
+}
+.getInTouch {
+  @include linkText();
+}
+.googleMap {
+  @include linkText();
 }
