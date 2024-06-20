@@ -9,9 +9,6 @@
   border-radius: 20px;
   border: 1px solid $color--white;
   padding: 16px;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
 }
 .title {
   color: $color--lightblue;
