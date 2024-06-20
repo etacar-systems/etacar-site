@@ -104,6 +104,12 @@
   }
 }
 
+.smallHighTextBlock {
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
+}
+
 .smallTextBlock {
   @media (max-width: 1200px) {
     padding: 20px 0;
