@@ -141,7 +141,13 @@ export const GetEstimationForm = () => {
             <div className={style.tell_us_more}>
               <div className={style.tell_us_more_header}>Tell us more about your project</div>
               <div className={style.buttons}>
-                <textarea className={style.textarea} name='message' placeholder='Message'></textarea>
+                <textarea
+                  minLength={5}
+                  className={style.textarea}
+                  required
+                  name='message'
+                  placeholder='Message'
+                ></textarea>
               </div>
             </div>
             <div className={style.attach_file}>

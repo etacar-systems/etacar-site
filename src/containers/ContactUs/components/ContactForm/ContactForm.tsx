@@ -46,7 +46,7 @@ export const ContactForm = () => {
               <Input name='email' type='email' label='Email*' required placeholder='Example@gmail.com' theme={'dark'} />
               <ValidationError prefix='email' field='email' errors={state.errors} />
             </div>
-            <textarea name='message' className={style.textarea} placeholder='Message'></textarea>
+            <textarea minLength={5} required name='message' className={style.textarea} placeholder='Message'></textarea>
             <Button onClick={() => {}} title={'Send request'} type={'ghost'} />
           </form>
           <div className={style.contacts}>
