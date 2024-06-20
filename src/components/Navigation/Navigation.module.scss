@@ -4,9 +4,8 @@
 }
 .button {
   cursor: pointer;
-  @media (max-width: 768px) {
-    margin-bottom: 24px;
-  }
+  margin-bottom: 24px;
+
 }
 .backButton {
   transform: rotate(180deg);
