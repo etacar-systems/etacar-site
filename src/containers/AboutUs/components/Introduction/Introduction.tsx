@@ -1,6 +1,8 @@
 import { aboutUsImages } from '../../../../assets/images/AboutUs';
 import style from './Introduction.module.scss';
 import { Button } from '../../../../components/Button';
+import { CONTACT } from '../../../../routes';
+import { useNavigate } from 'react-router';
 
 const infoText = [
   'EtaCar Systems is a privately held software development outsourcing company.',
@@ -9,6 +11,7 @@ const infoText = [
 ];
 
 export const Introduction = () => {
+  const navigate = useNavigate();
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
@@ -27,12 +30,7 @@ export const Introduction = () => {
               <div className={style.info}>{string}</div>
             ))}
             <div className={style.buttonBlock}>
-              <Button 
-                title='Get In Touch' 
-                type='ghost' 
-                onClick={() => {}}
-                icon={true}
-                />
+              <Button title='Get In Touch' type='ghost' onClick={() => navigate('/' + CONTACT)} icon={true} />
             </div>
           </div>
         </div>

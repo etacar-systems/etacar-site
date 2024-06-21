@@ -167,7 +167,7 @@ export const GetEstimationForm = () => {
                 <input className={style.checkbox} type='checkbox' name='terms' required />
                 <div>I agree with Terms of use and Privacy policy</div>
               </label>
-              <Button onClick={() => {}} title='Get Estimation' type='solid' fullWidth />
+              <Button onClick={() => {}} title='Get Estimation' type='ghost' fullWidth />
             </div>
           </form>
         </div>

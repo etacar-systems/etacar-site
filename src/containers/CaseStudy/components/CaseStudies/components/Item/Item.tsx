@@ -1,7 +1,9 @@
 import React from 'react';
-import { Button } from '../../../../../../components/Button';
+import { useNavigate } from 'react-router';
 
+import { Button } from '../../../../../../components/Button';
 import { TagsContainer } from '../../../../../../components/TagsContainer';
+import { CONTACT } from '../../../../../../routes';
 import style from './Item.module.scss';
 
 interface ItemProps {
@@ -14,6 +16,7 @@ interface ItemProps {
 }
 
 export const Item = ({ image, paragraphs, tags, title, orderReverse, index }: ItemProps) => {
+  const navigate = useNavigate();
   return (
     <>
       {index === 2 ? (
@@ -23,7 +26,7 @@ export const Item = ({ image, paragraphs, tags, title, orderReverse, index }: It
             <div>Get a free project estimation</div>
           </div>
           <div>
-            <Button type='solid' title='Get started' icon={true} onClick={() => {}} />
+            <Button type='ghost' title='Get started' icon={true} onClick={() => navigate('/' + CONTACT)} />
           </div>
         </div>
       ) : undefined}
