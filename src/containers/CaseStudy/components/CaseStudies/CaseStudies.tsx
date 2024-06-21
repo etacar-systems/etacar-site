@@ -28,10 +28,12 @@ export const CaseStudies = () => {
 
   const handleTitleFilter = (value: string) => {
     setTitleFilterKeyword(value.toLowerCase());
+    setCurrentPage(1);
   };
 
   const handleTypeFilter = (value: string) => {
     setTypeFilterKeyword(value.toLowerCase());
+    setCurrentPage(1);
   };
 
   const handleClickNext = () => {
