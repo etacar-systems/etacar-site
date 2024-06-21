@@ -20,8 +20,8 @@ interface CaseStudiesItem {
 
 export const CaseStudies = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [titleFilterKeyword, setTitleFilterKeyword] = useState('');
-  const [typeFilterKeyword, setTypeFilterKeyword] = useState('');
+  const [titleFilterKeyword, setTitleFilterKeyword] = useState('all');
+  const [typeFilterKeyword, setTypeFilterKeyword] = useState('all');
   const [filteredCases, setFilteredCases] = useState<CaseStudiesItem[]>(caseStudies);
   const [currentItems, setCurrentItems] = useState<CaseStudiesItem[]>([]);
   const [totalPages, setTotalPages] = useState(1);
