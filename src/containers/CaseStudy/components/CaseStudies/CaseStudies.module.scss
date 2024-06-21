@@ -39,6 +39,14 @@
         background-color: $color--lightblue;
       }
     }
+    @media (max-width: 1200px) {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 
@@ -49,10 +57,12 @@
 }
 
 .cases_count {
-  width: 100%;
   color: $color--lightgray;
   font-size: 24px;
   margin: 0 0 100px;
+  @media (max-width: 1200px) {
+    padding: 0 20px;
+  }
 }
 
 .pagination_controls {
