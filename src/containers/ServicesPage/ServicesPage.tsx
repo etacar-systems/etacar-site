@@ -12,7 +12,7 @@ export const ServicesPage = () => {
     <div>
       <Introducion />
       <Services />
-      <Models/>
+      <Models />
       <Industries textColor={'dark'} theme={'dark'} />
       <Reviews textColor={'dark'} theme={'dark'} />
       <Footer />

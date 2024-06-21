@@ -1,5 +1,5 @@
 import aboutUs from './aboutUs.png';
-import map from './map.png'
+import map from './map.png';
 import ourTeam from './ourTeam.png';
 import workExpirience1 from './workExpirience1.png';
 import workExpirience2 from './workExpirience2.png';

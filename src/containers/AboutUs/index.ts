@@ -1,2 +1,1 @@
-export { AboutUs } from "./AboutUs";
-
+export { AboutUs } from './AboutUs';

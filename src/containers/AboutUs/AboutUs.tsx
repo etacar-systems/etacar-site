@@ -5,16 +5,14 @@ import { Location } from '../../components/Location';
 import { Reviews } from '../../commonSections/Reviews';
 import { aboutUsGeographyData } from './data';
 
-
-
 export const AboutUs = () => {
   return (
     <>
       <Introduction />
       <Expirience />
-      <Location geographyData={aboutUsGeographyData}/>
+      <Location geographyData={aboutUsGeographyData} />
       <Reviews textColor={'dark'} theme={'dark'} />
-      <Footer/>
+      <Footer />
     </>
   );
 };

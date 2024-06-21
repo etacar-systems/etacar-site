@@ -3,7 +3,6 @@ import { aboutUsIcons } from '../../../../assets/icons/AboutUs';
 import { data, expirience } from './data';
 import style from './Expirience.module.scss';
 
-
 export const Expirience = () => {
   return (
     <div className={style.wrapper}>

@@ -6,4 +6,4 @@ export const ServicesImages = {
   ourTeam1,
   ourTeam2,
   ourTeam3,
-}
+};

@@ -14,4 +14,4 @@ export const homePageIcons = {
   numberIcon3,
   numberIcon4,
   numberIcon5,
-}
+};

@@ -32,12 +32,16 @@ export const Item = ({ image, paragraphs, tags, title }: ItemProps) => {
             ))}
           </div>
         </div>
-        {width > 768 ? <Button icon onClick={() => navigate(CASE_STUDY)} title={'All cases'} type={'ghost'} /> : undefined}
+        {width > 768 ? (
+          <Button icon onClick={() => navigate(CASE_STUDY)} title={'All cases'} type={'ghost'} />
+        ) : undefined}
       </div>
       <div className={style.image}>
         <img src={image} alt={`${title}_icon`} />
       </div>
-      {width < 768 ? <Button icon onClick={() => navigate(CASE_STUDY)} title={'All cases'} type={'ghost'} /> : undefined}
+      {width < 768 ? (
+        <Button icon onClick={() => navigate(CASE_STUDY)} title={'All cases'} type={'ghost'} />
+      ) : undefined}
     </div>
   );
 };

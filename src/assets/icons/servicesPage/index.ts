@@ -4,9 +4,8 @@ import design from './design.svg';
 import mobile from './mobile.svg';
 import pm from './PM.svg';
 import point from './point.svg';
-import support from './support.svg'
+import support from './support.svg';
 import buttonArrow from './buttonArrow.svg';
-
 
 export const servicePageIcons = {
   buttonArrow,
@@ -17,4 +16,4 @@ export const servicePageIcons = {
   point,
   support,
   success,
-}
+};
