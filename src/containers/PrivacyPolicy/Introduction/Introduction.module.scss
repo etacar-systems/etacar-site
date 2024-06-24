@@ -1,11 +1,11 @@
-@import '../../styles/colors.scss';
+@import '../../../styles/colors.scss';
 
 .container {
-  padding: 100px 0 100px;
+  padding: 100px 0 50px;
   margin-top: -50px;
   border-radius: 20px 20px 0 0;
   @media (max-width: 1200px) {
-    padding: 100px 20px 100px;
+    padding: 100px 20px 50px;
   }
 }
 .container_inner {
@@ -15,8 +15,18 @@
   max-width: 1200px;
   margin: 0 auto 100px;
 }
+.pageTitle {
+  width: 100%;
+  color: $color--text-dark;
+  font-family: $font-family-title;
+  font-size: 60px;
+  line-height: 58px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .title {
-  width: 60%;
+  width: 100%;
   color: $color--text-dark;
   font-family: $font-family-title;
   font-size: 24px;
@@ -27,8 +37,4 @@
     font-size: 36px;
     line-height: 36px;
   }
-}
-
-.secondaryText {
-  width: 60%;
 }

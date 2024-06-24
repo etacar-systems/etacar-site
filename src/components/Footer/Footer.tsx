@@ -1,7 +1,7 @@
 import style from './Footer.module.scss';
 import linkArrow from '../../assets/icons/linkArrow.svg';
 import { Link } from 'react-router-dom';
-import { TERMS_OF_USE } from '../../routes';
+import { PRIVACY_POLICY, TERMS_OF_USE } from '../../routes';
 
 export const Footer = () => {
   return (
@@ -62,7 +62,9 @@ export const Footer = () => {
             Terms of use
           </Link>
           <div className={style.footerEnd__textContent}>|</div>
-          <div className={style.footerEnd__textContent}>Privacy policy</div>
+          <Link to={PRIVACY_POLICY} className={style.footerEnd__textContent}>
+            Privacy policy
+          </Link>
         </div>
       </div>
     </footer>

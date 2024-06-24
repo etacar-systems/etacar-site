@@ -1,0 +1,90 @@
+@import '../../../styles/colors.scss';
+
+.container {
+  padding: 0 0 100px;
+  margin-top: -50px;
+  border-radius: 20px 20px 0 0;
+  @media (max-width: 1200px) {
+    padding: 0px 20px 100px;
+  }
+}
+.container_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 100px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.card_container {
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: $color--extra-lightblue;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  & .card_title {
+    color: $color--blue;
+  }
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+
+  & .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color--light;
+    border-radius: 2rem;
+    padding: 2rem;
+    gap: 1rem;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    & .row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $color--container-blue;
+      & .row_title,
+      & .row_string {
+        color: $color--text-dark;
+        width: 33%;
+        padding: 1rem;
+      }
+      & .row_title {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.title {
+  width: 100%;
+  color: $color--text-dark;
+  font-family: $font-family-title;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
