@@ -1,17 +1,17 @@
 export const titleSortTags = [
   'All',
   'Enterprise',
-  'Startups',
+  'Startup',
   'eCommerce',
   'Education',
   'Management',
   'Restaraunt',
-  'Real Estate',
+  'Real estate',
   'Media',
   'Marketing',
-  'Charity',
-  'Planners',
+  'Marketplace',
+  'Design',
   'Blockchain',
 ];
 
-export const parSortTags = ['All', 'Web', 'Mobile', 'Other'];
+export const parSortTags = ['All', 'Web', 'Mobile', 'React', 'Ruby', 'Java'];

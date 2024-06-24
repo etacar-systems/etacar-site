@@ -47,7 +47,7 @@ export const NavHeader = () => {
             onClick={() => {
               menuActive ? setMenuActive(false) : setMenuActive(true);
             }}
-            className={style.burger_button}
+            className={menuActive ? style.burger_button_active : style.burger_button}
           >
             <span />
           </div>

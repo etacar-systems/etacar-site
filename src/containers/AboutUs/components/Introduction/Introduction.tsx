@@ -1,8 +1,8 @@
 import { aboutUsImages } from '../../../../assets/images/AboutUs';
-import style from './Introduction.module.scss';
 import { Button } from '../../../../components/Button';
 import { CONTACT } from '../../../../routes';
 import { useNavigate } from 'react-router';
+import style from './Introduction.module.scss';
 
 const infoText = [
   'EtaCar Systems is a privately held software development outsourcing company.',
