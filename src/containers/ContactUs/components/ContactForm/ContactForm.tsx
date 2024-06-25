@@ -57,7 +57,7 @@ export const ContactForm = () => {
                 <div className={style.info__text}>+1 (831) 333-6202</div>
                 <div className={style.linkGetInTouch}>
                   <div className={style.getInTouch}>
-                    <a target='_blank' href='mailto:info@etacar.io'>
+                    <a target='_blank' href='mailto:msterjanov@gmail.com'>
                       Get in touch
                     </a>
                   </div>
