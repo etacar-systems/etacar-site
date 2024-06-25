@@ -5,3 +5,4 @@ export const ABOUT = `/about`;
 export const CONTACT = `/contact`;
 export const TERMS_OF_USE = `/terms`;
 export const PRIVACY_POLICY = `/privacy`;
+export const NOT_FOUND_PAGE = `*`;

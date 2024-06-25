@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import classNames from 'classnames';
 
@@ -15,6 +15,7 @@ export const NavHeader = () => {
   const navigate = useNavigate();
   const { width } = useViewportSize();
   const [menuActive, setMenuActive] = useState(false);
+
   return (
     <header>
       <div className={style.container}>
