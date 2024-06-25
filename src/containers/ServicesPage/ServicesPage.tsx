@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Introducion } from './components/Introducion';
 import { Services } from './components/Services';
 import { Footer } from '../../components/Footer/Footer';
@@ -8,6 +8,9 @@ import { Industries } from '../../commonSections/Industries';
 import { Models } from './components/Models';
 
 export const ServicesPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Introducion />

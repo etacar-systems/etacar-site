@@ -26,9 +26,17 @@
   color: $color--lightblue;
   width: 80%;
   background: transparent;
-  &:focus {
-    color: $color--blue;
-    border-bottom: 1px solid $color--blue;
+  &[data-theme='true'] {
+    &:focus {
+      color: $color--light;
+      border-bottom: 1px solid $color--blue;
+    }
+  }
+  &[data-theme='false'] {
+    &:focus {
+      color: $color--blue;
+      border-bottom: 1px solid $color--blue;
+    }
   }
   &::placeholder {
     color: $color--lightblue;

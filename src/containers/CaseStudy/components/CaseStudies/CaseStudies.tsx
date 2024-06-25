@@ -52,11 +52,16 @@ export const CaseStudies = () => {
     let filteredData = caseStudies;
 
     if (titleFilterKeyword !== 'all') {
-      filteredData = filteredData.filter(item => item.title.toLowerCase().includes(titleFilterKeyword));
+      filteredData = filteredData.filter(
+        item =>
+          item.title.toLowerCase().includes(titleFilterKeyword) ||
+          item.paragraphs.toString().toLowerCase().includes(titleFilterKeyword) ||
+          item.tags.toString().toLowerCase().includes(titleFilterKeyword)
+      );
     }
 
     if (typeFilterKeyword !== 'all') {
-      filteredData = filteredData.filter(item => item.type?.toLowerCase().includes(typeFilterKeyword));
+      filteredData = filteredData.filter(item => item.tags.toString().toLowerCase().includes(typeFilterKeyword));
     }
 
     setFilteredCases(filteredData);

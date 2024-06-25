@@ -35,7 +35,17 @@ header {
   }
 }
 
-.burger_button {
+.burger_container {
+  & .active {
+    & > span {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+.burger_button,
+.burger_button_active {
   width: 30px;
   height: 20px;
   position: relative;
@@ -50,22 +60,38 @@ header {
   }
 }
 
-.burger_button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 30px;
-  height: 2px;
-  background-color: $color--blue;
+.burger_button {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 2px;
+    background-color: $color--blue;
+  }
 
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background-color: $color--blue;
+  }
 }
 
-.burger_button::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 30px;
-  height: 2px;
-  background-color: $color--blue;
-  
+.burger_button_active {
+  & span {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    width: 30px;
+    height: 2px;
+    background-color: $color--blue;
+    transform: rotate(-45deg);
+  }
 }

@@ -6,6 +6,7 @@ interface InputProps {
   placeholder?: string;
   required?: boolean;
   theme?: 'light' | 'dark';
+
   name?: string;
 }
 
@@ -15,7 +16,14 @@ export const Input = ({ label, type, required, placeholder, name, theme = 'light
       <label data-theme={theme === 'dark' ? true : false} className={style.input_label}>
         {label}
       </label>
-      <input name={name} className={style.input} type={type} placeholder={placeholder} required={required} />
+      <input
+        data-theme={theme === 'dark' ? true : false}
+        name={name}
+        className={style.input}
+        type={type}
+        placeholder={placeholder}
+        required={required}
+      />
     </div>
   );
 };

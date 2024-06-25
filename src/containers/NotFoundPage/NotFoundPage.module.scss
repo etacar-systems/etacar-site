@@ -1,0 +1,72 @@
+@import '../../styles/colors.scss';
+
+.wrapper {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  height: 100%;
+  overflow-y: hidden;
+  padding: 200px 0 100px;
+  margin-top: -50px;
+  border-radius: 20px 20px 0 0;
+  @media (max-width: 1200px) {
+    padding: 200px 20px 100px;
+  }
+}
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto 100px;
+
+  & .title {
+    color: $color--lightblue;
+    font-family: Chakra Petch;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
+  }
+}
+
+.error_text {
+  width: 100%;
+}
+.error_container {
+  position: fixed;
+
+  & .oops {
+    z-index: 5;
+    position: relative;
+    color: $color--lightblue;
+    font-family: Chakra Petch;
+    font-size: 22.396vw;
+    font-weight: 700;
+    line-height: 29.115vw;
+    left: -20.8vw;
+  }
+
+  & .error {
+    z-index: 10;
+    position: relative;
+    top: -19.531vw;
+    left: 34.5vw;
+    & > img {
+      width: 30.417vw;
+      height: 10.885vw;
+    }
+  }
+
+  & .zero {
+    z-index: 1;
+    position: absolute;
+    top: 8.594vw;
+    left: 44vw;
+    display: block;
+    width: 11.719vw;
+    height: 11.719vw;
+    background-color: $color--blue;
+  }
+}

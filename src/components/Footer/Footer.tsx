@@ -1,5 +1,7 @@
 import style from './Footer.module.scss';
 import linkArrow from '../../assets/icons/linkArrow.svg';
+import { Link } from 'react-router-dom';
+import { PRIVACY_POLICY, TERMS_OF_USE } from '../../routes';
 
 export const Footer = () => {
   return (
@@ -56,9 +58,13 @@ export const Footer = () => {
           <div className={style.footerEnd__textContent}>© 2024 EtaCar Systems. All rights reserved.</div>
         </div>
         <div className={style.container__termsAndPrivacy}>
-          <div className={style.footerEnd__textContent}>Terms of use</div>
+          <Link to={TERMS_OF_USE} className={style.footerEnd__textContent}>
+            Terms of use
+          </Link>
           <div className={style.footerEnd__textContent}>|</div>
-          <div className={style.footerEnd__textContent}>Privacy policy</div>
+          <Link to={PRIVACY_POLICY} className={style.footerEnd__textContent}>
+            Privacy policy
+          </Link>
         </div>
       </div>
     </footer>

@@ -7,11 +7,12 @@
   top: 90px;
   left: 0;
   transition: all 0.5s;
-  &[menu-active="true"] {
+  overflow: hidden;
+  &[menu-active='true'] {
     display: block;
     transform: translate(0, 0);
   }
-  &[menu-active="false"] {
+  &[menu-active='false'] {
     display: block;
     transform: translate(-150%, 0);
   }
@@ -44,7 +45,8 @@
   display: block;
   font-size: 36px;
   line-height: 48px;
-  > a, a:hover {
+  > a,
+  a:hover {
     text-decoration: none;
     color: $color--blue;
   }

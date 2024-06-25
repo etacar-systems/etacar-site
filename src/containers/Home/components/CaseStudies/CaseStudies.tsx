@@ -9,7 +9,7 @@ import style from './CaseStudies.module.scss';
 
 export const CaseStudies = () => {
   return (
-    <Section theme={'blueLight'} title={`CASE \n STADIES`}>
+    <Section theme={'blueLight'} title={`CASE \n STUDIES`}>
       <div className={style.swiper}>
         <Swiper
           direction={'horizontal'}
