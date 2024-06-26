@@ -30,7 +30,7 @@ export const Introduction = () => {
               <div className={style.info}>{string}</div>
             ))}
             <div className={style.buttonBlock}>
-              <Button title='Get In Touch' type='ghost' onClick={() => navigate('/' + CONTACT)} icon={true} />
+              <Button title='Get In Touch' type='ghost' onClick={() => navigate(CONTACT)} icon={true} />
             </div>
           </div>
         </div>
