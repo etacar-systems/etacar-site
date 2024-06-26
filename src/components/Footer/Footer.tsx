@@ -23,7 +23,7 @@ export const Footer = () => {
         <div className={style.info__links}>
           <div className={style.linkGetInTouch}>
             <div className={style.getInTouch}>
-              <a target='_blank' href='mailto:info@etacar.io'>
+              <a target='_blank' href='mailto:info@etacar.io' rel='noreferrer'>
                 Get in touch
               </a>
             </div>
@@ -33,7 +33,7 @@ export const Footer = () => {
           </div>
           <div className={style.linkGoogleMap}>
             <div className={style.googleMap}>
-              <a target='_blank' href='https://maps.app.goo.gl/38kmmrR4fv51q8XE9'>
+              <a target='_blank' href='https://maps.app.goo.gl/38kmmrR4fv51q8XE9' rel='noreferrer'>
                 Google map
               </a>
             </div>
@@ -45,7 +45,7 @@ export const Footer = () => {
         <div className={style.linkedIn__link}>
           <div className={style.linkLinkedIn}>
             <div className={style.linkedIn}>
-              <a target='_blank' href='https://www.linkedin.com/company/etacarsystems/'>
+              <a target='_blank' href='https://www.linkedin.com/company/etacarsystems/' rel='noreferrer'>
                 LinkedIn
               </a>
             </div>

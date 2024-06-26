@@ -57,7 +57,7 @@ export const ContactForm = () => {
                 <div className={style.info__text}>+1 (831) 333-6202</div>
                 <div className={style.linkGetInTouch}>
                   <div className={style.getInTouch}>
-                    <a target='_blank' href='mailto:msterjanov@gmail.com'>
+                    <a target='_blank' href='mailto:msterjanov@gmail.com' rel="noreferrer" >
                       Get in touch
                     </a>
                   </div>
@@ -74,7 +74,7 @@ export const ContactForm = () => {
                 <div className={style.info__text}>California 93940</div>
                 <div className={style.linkGoogleMap}>
                   <div className={style.googleMap}>
-                    <a target='_blank' href='https://maps.app.goo.gl/38kmmrR4fv51q8XE9'>
+                    <a target='_blank' href='https://maps.app.goo.gl/38kmmrR4fv51q8XE9' rel="noreferrer">
                       Google map
                     </a>
                   </div>

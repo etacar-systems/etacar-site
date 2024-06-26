@@ -1,7 +1,5 @@
 import React from 'react';
 
-import blackArrowIcon from '../../../../../assets/icons/blackArrow.svg';
-
 import styles from './Review.module.scss';
 
 interface ItemProps {

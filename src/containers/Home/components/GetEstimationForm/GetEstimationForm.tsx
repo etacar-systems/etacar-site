@@ -22,6 +22,7 @@ export const GetEstimationForm = () => {
     From50To100: false,
     Over100: false,
   });
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [state, handleSubmit] = useForm('mpwaazlo');
   const [file, setFile] = useState<File | null>(null);
 

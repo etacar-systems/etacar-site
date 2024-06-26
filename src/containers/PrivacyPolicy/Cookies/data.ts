@@ -1,5 +1,3 @@
-import privacyPolicy from '../../../assets/images/PrivacyPolicy/privacyPolicy.png';
-
 export const data = [
   {
     id: 1,
