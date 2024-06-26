@@ -6,7 +6,7 @@ import logoIcon from '../../assets/icons/Logo.svg';
 
 import { navItems } from './data';
 import { Button } from '../Button';
-import { CONTACT } from '../../routes';
+import { CONTACT, HOME } from '../../routes';
 import style from './NavHeader.module.scss';
 import { useViewportSize } from '../../hooks/useViewportSize';
 import { Menu } from '../Menu';
@@ -20,7 +20,7 @@ export const NavHeader = () => {
     <header>
       <div className={style.container}>
         <div className={style.logo}>
-          <img src={logoIcon} alt={'logo'} />
+          <img onClick={() => navigate(HOME)} src={logoIcon} alt={'logo'} />
         </div>
         {width > 768 ? (
           <div className={style.navigation}>

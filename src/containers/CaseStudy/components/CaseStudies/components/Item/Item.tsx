@@ -26,7 +26,7 @@ export const Item = ({ image, paragraphs, tags, title, orderReverse, index }: It
             <div>Get a free project estimation</div>
           </div>
           <div>
-            <Button type='ghost' title='Get started' icon={true} onClick={() => navigate('/' + CONTACT)} />
+            <Button type='ghost' title='Get started' icon={true} onClick={() => navigate(CONTACT)} />
           </div>
         </div>
       ) : undefined}

@@ -27,7 +27,7 @@ export const Models = () => {
                 </div>
               ))}
               <div className={style.button}>
-                <Button onClick={() => navigate('/' + CONTACT)} title={'Get estimation'} type={'ghost'} icon={true} />
+                <Button onClick={() => navigate(CONTACT)} title={'Get estimation'} type={'ghost'} icon={true} />
               </div>
             </div>
             {dataRow.id % 2 === 1 ? <img className={style.image} src={dataRow.image} alt='Our Team' /> : undefined}
