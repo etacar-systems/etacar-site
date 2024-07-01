@@ -13,7 +13,7 @@ export const caseStudies = [
   {
     image: images.productStockManagement,
     paragraphs: [
-      'Inventory management app for foo businesses.',
+      'Inventory management app for food businesses.',
       'Possibility to create Purchase orders or Internal transfers | Creating of the Inventory (Stock) take with additional features | Easy to use filtering with multiple options | Flexible customization settings.',
     ],
     tags: ['Management', 'Ruby', 'Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'sidekiq', 'Web'],
