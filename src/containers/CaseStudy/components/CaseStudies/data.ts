@@ -5,7 +5,7 @@ export const titleSortTags = [
   'eCommerce',
   'Education',
   'Management',
-  'Restaraunt',
+  'Restaurant',
   'Real estate',
   'Media',
   'Marketing',
@@ -14,4 +14,4 @@ export const titleSortTags = [
   'Blockchain',
 ];
 
-export const parSortTags = ['All', 'Web', 'Mobile', 'React', 'Ruby', 'Java'];
+export const parSortTags = ['All', 'Web', 'Mobile', 'React', 'Ruby', 'Django'];

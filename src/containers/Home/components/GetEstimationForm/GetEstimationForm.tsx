@@ -74,8 +74,8 @@ export const GetEstimationForm = () => {
         <div className={style.column_left}>
           <div className={style.column_title}>Get Estimation</div>
           <div className={style.column_desc}>
-            Enter the data and describe your project so that we can provide you with a free estimate of the cost and
-            time of implementation of your idea.
+            Enter the data and describe your project so that we can provide you with a free estimate for the cost and
+            time required to implement your idea.
           </div>
           <div className={style.column_list}>
             {data &&

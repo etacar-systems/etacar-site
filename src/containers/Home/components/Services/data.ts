@@ -19,7 +19,7 @@ export const services = [
     icon: mobile,
   },
   {
-    title: 'UX/UI design & Branding',
+    title: 'UX/UI',
     icon: design,
   },
   {
