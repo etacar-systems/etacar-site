@@ -66,10 +66,9 @@ export const Services = () => {
             <div>InVision</div>
             <div>Zeplin</div>
             <div>Design Thinking</div>
-            <div>User Research</div>
-            <div>User Experience</div>
-            <div>User Interface</div>
-            <div>Visual Design</div>
+            <div>UX Strategy</div>
+            <div>UX Research</div>
+            <div>UX/UI Design</div>
           </div>
         </div>
 
