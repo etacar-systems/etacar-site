@@ -26,7 +26,8 @@ export const Services = () => {
             <div>Node.js</div>
             <div>React</div>
             <div>React Native</div>
-            <div>Jenkins</div>
+            <div>Rails</div>
+            <div>Django</div>
           </div>
         </div>
 
@@ -37,24 +38,20 @@ export const Services = () => {
           </div>
           <div className={style.description}>
             We build native and cross-platform mobile applications that seamlessly adapt to various devices and
-            operating systems. Our expertise lies in React Native, Capacitor, Flutter, and Kotlin, enabling us to
-            deliver tailored mobile solutions that meet your specific requirements.
+            operating systems. Our expertise lies in React Native, Flutter, and Kotlin, enabling us to deliver tailored
+            mobile solutions that meet your specific requirements.
           </div>
           <div className={style.tags}>
             <div>React Native</div>
-            <div>Capacitor</div>
             <div>Flutter</div>
-            <div>Android Studio</div>
-            <div>Xcode</div>
+            <div>Kotlin</div>
+            <div>Swift</div>
           </div>
         </div>
 
         <div className={style.service}>
           <div className={style.title}>
-            <div>
-              UX/UI design <br />
-              & Branding
-            </div>
+            <div>UX/UI</div>
             <img src={designIcon} alt='' />
           </div>
           <div className={style.description}>
@@ -72,7 +69,6 @@ export const Services = () => {
             <div>User Research</div>
             <div>User Experience</div>
             <div>User Interface</div>
-            <div>Branding</div>
             <div>Visual Design</div>
           </div>
         </div>
@@ -117,6 +113,7 @@ export const Services = () => {
             <div>UI-kit</div>
             <div>Tailwind</div>
             <div>Next.js</div>
+            <div>Angular</div>
           </div>
         </div>
 

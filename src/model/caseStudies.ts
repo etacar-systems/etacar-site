@@ -7,23 +7,23 @@ export const caseStudies = [
       'Building a business marketplace connecting Clients and Suppliers for professional services and projects, based on experience sharing.',
       'Service businesses use the platform to identify new clients and prospects and to position their service offers using real market insights.',
     ],
-    tags: ['Marketplace', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekid', 'Apollo', 'Web'],
+    tags: ['Marketplace', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo', 'Web'],
     title: 'Business marketplace',
   },
   {
     image: images.productStockManagement,
     paragraphs: [
-      'Building the product stock management app.',
+      'Inventory management app for foo businesses.',
       'Possibility to create Purchase orders or Internal transfers | Creating of the Inventory (Stock) take with additional features | Easy to use filtering with multiple options | Flexible customization settings.',
     ],
-    tags: ['Management', 'Ruby', 'Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'Sidekid', 'Web', 'Mobile'],
+    tags: ['Management', 'Ruby', 'Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'sidekiq', 'Web'],
     title: 'Product stock management app',
   },
   {
     image: images.onDemandSupermarket,
     paragraphs: [
-      'Developing an online on-demand supermarket and rapid delivery platform.',
-      'Web, iOS and Android apps | Integrations with ODOO, Yelo, Jungleworks, Tookan | Highly customized promo codes.',
+      'Developing online supermarket platform designed for on-demand grocery shopping.',
+      // 'Web, iOS and Android apps | Integrations with ODOO, Yelo, Jungleworks, Tookan | Highly customized promo codes.',
     ],
     tags: [
       'eCommerce',
@@ -32,7 +32,7 @@ export const caseStudies = [
       'OAuth 2.0',
       'HAML',
       'Stripe',
-      'Sidekid',
+      'sidekiq',
       'Twilio',
       'RailsAdmin',
       'Yelo',
@@ -49,7 +49,7 @@ export const caseStudies = [
       'Building an online tool for managing a Personal Learning Plan for your applicants or students.',
       'Flexible lesson planning | intuitive, easy-to-use interface | rich export functionality.',
     ],
-    tags: ['Educational', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Rails', 'React', 'Sidekid', 'TypeScript', 'Web'],
+    tags: ['Educational', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Rails', 'React', 'sidekiq', 'TypeScript', 'Web'],
     title: 'Personal Learning Plan',
   },
   {
@@ -91,6 +91,7 @@ export const caseStudies = [
       'tRPC',
       'Stripe',
       'Web',
+      'Mobile',
     ],
     title: 'Delivery management system with automated order-to-delivery process',
   },
@@ -109,9 +110,10 @@ export const caseStudies = [
       'PostgreSQL',
       'tRPC',
       'StripeB',
+      'Web',
       'Mobile',
     ],
-    title: 'Restaraunt reservations and pre-orders platform',
+    title: 'Restaurant reservations and pre-orders platform',
   },
   {
     image: images.reitInvestment,
@@ -126,7 +128,7 @@ export const caseStudies = [
     paragraphs: [
       "Our App is a powerful social media analysis platform designed to help influencers create custom media kits with ease. With its intuitive and user-friendly interface, MediaKit empowers influencers to showcase their social media performance, audience demographics, and other valuable insights to potential brand partners. With MediaKit's real-time data and analytics, influencers can gain a deeper understanding of their social media metrics, including engagement rates and follower growth. This allows them to make data-driven decisions about their content and optimize their strategy to achieve greater success.",
     ],
-    tags: ['Javascript', 'React Native Web', 'Serverless', 'Postgresql', 'Mobile'],
+    tags: ['Javascript', 'React Native Web', 'Serverless', 'Postgresql', 'Web', 'Mobile'],
     title:
       'A Simple and Easy to Use Platform for Influencers to Create a Custom Media Kit Online with Real-Time Data and Analytics',
   },
@@ -237,41 +239,12 @@ export const caseStudies = [
     title: 'New Gen Couponing System',
   },
   {
-    image: images.socialFundraisingProduct,
-    paragraphs: [
-      'The Ping international social fundraising product encourages users to socialize offline while supporting those in need worldwide. Users can create or participate in auctions to raise funds for various causes, such as medical treatments. The backend development includes a stateless REST service integrated with Amazon Web Services, geocoding services using OpenStreetMap nominatim, and a billing system powered by Stripe. Mobile app development covers iOS and Android platforms.',
-    ],
-    tags: [
-      'Java 8',
-      'Undertow',
-      'Jersey',
-      'Swagger',
-      'Amazon Web Services',
-      'DynamoDB',
-      'S3',
-      'EC2',
-      'Lambda',
-      'Stripe',
-      'Spock',
-      'Mobile',
-    ],
-    title: 'Ping International Social Fundraising Product',
-  },
-  {
     image: images.educationalSystem,
     paragraphs: [
       'Developing a specialized content management system for an educational content provider. The system includes two primary web-based components: an end-user interface for educators and consumers to browse, search, and export educational materials, and an administrative interface for importing content from various sources and managing the existing content library.',
     ],
     tags: ['Ruby on Rails', 'RSpec', 'PostgreSQL', 'React.js', 'Web'],
     title: 'Educational System',
-  },
-  {
-    image: images.appointmentScheduling,
-    paragraphs: [
-      'Flexible software for small and mid-sized companies in the service sector, enabling easy setup of company processes without significant financial or time expenses. Key features include appointment scheduling, managing business hours and employee schedules, customer management, online booking, SMS and email notifications, support for multiple offices, locations, and resources, as well as analytics.',
-    ],
-    tags: ['Java', 'PostgreSQL', 'Angular.js', 'Web'],
-    title: 'Appointment Scheduling',
   },
   {
     image: images.migrationFromLegacy,
@@ -306,14 +279,6 @@ export const caseStudies = [
     title: 'Singapore-based Startup Support',
   },
   {
-    image: images.ecommerceWebApplication,
-    paragraphs: [
-      'Developing and maintaining a high-load eCommerce web application that provides sellers with the tools to sell online and access a marketplace of customers. The application is hosted on Google Cloud Platform and utilizes Kubernetes as the container orchestrator across multiple namespaces. CI/CD processes are built on Jenkins pipelines, ensuring continuous deployment with instant feedback to teams.',
-    ],
-    tags: ['Java 9', 'Spring Boot 2', 'Lombok', 'React.js', 'MongoDB', 'GCP', 'Web'],
-    title: 'Ecommerce Web Application',
-  },
-  {
     image: images.ecommerceSocialPlatform,
     paragraphs: [
       'Online marketplace enabling social influencers, individual entrepreneurs, and shop brands to curate, organize, and showcase multimedia content within interest-based communities such as Food, Events, Travel, Fitness, Beauty, and Fashion. The platform encourages users to monetize their popularity, passion, or expertise through media-rich micro channels.',
@@ -328,22 +293,6 @@ export const caseStudies = [
     ],
     tags: ['Ruby', 'Ruby on Rails 4', 'RSpec', 'Angular.js', 'MySQL', 'GCP', 'Web'],
     title: 'Content Management Solution',
-  },
-  {
-    image: images.blockchainProject,
-    paragraphs: [
-      'Designing and building a complete organizational solution and reservation system for investments in the nautical industry, based on the Hyperledger Fabric framework. The project includes a straightforward HTTP API and iframe solution, along with proprietary logic for storing and processing security tokens (tangible assets). DevOps tasks involve deployment automation of the multicomponent blockchain system and management of cryptography certificates.',
-    ],
-    tags: ['Java', 'Hyperledger Fabric', 'Docker', 'Ansible', 'VPC', 'ELK', 'Jenkins Pipeline'],
-    title: 'Blockchain Project',
-  },
-  {
-    image: images.dynamicManagementSystem,
-    paragraphs: [
-      'Designing and developing a proprietary business management product aimed at planning, tracking, and managing projects with extensive customization capabilities. Key features include custom filters, customizable workflows, a rich API, and robust reporting. The DevOps project focused on building a dynamic infrastructure based on a scalable graph-oriented database.',
-    ],
-    tags: ['Java', 'Titan DB', 'Cassandra', 'Redis', 'ELK', 'Groovy Script engine'],
-    title: 'Dynamic Management System',
   },
   {
     image: images.ITJobOnlineMarketplace,

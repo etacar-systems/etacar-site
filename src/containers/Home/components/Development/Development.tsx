@@ -12,9 +12,9 @@ export const Development = () => {
         <img className={styles.img} src={appleSet} alt='development' />
         <div>
           <div className={styles.description}>
-            Eta Car Systems provides professional software development solutions for European/US clients. Our
-            experienced engineers ensure personalized services, prioritizing your needs. We follow Agile processes and
-            offer cost-effective Ruby on Rails, JavaScript/TypeScript, UI/UX, and DevOps solutions.
+            EtaCar Systems provides professional software development solutions for European/US clients. Our experienced
+            engineers ensure personalized services, prioritizing your needs. We follow Agile processes and offer
+            cost-effective Ruby on Rails, JavaScript/TypeScript, UI/UX, and DevOps solutions.
           </div>
           <div className={styles.points}>
             <div className={styles.point}>
