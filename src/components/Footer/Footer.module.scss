@@ -39,6 +39,12 @@
   justify-content: space-between;
   align-items: center;
   display: flex;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    border-bottom: 1px solid $color--lightblue;
+  }
 }
 
 @mixin footerText {
@@ -60,7 +66,7 @@
   @include flexContainer(flex-start, flex-start, row, 66px);
   @include center;
   @media (max-width: 768px) {
-    @include flexContainer(flex-start, flex-start, column, 1rem)
+    @include flexContainer(flex-start, flex-start, column, 1rem);
   }
 }
 
@@ -97,7 +103,7 @@
   padding: 30px 0 80px;
   @include center;
   @media (max-width: 768px) {
-    @include flexContainer(flex-start, flex-start, column, 1rem)
+    @include flexContainer(flex-start, flex-start, column, 1rem);
   }
 }
 .info__links,
