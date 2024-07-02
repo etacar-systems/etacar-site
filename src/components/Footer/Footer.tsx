@@ -23,7 +23,7 @@ export const Footer = () => {
         <div className={style.info__links}>
           <div className={style.linkGetInTouch}>
             <div className={style.getInTouch}>
-              <a target='_blank' href='mailto:info@etacar.io' rel='noreferrer'>
+              <a target='_blank' href='mailto:msterjanov@gmail.com' rel='noreferrer'>
                 Get in touch
               </a>
             </div>

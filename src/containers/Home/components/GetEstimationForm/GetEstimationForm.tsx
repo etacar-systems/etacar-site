@@ -50,7 +50,6 @@ export const GetEstimationForm = () => {
       formData.append('file', file);
     }
 
-    console.log(formData);
     const response = await fetch('https://formspree.io/f/mpwaazlo', {
       mode: 'no-cors',
       method: 'POST',
