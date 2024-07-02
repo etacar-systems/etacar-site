@@ -4,7 +4,7 @@ export const caseStudies = [
   {
     image: images.businessMarketplace,
     paragraphs: [
-      'Platform provides intelligent tools that use company data, performance history, ratings and reviews, and service descriptions to project them on performance evaluation charts.',
+      'Building a business marketplace connecting Clients and Suppliers for professional services. Platform provides intelligent tools that use company data, performance history, ratings and reviews, and service descriptions to project them on performance evaluation charts.',
       'If a company needs services from another business, it can explore the online platform for the best match or use AI-enhanced search tool.',
     ],
     tags: ['Marketplace', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo', 'Web'],
