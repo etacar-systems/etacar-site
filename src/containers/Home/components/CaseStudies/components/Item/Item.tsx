@@ -28,7 +28,7 @@ export const Item = ({ image, paragraphs, tags, title }: ItemProps) => {
           <TagsContainer tags={tags} type={'light'} />
           <div>
             {paragraphs.map(paragraph => (
-              <p>{paragraph}</p>
+              <p className={style.paragraph}>{paragraph}</p>
             ))}
           </div>
         </div>

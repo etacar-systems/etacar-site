@@ -46,6 +46,10 @@
   }
 }
 
+.paragraph {
+  text-align: justify;
+}
+
 :global(.swiper-button-disabled) {
   color: red;
 }

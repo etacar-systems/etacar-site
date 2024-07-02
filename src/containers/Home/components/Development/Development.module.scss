@@ -8,13 +8,14 @@
 .img {
   display: block;
   @media (max-width: 768px) {
-      width: 100%;
+    width: 100%;
   }
 }
 
 .description {
   max-width: 590px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .points {
   display: flex;
