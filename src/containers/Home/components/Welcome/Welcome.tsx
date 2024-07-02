@@ -11,7 +11,7 @@ export const Welcome = () => {
       </div>
       <div className={styles.description}>
         Expand your business capabilities with comprehensive world-class software development, including thoughtful
-        strategy, UX/UI design and on-demand development
+        strategy, UX/UI design and on-demand development.
       </div>
     </div>
   );
