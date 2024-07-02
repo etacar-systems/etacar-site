@@ -1,10 +1,10 @@
-import { data } from './data';
-import { servicePageIcons } from '../../../../assets/icons/servicesPage';
-import { Button } from '../../../../components/Button';
-
-import style from './Models.module.scss';
-import { CONTACT } from '../../../../routes';
 import { useNavigate } from 'react-router';
+
+import { servicePageIcons } from '../../../../assets/icons/servicesPage';
+import { CONTACT } from '../../../../routes';
+import { data } from './data';
+import { Button } from '../../../../components/Button';
+import style from './Models.module.scss';
 
 export const Models = () => {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ export const Models = () => {
             {dataRow.id % 2 === 0 ? <img className={style.image} src={dataRow.image} alt='Our Team' /> : undefined}
             <div className={style.textContainer}>
               <div className={style.title}>{dataRow.title}</div>
-              <div>{dataRow.description}</div>
+              <div className={style.description}>{dataRow.description}</div>
               {dataRow.advantages.map(string => (
                 <div className={style.listElement}>
                   <div>

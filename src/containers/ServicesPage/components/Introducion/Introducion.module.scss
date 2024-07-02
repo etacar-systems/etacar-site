@@ -47,9 +47,11 @@
 .textSecondary {
   text-align: right;
   font-size: 1.5rem;
-  text-align: right;
   line-height: 1.75rem;
   color: $color--text-light;
+  @media (max-width: 768px) {
+    text-align: left;
+  }
 }
 
 .textSecondaryBlue {
