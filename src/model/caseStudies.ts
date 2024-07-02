@@ -130,7 +130,7 @@ export const caseStudies = [
     ],
     tags: ['Javascript', 'React Native Web', 'Serverless', 'Postgresql', 'Web', 'Mobile'],
     title:
-      'A Simple and Easy to Use Platform for Influencers to Create a Custom Media Kit Online with Real-Time Data and Analytics',
+      'Platform for Influencers to Create a Custom Media Kit Online with Real-Time Data and Analytics',
   },
   {
     image: images.edtechPlatform,
@@ -175,7 +175,7 @@ export const caseStudies = [
   {
     image: images.industrialSupplier,
     paragraphs: [
-      'We helped in creating a high-functioning feature rich eCommerce site for Fortune 500 companies. Company supplies products and services to various industries including medical, chemical and electronic manufacturers. The new eCommerce experience elevates the brand’s digital presence, and guides users to revamped product detail pages, through a streamlined site architecture.',
+      'We helped in creating a high-functioning feature rich eCommerce site for Fortune 500 company. Company supplies products and services to various industries including medical, chemical and electronic manufacturers. The new eCommerce experience elevates the brand’s digital presence, and guides users to revamped product detail pages, through a streamlined site architecture.',
     ],
     tags: ['Javascript', 'Knockout', 'OCC', 'jQuery', 'Web'],
     title: 'Industrial Supplier eCommerce Solution',
