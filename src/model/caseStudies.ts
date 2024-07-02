@@ -29,8 +29,6 @@ export const caseStudies = [
       'eCommerce',
       'Ruby',
       'PostgreSQL',
-      'OAuth 2.0',
-      'HAML',
       'Stripe',
       'Sidekiq',
       'Twilio',
