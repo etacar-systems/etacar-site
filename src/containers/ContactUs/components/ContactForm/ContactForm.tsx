@@ -1,6 +1,6 @@
 import { useForm, ValidationError } from '@formspree/react';
 
-import colton from '../../../../assets/images/ContactUs/colton_bollinger.png';
+import colton from '../../../../assets/images/ContactUs/colton_bollinger.webp';
 import { Input } from '../../../../components/UI/Input';
 import style from './ContactForm.module.scss';
 import { Button } from '../../../../components/Button';
