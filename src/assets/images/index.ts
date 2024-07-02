@@ -1,7 +1,5 @@
-import appointmentScheduling from './appointmentScheduling.webp';
 import auctionHouseSoftware from './auctionHouseSoftware.webp';
 import baseballStatisticManagement from './baseballStatisticManagement.webp';
-import blockchainProject from './blockchainProject.webp';
 import brandIdentityDesign from './brandIdentityDesign.webp';
 import businessMarketplace from './businessMarketplace.svg';
 import cloudMarketingSolution from './cloudMarketingSolution.webp';
@@ -10,14 +8,12 @@ import contentManagementSolution from './contentManagementSolution.webp';
 import deliveryManagementSystem from './deliveryManagementSystem.svg';
 import digitalProductPresentation from './digitalProductPresentation.webp';
 import discountApplication from './discountApplication.webp';
-import dynamicManagementSystem from './dynamicManagementSystem.webp';
 import ecommerceB2BSolution from './ecommerceB2BSolution.webp';
 import ecommerceB2CSolution from './ecommerceB2CSolution.webp';
 import ecommerceMicroservices from './ecommerceMicroservices.webp';
 import ecommerceSocialPlatform from './ecommerceSocialPlatform.webp';
 import ecommerceSolutionBasedOnOCCPlatform from './ecommerceSolutionBasedOnOCCPlatform.webp';
 import ecommerceSystemForHealthcare from './ecommerceSystemForHealthcare.webp';
-import ecommerceWebApplication from './ecommerceWebApplication.webp';
 import edtechPlatform from './edtechPlatform.webp';
 import educationalPlatform from './educationalPlatform.webp';
 import educationalSystem from './educationalSystem.webp';
@@ -41,15 +37,12 @@ import productStockManagement from './productStockManagement.svg';
 import reitInvestment from './reitInvestment.webp';
 import restarauntReservations from './restarauntReservations.webp';
 import singaporeStartup from './singaporeStartup.webp';
-import socialFundraisingProduct from './socialFundraisingProduct.webp';
 import UXUIAndSMM from './UXUIAndSMM.webp';
 import visualIdentityKit from './visualIdentityKit.webp';
 
 export const images = {
-  appointmentScheduling,
   auctionHouseSoftware,
   baseballStatisticManagement,
-  blockchainProject,
   brandIdentityDesign,
   businessMarketplace,
   cloudMarketingSolution,
@@ -58,14 +51,12 @@ export const images = {
   deliveryManagementSystem,
   digitalProductPresentation,
   discountApplication,
-  dynamicManagementSystem,
   ecommerceB2BSolution,
   ecommerceB2CSolution,
   ecommerceMicroservices,
   ecommerceSocialPlatform,
   ecommerceSolutionBasedOnOCCPlatform,
   ecommerceSystemForHealthcare,
-  ecommerceWebApplication,
   edtechPlatform,
   educationalPlatform,
   educationalSystem,
@@ -89,7 +80,6 @@ export const images = {
   reitInvestment,
   restarauntReservations,
   singaporeStartup,
-  socialFundraisingProduct,
   UXUIAndSMM,
   visualIdentityKit,
 };
