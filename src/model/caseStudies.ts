@@ -7,25 +7,25 @@ export const caseStudies = [
       'Building a business marketplace connecting Clients and Suppliers for professional services. Platform provides intelligent tools that use company data, performance history, ratings and reviews, and service descriptions to project them on performance evaluation charts.',
       'If a company needs services from another business, it can explore the online platform for the best match or use AI-enhanced search tool.',
     ],
-    tags: ['Marketplace', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo', 'Web'],
+    tags: ['Apollo', 'Marketplace', 'OAuth2.0', 'PostgreSQL', 'Ruby', 'Sidekiq', 'Stripe', 'Twilio', 'Web'],
     title: 'AI-backed B2B Marketplace',
   },
   {
     image: images.productStockManagement,
     paragraphs: [
-      'Inventory management app for food businesses.',
-      'Possibility to create Purchase orders or Internal transfers | Creating of the Inventory (Stock) take with additional features | Easy to use filtering with multiple options | Flexible customization settings.',
+      'Platform provides detailed inventory tracking to the ingredient level and ties data seamlessly to recipe creation, food costing and purchasing, receiving and counting tasks.',
+      'You can easily delegate the right tasks to the right employees and supervise their work at any moment in time.',
     ],
-    tags: ['Management', 'Ruby', 'Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'Sidekiq', 'Web'],
-    title: 'Product stock management app',
+    tags: ['FoodTech', 'jQuery', 'Management', 'OAuth2.0', 'PostgreSQL', 'Rails', 'Ruby', 'Sidekiq', 'Web'],
+    title: 'Restaurant Inventory Management Software',
   },
   {
     image: images.onDemandSupermarket,
     paragraphs: [
       'Developing online supermarket platform designed for on-demand grocery shopping.',
-      // 'Web, iOS and Android apps | Integrations with ODOO, Yelo, Jungleworks, Tookan | Highly customized promo codes.',
+      'Browse or search for good quality food, drink, and household products | Get all our best offers and deals | Create a new order or edit an existing one | Use the app for food and drink deliveries | Keep track of your current orders | Contact customer service team.  ',
     ],
-    tags: ['eCommerce', 'Ruby', 'PostgreSQL', 'Stripe', 'Sidekiq', 'Twilio', 'RailsAdmin', 'Odoo', 'Web', 'Mobile'],
+    tags: ['eCommerce', 'FoodTech', 'Mobile', 'PostgreSQL', 'RailsAdmin', 'Ruby', 'Sidekiq', 'Stripe', 'Twilio', 'Web'],
     title: 'On-demand supermarket',
   },
   {
@@ -34,7 +34,7 @@ export const caseStudies = [
       'Building an online tool for managing a Personal Learning Plan for your applicants or students.',
       'Flexible lesson planning | intuitive, easy-to-use interface | rich export functionality.',
     ],
-    tags: ['Educational', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Rails', 'React', 'Sidekiq', 'TypeScript', 'Web'],
+    tags: ['Educational', 'OAuth2.0', 'PostgreSQL', 'Rails', 'React', 'Ruby', 'Sidekiq', 'TypeScript', 'Web'],
     title: 'Personal Learning Plan',
   },
   {
