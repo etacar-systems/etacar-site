@@ -16,7 +16,7 @@ export const caseStudies = [
       'Inventory management app for food businesses.',
       'Possibility to create Purchase orders or Internal transfers | Creating of the Inventory (Stock) take with additional features | Easy to use filtering with multiple options | Flexible customization settings.',
     ],
-    tags: ['Management', 'Ruby', 'Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'sidekiq', 'Web'],
+    tags: ['Management', 'Ruby', 'Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'Sidekiq', 'Web'],
     title: 'Product stock management app',
   },
   {
@@ -32,11 +32,9 @@ export const caseStudies = [
       'OAuth 2.0',
       'HAML',
       'Stripe',
-      'sidekiq',
+      'Sidekiq',
       'Twilio',
       'RailsAdmin',
-      'Yelo',
-      'Tookan',
       'Odoo',
       'Web',
       'Mobile',
@@ -49,7 +47,7 @@ export const caseStudies = [
       'Building an online tool for managing a Personal Learning Plan for your applicants or students.',
       'Flexible lesson planning | intuitive, easy-to-use interface | rich export functionality.',
     ],
-    tags: ['Educational', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Rails', 'React', 'sidekiq', 'TypeScript', 'Web'],
+    tags: ['Educational', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Rails', 'React', 'Sidekiq', 'TypeScript', 'Web'],
     title: 'Personal Learning Plan',
   },
   {
@@ -339,8 +337,8 @@ export const caseStudies = [
     paragraphs: [
       'Working on a software platform that offers brands, publishers, and civic institutions publishing tools for creating social, place-based experiences. The dynamic open platform intuitively delivers media-rich experiences, integrating video, image, sound, mapping, and text features in one cohesive environment. Currently developing an ESRI-based prototype of a cloud marketing solution that combines content with data intelligence to automate marketing efforts and generate leads.',
     ],
-    tags: ['PHP', 'Javascript', 'jQuery', 'ESRI Maps', 'AWS', 'Web'],
-    title: 'Cloud Marketing Solution',
+    tags: ['PHP', 'Javascript', 'Docker', 'ESRI Maps', 'AWS', 'Web'],
+    title: 'DevOps',
   },
   {
     image: images.packagingDesign,
