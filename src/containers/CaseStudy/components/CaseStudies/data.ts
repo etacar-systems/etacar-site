@@ -11,7 +11,6 @@ export const titleSortTags = [
   'Marketing',
   'Marketplace',
   'Design',
-  'Blockchain',
 ];
 
 export const parSortTags = ['All', 'Web', 'Mobile', 'React', 'Ruby'];
