@@ -1,1 +1,3 @@
-export { Services } from './Services';
+import { Services } from './Services';
+
+export default Services;

@@ -1,1 +1,3 @@
-export * from './Reviews';
+import { Reviews } from './Reviews';
+
+export default Reviews;

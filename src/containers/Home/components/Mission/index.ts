@@ -1,1 +1,3 @@
-export { Mission } from './Mission';
+import { Mission } from './Mission';
+
+export default Mission;

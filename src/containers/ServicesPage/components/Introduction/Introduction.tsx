@@ -1,6 +1,6 @@
-import style from './Introducion.module.scss';
+import style from './Introduction.module.scss';
 
-export const Introducion = () => {
+export const Introduction = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>

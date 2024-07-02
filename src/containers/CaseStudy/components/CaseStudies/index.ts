@@ -1,1 +1,3 @@
-export { CaseStudies } from './CaseStudies';
+import { CaseStudies } from './CaseStudies';
+
+export default CaseStudies;

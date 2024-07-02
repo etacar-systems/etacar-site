@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
-import { Footer } from '../../components/Footer';
+import { lazy, useEffect } from 'react';
 import { data } from './data';
 
 import style from './TermsOfUse.module.scss';
 
+const Footer = lazy(() => import('../../components/Footer'));
 export const TermsOfUse = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

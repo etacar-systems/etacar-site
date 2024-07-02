@@ -1,1 +1,0 @@
-export { InformationSecurity } from './InformationSecurity';
