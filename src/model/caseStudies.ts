@@ -4,11 +4,11 @@ export const caseStudies = [
   {
     image: images.businessMarketplace,
     paragraphs: [
-      'Building a business marketplace connecting Clients and Suppliers for professional services and projects, based on experience sharing.',
-      'Service businesses use the platform to identify new clients and prospects and to position their service offers using real market insights.',
+      'Platform provides intelligent tools that use company data, performance history, ratings and reviews, and service descriptions to project them on performance evaluation charts.',
+      'If a company needs services from another business, it can explore the online platform for the best match or use AI-enhanced search tool.',
     ],
     tags: ['Marketplace', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo', 'Web'],
-    title: 'Business marketplace',
+    title: 'AI-backed B2B Marketplace',
   },
   {
     image: images.productStockManagement,
@@ -25,18 +25,7 @@ export const caseStudies = [
       'Developing online supermarket platform designed for on-demand grocery shopping.',
       // 'Web, iOS and Android apps | Integrations with ODOO, Yelo, Jungleworks, Tookan | Highly customized promo codes.',
     ],
-    tags: [
-      'eCommerce',
-      'Ruby',
-      'PostgreSQL',
-      'Stripe',
-      'Sidekiq',
-      'Twilio',
-      'RailsAdmin',
-      'Odoo',
-      'Web',
-      'Mobile',
-    ],
+    tags: ['eCommerce', 'Ruby', 'PostgreSQL', 'Stripe', 'Sidekiq', 'Twilio', 'RailsAdmin', 'Odoo', 'Web', 'Mobile'],
     title: 'On-demand supermarket',
   },
   {
@@ -125,8 +114,7 @@ export const caseStudies = [
       "Our App is a powerful social media analysis platform designed to help influencers create custom media kits with ease. With its intuitive and user-friendly interface, MediaKit empowers influencers to showcase their social media performance, audience demographics, and other valuable insights to potential brand partners. With MediaKit's real-time data and analytics, influencers can gain a deeper understanding of their social media metrics, including engagement rates and follower growth. This allows them to make data-driven decisions about their content and optimize their strategy to achieve greater success.",
     ],
     tags: ['Javascript', 'React Native Web', 'Serverless', 'Postgresql', 'Web', 'Mobile'],
-    title:
-      'Platform for Influencers to Create a Custom Media Kit Online with Real-Time Data and Analytics',
+    title: 'Platform for Influencers to Create a Custom Media Kit Online with Real-Time Data and Analytics',
   },
   {
     image: images.edtechPlatform,
