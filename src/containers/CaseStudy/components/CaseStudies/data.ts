@@ -14,4 +14,4 @@ export const titleSortTags = [
   'Blockchain',
 ];
 
-export const parSortTags = ['All', 'Web', 'Mobile', 'React', 'Ruby', 'Django'];
+export const parSortTags = ['All', 'Web', 'Mobile', 'React', 'Ruby'];
