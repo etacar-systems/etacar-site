@@ -10,7 +10,9 @@ import Postgresql from '../../../../../assets/techs/postgresql.svg';
 import Git from '../../../../../assets/techs/git.svg';
 import html5 from '../../../../../assets/techs/html5.svg';
 import figma from '../../../../../assets/techs/figma.svg';
-import java from '../../../../../assets/techs/java.svg';
+import css from '../../../../../assets/techs/css.png';
+import node from '../../../../../assets/techs/nodeJS.png';
+import react from '../../../../../assets/techs/react.png';
 
 import styles from './Carousel.module.scss';
 
@@ -25,7 +27,9 @@ const techs = [
   { src: Git, alt: 'Git' },
   { src: html5, alt: 'html5' },
   { src: figma, alt: 'figma' },
-  { src: java, alt: 'java' },
+  { src: css, alt: 'css' },
+  { src: node, alt: 'node' },
+  { src: react, alt: 'react' },
 ];
 
 export const Carousel = () => {
