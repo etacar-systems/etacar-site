@@ -1,4 +1,5 @@
-import { lazy, useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
+import Loader from '../../components/Loader';
 import { data } from './data';
 
 import style from './TermsOfUse.module.scss';
@@ -20,7 +21,9 @@ export const TermsOfUse = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      <Suspense fallback={<Loader />}>
+        <Footer />
+      </Suspense>
     </>
   );
 };

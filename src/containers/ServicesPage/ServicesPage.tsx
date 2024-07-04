@@ -1,7 +1,7 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 import Loader from '../../components/Loader';
 
-const Introducion = lazy(() => import('./components/Introduction'));
+const Introduction = lazy(() => import('./components/Introduction'));
 const Services = lazy(() => import('./components/Services'));
 const Models = lazy(() => import('./components/Models'));
 const Industries = lazy(() => import('../../commonSections/Industries'));
@@ -15,7 +15,7 @@ export const ServicesPage = () => {
   return (
     <Suspense fallback={<Loader />}>
       <div>
-        <Introducion />
+        <Introduction />
         <Services />
         <Models />
         <Suspense fallback={<Loader />}>
