@@ -223,24 +223,24 @@ export const caseStudies = [
     tags: ['Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
     title: 'Auction House Software',
   },
-  {
-    image: images.discountApplication,
-    paragraphs: ['Commerce app that brings users fresh local deals and discounts.'],
-    tags: ['Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
-    title: 'Discount Application',
-  },
-  {
-    image: images.instagramMarketing,
-    paragraphs: ['Developing and supporting growth-by-hand marketing automation system.'],
-    tags: ['Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
-    title: 'Instagram Marketing Automation Toolset',
-  },
-  {
-    image: images.instagramInfluencerMarketingPlatform,
-    paragraphs: ['Developing and supporting innovative Instagram campaign management system.'],
-    tags: ['Javascript', 'NestJS (NodeJS, Typescript)', 'ExpressJS', 'MongoDB', 'React.js', 'Web'],
-    title: 'Instagram Influencer Marketing Platform',
-  },
+  // {
+  //   image: images.discountApplication,
+  //   paragraphs: ['Commerce app that brings users fresh local deals and discounts.'],
+  //   tags: ['Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
+  //   title: 'Discount Application',
+  // },
+  // {
+  //   image: images.instagramMarketing,
+  //   paragraphs: ['Developing and supporting growth-by-hand marketing automation system.'],
+  //   tags: ['Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
+  //   title: 'Instagram Marketing Automation Toolset',
+  // },
+  // {
+  //   image: images.instagramInfluencerMarketingPlatform,
+  //   paragraphs: ['Developing and supporting innovative Instagram campaign management system.'],
+  //   tags: ['Javascript', 'NestJS (NodeJS, Typescript)', 'ExpressJS', 'MongoDB', 'React.js', 'Web'],
+  //   title: 'Instagram Influencer Marketing Platform',
+  // },
   {
     image: images.ecommerceSolutionBasedOnOCCPlatform,
     paragraphs: [
