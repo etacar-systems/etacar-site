@@ -3,7 +3,7 @@ export const titleSortTags = [
   'Enterprise',
   'Startup',
   'eCommerce',
-  'Education',
+  'EdTech',
   'Management',
   'Restaurant',
   'Real estate',
