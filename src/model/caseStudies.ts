@@ -49,9 +49,11 @@ export const caseStudies = [
   {
     image: images.enterpriseProcurement,
     paragraphs: [
-      'Providing customers with the latest B2B technology which also addressed some of the industrial intricacies without the need for bespoke development was a key consideration in selecting the Workarea B2B solution. This allowed to go live quickly and easily with a system that is fully integrated with their ERP solution removing the need for additional administration whilst giving customers access to real-time information.',
+      'Building an innovative platform that simplifies corporate procurement processes and B2B payments, providing tools for pre-approved purchases, automated documentation, and spend management. Payment solution is integrated within the MasterCard ICCP which is connected with over 70 banks globally.',
     ],
     tags: [
+      'FinTech',
+      'B2B',
       'Enterprise',
       'Management',
       'Ruby',
@@ -65,12 +67,12 @@ export const caseStudies = [
       'HAML',
       'Web',
     ],
-    title: 'Enterprise procurement management platform',
+    title: 'Procurement and B2B payments management solution',
   },
   {
     image: images.deliveryManagementSystem,
     paragraphs: [
-      'Delivery management system with automated order-to-delivery process',
+      'Delivery management system with automated order-to-delivery process.',
       'Marketplace for bottled water delivery from your favorite local retail places to America’s counter spaces within 2 or 4 hours daily. System offers an easy to use ordering, convenience and delivery process all at the touch of a few buttons; from the Brands you already know from the places you already go!',
     ],
     tags: [
@@ -188,10 +190,22 @@ export const caseStudies = [
   {
     image: images.ecommerceB2BSolution,
     paragraphs: [
-      "We developed this bespoke Workarea e-commerce web store to help our client improve their online presence and increase revenue. The new design is fresh and modern and caters for five responsive breakpoints; meaning the site functions equally as well on a Desktop PC, as it does on an iPad or smartphone. The back-end system with our custom integrations and bespoke modules, provides many additional features to enhance the store's marketing potential. Along with custom management features to improve the site administration and order fulfillment process.",
+      'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. Kiosks are found in more than 500 businesses, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
     ],
-    tags: ['Ruby/Rails', 'MongoDB', 'jQuery', 'SASS', 'Workarea', 'ElasticSearch', 'OAuth 2.0', 'HAML', 'Web'],
-    title: 'eCommerce B2B Solution based on Workarea Platform',
+    tags: [
+      'Marketing',
+      'Social Networks',
+      'Ruby/Rails',
+      'MongoDB',
+      'jQuery',
+      'SASS',
+      'Workarea',
+      'ElasticSearch',
+      'OAuth 2.0',
+      'HAML',
+      'Web',
+    ],
+    title: 'A smart social photo marketing platform',
   },
   {
     image: images.ecommerceB2CSolution,
