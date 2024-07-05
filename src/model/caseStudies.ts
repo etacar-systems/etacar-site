@@ -16,12 +16,15 @@ export const caseStudies = [
       'Inventory management app for food businesses.',
       'Possibility to create Purchase orders or Internal transfers | Creating of the Inventory (Stock) take with additional features | Easy to use filtering with multiple options | Flexible customization settings.',
     ],
-    tags: ['Management', 'Ruby', 'Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'Sidekiq', 'Web'],
+    tags: ['Management', 'Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'Sidekiq', 'Web'],
     title: 'Product stock management app',
   },
   {
     image: images.onDemandSupermarket,
-    paragraphs: ['Developing online supermarket platform designed for on-demand grocery shopping.'],
+    paragraphs: [
+      'Developing online supermarket platform designed for on-demand grocery shopping.',
+      'Buyers can select products from thousands of brands and order fresh organic fruits, vegetables, home essentials, OTC pharmaceuticals, and much more conveniently. Users can choose their favorite local supermarkets or stores and get products delivered to their doorsteps fast. Buyers can pay for their orders in multiple convenient and flexible payment modes, such as online banking, UPI payment, card payments, and cash on delivery options. ',
+    ],
     tags: ['eCommerce', 'Ruby', 'PostgreSQL', 'Stripe', 'Sidekiq', 'Twilio', 'RailsAdmin', 'Odoo', 'Web', 'Mobile'],
     title: 'On-demand supermarket',
   },
@@ -35,10 +38,9 @@ export const caseStudies = [
     tags: [
       'Educational',
       'EdTech',
-      'Ruby',
+      'Ruby on Rails',
       'PostgreSQL',
       'OAuth 2.0',
-      'Rails',
       'React',
       'Sidekiq',
       'TypeScript',
@@ -56,8 +58,7 @@ export const caseStudies = [
       'B2B',
       'Enterprise',
       'Management',
-      'Ruby',
-      'Rails',
+      'Ruby on Rails',
       'MongoDB',
       'jQuery',
       'SASS',
@@ -152,7 +153,7 @@ export const caseStudies = [
     paragraphs: [
       'Building a dynamic social network for language learners and educators who want to connect across cultures and countries. Users can connect with other learners and engage in audio and video conferencing to practice their speaking skills. The app also offers a unique audio player that allows users to listen to the pronunciation of words and sentences.',
     ],
-    tags: ['EdTech', 'Social Network', 'Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
+    tags: ['EdTech', 'Social Network', 'Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
     title: 'Language learning and teaching software',
   },
   {
@@ -176,7 +177,7 @@ export const caseStudies = [
     paragraphs: [
       'Building a scalable end-to-end commerce platform composed of loosely coupled Ruby on Rails Microservices. The project included developing the comprehensive ecommerce customer site, the portal for direct sales representatives, and the admin tools to manage products, customers, and orders.',
     ],
-    tags: ['Ruby', 'Rails', 'MongoDB', 'Angular', 'Web'],
+    tags: ['Ruby on Rails', 'MongoDB', 'Angular', 'Web'],
     title: 'Multi-brand eCommerce platform',
   },
   {
@@ -190,49 +191,45 @@ export const caseStudies = [
   {
     image: images.ecommerceB2BSolution,
     paragraphs: [
-      'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. Kiosks are found in more than 500 businesses, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
+      'Providing customers with the latest B2B technology which also addressed some of the industrial intricacies without the need for bespoke development was a key consideration in selecting the Workarea B2B solution. This allowed to go live quickly and easily with a system that is fully integrated with their ERP solution removing the need for additional administration whilst giving customers access to real-time information.',
     ],
-    tags: [
-      'Marketing',
-      'Social Networks',
-      'Ruby/Rails',
-      'MongoDB',
-      'jQuery',
-      'SASS',
-      'Workarea',
-      'ElasticSearch',
-      'OAuth 2.0',
-      'HAML',
-      'Web',
-    ],
-    title: 'A smart social photo marketing platform',
+    tags: ['Ruby on Rails', 'MongoDB', 'jQuery', 'SASS', 'Workarea', 'ElasticSearch', 'OAuth 2.0', 'HAML', 'Web'],
+    title: 'B2B Solution based on Workarea Platform',
   },
+  // {
+  //   image: '',
+  //   paragraphs: [
+  //     'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. Kiosks are found in more than 500 businesses, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
+  //   ],
+  //   tags: ['Marketing', 'Social Networks', 'Web'],
+  //   title: 'A smart social photo marketing platform',
+  // },
   {
     image: images.ecommerceB2CSolution,
     paragraphs: [
       'Online language learning system. Developed cutting edge platform connects students with the most dedicated teachers around the world for one-on-one online language lessons.',
     ],
-    tags: ['Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
+    tags: ['Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
     title: 'eCommerce B2C Solution based on Workarea Platform',
   },
   {
     image: images.auctionHouseSoftware,
     paragraphs: [
-      'Next generation software for a London based auction house. A web-based platform for online bidding and auction management. System supports eBay integration.',
+      'Next generation software for a London based auction house. A web-based platform for online bidding and auction management. System supports eBay integration. The software provides complete detailed reports for sellers, giving access to vital information on auctions and sales. The solution is available with a perpetual license along with additional annual license renewal costs.',
     ],
-    tags: ['Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
-    title: 'Auction House Software',
+    tags: ['FinTech', 'Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
+    title: 'Cloud-based auction house software',
   },
   // {
   //   image: images.discountApplication,
   //   paragraphs: ['Commerce app that brings users fresh local deals and discounts.'],
-  //   tags: ['Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
+  //   tags: ['Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
   //   title: 'Discount Application',
   // },
   // {
   //   image: images.instagramMarketing,
   //   paragraphs: ['Developing and supporting growth-by-hand marketing automation system.'],
-  //   tags: ['Ruby', 'Rails', 'MongoDB', 'React.js', 'Web'],
+  //   tags: ['Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
   //   title: 'Instagram Marketing Automation Toolset',
   // },
   // {
@@ -254,7 +251,7 @@ export const caseStudies = [
     paragraphs: [
       'Designing and developing game-changing, disruptive platform that enables business owners to do marketing and advertising on their own terms, for free. The platform provides businesses worldwide the ability to compete with larger enterprises despite limited marketing budgets.',
     ],
-    tags: ['Ruby', 'Rails 4', 'Heroku', 'MySQL', 'jQuery', 'Coffeescript', 'Web'],
+    tags: ['Ruby on Rails 4', 'Heroku', 'MySQL', 'jQuery', 'Coffeescript', 'Web'],
     title: 'New Gen Couponing System',
   },
   {
@@ -286,7 +283,7 @@ export const caseStudies = [
     paragraphs: [
       'AI-powered tool designed to enhance content shareability among specific audiences. The system suggests optimal headlines, content optimization strategies, and distribution channels to achieve exponential traffic growth. It serves as an innovative instrument for marketers, editors, and publishers, automating manual tasks, providing insights from big data, and helping beat competitors with unexpected popularity.',
     ],
-    tags: ['Ruby', 'Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
+    tags: ['Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
     title: 'ML Based Startup',
   },
   {
@@ -294,7 +291,7 @@ export const caseStudies = [
     paragraphs: [
       'Supporting a Singapore-based startup company by designing and developing a CI/CD process to improve their existing weakly automated EC2 infrastructure. The goal of continuous delivery is to minimize time to market for innovative features. All teams including developers, DevOps, and QA were involved in the continuous process. The project aimed to achieve a 99.9% SLA for the production environment and successfully reduced feature to market time from 1 month to 2 days.',
     ],
-    tags: ['Ruby', 'Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
+    tags: ['Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
     title: 'Singapore-based Startup Support',
   },
   {
@@ -302,7 +299,7 @@ export const caseStudies = [
     paragraphs: [
       'Online marketplace enabling social influencers, individual entrepreneurs, and shop brands to curate, organize, and showcase multimedia content within interest-based communities such as Food, Events, Travel, Fitness, Beauty, and Fashion. The platform encourages users to monetize their popularity, passion, or expertise through media-rich micro channels.',
     ],
-    tags: ['PHP', 'MySQL', 'Less', 'Angular.js', 'jQuery', 'AWS', 'Web'],
+    tags: ['Marketing', 'PHP', 'MySQL', 'Less', 'Angular.js', 'jQuery', 'AWS', 'Web'],
     title: 'Ecommerce Social Platform',
   },
   {
@@ -310,7 +307,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining a proprietary content management solution for a European media company. The solution automates editorial processes for news, posts, and columns, manages proprietary comments, handles publishing schedules, tracks content activity, and supports complex branding requirements. It includes customizable workflows, roles, and content types, making it easy to build, manage, and coordinate a content team.',
     ],
-    tags: ['Ruby', 'Ruby on Rails 4', 'RSpec', 'Angular.js', 'MySQL', 'GCP', 'Web'],
+    tags: ['Ruby on Rails 4', 'RSpec', 'Angular.js', 'MySQL', 'GCP', 'Web'],
     title: 'Content Management Solution',
   },
   {
@@ -318,7 +315,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and supporting an online marketplace platform that aggregates, organizes, and showcases a national pool of live talent to top IT companies. Companies create profiles detailing their business and brand, post specific job listings including details, dates, and pricing. Verified jobs are published for the talent pool to view and apply. Professionals can showcase their career strengths, goals, skills, work styles, aspirations, and job-change receptivity. Job seekers connect with employers and hiring managers via in-app chat. The platform, powered by intelligent machine-learning algorithms, provides daily recommendations for opportunities tailored to user profiles and interests.',
     ],
-    tags: ['Ruby', 'Ruby On Rails', 'PostgreSQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
+    tags: ['Ruby On Rails', 'PostgreSQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
     title: 'IT Job Online Marketplace Platform',
   },
   {
@@ -326,7 +323,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining a web platform dedicated to an independent community centered around Information and Communication Technology (ICT), where professionals, enthusiasts, students, and employers interact and engage. The platform specialists curate and share important industry news, articles, reviews, and other content daily, fostering interaction and knowledge-sharing among community members.',
     ],
-    tags: ['Ruby', 'Ruby On Rails', 'MySQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
+    tags: ['Ruby On Rails', 'MySQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
     title: 'Community Web Platform',
   },
   {
@@ -334,7 +331,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and deploying the flagship product of a European government organization: an online journal dedicated to a professional juridical audience. The journal provides high-quality content covering the state of the national legal landscape, legal institutions, scientific research, and case studies.',
     ],
-    tags: ['Ruby', 'Ruby On Rails', 'MySQL', 'Capistrano', 'React.js', 'Less', 'Web'],
+    tags: ['Ruby On Rails', 'MySQL', 'Capistrano', 'React.js', 'Less', 'Web'],
     title: 'Online Journal',
   },
   {
@@ -342,7 +339,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining an online scalable platform for co-creating physical, personalized "social gifts" for key life events like birthdays, graduations, weddings, and corporate appreciations. The platform facilitates high-scale collaboration to create beautifully designed cards.',
     ],
-    tags: ['Ruby', 'Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku', 'Web'],
+    tags: ['Social Networks', 'Ruby', 'Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku', 'Web'],
     title: 'Platform to Co-create Social Gifts',
   },
   {
