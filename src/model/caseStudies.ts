@@ -199,6 +199,14 @@ export const caseStudies = [
   // {
   //   image: '',
   //   paragraphs: [
+  //     'Building a diversified payment acceptance solution designed to provide an affordable and secure way for online transactions. System provides payment processing through virtual terminals, invoice payments, chargeback management, multiple processor connectivity, and more. ',
+  //   ],
+  //   tags: ['FinTech', 'eCommerce', 'Ruby on Rails', 'React.js'],
+  //   title: 'Next-generation commerce hub',
+  // },
+  // {
+  //   image: '',
+  //   paragraphs: [
   //     'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. Kiosks are found in more than 500 businesses, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
   //   ],
   //   tags: ['Marketing', 'Social Networks', 'Web'],
