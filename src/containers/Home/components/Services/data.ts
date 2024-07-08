@@ -1,4 +1,4 @@
-import arrow from '../../../../assets/icons/arrow.svg';
+import allServicesArrow from '../../../../assets/icons/allServicesArrow.svg';
 import computer from '../../../../assets/icons/computer.svg';
 import design from '../../../../assets/icons/design.svg';
 import mobile from '../../../../assets/icons/mobile.svg';
@@ -44,6 +44,6 @@ export const services = [
   },
   {
     title: 'All services',
-    icon: arrow,
+    icon: allServicesArrow,
   },
 ];
