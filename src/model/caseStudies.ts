@@ -141,7 +141,7 @@ export const caseStudies = [
       "Building a digital platform intended to serve influencers, athletes, artists, bloggers and musicians. The company's platform allows the creation of a custom media kit online with real-time data and analytics, thereby enabling clients to pitch and present themselves in a better manner.",
     ],
     tags: [
-      'Social Networks',
+      'Social Network',
       'Data Analytics',
       'Javascript',
       'React Native Web',
@@ -222,7 +222,7 @@ export const caseStudies = [
   //   paragraphs: [
   //     'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. Kiosks are found in more than 500 businesses, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
   //   ],
-  //   tags: ['Marketing', 'Social Networks', 'Web'],
+  //   tags: ['Marketing', 'Social Network', 'Web'],
   //   title: 'A smart social photo marketing platform',
   // },
   {
@@ -262,7 +262,7 @@ export const caseStudies = [
     ],
     tags: [
       'Marketing',
-      'Social Networks',
+      'Social Network',
       'SaaS',
       'Javascript',
       'NestJS (NodeJS, Typescript)',
@@ -374,7 +374,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining an online scalable platform for co-creating physical, personalized "social gifts" for key life events like birthdays, graduations, weddings, and corporate appreciations. The platform facilitates high-scale collaboration to create beautifully designed cards.',
     ],
-    tags: ['Social Networks', 'Ruby', 'Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku', 'Web'],
+    tags: ['Social Network', 'Ruby', 'Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku', 'Web'],
     title: 'Platform to Co-create Social Gifts',
   },
   {
