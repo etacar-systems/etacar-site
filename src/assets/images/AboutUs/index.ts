@@ -10,6 +10,8 @@ import workExpirience5 from './workExpirience5.webp';
 export const aboutUsImages = {
   aboutUs,
   map,
+  // mapCities,
+  // mapCountries,
   ourTeam,
   workExpirience1,
   workExpirience2,
