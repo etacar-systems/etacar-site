@@ -6,6 +6,7 @@ import pm from './PM.svg';
 import point from './point.svg';
 import support from './support.svg';
 import buttonArrow from './buttonArrow.svg';
+import team from './team.svg';
 
 export const servicePageIcons = {
   buttonArrow,
@@ -16,4 +17,5 @@ export const servicePageIcons = {
   point,
   support,
   success,
+  team,
 };

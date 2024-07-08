@@ -1,10 +1,6 @@
-import computerIcon from '../../../../assets/icons/servicesPage/computer.svg';
-import designIcon from '../../../../assets/icons/servicesPage/design.svg';
-import mobileIcon from '../../../../assets/icons/servicesPage/mobile.svg';
-import pmIcon from '../../../../assets/icons/servicesPage/PM.svg';
-import pointIcon from '../../../../assets/icons/servicesPage/point.svg';
-import supportIcon from '../../../../assets/icons/servicesPage/support.svg';
 import style from './Services.module.scss';
+
+import { servicePageIcons } from '../../../../assets/icons/servicesPage';
 
 export const Services = () => {
   return (
@@ -13,7 +9,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Software development</div>
-            <img src={computerIcon} alt='' />
+            <img src={servicePageIcons.computer} alt='Computer Icon' />
           </div>
           <div className={style.description}>
             We offer comprehensive software development services, from concept to deployment, catering to a wide range
@@ -34,7 +30,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Mobile development</div>
-            <img src={mobileIcon} alt='' />
+            <img src={servicePageIcons.mobile} alt='Mobile Icon' />
           </div>
           <div className={style.description}>
             We build native and cross-platform mobile applications that seamlessly adapt to various devices and
@@ -52,7 +48,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>UX/UI</div>
-            <img src={designIcon} alt='' />
+            <img src={servicePageIcons.design} alt='Design Icon' />
           </div>
           <div className={style.description}>
             We craft intuitive and visually appealing user interfaces that enhance user engagement and brand identity.
@@ -75,7 +71,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Maintenance & support</div>
-            <img src={supportIcon} alt='' />
+            <img src={servicePageIcons.support} alt='Support Icon' />
           </div>
           <div className={style.description}>
             We offer ongoing maintenance and support services to keep your software applications running smoothly and
@@ -98,7 +94,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Web development</div>
-            <img src={computerIcon} alt='' />
+            <img src={servicePageIcons.computer} alt='Computer Icon' />
           </div>
           <div className={style.description}>
             We specialize in creating high-performance, scalable, and user-friendly web applications that deliver
@@ -119,7 +115,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Software testing</div>
-            <img src={pointIcon} alt='' />
+            <img src={servicePageIcons.point} alt='Point Icon' />
           </div>
           <div className={style.description}>
             We provide comprehensive software testing services to ensure the quality, reliability, and security of your
@@ -138,7 +134,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Social Networks Integration</div>
-            <img src={pmIcon} alt='' />
+            <img src={servicePageIcons.pm} alt='PM Icon' />
           </div>
           <div className={style.description}>
             We seamlessly integrate social networks into your applications, enabling users to connect, share, and engage
@@ -158,7 +154,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Support and maintain Cloud infrastructure</div>
-            <img src={pmIcon} alt='' />
+            <img src={servicePageIcons.pm} alt='PM Icon' />
           </div>
           <div className={style.description}>
             We provide expert support and maintenance services for your cloud infrastructure, ensuring your cloud
@@ -182,7 +178,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Microservices architecture</div>
-            <img src={computerIcon} alt='' />
+            <img src={servicePageIcons.computer} alt='Computer Icon' />
           </div>
           <div className={style.description}>
             We design and implement microservices architecture, breaking down complex applications into smaller,
@@ -203,7 +199,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Code audit</div>
-            <img src={pointIcon} alt='' />
+            <img src={servicePageIcons.point} alt='Point Icon' />
           </div>
           <div className={style.description}>
             We conduct rigorous code audits to identify and rectify potential security vulnerabilities, coding errors,
@@ -223,7 +219,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Consultations</div>
-            <img src={pmIcon} alt='' />
+            <img src={servicePageIcons.team} alt='Team Icon' />
           </div>
           <div className={style.description}>
             We provide expert consultations to assist you in making informed decisions about your software development
@@ -242,7 +238,7 @@ export const Services = () => {
         <div className={style.service}>
           <div className={style.title}>
             <div>Project management</div>
-            <img src={pmIcon} alt='' />
+            <img src={servicePageIcons.pm} alt='PM Icon' />
           </div>
           <div className={style.description}>
             We offer comprehensive project management services to ensure your software development projects are executed
