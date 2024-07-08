@@ -1,7 +1,7 @@
 import aboutUs from './aboutUs.webp';
 import map from './map.webp';
-import mapCities from './mapCities.png';
-import mapCountries from './mapCountries.png';
+// import mapCities from './mapCities.webp';
+// import mapCountries from './mapCountries.webp';
 import ourTeam from './ourTeam.webp';
 import workExpirience1 from './workExpirience1.webp';
 import workExpirience2 from './workExpirience2.webp';
@@ -12,8 +12,8 @@ import workExpirience5 from './workExpirience5.webp';
 export const aboutUsImages = {
   aboutUs,
   map,
-  mapCities,
-  mapCountries,
+  // mapCities,
+  // mapCountries,
   ourTeam,
   workExpirience1,
   workExpirience2,

@@ -29,14 +29,13 @@ export const Location = () => {
             ))}
           </div>
           <div className={style.mapImage}>
-            {mapType === 'cities' ? (
+            {/* {mapType === 'cities' ? (
               <img src={aboutUsImages.mapCities} alt='Map Cities' />
             ) : mapType === 'countries' ? (
               <img src={aboutUsImages.mapCountries} alt='Map Countries' />
             ) : (
               <img src={aboutUsImages.map} alt='Default Map' />
-            )}
-            {}
+            )} */}
           </div>
         </div>
       </div>
