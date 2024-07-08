@@ -13,13 +13,14 @@ interface ItemProps {
   title: string;
   orderReverse: boolean;
   index: number;
+  indexOnPage: number;
 }
 
-export const Item = ({ image, paragraphs, tags, title, orderReverse, index }: ItemProps) => {
+export const Item = ({ indexOnPage, image, paragraphs, tags, title, orderReverse, index }: ItemProps) => {
   const navigate = useNavigate();
   return (
     <>
-      {index === 2 ? (
+      {indexOnPage === 2 ? (
         <div className={style.getStarted}>
           <div className={style.textContainer}>
             <div className={style.title}>Will your idea be next?</div>

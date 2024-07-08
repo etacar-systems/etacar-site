@@ -112,6 +112,7 @@ export const CaseStudies = () => {
           paragraphs={item.paragraphs}
           tags={item.tags}
           title={item.title}
+          indexOnPage={index}
         />
       ))}
       <div className={style.pagination_controls}>
