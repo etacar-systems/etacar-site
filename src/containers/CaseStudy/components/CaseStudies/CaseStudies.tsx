@@ -20,19 +20,19 @@ interface CaseStudiesItem {
 
 export const CaseStudies = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [titleFilterKeyword, setTitleFilterKeyword] = useState('all');
-  const [typeFilterKeyword, setTypeFilterKeyword] = useState('all');
+  const [firstFilterKeyword, setFirstFilterKeyword] = useState('all');
+  const [secondFilterKeyword, setSecondFilterKeyword] = useState('all');
   const [filteredCases, setFilteredCases] = useState<CaseStudiesItem[]>(caseStudies);
   const [currentItems, setCurrentItems] = useState<CaseStudiesItem[]>([]);
   const [totalPages, setTotalPages] = useState(1);
 
   const handleTitleFilter = (value: string) => {
-    setTitleFilterKeyword(value.toLowerCase());
+    setSecondFilterKeyword(value.toLowerCase());
     setCurrentPage(1);
   };
 
   const handleTypeFilter = (value: string) => {
-    setTypeFilterKeyword(value.toLowerCase());
+    setFirstFilterKeyword(value.toLowerCase());
     setCurrentPage(1);
   };
 
@@ -51,21 +51,16 @@ export const CaseStudies = () => {
   useEffect(() => {
     let filteredData = caseStudies;
 
-    if (titleFilterKeyword !== 'all') {
-      filteredData = filteredData.filter(
-        item =>
-          item.title.toLowerCase().includes(titleFilterKeyword) ||
-          item.paragraphs.toString().toLowerCase().includes(titleFilterKeyword) ||
-          item.tags.toString().toLowerCase().includes(titleFilterKeyword)
-      );
+    if (secondFilterKeyword !== 'all') {
+      filteredData = filteredData.filter(item => item.tags.toString().toLowerCase().includes(secondFilterKeyword));
     }
 
-    if (typeFilterKeyword !== 'all') {
-      filteredData = filteredData.filter(item => item.tags.toString().toLowerCase().includes(typeFilterKeyword));
+    if (firstFilterKeyword !== 'all') {
+      filteredData = filteredData.filter(item => item.tags.toString().toLowerCase().includes(firstFilterKeyword));
     }
 
     setFilteredCases(filteredData);
-  }, [titleFilterKeyword, typeFilterKeyword]);
+  }, [secondFilterKeyword, firstFilterKeyword]);
 
   useEffect(() => {
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -83,7 +78,7 @@ export const CaseStudies = () => {
           {parSortTags.map(string => (
             <div
               key={string}
-              className={`${typeFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
+              className={`${firstFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
               onClick={() => handleTypeFilter(string.toLowerCase())}
             >
               {string}
@@ -94,7 +89,7 @@ export const CaseStudies = () => {
           {titleSortTags.map(string => (
             <div
               key={string}
-              className={`${titleFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
+              className={`${secondFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
               onClick={() => handleTitleFilter(string.toLowerCase())}
             >
               {string}
