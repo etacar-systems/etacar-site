@@ -1,7 +1,7 @@
-import building from './building.png';
-import comp from './comp.png';
-import house from './house.png';
-import men from './men.png';
+import building from './building.webp';
+import comp from './comp.webp';
+import house from './house.webp';
+import men from './men.webp';
 
 export const images = {
   building,

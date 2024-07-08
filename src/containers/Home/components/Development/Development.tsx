@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Section } from '../../../../components/Section';
-import appleSet from '../../../../assets/images/appleSet.png';
+import appleSet from '../../../../assets/images/appleSet.webp';
 import styles from './Development.module.scss';
 import { Carousel } from './components';
 
@@ -11,7 +11,7 @@ export const Development = () => {
       <div className={styles.container}>
         <img className={styles.img} src={appleSet} alt='development' />
         <div>
-        <div className={styles.points}>
+          <div className={styles.points}>
             <div className={styles.point}>
               <span>1/</span>Discovery
             </div>

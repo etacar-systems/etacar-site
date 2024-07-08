@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
-import { Footer } from '../../components/Footer';
+import { lazy, Suspense, useEffect } from 'react';
+import Loader from '../../components/Loader';
 import { data } from './data';
 
 import style from './TermsOfUse.module.scss';
 
+const Footer = lazy(() => import('../../components/Footer'));
 export const TermsOfUse = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,7 +21,9 @@ export const TermsOfUse = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      <Suspense fallback={<Loader />}>
+        <Footer />
+      </Suspense>
     </>
   );
 };

@@ -1,22 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
+import Loader from '../../components/Loader';
 
-import { Welcome } from './components/Welcome';
 import { Location } from '../../components/Location';
-import { Reviews } from '../../commonSections/Reviews';
-import { Footer } from '../../components/Footer';
-import { CaseStudies } from './components/CaseStudies';
 
+const CaseStudies = lazy(() => import('./components/CaseStudies'));
+const Footer = lazy(() => import('../../components/Footer'));
+const Reviews = lazy(() => import('../../commonSections/Reviews'));
+const Welcome = lazy(() => import('./components/Welcome'));
 export const CaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
-      <Welcome />
-      <CaseStudies />
-      <Location  />
-      <Reviews textColor='dark' theme='dark' />
-      <Footer />
-    </div>
+    <Suspense fallback={<Loader />}>
+      <div>
+        <Welcome />
+        <CaseStudies />
+        <Location />
+        <Reviews textColor='dark' theme='dark' />
+        <Footer />
+      </div>
+    </Suspense>
   );
 };

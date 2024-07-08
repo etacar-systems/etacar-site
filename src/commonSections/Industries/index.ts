@@ -1,1 +1,3 @@
-export * from './Industries';
+import { Industries } from './Industries';
+
+export default Industries;

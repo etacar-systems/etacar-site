@@ -1,1 +1,3 @@
-export { GetEstimationForm } from './GetEstimationForm';
+import { GetEstimationForm } from './GetEstimationForm';
+
+export default GetEstimationForm;
