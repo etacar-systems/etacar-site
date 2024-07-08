@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useEffect } from 'react';
+import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 
 // Alplabetical order is REQUIRED!
@@ -21,15 +22,33 @@ export const Home: React.FC = () => {
   return (
     <Suspense fallback={<Loader />}>
       <div>
-        <Welcome />
-        <Mission />
-        <Development />
-        <CaseStudies />
-        <Services />
-        <Industries />
-        <Reviews arrowColor='dark' theme='blueLight' />
-        <GetEstimationForm />
-        <Footer />
+        <FadeInSection>
+          <Welcome />
+        </FadeInSection>
+        <FadeInSection>
+          <Mission />
+        </FadeInSection>
+        <FadeInSection>
+          <Development />
+        </FadeInSection>
+        <FadeInSection>
+          <CaseStudies />
+        </FadeInSection>
+        <FadeInSection>
+          <Services />
+        </FadeInSection>
+        <FadeInSection>
+          <Industries />
+        </FadeInSection>
+        <FadeInSection>
+          <Reviews arrowColor='dark' theme='blueLight' />
+        </FadeInSection>
+        <FadeInSection>
+          <GetEstimationForm />
+        </FadeInSection>
+        <FadeInSection>
+          <Footer />
+        </FadeInSection>
       </div>
     </Suspense>
   );
