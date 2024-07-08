@@ -7,7 +7,7 @@ export const caseStudies = [
       'Building a business marketplace connecting Clients and Suppliers for professional services. Platform provides intelligent tools that use company data, performance history, ratings and reviews, and service descriptions to project them on performance evaluation charts.',
       'If a company needs services from another business, it can explore the online platform for the best match or use AI-enhanced search tool.',
     ],
-    tags: ['Marketplace', 'Ruby', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo', 'Web'],
+    tags: ['Marketplace', 'Ruby On Rails', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo', 'Web'],
     title: 'AI-backed B2B Marketplace',
   },
   {
@@ -47,17 +47,7 @@ export const caseStudies = [
       'Flexible lesson planning | intuitive, easy-to-use interface | rich export functionality.',
       'With its easy-to-use course creator tool, you can quickly create beautiful online training and immersive lessons to tailor to every learner’s needs.',
     ],
-    tags: [
-      'Educational',
-      'EdTech',
-      'Ruby on Rails',
-      'PostgreSQL',
-      'OAuth 2.0',
-      'React',
-      'Sidekiq',
-      'TypeScript',
-      'Web',
-    ],
+    tags: ['EdTech', 'Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'React', 'Sidekiq', 'TypeScript', 'Web'],
     title: 'Personal Learning Plan',
   },
   {
@@ -166,7 +156,7 @@ export const caseStudies = [
     paragraphs: [
       'Building a dynamic social network for language learners and educators who want to connect across cultures and countries. Users can connect with other learners and engage in audio and video conferencing to practice their speaking skills. The app also offers a unique audio player that allows users to listen to the pronunciation of words and sentences.',
     ],
-    tags: ['EdTech', 'Social Network', 'Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
+    tags: ['EdTech', 'Social Network', 'Ruby on Rails', 'MongoDB', 'React', 'Web'],
     title: 'Language learning and teaching software',
   },
   {
@@ -174,7 +164,7 @@ export const caseStudies = [
     paragraphs: [
       'Building a SaaS platform to empower professional baseball players with actionable, player-centric analytics to improve their game performance. App offers in-depth player statistics, play-by-play updates, and even advanced analytics. Interactive charts, graphs, and visualisations make the data more engaging and understandable for users, enhancing their experience.',
     ],
-    tags: ['Data Analytics', 'Statistics', 'R', 'Node.js', 'Postgres', 'Redis', 'React.js', 'Web'],
+    tags: ['Data Analytics', 'Statistics', 'R', 'Node.js', 'Postgres', 'Redis', 'React', 'Web'],
     title: 'Professional sport analytics SaaS platform',
   },
   {
@@ -214,7 +204,7 @@ export const caseStudies = [
   //   paragraphs: [
   //     'Building a diversified payment acceptance solution designed to provide an affordable and secure way for online transactions. System provides payment processing through virtual terminals, invoice payments, chargeback management, multiple processor connectivity, and more. ',
   //   ],
-  //   tags: ['FinTech', 'eCommerce', 'Ruby on Rails', 'React.js'],
+  //   tags: ['FinTech', 'eCommerce', 'Ruby on Rails', 'React'],
   //   title: 'Next-generation commerce hub',
   // },
   // {
@@ -230,7 +220,7 @@ export const caseStudies = [
     paragraphs: [
       'Online language learning system. Developed cutting edge platform connects students with the most dedicated teachers around the world for one-on-one online language lessons.',
     ],
-    tags: ['Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
+    tags: ['Ruby on Rails', 'MongoDB', 'React', 'Web'],
     title: 'eCommerce B2C Solution based on Workarea Platform',
   },
   {
@@ -238,13 +228,13 @@ export const caseStudies = [
     paragraphs: [
       'Next generation software for a London based auction house. A web-based platform for online bidding and auction management. System supports eBay integration. The software provides complete detailed reports for sellers, giving access to vital information on auctions and sales. The solution is available with a perpetual license along with additional annual license renewal costs.',
     ],
-    tags: ['FinTech', 'Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
+    tags: ['FinTech', 'Ruby on Rails', 'MongoDB', 'React', 'Web'],
     title: 'Cloud-based auction house software',
   },
   // {
   //   image: images.discountApplication,
   //   paragraphs: ['Commerce app that brings users fresh local deals and discounts.'],
-  //   tags: ['Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
+  //   tags: ['Ruby on Rails', 'MongoDB', 'React', 'Web'],
   //   title: 'Discount Application',
   // },
   {
@@ -252,7 +242,7 @@ export const caseStudies = [
     paragraphs: [
       'We designed and developed a comprehensive solution that redefines social media management for brands, marketing agencies, and local businesses. System focuses on increasing followers, likes, and views organically, without fake accounts or bots. It offers analytics to track performance, making it easy to optimize growth strategy and boost engagement.',
     ],
-    tags: ['Marketing', 'Social Network', 'SaaS', 'Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
+    tags: ['Marketing', 'Social Network', 'SaaS', 'Ruby on Rails', 'MongoDB', 'React', 'Web'],
     title: 'Instagram Marketing Automation Toolset',
   },
   {
@@ -268,7 +258,7 @@ export const caseStudies = [
       'NestJS (NodeJS, Typescript)',
       'ExpressJS',
       'MongoDB',
-      'React.js',
+      'React',
       'Web',
     ],
     title: 'SaaS influencer management tool',
@@ -294,7 +284,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing a specialized content management system for an educational content provider. The system includes two primary web-based components: an end-user interface for educators and consumers to browse, search, and export educational materials, and an administrative interface for importing content from various sources and managing the existing content library.',
     ],
-    tags: ['Ruby on Rails', 'RSpec', 'PostgreSQL', 'React.js', 'Web'],
+    tags: ['Ruby on Rails', 'RSpec', 'PostgreSQL', 'React', 'Web'],
     title: 'Educational System',
   },
   {
@@ -366,7 +356,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and deploying the flagship product of a European government organization: an online journal dedicated to a professional juridical audience. The journal provides high-quality content covering the state of the national legal landscape, legal institutions, scientific research, and case studies.',
     ],
-    tags: ['Ruby On Rails', 'MySQL', 'Capistrano', 'React.js', 'Less', 'Web'],
+    tags: ['Ruby On Rails', 'MySQL', 'Capistrano', 'React', 'Less', 'Web'],
     title: 'Online Journal',
   },
   {
@@ -374,7 +364,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining an online scalable platform for co-creating physical, personalized "social gifts" for key life events like birthdays, graduations, weddings, and corporate appreciations. The platform facilitates high-scale collaboration to create beautifully designed cards.',
     ],
-    tags: ['Social Network', 'Ruby', 'Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku', 'Web'],
+    tags: ['Social Network', 'Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku', 'Web'],
     title: 'Platform to Co-create Social Gifts',
   },
   {

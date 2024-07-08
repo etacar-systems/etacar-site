@@ -28,16 +28,16 @@ export const people = [
       ' EtaCar Systems significantly propelled our project  forward, and we are delighted to wholeheartedly recommend them for any web application development work. Their expertise, dedication, and innovative solutions were instrumental in achieving our project goals. Working with EtaCar Systems was a positive and productive experience, and we are confident in their ability to deliver exceptional results for any web development endeavor.',
   },
   {
-    name: 'Craig Sisilio',
+    name: 'Craig Cecilio',
     avatar: Craig,
-    company: 'Founder/CEO',
+    company: 'Founder/CEO @Diversyfund',
     description:
       "We've been working with EtaCar Systems since October 2021. Our platform provides investing in private market assets, so the development velocity and quality are the key  factors. EtaCar engineers help us with the front and back end development plus we have a dedicated QA.",
   },
   {
     name: 'Vincent J. Vachio',
     avatar: Vincent,
-    company: 'FPresident @VSGCommerce',
+    company: 'President @VSGCommerce',
     description:
       'The EtaCar team have focused on planning &amp; delivery of various commerce solutions based on different client needs and technologies selected. They have demonstrated solid technical knowledge, good analytical skills and were valued team members.',
   },
