@@ -24,7 +24,6 @@ import educationalSystem from './educationalSystem.jpg';
 import enterpriseProcurement from './enterpriseProcurement.svg';
 import industrialSupplier from './industrialSupplier.jpg';
 import infrastructureMaintenance from './infrastructureMaintenance.jpg';
-import instagramInfluencerMarketingPlatform from './instagramInfluencerMarketingPlatform.jpg';
 import instagramMarketing from './instagramMarketing.jpg';
 import ITJobOnlineMarketplace from './ITJobOnlineMarketplace.jpg';
 import marketingPlatform from './marketingPlatform.jpg';
@@ -40,6 +39,7 @@ import platformToSocialGifts from './platformToSocialGifts.jpg';
 import productStockManagement from './productStockManagement.svg';
 import reitInvestment from './reitInvestment.jpg';
 import restarauntReservations from './restarauntReservations.jpg';
+import saasInfluencerManagement from './saasInfluencerManagement.webp';
 import singaporeStartup from './singaporeStartup.jpg';
 import socialFundraisingProduct from './socialFundraisingProduct.jpg';
 import UXUIAndSMM from './UXUIAndSMM.jpg';
@@ -72,7 +72,6 @@ export const images = {
   enterpriseProcurement,
   industrialSupplier,
   infrastructureMaintenance,
-  instagramInfluencerMarketingPlatform,
   instagramMarketing,
   ITJobOnlineMarketplace,
   marketingPlatform,
@@ -88,6 +87,7 @@ export const images = {
   productStockManagement,
   reitInvestment,
   restarauntReservations,
+  saasInfluencerManagement,
   singaporeStartup,
   socialFundraisingProduct,
   UXUIAndSMM,

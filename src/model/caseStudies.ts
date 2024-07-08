@@ -25,7 +25,19 @@ export const caseStudies = [
       'Developing online supermarket platform designed for on-demand grocery shopping.',
       'Buyers can select products from thousands of brands and order fresh organic fruits, vegetables, home essentials, OTC pharmaceuticals, and much more conveniently. Users can choose their favorite local supermarkets or stores and get products delivered to their doorsteps fast. Buyers can pay for their orders in multiple convenient and flexible payment modes, such as online banking, UPI payment, card payments, and cash on delivery options. ',
     ],
-    tags: ['eCommerce', 'Ruby', 'PostgreSQL', 'Stripe', 'Sidekiq', 'Twilio', 'RailsAdmin', 'Odoo', 'Web', 'Mobile'],
+    tags: [
+      'FoodTech',
+      'eCommerce',
+      'Ruby',
+      'PostgreSQL',
+      'Stripe',
+      'Sidekiq',
+      'Twilio',
+      'RailsAdmin',
+      'Odoo',
+      'Web',
+      'Mobile',
+    ],
     title: 'On-demand supermarket',
   },
   {
@@ -100,6 +112,7 @@ export const caseStudies = [
       "Mobile app designed to streamline the table reservation process for restaurants and bars. With its interactive map feature, customers can easily book a table by selecting it from the restaurant's floor plan. The system also offers pre-order and deposit options, making it a convenient all-in-one solution for customers and business owners alike.",
     ],
     tags: [
+      'FoodTech',
       'React',
       'Cypress',
       'Node.js',
@@ -128,7 +141,7 @@ export const caseStudies = [
       "Building a digital platform intended to serve influencers, athletes, artists, bloggers and musicians. The company's platform allows the creation of a custom media kit online with real-time data and analytics, thereby enabling clients to pitch and present themselves in a better manner.",
     ],
     tags: [
-      'Social Networks',
+      'Social Network',
       'Data Analytics',
       'Javascript',
       'React Native Web',
@@ -199,9 +212,17 @@ export const caseStudies = [
   // {
   //   image: '',
   //   paragraphs: [
+  //     'Building a diversified payment acceptance solution designed to provide an affordable and secure way for online transactions. System provides payment processing through virtual terminals, invoice payments, chargeback management, multiple processor connectivity, and more. ',
+  //   ],
+  //   tags: ['FinTech', 'eCommerce', 'Ruby on Rails', 'React.js'],
+  //   title: 'Next-generation commerce hub',
+  // },
+  // {
+  //   image: '',
+  //   paragraphs: [
   //     'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. Kiosks are found in more than 500 businesses, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
   //   ],
-  //   tags: ['Marketing', 'Social Networks', 'Web'],
+  //   tags: ['Marketing', 'Social Network', 'Web'],
   //   title: 'A smart social photo marketing platform',
   // },
   {
@@ -226,18 +247,32 @@ export const caseStudies = [
   //   tags: ['Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
   //   title: 'Discount Application',
   // },
-  // {
-  //   image: images.instagramMarketing,
-  //   paragraphs: ['Developing and supporting growth-by-hand marketing automation system.'],
-  //   tags: ['Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
-  //   title: 'Instagram Marketing Automation Toolset',
-  // },
-  // {
-  //   image: images.instagramInfluencerMarketingPlatform,
-  //   paragraphs: ['Developing and supporting innovative Instagram campaign management system.'],
-  //   tags: ['Javascript', 'NestJS (NodeJS, Typescript)', 'ExpressJS', 'MongoDB', 'React.js', 'Web'],
-  //   title: 'Instagram Influencer Marketing Platform',
-  // },
+  {
+    image: images.instagramMarketing,
+    paragraphs: [
+      'We designed and developed a comprehensive solution that redefines social media management for brands, marketing agencies, and local businesses. System focuses on increasing followers, likes, and views organically, without fake accounts or bots. It offers analytics to track performance, making it easy to optimize growth strategy and boost engagement.',
+    ],
+    tags: ['Marketing', 'Social Network', 'SaaS', 'Ruby on Rails', 'MongoDB', 'React.js', 'Web'],
+    title: 'Instagram Marketing Automation Toolset',
+  },
+  {
+    image: images.saasInfluencerManagement,
+    paragraphs: [
+      'We developed and maintained an innovative system that creates, manages, and analyzes influencer campaigns on Instagram. From tracking data, managing posting & content schedules, to working with the many large Shopify catalogs and products, the system helps to organize the influencer marketing campaigns.',
+    ],
+    tags: [
+      'Marketing',
+      'Social Network',
+      'SaaS',
+      'Javascript',
+      'NestJS (NodeJS, Typescript)',
+      'ExpressJS',
+      'MongoDB',
+      'React.js',
+      'Web',
+    ],
+    title: 'SaaS influencer management tool',
+  },
   {
     image: images.ecommerceSolutionBasedOnOCCPlatform,
     paragraphs: [
@@ -299,7 +334,7 @@ export const caseStudies = [
     paragraphs: [
       'Online marketplace enabling social influencers, individual entrepreneurs, and shop brands to curate, organize, and showcase multimedia content within interest-based communities such as Food, Events, Travel, Fitness, Beauty, and Fashion. The platform encourages users to monetize their popularity, passion, or expertise through media-rich micro channels.',
     ],
-    tags: ['Marketing', 'PHP', 'MySQL', 'Less', 'Angular.js', 'jQuery', 'AWS', 'Web'],
+    tags: ['Marketing', 'Django', 'MySQL', 'Less', 'Angular.js', 'jQuery', 'AWS', 'Web'],
     title: 'Ecommerce Social Platform',
   },
   {
@@ -339,7 +374,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining an online scalable platform for co-creating physical, personalized "social gifts" for key life events like birthdays, graduations, weddings, and corporate appreciations. The platform facilitates high-scale collaboration to create beautifully designed cards.',
     ],
-    tags: ['Social Networks', 'Ruby', 'Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku', 'Web'],
+    tags: ['Social Network', 'Ruby', 'Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku', 'Web'],
     title: 'Platform to Co-create Social Gifts',
   },
   {
@@ -347,7 +382,7 @@ export const caseStudies = [
     paragraphs: [
       'Designing, developing, and maintaining an online eCommerce system for a company specializing in healthcare and diabetic supplies. The system caters to consumers, professionals, and doctors with specific features tailored to different customer groups such as bronze, silver, and gold, each with distinct pricing policies. It implements a price surcharge mechanism instead of built-in discount rules, customizes group membership logic including subscription expiration checks, and includes features like reward points and superpoints functionality. Payment processing is handled via Authorize.net.',
     ],
-    tags: ['PHP', 'Javascript', 'jQuery', 'MySQL', 'AWS', 'Web'],
+    tags: ['Django', 'Javascript', 'jQuery', 'MySQL', 'AWS', 'Web'],
     title: 'Ecommerce System for Healthcare Supplier',
   },
   {
