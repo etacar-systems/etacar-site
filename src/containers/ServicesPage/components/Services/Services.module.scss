@@ -43,6 +43,11 @@
   color: $color--lightgray;
   gap: 1rem;
 
+  & img {
+    width: 24px;
+    height: 24px;
+  }
+
   .title {
     display: flex;
     justify-content: space-between;
