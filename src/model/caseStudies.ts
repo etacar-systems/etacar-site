@@ -7,7 +7,7 @@ export const caseStudies = [
       'Building a business marketplace connecting Clients and Suppliers for professional services. Platform provides intelligent tools that use company data, performance history, ratings and reviews, and service descriptions to project them on performance evaluation charts.',
       'If a company needs services from another business, it can explore the online platform for the best match or use AI-enhanced search tool.',
     ],
-    tags: ['Marketplace', 'Ruby On Rails', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo', 'Web'],
+    tags: ['Marketplace', 'Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo', 'Web'],
     title: 'AI-backed B2B Marketplace',
   },
   {
@@ -340,7 +340,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and supporting an online marketplace platform that aggregates, organizes, and showcases a national pool of live talent to top IT companies. Companies create profiles detailing their business and brand, post specific job listings including details, dates, and pricing. Verified jobs are published for the talent pool to view and apply. Professionals can showcase their career strengths, goals, skills, work styles, aspirations, and job-change receptivity. Job seekers connect with employers and hiring managers via in-app chat. The platform, powered by intelligent machine-learning algorithms, provides daily recommendations for opportunities tailored to user profiles and interests.',
     ],
-    tags: ['Ruby On Rails', 'PostgreSQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
+    tags: ['Ruby on Rails', 'PostgreSQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
     title: 'IT Job Online Marketplace Platform',
   },
   {
@@ -348,7 +348,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining a web platform dedicated to an independent community centered around Information and Communication Technology (ICT), where professionals, enthusiasts, students, and employers interact and engage. The platform specialists curate and share important industry news, articles, reviews, and other content daily, fostering interaction and knowledge-sharing among community members.',
     ],
-    tags: ['Ruby On Rails', 'MySQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
+    tags: ['Ruby on Rails', 'MySQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
     title: 'Community Web Platform',
   },
   {
@@ -356,7 +356,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and deploying the flagship product of a European government organization: an online journal dedicated to a professional juridical audience. The journal provides high-quality content covering the state of the national legal landscape, legal institutions, scientific research, and case studies.',
     ],
-    tags: ['Ruby On Rails', 'MySQL', 'Capistrano', 'React', 'Less', 'Web'],
+    tags: ['Ruby on Rails', 'MySQL', 'Capistrano', 'React', 'Less', 'Web'],
     title: 'Online Journal',
   },
   {
