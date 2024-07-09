@@ -46,9 +46,7 @@ export const Home: React.FC = () => {
         <FadeInSection>
           <GetEstimationForm />
         </FadeInSection>
-        <FadeInSection>
-          <Footer />
-        </FadeInSection>
+        <Footer />
       </div>
     </Suspense>
   );
