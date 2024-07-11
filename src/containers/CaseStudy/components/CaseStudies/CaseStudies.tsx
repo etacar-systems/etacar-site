@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { caseStudies } from '../../../../model/caseStudies';
 import { Item } from './components/Item';
@@ -7,7 +8,6 @@ import paginationArrow from '../../../../assets/icons/CaseStudies/paginationArro
 import disabledPaginationArrow from '../../../../assets/icons/CaseStudies/disabledPaginationArrow.svg';
 
 import style from './CaseStudies.module.scss';
-import { useLocation } from 'react-router-dom';
 
 const ITEMS_PER_PAGE = 6;
 
