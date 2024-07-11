@@ -20,7 +20,13 @@ export const CaseStudies: FC = () => {
         >
           {caseStudies.map((item, index) => (
             <SwiperSlide area-hidden key={index}>
-              <Item image={item.image} paragraphs={item.paragraphs} tags={item.tags} title={item.title} />
+              <Item
+                image={item.image}
+                paragraphs={item.paragraphs}
+                tags={item.tags}
+                title={item.title}
+                keyTags={item.keyTags}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
