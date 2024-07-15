@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { caseStudies } from '../../../../model/caseStudies';
 import { Item } from './components/Item';
@@ -16,22 +17,25 @@ interface CaseStudiesItem {
   paragraphs: string[];
   tags: string[];
   type?: string;
+  keyTags: string[];
 }
 
 export const CaseStudies = () => {
+  const location = useLocation();
+  const from = location.state;
   const [currentPage, setCurrentPage] = useState(1);
-  const [firstFilterKeyword, setFirstFilterKeyword] = useState('all');
-  const [secondFilterKeyword, setSecondFilterKeyword] = useState('all');
+  const [firstFilterKeyword, setFirstFilterKeyword] = useState(from ? from[0].toLowerCase() : 'all');
+  const [secondFilterKeyword, setSecondFilterKeyword] = useState(from ? from[1].toLowerCase() : 'all');
   const [filteredCases, setFilteredCases] = useState<CaseStudiesItem[]>(caseStudies);
   const [currentItems, setCurrentItems] = useState<CaseStudiesItem[]>([]);
   const [totalPages, setTotalPages] = useState(1);
 
-  const handleTitleFilter = (value: string) => {
+  const handleSecondFilter = (value: string) => {
     setSecondFilterKeyword(value.toLowerCase());
     setCurrentPage(1);
   };
 
-  const handleTypeFilter = (value: string) => {
+  const handleFirstFilter = (value: string) => {
     setFirstFilterKeyword(value.toLowerCase());
     setCurrentPage(1);
   };
@@ -52,11 +56,19 @@ export const CaseStudies = () => {
     let filteredData = caseStudies;
 
     if (secondFilterKeyword !== 'all') {
-      filteredData = filteredData.filter(item => item.tags.toString().toLowerCase().includes(secondFilterKeyword));
+      filteredData = filteredData.filter(
+        item =>
+          item.keyTags.toString().toLowerCase().includes(secondFilterKeyword) ||
+          item.tags.toString().toLowerCase().includes(secondFilterKeyword)
+      );
     }
 
     if (firstFilterKeyword !== 'all') {
-      filteredData = filteredData.filter(item => item.tags.toString().toLowerCase().includes(firstFilterKeyword));
+      filteredData = filteredData.filter(
+        item =>
+          item.keyTags.toString().toLowerCase().includes(firstFilterKeyword) ||
+          item.tags.toString().toLowerCase().includes(secondFilterKeyword)
+      );
     }
 
     setFilteredCases(filteredData);
@@ -79,7 +91,7 @@ export const CaseStudies = () => {
             <div
               key={string}
               className={`${firstFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
-              onClick={() => handleTypeFilter(string.toLowerCase())}
+              onClick={() => handleFirstFilter(string.toLowerCase())}
             >
               {string}
             </div>
@@ -90,7 +102,7 @@ export const CaseStudies = () => {
             <div
               key={string}
               className={`${secondFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
-              onClick={() => handleTitleFilter(string.toLowerCase())}
+              onClick={() => handleSecondFilter(string.toLowerCase())}
             >
               {string}
             </div>
@@ -105,7 +117,7 @@ export const CaseStudies = () => {
           orderReverse={index % 2 === 1}
           image={item.image}
           paragraphs={item.paragraphs}
-          tags={item.tags}
+          tags={[...item.keyTags, ...item.tags]}
           title={item.title}
           indexOnPage={index}
         />
@@ -120,7 +132,7 @@ export const CaseStudies = () => {
           )}
         </div>
         <div className={style.page_number}>
-          {currentPage} / {totalPages}
+          {totalPages === 0 ? 0 : currentPage} / {totalPages}
         </div>
         <div className={style.next_button_container}>
           <button className={style.buttonNext} onClick={handleClickNext} disabled={currentPage === totalPages} />

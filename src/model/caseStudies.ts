@@ -7,7 +7,8 @@ export const caseStudies = [
       'Building a business marketplace connecting Clients and Suppliers for professional services. Platform provides intelligent tools that use company data, performance history, ratings and reviews, and service descriptions to project them on performance evaluation charts.',
       'If a company needs services from another business, it can explore the online platform for the best match or use AI-enhanced search tool.',
     ],
-    tags: ['Marketplace', 'Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo', 'Web'],
+    tags: ['Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo'],
+    keyTags: ['Web', 'Marketplace'],
     title: 'AI-backed B2B Marketplace',
   },
   {
@@ -16,7 +17,8 @@ export const caseStudies = [
       'Inventory management app for food businesses.',
       'Possibility to create Purchase orders or Internal transfers | Creating of the Inventory (Stock) take with additional features | Easy to use filtering with multiple options | Flexible customization settings.',
     ],
-    tags: ['Management', 'Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'Sidekiq', 'Web'],
+    tags: ['Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'Sidekiq'],
+    keyTags: ['Web', 'Management'],
     title: 'Product stock management app',
   },
   {
@@ -25,19 +27,8 @@ export const caseStudies = [
       'Developing online supermarket platform designed for on-demand grocery shopping.',
       'Buyers can select products from thousands of brands and order fresh organic fruits, vegetables, home essentials, OTC pharmaceuticals, and much more conveniently. Users can choose their favorite local supermarkets or stores and get products delivered to their doorsteps fast. Buyers can pay for their orders in multiple convenient and flexible payment modes, such as online banking, UPI payment, card payments, and cash on delivery options. ',
     ],
-    tags: [
-      'FoodTech',
-      'eCommerce',
-      'Ruby',
-      'PostgreSQL',
-      'Stripe',
-      'Sidekiq',
-      'Twilio',
-      'RailsAdmin',
-      'Odoo',
-      'Web',
-      'Mobile',
-    ],
+    tags: ['eCommerce', 'Ruby', 'PostgreSQL', 'Stripe', 'Sidekiq', 'Twilio', 'RailsAdmin', 'Odoo', 'Web'],
+    keyTags: ['Mobile', 'FoodTech'],
     title: 'On-demand supermarket',
   },
   {
@@ -48,6 +39,7 @@ export const caseStudies = [
       'With its easy-to-use course creator tool, you can quickly create beautiful online training and immersive lessons to tailor to every learner’s needs.',
     ],
     tags: ['EdTech', 'Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'React', 'Sidekiq', 'TypeScript', 'Web'],
+    keyTags: ['Web', 'EdTech'],
     title: 'Personal Learning Plan',
   },
   {
@@ -56,7 +48,6 @@ export const caseStudies = [
       'Building an innovative platform that simplifies corporate procurement processes and B2B payments, providing tools for pre-approved purchases, automated documentation, and spend management. Payment solution is integrated within the MasterCard ICCP which is connected with over 70 banks globally.',
     ],
     tags: [
-      'FinTech',
       'B2B',
       'Enterprise',
       'Management',
@@ -68,8 +59,8 @@ export const caseStudies = [
       'ElasticSearch',
       'OAuth 2.0',
       'HAML',
-      'Web',
     ],
+    keyTags: ['Web', 'FinTech'],
     title: 'Procurement and B2B payments management solution',
   },
   {
@@ -79,7 +70,6 @@ export const caseStudies = [
       'Marketplace for bottled water delivery from your favorite local retail places to America’s counter spaces within 2 or 4 hours daily. System offers an easy to use ordering, convenience and delivery process all at the touch of a few buttons; from the Brands you already know from the places you already go!',
     ],
     tags: [
-      'FoodTech',
       'Management',
       'Ruby',
       'PostgreSQL',
@@ -92,8 +82,8 @@ export const caseStudies = [
       'tRPC',
       'Stripe',
       'Web',
-      'Mobile',
     ],
+    keyTags: ['Mobile', 'FoodTech'],
     title: 'Delivery management system with automated order-to-delivery process',
   },
   {
@@ -102,7 +92,6 @@ export const caseStudies = [
       "Mobile app designed to streamline the table reservation process for restaurants and bars. With its interactive map feature, customers can easily book a table by selecting it from the restaurant's floor plan. The system also offers pre-order and deposit options, making it a convenient all-in-one solution for customers and business owners alike.",
     ],
     tags: [
-      'FoodTech',
       'React',
       'Cypress',
       'Node.js',
@@ -113,8 +102,8 @@ export const caseStudies = [
       'tRPC',
       'StripeB',
       'Web',
-      'Mobile',
     ],
+    keyTags: ['Mobile', 'FoodTech'],
     title: 'Restaurant reservations and pre-orders platform',
   },
   {
@@ -122,7 +111,8 @@ export const caseStudies = [
     paragraphs: [
       'We developed a secure online portal where investors can easily manage their investments and track their returns. System gives non accredited investors the ability to diversify into real estate investing for as little as $500. Using this platform, users buy shares in REIT, a public non listed real estate investment trust.',
     ],
-    tags: ['FinTech', 'Real Estate', 'Ruby on Rails', 'React', 'MongoDB', 'Web'],
+    tags: ['Real Estate', 'Ruby on Rails', 'React', 'MongoDB'],
+    keyTags: ['Web', 'FinTech'],
     title: 'REIT Investment Platform',
   },
   {
@@ -130,16 +120,8 @@ export const caseStudies = [
     paragraphs: [
       "Building a digital platform intended to serve influencers, athletes, artists, bloggers and musicians. The company's platform allows the creation of a custom media kit online with real-time data and analytics, thereby enabling clients to pitch and present themselves in a better manner.",
     ],
-    tags: [
-      'Social Network',
-      'Data Analytics',
-      'Javascript',
-      'React Native Web',
-      'Serverless',
-      'Postgresql',
-      'Web',
-      'Mobile',
-    ],
+    tags: ['Data Analytics', 'Javascript', 'React Native Web', 'Serverless', 'Postgresql', 'Web'],
+    keyTags: ['Mobile', 'Social Network'],
     title: 'SaaS-based platform offering data analytics solutions for influencers',
   },
   {
@@ -148,7 +130,8 @@ export const caseStudies = [
       'Building an one-on-one online language platform that connects learners with our professional tutors.',
       'Teachers can set their rates, create profiles highlighting their qualifications, and have a flexible schedule. System provides tools for customized lesson creation, marketing, and student management, enabling teachers to build their brand.',
     ],
-    tags: ['EdTech', 'Ruby on Rails', 'React', 'MongoDB', 'Web'],
+    tags: ['Ruby on Rails', 'React', 'MongoDB'],
+    keyTags: ['Web', 'EdTech'],
     title: 'SaaS-based language platform',
   },
   {
@@ -157,6 +140,7 @@ export const caseStudies = [
       'Building a dynamic social network for language learners and educators who want to connect across cultures and countries. Users can connect with other learners and engage in audio and video conferencing to practice their speaking skills. The app also offers a unique audio player that allows users to listen to the pronunciation of words and sentences.',
     ],
     tags: ['EdTech', 'Social Network', 'Ruby on Rails', 'MongoDB', 'React', 'Web'],
+    keyTags: ['Web', 'EdTech'],
     title: 'Language learning and teaching software',
   },
   {
@@ -164,7 +148,8 @@ export const caseStudies = [
     paragraphs: [
       'Building a SaaS platform to empower professional baseball players with actionable, player-centric analytics to improve their game performance. App offers in-depth player statistics, play-by-play updates, and even advanced analytics. Interactive charts, graphs, and visualisations make the data more engaging and understandable for users, enhancing their experience.',
     ],
-    tags: ['Management', 'Data Analytics', 'Statistics', 'R', 'Node.js', 'Postgres', 'Redis', 'React', 'Web'],
+    tags: ['Data Analytics', 'Statistics', 'R', 'Node.js', 'Postgres', 'Redis', 'React'],
+    keyTags: ['Web', 'Management'],
     title: 'Professional sport analytics SaaS platform',
   },
   {
@@ -172,7 +157,8 @@ export const caseStudies = [
     paragraphs: [
       'System harnesses location data to build a precise understanding of consumers’ physical world behavior. Fortune 500 companies and marquee brands, activate this customer intelligence through audience targeting, measurement, insights and data licensing solutions. By filling the massive gap in understanding how consumers spend the majority of their time, the system provides marketers a comprehensive new model of the customer journey for impactful engagement.',
     ],
-    tags: ['Marketing', 'Hadoop', 'Python', 'Django', 'Web'],
+    tags: ['Hadoop', 'Python', 'Django'],
+    keyTags: ['Web', 'Marketing'],
     title: 'Marketing platform powered by location data',
   },
   {
@@ -181,6 +167,7 @@ export const caseStudies = [
       'Building a scalable end-to-end commerce platform composed of loosely coupled Ruby on Rails Microservices. The project included developing the comprehensive ecommerce customer site, the portal for direct sales representatives, and the admin tools to manage products, customers, and orders.',
     ],
     tags: ['eCommerce', 'Ruby on Rails', 'MongoDB', 'Angular', 'Web'],
+    keyTags: ['Web', 'eCommerce'],
     title: 'Multi-brand eCommerce platform',
   },
   {
@@ -188,7 +175,8 @@ export const caseStudies = [
     paragraphs: [
       'We helped in creating a high-functioning feature rich eCommerce site for Fortune 500 company. Company supplies products and services to various industries including medical, chemical and electronic manufacturers. The new eCommerce experience elevates the brand’s digital presence, and guides users to revamped product detail pages, through a streamlined site architecture.',
     ],
-    tags: ['eCommerce', 'Javascript', 'Knockout', 'OCC', 'jQuery', 'Web'],
+    tags: ['Javascript', 'Knockout', 'OCC', 'jQuery'],
+    keyTags: ['Web', 'eCommerce'],
     title: 'Industrial Supplier eCommerce Solution',
   },
   {
@@ -196,7 +184,8 @@ export const caseStudies = [
     paragraphs: [
       'Providing customers with the latest B2B technology which also addressed some of the industrial intricacies without the need for bespoke development was a key consideration in selecting the Workarea B2B solution. This allowed to go live quickly and easily with a system that is fully integrated with their ERP solution removing the need for additional administration whilst giving customers access to real-time information.',
     ],
-    tags: ['eCommerce', 'Enterprise', 'Ruby on Rails', 'MongoDB', 'jQuery', 'SASS', 'ElasticSearch', 'HAML', 'Web'],
+    tags: ['Enterprise', 'Ruby on Rails', 'MongoDB', 'jQuery', 'SASS', 'ElasticSearch', 'HAML'],
+    keyTags: ['Web', 'eCommerce'],
     title: 'B2B Solution based on Workarea Platform',
   },
   // {
@@ -220,7 +209,8 @@ export const caseStudies = [
     paragraphs: [
       'Online language learning system. Developed cutting edge platform connects students with the most dedicated teachers around the world for one-on-one online language lessons.',
     ],
-    tags: ['eCommerce', 'EdTech', 'Ruby on Rails', 'MongoDB', 'React', 'Web'],
+    tags: ['EdTech', 'Ruby on Rails', 'MongoDB', 'React'],
+    keyTags: ['Web', 'eCommerce'],
     title: 'eCommerce B2C Solution based on Workarea Platform',
   },
   {
@@ -228,7 +218,8 @@ export const caseStudies = [
     paragraphs: [
       'Next generation software for a London based auction house. A web-based platform for online bidding and auction management. System supports eBay integration. The software provides complete detailed reports for sellers, giving access to vital information on auctions and sales. The solution is available with a perpetual license along with additional annual license renewal costs.',
     ],
-    tags: ['Management', 'FinTech', 'Ruby on Rails', 'MongoDB', 'React', 'Web'],
+    tags: ['FinTech', 'Ruby on Rails', 'MongoDB', 'React'],
+    keyTags: ['Web', 'Management'],
     title: 'Cloud-based auction house software',
   },
   // {
@@ -242,7 +233,8 @@ export const caseStudies = [
     paragraphs: [
       'We designed and developed a comprehensive solution that redefines social media management for brands, marketing agencies, and local businesses. System focuses on increasing followers, likes, and views organically, without fake accounts or bots. It offers analytics to track performance, making it easy to optimize growth strategy and boost engagement.',
     ],
-    tags: ['Marketing', 'Social Network', 'SaaS', 'Ruby on Rails', 'MongoDB', 'React', 'Web'],
+    tags: ['Social Network', 'SaaS', 'Ruby on Rails', 'MongoDB', 'React'],
+    keyTags: ['Web', 'Marketing'],
     title: 'Instagram Marketing Automation Toolset',
   },
   {
@@ -250,17 +242,8 @@ export const caseStudies = [
     paragraphs: [
       'We developed and maintained an innovative system that creates, manages, and analyzes influencer campaigns on Instagram. From tracking data, managing posting & content schedules, to working with the many large Shopify catalogs and products, the system helps to organize the influencer marketing campaigns.',
     ],
-    tags: [
-      'Marketing',
-      'Social Network',
-      'SaaS',
-      'Javascript',
-      'NestJS (NodeJS, Typescript)',
-      'ExpressJS',
-      'MongoDB',
-      'React',
-      'Web',
-    ],
+    tags: ['Social Network', 'SaaS', 'Javascript', 'NestJS (NodeJS, Typescript)', 'ExpressJS', 'MongoDB', 'React'],
+    keyTags: ['Web', 'Marketing'],
     title: 'SaaS influencer management tool',
   },
   {
@@ -268,7 +251,8 @@ export const caseStudies = [
     paragraphs: [
       'We helped in creating a high-functioning feature rich eCommerce site for Fortune 500 company. Company supplies products and services to various industries including medical, chemical and electronic manufacturers. The new eCommerce experience elevates the brand’s digital presence, and guides users to revamped product detail pages, through a streamlined site architecture.',
     ],
-    tags: ['eCommerce', 'Oracle Commerce Cloud', 'RequireJS', 'Knockout.js', 'Web'],
+    tags: ['Oracle Commerce Cloud', 'RequireJS', 'Knockout.js'],
+    keyTags: ['Web', 'eCommerce'],
     title: 'eCommerce Solution based on OCC Platform',
   },
   {
@@ -276,7 +260,8 @@ export const caseStudies = [
     paragraphs: [
       'Designing and developing game-changing, disruptive platform that enables business owners to do marketing and advertising on their own terms, for free. The platform provides businesses worldwide the ability to compete with larger enterprises despite limited marketing budgets.',
     ],
-    tags: ['Marketing', 'Management', 'Ruby on Rails 4', 'Heroku', 'MySQL', 'jQuery', 'Coffeescript', 'Web'],
+    tags: ['Management', 'Ruby on Rails 4', 'Heroku', 'MySQL', 'jQuery', 'Coffeescript'],
+    keyTags: ['Web', 'Marketing'],
     title: 'New Gen Couponing System',
   },
   {
@@ -284,23 +269,25 @@ export const caseStudies = [
     paragraphs: [
       'Developing a specialized content management system for an educational content provider. The system includes two primary web-based components: an end-user interface for educators and consumers to browse, search, and export educational materials, and an administrative interface for importing content from various sources and managing the existing content library.',
     ],
-    tags: ['EdTech', 'Management', 'Ruby on Rails', 'RSpec', 'PostgreSQL', 'React', 'Web'],
+    tags: ['Management', 'Ruby on Rails', 'RSpec', 'PostgreSQL', 'React'],
+    keyTags: ['Web', 'EdTech'],
     title: 'Educational System',
   },
-  {
-    image: images.migrationFromLegacy,
-    paragraphs: [
-      'Designing and building migration from legacy low automated deployment processes to containerization with Kubernetes, and developing a monitoring system based on the ELK stack (Elasticsearch, Logstash, Kibana) and Apache Hive. The project also includes implementing fully automated CI/CD processes. As a result, time to market has improved by 3.5 times within one year, achieving a 100% production SLA.',
-    ],
-    tags: ['Kubernetes', 'Helm', 'Docker', 'AWS', 'ELK', 'Apache Hive', 'Apache Kafka', 'Terraform'],
-    title: 'Migration from Legacy',
-  },
+  // {
+  //   image: images.migrationFromLegacy,
+  //   paragraphs: [
+  //     'Designing and building migration from legacy low automated deployment processes to containerization with Kubernetes, and developing a monitoring system based on the ELK stack (Elasticsearch, Logstash, Kibana) and Apache Hive. The project also includes implementing fully automated CI/CD processes. As a result, time to market has improved by 3.5 times within one year, achieving a 100% production SLA.',
+  //   ],
+  //   tags: ['Kubernetes', 'Helm', 'Docker', 'AWS', 'ELK', 'Apache Hive', 'Apache Kafka', 'Terraform'],
+  //   title: 'Migration from Legacy',
+  // },
   {
     image: images.infrastructureMaintenance,
     paragraphs: [
       'Maintaining and improving the infrastructure of a large social network, including migrating from legacy systems to a dockerized infrastructure with orchestration, automating numerous manual tasks using Ansible, supporting AWS ECS environments, and developing Jenkins pipeline infrastructure from scratch. Full AWS support is provided, covering EC2, VPC, CloudWatch, ELB, ElasticCache, RDS, ElasticSearch, and more.',
     ],
-    tags: ['Social Network', 'Docker', 'AWS', 'ECS', 'Ansible', 'Jenkins Pipelines', 'Terraform'],
+    tags: ['Docker', 'AWS', 'ECS', 'Ansible', 'Jenkins Pipelines', 'Terraform'],
+    keyTags: ['Web', 'Social Network'],
     title: 'Infrastructure Maintenance',
   },
   {
@@ -308,7 +295,8 @@ export const caseStudies = [
     paragraphs: [
       'AI-powered tool designed to enhance content shareability among specific audiences. The system suggests optimal headlines, content optimization strategies, and distribution channels to achieve exponential traffic growth. It serves as an innovative instrument for marketers, editors, and publishers, automating manual tasks, providing insights from big data, and helping beat competitors with unexpected popularity.',
     ],
-    tags: ['Management', 'Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
+    tags: ['Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
+    keyTags: ['Web', 'Management'],
     title: 'ML Based Startup',
   },
   {
@@ -316,7 +304,8 @@ export const caseStudies = [
     paragraphs: [
       'Supporting a Singapore-based startup company by designing and developing a CI/CD process to improve their existing weakly automated EC2 infrastructure. The goal of continuous delivery is to minimize time to market for innovative features. All teams including developers, DevOps, and QA were involved in the continuous process. The project aimed to achieve a 99.9% SLA for the production environment and successfully reduced feature to market time from 1 month to 2 days.',
     ],
-    tags: ['Management', 'Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
+    tags: ['Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
+    keyTags: ['Web', 'Management'],
     title: 'Singapore-based Startup Support',
   },
   {
@@ -324,7 +313,8 @@ export const caseStudies = [
     paragraphs: [
       'Online marketplace enabling social influencers, individual entrepreneurs, and shop brands to curate, organize, and showcase multimedia content within interest-based communities such as Food, Events, Travel, Fitness, Beauty, and Fashion. The platform encourages users to monetize their popularity, passion, or expertise through media-rich micro channels.',
     ],
-    tags: ['eCommerce', 'Marketing', 'Django', 'MySQL', 'Angular.js', 'jQuery', 'AWS', 'Web'],
+    tags: ['Marketing', 'Django', 'MySQL', 'Angular.js', 'jQuery', 'AWS'],
+    keyTags: ['Web', 'eCommerce'],
     title: 'eCommerce Social Platform',
   },
   {
@@ -332,7 +322,8 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining a proprietary content management solution for a European media company. The solution automates editorial processes for news, posts, and columns, manages proprietary comments, handles publishing schedules, tracks content activity, and supports complex branding requirements. It includes customizable workflows, roles, and content types, making it easy to build, manage, and coordinate a content team.',
     ],
-    tags: ['Management', 'Ruby on Rails', 'RSpec', 'Angular.js', 'MySQL', 'GCP', 'Web'],
+    tags: ['Ruby on Rails', 'RSpec', 'Angular.js', 'MySQL', 'GCP'],
+    keyTags: ['Web', 'Management'],
     title: 'Content Management Solution',
   },
   {
@@ -340,7 +331,8 @@ export const caseStudies = [
     paragraphs: [
       'Developing and supporting an online marketplace platform that aggregates, organizes, and showcases a national pool of live talent to top IT companies. Companies create profiles detailing their business and brand, post specific job listings including details, dates, and pricing. Verified jobs are published for the talent pool to view and apply. Professionals can showcase their career strengths, goals, skills, work styles, aspirations, and job-change receptivity. Job seekers connect with employers and hiring managers via in-app chat. The platform, powered by intelligent machine-learning algorithms, provides daily recommendations for opportunities tailored to user profiles and interests.',
     ],
-    tags: ['Enterprise', 'Marketplace', 'Ruby on Rails', 'PostgreSQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
+    tags: ['Marketplace', 'Ruby on Rails', 'PostgreSQL', 'Capistrano', 'jQuery', 'Redis'],
+    keyTags: ['Web', 'Enterprise'],
     title: 'IT Job Online Marketplace Platform',
   },
   {
@@ -348,7 +340,8 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining a web platform dedicated to an independent community centered around Information and Communication Technology (ICT), where professionals, enthusiasts, students, and employers interact and engage. The platform specialists curate and share important industry news, articles, reviews, and other content daily, fostering interaction and knowledge-sharing among community members.',
     ],
-    tags: ['Social Network', 'Ruby on Rails', 'MySQL', 'Capistrano', 'jQuery', 'Redis', 'Web'],
+    tags: ['Ruby on Rails', 'MySQL', 'Capistrano', 'jQuery', 'Redis'],
+    keyTags: ['Web', 'Social Network'],
     title: 'Community Web Platform',
   },
   {
@@ -356,7 +349,8 @@ export const caseStudies = [
     paragraphs: [
       'Developing and deploying the flagship product of a European government organization: an online journal dedicated to a professional juridical audience. The journal provides high-quality content covering the state of the national legal landscape, legal institutions, scientific research, and case studies.',
     ],
-    tags: ['Enterprise', 'Social Network', 'Ruby on Rails', 'MySQL', 'Capistrano', 'React', 'Web'],
+    tags: ['Social Network', 'Ruby on Rails', 'MySQL', 'Capistrano', 'React'],
+    keyTags: ['Web', 'Enterprise'],
     title: 'Online Journal',
   },
   {
@@ -364,7 +358,8 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining an online scalable platform for co-creating physical, personalized "social gifts" for key life events like birthdays, graduations, weddings, and corporate appreciations. The platform facilitates high-scale collaboration to create beautifully designed cards.',
     ],
-    tags: ['Social Network', 'Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku', 'Web'],
+    tags: ['Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku'],
+    keyTags: ['Web', 'Social Network'],
     title: 'Platform to Co-create Social Gifts',
   },
   {
@@ -372,7 +367,8 @@ export const caseStudies = [
     paragraphs: [
       'Designing, developing, and maintaining an online eCommerce system for a company specializing in healthcare and diabetic supplies. The system caters to consumers, professionals, and doctors with specific features tailored to different customer groups such as bronze, silver, and gold, each with distinct pricing policies. It implements a price surcharge mechanism instead of built-in discount rules, customizes group membership logic including subscription expiration checks, and includes features like reward points and superpoints functionality. Payment processing is handled via Authorize.net.',
     ],
-    tags: ['eCommerce', 'Management', 'Django', 'Javascript', 'jQuery', 'MySQL', 'AWS', 'Web'],
+    tags: ['Management', 'Django', 'Javascript', 'jQuery', 'MySQL', 'AWS'],
+    keyTags: ['Web', 'eCommerce'],
     title: 'eCommerce System for Healthcare Supplier',
   },
   {
@@ -380,7 +376,8 @@ export const caseStudies = [
     paragraphs: [
       'Working on a software platform that offers brands, publishers, and civic institutions publishing tools for creating social, place-based experiences. The dynamic open platform intuitively delivers media-rich experiences, integrating video, image, sound, mapping, and text features in one cohesive environment. Currently developing an ESRI-based prototype of a cloud marketing solution that combines content with data intelligence to automate marketing efforts and generate leads.',
     ],
-    tags: ['PHP', 'Javascript', 'Docker', 'ESRI Maps', 'AWS', 'Web'],
+    tags: ['PHP', 'Javascript', 'Docker', 'ESRI Maps', 'AWS'],
+    keyTags: ['Web', 'Marketing'],
     title: 'DevOps',
   },
   {
@@ -390,7 +387,8 @@ export const caseStudies = [
       'Product photographs are taken in a professional studio and graphics are applied on a capboard box. The dimensions of the box are selected according to the requirements of the client.',
       'Banners and animations created for the product promotion in web and on printed materials.',
     ],
-    tags: ['Marketing', 'Packaging Design', 'Branding', 'Web', 'Web Design'],
+    tags: ['Packaging Design', 'Branding', 'Web Design'],
+    keyTags: ['Web', 'Marketing'],
     title: 'Packaging Design, Banners & SMM',
   },
   {
@@ -398,7 +396,8 @@ export const caseStudies = [
     paragraphs: [
       'UX/UI Design and Social Media Marketing plan are designed after careful target audience research based on the identity of the brand for interior design studio in Pisa, using existing visual content of the brand.',
     ],
-    tags: ['UX/UI Design', 'Web', 'Branding', 'Interior Design'],
+    tags: ['UX/UI Design', 'Branding', 'Interior Design'],
+    keyTags: ['Web', 'Marketing'],
     title: 'UX/UI & SMM',
   },
   {
@@ -406,7 +405,8 @@ export const caseStudies = [
     paragraphs: [
       'Full cicle of market analysis and brand identity development, based on the target audience research. UX and GUI development based on the brand identity and user testing. Digital product presentation with 3D mockups and aminated graphics.',
     ],
-    tags: ['UX/UI Design', 'Web', '3D Modeling', 'Motion Graphics'],
+    tags: ['UX/UI Design', '3D Modeling', 'Motion Graphics'],
+    keyTags: ['Web', 'Marketing'],
     title: 'Brand Identity & UX/UI Design, Digital Product Presentation',
   },
   {
@@ -414,7 +414,8 @@ export const caseStudies = [
     paragraphs: [
       'Complete brand identity development or rebranding, including brand identity kit with style guides, business cards and packaging design for a clothing brand based in Moscow.',
     ],
-    tags: ['eCommerce', 'Marketing', 'Rebranding', 'Style Guide', 'Packaging Design', 'Fashion'],
+    tags: ['Marketing', 'Rebranding', 'Style Guide', 'Packaging Design', 'Fashion'],
+    keyTags: ['Web', 'eCommerce'],
     title: 'Brand Identity Design',
   },
   {
@@ -424,7 +425,8 @@ export const caseStudies = [
       'Product photography made in professional studio with a shaping light, edited for the perfect cleanliness in Adobe Photoshop.',
       'Special types of paper are chosen for the print of envelopes and invitations.',
     ],
-    tags: ['Visual Identity', 'Graphic Design', 'Web'],
+    tags: ['Visual Identity', 'Graphic Design'],
+    keyTags: ['Web', 'Marketing'],
     title: 'Visual identity kit: poster, catalogue & invitation',
   },
 ];

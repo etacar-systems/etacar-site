@@ -6,13 +6,15 @@ import { Tag } from '../Tag';
 interface TagsContainerProps {
   tags: string[];
   type: 'light' | 'blue';
+  quantity?: number;
 }
 
-export const TagsContainer = ({ tags, type }: TagsContainerProps) => {
+export const TagsContainer = ({ tags, type, quantity }: TagsContainerProps) => {
+  const tagsToRender = quantity ? tags.slice(0, quantity) : tags;
   return (
     <div className={style.container}>
-      {tags.map(tag => (
-        <Tag title={tag} type={type} />
+      {tagsToRender.map((tag, index) => (
+        <Tag key={index} title={tag} type={type} />
       ))}
     </div>
   );

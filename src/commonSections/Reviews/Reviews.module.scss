@@ -58,6 +58,7 @@
 .partners {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
   @media (max-width: 1200px) {
     flex-direction: column;
     gap: 1rem;
