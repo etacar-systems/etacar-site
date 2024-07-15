@@ -20,7 +20,9 @@ $animationSpeed: 40s;
   margin: auto;
   overflow: hidden;
   position: relative;
-
+  @media (max-width: 768px) {
+    padding-top: 40px;
+  }
   &::before,
   &::after {
     @include white-gradient;
@@ -35,11 +37,17 @@ $animationSpeed: 40s;
     right: 0;
     top: 80px; // depends on padding-top
     transform: rotateZ(180deg);
+    @media (max-width: 768px) {
+      top: 40px;
+    }
   }
 
   &::before {
     left: 0;
     top: 80px;
+    @media (max-width: 768px) {
+      top: 40px;
+    }
   }
 
   .slide_track {
