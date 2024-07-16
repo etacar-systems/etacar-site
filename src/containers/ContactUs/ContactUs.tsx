@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useEffect } from 'react';
+import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 
 const ContactForm = lazy(() => import('./components/ContactForm'));
@@ -11,9 +12,11 @@ export const ContactUs = () => {
   }, []);
   return (
     <Suspense fallback={<Loader />}>
-      <Introduction />
-      <ContactForm />
-      <Reviews textColor={'dark'} theme={'dark'} />
+      <FadeInSection>
+        <Introduction />
+        <ContactForm />
+        <Reviews textColor={'dark'} theme={'dark'} />
+      </FadeInSection>
       <Footer />
     </Suspense>
   );

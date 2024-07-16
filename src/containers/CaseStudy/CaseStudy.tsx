@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useEffect } from 'react';
+import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 
 import { Location } from '../../components/Location';
@@ -14,10 +15,18 @@ export const CaseStudy = () => {
   return (
     <Suspense fallback={<Loader />}>
       <div>
-        <Welcome />
-        <CaseStudies />
-        <Location />
-        <Reviews textColor='dark' theme='dark' />
+        <FadeInSection>
+          <Welcome />
+        </FadeInSection>
+        <FadeInSection>
+          <CaseStudies />
+        </FadeInSection>
+        <FadeInSection>
+          <Location />
+        </FadeInSection>
+        <FadeInSection>
+          <Reviews textColor='dark' theme='dark' />
+        </FadeInSection>
         <Footer />
       </div>
     </Suspense>

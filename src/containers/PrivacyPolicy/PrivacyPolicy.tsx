@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect } from 'react';
+import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 
 const Cookies = lazy(() => import('./components/Cookies'));
@@ -11,9 +12,11 @@ export const PrivacyPolicy = () => {
   }, []);
   return (
     <Suspense fallback={<Loader />}>
-      <Introduction />
-      <Cookies />
-      <InformationSecurity />
+      <FadeInSection>
+        <Introduction />
+        <Cookies />
+        <InformationSecurity />
+      </FadeInSection>
       <Footer />
     </Suspense>
   );
