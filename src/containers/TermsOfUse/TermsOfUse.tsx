@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect } from 'react';
+import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 import { data } from './data';
 
@@ -10,7 +11,7 @@ export const TermsOfUse = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
+    <FadeInSection>
       <div className={style.container}>
         {data.map(section => (
           <div className={style.container_inner}>
@@ -24,6 +25,6 @@ export const TermsOfUse = () => {
       <Suspense fallback={<Loader />}>
         <Footer />
       </Suspense>
-    </>
+    </FadeInSection>
   );
 };

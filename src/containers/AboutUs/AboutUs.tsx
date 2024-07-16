@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { Location } from '../../components/Location';
 import Loader from '../../components/Loader';
+import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 
 const Expirience = lazy(() => import('./components/Experience'));
 const Introduction = lazy(() => import('./components/Introduction'));
@@ -12,10 +13,16 @@ export const AboutUs = () => {
   }, []);
   return (
     <Suspense fallback={<Loader />}>
-      <Introduction />
-      <Expirience />
-      <Location />
-      <Reviews textColor={'dark'} theme={'dark'} />
+      <FadeInSection>
+        <Introduction />
+        <Expirience />
+      </FadeInSection>
+      <FadeInSection>
+        <Location />
+      </FadeInSection>
+      <FadeInSection>
+        <Reviews textColor={'dark'} theme={'dark'} />
+      </FadeInSection>
       <Footer />
     </Suspense>
   );
