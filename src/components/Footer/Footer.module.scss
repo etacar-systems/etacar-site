@@ -53,12 +53,14 @@
 }
 
 .footer {
+  padding: 100px 0 100px;
+  margin-top: -50px;
+  border-radius: 20px 20px 0 0;
   background-color: $color--text-dark;
-  padding: 40px 80px;
   overflow: hidden;
   box-shadow: 0px -4px 12px 0px #b2b2b20a;
-  @media (max-width: 768px) {
-    padding: 40px 20px;
+  @media (max-width: 1200px) {
+    padding: 100px 20px 100px;
   }
 }
 
@@ -141,6 +143,9 @@
   @include flexContainer(space-between, flex-start, row, 0px);
   margin: 60px 0 100px 0;
   @include center;
+  @media (max-width: 768px) {
+    @include flexContainer(space-between, flex-start, column, 0px);
+  }
 }
 .container__copyright {
   @include flexContainer(flex-start, flex-start, row, 0px);
