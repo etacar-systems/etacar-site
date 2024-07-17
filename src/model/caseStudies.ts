@@ -7,7 +7,7 @@ export const caseStudies = [
       'Building a business marketplace connecting Clients and Suppliers for professional services. Platform provides intelligent tools that use company data, performance history, ratings and reviews, and service descriptions to project them on performance evaluation charts.',
       'If a company needs services from another business, it can explore the online platform for the best match or use AI-enhanced search tool.',
     ],
-    tags: ['Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo'],
+    tags: ['Ruby on Rails', 'PostgreSQL', 'React', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo'],
     keyTags: ['Web', 'Marketplace'],
     title: 'AI-backed B2B Marketplace',
   },
@@ -17,7 +17,7 @@ export const caseStudies = [
       'Inventory management app for food businesses.',
       'Possibility to create Purchase orders or Internal transfers | Creating of the Inventory (Stock) take with additional features | Easy to use filtering with multiple options | Flexible customization settings.',
     ],
-    tags: ['Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'jQuery', 'Sidekiq'],
+    tags: ['Ruby on Rails', 'PostgreSQL', 'jQuery', 'Sidekiq'],
     keyTags: ['Web', 'Management'],
     title: 'Product stock management app',
   },
@@ -25,10 +25,10 @@ export const caseStudies = [
     image: images.onDemandSupermarket,
     paragraphs: [
       'Developing online supermarket platform designed for on-demand grocery shopping.',
-      'Buyers can select products from thousands of brands and order fresh organic fruits, vegetables, home essentials, OTC pharmaceuticals, and much more conveniently. Users can choose their favorite local supermarkets or stores and get products delivered to their doorsteps fast. Buyers can pay for their orders in multiple convenient and flexible payment modes, such as online banking, UPI payment, card payments, and cash on delivery options. ',
+      'Buyers can select products from thousands of brands and order fresh organic fruits, vegetables, home essentials, OTC pharmaceuticals, and much more conveniently. Users can choose their favorite local supermarkets or stores and get products delivered to their doorsteps. Buyers can pay for their orders in multiple convenient and flexible payment modes, such as online banking, UPI payment, card payments, and cash on delivery options.',
     ],
-    tags: ['eCommerce', 'Ruby', 'PostgreSQL', 'Stripe', 'Sidekiq', 'Twilio', 'RailsAdmin', 'Odoo', 'Web'],
-    keyTags: ['Mobile', 'FoodTech'],
+    tags: ['Ruby on Rails', 'PostgreSQL', 'Stripe', 'Sidekiq', 'Twilio', 'RailsAdmin', 'Odoo'],
+    keyTags: ['Mobile', 'FoodTech', 'Web', 'eCommerce'],
     title: 'On-demand supermarket',
   },
   {
@@ -38,7 +38,7 @@ export const caseStudies = [
       'Flexible lesson planning | intuitive, easy-to-use interface | rich export functionality.',
       'With its easy-to-use course creator tool, you can quickly create beautiful online training and immersive lessons to tailor to every learner’s needs.',
     ],
-    tags: ['EdTech', 'Ruby on Rails', 'PostgreSQL', 'OAuth 2.0', 'React', 'Sidekiq', 'TypeScript', 'Web'],
+    tags: ['Ruby on Rails', 'Angular', 'PostgreSQL', 'React', 'Sidekiq', 'TypeScript'],
     keyTags: ['Web', 'EdTech'],
     title: 'Personal Learning Plan',
   },
@@ -48,19 +48,18 @@ export const caseStudies = [
       'Building an innovative platform that simplifies corporate procurement processes and B2B payments, providing tools for pre-approved purchases, automated documentation, and spend management. Payment solution is integrated within the MasterCard ICCP which is connected with over 70 banks globally.',
     ],
     tags: [
-      'B2B',
-      'Enterprise',
-      'Management',
+      'React',
       'Ruby on Rails',
       'MongoDB',
+      'GraphQL',
+      'Docker',
       'jQuery',
       'SASS',
       'Workarea',
       'ElasticSearch',
-      'OAuth 2.0',
       'HAML',
     ],
-    keyTags: ['Web', 'FinTech'],
+    keyTags: ['Web', 'FinTech', 'B2B', 'Enterprise', 'Management'],
     title: 'Procurement and B2B payments management solution',
   },
   {
@@ -70,20 +69,19 @@ export const caseStudies = [
       'Marketplace for bottled water delivery from your favorite local retail places to America’s counter spaces within 2 or 4 hours daily. System offers an easy to use ordering, convenience and delivery process all at the touch of a few buttons; from the Brands you already know from the places you already go!',
     ],
     tags: [
-      'Management',
-      'Ruby',
+      'Ruby on Rails',
       'PostgreSQL',
-      'Remix',
+      'Stripe',
+      'Twilio',
       'Cypress',
+      'Remix',
       'Node.js',
       'Prisma',
       'Capacitor',
       'React Native',
       'tRPC',
-      'Stripe',
-      'Web',
     ],
-    keyTags: ['Mobile', 'FoodTech'],
+    keyTags: ['Mobile', 'FoodTech', 'Management', 'Web'],
     title: 'Delivery management system with automated order-to-delivery process',
   },
   {
@@ -95,15 +93,15 @@ export const caseStudies = [
       'React',
       'Cypress',
       'Node.js',
+      'MongoDB',
       'Prisma',
       'Capacitor',
       'React Native',
       'PostgreSQL',
       'tRPC',
       'StripeB',
-      'Web',
     ],
-    keyTags: ['Mobile', 'FoodTech'],
+    keyTags: ['Mobile', 'FoodTech', 'Web'],
     title: 'Restaurant reservations and pre-orders platform',
   },
   {
@@ -111,8 +109,8 @@ export const caseStudies = [
     paragraphs: [
       'We developed a secure online portal where investors can easily manage their investments and track their returns. System gives non accredited investors the ability to diversify into real estate investing for as little as $500. Using this platform, users buy shares in REIT, a public non listed real estate investment trust.',
     ],
-    tags: ['Real Estate', 'Ruby on Rails', 'React', 'MongoDB'],
-    keyTags: ['Web', 'FinTech'],
+    tags: ['Playwright', 'Ruby on Rails', 'React', 'MongoDB'],
+    keyTags: ['Web', 'FinTech', 'Real Estate'],
     title: 'REIT Investment Platform',
   },
   {
@@ -120,8 +118,8 @@ export const caseStudies = [
     paragraphs: [
       "Building a digital platform intended to serve influencers, athletes, artists, bloggers and musicians. The company's platform allows the creation of a custom media kit online with real-time data and analytics, thereby enabling clients to pitch and present themselves in a better manner.",
     ],
-    tags: ['Data Analytics', 'Javascript', 'React Native Web', 'Serverless', 'Postgresql', 'Web'],
-    keyTags: ['Mobile', 'Social Network'],
+    tags: ['TypeScript', 'React Native Web', 'Serverless', 'Postgresql'],
+    keyTags: ['Mobile', 'Social Network', 'Web', 'Data Analytics'],
     title: 'SaaS-based platform offering data analytics solutions for influencers',
   },
   {
@@ -139,8 +137,8 @@ export const caseStudies = [
     paragraphs: [
       'Building a dynamic social network for language learners and educators who want to connect across cultures and countries. Users can connect with other learners and engage in audio and video conferencing to practice their speaking skills. The app also offers a unique audio player that allows users to listen to the pronunciation of words and sentences.',
     ],
-    tags: ['EdTech', 'Social Network', 'Ruby on Rails', 'MongoDB', 'React', 'Web'],
-    keyTags: ['Web', 'EdTech'],
+    tags: ['Ruby on Rails', 'MongoDB', 'React', 'Playwright'],
+    keyTags: ['Web', 'EdTech', 'Social Network'],
     title: 'Language learning and teaching software',
   },
   {
@@ -148,8 +146,8 @@ export const caseStudies = [
     paragraphs: [
       'Building a SaaS platform to empower professional baseball players with actionable, player-centric analytics to improve their game performance. App offers in-depth player statistics, play-by-play updates, and even advanced analytics. Interactive charts, graphs, and visualisations make the data more engaging and understandable for users, enhancing their experience.',
     ],
-    tags: ['Data Analytics', 'Statistics', 'R', 'Node.js', 'Postgres', 'Redis', 'React'],
-    keyTags: ['Web', 'Management'],
+    tags: ['React', 'R', 'Node.js', 'Postgres', 'Redis'],
+    keyTags: ['Web', 'Management', 'Data Analytics', 'Statistics'],
     title: 'Professional sport analytics SaaS platform',
   },
   {
@@ -166,7 +164,7 @@ export const caseStudies = [
     paragraphs: [
       'Building a scalable end-to-end commerce platform composed of loosely coupled Ruby on Rails Microservices. The project included developing the comprehensive ecommerce customer site, the portal for direct sales representatives, and the admin tools to manage products, customers, and orders.',
     ],
-    tags: ['eCommerce', 'Ruby on Rails', 'MongoDB', 'Angular', 'Web'],
+    tags: ['Ruby on Rails', 'MongoDB', 'Angular'],
     keyTags: ['Web', 'eCommerce'],
     title: 'Multi-brand eCommerce platform',
   },
@@ -184,8 +182,8 @@ export const caseStudies = [
     paragraphs: [
       'Providing customers with the latest B2B technology which also addressed some of the industrial intricacies without the need for bespoke development was a key consideration in selecting the Workarea B2B solution. This allowed to go live quickly and easily with a system that is fully integrated with their ERP solution removing the need for additional administration whilst giving customers access to real-time information.',
     ],
-    tags: ['Enterprise', 'Ruby on Rails', 'MongoDB', 'jQuery', 'SASS', 'ElasticSearch', 'HAML'],
-    keyTags: ['Web', 'eCommerce'],
+    tags: ['Ruby on Rails', 'MongoDB', 'jQuery', 'ElasticSearch', 'HAML', 'SASS'],
+    keyTags: ['Web', 'eCommerce', 'Enterprise'],
     title: 'B2B Solution based on Workarea Platform',
   },
   // {
@@ -209,7 +207,7 @@ export const caseStudies = [
     paragraphs: [
       'Online language learning system. Developed cutting edge platform connects students with the most dedicated teachers around the world for one-on-one online language lessons.',
     ],
-    tags: ['EdTech', 'Ruby on Rails', 'MongoDB', 'React'],
+    tags: ['Ruby on Rails', 'MongoDB', 'React'],
     keyTags: ['Web', 'eCommerce'],
     title: 'eCommerce B2C Solution based on Workarea Platform',
   },
@@ -218,8 +216,8 @@ export const caseStudies = [
     paragraphs: [
       'Next generation software for a London based auction house. A web-based platform for online bidding and auction management. System supports eBay integration. The software provides complete detailed reports for sellers, giving access to vital information on auctions and sales. The solution is available with a perpetual license along with additional annual license renewal costs.',
     ],
-    tags: ['FinTech', 'Ruby on Rails', 'MongoDB', 'React'],
-    keyTags: ['Web', 'Management'],
+    tags: ['Ruby on Rails', 'MongoDB', 'React'],
+    keyTags: ['Web', 'Management', 'FinTech'],
     title: 'Cloud-based auction house software',
   },
   // {
@@ -233,8 +231,8 @@ export const caseStudies = [
     paragraphs: [
       'We designed and developed a comprehensive solution that redefines social media management for brands, marketing agencies, and local businesses. System focuses on increasing followers, likes, and views organically, without fake accounts or bots. It offers analytics to track performance, making it easy to optimize growth strategy and boost engagement.',
     ],
-    tags: ['Social Network', 'SaaS', 'Ruby on Rails', 'MongoDB', 'React'],
-    keyTags: ['Web', 'Marketing'],
+    tags: ['Ruby on Rails', 'MongoDB', 'React', 'Google Analytics'],
+    keyTags: ['Web', 'Marketing', 'Social Network', 'SaaS'],
     title: 'Instagram Marketing Automation Toolset',
   },
   {
@@ -242,8 +240,8 @@ export const caseStudies = [
     paragraphs: [
       'We developed and maintained an innovative system that creates, manages, and analyzes influencer campaigns on Instagram. From tracking data, managing posting & content schedules, to working with the many large Shopify catalogs and products, the system helps to organize the influencer marketing campaigns.',
     ],
-    tags: ['Social Network', 'SaaS', 'Javascript', 'NestJS (NodeJS, Typescript)', 'ExpressJS', 'MongoDB', 'React'],
-    keyTags: ['Web', 'Marketing'],
+    tags: ['NestJS', 'ExpressJS', 'MongoDB', 'React', 'Java'],
+    keyTags: ['Web', 'Marketing', 'Social Network', 'SaaS'],
     title: 'SaaS influencer management tool',
   },
   {
@@ -260,8 +258,8 @@ export const caseStudies = [
     paragraphs: [
       'Designing and developing game-changing, disruptive platform that enables business owners to do marketing and advertising on their own terms, for free. The platform provides businesses worldwide the ability to compete with larger enterprises despite limited marketing budgets.',
     ],
-    tags: ['Management', 'Ruby on Rails 4', 'Heroku', 'MySQL', 'jQuery', 'Coffeescript'],
-    keyTags: ['Web', 'Marketing'],
+    tags: ['Java', 'Ruby on Rails', 'MySQL', 'jQuery', 'Coffeescript', 'Heroku'],
+    keyTags: ['Web', 'Marketing', 'Management'],
     title: 'New Gen Couponing System',
   },
   {
@@ -269,8 +267,8 @@ export const caseStudies = [
     paragraphs: [
       'Developing a specialized content management system for an educational content provider. The system includes two primary web-based components: an end-user interface for educators and consumers to browse, search, and export educational materials, and an administrative interface for importing content from various sources and managing the existing content library.',
     ],
-    tags: ['Management', 'Ruby on Rails', 'RSpec', 'PostgreSQL', 'React'],
-    keyTags: ['Web', 'EdTech'],
+    tags: ['Ruby on Rails', 'RSpec', 'PostgreSQL', 'React'],
+    keyTags: ['Web', 'EdTech', 'Management'],
     title: 'Educational System',
   },
   // {
@@ -313,8 +311,8 @@ export const caseStudies = [
     paragraphs: [
       'Online marketplace enabling social influencers, individual entrepreneurs, and shop brands to curate, organize, and showcase multimedia content within interest-based communities such as Food, Events, Travel, Fitness, Beauty, and Fashion. The platform encourages users to monetize their popularity, passion, or expertise through media-rich micro channels.',
     ],
-    tags: ['Marketing', 'Django', 'MySQL', 'Angular.js', 'jQuery', 'AWS'],
-    keyTags: ['Web', 'eCommerce'],
+    tags: ['Django', 'MySQL', 'jQuery', 'AWS', 'Cypress', 'Angular'],
+    keyTags: ['Web', 'eCommerce', 'Marketing'],
     title: 'eCommerce Social Platform',
   },
   {
@@ -322,7 +320,7 @@ export const caseStudies = [
     paragraphs: [
       'Developing and maintaining a proprietary content management solution for a European media company. The solution automates editorial processes for news, posts, and columns, manages proprietary comments, handles publishing schedules, tracks content activity, and supports complex branding requirements. It includes customizable workflows, roles, and content types, making it easy to build, manage, and coordinate a content team.',
     ],
-    tags: ['Ruby on Rails', 'RSpec', 'Angular.js', 'MySQL', 'GCP'],
+    tags: ['Ruby on Rails', 'RSpec', 'Angular', 'MySQL', 'GCP'],
     keyTags: ['Web', 'Management'],
     title: 'Content Management Solution',
   },
@@ -331,8 +329,8 @@ export const caseStudies = [
     paragraphs: [
       'Developing and supporting an online marketplace platform that aggregates, organizes, and showcases a national pool of live talent to top IT companies. Companies create profiles detailing their business and brand, post specific job listings including details, dates, and pricing. Verified jobs are published for the talent pool to view and apply. Professionals can showcase their career strengths, goals, skills, work styles, aspirations, and job-change receptivity. Job seekers connect with employers and hiring managers via in-app chat. The platform, powered by intelligent machine-learning algorithms, provides daily recommendations for opportunities tailored to user profiles and interests.',
     ],
-    tags: ['Marketplace', 'Ruby on Rails', 'PostgreSQL', 'Capistrano', 'jQuery', 'Redis'],
-    keyTags: ['Web', 'Enterprise'],
+    tags: ['Ruby on Rails', 'PostgreSQL', 'Capistrano', 'jQuery', 'Redis'],
+    keyTags: ['Web', 'Enterprise', 'Marketplace'],
     title: 'IT Job Online Marketplace Platform',
   },
   {
@@ -349,8 +347,8 @@ export const caseStudies = [
     paragraphs: [
       'Developing and deploying the flagship product of a European government organization: an online journal dedicated to a professional juridical audience. The journal provides high-quality content covering the state of the national legal landscape, legal institutions, scientific research, and case studies.',
     ],
-    tags: ['Social Network', 'Ruby on Rails', 'MySQL', 'Capistrano', 'React'],
-    keyTags: ['Web', 'Enterprise'],
+    tags: ['Ruby on Rails', 'MySQL', 'Capistrano', 'React'],
+    keyTags: ['Web', 'Enterprise', 'Social Network'],
     title: 'Online Journal',
   },
   {
@@ -367,8 +365,8 @@ export const caseStudies = [
     paragraphs: [
       'Designing, developing, and maintaining an online eCommerce system for a company specializing in healthcare and diabetic supplies. The system caters to consumers, professionals, and doctors with specific features tailored to different customer groups such as bronze, silver, and gold, each with distinct pricing policies. It implements a price surcharge mechanism instead of built-in discount rules, customizes group membership logic including subscription expiration checks, and includes features like reward points and superpoints functionality. Payment processing is handled via Authorize.net.',
     ],
-    tags: ['Management', 'Django', 'Javascript', 'jQuery', 'MySQL', 'AWS'],
-    keyTags: ['Web', 'eCommerce'],
+    tags: ['Django', 'Javascript', 'jQuery', 'MySQL', 'AWS'],
+    keyTags: ['Web', 'eCommerce', 'Management'],
     title: 'eCommerce System for Healthcare Supplier',
   },
   {
@@ -387,8 +385,8 @@ export const caseStudies = [
       'Product photographs are taken in a professional studio and graphics are applied on a capboard box. The dimensions of the box are selected according to the requirements of the client.',
       'Banners and animations created for the product promotion in web and on printed materials.',
     ],
-    tags: ['Packaging Design', 'Branding', 'Web Design'],
-    keyTags: ['Web', 'Marketing'],
+    tags: ['React Native', 'Node.js', 'MongoDB'],
+    keyTags: ['Web', 'Marketing', 'Packaging Design'],
     title: 'Packaging Design, Banners & SMM',
   },
   {
@@ -396,8 +394,8 @@ export const caseStudies = [
     paragraphs: [
       'UX/UI Design and Social Media Marketing plan are designed after careful target audience research based on the identity of the brand for interior design studio in Pisa, using existing visual content of the brand.',
     ],
-    tags: ['UX/UI Design', 'Branding', 'Interior Design'],
-    keyTags: ['Web', 'Marketing'],
+    tags: ['React Native', 'Java', 'PostgreSQL'],
+    keyTags: ['Web', 'Marketing', 'UX/UI Design', 'Branding', 'Interior Design'],
     title: 'UX/UI & SMM',
   },
   {
@@ -405,8 +403,8 @@ export const caseStudies = [
     paragraphs: [
       'Full cicle of market analysis and brand identity development, based on the target audience research. UX and GUI development based on the brand identity and user testing. Digital product presentation with 3D mockups and aminated graphics.',
     ],
-    tags: ['UX/UI Design', '3D Modeling', 'Motion Graphics'],
-    keyTags: ['Web', 'Marketing'],
+    tags: ['React', 'Three.js', 'Python', 'Motion Graphics'],
+    keyTags: ['Web', 'Marketing', 'UX/UI Design', '3D Modeling'],
     title: 'Brand Identity & UX/UI Design, Digital Product Presentation',
   },
   {
@@ -414,8 +412,8 @@ export const caseStudies = [
     paragraphs: [
       'Complete brand identity development or rebranding, including brand identity kit with style guides, business cards and packaging design for a clothing brand based in Moscow.',
     ],
-    tags: ['Marketing', 'Rebranding', 'Style Guide', 'Packaging Design', 'Fashion'],
-    keyTags: ['Web', 'eCommerce'],
+    tags: ['React', 'React Native', 'Node.js', 'MongoDB'],
+    keyTags: ['Web', 'eCommerce', 'Marketing', 'Rebranding', 'Style Guide', 'Packaging Design', 'Fashion'],
     title: 'Brand Identity Design',
   },
   {
@@ -425,8 +423,8 @@ export const caseStudies = [
       'Product photography made in professional studio with a shaping light, edited for the perfect cleanliness in Adobe Photoshop.',
       'Special types of paper are chosen for the print of envelopes and invitations.',
     ],
-    tags: ['Visual Identity', 'Graphic Design'],
-    keyTags: ['Web', 'Marketing'],
+    tags: ['React', 'Flask', 'PostgreSQL'],
+    keyTags: ['Web', 'Marketing', 'Visual Identity', 'Graphic Design'],
     title: 'Visual identity kit: poster, catalogue & invitation',
   },
 ];

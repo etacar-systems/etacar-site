@@ -25,7 +25,9 @@ export const Item = ({ image, paragraphs, tags, title, keyTags }: ItemProps) => 
   return (
     <div className={style.container}>
       <div className={style.outer}>
-        <Navigation arrowColor={'dark'} />
+        <div className={style.navigation}>
+          <Navigation arrowColor={'dark'} />
+        </div>
         <div className={style.inner}>
           <div className={style.title}>{title}</div>
           <Link to='/case-study' state={keyTags} className={style.link}>
