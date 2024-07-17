@@ -25,9 +25,7 @@ export const Item = ({ image, paragraphs, tags, title, keyTags }: ItemProps) => 
   return (
     <div className={style.container}>
       <div className={style.outer}>
-        <div className={style.navigation}>
-          <Navigation arrowColor={'dark'} />
-        </div>
+        <div className={style.navigation}>{width < 768 ? undefined : <Navigation arrowColor={'dark'} />}</div>
         <div className={style.inner}>
           <div className={style.title}>{title}</div>
           <Link to='/case-study' state={keyTags} className={style.link}>
@@ -42,14 +40,14 @@ export const Item = ({ image, paragraphs, tags, title, keyTags }: ItemProps) => 
           </div>
         </div>
         <TagsContainer quantity={TAGS_TO_DISPLAY} tags={tags} type={'light'} />
-        {width > 768 ? (
+        {width > 1200 ? (
           <Button icon onClick={() => navigate(CASE_STUDY)} title={'All cases'} type={'ghost'} />
         ) : undefined}
       </div>
       <div className={style.image}>
         <img src={image} alt={`${title}_icon`} />
       </div>
-      {width < 768 ? (
+      {width < 1200 ? (
         <Button icon onClick={() => navigate(CASE_STUDY)} title={'All cases'} type={'ghost'} />
       ) : undefined}
     </div>

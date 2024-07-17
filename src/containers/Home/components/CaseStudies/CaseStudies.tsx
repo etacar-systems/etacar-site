@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
@@ -7,7 +6,7 @@ import { caseStudies } from '../../../../model/caseStudies';
 import { Item } from './components/Item';
 import style from './CaseStudies.module.scss';
 
-export const CaseStudies: FC = () => {
+export const CaseStudies = () => {
   return (
     <Section theme={'blueLight'} title={`CASE \n STUDIES`}>
       <div className={style.swiper}>
