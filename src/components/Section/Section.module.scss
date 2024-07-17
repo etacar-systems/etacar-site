@@ -36,8 +36,9 @@
   line-height: 58px;
 
   @media (max-width: 768px) {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 50px;
   }
 
   &[data-title-color='dark'] {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import style from './Card.module.scss';
 
 interface CardProps {

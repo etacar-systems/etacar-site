@@ -25,6 +25,11 @@
     line-height: 48px;
     text-align: left;
   }
+  @media (max-width: 375px) {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: left;
+  }
   & > span::after {
     content: '\A';
     white-space: pre;

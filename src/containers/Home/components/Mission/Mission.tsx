@@ -12,7 +12,6 @@ import style from './Mission.module.scss';
 
 export const Mission = () => {
   const navigate = useNavigate();
-
   return (
     <Section theme={'blueLight'} title={`OUR \n MISSION`}>
       <div className={style.container}>
