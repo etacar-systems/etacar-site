@@ -23,8 +23,8 @@ export const Menu = ({ menuActive, setMenuActive, items }: MenuProps) => {
     <div menu-active={menuActive.toString()} className={style.menu}>
       <div className={style.content}>
         <ul className={style.list}>
-          {items.map(item => (
-            <li className={style.listElement}>
+          {items.map((item, index) => (
+            <li key={index} className={style.listElement}>
               <NavLink
                 onClick={() => {
                   setMenuActive(false);

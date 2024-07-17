@@ -36,8 +36,8 @@ export const Item = ({ indexOnPage, image, paragraphs, tags, title, orderReverse
           <div className={style.inner}>
             <div className={style.title}>{title}</div>
             <div>
-              {paragraphs.map(paragraph => (
-                <p>{paragraph}</p>
+              {paragraphs.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
               ))}
             </div>
           </div>
