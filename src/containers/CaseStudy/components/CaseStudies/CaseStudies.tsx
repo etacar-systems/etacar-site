@@ -11,7 +11,7 @@ import style from './CaseStudies.module.scss';
 
 const ITEMS_PER_PAGE = 6;
 
-interface CaseStudiesItem {
+export interface CaseStudiesItem {
   title: string;
   image: string;
   paragraphs: string[];

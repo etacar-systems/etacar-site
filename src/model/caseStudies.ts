@@ -1,6 +1,7 @@
 import { images } from '../assets/images';
+import { CaseStudiesItem } from '../containers/CaseStudy/components/CaseStudies/CaseStudies';
 
-export const caseStudies = [
+export const caseStudies: CaseStudiesItem[] = [
   {
     image: images.businessMarketplace,
     paragraphs: [
@@ -186,22 +187,60 @@ export const caseStudies = [
     keyTags: ['Web', 'eCommerce', 'Enterprise'],
     title: 'B2B Solution based on Workarea Platform',
   },
-  // {
-  //   image: '',
-  //   paragraphs: [
-  //     'Building a diversified payment acceptance solution designed to provide an affordable and secure way for online transactions. System provides payment processing through virtual terminals, invoice payments, chargeback management, multiple processor connectivity, and more. ',
-  //   ],
-  //   tags: ['FinTech', 'eCommerce', 'Ruby on Rails', 'React'],
-  //   title: 'Next-generation commerce hub',
-  // },
-  // {
-  //   image: '',
-  //   paragraphs: [
-  //     'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. Kiosks are found in more than 500 businesses, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
-  //   ],
-  //   tags: ['Marketing', 'Social Network', 'Web'],
-  //   title: 'A smart social photo marketing platform',
-  // },
+  {
+    title: 'Digital Trust Registration Platform',
+    image: images.illuminote,
+    tags: ['Next.js', 'Express', 'Tailwind', 'Prisma', 'AWS'],
+    keyTags: ['Web', 'FinTech', 'Enterprise'],
+    paragraphs: [
+      'We built a solution to address the shortcomings of an outdated legal system that lacks robust mechanisms for verifying the legitimacy of paper-based legal documents such as trusts, powers of attorney, wills, and deeds. System allows users to register, authenticate, and protect legal records, establishing an immutable chain of evidence that safeguards client data and keeps all stakeholders informed',
+    ],
+  },
+  {
+    title: 'Advanced subterranean operations monitoring solution',
+    paragraphs: [
+      'Underground update is a reliable, secure, and adaptive tool with on-the-go access, tailored to the challenges and dynamics of subterranean operations. The application provides an integrated view in real-time, aligning with the stringent standards of underground activities. Leveraging data-driven insights and algorithms, the platform ensures optimal monitoring of vital weather conditions, taking into account the unique circumstances and constraints of underground work.',
+    ],
+    tags: ['Next.js', 'PWA', 'Konsta UI', 'Prisma', 'AWS', 'Nest.js'],
+    keyTags: ['Mobile', 'Web', 'Monitoring', 'Enterprise'],
+    image: images.file,
+  },
+  {
+    title: 'Wet cat food feeder app',
+    paragraphs: [
+      'Through the app, insights are provided to define the cat’s feeding time preferences and recipe preferences. This allows cat parents to adjust based on their cat’s desires. Additionally, the device will track how much and how quickly the cat eats. When a feeding trend is shifted or out of the norm, the app will notify users that a vet visit may be needed.',
+    ],
+    tags: ['React Native', 'Nest.js', 'Prisma', 'Terraform', 'Azure IOT hub', 'Amazon Video Streaming with WebRTC'],
+    keyTags: ['Mobile', 'eCommerce', 'Enterprise'],
+    image: images.BistroCat,
+  },
+  {
+    title: 'Non-Emergency Medical Transportation',
+    paragraphs: [
+      'A project for privately held medical transportation company to digitize processes required for planning, requesting, reviewing, dispatching and tracking scheduled medical appointments. Platform covers complete lifecycle of NEMT Operations from trip parsing and execution to billing documents.',
+    ],
+    tags: ['TypeScript', 'Node.js', 'React', 'GraphQL'],
+    keyTags: ['Web', 'Healthcare', 'Enterprise'],
+    image: images.AcadianNemt,
+  },
+  {
+    image: images.sprintApp,
+    paragraphs: [
+      'Building a diversified payment acceptance solution designed to provide an affordable and secure way for online transactions. System provides payment processing through virtual terminals, invoice payments, chargeback management, multiple processor connectivity, and more. ',
+    ],
+    tags: ['Ruby on Rails', 'React', 'Electron', 'PostgreSQL', 'Stripe'],
+    keyTags: ['FinTech', 'eCommerce', 'Enterprise', 'Web'],
+    title: 'Next generation commerce hub',
+  },
+  {
+    image: images.buzzyBooth,
+    paragraphs: [
+      'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. The company devices are installed in more than 500 enterprises, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
+    ],
+    tags: ['Angular', 'AI', 'Social Services'],
+    keyTags: ['Marketing', 'Social Network', 'Web'],
+    title: 'A smart social photo marketing platform',
+  },
   {
     image: images.ecommerceB2CSolution,
     paragraphs: [

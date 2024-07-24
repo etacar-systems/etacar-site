@@ -1,7 +1,10 @@
+import AcadianNemt from './AcadianNemt.png';
 import auctionHouseSoftware from './auctionHouseSoftware.webp';
 import baseballStatisticManagement from './baseballStatisticManagement.webp';
+import BistroCat from './BistroCat.png';
 import brandIdentityDesign from './brandIdentityDesign.webp';
 import businessMarketplace from './businessMarketplace.svg';
+import buzzyBooth from './BuzzyBooth.png';
 import cloudMarketingSolution from './cloudMarketingSolution.webp';
 import communityWebPlatform from './communityWebPlatform.webp';
 import contentManagementSolution from './contentManagementSolution.webp';
@@ -18,6 +21,8 @@ import edtechPlatform from './edtechPlatform.webp';
 import educationalPlatform from './educationalPlatform.webp';
 import educationalSystem from './educationalSystem.webp';
 import enterpriseProcurement from './enterpriseProcurement.svg';
+import file from './file.jpg';
+import illuminote from './illuminote.png';
 import industrialSupplier from './industrialSupplier.webp';
 import infrastructureMaintenance from './infrastructureMaintenance.webp';
 import instagramMarketing from './instagramMarketing.webp';
@@ -37,14 +42,18 @@ import reitInvestment from './reitInvestment.webp';
 import restarauntReservations from './restarauntReservations.webp';
 import saasInfluencerManagement from './saasInfluencerManagement.webp';
 import singaporeStartup from './singaporeStartup.webp';
+import sprintApp from './SprintApp.png';
 import UXUIAndSMM from './UXUIAndSMM.webp';
 import visualIdentityKit from './visualIdentityKit.webp';
 
 export const images = {
+  AcadianNemt,
   auctionHouseSoftware,
   baseballStatisticManagement,
+  BistroCat,
   brandIdentityDesign,
   businessMarketplace,
+  buzzyBooth,
   cloudMarketingSolution,
   communityWebPlatform,
   contentManagementSolution,
@@ -61,6 +70,8 @@ export const images = {
   educationalPlatform,
   educationalSystem,
   enterpriseProcurement,
+  file,
+  illuminote,
   industrialSupplier,
   infrastructureMaintenance,
   instagramMarketing,
@@ -80,6 +91,7 @@ export const images = {
   restarauntReservations,
   saasInfluencerManagement,
   singaporeStartup,
+  sprintApp,
   UXUIAndSMM,
   visualIdentityKit,
 };
