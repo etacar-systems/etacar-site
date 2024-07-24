@@ -3,6 +3,7 @@ import baseballStatisticManagement from './baseballStatisticManagement.webp';
 import brandIdentityDesign from './brandIdentityDesign.webp';
 import businessMarketplace from './businessMarketplace.svg';
 import cloudMarketingSolution from './cloudMarketingSolution.webp';
+import commerceHub from './commerceHub.webp';
 import communityWebPlatform from './communityWebPlatform.webp';
 import contentManagementSolution from './contentManagementSolution.webp';
 import deliveryManagementSystem from './deliveryManagementSystem.svg';
@@ -23,6 +24,7 @@ import infrastructureMaintenance from './infrastructureMaintenance.webp';
 import instagramMarketing from './instagramMarketing.webp';
 import ITJobOnlineMarketplace from './ITJobOnlineMarketplace.webp';
 import marketingPlatform from './marketingPlatform.webp';
+import medicalTransportation from './medicalTransportation.webp';
 import migrationFromLegacy from './migrationFromLegacy.webp';
 import MLStartup from './MLStartup.webp';
 import newGenCouponingSystem from './newGenCouponingSystem.webp';
@@ -37,6 +39,7 @@ import reitInvestment from './reitInvestment.webp';
 import restarauntReservations from './restarauntReservations.webp';
 import saasInfluencerManagement from './saasInfluencerManagement.webp';
 import singaporeStartup from './singaporeStartup.webp';
+import socialPhoto from './socialPhoto.webp';
 import UXUIAndSMM from './UXUIAndSMM.webp';
 import visualIdentityKit from './visualIdentityKit.webp';
 
@@ -46,6 +49,7 @@ export const images = {
   brandIdentityDesign,
   businessMarketplace,
   cloudMarketingSolution,
+  commerceHub,
   communityWebPlatform,
   contentManagementSolution,
   deliveryManagementSystem,
@@ -66,6 +70,7 @@ export const images = {
   instagramMarketing,
   ITJobOnlineMarketplace,
   marketingPlatform,
+  medicalTransportation,
   migrationFromLegacy,
   MLStartup,
   newGenCouponingSystem,
@@ -80,6 +85,7 @@ export const images = {
   restarauntReservations,
   saasInfluencerManagement,
   singaporeStartup,
+  socialPhoto,
   UXUIAndSMM,
   visualIdentityKit,
 };

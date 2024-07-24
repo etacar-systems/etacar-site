@@ -194,14 +194,15 @@ export const caseStudies = [
   //   tags: ['FinTech', 'eCommerce', 'Ruby on Rails', 'React'],
   //   title: 'Next-generation commerce hub',
   // },
-  // {
-  //   image: '',
-  //   paragraphs: [
-  //     'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. Kiosks are found in more than 500 businesses, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
-  //   ],
-  //   tags: ['Marketing', 'Social Network', 'Web'],
-  //   title: 'A smart social photo marketing platform',
-  // },
+  {
+    image: images.socialPhoto,
+    paragraphs: [
+      'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. Kiosks are found in more than 500 businesses, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, and social recruiting.',
+    ],
+    tags: [],
+    keyTags: ['Web', 'Social Network', 'Marketing'],
+    title: 'A Smart Social Photo Marketing Platform',
+  },
   {
     image: images.ecommerceB2CSolution,
     paragraphs: [
@@ -220,12 +221,15 @@ export const caseStudies = [
     keyTags: ['Web', 'Management', 'FinTech'],
     title: 'Cloud-based auction house software',
   },
-  // {
-  //   image: images.discountApplication,
-  //   paragraphs: ['Commerce app that brings users fresh local deals and discounts.'],
-  //   tags: ['Ruby on Rails', 'MongoDB', 'React', 'Web'],
-  //   title: 'Discount Application',
-  // },
+  {
+    image: images.medicalTransportation,
+    paragraphs: [
+      'A project for privately held medical transportation company to digitize processes required for planning, requesting, reviewing, dispatching and tracking scheduled medical appointments. Platform covers complete lifecycle of NEMT Operations from trip parsing and execution to billing documents. ',
+    ],
+    tags: ['TypeScript', 'Node.js', 'React', 'GraphQL'],
+    keyTags: ['Web', 'Enterprise'],
+    title: 'Non-Emergency Medical Transportation ',
+  },
   {
     image: images.instagramMarketing,
     paragraphs: [
@@ -271,14 +275,15 @@ export const caseStudies = [
     keyTags: ['Web', 'EdTech', 'Management'],
     title: 'Educational System',
   },
-  // {
-  //   image: images.migrationFromLegacy,
-  //   paragraphs: [
-  //     'Designing and building migration from legacy low automated deployment processes to containerization with Kubernetes, and developing a monitoring system based on the ELK stack (Elasticsearch, Logstash, Kibana) and Apache Hive. The project also includes implementing fully automated CI/CD processes. As a result, time to market has improved by 3.5 times within one year, achieving a 100% production SLA.',
-  //   ],
-  //   tags: ['Kubernetes', 'Helm', 'Docker', 'AWS', 'ELK', 'Apache Hive', 'Apache Kafka', 'Terraform'],
-  //   title: 'Migration from Legacy',
-  // },
+  {
+    image: images.commerceHub,
+    paragraphs: [
+      'Building a diversified payment acceptance solution designed to provide an affordable and secure way for online transactions. System provides payment processing through virtual terminals, invoice payments, chargeback management, multiple processor connectivity, and more.',
+    ],
+    tags: ['Ruby on Rails', 'React'],
+    keyTags: ['Web', 'FinTech', 'eCommerce'],
+    title: 'Next-generation Commerce Hub',
+  },
   {
     image: images.infrastructureMaintenance,
     paragraphs: [
