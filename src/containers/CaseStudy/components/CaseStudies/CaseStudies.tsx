@@ -20,67 +20,100 @@ export interface CaseStudiesItem {
   keyTags: string[];
 }
 
+interface CaseStudiesState {
+  currentPage: number;
+  firstFilterKeyword: string;
+  secondFilterKeyword: string;
+  filteredCases: CaseStudiesItem[];
+  currentItems: CaseStudiesItem[];
+  totalPages: number;
+}
+
 export const CaseStudies = () => {
   const location = useLocation();
-  const from = location.state;
-  const [currentPage, setCurrentPage] = useState(1);
-  const [firstFilterKeyword, setFirstFilterKeyword] = useState(from ? from[0].toLowerCase() : 'all');
-  const [secondFilterKeyword, setSecondFilterKeyword] = useState(from ? from[1].toLowerCase() : 'all');
-  const [filteredCases, setFilteredCases] = useState<CaseStudiesItem[]>(caseStudies);
-  const [currentItems, setCurrentItems] = useState<CaseStudiesItem[]>([]);
-  const [totalPages, setTotalPages] = useState(1);
+  const from = location.state as [string, string] | undefined;
+
+  const initialState: CaseStudiesState = {
+    currentPage: 1,
+    firstFilterKeyword: from ? from[0].toLowerCase() : 'all',
+    secondFilterKeyword: from ? from[1].toLowerCase() : 'all',
+    filteredCases: caseStudies,
+    currentItems: [],
+    totalPages: 1,
+  };
+
+  const [state, setState] = useState<CaseStudiesState>(initialState);
 
   const handleSecondFilter = (value: string) => {
-    setSecondFilterKeyword(value.toLowerCase());
-    setCurrentPage(1);
+    setState(prevState => ({
+      ...prevState,
+      secondFilterKeyword: value.toLowerCase(),
+      currentPage: 1,
+    }));
   };
 
   const handleFirstFilter = (value: string) => {
-    setFirstFilterKeyword(value.toLowerCase());
-    setCurrentPage(1);
+    setState(prevState => ({
+      ...prevState,
+      firstFilterKeyword: value.toLowerCase(),
+      currentPage: 1,
+    }));
   };
 
   const handleClickNext = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
+    if (state.currentPage < state.totalPages) {
+      setState(prevState => ({
+        ...prevState,
+        currentPage: prevState.currentPage + 1,
+      }));
     }
   };
 
   const handleClickPrev = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
+    if (state.currentPage > 1) {
+      setState(prevState => ({
+        ...prevState,
+        currentPage: prevState.currentPage - 1,
+      }));
     }
   };
 
   useEffect(() => {
     let filteredData = caseStudies;
-    if (secondFilterKeyword !== 'all') {
+    if (state.secondFilterKeyword !== 'all') {
       filteredData = filteredData.filter(
         item =>
-          item.keyTags.toString().toLowerCase().includes(secondFilterKeyword) ||
-          item.tags.toString().toLowerCase().includes(secondFilterKeyword)
+          item.keyTags.toString().toLowerCase().includes(state.secondFilterKeyword) ||
+          item.tags.toString().toLowerCase().includes(state.secondFilterKeyword)
       );
     }
 
-    if (firstFilterKeyword !== 'all') {
+    if (state.firstFilterKeyword !== 'all') {
       filteredData = filteredData.filter(
         item =>
-          item.keyTags.toString().toLowerCase().includes(firstFilterKeyword) ||
-          item.tags.toString().toLowerCase().includes(secondFilterKeyword)
+          item.keyTags.toString().toLowerCase().includes(state.firstFilterKeyword) ||
+          item.tags.toString().toLowerCase().includes(state.secondFilterKeyword)
       );
     }
 
-    setFilteredCases(filteredData);
-  }, [secondFilterKeyword, firstFilterKeyword]);
+    setState(prevState => ({
+      ...prevState,
+      filteredCases: filteredData,
+      totalPages: Math.ceil(filteredData.length / ITEMS_PER_PAGE),
+      currentPage: 1,
+    }));
+  }, [state.secondFilterKeyword, state.firstFilterKeyword]);
 
   useEffect(() => {
-    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const startIndex = (state.currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = startIndex + ITEMS_PER_PAGE;
 
-    const slicedData = filteredCases.slice(startIndex, endIndex);
-    setCurrentItems(slicedData);
-    setTotalPages(Math.ceil(filteredCases.length / ITEMS_PER_PAGE));
-  }, [currentPage, filteredCases]);
+    const slicedData = state.filteredCases.slice(startIndex, endIndex);
+    setState(prevState => ({
+      ...prevState,
+      currentItems: slicedData,
+    }));
+  }, [state.currentPage, state.filteredCases]);
 
   return (
     <div className={style.case_studies_container}>
@@ -89,7 +122,7 @@ export const CaseStudies = () => {
           {keySortTags.map(string => (
             <div
               key={string}
-              className={`${firstFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
+              className={`${state.firstFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
               onClick={() => handleFirstFilter(string.toLowerCase())}
             >
               {string}
@@ -100,7 +133,7 @@ export const CaseStudies = () => {
           {sortTags.map(string => (
             <div
               key={string}
-              className={`${secondFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
+              className={`${state.secondFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
               onClick={() => handleSecondFilter(string.toLowerCase())}
             >
               {string}
@@ -108,11 +141,11 @@ export const CaseStudies = () => {
           ))}
         </div>
       </div>
-      <div className={style.cases_count}>{filteredCases.length} Cases</div>
-      {currentItems.map((item, index) => (
+      <div className={style.cases_count}>{state.filteredCases.length} Cases</div>
+      {state.currentItems.map((item, index) => (
         <Item
           key={index}
-          index={(currentPage - 1) * ITEMS_PER_PAGE + index}
+          index={(state.currentPage - 1) * ITEMS_PER_PAGE + index}
           orderReverse={index % 2 === 1}
           image={item.image}
           paragraphs={item.paragraphs}
@@ -123,19 +156,23 @@ export const CaseStudies = () => {
       ))}
       <div className={style.pagination_controls}>
         <div className={style.prev_button_container}>
-          <button className={style.buttonPrev} onClick={handleClickPrev} disabled={currentPage === 1} />
-          {currentPage === 1 ? (
+          <button className={style.buttonPrev} onClick={handleClickPrev} disabled={state.currentPage === 1} />
+          {state.currentPage === 1 ? (
             <img className={style.disabled_arrow} src={disabledPaginationArrow} alt='prevArrow' />
           ) : (
             <img className={style.enabled_arrow} src={paginationArrow} alt='prevArrow' />
           )}
         </div>
         <div className={style.page_number}>
-          {totalPages === 0 ? 0 : currentPage} / {totalPages}
+          {state.totalPages === 0 ? 0 : state.currentPage} / {state.totalPages}
         </div>
         <div className={style.next_button_container}>
-          <button className={style.buttonNext} onClick={handleClickNext} disabled={currentPage === totalPages} />
-          {currentPage === totalPages ? (
+          <button
+            className={style.buttonNext}
+            onClick={handleClickNext}
+            disabled={state.currentPage === state.totalPages}
+          />
+          {state.currentPage === state.totalPages ? (
             <img className={style.disabled_arrow} src={disabledPaginationArrow} alt='nextArrow' />
           ) : (
             <img className={style.enabled_arrow} src={paginationArrow} alt='nextArrow' />
