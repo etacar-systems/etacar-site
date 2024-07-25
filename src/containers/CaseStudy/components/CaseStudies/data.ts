@@ -1,4 +1,4 @@
-export const titleSortTags = [
+export const sortTags = [
   'All',
   'Enterprise',
   'Social Network',
@@ -11,6 +11,7 @@ export const titleSortTags = [
   'Marketing',
   'Marketplace',
   'Design',
+  'Healthcare',
 ];
 
-export const parSortTags = ['All', 'Web', 'Mobile'];
+export const keySortTags = ['All', 'Web', 'Mobile'];

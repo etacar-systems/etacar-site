@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import { caseStudies } from '../../../../model/caseStudies';
 import { Item } from './components/Item';
-import { parSortTags, titleSortTags } from './data';
+import { keySortTags, sortTags } from './data';
 import paginationArrow from '../../../../assets/icons/CaseStudies/paginationArrow.svg';
 import disabledPaginationArrow from '../../../../assets/icons/CaseStudies/disabledPaginationArrow.svg';
 
@@ -54,7 +54,6 @@ export const CaseStudies = () => {
 
   useEffect(() => {
     let filteredData = caseStudies;
-
     if (secondFilterKeyword !== 'all') {
       filteredData = filteredData.filter(
         item =>
@@ -87,7 +86,7 @@ export const CaseStudies = () => {
     <div className={style.case_studies_container}>
       <div className={style.filter_section}>
         <div className={style.filter_by_paragraph_container}>
-          {parSortTags.map(string => (
+          {keySortTags.map(string => (
             <div
               key={string}
               className={`${firstFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
@@ -98,7 +97,7 @@ export const CaseStudies = () => {
           ))}
         </div>
         <div className={style.filter_by_title_container}>
-          {titleSortTags.map(string => (
+          {sortTags.map(string => (
             <div
               key={string}
               className={`${secondFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
