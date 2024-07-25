@@ -190,7 +190,7 @@ export const caseStudies: CaseStudiesItem[] = [
   {
     title: 'Digital Trust Registration Platform',
     image: images.illuminote,
-    tags: ['Next.js', 'Express', 'Tailwind', 'Prisma', 'AWS'],
+    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'S3', 'Terraform'],
     keyTags: ['Web', 'FinTech', 'Enterprise'],
     paragraphs: [
       'We built a solution to address the shortcomings of an outdated legal system that lacks robust mechanisms for verifying the legitimacy of paper-based legal documents such as trusts, powers of attorney, wills, and deeds. System allows users to register, authenticate, and protect legal records, establishing an immutable chain of evidence that safeguards client data and keeps all stakeholders informed',
@@ -202,7 +202,7 @@ export const caseStudies: CaseStudiesItem[] = [
       'Underground update is a reliable, secure, and adaptive tool with on-the-go access, tailored to the challenges and dynamics of subterranean operations. The application provides an integrated view in real-time, aligning with the stringent standards of underground activities. Leveraging data-driven insights and algorithms, the platform ensures optimal monitoring of vital weather conditions, taking into account the unique circumstances and constraints of underground work.',
     ],
     tags: ['Next.js', 'PWA', 'Konsta UI', 'Prisma', 'AWS', 'Nest.js'],
-    keyTags: ['Mobile', 'Web', 'Monitoring', 'Enterprise'],
+    keyTags: ['Mobile', 'Enterprise', 'Web', 'Monitoring'],
     image: images.file,
   },
   {
@@ -210,7 +210,16 @@ export const caseStudies: CaseStudiesItem[] = [
     paragraphs: [
       'Through the app, insights are provided to define the cat’s feeding time preferences and recipe preferences. This allows cat parents to adjust based on their cat’s desires. Additionally, the device will track how much and how quickly the cat eats. When a feeding trend is shifted or out of the norm, the app will notify users that a vet visit may be needed.',
     ],
-    tags: ['React Native', 'Nest.js', 'Prisma', 'Terraform', 'Azure IOT hub', 'Amazon Video Streaming with WebRTC'],
+    tags: [
+      'React Native',
+      'Nest.js',
+      'Prisma',
+      'TypeScript',
+      'PostgreSQL',
+      'Terraform',
+      'Azure IOT hub',
+      'Amazon Video Streaming with WebRTC',
+    ],
     keyTags: ['Mobile', 'eCommerce', 'Enterprise'],
     image: images.BistroCat,
   },
@@ -229,7 +238,7 @@ export const caseStudies: CaseStudiesItem[] = [
       'Building a diversified payment acceptance solution designed to provide an affordable and secure way for online transactions. System provides payment processing through virtual terminals, invoice payments, chargeback management, multiple processor connectivity, and more. ',
     ],
     tags: ['Ruby on Rails', 'React', 'Electron', 'PostgreSQL', 'Stripe'],
-    keyTags: ['FinTech', 'eCommerce', 'Enterprise', 'Web'],
+    keyTags: ['Web', 'FinTech', 'eCommerce', 'Enterprise'],
     title: 'Next generation commerce hub',
   },
   {
@@ -238,7 +247,7 @@ export const caseStudies: CaseStudiesItem[] = [
       'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. The company devices are installed in more than 500 enterprises, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
     ],
     tags: ['Angular', 'AI', 'Social Services'],
-    keyTags: ['Marketing', 'Social Network', 'Web'],
+    keyTags: ['Web', 'Marketing', 'Social Network'],
     title: 'A smart social photo marketing platform',
   },
   {
