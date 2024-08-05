@@ -16,6 +16,8 @@ export const CaseStudies = () => {
           modules={[Navigation]}
           navigation={{ nextEl: '#swiper-forward', prevEl: '#swiper-back' }}
           spaceBetween={10}
+          loop={true}
+          initialSlide={mainCases.length}
         >
           {mainCases.map((item, index) => (
             <SwiperSlide area-hidden key={index}>

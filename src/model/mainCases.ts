@@ -83,25 +83,6 @@ export const mainCases: CaseStudiesItem[] = [
     title: 'SaaS-based platform offering data analytics solutions for influencers',
   },
   {
-    image: images.marketingPlatform,
-    paragraphs: [
-      'System harnesses location data to build a precise understanding of consumers’ physical world behavior. Fortune 500 companies and marquee brands, activate this customer intelligence through audience targeting, measurement, insights and data licensing solutions. By filling the massive gap in understanding how consumers spend the majority of their time, the system provides marketers a comprehensive new model of the customer journey for impactful engagement.',
-    ],
-    tags: ['Hadoop', 'Python', 'Django'],
-    keyTags: ['Web', 'Marketing'],
-    title: 'Marketing platform powered by location data',
-  },
-  {
-    image: images.ecommerceMicroservices,
-    paragraphs: [
-      'Building a scalable end-to-end commerce platform composed of loosely coupled Ruby on Rails Microservices. The project included developing the comprehensive ecommerce customer site, the portal for direct sales representatives, and the admin tools to manage products, customers, and orders.',
-    ],
-    tags: ['Ruby on Rails', 'MongoDB', 'Angular'],
-    keyTags: ['Web', 'eCommerce'],
-    title: 'Multi-brand eCommerce platform',
-  },
-
-  {
     title: 'Digital Trust Registration Platform',
     image: images.illuminote,
     tags: ['Next.js', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'S3', 'Terraform'],
