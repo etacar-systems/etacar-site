@@ -100,7 +100,6 @@ export const GetEstimationForm = () => {
               <ValidationError prefix='Email' field='email' errors={state.errors} />
             </div>
             <div className={style.form_row}>
-              <Input type='date' label='Convenient time for contact' name='contact_time' placeholder='Month/Day/Time' />
               <Input type='text' label='Service' name='service' placeholder='Development/Design' />
             </div>
             <div className={style.expected_budget}>

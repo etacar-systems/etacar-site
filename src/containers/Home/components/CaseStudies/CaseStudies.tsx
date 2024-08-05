@@ -1,8 +1,8 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Section } from '../../../../components/Section';
-import { caseStudies } from '../../../../model/caseStudies';
+import { mainCases } from '../../../../model/mainCases';
 import { Item } from './components/Item';
 import style from './CaseStudies.module.scss';
 
@@ -17,7 +17,7 @@ export const CaseStudies = () => {
           navigation={{ nextEl: '#swiper-forward', prevEl: '#swiper-back' }}
           spaceBetween={10}
         >
-          {caseStudies.map((item, index) => (
+          {mainCases.map((item, index) => (
             <SwiperSlide area-hidden key={index}>
               <Item
                 image={item.image}
