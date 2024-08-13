@@ -4,7 +4,7 @@ import baseballStatisticManagement from './baseballStatisticManagement.webp';
 import BistroCat from './BistroCat.png';
 import brandIdentityDesign from './brandIdentityDesign.webp';
 import businessMarketplace from './businessMarketplace.svg';
-import buzzyBooth from './BuzzyBooth.jpg';
+import buzzyBooth from './BuzzyBooth.png';
 import cloudMarketingSolution from './cloudMarketingSolution.webp';
 import communityWebPlatform from './communityWebPlatform.webp';
 import contentManagementSolution from './contentManagementSolution.webp';
