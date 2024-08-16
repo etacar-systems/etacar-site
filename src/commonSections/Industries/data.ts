@@ -5,21 +5,31 @@ export const industries = [
   {
     description: 'Education',
     icon: icons.book,
-    image: images.building,
+    image: images.edu,
   },
   {
     description: 'Real Estate',
     icon: icons.home,
-    image: images.house,
+    image: images.estate,
   },
   {
     description: 'Enterprise applications',
     icon: icons.enterprise,
-    image: images.men,
+    image: images.enterprise,
   },
   {
     description: 'B2C & B2B eCommerce',
     icon: icons.cart,
-    image: images.comp,
+    image: images.ecom,
+  },
+  {
+    description: 'FoodTech',
+    icon: icons.food,
+    image: images.foodtech,
+  },
+  {
+    description: 'FinTech',
+    icon: icons.finance,
+    image: images.fintech,
   },
 ];
