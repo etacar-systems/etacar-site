@@ -1,6 +1,5 @@
 import { useForm, ValidationError } from '@formspree/react';
 
-import colton from '../../../../assets/images/ContactUs/colton_bollinger.webp';
 import { Input } from '../../../../components/UI/Input';
 import style from './ContactForm.module.scss';
 import { Button } from '../../../../components/Button';
@@ -22,9 +21,6 @@ export const ContactForm = () => {
   return (
     <div className={style.container}>
       <div className={style.contact_form_wrapper}>
-        <div className={style.photo}>
-          <img src={colton} alt='Colton Bollinger' />
-        </div>
         <div className={style.form_wrapper}>
           <form onSubmit={handleSubmit} className={style.form}>
             <div className={style.form_row}>
