@@ -8,7 +8,7 @@ import buzzyBooth from './BuzzyBooth.png';
 import cloudMarketingSolution from './cloudMarketingSolution.webp';
 import communityWebPlatform from './communityWebPlatform.webp';
 import contentManagementSolution from './contentManagementSolution.webp';
-import deliveryManagementSystem from './deliveryManagementSystem.svg';
+import deliveryManagementSystem from './deliveryManagementSystem.png';
 import digitalProductPresentation from './digitalProductPresentation.webp';
 import discountApplication from './discountApplication.webp';
 import ecommerceB2BSolution from './ecommerceB2BSolution.webp';
