@@ -5,23 +5,23 @@ export const Introduction = () => {
     <div className={style.wrapper}>
       <div className={style.container}>
         <div className={style.blockPrimary}>
-          <div className={style.textPrimary}>Services are based on full-cycle of custom software development</div>
+          <div className={style.textPrimary}>Services are based on end-to-end AI product development</div>
         </div>
         <div className={style.blockSecondary}>
           <div className={style.textSecondary}>
-            Discovery <span className={style.textSecondaryBlue}>/</span> Definition{' '}
-            <span className={style.textSecondaryBlue}>/</span>
+            Discovery &amp; Opportunity Mapping <span className={style.textSecondaryBlue}>/</span>
           </div>
           <div className={style.textSecondary}>
-            Design <span className={style.textSecondaryBlue}>&</span> Prototyping{' '}
-            <span className={style.textSecondaryBlue}>/</span>
+            Solution Definition &amp; Architecture <span className={style.textSecondaryBlue}>/</span>
           </div>
           <div className={style.textSecondary}>
-            Development <span className={style.textSecondaryBlue}>&</span> Testing{' '}
-            <span className={style.textSecondaryBlue}>/</span>
+            Experience Design &amp; Prototyping <span className={style.textSecondaryBlue}>/</span>
           </div>
           <div className={style.textSecondary}>
-            Quality Assurance <span className={style.textSecondaryBlue}>&</span> Delivery
+            Implementation &amp; Testing <span className={style.textSecondaryBlue}>/</span>
+          </div>
+          <div className={style.textSecondary}>
+            QA, Launch &amp; Continuous Optimization
           </div>
         </div>
       </div>

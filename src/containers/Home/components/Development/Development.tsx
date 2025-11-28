@@ -7,31 +7,30 @@ import { Carousel } from './components';
 
 export const Development = () => {
   return (
-    <Section title={'COMPREHENSIVE SOFTWARE DEVELOPMENT'}>
+    <Section title={'END-TO-END AI PRODUCT DEVELOPMENT'}>
       <div className={styles.container}>
         <img className={styles.img} src={appleSet} alt='development' />
         <div>
           <div className={styles.points}>
             <div className={styles.point}>
-              <span>1/</span>Discovery
+              <span>1/</span>Discovery & Opportunity Mapping
             </div>
             <div className={styles.point}>
-              <span>2/</span>Definition
+              <span>2/</span>Solution Definition <p>&</p> Architecture
             </div>
             <div className={styles.point}>
-              <span>3/</span>Design <p>&</p> Prototyping
+              <span>3/</span>Experience Design <p>&</p> Prototyping
             </div>
             <div className={styles.point}>
-              <span>4/</span>Development <p>&</p> Testing
+              <span>4/</span>Implementation <p>&</p> Testing
             </div>
             <div className={styles.point}>
-              <span>5/</span>QA <p>&</p> Delivery
+              <span>5/</span>QA, Launch <p>&</p> Continuous Optimization
             </div>
           </div>
           <div className={styles.description}>
-            EtaCar Systems provides professional software development solutions for European/US clients. Our experienced
-            engineers ensure personalized services, prioritizing your needs. We follow Agile processes and offer
-            cost-effective Ruby on Rails, JavaScript/TypeScript, UI/UX, and DevOps solutions.
+          EtaCar Systems designs and delivers AI-native products for European and US clients.
+Our teams combine deep software engineering with modern AI capabilities to build agents, copilots, and decision workflows that plug into your real systems. We follow an agile, outcome-driven process—from early discovery to production rollout and optimization—so every project stays aligned with your business goals, governance requirements, and technical landscape.
           </div>
         </div>
       </div>

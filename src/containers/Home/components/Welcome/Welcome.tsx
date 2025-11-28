@@ -5,13 +5,10 @@ export const Welcome = () => {
   return (
     <div className={styles.welcome_container}>
       <div className={styles.title}>
-        <span>Your Digital</span>
-        <span>Product Development</span>
-        <span>Partner</span>
+        <span>Orchestrating Intelligence. Navigating Complexity.</span>
       </div>
       <div className={styles.description}>
-        Expand your business capabilities with comprehensive world-class software development, including thoughtful
-        strategy, UX/UI design and on-demand development.
+        We design and build AI‑native products, agents, and workflows that turn complex data and processes into predictable business outcomes.
       </div>
     </div>
   );
