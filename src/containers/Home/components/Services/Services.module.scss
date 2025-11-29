@@ -1,17 +1,34 @@
 @import '../../../../styles/colors.scss';
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  & > div:last-child {
-    color: $color--white !important;
-    background-color: $color--lightblue;
-    cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
 
-    &:hover {
-      background-color: $color--blue;
-    }
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
+
+  // & > div:last-child {
+  //   color: $color--white !important;
+  //   background-color: $color--lightblue;
+  //   cursor: pointer;
+
+  //   &:hover {
+  //     background-color: $color--blue;
+  //   }
+  // }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
   }
 }

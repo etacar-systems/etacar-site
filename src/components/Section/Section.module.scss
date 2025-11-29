@@ -45,3 +45,21 @@
     color: $color--light;
   }
 }
+
+.subtitle {
+  max-width: 600px;
+  color: $color--text-dark;
+  font-size: 20px;
+  margin-bottom: 60px;
+  line-height: 24px;
+  opacity: 0.9;
+
+  &[data-title-color='dark'] {
+    color: $color--light;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+}

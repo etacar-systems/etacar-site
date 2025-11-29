@@ -3,72 +3,77 @@
 .services {
   background-color: $color--text-dark;
   border-radius: 1.25rem 1.25rem 0 0;
-
+  padding: 6rem 2rem;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
   max-width: 1240px;
-  justify-content: center;
-  gap: 1.25rem;
-  padding: 8.75rem 12.5rem 10rem;
-
-  @media (max-width: 1250px) {
-    flex-wrap: wrap;
-    padding: 8.75rem 20px 10rem;
-
-    > div:nth-last-of-type(1) {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  @media (min-width: 768px) {
-    > div {
-      display: grid;
-      gap: 1.25rem;
-    }
-  }
+  margin: 0 auto;
 }
 
 .service {
-  box-sizing: border-box;
-  display: grid;
-  min-width: 420px;
-  border: solid 1px $color--text-light;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: $color--white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 1rem;
-  max-width: 24.175rem;
-  padding: 1rem 1.5rem;
-  color: $color--lightgray;
-  gap: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 
-  & img {
-    width: 24px;
-    height: 24px;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   }
 
   .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
-    text-align: left;
-    margin: 0;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: $color--light;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
   }
 
-  .tags {
+  .description {
+    opacity: 0.85;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .subtitle {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding-top: 1rem;
-    font-size: 0.75rem;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
 
     div {
-      padding: 0.375rem 0.625rem;
-      color: $color--text-light;
+      line-height: 1.4;
+    }
+  }
+
+  /* Чтобы карточки выравнивались — растягиваем пространство */
+  .spacer {
+    flex-grow: 1;
+  }
+
+  .cta {
+    margin-top: auto;
+    color: $color--blue;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

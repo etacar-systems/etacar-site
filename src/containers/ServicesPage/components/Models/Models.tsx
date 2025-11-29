@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router';
 
 import { servicePageIcons } from '../../../../assets/icons/servicesPage';
+import { Button } from '../../../../components/Button';
 import { CONTACT } from '../../../../routes';
 import { data } from './data';
-import { Button } from '../../../../components/Button';
 import style from './Models.module.scss';
 
 export const Models = () => {

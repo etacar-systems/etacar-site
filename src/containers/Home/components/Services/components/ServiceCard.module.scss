@@ -1,27 +1,64 @@
 @import '../../../../../styles/colors.scss';
 
-.card {
-  width: 330px;
-  height: 50px;
-  background-color: $color--white;
-  border-radius: 16px;
-  padding: 16px 24px;
+.wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: $color--text-dark;
-  transition: all 0.2s;
-  gap: 0.5rem;
-  @media (max-width: 815px) {
-    width: 100%;
-  }
+  width: 100%;
+  min-height: 200px;
+  border-radius: 20px;
+  background-color: $color--white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 
-  & img {
-    width: 24px;
-    height: 24px;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
 }
 
-.text {
+.card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
   font-size: 24px;
+  font-weight: 700;
+  color: $color--text-dark;
+}
+
+.description {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 6px;
+
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: $color--blue;
+    }
+  }
+}
+
+.cta {
+  color: $color--blue;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

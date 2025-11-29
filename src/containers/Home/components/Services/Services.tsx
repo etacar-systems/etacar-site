@@ -1,24 +1,21 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-
-import { SERVICES } from '../../../../routes';
 import { Section } from '../../../../components/Section';
-import { ServiceCard } from './components';
+import { ServiceCard } from './components/ServiceCard';
 import { services } from './data';
 import styles from './Services.module.scss';
 
 export const Services = () => {
-  const navigate = useNavigate();
+  const data = services.homepageFinalServicesBlock;
 
   return (
-    <Section theme={'extraLight'} title={'SERVICES'}>
+    <Section theme='extraLight' title={data.sectionTitle} subtitle={data.sectionSubtitle}>
       <div className={styles.container}>
-        {services.map((data, index) => (
+        {data.services.map((service, index) => (
           <ServiceCard
-            text={data.title}
-            icon={data.icon}
             key={index}
-            onClick={index === services.length - 1 ? () => navigate(SERVICES) : undefined}
+            title={service.title}
+            description={service.description}
+            features={service.features}
+            cta={service.cta}
           />
         ))}
       </div>
