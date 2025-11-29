@@ -1,13 +1,14 @@
+import { useNavigate } from 'react-router';
 import { aboutUsImages } from '../../../../assets/images/AboutUs';
 import { Button } from '../../../../components/Button';
 import { CONTACT } from '../../../../routes';
-import { useNavigate } from 'react-router';
 import style from './Introduction.module.scss';
 
 const infoText = [
-  'EtaCar Systems is a privately held software development outsourcing company.',
-  'EtaCar management has over a decade of practical experience working with clients in both North America and the European Union. We have extensive experience recruiting, training and supervising industry leading IT staff.',
-  'Our aim is to exceed our client’s expectations in everything we do. We believe that keeping an open attitude and putting people first is instrumental in creating long term partnerships.',
+  'EtaCar Systems is an AI solutions company focused on designing, building, and operating intelligent systems for modern enterprises.',
+  'We specialize in AI orchestration, autonomous enterprise agents, and knowledge intelligence — helping organizations automate complex workflows, enhance decision-making, and unlock the value of their data.',
+  'Our leadership team brings over a decade of experience working with clients across North America and the European Union.',
+  'We believe in partnership over transactions. By keeping an open attitude and putting people first — clients, teams, and end-users — we create solutions that are not only technologically advanced, but also practical, trusted, and sustainable.',
 ];
 
 export const Introduction = () => {
@@ -29,6 +30,9 @@ export const Introduction = () => {
             {infoText.map(string => (
               <div className={style.info}>{string}</div>
             ))}
+
+            <div className={style.infoBold}>EtaCar Systems — Orchestrating Intelligence. Navigating Complexity.</div>
+
             <div className={style.buttonBlock}>
               <Button title='Get In Touch' type='ghost' onClick={() => navigate(CONTACT)} icon={true} />
             </div>

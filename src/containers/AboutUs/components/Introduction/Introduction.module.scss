@@ -19,7 +19,6 @@
     width: 100%;
     padding: 0 20px;
   }
-  
 }
 
 .block {
@@ -32,7 +31,8 @@
   }
 }
 
-.columnLeft, .columnRight {
+.columnLeft,
+.columnRight {
   display: flex;
   flex-direction: column;
   @media (max-width: 1200px) {
@@ -49,14 +49,13 @@
 }
 
 .aboutUs {
-font-family: Chakra Petch;
-font-size: 3.75rem;
-font-weight: 700;
-text-transform: uppercase;
-color: $color--text-dark;
-text-wrap: nowrap;
-line-height: 3.625rem;
-
+  font-family: Chakra Petch;
+  font-size: 3.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color--text-dark;
+  text-wrap: nowrap;
+  line-height: 3.625rem;
 }
 
 .aboutUsImage {
@@ -89,22 +88,25 @@ line-height: 3.625rem;
 }
 
 .info {
-text-align: left;
-color: $color--text-light;
+  text-align: left;
+  color: $color--text-light;
 
   @media (max-width: 1200px) {
-  text-align: center;
+    text-align: center;
   }
+}
+
+.infoBold {
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .buttonBlock {
   display: flex;
   align-self: flex-end;
   margin-top: auto;
-  
+
   @media (max-width: 1200px) {
     align-self: center;
   }
-
 }
-
