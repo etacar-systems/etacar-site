@@ -6,6 +6,7 @@ import Loader from '../../components/Loader';
 
 const CaseStudies = lazy(() => import('./components/CaseStudies'));
 const Development = lazy(() => import('./components/Development'));
+const HowItWorks = lazy(() => import('./components/HowItWorks'));
 const Footer = lazy(() => import('../../components/Footer'));
 const GetEstimationForm = lazy(() => import('./components/GetEstimationForm'));
 const Industries = lazy(() => import('../../commonSections/Industries'));
@@ -29,6 +30,9 @@ export const Home: React.FC = () => {
         </FadeInSection>
         <FadeInSection>
           <Development />
+        </FadeInSection>
+        <FadeInSection>
+          <HowItWorks />
         </FadeInSection>
         <FadeInSection>
           <CaseStudies />

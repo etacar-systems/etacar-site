@@ -1,0 +1,54 @@
+@import '../../../../styles/colors.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.step {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  border-radius: 12px;
+
+  background-color: $color--white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.icon {
+  color: $color--text-blue;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 15px;
+  color: $color--text-light;
+  line-height: 1.4;
+  margin: 0;
+}
