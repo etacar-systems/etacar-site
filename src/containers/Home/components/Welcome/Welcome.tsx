@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './Welcome.module.scss';
 export const Welcome = () => {
   return (
@@ -8,7 +6,10 @@ export const Welcome = () => {
         <span>Orchestrating Intelligence. Navigating Complexity.</span>
       </div>
       <div className={styles.description}>
-        We design and build AI‑native products, agents, and workflows that turn complex data and processes into predictable business outcomes.
+        <i>
+          EtaCar Systems builds AI-native solutions that automate complex processes, augment your teams, and turn
+          fragmented data into decisions.
+        </i>
       </div>
     </div>
   );

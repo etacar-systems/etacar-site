@@ -1,36 +1,68 @@
-import React from 'react';
-
-import { Section } from '../../../../components/Section';
 import appleSet from '../../../../assets/images/appleSet.webp';
+import { Section } from '../../../../components/Section';
 import styles from './Development.module.scss';
 import { Carousel } from './components';
 
+// Простые SVG-иконки
+const metrics = [
+  {
+    icon: (
+      <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
+        <path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
+      </svg>
+    ),
+    text: '+30–50% faster back-office operations via AI-powered workflows',
+  },
+  {
+    icon: (
+      <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
+        <circle cx='12' cy='12' r='10' stroke='currentColor' strokeWidth='2' />
+        <path d='M8 12l2 2 4-4' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
+      </svg>
+    ),
+    text: 'Up to 40% fewer manual errors in routine decisions',
+  },
+  {
+    icon: (
+      <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
+        <path d='M4 14l4-4 4 6 8-8' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
+      </svg>
+    ),
+    text: '2–3× faster delivery of new digital products with AI-native architecture',
+  },
+];
+
 export const Development = () => {
   return (
-    <Section title={'END-TO-END AI PRODUCT DEVELOPMENT'}>
+    <Section title={'Measurable impact in weeks – not years'}>
       <div className={styles.container}>
-        <img className={styles.img} src={appleSet} alt='development' />
-        <div>
+        <div className={styles.imageWrapper}>
+          <img className={styles.img} src={appleSet} alt='development' />
+        </div>
+        <div className={styles.content}>
           <div className={styles.points}>
-            <div className={styles.point}>
-              <span>1/</span>Discovery & Opportunity Mapping
-            </div>
-            <div className={styles.point}>
-              <span>2/</span>Solution Definition <p>&</p> Architecture
-            </div>
-            <div className={styles.point}>
-              <span>3/</span>Experience Design <p>&</p> Prototyping
-            </div>
-            <div className={styles.point}>
-              <span>4/</span>Implementation <p>&</p> Testing
-            </div>
-            <div className={styles.point}>
-              <span>5/</span>QA, Launch <p>&</p> Continuous Optimization
-            </div>
+            {metrics.map((metric, idx) => (
+              <div key={idx} className={styles.point}>
+                <span className={styles.icon}>{metric.icon}</span>
+                <span className={styles.metricText}>
+                  {metric.text.split(/([+\d–×%]+)/g).map((part, i) =>
+                    /[+\d–×%]/.test(part) ? (
+                      <span key={i} className={styles.highlightNumber}>
+                        {part}
+                      </span>
+                    ) : (
+                      part
+                    )
+                  )}
+                </span>
+              </div>
+            ))}
           </div>
           <div className={styles.description}>
-          EtaCar Systems designs and delivers AI-native products for European and US clients.
-Our teams combine deep software engineering with modern AI capabilities to build agents, copilots, and decision workflows that plug into your real systems. We follow an agile, outcome-driven process—from early discovery to production rollout and optimization—so every project stays aligned with your business goals, governance requirements, and technical landscape.
+            <i>
+              We combine enterprise-grade orchestration, safety, and observability with fast iteration cycles, so your
+              first AI solution goes live in 6–10 weeks.
+            </i>
           </div>
         </div>
       </div>

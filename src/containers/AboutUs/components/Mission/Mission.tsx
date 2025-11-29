@@ -1,13 +1,12 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import successIcon from '../../../../assets/icons/success.svg';
 
-import { Section } from '../../../../components/Section';
-import { about, description, principles } from './data';
-import { Card } from './components/Card';
 import { Button } from '../../../../components/Button';
-import { ABOUT } from '../../../../routes';
+import { Section } from '../../../../components/Section';
+import { CONTACT } from '../../../../routes';
+import { Card } from './components/Card';
+import { about, description, principles } from './data';
 import style from './Mission.module.scss';
 
 export const Mission = () => {
@@ -32,7 +31,7 @@ export const Mission = () => {
               <Card description={data.subtitle} key={index} src={data.src} title={data.title} />
             ))}
           </div>
-          <Button fullWidth icon onClick={() => navigate(ABOUT)} title={'About us'} type={'ghost'} />
+          <Button fullWidth icon onClick={() => navigate(CONTACT)} title={'Contact us'} type={'ghost'} />
         </div>
       </div>
     </Section>

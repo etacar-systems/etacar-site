@@ -1,10 +1,11 @@
 import { lazy, Suspense, useEffect } from 'react';
-import { Location } from '../../components/Location';
-import Loader from '../../components/Loader';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
+import Loader from '../../components/Loader';
+import { Location } from '../../components/Location';
 
 const Expirience = lazy(() => import('./components/Experience'));
 const Introduction = lazy(() => import('./components/Introduction'));
+const Mission = lazy(() => import('./components/Mission'));
 const Footer = lazy(() => import('../../components/Footer'));
 const Reviews = lazy(() => import('../../commonSections/Reviews'));
 export const AboutUs = () => {
@@ -16,6 +17,9 @@ export const AboutUs = () => {
       <FadeInSection>
         <Introduction />
         <Expirience />
+      </FadeInSection>
+      <FadeInSection>
+        <Mission />
       </FadeInSection>
       <FadeInSection>
         <Location />

@@ -9,9 +9,8 @@ const Development = lazy(() => import('./components/Development'));
 const Footer = lazy(() => import('../../components/Footer'));
 const GetEstimationForm = lazy(() => import('./components/GetEstimationForm'));
 const Industries = lazy(() => import('../../commonSections/Industries'));
-const Mission = lazy(() => import('./components/Mission'));
 const Reviews = lazy(() => import('../../commonSections/Reviews'));
-const Services = lazy(() => import('./components/Services'));
+const WhatWeDo = lazy(() => import('./components/WhatWeDo'));
 const Welcome = lazy(() => import('./components/Welcome'));
 
 export const Home: React.FC = () => {
@@ -26,16 +25,13 @@ export const Home: React.FC = () => {
           <Welcome />
         </FadeInSection>
         <FadeInSection>
-          <Mission />
+          <WhatWeDo />
         </FadeInSection>
         <FadeInSection>
           <Development />
         </FadeInSection>
         <FadeInSection>
           <CaseStudies />
-        </FadeInSection>
-        <FadeInSection>
-          <Services />
         </FadeInSection>
         <FadeInSection>
           <Industries />

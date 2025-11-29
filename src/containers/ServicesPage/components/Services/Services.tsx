@@ -1,4 +1,4 @@
-import { fullServices } from '../../../Home/components/Services/data';
+import { fullServices } from '../../../Home/components/WhatWeDo/data';
 import style from './Services.module.scss';
 
 export const Services = () => {

@@ -1,82 +1,24 @@
-export const services = {
-  homepageFinalServicesBlock: {
-    sectionTitle: 'Services Built for Intelligent Enterprises',
-    sectionSubtitle:
-      'AI orchestration, autonomous agents, and cognitive automation — engineered to operate in real-world complexity.',
+export const whatWeDo = {
+  section: {
+    sectionTitle: 'From AI demos to production-grade systems',
     services: [
       {
-        title: 'AI Orchestration & Automation',
+        title: 'AI Copilots for Teams',
         description:
-          'Transform complex workflows into intelligent, self-optimizing pipelines. We design and deploy AI-driven orchestration layers that automate multi-step decision-making, knowledge-intensive tasks, and routine operations.',
-        features: ['Multi-step reasoning', 'Automated decision flows', 'Human-in-the-loop controls'],
-        cta: {
-          label: 'Explore Orchestration',
-          url: '#',
-        },
+          'Context-aware assistants embedded into your tools – CRM, admin panels, back-office – that understand your data, automate routine steps, and keep humans in control.',
+        cta: 'Learn More',
       },
       {
-        title: 'Autonomous Enterprise Agents',
+        title: 'Process Automation & Orchestration',
         description:
-          'AI agents that think, plan, and act across your digital ecosystem. They analyze data, generate insights, update systems, and execute tasks with high reliability and traceability.',
-        features: [
-          'Research & analysis agents',
-          'Monitoring & reporting agents',
-          'Document, knowledge, and workflow agents',
-        ],
-        cta: {
-          label: 'Meet the Agents',
-          url: '#',
-        },
+          'End-to-end workflows that connect models, tools, and APIs: from document intake to decisions, alerts, and actions.',
+        cta: 'Learn More',
       },
       {
-        title: 'Knowledge Intelligence Systems',
+        title: 'Knowledge & Document Intelligence',
         description:
-          'Turn organizational knowledge into a searchable, actionable intelligence layer. We unify documents, databases, and operational knowledge into a system that can answer, reason, and support decisions.',
-        features: ['Semantic retrieval', 'Document understanding', 'Knowledge graphs & enterprise context'],
-        cta: {
-          label: 'Learn More',
-          url: '#',
-        },
-      },
-      {
-        title: 'Custom AI Engineering',
-        description:
-          'Tailored AI systems built for your architecture, data, and security requirements. From custom APIs to integrated automation tools, we build AI that fits the realities of enterprise infrastructure.',
-        features: ['Custom workflows & integrations', 'Cloud/on-prem deployments', 'Internal AI tooling & copilots'],
-        cta: {
-          label: 'Build with Us',
-          url: '#',
-        },
-      },
-
-      {
-        title: 'AI Strategy & Advisory',
-        description:
-          'A strategic consulting service that helps organizations understand where AI delivers the highest value — and how to implement it safely, effectively, and sustainably.',
-        features: [
-          'Identify high-impact opportunities for AI adoption',
-          'Assess data, infrastructure, and operational readiness',
-          'Build AI transformation roadmaps',
-        ],
-        cta: {
-          label: 'Start with Strategy',
-          url: '#',
-        },
-      },
-
-      {
-        title: 'AI Lifecycle Management',
-        description:
-          'Continuous management and optimization for organizations running production AI systems. We keep your AI efficient, compliant, secure, and aligned with changing business needs.',
-        features: [
-          'Monitor performance, reliability, and quality',
-          'Optimize workflows, agents, and orchestration pipelines',
-          'Regularly update prompts, rules, and model routing',
-        ],
-        cta: {
-          label: 'Optimize Your AI Operations',
-          url: '#',
-        },
+          'We turn scattered documents, tickets, and knowledge bases into reliable AI assistants and insight dashboards.',
+        cta: 'Learn More',
       },
     ],
   },

@@ -1,38 +1,81 @@
-@import '../../../../styles/colors';
+@import '../../../../styles/colors.scss';
 
 .container {
   display: flex;
+  align-items: flex-start;
+  gap: 40px;
   flex-wrap: wrap;
-}
 
-.img {
-  display: block;
   @media (max-width: 768px) {
-    width: 100%;
-    padding: 0 0 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
-.description {
-  max-width: 590px;
-  margin-top: 20px;
-  text-align: justify;
+.imageWrapper {
+  flex: 1;
+  max-width: 500px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 }
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+.content {
+  flex: 1;
+  max-width: 590px;
+}
+
 .points {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 20px;
 }
 
 .point {
-  font-weight: 400;
-  font-size: 24px;
-  & > span {
-    margin-right: 12px;
-    color: $color--lightgray;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  border: 1px solid #d8e3ff;
+  background-color: $color--extra-lightblue;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   }
-  & > p {
-    color: $color--blue;
-    display: inline;
-  }
+}
+
+.icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  color: $color--text-blue;
+}
+
+.description {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.metricText {
+  display: inline;
+}
+
+.highlightNumber {
+  color: $color--text-blue;
+  font-weight: 700;
 }

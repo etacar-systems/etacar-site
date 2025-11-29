@@ -14,16 +14,6 @@
     grid-template-columns: 1fr;
   }
 
-  // & > div:last-child {
-  //   color: $color--white !important;
-  //   background-color: $color--lightblue;
-  //   cursor: pointer;
-
-  //   &:hover {
-  //     background-color: $color--blue;
-  //   }
-  // }
-
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
   }
