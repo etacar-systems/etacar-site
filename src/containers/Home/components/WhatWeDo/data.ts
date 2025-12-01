@@ -5,7 +5,7 @@ export const whatWeDo = {
       {
         title: 'AI Copilots for Teams',
         description:
-          'Context-aware assistants embedded into your tools – CRM, admin panels, back-office – that understand your data, automate routine steps, and keep humans in control.',
+          'Context-aware assistants embedded into your tools – CRM, admin panels, back-office – that understand your data, automate routine steps.',
         cta: 'Learn More',
       },
       {
