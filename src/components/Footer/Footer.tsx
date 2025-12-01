@@ -23,7 +23,9 @@ export const Footer = () => {
         <div className={style.info__links}>
           <div className={style.linkGetInTouch}>
             <div className={style.getInTouch}>
-              <Link to={CONTACT}>Get in touch</Link>
+              <Link to={CONTACT} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                Get in touch
+              </Link>
             </div>
             <div className={style.linkIcon}>
               <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
