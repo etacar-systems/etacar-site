@@ -1,7 +1,7 @@
-import style from './Footer.module.scss';
-import linkArrow from '../../assets/icons/linkArrow.svg';
 import { Link } from 'react-router-dom';
-import { PRIVACY_POLICY, TERMS_OF_USE } from '../../routes';
+import linkArrow from '../../assets/icons/linkArrow.svg';
+import { CONTACT, PRIVACY_POLICY, TERMS_OF_USE } from '../../routes';
+import style from './Footer.module.scss';
 
 export const Footer = () => {
   return (
@@ -23,9 +23,7 @@ export const Footer = () => {
         <div className={style.info__links}>
           <div className={style.linkGetInTouch}>
             <div className={style.getInTouch}>
-              <a target='_blank' href='mailto:msterjanov@gmail.com' rel='noreferrer'>
-                Get in touch
-              </a>
+              <Link to={CONTACT}>Get in touch</Link>
             </div>
             <div className={style.linkIcon}>
               <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
