@@ -8,10 +8,18 @@ export const WorkingWithData: React.FC = () => {
       <div className={styles.working}>
         <p>We don’t operate AI in isolation. For every engagement we:</p>
         <ul>
-          <li>Integrate with your existing systems and data sources instead of building separate “shadow tools”</li>
-          <li>Align with your risk, security and compliance teams from day one</li>
-          <li>Make sure every AI‑supported decision is traceable back to data and documents</li>
-          <li>Provide you with a clear view of how the system behaves and how it is monitored</li>
+          <li>
+            <i>Integrate with your existing systems and data sources instead of building separate “shadow tools”</i>
+          </li>
+          <li>
+            <i>Align with your risk, security and compliance teams from day one</i>
+          </li>
+          <li>
+            <i>Make sure every AI‑supported decision is traceable back to data and documents</i>
+          </li>
+          <li>
+            <i>Provide you with a clear view of how the system behaves and how it is monitored</i>
+          </li>
         </ul>
         <p>
           This is what allows us — and you — to stand behind the KPIs and the decisions your AI systems help to make.

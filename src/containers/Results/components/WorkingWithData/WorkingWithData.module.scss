@@ -1,27 +1,15 @@
-$color--text: #343a40;
-$color--muted: #6c757d;
+@import '../../../../styles/colors.scss';
 
 .working {
-  padding: 4rem 0;
-  background: #f7f9fb;
-
-  h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: $color--text;
-  }
-
   p {
-    max-width: 900px;
-    margin: 0 auto 1rem;
-    color: $color--muted;
-    text-align: center;
+    font-size: 20px;
+    color: $color--text-dark;
+    line-height: 1.6;
   }
 
   ul {
-    max-width: 900px;
-    margin: 0 auto 1.5rem;
     padding-left: 1.5rem;
+    color: $color--text-dark;
 
     li {
       margin-bottom: 0.5rem;

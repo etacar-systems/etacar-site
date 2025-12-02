@@ -8,11 +8,21 @@ export const ImpactAtGlance: React.FC = () => {
       <div className={styles.impact}>
         <p>Across recent projects, our AI solutions have delivered:</p>
         <ul>
-          <li>20–40% faster end‑to‑end execution for selected operational processes</li>
-          <li>30–50% less manual effort for recurring analysis and reporting</li>
-          <li>30–50% shorter time‑to‑delivery for selected development tasks</li>
-          <li>50–70% less time spent searching and reading internal documents for recurring questions</li>
-          <li>Fewer escalations and errors, thanks to more consistent use of existing knowledge and playbooks</li>
+          <li>
+            <i>20–40% faster end‑to‑end execution for selected operational processes</i>
+          </li>
+          <li>
+            <i>30–50% less manual effort for recurring analysis and reporting</i>
+          </li>
+          <li>
+            <i>30–50% shorter time‑to‑delivery for selected development tasks</i>
+          </li>
+          <li>
+            <i>50–70% less time spent searching and reading internal documents for recurring questions</i>
+          </li>
+          <li>
+            <i>Fewer escalations and errors, thanks to more consistent use of existing knowledge and playbooks</i>
+          </li>
         </ul>
         <p>
           These numbers are not "theoretical potential" — they are measured before/after deltas on real processes. Exact

@@ -1,8 +1,11 @@
 @import '../../../../styles/colors.scss';
 
-.intro {
-  max-width: 800px;
-  margin: 0 auto;
+.text {
+  font-size: 20px;
   color: $color--text-dark;
   line-height: 1.6;
+}
+
+.subtext {
+  color: $color--text-dark;
 }

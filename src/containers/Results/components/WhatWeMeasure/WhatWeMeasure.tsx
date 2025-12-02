@@ -31,14 +31,6 @@ const categories = [
       'Coverage of critical controls and checks',
     ],
   },
-  // {
-  //   title: 'Adoption & satisfaction',
-  //   items: [
-  //     'Active usage of AI assistant / workflow',
-  //     'User satisfaction (agents, analysts, engineers)',
-  //     'Stakeholder confidence (operations, risk, C‑level)',
-  //   ],
-  // },
 ];
 
 export const WhatWeMeasure: React.FC = () => {
