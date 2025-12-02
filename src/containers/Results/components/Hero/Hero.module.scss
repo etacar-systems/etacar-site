@@ -1,28 +1,8 @@
-$color--primary: #007bff;
-$color--secondary: #6c757d;
-$color--light: #f8f9fa;
-$color--dark: #343a40;
+@import '../../../../styles/colors.scss';
 
-.hero {
-  padding: 4rem 0;
-  background-color: $color--light;
-  text-align: center;
-
-  h1 {
-    margin-bottom: 1rem;
-    color: $color--dark;
-  }
-
-  .subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    color: $color--secondary;
-  }
-
-  .intro {
-    max-width: 800px;
-    margin: 0 auto;
-    color: $color--dark;
-    line-height: 1.6;
-  }
+.intro {
+  max-width: 800px;
+  margin: 0 auto;
+  color: $color--text-dark;
+  line-height: 1.6;
 }

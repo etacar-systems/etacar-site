@@ -4,12 +4,9 @@ import styles from './WorkingWithData.module.scss';
 
 export const WorkingWithData: React.FC = () => {
   return (
-    <Section>
+    <Section title='Working with your data, systems and risk constraints' theme='extraLight'>
       <div className={styles.working}>
-        <h2>Working with your data, systems and risk constraints</h2>
-        <p>
-          We don’t operate AI in isolation. For every engagement we:
-        </p>
+        <p>We don’t operate AI in isolation. For every engagement we:</p>
         <ul>
           <li>Integrate with your existing systems and data sources instead of building separate “shadow tools”</li>
           <li>Align with your risk, security and compliance teams from day one</li>

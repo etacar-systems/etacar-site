@@ -72,33 +72,34 @@ const cases = [
 
 export const CaseStudies: React.FC = () => {
   return (
-    <Section>
+    <Section title='Selected case studies' theme='extraLight'>
       <div className={styles.caseStudies}>
-        <h2>Selected case studies</h2>
         <div className={styles.grid}>
-        {cases.map((c, idx) => (
-          <article key={idx} className={styles.card}>
-            <h3>{c.headline}</h3>
-            <div className={styles.meta}>{c.title}</div>
-            <p className={styles.challenge}><strong>Challenge:</strong> {c.challenge}</p>
-            <div>
-              <h4>What we did</h4>
-              <ul>
-                {c.whatWeDid.map((w, i) => (
-                  <li key={i}>{w}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4>Results</h4>
-              <ul>
-                {c.results.map((r, i) => (
-                  <li key={i}>{r}</li>
-                ))}
-              </ul>
-            </div>
-          </article>
-        ))}
+          {cases.map((c, idx) => (
+            <article key={idx} className={styles.card}>
+              <h3>{c.headline}</h3>
+              <div className={styles.meta}>{c.title}</div>
+              <p className={styles.challenge}>
+                <strong>Challenge:</strong> {c.challenge}
+              </p>
+              <div>
+                <h4>What we did</h4>
+                <ul>
+                  {c.whatWeDid.map((w, i) => (
+                    <li key={i}>{w}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h4>Results</h4>
+                <ul>
+                  {c.results.map((r, i) => (
+                    <li key={i}>{r}</li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </Section>

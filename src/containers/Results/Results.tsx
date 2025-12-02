@@ -8,6 +8,7 @@ const ImpactAtGlance = lazy(() => import('./components/ImpactAtGlance'));
 const CaseStudies = lazy(() => import('./components/CaseStudies'));
 const WhatWeMeasure = lazy(() => import('./components/WhatWeMeasure'));
 const WorkingWithData = lazy(() => import('./components/WorkingWithData'));
+const Footer = lazy(() => import('../../components/Footer'));
 
 export const Results: React.FC = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ export const Results: React.FC = () => {
         <FadeInSection>
           <WorkingWithData />
         </FadeInSection>
+        <Footer />
       </div>
     </Suspense>
   );

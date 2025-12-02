@@ -4,12 +4,9 @@ import styles from './ImpactAtGlance.module.scss';
 
 export const ImpactAtGlance: React.FC = () => {
   return (
-    <Section>
+    <Section title='Impact at a glance'>
       <div className={styles.impact}>
-        <h2>Impact at a glance</h2>
-        <p>
-          Across recent projects, our AI solutions have delivered:
-        </p>
+        <p>Across recent projects, our AI solutions have delivered:</p>
         <ul>
           <li>20–40% faster end‑to‑end execution for selected operational processes</li>
           <li>30–50% less manual effort for recurring analysis and reporting</li>
@@ -18,7 +15,8 @@ export const ImpactAtGlance: React.FC = () => {
           <li>Fewer escalations and errors, thanks to more consistent use of existing knowledge and playbooks</li>
         </ul>
         <p>
-          These numbers are not "theoretical potential" — they are measured before/after deltas on real processes. Exact values differ by client and domain.
+          These numbers are not "theoretical potential" — they are measured before/after deltas on real processes. Exact
+          values differ by client and domain.
         </p>
       </div>
     </Section>

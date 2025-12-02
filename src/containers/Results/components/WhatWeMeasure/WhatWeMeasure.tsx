@@ -9,31 +9,46 @@ const categories = [
   },
   {
     title: 'Quality & consistency',
-    items: ['Error and rework rates', 'Consistency of decisions across teams/regions', 'Coverage and correctness of references to internal knowledge'],
+    items: [
+      'Error and rework rates',
+      'Consistency of decisions across teams/regions',
+      'Coverage and correctness of references to internal knowledge',
+    ],
   },
   {
     title: 'Productivity & cost',
-    items: ['Manual effort per case / ticket / report', 'Volume of work handled per FTE', 'Cost per processed unit (case, transaction, review, feature)'],
+    items: [
+      'Manual effort per case / ticket / report',
+      'Volume of work handled per FTE',
+      'Cost per processed unit (case, transaction, review, feature)',
+    ],
   },
   {
     title: 'Risk & compliance',
-    items: ['Number and severity of risk/compliance incidents related to the process', 'Audit findings related to AI‑supported operations', 'Coverage of critical controls and checks'],
+    items: [
+      'Number and severity of risk/compliance incidents related to the process',
+      'Audit findings related to AI‑supported operations',
+      'Coverage of critical controls and checks',
+    ],
   },
-  {
-    title: 'Adoption & satisfaction',
-    items: ['Active usage of AI assistant / workflow', 'User satisfaction (agents, analysts, engineers)', 'Stakeholder confidence (operations, risk, C‑level)'],
-  },
+  // {
+  //   title: 'Adoption & satisfaction',
+  //   items: [
+  //     'Active usage of AI assistant / workflow',
+  //     'User satisfaction (agents, analysts, engineers)',
+  //     'Stakeholder confidence (operations, risk, C‑level)',
+  //   ],
+  // },
 ];
 
 export const WhatWeMeasure: React.FC = () => {
   return (
-    <Section>
-      <div className={styles.what}>
-        <h2>What we measure and how</h2>
-        <p className={styles.text}>
-        Our KPI framework is designed to be understandable for C‑level, operations, IT and risk teams alike. We group metrics into five categories.
-      </p>
-        <div className={styles.grid}>
+    <Section
+      title='What we measure and how'
+      subtitle='Our KPI framework is designed to be understandable for C‑level, operations, IT and risk teams alike. We group
+          metrics into five categories.'
+    >
+      <div className={styles.grid}>
         {categories.map((c, idx) => (
           <div key={idx} className={styles.card}>
             <h3>{c.title}</h3>
@@ -44,11 +59,14 @@ export const WhatWeMeasure: React.FC = () => {
             </ul>
           </div>
         ))}
-        </div>
-        <p className={styles.closing}>
-        For each project we pick the relevant metrics, define baselines together with your team, and track progress over time. If the numbers don’t move in the right direction, we adjust the solution — or stop it, instead of scaling something that doesn’t work.
-      </p>
       </div>
+      <p className={styles.closing}>
+        <i>
+          For each project we pick the relevant metrics, define baselines together with your team, and track progress
+          over time. If the numbers don’t move in the right direction, we adjust the solution — or stop it, instead of
+          scaling something that doesn’t work.
+        </i>
+      </p>
     </Section>
   );
 };
