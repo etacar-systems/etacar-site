@@ -34,7 +34,7 @@ const metrics = [
 
 export const Development = () => {
   return (
-    <Section title={'Measurable impact in weeks – not years'}>
+    <Section title={'Measurable impact in weeks – not years'} titleClassName={styles.title}>
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <img className={styles.img} src={appleSet} alt='development' />

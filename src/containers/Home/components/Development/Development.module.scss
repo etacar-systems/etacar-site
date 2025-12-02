@@ -21,6 +21,18 @@
   }
 }
 
+.title {
+  width: 100%;
+  text-align: center;
+  max-width: unset;
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: var(--color-neutral-900);
+  margin-bottom: var(--space-12);
+}
+
 .img {
   width: 100%;
   display: block;

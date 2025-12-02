@@ -1,20 +1,23 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
+import styles from './Home.module.scss';
+import Reviews from '../../commonSections/Reviews';
+import GetEstimationForm from './components/GetEstimationForm';
 
-// Alplabetical order is REQUIRED!
-
-const CaseStudies = lazy(() => import('./components/CaseStudies'));
-const Development = lazy(() => import('./components/Development'));
-const HowItWorks = lazy(() => import('./components/HowItWorks'));
-const StrongCTA = lazy(() => import('./components/StrongCTA'));
-const TechnologyTeaser = lazy(() => import('./components/TechnologyTeaser'));
-const Footer = lazy(() => import('../../components/Footer'));
-const GetEstimationForm = lazy(() => import('./components/GetEstimationForm'));
-const Industries = lazy(() => import('../../commonSections/Industries'));
-const Reviews = lazy(() => import('../../commonSections/Reviews'));
+// New Home Page Sections
+const HeroSection = lazy(() => import('./components/HeroSection'));
+const WhoWeWorkWith = lazy(() => import('./components/WhoWeWorkWith'));
 const WhatWeDo = lazy(() => import('./components/WhatWeDo'));
-const Welcome = lazy(() => import('./components/Welcome'));
+const FlagshipServices = lazy(() => import('./components/FlagshipServices'));
+const Development = lazy(() => import('./components/Development'));
+const ResultsMeasure = lazy(() => import('./components/ResultsMeasure'));
+const HowWeWork = lazy(() => import('./components/HowWeWork'));
+const ExperienceSection = lazy(() => import('./components/ExperienceSection'));
+const FinalCTA = lazy(() => import('./components/FinalCTA'));
+
+// Shared Components
+const Footer = lazy(() => import('../../components/Footer'));
 
 export const Home: React.FC = () => {
   useEffect(() => {
@@ -23,30 +26,33 @@ export const Home: React.FC = () => {
 
   return (
     <Suspense fallback={<Loader />}>
-      <div>
+      <div className={styles.container}>
         <FadeInSection>
-          <Welcome />
+          <HeroSection />
+        </FadeInSection>
+        <FadeInSection>
+          <WhoWeWorkWith />
         </FadeInSection>
         <FadeInSection>
           <WhatWeDo />
         </FadeInSection>
         <FadeInSection>
+          <FlagshipServices />
+        </FadeInSection>
+        <FadeInSection>
           <Development />
         </FadeInSection>
         <FadeInSection>
-          <HowItWorks />
+          <ResultsMeasure />
         </FadeInSection>
         <FadeInSection>
-          <CaseStudies />
+          <HowWeWork />
         </FadeInSection>
         <FadeInSection>
-          <TechnologyTeaser />
+          <ExperienceSection />
         </FadeInSection>
         <FadeInSection>
-          <StrongCTA />
-        </FadeInSection>
-        <FadeInSection>
-          <Industries />
+          <FinalCTA />
         </FadeInSection>
         <FadeInSection>
           <Reviews arrowColor='dark' theme='blueLight' />

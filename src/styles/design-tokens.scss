@@ -1,0 +1,201 @@
+// Design Tokens - ETACAR Website
+// Modern Corporate Design System
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  // ========================================
+  // TYPOGRAPHY
+  // ========================================
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  // Font Sizes
+  --text-xs: 0.75rem; // 12px
+  --text-sm: 0.875rem; // 14px
+  --text-base: 1rem; // 16px
+  --text-lg: 1.125rem; // 18px
+  --text-xl: 1.25rem; // 20px
+  --text-2xl: 1.5rem; // 24px
+  --text-3xl: 1.875rem; // 30px
+  --text-4xl: 2.25rem; // 36px
+  --text-5xl: 3rem; // 48px
+  --text-6xl: 3.75rem; // 60px
+  --text-7xl: 4.5rem; // 72px
+
+  // Font Weights
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  // Line Heights
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+
+  // ========================================
+  // COLORS - Premium Palette
+  // ========================================
+
+  // Primary Brand Colors (Deep Blue to Cyan)
+  --color-primary-50: hsl(210, 100%, 98%);
+  --color-primary-100: hsl(210, 100%, 95%);
+  --color-primary-200: hsl(210, 100%, 90%);
+  --color-primary-300: hsl(210, 95%, 80%);
+  --color-primary-400: hsl(210, 90%, 70%);
+  --color-primary-500: hsl(210, 85%, 60%);
+  --color-primary-600: hsl(210, 80%, 50%);
+  --color-primary-700: hsl(210, 75%, 40%);
+  --color-primary-800: hsl(210, 70%, 30%);
+  --color-primary-900: hsl(210, 65%, 20%);
+
+  // Accent Colors (Vibrant Purple/Magenta)
+  --color-accent-50: hsl(280, 90%, 98%);
+  --color-accent-100: hsl(280, 85%, 95%);
+  --color-accent-200: hsl(280, 80%, 85%);
+  --color-accent-300: hsl(280, 75%, 75%);
+  --color-accent-400: hsl(280, 70%, 65%);
+  --color-accent-500: hsl(280, 65%, 55%);
+  --color-accent-600: hsl(280, 60%, 45%);
+  --color-accent-700: hsl(280, 55%, 35%);
+  --color-accent-800: hsl(280, 50%, 25%);
+  --color-accent-900: hsl(280, 45%, 15%);
+
+  // Success/Positive (Emerald Green)
+  --color-success-50: hsl(150, 80%, 98%);
+  --color-success-100: hsl(150, 75%, 92%);
+  --color-success-200: hsl(150, 70%, 80%);
+  --color-success-300: hsl(150, 65%, 70%);
+  --color-success-400: hsl(150, 60%, 55%);
+  --color-success-500: hsl(150, 55%, 45%);
+  --color-success-600: hsl(150, 50%, 35%);
+  --color-success-700: hsl(150, 45%, 28%);
+  --color-success-800: hsl(150, 40%, 20%);
+  --color-success-900: hsl(150, 35%, 12%);
+
+  // Neutral/Gray Scale
+  --color-neutral-0: hsl(0, 0%, 100%);
+  --color-neutral-50: hsl(210, 20%, 98%);
+  --color-neutral-100: hsl(210, 20%, 95%);
+  --color-neutral-200: hsl(210, 16%, 90%);
+  --color-neutral-300: hsl(210, 14%, 80%);
+  --color-neutral-400: hsl(210, 12%, 65%);
+  --color-neutral-500: hsl(210, 10%, 50%);
+  --color-neutral-600: hsl(210, 12%, 40%);
+  --color-neutral-700: hsl(210, 15%, 30%);
+  --color-neutral-800: hsl(210, 18%, 20%);
+  --color-neutral-900: hsl(210, 20%, 10%);
+  --color-neutral-950: hsl(210, 22%, 5%);
+
+  // ========================================
+  // GRADIENTS
+  // ========================================
+  --gradient-primary: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-accent-600) 100%);
+  --gradient-hero: linear-gradient(135deg, var(--color-primary-700) 0%, var(--color-primary-500) 50%, var(--color-accent-500) 100%);
+  --gradient-card: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-primary-50) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-primary-400) 100%);
+  --gradient-success: linear-gradient(135deg, var(--color-success-500) 0%, var(--color-success-400) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--color-neutral-900) 0%, var(--color-neutral-800) 100%);
+  --gradient-light: linear-gradient(135deg, var(--color-neutral-0) 0%, var(--color-neutral-50) 100%);
+  
+  // Overlay Gradients
+  --gradient-overlay-top: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  --gradient-overlay-bottom: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+
+  // ========================================
+  // SPACING (4px/8px grid)
+  // ========================================
+  --space-1: 0.25rem; // 4px
+  --space-2: 0.5rem; // 8px
+  --space-3: 0.75rem; // 12px
+  --space-4: 1rem; // 16px
+  --space-5: 1.25rem; // 20px
+  --space-6: 1.5rem; // 24px
+  --space-8: 2rem; // 32px
+  --space-10: 2.5rem; // 40px
+  --space-12: 3rem; // 48px
+  --space-16: 4rem; // 64px
+  --space-20: 5rem; // 80px
+  --space-24: 6rem; // 96px
+  --space-32: 8rem; // 128px
+  --space-40: 10rem; // 160px
+  --space-48: 12rem; // 192px
+
+  // ========================================
+  // SHADOWS
+  // ========================================
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  
+  // Colored Shadows for Glow Effects
+  --shadow-primary: 0 10px 30px -5px rgba(66, 135, 245, 0.3);
+  --shadow-accent: 0 10px 30px -5px rgba(168, 85, 247, 0.3);
+  --shadow-success: 0 10px 30px -5px rgba(52, 211, 153, 0.3);
+
+  // ========================================
+  // BORDER RADIUS
+  // ========================================
+  --radius-none: 0;
+  --radius-sm: 0.25rem; // 4px
+  --radius-md: 0.5rem; // 8px
+  --radius-lg: 0.75rem; // 12px
+  --radius-xl: 1rem; // 16px
+  --radius-2xl: 1.5rem; // 24px
+  --radius-3xl: 2rem; // 32px
+  --radius-full: 9999px;
+
+  // ========================================
+  // TRANSITIONS
+  // ========================================
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slower: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // ========================================
+  // Z-INDEX SCALE
+  // ========================================
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+
+  // ========================================
+  // BREAKPOINTS (for reference in JS)
+  // ========================================
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  // ========================================
+  // GLASSMORPHISM
+  // ========================================
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-blur: 10px;
+
+  // Dark Glass
+  --glass-dark-bg: rgba(0, 0, 0, 0.2);
+  --glass-dark-border: rgba(255, 255, 255, 0.1);
+
+  // Light Glass
+  --glass-light-bg: rgba(255, 255, 255, 0.7);
+  --glass-light-border: rgba(255, 255, 255, 0.8);
+}

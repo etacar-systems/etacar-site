@@ -2,32 +2,50 @@ import React, { lazy, Suspense, useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 
-const Introduction = lazy(() => import('./components/Introduction'));
-const Services = lazy(() => import('./components/Services'));
+// New Services Page Components
+const ServicesHero = lazy(() => import('./components/ServicesHero'));
+const AIStrategy = lazy(() => import('./components/AIStrategy'));
+const AICopilots = lazy(() => import('./components/AICopilots'));
+const ProcessAutomation = lazy(() => import('./components/ProcessAutomation'));
+const DocumentIntelligence = lazy(() => import('./components/DocumentIntelligence'));
+const SoftwareDelivery = lazy(() => import('./components/SoftwareDelivery'));
+const AIGovernance = lazy(() => import('./components/AIGovernance'));
 const Models = lazy(() => import('./components/Models'));
-const Industries = lazy(() => import('../../commonSections/Industries'));
+
+// Shared Components
 const Footer = lazy(() => import('../../components/Footer'));
-const Reviews = lazy(() => import('../../commonSections/Reviews'));
 
 export const ServicesPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <Suspense fallback={<Loader />}>
       <div>
         <FadeInSection>
-          <Introduction />
+          <ServicesHero />
         </FadeInSection>
         <FadeInSection>
-          <Services />
+          <AIStrategy />
+        </FadeInSection>
+        <FadeInSection>
+          <AICopilots />
+        </FadeInSection>
+        <FadeInSection>
+          <ProcessAutomation />
+        </FadeInSection>
+        <FadeInSection>
+          <DocumentIntelligence />
+        </FadeInSection>
+        <FadeInSection>
+          <SoftwareDelivery />
+        </FadeInSection>
+        <FadeInSection>
+          <AIGovernance />
         </FadeInSection>
         <FadeInSection>
           <Models />
-        </FadeInSection>
-        <FadeInSection>
-          <Industries textColor={'dark'} theme={'dark'} />
-          <Reviews textColor={'dark'} theme={'dark'} />
         </FadeInSection>
         <Footer />
       </div>

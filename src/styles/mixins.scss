@@ -1,0 +1,399 @@
+// Mixins - ETACAR Website
+// Reusable SCSS mixins for modern design
+
+@import './design-tokens.scss';
+
+// ========================================
+// GLASSMORPHISM EFFECTS
+// ========================================
+
+@mixin glassmorphism($bg: var(--glass-bg), $border: var(--glass-border), $blur: var(--glass-blur)) {
+  background: $bg;
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
+  border: 1px solid $border;
+  box-shadow: var(--shadow-lg);
+}
+
+@mixin glassmorphism-dark {
+  @include glassmorphism(var(--glass-dark-bg), var(--glass-dark-border));
+}
+
+@mixin glassmorphism-light {
+  @include glassmorphism(var(--glass-light-bg), var(--glass-light-border));
+}
+
+// ========================================
+// CARD STYLES
+// ========================================
+
+@mixin card-base {
+  background: var(--color-neutral-0);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+@mixin card-hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+@mixin card-premium {
+  @include card-base;
+  border: 1px solid var(--color-neutral-200);
+  
+  &:hover {
+    @include card-hover;
+    border-color: var(--color-primary-300);
+    box-shadow: var(--shadow-primary);
+  }
+}
+
+@mixin card-glass {
+  @include glassmorphism;
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  transition: all var(--transition-base);
+}
+
+// ========================================
+// RESPONSIVE BREAKPOINTS
+// ========================================
+
+@mixin mobile {
+  @media (max-width: 639px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 640px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desktop-xl {
+  @media (min-width: 1536px) {
+    @content;
+  }
+}
+
+// Mobile-first approach
+@mixin respond-above($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: 640px) { @content; }
+  } @else if $breakpoint == md {
+    @media (min-width: 768px) { @content; }
+  } @else if $breakpoint == lg {
+    @media (min-width: 1024px) { @content; }
+  } @else if $breakpoint == xl {
+    @media (min-width: 1280px) { @content; }
+  } @else if $breakpoint == 2xl {
+    @media (min-width: 1536px) { @content; }
+  }
+}
+
+// ========================================
+// ANIMATIONS & TRANSITIONS
+// ========================================
+
+@mixin hover-lift($distance: -4px) {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  
+  &:hover {
+    transform: translateY($distance);
+  }
+}
+
+@mixin hover-scale($scale: 1.05) {
+  transition: transform var(--transition-base);
+  
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+@mixin hover-glow($color: var(--color-primary-500)) {
+  transition: box-shadow var(--transition-base);
+  
+  &:hover {
+    box-shadow: 0 10px 40px -5px rgba($color, 0.4);
+  }
+}
+
+// Fade in animation
+@mixin fade-in($duration: var(--transition-base)) {
+  animation: fadeIn $duration ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Slide up animation
+@mixin slide-up($duration: var(--transition-base), $distance: 20px) {
+  animation: slideUp $duration ease-out;
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY($distance);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+// Pulse animation for attention
+@mixin pulse($duration: 2s) {
+  animation: pulse $duration cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+// ========================================
+// GRADIENT TEXT
+// ========================================
+
+@mixin gradient-text($gradient: var(--gradient-primary)) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// ========================================
+// BUTTONS
+// ========================================
+
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  
+  &:focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+@mixin button-primary {
+  @include button-base;
+  background: var(--gradient-primary);
+  color: var(--color-neutral-0);
+  box-shadow: var(--shadow-md);
+  
+  &:hover:not(:disabled) {
+    box-shadow: var(--shadow-primary);
+    transform: translateY(-2px);
+  }
+  
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+}
+
+@mixin button-secondary {
+  @include button-base;
+  background: transparent;
+  color: var(--color-primary-700);
+  border: 2px solid var(--color-primary-500);
+  
+  &:hover:not(:disabled) {
+    background: var(--color-primary-50);
+    border-color: var(--color-primary-600);
+    transform: translateY(-2px);
+  }
+  
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+}
+
+@mixin button-ghost {
+  @include button-base;
+  background: transparent;
+  color: var(--color-neutral-700);
+  
+  &:hover:not(:disabled) {
+    background: var(--color-neutral-100);
+  }
+}
+
+// ========================================
+// CONTAINER & LAYOUT
+// ========================================
+
+@mixin container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  
+  @include respond-above(md) {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+  
+  @include respond-above(lg) {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}
+
+@mixin section-spacing {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+  
+  @include respond-above(md) {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+  }
+  
+  @include respond-above(lg) {
+    padding-top: var(--space-24);
+    padding-bottom: var(--space-24);
+  }
+}
+
+// ========================================
+// GRID LAYOUTS
+// ========================================
+
+@mixin grid-auto-fit($min-width: 280px, $gap: var(--space-6)) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: $gap;
+}
+
+@mixin grid-responsive-cols($mobile: 1, $tablet: 2, $desktop: 3, $gap: var(--space-6)) {
+  display: grid;
+  grid-template-columns: repeat($mobile, 1fr);
+  gap: $gap;
+  
+  @include tablet {
+    grid-template-columns: repeat($tablet, 1fr);
+  }
+  
+  @include desktop {
+    grid-template-columns: repeat($desktop, 1fr);
+  }
+}
+
+// ========================================
+// TYPOGRAPHY UTILITIES
+// ========================================
+
+@mixin heading-xl {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  
+  @include respond-above(md) {
+    font-size: var(--text-5xl);
+  }
+  
+  @include respond-above(lg) {
+    font-size: var(--text-6xl);
+  }
+}
+
+@mixin heading-lg {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  
+  @include respond-above(md) {
+    font-size: var(--text-4xl);
+  }
+  
+  @include respond-above(lg) {
+    font-size: var(--text-5xl);
+  }
+}
+
+@mixin heading-md {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  
+  @include respond-above(md) {
+    font-size: var(--text-3xl);
+  }
+}
+
+@mixin heading-sm {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-snug);
+  
+  @include respond-above(md) {
+    font-size: var(--text-2xl);
+  }
+}
+
+@mixin body-lg {
+  font-family: var(--font-primary);
+  font-size: var(--text-lg);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+}
+
+@mixin body-base {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+}

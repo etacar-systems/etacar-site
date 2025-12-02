@@ -139,7 +139,7 @@ export const GetEstimationForm = () => {
             </div>
             <div className={style.tell_us_more}>
               <div className={style.tell_us_more_header}>Tell us more about your project</div>
-              <div className={style.buttons}>
+              <div className={style.textarea_container}>
                 <textarea
                   minLength={5}
                   className={style.textarea}

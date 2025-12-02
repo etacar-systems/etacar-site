@@ -1,0 +1,100 @@
+@import '../../../styles/design-tokens.scss';
+@import '../../../styles/mixins.scss';
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  @include heading-lg;
+  color: var(--color-neutral-900);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 3px solid var(--color-primary-500);
+}
+
+.oneLiner {
+  @include body-lg;
+  font-size: var(--text-xl);
+  color: var(--color-neutral-800);
+  margin-bottom: var(--space-10);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-relaxed);
+}
+
+.section {
+  margin-bottom: var(--space-8);
+}
+
+.sectionTitle {
+  @include heading-sm;
+  color: var(--color-primary-700);
+  margin-bottom: var(--space-4);
+  font-size: var(--text-xl);
+}
+
+.text {
+  @include body-base;
+  font-size: var(--text-lg);
+  color: var(--color-neutral-700);
+  line-height: var(--leading-relaxed);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.listItem {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-neutral-700);
+}
+
+.bullet {
+  color: var(--color-primary-600);
+  flex-shrink: 0;
+  font-size: var(--text-xl);
+}
+
+.kpiSection {
+  margin-top: var(--space-10);
+  padding: var(--space-8);
+  background: var(--gradient-card);
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--color-primary-300);
+}
+
+.kpiList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.kpiItem {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: var(--space-3);
+  background: var(--color-neutral-0);
+  border-radius: var(--radius-md);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-neutral-800);
+  font-weight: var(--font-medium);
+  
+  .bullet {
+    color: var(--color-success-500);
+  }
+}
