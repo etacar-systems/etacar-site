@@ -1,0 +1,1 @@
+export { HowWeDefineSuccess as default } from './HowWeDefineSuccess';

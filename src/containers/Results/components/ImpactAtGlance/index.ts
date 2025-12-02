@@ -1,0 +1,1 @@
+export { ImpactAtGlance as default } from './ImpactAtGlance';

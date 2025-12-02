@@ -1,0 +1,1 @@
+export { WorkingWithData as default } from './WorkingWithData';

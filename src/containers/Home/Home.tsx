@@ -2,19 +2,20 @@ import React, { lazy, Suspense, useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 
-// Alplabetical order is REQUIRED!
+// Alphabetical order is REQUIRED!
 
-const CaseStudies = lazy(() => import('./components/CaseStudies'));
-const Development = lazy(() => import('./components/Development'));
-const HowItWorks = lazy(() => import('./components/HowItWorks'));
-const StrongCTA = lazy(() => import('./components/StrongCTA'));
-const TechnologyTeaser = lazy(() => import('./components/TechnologyTeaser'));
+const FinalCTA = lazy(() => import('./components/FinalCTA'));
+const FlagshipServices = lazy(() => import('./components/FlagshipServices'));
 const Footer = lazy(() => import('../../components/Footer'));
 const GetEstimationForm = lazy(() => import('./components/GetEstimationForm'));
+const Hero = lazy(() => import('./components/Welcome')); // Assuming Welcome is Hero
+const HowWeWork = lazy(() => import('./components/HowWeWork'));
 const Industries = lazy(() => import('../../commonSections/Industries'));
+const ResultsYouCanMeasure = lazy(() => import('./components/ResultsYouCanMeasure'));
 const Reviews = lazy(() => import('../../commonSections/Reviews'));
+const TwentyYearsInAI = lazy(() => import('./components/TwentyYearsInAI'));
 const WhatWeDo = lazy(() => import('./components/WhatWeDo'));
-const Welcome = lazy(() => import('./components/Welcome'));
+const WhoWeWorkWith = lazy(() => import('./components/WhoWeWorkWith'));
 
 export const Home: React.FC = () => {
   useEffect(() => {
@@ -25,25 +26,28 @@ export const Home: React.FC = () => {
     <Suspense fallback={<Loader />}>
       <div>
         <FadeInSection>
-          <Welcome />
+          <Hero />
+        </FadeInSection>
+        <FadeInSection>
+          <WhoWeWorkWith />
         </FadeInSection>
         <FadeInSection>
           <WhatWeDo />
         </FadeInSection>
         <FadeInSection>
-          <Development />
+          <FlagshipServices />
         </FadeInSection>
         <FadeInSection>
-          <HowItWorks />
+          <ResultsYouCanMeasure />
         </FadeInSection>
         <FadeInSection>
-          <CaseStudies />
+          <HowWeWork />
         </FadeInSection>
         <FadeInSection>
-          <TechnologyTeaser />
+          <TwentyYearsInAI />
         </FadeInSection>
         <FadeInSection>
-          <StrongCTA />
+          <FinalCTA />
         </FadeInSection>
         <FadeInSection>
           <Industries />

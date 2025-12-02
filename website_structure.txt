@@ -1,0 +1,1010 @@
+1. HOME PAGE (/)
+1.1. Hero section
+H1:
+AI systems for business‑critical operations
+Subheadline:
+We are a senior AI engineering team with more than 20 years in AI‑powered
+products.​
+We design and deliver AI solutions for mission‑critical processes — with
+measurable KPIs on speed, risk and cost.
+Trust line (under subheadline):
+We started with enterprise AI platforms like Autonomy and have been building
+AI‑powered systems for European and US enterprises ever since.
+Primary CTA button:
+Book a 30‑minute discovery call
+Secondary CTA button:
+See example results
+Quick facts strip (icons or short bullets):
+●​ 20+ years building AI‑driven products​
+●​ From strategy to production — architecture, implementation, governance​
+●​ Designed for regulated and high‑stakes environments​
+
+1.2. “Who we work with”
+Section title:
+Who we work with
+Text:
+
+We partner with leaders who run complex, business‑critical operations and can’t
+afford AI “experiments”.
+Bullet list:
+●​ COO / Head of Operations – wants faster, more reliable processes end‑to‑end​
+●​ CIO / Head of IT & Architecture – needs AI that fits existing systems, not shadow IT​
+●​ CRO / Risk & Compliance leaders – must keep AI auditable and regulator‑friendly​
+●​ CTO / Head of Product & Engineering – looks to speed up delivery without
+sacrificing quality​
+
+1.3. “What we do” — 3 focus areas
+Section title:
+What we do
+Sub‑text:
+We focus on AI where it really matters: decisions, operations and core systems.
+Three columns:
+1.​ AI Strategy & Architecture​
+From “we need AI somewhere” to a realistic roadmap, architecture and governance
+for your mission‑critical processes.​
+2.​ AI for Decisions & Operations​
+Role‑specific copilots and AI‑orchestrated workflows that support risk, finance,
+operations, customer service and more.​
+3.​ AI for Engineering & Modernization​
+AI‑augmented delivery that accelerates architecture, coding and refactoring for your
+core platforms.​
+
+1.4. “Flagship services” — cards
+Section title:
+
+Flagship services
+(каждая карточка ведёт на /services#…)
+Card 1 — AI Strategy & Architecture for Business‑Critical Processes
+Define where AI really moves the needle — and how to implement it safely.​
+We audit your current initiatives, identify 3–5 high‑impact use cases, and design
+a target architecture and governance model that your IT and risk teams can
+support.
+
+Card 2 — AI Copilots for Critical Roles
+AI assistants for leaders and teams who make high‑stakes decisions.​
+We build role‑specific copilots for risk, operations, sales and service —
+integrated into your existing tools, with clear boundaries and explanations.
+
+Card 3 — AI‑Powered Process Automation
+End‑to‑end workflows for complex processes, not just another bot.​
+We orchestrate AI across processes like KYC/AML reviews, incident
+management and complex deal creation, with clear SLAs and manual override
+where needed.
+
+Card 4 — Document & Knowledge Intelligence
+Turn your documents and internal knowledge into decisions, not manual
+search.​
+We connect contracts, policies, technical documentation and reports into a
+trusted knowledge layer with answers, comparisons and risk alerts — always
+with citations.
+
+Card 5 — AI‑Augmented Software Delivery
+Faster architecture, code and modernization for your core systems.​
+We use AI to accelerate design, implementation, testing and refactoring — with
+your standards for security, performance and maintainability built in.
+
+Card 6 — AI Risk, Evaluation & Governance
+
+Make your AI landscape measurable, auditable and under control.​
+We help you put all AI projects under one governance and monitoring
+framework, aligned with your risk, compliance and security expectations.
+
+1.5. “Results you can measure”
+Section title:
+Results you can measure
+Sub‑text:
+Every engagement starts with 3–5 concrete KPIs. We don’t ship AI without a
+way to measure impact.
+KPI bullet list (high‑level ranges):
+●​ 20–40% faster end‑to‑end execution for selected processes​
+●​ 30–50% less manual effort for recurring analysis and reporting​
+●​ 30–50% shorter time‑to‑delivery for selected development tasks​
+●​ 50–70% less time spent searching and reading internal documents​
+●​ Fewer escalations and errors, thanks to better use of existing knowledge​
+
+Mini‑case 1:
+Global e‑commerce – customer operations​
+– Goal: reduce handling time for complex support cases without adding
+headcount​
+– Approach: AI‑assisted case summaries, context gathering, next‑best‑action
+suggestions and playbook search with citations​
+– Result (pilot region): −35% average time‑to‑resolution, 60% of cases
+processed with AI assistance, <2% re‑opened tickets due to AI‑related errors
+Mini‑case 2:
+Financial services – KYC reviews​
+– Goal: speed up periodic KYC reviews while keeping risk under control​
+– Approach: AI workflow that collects data, drafts risk summaries and flags
+edge cases for human review​
+– Result: −30–40% review cycle time, more consistent risk assessments, better
+audit trail
+
+1.6. “How we work”
+Section title:
+How we work
+Four steps:
+1.​ Discover & Prioritize​
+We run focused workshops with your leadership and key teams to map out AI
+opportunities and risks — and prioritize where to start.​
+2.​ Design & Plan​
+We design the solution and architecture, define KPIs, and agree on integration
+points and responsibilities with IT and risk teams.​
+3.​ Build & Integrate​
+We implement AI workflows and copilots and integrate them into your existing tools
+and systems, not side channels.​
+4.​ Measure & Scale​
+We track KPIs, adjust the solution and help you scale from pilot to production and
+across regions or business units.​
+
+1.7. “20+ years in AI”
+Section title:
+20+ years in AI products, not just software development
+Text:
+We started more than 20 years ago as certified specialists on enterprise AI
+platforms like Autonomy, working on large‑scale search and analytics solutions.​
+Since then, we’ve built and operated AI‑powered systems for online businesses
+and large organizations in Europe and the US — from search and
+recommendations to automation and risk scoring.​
+Today, we bring this experience to AI‑native systems for business‑critical
+processes, combining modern AI models with proven engineering and
+governance practices.
+
+1.8. Final CTA
+Section title:
+Let’s talk about your business‑critical processes
+Text:
+We won’t sell you “AI for everything”. We will help you choose 1–3 initiatives that
+really matter, define how to measure success, and get from idea to production.
+Primary button:
+Book a discovery call
+Secondary button:
+Send us your use case
+
+2. SERVICES PAGE (/services)
+2.1. Hero section
+Page title (H1):
+Services
+Subheadline:
+We design, build and operate AI solutions for business‑critical operations —
+from strategy and architecture to copilots, automation and governance.
+Intro paragraph:
+Below are our flagship services. Each is designed to solve a specific class of
+problems for C‑level, operations, IT and risk leaders — with clear KPIs and
+ownership.
+
+2.2. Service 1 — AI Strategy & Architecture for
+Business‑Critical Processes
+Title:
+
+AI Strategy & Architecture for Business‑Critical Processes
+One‑liner:
+From AI “ideas” to a realistic roadmap, architecture and governance model your
+C‑level, IT and risk teams can all agree on.
+Best for:
+Organizations that are past the “AI experimentation” stage and want a coherent
+plan for mission‑critical workflows.
+Problem we solve:
+Many organizations experiment with AI in pockets — pilots, PoCs, side projects
+— without a clear view of where AI truly matters, how it fits existing systems, or
+who owns the risk.​
+We help you focus AI investments on business‑critical processes and design an
+architecture that can be safely operated at scale.
+What we deliver:
+●​ A prioritized list of 3–5 high‑impact AI use cases for your business‑critical
+operations​
+●​ A target architecture: models, data, integrations and boundaries to your core
+systems​
+●​ A governance model: roles, responsibilities, policies and decision‑making processes​
+●​ A 12–24 month roadmap with phases, dependencies and indicative budgets​
+
+How we measure success:
+●​ Clear alignment between C‑level, IT and risk on AI priorities and architecture​
+●​ Less “random” AI experimentation; more initiatives tied to the agreed roadmap​
+●​ Faster go/no‑go decisions for AI pilots and production rollouts​
+
+2.3. Service 2 — AI Copilots for Critical Roles
+Title:
+AI Copilots for Critical Roles
+
+One‑liner:
+Role‑specific AI assistants for people who make high‑stakes decisions every
+day.
+Best for:
+Heads of risk, operations, sales, customer service and other leaders who need
+their teams to decide faster and with better use of existing knowledge.
+What we deliver:
+●​ Design of role‑specific workflows: how the copilot helps in daily decisions​
+●​ Integration with your tools: email, chat, CRM, BI, ticketing, internal systems​
+●​ Explainable recommendations: summaries, options and flags with clear references​
+●​ Safety and boundaries: what the copilot can decide, suggest or only prepare​
+
+Example KPIs:
+●​ Time to prepare key decisions or responses reduced by 20–40%​
+●​ Higher coverage of relevant documents/data in each decision​
+●​ Fewer escalations due to missing information or inconsistent decisions​
+
+2.4. Service 3 — AI‑Powered Process Automation
+Title:
+AI‑Powered Process Automation
+One‑liner:
+End‑to‑end AI workflows for complex, high‑impact processes — with humans
+still in control.
+Typical processes:
+●​ KYC/AML and periodic customer reviews​
+●​ Incident and major incident management​
+
+●​ Complex deal / proposal creation​
+●​ Claims and exception handling​
+
+What we deliver:
+●​ A mapped process with clear AI vs human responsibilities​
+●​ An AI‑enabled workflow that collects data, drafts decisions and routes cases​
+●​ Integration with existing systems (CRM, ticketing, core platforms)​
+●​ Dashboards and alerts for performance, bottlenecks and risk​
+
+Example KPIs:
+●​ 20–40% reduction in end‑to‑end cycle time for selected processes​
+●​ 30–60% fewer manual touches per case​
+●​ Lower rework rate due to missing data or inconsistent decisions​
+
+2.5. Service 4 — Document & Knowledge Intelligence
+Title:
+Document & Knowledge Intelligence
+One‑liner:
+Turn your contracts, policies and technical documentation into a trusted
+knowledge layer.
+Problem we solve:
+Critical knowledge is often buried in documents, shared drives and legacy
+systems. People spend hours searching, or simply guess. That doesn’t work
+when regulators, customers or partners expect clear answers.
+What we deliver:
+●​ A unified knowledge layer across contracts, policies, procedures and technical
+docs​
+
+●​ Search and Q&A with answers backed by citations and document snippets​
+●​ Tools for comparing versions, spotting changes and detecting potential risks​
+●​ Optional alerts on changes in key documents (e.g. policies, SLAs, regulations)​
+
+Example KPIs:
+●​ 50–70% less time spent searching and reading documents for recurring questions​
+●​ Higher consistency of answers across teams and regions​
+●​ Fewer missed clauses or outdated references in critical decisions​
+
+2.6. Service 5 — AI‑Augmented Software Delivery
+Title:
+AI‑Augmented Software Delivery
+One‑liner:
+Faster architecture, code, testing and modernization for your core systems —
+without lowering your standards.
+Best for:
+CTOs and Heads of Engineering who need to deliver faster while managing
+technical debt and risk in complex platforms.
+What we deliver:
+●​ Architecture support: from requirements to design options and trade‑off analysis​
+●​ AI‑assisted implementation: code, tests and migrations aligned with your stack and
+guidelines​
+●​ Safe refactoring: modernization of existing services with tests and impact analysis​
+●​ Integration with your existing CI/CD and review processes​
+
+Example KPIs:
+
+●​ 30–50% faster delivery for selected features and services​
+●​ Reduced defect rates in early production releases​
+●​ Lower time spent on repetitive tasks such as boilerplate, tests and migrations​
+
+2.7. Service 6 — AI Risk, Evaluation & Governance
+Title:
+AI Risk, Evaluation & Governance
+One‑liner:
+Bring all your AI initiatives under one governance and monitoring umbrella.
+Problem we solve:
+As AI projects multiply, it becomes difficult to answer simple questions:​
+How many AI systems do we have? Who owns them? How do we know they
+are working as intended — and safely?
+What we deliver:
+●​ An inventory of AI systems and use cases across the organization​
+●​ A risk classification for each system and corresponding controls​
+●​ A set of metrics and dashboards: quality, cost, usage, incidents and drift​
+●​ Processes for review, approval and rollback of AI changes​
+●​ Documentation you can show to risk committees, auditors and boards​
+
+Example KPIs:
+●​ 100% of business‑critical AI use cases with named owners, KPIs and logs​
+●​ Fewer unapproved or undocumented AI systems in production​
+●​ Faster approval cycles for new AI initiatives due to clearer documentation​
+
+3. RESULTS & KPIs PAGE (/results)
+3.1. Hero section
+Page title (H1):
+Results & KPIs
+Subtitle:
+We build AI systems for business‑critical operations — and we measure what
+they actually change: cycle times, error rates, manual effort, risk and cost.
+Intro:
+Every engagement with us starts with a simple question:​
+“How will we know this AI solution is successful?”​
+Together with your team, we define 3–5 concrete KPIs before we design the
+system. Then we implement, measure and iterate until the numbers move — or
+we stop the project instead of hiding behind buzzwords.
+
+3.2. “How we define success”
+Section title:
+How we define success
+Text:
+We don’t treat “AI” as a goal in itself. For each project, we agree on measurable
+outcomes in three dimensions:
+●​ Operational impact – faster decisions and processes​
+●​ Quality & risk – fewer errors, better use of existing knowledge, more
+consistent decisions​
+●​ Cost & productivity – less manual effort, more work done with the
+same team​
+
+For business‑critical processes we always add risk and compliance metrics,
+so your risk and audit teams can stand behind the solution.
+
+3.3. “Impact at a glance”
+Section title:
+Impact at a glance
+Text:
+Across recent projects, our AI solutions have delivered:
+●​ 20–40% faster end‑to‑end execution for selected operational processes​
+●​ 30–50% less manual effort for recurring analysis and reporting​
+●​ 30–50% shorter time‑to‑delivery for selected development tasks​
+●​ 50–70% less time spent searching and reading internal documents for
+recurring questions​
+●​ Fewer escalations and errors, thanks to more consistent use of
+existing knowledge and playbooks​
+
+These numbers are not “theoretical potential” — they are measured before/after
+deltas on real processes. Exact values differ by client and domain.
+
+3.4. Case studies
+Section title:
+Selected case studies
+(4 кейса — анонимные, можно заменить реальными названиями.)
+
+Case study 1 — Global e‑commerce (customer operations)
+Headline:
+Reducing handling time for complex support cases
+Challenge:
+A global e‑commerce company was facing increasing complexity in customer
+support: more products, more regions, more exceptions. Handling time for
+complex cases was growing, and senior agents were spending a lot of time on
+manual investigation and drafting responses.
+
+What we did:
+●​ Designed an AI‑assisted workflow for complex tickets​
+●​ Added automatic case summaries and context gathering from internal
+systems​
+●​ Implemented next‑best‑action suggestions based on policies and
+historical resolutions​
+●​ Connected internal playbooks and policies as a trusted knowledge
+source with citations​
+
+Results:
+●​ −35% average time‑to‑resolution for complex cases in the pilot region​
+●​ 60% of cases processed with AI assistance in the first 3 months​
+●​ <2% re‑opened tickets due to AI‑related errors​
+●​ Higher satisfaction scores from both agents and customers​
+
+Case study 2 — Financial services (KYC reviews)
+Headline:
+Speeding up KYC reviews while keeping risk under control
+Challenge:
+A financial services provider needed to speed up periodic KYC reviews. Manual
+data collection and drafting risk assessments were consuming a lot of analyst
+time. At the same time, risk and compliance teams could not accept lower
+control.
+What we did:
+●​ Mapped the end‑to‑end KYC review process with risk and compliance
+teams​
+●​ Built an AI‑orchestrated workflow that:​
+○​ collects relevant data from internal systems and external sources,​
+
+○​ drafts risk summaries and recommendations,​
+○​ flags edge cases and inconsistencies for human review​
+●​ Ensured that every recommendation came with traceable references to
+underlying data and policies​
+
+Results:
+●​ −30–40% reduction in review cycle time​
+●​ More consistent risk assessments across analysts and regions​
+●​ Better transparency for internal audit: clearer records of what was
+reviewed and why decisions were made​
+
+Case study 3 — Online business (document & knowledge intelligence)
+Headline:
+Turning scattered documents into a trusted knowledge layer
+Challenge:
+A digital services company had thousands of contracts, policies and technical
+documents spread across different tools and repositories. Teams were spending
+hours searching, re‑reading and copying fragments into new documents — or
+they were simply guessing.
+What we did:
+●​ Implemented a document ingestion pipeline for contracts, policies,
+procedures and technical documentation​
+●​ Built a knowledge layer on top, allowing users to ask questions and
+receive answers with citations​
+●​ Added tools to compare versions, highlight key changes and detect
+potential risks in updates​
+
+Results:
+
+●​ 50–70% less time spent searching and reading documents for recurring
+questions​
+●​ Higher consistency of answers across teams and regions​
+●​ Fewer missed clauses and outdated references in key decisions,
+according to internal audits​
+
+Case study 4 — Technology company (AI‑augmented software delivery)
+Headline:
+Accelerating delivery of core platform features
+Challenge:
+A technology company needed to deliver new features in a core platform faster,
+without increasing defect rates or technical debt. Traditional development cycles
+were too slow, and previous “AI code helper” experiments did not fit their
+architecture and quality standards.
+What we did:
+●​ Introduced an AI‑augmented delivery process for selected services​
+●​ Used AI to assist with architecture options, implementation, tests
+and refactoring​
+●​ Integrated AI suggestions into existing code review and CI/CD
+processes, instead of bypassing them​
+
+Results:
+●​ 30–50% faster delivery for selected features​
+●​ Lower defect rates in early production releases for those services​
+●​ More time for senior engineers to focus on architecture and complex
+design, instead of boilerplate​
+
+3.5. “What we measure and how”
+
+Section title:
+What we measure and how
+Text:
+Our KPI framework is designed to be understandable for C‑level, operations, IT
+and risk teams alike. We group metrics into five categories.
+Metric categories (bullets):
+1.​ Speed & throughput​
+○​ Time‑to‑decision​
+○​ End‑to‑end process cycle time​
+○​ Time‑to‑resolution (for incidents, tickets, cases)​
+2.​ Quality & consistency​
+○​ Error and rework rates​
+○​ Consistency of decisions across teams/regions​
+○​ Coverage and correctness of references to internal knowledge​
+3.​ Productivity & cost​
+○​ Manual effort per case / ticket / report​
+○​ Volume of work handled per FTE​
+○​ Cost per processed unit (case, transaction, review, feature)​
+4.​ Risk & compliance​
+○​ Number and severity of risk/compliance incidents related to the process​
+○​ Audit findings related to AI‑supported operations​
+○​ Coverage of critical controls and checks​
+5.​ Adoption & satisfaction​
+○​ Active usage of AI assistant / workflow​
+
+○​ User satisfaction (agents, analysts, engineers)​
+○​ Stakeholder confidence (operations, risk, C‑level)​
+
+Closing paragraph:
+For each project we pick the relevant metrics, define baselines together with
+your team, and track progress over time. If the numbers don’t move in the right
+direction, we adjust the solution — or stop it, instead of scaling something that
+doesn’t work.
+
+3.6. “Working with your data and systems” (optional)
+Section title:
+Working with your data, systems and risk constraints
+Text:
+We don’t operate AI in isolation. For every engagement we:
+●​ Integrate with your existing systems and data sources instead of
+building separate “shadow tools”​
+●​ Align with your risk, security and compliance teams from day one​
+●​ Make sure every AI‑supported decision is traceable back to data and
+documents​
+●​ Provide you with a clear view of how the system behaves and how it is
+monitored​
+
+This is what allows us — and you — to stand behind the KPIs and the decisions
+your AI systems help to make.
+
+4. TEAM & STORY PAGE (/team или
+/about)
+
+4.1. Hero section
+Page title (H1):
+Our team & story
+Subtitle:
+We are a senior AI engineering team with more than 20 years in AI‑powered
+products.​
+Among us are software architects, data scientists and professional
+neuroscientists — all focused on bringing AI safely into your business‑critical
+workflows.
+Short intro:
+We started in the early 2000s working with enterprise AI platforms such as
+Autonomy as certified specialists. Since then, we’ve built and operated AI‑driven
+systems across finance, e‑commerce, logistics, telecom and SaaS.​
+Today we use that experience — and our background in neuroscience and
+complex systems — to design AI solutions that work in real organizations, not
+just in demos.
+
+4.2. “Our story”
+Section title:
+Our story
+Text:
+Our roots go back more than two decades, when “AI” mostly meant enterprise
+search, text analytics and recommendation engines.
+We started as certified specialists on platforms like Autonomy, helping large
+organizations turn unstructured text into search, alerts and decision support.
+Those early systems powered knowledge‑intensive work long before modern AI
+models became widely available.
+Over the years we’ve worked with online businesses and enterprises across
+Europe and the US, building and maintaining systems for:
+●​ search, relevance and recommendations,​
+●​ analytics and risk scoring,​
+
+●​ workflow automation and decision support,​
+●​ large‑scale content and document management.​
+
+When large language models became practical for production use, we didn’t
+start from zero. We already knew what it takes to run AI in production:
+integrating with existing systems, respecting regulations, handling noisy data
+and making results explainable enough for real teams.
+
+4.3. “Who we are today”
+Section title:
+Who we are today
+Text:
+Today EtaCar Systems is a focused team of senior AI engineers, architects and
+product leaders.​
+We combine:
+●​ long‑term experience in AI‑powered products,​
+●​ deep understanding of how organizations actually work,​
+●​ and practical knowledge of modern AI tooling and infrastructure.​
+
+Our work centers on business‑critical workflows — the ones that affect revenue,
+risk, operations and compliance. We help leadership teams decide where AI can
+safely amplify their people and where it should not be used at all.
+
+4.4. “Neuroscience and AI — why it matters”
+Section title:
+Neuroscience and AI — why it matters
+Text:
+Several members of our team are professional neuroscientists with academic
+and industry backgrounds.​
+
+They bring expertise in how complex systems learn, adapt and sometimes fail
+— from neural circuits to human behavior.
+This matters for our clients because:
+●​ We design AI systems with a strong intuition for how people actually
+think and make decisions under pressure.​
+●​ We are careful about cognitive load, trust and explainability for the
+people who will work with AI every day.​
+●​ We pay attention not only to model performance, but also to how AI
+interacts with teams, incentives and culture.​
+
+In practice, this means our solutions are not just technically advanced — they
+are easier for people to adopt and safer to embed into critical processes.
+
+4.5. “How we think about AI in organizations”
+Section title:
+How we think about AI in organizations
+Text:
+We do not treat AI as a magic layer you can sprinkle on top of everything.​
+We see it as an additional capability inside your organization that must:
+●​ fit your existing architecture and data,​
+●​ respect your risk and compliance boundaries,​
+●​ and support your people instead of replacing their judgement.​
+
+That is why we:
+●​ start from your workflows and decisions, not from a specific model,​
+●​ design clear roles for AI, humans and existing systems,​
+●​ and insist on measurable KPIs and governance from the beginning.​
+
+4.6. “Leadership & core team” (intro + шаблон
+карточек)
+Section title:
+Leadership & core team
+Intro text:
+Our core team combines backgrounds in AI engineering, product development,
+neuroscience and operations. Below is a high‑level view of the roles we typically
+bring into projects. You can meet specific people and profiles during an initial
+strategy session.
+(Здесь на сайте вы выводите карточки людей. Шаблон:)
+Card template — CEO / Founder
+[Full Name] – CEO & Co‑Founder​
+Leads our work at the intersection of AI, product and execution.​
+[Full Name] has been building AI‑powered products and platforms since the
+early 2000s, starting with enterprise systems based on Autonomy technologies.
+Today [he/she/they] focuses on turning AI from scattered experiments into
+reliable, measurable capabilities for our clients.
+Card template — CTO / Head of AI
+[Full Name] – CTO / Head of AI Engineering​
+Responsible for technical direction, architecture and delivery quality.​
+With a background in large‑scale distributed systems and applied machine
+learning, [Full Name] leads the design of AI solutions that fit existing
+architectures and meet strict performance, security and compliance
+requirements.
+Card template — Head of Neuroscience & Human Factors
+[Full Name] – Head of Neuroscience & Human Factors​
+Brings neuroscience and human behavior insights into our AI solutions.​
+[Full Name] is a professional neuroscientist with [academic/industry] experience
+in studying how complex systems learn and adapt. At EtaCar, [he/she/they]
+focuses on how AI interacts with people: decision‑making, cognitive load, trust
+and adoption across teams.
+(При необходимости добавляете Product Lead, Delivery Lead и т.д.)
+
+4.7. “Our broader team”
+
+Section title:
+Our broader team
+Text:
+Around the leadership team, we have a focused group of senior specialists:
+●​ AI engineers and data scientists – design and implement AI
+components, data pipelines and integrations with your existing systems​
+●​ Software engineers and architects – ensure our solutions fit your
+existing systems and standards​
+●​ Professional neuroscientists – bring insight into human
+decision‑making, cognition and behaviour​
+●​ Product and delivery specialists – keep initiatives aligned with
+business goals, timelines and KPIs​
+
+We deliberately keep the team compact and senior. For each project, we
+assemble a small, cross‑functional squad that can work end‑to‑end: from
+strategy and design to implementation, measurement and scaling.
+
+4.8. “How we work with clients”
+Section title:
+How we work with clients
+Text:
+We see every engagement as a partnership, not a one‑off project:
+●​ We start with your reality — existing systems, constraints, risk and
+culture​
+●​ We focus on a small number of high‑impact initiatives, not AI
+“everywhere”​
+●​ We align on KPIs and decision criteria for each initiative before we
+start building​
+●​ We design AI systems that are operationally sustainable — clear
+ownership, monitoring and governance​
+
+This is how we make sure our work is meaningful for your organization and safe
+for your business‑critical operations.
+
+4.9. Values
+Section title:
+What we stand for
+Text:
+●​ Reality over hype​
+We care more about systems that work in production than about hype
+cycles and buzzwords.​
+●​ Transparency over “black boxes”​
+We prefer solutions that can be explained to leadership, regulators and
+new team members.​
+●​ People over tools​
+We see AI as an amplifier for good teams, not as a replacement for
+them.​
+●​ Measurable outcomes over demos​
+Every engagement is tied to concrete metrics such as cycle time, error
+rates, risk and satisfaction.​
+
+4.10. Final CTA
+Section title:
+Meet the team
+Text:
+If you are exploring how AI can support your most important decisions and
+operations, we’ll be happy to connect you directly with the people who would
+work on your project — engineers, neuroscientists and delivery leads.
+Button:
+Book a conversation with our team
+
+PAGE 5 — USE CASES & INDUSTRIES
+5.1. Hero section
+H1:
+Use cases & industries
+Subtitle:
+We focus on AI for business‑critical operations in industries where speed, quality
+and risk all matter at the same time.
+Intro paragraph:
+Below are examples of how we apply our services in different industries. Each
+use case is tied to specific processes, roles and KPIs — not just generic “AI for
+everything”.
+
+5.2. By industry
+
+5.2.1. Financial services & fintech
+Section title:
+Financial services & fintech
+Typical challenges:
+●​ Slow and costly KYC/AML and periodic reviews​
+●​ Fragmented view of customer risk and exposure​
+●​ Heavy reliance on manual work for compliance reporting and investigations​
+●​ Pressure from regulators to explain and document decisions​
+
+Where we help:
+●​ AI‑orchestrated KYC/AML reviews and customer due diligence​
+●​ AI copilots for risk analysts, compliance teams and internal audit​
+●​ Document & knowledge intelligence for policies, regulations, contracts​
+
+●​ AI‑supported incident and investigation workflows​
+
+Example initiatives:
+●​ Periodic KYC review workflow with AI‑drafted risk summaries and clear flags​
+●​ Copilot for compliance teams to answer regulator and internal audit questions with
+references​
+●​ Knowledge layer that connects policies, procedures and local regulations into one
+searchable source​
+
+Typical KPIs:
+●​ −30–40% review cycle time for KYC/AML processes​
+●​ More consistent risk assessments across analysts and locations​
+●​ 50–70% less time spent preparing responses and reports for regulators​
+●​ Better audit trail: every AI‑supported assessment linked back to data and
+documents​
+
+Relevant services:
+●​ AI Strategy & Architecture for Business‑Critical Processes​
+●​ AI Copilots for Critical Roles​
+●​ AI‑Powered Process Automation​
+●​ Document & Knowledge Intelligence​
+●​ AI Risk, Evaluation & Governance​
+
+5.2.2. E‑commerce & digital retail
+Section title:
+E‑commerce & digital retail
+Typical challenges:
+
+●​ Complex customer support and operations across products, regions and channels​
+●​ High volume of exceptions and manual handling in order, refund and return
+processes​
+●​ Knowledge spread across playbooks, policies and legacy tools​
+●​ Need to maintain service levels without unlimited headcount growth​
+
+Where we help:
+●​ AI‑assisted workflows for complex customer support cases​
+●​ AI‑powered process automation for order exceptions, refunds and claims​
+●​ Knowledge intelligence over help centre, internal playbooks and policies​
+●​ AI copilots for operations managers to monitor bottlenecks and risks​
+
+Example initiatives:
+●​ AI assistant that prepares case context, summaries and suggested next actions for
+agents​
+●​ Workflow that classifies and routes complex order issues, collecting all relevant data
+automatically​
+●​ Knowledge layer connecting help centre, internal guidelines and policy updates​
+
+Typical KPIs:
+●​ −30–40% time‑to‑resolution for complex cases​
+●​ 30–50% less manual effort per ticket for selected queues​
+●​ Higher first‑contact resolution and fewer re‑opened tickets​
+●​ More consistent policy application across regions and teams​
+
+Relevant services:
+●​ AI Copilots for Critical Roles​
+●​ AI‑Powered Process Automation​
+
+●​ Document & Knowledge Intelligence​
+●​ AI‑Augmented Software Delivery (for platform modernization)​
+
+5.2.3. Logistics, supply chain & operations‑heavy businesses
+Section title:
+Logistics, supply chain & operations‑heavy businesses
+Typical challenges:
+●​ Complex multi‑step fulfilment, routing and exception handling​
+●​ Limited visibility across systems for planning and execution​
+●​ Operational teams relying on manual spreadsheets and ad‑hoc tools​
+●​ Need to react quickly to disruptions (delays, shortages, capacity issues)​
+
+Where we help:
+●​ AI‑orchestrated workflows for exception handling and incident management​
+●​ Decision support for demand and capacity planning​
+●​ Knowledge intelligence over SOPs, contracts, SLAs and operational guidelines​
+●​ AI copilots for operations leaders to understand impact and scenarios​
+
+Example initiatives:
+●​ Workflow that recognises and routes delivery exceptions, suggests handling steps
+and updates stakeholders​
+●​ Copilot that helps planners evaluate what‑if scenarios using historical and real‑time
+data​
+●​ Knowledge layer with SLAs and contracts, highlighting risk of non‑compliance for
+specific cases​
+
+Typical KPIs:
+
+●​ 20–40% reduction in time to resolve operational incidents and exceptions​
+●​ Fewer manual escalations and less time spent on ad‑hoc investigations​
+●​ Reduced penalties and SLA breaches thanks to earlier detection and action​
+●​ Better planning accuracy and fewer last‑minute surprises​
+
+Relevant services:
+●​ AI Strategy & Architecture for Business‑Critical Processes​
+●​ AI‑Powered Process Automation​
+●​ AI Copilots for Critical Roles​
+●​ Document & Knowledge Intelligence​
+
+5.2.4. Telecom, utilities & subscription businesses
+Section title:
+Telecom, utilities & subscription services
+Typical challenges:
+●​ High volume of customer contacts and network/service incidents​
+●​ Complex combinations of tariffs, products and contract terms​
+●​ Strict regulatory and service‑level obligations​
+●​ Need to quickly identify and handle systemic issues vs one‑off problems​
+
+Where we help:
+●​ AI‑assisted incident management and proactive issue identification​
+●​ Copilots for support and retention teams to navigate products and contracts​
+●​ Knowledge intelligence over tariff catalogs, SLAs, contracts, network policies​
+●​ AI governance to keep automated decisions explainable to regulators​
+
+Example initiatives:
+●​ Workflow that classifies incidents, correlates them with known problems and
+suggests action plans​
+●​ Copilot that helps agents handle complex billing and retention cases with clear
+recommendations​
+●​ Knowledge layer that connects tariffs, options, restrictions and legal terms​
+
+Typical KPIs:
+●​ Faster incident response and resolution for priority issues​
+●​ Lower churn and escalations in complex customer cases​
+●​ Fewer compliance findings related to inconsistent handling or unclear decisions​
+
+Relevant services:
+●​ AI Copilots for Critical Roles​
+●​ AI‑Powered Process Automation​
+●​ Document & Knowledge Intelligence​
+●​ AI Risk, Evaluation & Governance​
+
+5.2.5. Technology & SaaS companies
+Section title:
+Technology & SaaS companies
+Typical challenges:
+●​ Pressure to deliver new features faster without increasing technical debt​
+●​ Complex codebases, multiple services, legacy components and partial
+documentation​
+●​ Difficulty in aligning architecture, product and delivery across teams​
+●​ Need to keep core platform stable while evolving quickly​
+
+Where we help:
+●​ AI‑augmented software delivery for core services and platforms​
+●​ Architecture & strategy support for platform modernization​
+●​ Document & knowledge intelligence for internal docs, runbooks and design
+decisions​
+●​ AI copilots for support and success teams working with complex configurations​
+
+Example initiatives:
+●​ AI‑assisted design and implementation for new critical services, including tests and
+basic CI​
+●​ Refactoring and modernization of legacy modules with regression‑aware workflows​
+●​ Knowledge layer that connects architecture docs, runbooks and troubleshooting
+guides​
+
+Typical KPIs:
+●​ 30–50% faster delivery for selected features and services​
+●​ Lower defect rates in early production releases​
+●​ Less time spent on manual digging through internal documentation​
+●​ More time for senior engineers to focus on architecture and complex design​
+
+Relevant services:
+●​ AI‑Augmented Software Delivery​
+●​ AI Strategy & Architecture for Business‑Critical Processes​
+●​ Document & Knowledge Intelligence​
+
+5.3. Cross‑industry use cases
+Section title:
+
+Cross‑industry use cases
+Intro text:
+While each industry has its specifics, many of the most valuable AI initiatives
+repeat across domains. Below are cross‑industry patterns we see most often.
+
+Use case 1 — AI‑assisted decision support for leaders
+What it is:
+AI copilots and workflows that help C‑level and senior managers explore
+scenarios, understand risks and prepare materials for decision‑making.
+Who it’s for:
+●​ CEO, COO, CFO, CSO​
+●​ Heads of operations, risk, compliance, strategy​
+
+What it delivers:
+●​ Scenario‑based impact analysis for strategic options​
+●​ Faster preparation of board‑ready materials​
+●​ Clear overview of risks, assumptions and trade‑offs​
+
+Typical impact:
+●​ 30–50% shorter time‑to‑decision for complex topics​
+●​ Better coverage of relevant data and documents in each decision​
+●​ More transparent and consistent risk discussions at the leadership level​
+
+Main services behind this:
+●​ AI Strategy & Architecture for Business‑Critical Processes​
+●​ AI Copilots for Critical Roles​
+
+Use case 2 — AI‑orchestrated critical processes
+What it is:
+End‑to‑end workflows where AI collects information, drafts decisions and routes
+cases, while humans remain in control of key steps.
+Example processes:
+●​ KYC/AML and customer due diligence​
+●​ Incident and major incident management​
+●​ Claims and exception handling​
+●​ Order‑to‑cash and complex deal creation​
+
+Typical impact:
+●​ 20–40% faster end‑to‑end cycle time​
+●​ 30–60% fewer manual touches per case​
+●​ Lower error and rework rates, especially in cross‑team processes​
+
+Main services behind this:
+●​ AI‑Powered Process Automation​
+●​ AI Copilots for Critical Roles​
+
+Use case 3 — Document & knowledge intelligence
+What it is:
+A trusted knowledge layer that turns your contracts, policies, procedures and
+technical docs into answers, comparisons and alerts — always with citations.
+Who it’s for:
+●​ Legal, compliance and risk teams​
+●​ Operations, finance, procurement​
+
+●​ Support and customer‑facing teams​
+
+Typical impact:
+●​ 50–70% less time spent searching and reading documents for recurring questions​
+●​ More consistent answers and decisions across teams and regions​
+●​ Fewer missed clauses, outdated references and hidden risks​
+
+Main services behind this:
+●​ Document & Knowledge Intelligence​
+●​ AI Risk, Evaluation & Governance (for critical use cases)​
+
+Use case 4 — AI‑augmented engineering & modernization
+What it is:
+Using AI to accelerate architecture, coding, testing and refactoring — especially
+for core platforms and services.
+Who it’s for:
+●​ CTOs and Heads of Engineering​
+●​ Platform, core services and SRE teams​
+
+Typical impact:
+●​ 30–50% faster delivery for selected features and services​
+●​ Reduced defect rates in early production releases​
+●​ Better control over technical debt and refactoring​
+
+Main services behind this:
+●​ AI‑Augmented Software Delivery​
+●​ AI Strategy & Architecture for Business‑Critical Processes​
+
+Use case 5 — AI governance and risk management
+What it is:
+A governance and monitoring layer that keeps all AI initiatives visible, controlled
+and explainable.
+Who it’s for:
+●​ CRO, CISO, Heads of Compliance and Risk​
+●​ CIOs and AI program leaders​
+
+Typical impact:
+●​ Clear inventory and risk classification for AI use cases​
+●​ Fewer unapproved or undocumented AI systems in production​
+●​ Faster approval cycles for new AI initiatives​
+
+Main services behind this:
+●​ AI Risk, Evaluation & Governance​
+●​ AI Strategy & Architecture for Business‑Critical Processes​
+
+5.4. Final CTA for Use Cases / Industries page
+Section title:
+Let’s map this to your reality
+Text:
+If you recognise your own challenges in any of these examples, we can start
+with a focused workshop: mapping your current processes, identifying
+high‑impact AI initiatives and agreeing on how to measure success.
+CTA button:
+Discuss your use cases
+
+Эту страницу можно просто добавить как PAGE 5 — USE CASES & INDUSTRIES к уже
+готовому документу (Home, Services, Results & KPIs, Team & Story) и связать в
+навигации: ссылки с карточек сервисов и мини‑кейсов могут вести на соответствующие
+секции этой страницы. Внутренние архитектурные детали ваших AI‑решений остаются
+«под капотом» и не выносятся в публичный контент.
+
+

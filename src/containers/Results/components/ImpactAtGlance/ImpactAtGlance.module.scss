@@ -1,0 +1,33 @@
+$color--primary: #007bff;
+$color--secondary: #6c757d;
+$color--light: #f8f9fa;
+$color--dark: #343a40;
+
+.impact {
+  padding: 4rem 0;
+  background-color: $color--light;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $color--dark;
+  }
+
+  p {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    color: $color--dark;
+    line-height: 1.6;
+  }
+
+  ul {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding-left: 1.5rem;
+    color: $color--dark;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

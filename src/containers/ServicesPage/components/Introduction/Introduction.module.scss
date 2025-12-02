@@ -1,4 +1,6 @@
-@import '../../../../styles/colors.scss';
+$color--text-dark: #343a40;
+$color--text-light: #6c757d;
+$color--blue: #007bff;
 
 .wrapper {
   width: 100%;
@@ -6,54 +8,31 @@
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0 100px;
+  padding: 50px 20px 100px;
+  text-align: center;
 
-  @media (max-width: 1200px) {
-    flex-direction: column;
-    padding: 50px 20px 100px;
+  h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: $color--text-dark;
+    margin-bottom: 1rem;
+    @media (max-width: 768px) {
+      font-size: 3rem;
+    }
   }
-}
 
-.blockPrimary {
-  width: 100%;
-}
-
-.blockSecondary {
-  width: 100%;
-  @media (max-width: 768px) {
-    margin: 30px 0 0 0;
+  .subheadline {
+    font-size: 1.5rem;
+    color: $color--text-light;
+    margin-bottom: 2rem;
   }
-}
 
-.textPrimary {
-  text-align: left;
-  font-family: Montserrat;
-  font-size: 3.75rem;
-  font-weight: 700;
-  line-height: 3.625rem;
-  color: $color--text-dark;
-  @media (max-width: 768px) {
-    width: 100%;
-    font-size: 3rem;
-    line-height: 3rem;
+  .intro {
+    font-size: 1.25rem;
+    color: $color--text-dark;
+    max-width: 800px;
+    margin: 0 auto;
   }
-}
-
-.textSecondary {
-  text-align: right;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  color: $color--text-light;
-  @media (max-width: 768px) {
-    text-align: left;
-  }
-}
-
-.textSecondaryBlue {
-  color: $color--blue;
 }

@@ -4,26 +4,13 @@ export const Introduction = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
-        <div className={style.blockPrimary}>
-          <div className={style.textPrimary}>Services are based on end-to-end AI product development</div>
-        </div>
-        <div className={style.blockSecondary}>
-          <div className={style.textSecondary}>
-            Discovery &amp; Opportunity Mapping <span className={style.textSecondaryBlue}>/</span>
-          </div>
-          <div className={style.textSecondary}>
-            Solution Definition &amp; Architecture <span className={style.textSecondaryBlue}>/</span>
-          </div>
-          <div className={style.textSecondary}>
-            Experience Design &amp; Prototyping <span className={style.textSecondaryBlue}>/</span>
-          </div>
-          <div className={style.textSecondary}>
-            Implementation &amp; Testing <span className={style.textSecondaryBlue}>/</span>
-          </div>
-          <div className={style.textSecondary}>
-            QA, Launch &amp; Continuous Optimization
-          </div>
-        </div>
+        <h1>Services</h1>
+        <p className={style.subheadline}>
+          We design, build and operate AI solutions for business-critical operations — from strategy and architecture to copilots, automation and governance.
+        </p>
+        <p className={style.intro}>
+          Below are our flagship services. Each is designed to solve a specific class of problems for C‑level, operations, IT and risk leaders — with clear KPIs and ownership.
+        </p>
       </div>
     </div>
   );
