@@ -1,4 +1,4 @@
-import { ABOUT, CASE_STUDY, CONTACT, HOME, SERVICES } from '../../routes';
+import { ABOUT, CASE_STUDY, CONTACT, HOME, RESULTS, SERVICES } from '../../routes';
 
 interface NavItem {
   title: string;
@@ -13,6 +13,10 @@ export const navItems: NavItem[] = [
   {
     title: 'Services',
     route: SERVICES,
+  },
+  {
+    title: 'Results & KPIs',
+    route: RESULTS,
   },
   {
     title: 'Case study',

@@ -1,0 +1,11 @@
+@import '../../../../styles/colors.scss';
+
+.text {
+  font-size: 20px;
+  color: $color--text-dark;
+  line-height: 1.6;
+}
+
+.subtext {
+  color: $color--text-dark;
+}

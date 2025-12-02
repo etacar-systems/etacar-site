@@ -1,0 +1,44 @@
+@import '../../../../styles/colors.scss';
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: $color--text-dark;
+  margin: 0;
+}
+
+.text {
+  font-size: 18px;
+  color: $color--text-dark;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: $color--white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+
+  ul {
+    padding-left: 1rem;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+.closing {
+  color: $color--text-dark;
+  margin-top: 60px;
+}

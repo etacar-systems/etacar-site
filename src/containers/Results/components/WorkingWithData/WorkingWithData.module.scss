@@ -1,0 +1,18 @@
+@import '../../../../styles/colors.scss';
+
+.working {
+  p {
+    font-size: 20px;
+    color: $color--text-dark;
+    line-height: 1.6;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+    color: $color--text-dark;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

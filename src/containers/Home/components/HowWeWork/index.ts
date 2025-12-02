@@ -1,0 +1,1 @@
+export { HowWeWork as default } from './HowWeWork';

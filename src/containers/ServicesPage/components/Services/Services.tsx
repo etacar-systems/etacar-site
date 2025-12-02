@@ -9,26 +9,50 @@ export const Services = () => {
       <div className={style.container}>
         {sections.map(section => (
           <div className={style.service} key={section.id}>
-            <div className={style.title}>{section.title}</div>
-
-            {section.description && <div className={style.description}>{section.description}</div>}
-
-            {section.items && section.items.length > 0 && (
+            <h2>{section.title}</h2>
+            <p className={style.oneLiner}>{section.oneLiner}</p>
+            {section.bestFor && <p><strong>Best for:</strong> {section.bestFor}</p>}
+            {section.problem && <p><strong>Problem we solve:</strong> {section.problem}</p>}
+            {section.whatWeDeliver && (
               <>
-                <div className={style.subtitle}>Key points</div>
-                <ul className={style.list}>
-                  {section.items.map((item, i) => (
+                <h3>What we deliver:</h3>
+                <ul>
+                  {section.whatWeDeliver.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
               </>
             )}
-
-            {/* {section.cta && (
-              <a className={style.cta} href={section.cta.url}>
-                {section.cta.label} →
-              </a>
-            )} */}
+            {section.howWeMeasure && (
+              <>
+                <h3>How we measure success:</h3>
+                <ul>
+                  {section.howWeMeasure.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {section.exampleKPIs && (
+              <>
+                <h3>Example KPIs:</h3>
+                <ul>
+                  {section.exampleKPIs.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {section.typicalProcesses && (
+              <>
+                <h3>Typical processes:</h3>
+                <ul>
+                  {section.typicalProcesses.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         ))}
       </div>

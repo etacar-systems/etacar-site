@@ -1,0 +1,1 @@
+export { WhoWeWorkWith as default } from './WhoWeWorkWith';

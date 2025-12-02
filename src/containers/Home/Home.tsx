@@ -1,9 +1,9 @@
 import React, { lazy, Suspense, useEffect } from 'react';
+import Reviews from '../../commonSections/Reviews';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
-import styles from './Home.module.scss';
-import Reviews from '../../commonSections/Reviews';
 import GetEstimationForm from './components/GetEstimationForm';
+import styles from './Home.module.scss';
 
 // New Home Page Sections
 const HeroSection = lazy(() => import('./components/HeroSection'));

@@ -1,14 +1,13 @@
-import React from 'react';
-
-import { ABOUT, CASE_STUDY, CONTACT, NOT_FOUND_PAGE, PRIVACY_POLICY, SERVICES, TERMS_OF_USE } from './routes';
 import { AboutUs } from '../containers/AboutUs/AboutUs';
 import { CaseStudy } from '../containers/CaseStudy';
 import { ContactUs } from '../containers/ContactUs';
 import { Home } from '../containers/Home';
+import { NotFoundPage } from '../containers/NotFoundPage';
+import { PrivacyPolicy } from '../containers/PrivacyPolicy';
+import { Results } from '../containers/Results';
 import { ServicesPage } from '../containers/ServicesPage';
 import { TermsOfUse } from '../containers/TermsOfUse/TermsOfUse';
-import { PrivacyPolicy } from '../containers/PrivacyPolicy';
-import { NotFoundPage } from '../containers/NotFoundPage';
+import { ABOUT, CASE_STUDY, CONTACT, NOT_FOUND_PAGE, PRIVACY_POLICY, RESULTS, SERVICES, TERMS_OF_USE } from './routes';
 
 export const routesConfig = [
   {
@@ -18,6 +17,10 @@ export const routesConfig = [
   {
     path: SERVICES,
     element: <ServicesPage />,
+  },
+  {
+    path: RESULTS,
+    element: <Results />,
   },
   {
     path: CASE_STUDY,

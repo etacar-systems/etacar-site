@@ -13,11 +13,11 @@ export const Welcome = (): ReactElement => {
         <h1 className={styles.title}>AI systems for business-critical operations</h1>
 
         <p className={styles.subheadline}>
-          <i>We are a senior AI engineering team with more than 20 years in AI-powered products.</i>
+          We are a senior AI engineering team with more than 20 years in AI‑powered products.​ We design and deliver AI solutions for mission‑critical processes — with measurable KPIs on speed, risk and cost.
         </p>
 
         <p className={styles.trustline}>
-          <i>We started with enterprise AI platforms like Autonomy and have been building AI-powered systems.</i>
+          We started with enterprise AI platforms like Autonomy and have been building AI‑powered systems for European and US enterprises ever since.
         </p>
       </div>
 
