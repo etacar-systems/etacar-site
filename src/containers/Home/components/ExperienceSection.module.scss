@@ -1,0 +1,36 @@
+@import '../../../styles/design-tokens.scss';
+@import '../../../styles/mixins.scss';
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  @include heading-lg;
+  color: var(--color-neutral-900);
+  margin-bottom: var(--space-10);
+}
+
+.textContent {
+  padding: var(--space-10);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  
+  @include respond-above(md) {
+    padding: var(--space-12);
+  }
+}
+
+.paragraph {
+  @include body-lg;
+  color: var(--color-neutral-800);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-6);
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

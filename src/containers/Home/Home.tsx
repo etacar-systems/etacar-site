@@ -1,21 +1,23 @@
 import React, { lazy, Suspense, useEffect } from 'react';
+import Reviews from '../../commonSections/Reviews';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
+import GetEstimationForm from './components/GetEstimationForm';
+import styles from './Home.module.scss';
 
-// Alphabetical order is REQUIRED!
-
-const FinalCTA = lazy(() => import('./components/FinalCTA'));
-const FlagshipServices = lazy(() => import('./components/FlagshipServices'));
-const Footer = lazy(() => import('../../components/Footer'));
-const GetEstimationForm = lazy(() => import('./components/GetEstimationForm'));
-const Hero = lazy(() => import('./components/Welcome')); // Assuming Welcome is Hero
-const HowWeWork = lazy(() => import('./components/HowWeWork'));
-const Industries = lazy(() => import('../../commonSections/Industries'));
-const ResultsYouCanMeasure = lazy(() => import('./components/ResultsYouCanMeasure'));
-const Reviews = lazy(() => import('../../commonSections/Reviews'));
-const TwentyYearsInAI = lazy(() => import('./components/TwentyYearsInAI'));
-const WhatWeDo = lazy(() => import('./components/WhatWeDo'));
+// New Home Page Sections
+const HeroSection = lazy(() => import('./components/HeroSection'));
 const WhoWeWorkWith = lazy(() => import('./components/WhoWeWorkWith'));
+const WhatWeDo = lazy(() => import('./components/WhatWeDo'));
+const FlagshipServices = lazy(() => import('./components/FlagshipServices'));
+const Development = lazy(() => import('./components/Development'));
+const ResultsMeasure = lazy(() => import('./components/ResultsMeasure'));
+const HowWeWork = lazy(() => import('./components/HowWeWork'));
+const ExperienceSection = lazy(() => import('./components/ExperienceSection'));
+const FinalCTA = lazy(() => import('./components/FinalCTA'));
+
+// Shared Components
+const Footer = lazy(() => import('../../components/Footer'));
 
 export const Home: React.FC = () => {
   useEffect(() => {
@@ -24,9 +26,9 @@ export const Home: React.FC = () => {
 
   return (
     <Suspense fallback={<Loader />}>
-      <div>
+      <div className={styles.container}>
         <FadeInSection>
-          <Hero />
+          <HeroSection />
         </FadeInSection>
         <FadeInSection>
           <WhoWeWorkWith />
@@ -38,19 +40,19 @@ export const Home: React.FC = () => {
           <FlagshipServices />
         </FadeInSection>
         <FadeInSection>
-          <ResultsYouCanMeasure />
+          <Development />
+        </FadeInSection>
+        <FadeInSection>
+          <ResultsMeasure />
         </FadeInSection>
         <FadeInSection>
           <HowWeWork />
         </FadeInSection>
         <FadeInSection>
-          <TwentyYearsInAI />
+          <ExperienceSection />
         </FadeInSection>
         <FadeInSection>
           <FinalCTA />
-        </FadeInSection>
-        <FadeInSection>
-          <Industries />
         </FadeInSection>
         <FadeInSection>
           <Reviews arrowColor='dark' theme='blueLight' />
