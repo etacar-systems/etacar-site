@@ -10,23 +10,23 @@ $color--blue: #007bff;
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 20px 100px;
+  padding: 50px 0px 80px;
   text-align: center;
 
   h1 {
     font-size: 3.75rem;
     font-weight: 700;
     color: $color--text-dark;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     @media (max-width: 768px) {
       font-size: 3rem;
     }
   }
 
   .subheadline {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: $color--text-light;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .intro {
@@ -34,5 +34,6 @@ $color--blue: #007bff;
     color: $color--text-dark;
     max-width: 800px;
     margin: 0 auto;
+    text-wrap: balance;
   }
 }
