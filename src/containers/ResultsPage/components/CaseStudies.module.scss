@@ -1,0 +1,136 @@
+@import '../../../styles/design-tokens.scss';
+@import '../../../styles/mixins.scss';
+
+.section {
+  @include section-padding;
+  background-color: var(--color-white);
+    box-sizing: border-box;
+}
+
+.container {
+  @include container;
+}
+
+.header {
+  max-width: 800px;
+  margin: 0 auto var(--space-16);
+  text-align: center;
+}
+
+.title {
+  @include heading-lg;
+  color: var(--color-neutral-900);
+}
+
+.caseStudy {
+  margin-bottom: var(--space-20);
+  padding-bottom: var(--space-16);
+  border-bottom: 1px solid var(--color-neutral-200);
+  
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.caseHeader {
+  margin-bottom: var(--space-8);
+}
+
+.industry {
+  @include label-sm;
+  color: var(--color-primary-600);
+  margin-bottom: var(--space-2);
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.headline {
+  @include heading-md;
+  font-size: var(--text-3xl);
+  color: var(--color-neutral-900);
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+  
+  @include respond-above(lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.block {
+  margin-bottom: var(--space-6);
+}
+
+.blockTitle {
+  @include heading-sm;
+  color: var(--color-neutral-900);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  
+  &::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 16px;
+    background: var(--color-primary-500);
+    border-radius: 2px;
+  }
+}
+
+.text {
+  @include body-base;
+  color: var(--color-neutral-700);
+  line-height: var(--leading-relaxed);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  
+  li {
+    @include body-base;
+    color: var(--color-neutral-700);
+    padding-left: var(--space-6);
+    position: relative;
+    
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--color-primary-500);
+      font-weight: bold;
+    }
+  }
+}
+
+.resultsBox {
+  background: var(--color-neutral-50);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-neutral-200);
+  
+  .blockTitle {
+    color: var(--color-primary-700);
+    &::before {
+      background: var(--color-primary-600);
+    }
+  }
+}

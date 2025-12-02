@@ -1,0 +1,31 @@
+.section {
+  padding: 48px 24px;
+  background: #fbfbfd;
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.groupTitle {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.closing {
+  margin-top: 18px;
+  color: #4b5563;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

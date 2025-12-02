@@ -1,0 +1,25 @@
+.section {
+  padding: 48px 24px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.list {
+  margin-left: 20px;
+  color: #374151;
+  margin-bottom: 12px;
+}
+.note {
+  color: #4b5563;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 64px 24px;
+  }
+}

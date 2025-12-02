@@ -1,0 +1,121 @@
+@import '../../../styles/design-tokens.scss';
+@import '../../../styles/mixins.scss';
+
+.section {
+  @include section-padding;
+  background-color: var(--color-neutral-50);
+    box-sizing: border-box;
+}
+
+.container {
+  @include container;
+}
+
+.header {
+  max-width: 800px;
+  margin: 0 auto var(--space-12);
+  text-align: center;
+}
+
+.title {
+  @include heading-lg;
+  margin-bottom: var(--space-6);
+  color: var(--color-neutral-900);
+}
+
+.description {
+  @include body-lg;
+  color: var(--color-neutral-600);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+  
+  @include respond-above(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include respond-above(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: var(--color-white);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-neutral-200);
+  transition: all var(--transition-base);
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-200);
+  }
+}
+
+.cardTitle {
+  @include heading-md;
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+  color: var(--color-primary-700);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.number {
+  background: var(--color-primary-100);
+  color: var(--color-primary-700);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-base);
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  
+  li {
+    @include body-base;
+    color: var(--color-neutral-700);
+    padding-left: var(--space-5);
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 6px;
+      height: 6px;
+      background: var(--color-primary-400);
+      border-radius: 50%;
+    }
+  }
+}
+
+.closing {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  
+  p {
+    @include body-lg;
+    color: var(--color-neutral-800);
+    line-height: var(--leading-relaxed);
+  }
+}
