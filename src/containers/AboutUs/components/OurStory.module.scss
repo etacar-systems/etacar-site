@@ -1,0 +1,74 @@
+@import '../../../styles/design-tokens.scss';
+@import '../../../styles/mixins.scss';
+
+.ourStorySection {
+  @include section-spacing;
+  background: var(--color-neutral-50);
+}
+
+.content {
+  @include container;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.title {
+  @include heading-lg;
+  margin-bottom: var(--space-4);
+  color: var(--color-neutral-900);
+}
+
+.subtext {
+  @include body-large;
+  color: var(--color-neutral-700);
+  max-width: 800px;
+  margin: 0 auto var(--space-12);
+  line-height: var(--leading-relaxed);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--color-neutral-0);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-neutral-200);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 var(--space-6);
+  color: var(--color-primary-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardTitle {
+  @include heading-md;
+  color: var(--color-neutral-900);
+  text-align: left;
+  margin: var(--space-2) 0 0 0;
+}
+
+.cardDescription {
+  @include body-base;
+    text-align: left;
+  color: var(--color-neutral-700);
+  line-height: var(--leading-relaxed);
+}

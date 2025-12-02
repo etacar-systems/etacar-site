@@ -1,0 +1,43 @@
+@import '../../styles/design-tokens.scss';
+@import '../../styles/mixins.scss';
+
+.wrapper {
+  padding: 48px 0;
+  // background: var(--color-neutral-50);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  @include heading-lg;
+  margin-bottom: var(--space-4);
+  color: var(--color-neutral-900);
+}
+
+.text {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.buttonBlock {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .buttonBlock {
+    width: 100%;
+  }
+}

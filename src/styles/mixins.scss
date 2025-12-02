@@ -34,6 +34,20 @@
   line-height: var(--leading-snug);
 }
 
+@mixin body-text {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+}
+
+@mixin body-large {
+  font-family: var(--font-primary);
+  font-size: var(--text-lg);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+}
+
 @mixin section-padding {
   padding-top: var(--space-16);
   padding-bottom: var(--space-16);
