@@ -1,17 +1,6 @@
-$color--primary: #007bff;
-$color--text: #343a40;
-$color--muted: #6c757d;
+@import '../../../../styles/colors.scss';
 
 .caseStudies {
-  padding: 4rem 0;
-  background: white;
-
-  h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: $color--text;
-  }
-
   .grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,19 +10,19 @@ $color--muted: #6c757d;
   }
 
   .card {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-radius: 20px;
+    background-color: $color--white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
 
     h3 {
-      color: $color--primary;
+      color: $color--text-dark;
       margin-bottom: 0.25rem;
     }
 
     .meta {
       font-size: 0.9rem;
-      color: $color--muted;
+      color: $color--text-dark;
       margin-bottom: 0.75rem;
     }
 

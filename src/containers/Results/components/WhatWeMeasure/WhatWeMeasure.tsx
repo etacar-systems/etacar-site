@@ -35,11 +35,11 @@ const categories = [
 
 export const WhatWeMeasure: React.FC = () => {
   return (
-    <Section
-      title='What we measure and how'
-      subtitle='Our KPI framework is designed to be understandable for C‑level, operations, IT and risk teams alike. We group
-          metrics into five categories.'
-    >
+    <Section title='What we measure and how'>
+      <p className={styles.text}>
+        Our KPI framework is designed to be understandable for C‑level, operations, IT and risk teams alike. We group
+        metrics into five categories.
+      </p>
       <div className={styles.grid}>
         {categories.map((c, idx) => (
           <div key={idx} className={styles.card}>
