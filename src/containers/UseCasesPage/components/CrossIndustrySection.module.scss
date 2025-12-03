@@ -120,7 +120,7 @@
 .tag {
   padding: 6px 12px;
   background: var(--color-neutral-50);
-  border-radius: 100px;
+  border-radius: var(--radius-full);
   @include label-sm;
   font-size: var(--text-xs);
   color: var(--color-neutral-700);

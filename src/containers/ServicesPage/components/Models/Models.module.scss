@@ -4,7 +4,7 @@
 .wrapper {
   margin-top: -50px;
   padding: 150px 0 100px;
-  border-radius: 20px 20px 0 0;
+  border-radius: var(--radius-top-left);
   background: $color--white;
   display: flex;
   flex-direction: column;

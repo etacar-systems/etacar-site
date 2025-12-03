@@ -7,7 +7,7 @@
   justify-content: space-around;
   width: 285px;
   height: 149px;
-  border-radius: 20px;
+  border-radius: var(--radius-2xl);
   border: 1px solid $color--white;
   padding: 16px;
   box-sizing: border-box;

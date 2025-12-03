@@ -5,7 +5,7 @@
   max-width: 500px;
   height: 300px;
   border: 1px solid $color--text-light;
-  border-radius: 20px;
+  border-radius: var(--radius-2xl);
   padding: 16px;
 }
 
@@ -41,7 +41,7 @@
 
 .avatar {
   width: 44px;
-  border-radius: 100px;
+  border-radius: var(--radius-full);
 }
 
 .container {

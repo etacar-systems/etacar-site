@@ -31,7 +31,7 @@
       padding: 0.5rem 0.75rem;
       height: fit-content;
       border: 1px solid $color--lightblue;
-      border-radius: 10px;
+      border-radius: var(--radius-md);
       transition: all 0.2s;
       cursor: pointer;
     }

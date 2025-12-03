@@ -3,7 +3,7 @@
 
 .card {
   padding: 8px;
-  border-radius: 20px;
+  border-radius: var(--radius-2xl);
   background: $color--extra-lightblue;
   cursor: pointer;
   transition: all 0.2s;

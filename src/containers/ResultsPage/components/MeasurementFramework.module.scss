@@ -73,7 +73,7 @@
   color: var(--color-primary-700);
   width: 32px;
   height: 32px;
-  border-radius: 50%;
+  border-radius: var(--radius-rounded);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +103,7 @@
       width: 6px;
       height: 6px;
       background: var(--color-primary-400);
-      border-radius: 50%;
+      border-radius: var(--radius-rounded);
     }
   }
 }

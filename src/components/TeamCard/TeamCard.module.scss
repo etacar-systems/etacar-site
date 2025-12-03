@@ -6,13 +6,13 @@
   align-items: flex-start;
   background: var(--card-bg, transparent);
   padding: 16px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
 }
 
 .avatar {
   flex: 0 0 72px;
   height: 72px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   background: #e6e6e6;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   color: #444;
   font-weight: var(--font-semibold);
 }

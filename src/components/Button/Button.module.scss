@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 40px;
+  border-radius: var(--radius-4xl);
   padding: 16px 32px;
   gap: 8px;
   color: $color--white;

@@ -76,7 +76,7 @@
   flex-direction: column;
   gap: 14px;
   padding: 24px 30px;
-  border-radius: 18px;
+  border-radius: var(--radius-xl);
   font-size: var(--text-lg);
   font-weight: var(--font-medium);
   max-width: 900px;

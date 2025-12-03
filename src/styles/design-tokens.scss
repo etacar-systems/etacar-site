@@ -159,7 +159,11 @@
   --radius-xl: 1rem; // 16px
   --radius-2xl: 1.5rem; // 24px
   --radius-3xl: 2rem; // 32px
+  --radius-4xl: 2.5rem; // 40px
   --radius-full: 9999px;
+  --radius-rounded: 50%;
+  --radius-top-left: 1.25rem 1.25rem 0 0;
+  --radius-top-right: 0 1.25rem 1.25rem 0;
 
   // ========================================
   // TRANSITIONS

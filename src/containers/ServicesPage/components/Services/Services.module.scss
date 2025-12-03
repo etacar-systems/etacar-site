@@ -3,7 +3,7 @@
 
 .services {
   background-color: $color--text-dark;
-  border-radius: 1.25rem 1.25rem 0 0;
+  border-radius: var(--radius-top-left);
   padding: 6rem 2rem;
 }
 
@@ -21,7 +21,7 @@
   padding: 2rem;
   background-color: $color--white;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 1rem;
+  border-radius: var(--radius-xl);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   transition:
     transform 0.25s ease,

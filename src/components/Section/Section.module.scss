@@ -4,7 +4,7 @@
 .container {
   padding: 100px 0 100px;
   margin-top: -50px;
-  border-radius: 20px 20px 0 0;
+  border-radius: var(--radius-top-left);
   @media (max-width: 1200px) {
     padding: 100px 20px 100px;
   }

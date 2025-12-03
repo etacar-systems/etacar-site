@@ -5,7 +5,7 @@
   max-width: 500px;
   height: 300px;
   border: 1px solid $color--text-light;
-  border-radius: 20px;
+  border-radius: var(--radius-2xl);
   padding: 16px;
   @media (max-width: 1200px) {
     height: fit-content;
