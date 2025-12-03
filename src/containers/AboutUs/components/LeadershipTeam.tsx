@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './LeadershipTeam.module.scss';
-import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';
 import FinalCTA from '../../../components/FinalCTA/FinalCTA';
+import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';
+import styles from './LeadershipTeam.module.scss';
 
 const LeadershipTeam: React.FC = () => {
   // const teamMembers = [
@@ -26,7 +26,7 @@ const LeadershipTeam: React.FC = () => {
   // ];
 
   return (
-    <SectionWrapper className={styles.teamSection}>
+    <SectionWrapper className={styles.teamSection} variant='gradient'>
       <div className={styles.container}>
         <h2 className={styles.title}>Meat our team</h2>
         {/* <p className={styles.intro}>

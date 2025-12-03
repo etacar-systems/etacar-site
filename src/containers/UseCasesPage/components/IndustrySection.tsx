@@ -29,65 +29,64 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
         </div>
 
         <div className={styles.contentGrid}>
-            <div className={styles.block}>
-              <h3 className={styles.blockTitle}>Typical challenges</h3>
-              <ul className={styles.list}>
-                {challenges.map((item, i) => (
-                  <li key={i} className={styles.listItem}>
-                    <span className={styles.bullet}>●</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            <div className={styles.block}>
-              <h3 className={styles.blockTitle}>Where we help</h3>
-              <ul className={styles.list}>
-                {whereWeHelp.map((item, i) => (
-                  <li key={i} className={styles.listItem}>
-                    <span className={styles.bullet}>●</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className={styles.block}>
+            <h3 className={styles.blockTitle}>Typical challenges</h3>
+            <ul className={styles.list}>
+              {challenges.map((item, i) => (
+                <li key={i} className={styles.listItem}>
+                  <span className={styles.bullet}>●</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            <div className={styles.block}>
-              <h3 className={styles.blockTitle}>Example initiatives</h3>
-              <ul className={styles.list}>
-                {initiatives.map((item, i) => (
-                  <li key={i} className={styles.listItem}>
-                    <span className={styles.bullet}>●</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className={styles.block}>
+            <h3 className={styles.blockTitle}>Where we help</h3>
+            <ul className={styles.list}>
+              {whereWeHelp.map((item, i) => (
+                <li key={i} className={styles.listItem}>
+                  <span className={styles.bullet}>●</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            <div className={styles.kpiBlock}>
-              <h3 className={styles.blockTitle}>Typical KPIs</h3>
-              <ul className={styles.kpiList}>
-                {kpis.map((item, i) => (
-                  <li key={i} className={styles.kpiItem}>
-                    <span className={styles.bullet}>●</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className={styles.block}>
+            <h3 className={styles.blockTitle}>Example initiatives</h3>
+            <ul className={styles.list}>
+              {initiatives.map((item, i) => (
+                <li key={i} className={styles.listItem}>
+                  <span className={styles.bullet}>●</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-
-         
+          <div className={styles.kpiBlock}>
+            <h3 className={styles.blockTitle}>Typical KPIs</h3>
+            <ul className={styles.kpiList}>
+              {kpis.map((item, i) => (
+                <li key={i} className={styles.kpiItem}>
+                  <span className={styles.bullet}>●</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-         <div className={styles.servicesBlock}>
-              <h3 className={styles.blockTitle}>Relevant services</h3>
-              <div className={styles.tags}>
-                {services.map((service, i) => (
-                  <span key={i} className={styles.tag}>{service}</span>
-                ))}
-              </div>
-            </div>
+        <div className={styles.servicesBlock}>
+          <h3 className={styles.blockTitle}>Relevant services</h3>
+          <div className={styles.tags}>
+            {services.map((service, i) => (
+              <span key={i} className={styles.tag}>
+                {service}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </SectionWrapper>
   );

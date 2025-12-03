@@ -2,8 +2,6 @@
 @import '../../../styles/mixins.scss';
 
 .broaderTeamSection {
-  @include section-spacing;
-  background: var(--color-neutral-0);
 }
 
 .container {

@@ -98,8 +98,9 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all var(--transition-base);
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--color-primary-300);
 
   &:hover {
     background: rgba(255, 255, 255, 0.15);

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../../../components/Button';
+import { SectionWrapper } from '../../../components/SectionWrapper';
 import { CONTACT, RESULTS } from '../../../routes';
 import styles from './HeroSection.module.scss';
 
@@ -8,7 +9,7 @@ export const HeroSection: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <section className={styles.hero}>
+    <SectionWrapper variant='gradient'>
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.title}>AI systems for business-critical operations</h1>
@@ -43,7 +44,9 @@ export const HeroSection: React.FC = () => {
                   fill='currentColor'
                 />
               </svg>
-              <span>20+ years building AI-driven products</span>
+              <span>
+                <i>20+ years building AI-driven products</i>
+              </span>
             </div>
             <div className={styles.fact}>
               <svg
@@ -100,7 +103,7 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

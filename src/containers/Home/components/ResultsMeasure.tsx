@@ -15,8 +15,10 @@ export const ResultsMeasure: React.FC = () => {
     {
       title: 'Global e-commerce – customer operations',
       goal: 'reduce handling time for complex support cases without adding headcount',
-      approach: 'AI-assisted case summaries, context gathering, next-best-action suggestions and playbook search with citations',
-      result: '−35% average time-to-resolution, 60% of cases processed with AI assistance, <2% re-opened tickets due to AI-related errors',
+      approach:
+        'AI-assisted case summaries, context gathering, next-best-action suggestions and playbook search with citations',
+      result:
+        '−35% average time-to-resolution, 60% of cases processed with AI assistance, <2% re-opened tickets due to AI-related errors',
     },
     {
       title: 'Financial services – KYC reviews',
@@ -27,14 +29,14 @@ export const ResultsMeasure: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper id="results" className={styles.results}>
+    <SectionWrapper id='results' className={styles.results}>
       <div className={styles.content}>
         <h2 className={styles.title}>Results you can measure</h2>
-        
+
         <p className={styles.subtext}>
           Every engagement starts with 3–5 concrete KPIs. We don't ship AI without a way to measure impact.
         </p>
-        
+
         <ul className={styles.kpiList}>
           {kpis.map((kpi, index) => (
             <li key={index} className={styles.kpiItem}>
@@ -43,7 +45,7 @@ export const ResultsMeasure: React.FC = () => {
             </li>
           ))}
         </ul>
-        
+
         <div className={styles.casesGrid}>
           {miniCases.map((caseStudy, index) => (
             <div key={index} className={styles.caseCard}>

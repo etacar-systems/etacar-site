@@ -1,7 +1,6 @@
 import appleSet from '../../../../assets/images/appleSet.webp';
-import { Section } from '../../../../components/Section';
+import { SectionWrapper } from '../../../../components/SectionWrapper';
 import styles from './Development.module.scss';
-import { Carousel } from './components';
 
 // Простые SVG-иконки
 const metrics = [
@@ -18,7 +17,8 @@ const metrics = [
 
 export const Development = () => {
   return (
-    <Section title={'Measurable impact in weeks – not years'} titleClassName={styles.title}>
+    <SectionWrapper variant='gradient'>
+      <div className={styles.title}>Measurable impact in weeks – not years</div>
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <img className={styles.img} src={appleSet} alt='development' />
@@ -49,7 +49,6 @@ export const Development = () => {
           </div>
         </div>
       </div>
-      <Carousel />
-    </Section>
+    </SectionWrapper>
   );
 };

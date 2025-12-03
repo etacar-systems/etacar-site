@@ -23,14 +23,14 @@ export const WhoWeWorkWith: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper variant="light">
+    <SectionWrapper variant='light'>
       <div className={styles.content}>
         <h2 className={styles.title}>Who we work with</h2>
-        
+
         <p className={styles.intro}>
           We partner with leaders who run complex, business-critical operations and can't afford AI "experiments".
         </p>
-        
+
         <ul className={styles.list}>
           {targetAudience.map((item, index) => (
             <li key={index} className={styles.listItem}>

@@ -1,6 +1,10 @@
 @import './styles/design-tokens.scss';
 @import './styles/colors.scss';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: var(--font-primary);

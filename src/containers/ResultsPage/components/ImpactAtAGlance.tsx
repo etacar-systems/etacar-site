@@ -1,38 +1,37 @@
 import React from 'react';
+import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './ImpactAtAGlance.module.scss';
 
 export const ImpactAtAGlance: React.FC = () => {
   const metrics = [
     {
       value: '20–40%',
-      text: 'Faster end‑to‑end execution for selected operational processes'
+      text: 'Faster end‑to‑end execution for selected operational processes',
     },
     {
       value: '30–50%',
-      text: 'Less manual effort for recurring analysis and reporting'
+      text: 'Less manual effort for recurring analysis and reporting',
     },
     {
       value: '30–50%',
-      text: 'Shorter time‑to‑delivery for selected development tasks'
+      text: 'Shorter time‑to‑delivery for selected development tasks',
     },
     {
       value: '50–70%',
-      text: 'Less time spent searching and reading internal documents for recurring questions'
+      text: 'Less time spent searching and reading internal documents for recurring questions',
     },
     {
       value: 'Fewer',
-      text: 'Escalations and errors, thanks to more consistent use of existing knowledge and playbooks'
-    }
+      text: 'Escalations and errors, thanks to more consistent use of existing knowledge and playbooks',
+    },
   ];
 
   return (
-    <section className={styles.section}>
+    <SectionWrapper variant='gradient'>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>Impact at a glance</h2>
-          <p className={styles.description}>
-            Across recent projects, our AI solutions have delivered:
-          </p>
+          <p className={styles.description}>Across recent projects, our AI solutions have delivered:</p>
         </div>
 
         <div className={styles.grid}>
@@ -46,12 +45,12 @@ export const ImpactAtAGlance: React.FC = () => {
 
         <div className={styles.closing}>
           <p>
-            These numbers are not “theoretical potential” — they are measured before/after
-            deltas on real processes. Exact values differ by client and domain.
+            These numbers are not “theoretical potential” — they are measured before/after deltas on real processes.
+            Exact values differ by client and domain.
           </p>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 
