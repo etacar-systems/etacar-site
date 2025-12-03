@@ -1,3 +1,4 @@
+@import '../../styles/design-tokens.scss';
 @import '../../styles/colors.scss';
 
 .menu {
@@ -43,7 +44,7 @@
 
 .listElement {
   display: block;
-  font-size: 36px;
+  font-size: var(--text-4xl);
   line-height: 48px;
   > a,
   a:hover {

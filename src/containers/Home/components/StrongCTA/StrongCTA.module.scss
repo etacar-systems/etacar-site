@@ -10,13 +10,13 @@
 }
 
 .title {
-  font-size: 28px;
+  font-size: var(--text-3xl);
   font-weight: var(--font-bold);
   margin-bottom: 16px;
 }
 
 .text {
-  font-size: 16px;
+  font-size: var(--text-base);
   margin-bottom: 24px;
 }
 

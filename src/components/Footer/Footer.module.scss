@@ -10,7 +10,7 @@
 }
 
 @mixin secondaryText {
-  font-size: 14px;
+  font-size: var(--text-sm);
   text-align: left;
   color: $color--light;
 }
@@ -49,7 +49,7 @@
 }
 
 @mixin footerText {
-  font-size: 12px;
+  font-size: var(--text-xs);
   color: $color--white;
 }
 

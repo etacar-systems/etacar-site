@@ -41,14 +41,14 @@
 }
 
 .title {
-  font-size: 18px;
+  font-size: var(--text-lg);
   font-weight: var(--font-semibold);
   margin: 0;
   margin-bottom: 8px;
 }
 
 .description {
-  font-size: 15px;
+  font-size: var(--text-sm);
   color: $color--text-light;
   line-height: 1.4;
   margin: 0;

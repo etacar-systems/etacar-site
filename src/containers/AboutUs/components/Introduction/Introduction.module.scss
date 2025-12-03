@@ -51,7 +51,7 @@
 
 .aboutUs {
   font-family: Montserrat;
-  font-size: 3.75rem;
+  font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   text-transform: uppercase;
   color: $color--text-dark;

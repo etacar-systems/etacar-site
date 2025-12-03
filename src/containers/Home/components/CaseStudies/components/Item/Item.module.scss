@@ -31,13 +31,13 @@
 }
 .title {
   color: $color--text-dark;
-  font-size: 24px;
+  font-size: var(--text-2xl);
   font-weight: var(--font-medium);
 }
 
 .link {
   font-family: Roboto;
-  font-size: 1.125rem;
+  font-size: var(--text-lg);
   font-weight: var(--font-medium);
   line-height: 1.5rem;
   text-align: left;

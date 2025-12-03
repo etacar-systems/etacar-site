@@ -10,7 +10,7 @@
   gap: 8px;
   color: $color--white;
   border: none;
-  font-size: 16px;
+  font-size: var(--text-base);
   cursor: pointer;
   transition: all 0.2s;
 

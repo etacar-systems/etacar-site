@@ -31,14 +31,14 @@
   align-self: flex-start;
   padding-top: 100px;
   font-family: Montserrat;
-  font-size: 3.75rem;
+  font-size: var(--text-6xl);
   line-height: 3.625rem;
   font-weight: var(--font-bold);
   text-transform: uppercase;
   color: $color--text-dark;
 
   @media (max-width: 768px) {
-    font-size: 36px;
+    font-size: var(--text-4xl);
     line-height: 36px;
   }
 }
@@ -80,7 +80,7 @@
   & .elementTitle {
     width: 10rem;
     color: $color--text-light;
-    font-size: 1.5rem;
+    font-size: var(--text-2xl);
     @media (max-width: 768px) {
       width: 100%;
     }

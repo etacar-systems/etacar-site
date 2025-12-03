@@ -25,7 +25,7 @@
   & .title {
     color: $color--lightblue;
     font-family: Montserrat;
-    font-size: 60px;
+    font-size: var(--text-6xl);
     font-weight: var(--font-bold);
     line-height: 58px;
     text-transform: uppercase;

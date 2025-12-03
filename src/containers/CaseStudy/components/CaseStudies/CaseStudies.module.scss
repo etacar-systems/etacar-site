@@ -65,7 +65,7 @@
 
 .cases_count {
   color: $color--lightgray;
-  font-size: 24px;
+  font-size: var(--text-2xl);
   margin: 0 0 100px;
   @media (max-width: 1200px) {
     padding: 0 20px 50px;

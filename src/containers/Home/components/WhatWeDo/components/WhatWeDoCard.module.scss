@@ -25,14 +25,14 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: var(--text-2xl);
   font-weight: var(--font-bold);
   color: $color--text-dark;
   margin: 0;
 }
 
 .description {
-  font-size: 18px;
+  font-size: var(--text-lg);
   font-weight: var(--font-medium);
   opacity: 0.9;
   margin: 0;

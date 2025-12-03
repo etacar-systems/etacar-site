@@ -41,17 +41,17 @@
 
 .name {
   margin: 0 0 4px 0;
-  font-size: 1rem;
+  font-size: var(--text-base);
 }
 
 .role {
   color: rgba(0, 0, 0, 0.6);
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   margin-bottom: 8px;
 }
 
 .description {
   margin: 0;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 0.9rem;
+  font-size: var(--text-sm);
 }

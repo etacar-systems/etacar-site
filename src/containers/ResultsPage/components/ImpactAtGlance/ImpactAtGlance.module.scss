@@ -1,3 +1,5 @@
+@import '../../../../styles/design-tokens.scss';
+
 .section {
   padding: 48px 24px;
   background: #fff;
@@ -7,7 +9,7 @@
   margin: 0 auto;
 }
 .title {
-  font-size: 28px;
+  font-size: var(--text-3xl);
   margin-bottom: 12px;
 }
 .text {

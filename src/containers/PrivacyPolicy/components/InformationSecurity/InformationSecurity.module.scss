@@ -23,12 +23,12 @@
   width: 100%;
   color: $color--text-dark;
   font-family: $font-family-title;
-  font-size: 24px;
+  font-size: var(--text-2xl);
   font-weight: var(--font-bold);
   text-transform: uppercase;
 
   @media (max-width: 768px) {
-    font-size: 36px;
+    font-size: var(--text-4xl);
     line-height: 36px;
   }
 }

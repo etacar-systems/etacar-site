@@ -137,7 +137,7 @@
 }
 
 .textPrimary {
-  font-size: 3.5rem;
+  font-size: var(--text-5xl);
   font-weight: var(--font-bold);
   padding: 1rem 0;
   color: $color--lightblue;

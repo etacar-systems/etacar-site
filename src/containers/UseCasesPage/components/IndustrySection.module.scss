@@ -19,7 +19,7 @@
 
 .index {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: var(--text-sm);
   color: var(--color-primary-500);
   font-weight: var(--font-semibold);
 }
@@ -60,7 +60,7 @@
 .blockTitle {
   @include heading-sm;
   color: var(--color-primary-700);
-  font-size: 18px;
+  font-size: var(--text-lg);
   text-align: center;
 }
 

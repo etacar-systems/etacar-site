@@ -15,6 +15,6 @@
 .title {
   color: $color--lightblue;
   font-family: $font-family-title;
-  font-size: 60px;
+  font-size: var(--text-6xl);
   font-weight: var(--font-bold);
 }

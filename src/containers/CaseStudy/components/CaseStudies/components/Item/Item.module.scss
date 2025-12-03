@@ -39,7 +39,7 @@
 }
 .title {
   color: $color--text-dark;
-  font-size: 24px;
+  font-size: var(--text-2xl);
   font-weight: var(--font-medium);
 }
 .image {

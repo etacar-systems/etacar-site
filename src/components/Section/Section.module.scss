@@ -30,14 +30,14 @@
   max-width: 500px;
   color: $color--text-dark;
   font-family: $font-family-title;
-  font-size: 60px;
+  font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   margin-bottom: 100px;
   white-space: pre-line;
   line-height: 58px;
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: var(--text-3xl);
     line-height: 2rem;
     margin-bottom: 50px;
   }
@@ -50,7 +50,7 @@
 .subtitle {
   max-width: 600px;
   color: $color--text-dark;
-  font-size: 20px;
+  font-size: var(--text-xl);
   margin-bottom: 60px;
   line-height: 24px;
   opacity: 0.9;
@@ -60,7 +60,7 @@
   }
 
   @media (max-width: 768px) {
-    font-size: 1rem;
+    font-size: var(--text-base);
     margin-bottom: 30px;
   }
 }

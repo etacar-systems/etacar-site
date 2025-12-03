@@ -36,7 +36,7 @@
 
 .company {
   color: $color--text-blue;
-  font-size: 12px;
+  font-size: var(--text-xs);
 }
 
 .avatar {

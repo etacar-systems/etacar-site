@@ -30,7 +30,7 @@
 
 .company {
   color: $color--text-blue;
-  font-size: 12px;
+  font-size: var(--text-xs);
 }
 
 .swiper {
@@ -41,7 +41,7 @@
 }
 
 .label {
-  font-size: 24px;
+  font-size: var(--text-2xl);
   color: $color--text-dark;
   &[data-text-color='dark'] {
     color: $color--light;
