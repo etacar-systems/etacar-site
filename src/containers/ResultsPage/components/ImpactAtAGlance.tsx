@@ -1,4 +1,5 @@
 import React from 'react';
+import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './ImpactAtAGlance.module.scss';
 
@@ -36,10 +37,10 @@ export const ImpactAtAGlance: React.FC = () => {
 
         <div className={styles.grid}>
           {metrics.map((metric, index) => (
-            <div key={index} className={styles.metricCard}>
+            <FadeCard key={index} className={styles.metricCard}>
               <div className={styles.metricValue}>{metric.value}</div>
               <div className={styles.metricText}>{metric.text}</div>
-            </div>
+            </FadeCard>
           ))}
         </div>
 

@@ -68,9 +68,7 @@
 .kpiSection {
   margin-top: var(--space-10);
   padding: var(--space-8);
-  background: var(--gradient-card);
-  border-radius: var(--radius-xl);
-  border: 2px solid var(--color-primary-300);
+  background: var(--gradient-card) !important;
 }
 
 .kpiList {
@@ -93,7 +91,7 @@
   line-height: var(--leading-relaxed);
   color: var(--color-neutral-800);
   font-weight: var(--font-medium);
-  
+
   .bullet {
     color: var(--color-success-500);
   }

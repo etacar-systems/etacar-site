@@ -1,4 +1,5 @@
 import React from 'react';
+import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './IndustrySection.module.scss';
 
@@ -65,7 +66,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
             </ul>
           </div>
 
-          <div className={styles.kpiBlock}>
+          <FadeCard className={styles.kpiBlock}>
             <h3 className={styles.blockTitle}>Typical KPIs</h3>
             <ul className={styles.kpiList}>
               {kpis.map((item, i) => (
@@ -75,7 +76,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
                 </li>
               ))}
             </ul>
-          </div>
+          </FadeCard>
         </div>
         <div className={styles.servicesBlock}>
           <h3 className={styles.blockTitle}>Relevant services</h3>

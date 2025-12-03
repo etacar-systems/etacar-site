@@ -35,16 +35,11 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background: var(--color-neutral-0);
-  border-radius: var(--radius-lg);
   padding: var(--space-2);
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-neutral-200);
   transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
   }
 }
 
@@ -67,7 +62,7 @@
 
 .cardDescription {
   @include body-base;
-    text-align: left;
+  text-align: left;
   color: var(--color-neutral-700);
   line-height: var(--leading-relaxed);
 }

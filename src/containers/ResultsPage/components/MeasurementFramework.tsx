@@ -1,4 +1,5 @@
 import React from 'react';
+import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './MeasurementFramework.module.scss';
 
@@ -59,7 +60,7 @@ export const MeasurementFramework: React.FC = () => {
 
         <div className={styles.grid}>
           {categories.map((category, index) => (
-            <div key={index} className={styles.card}>
+            <FadeCard key={index} className={styles.card}>
               <h3 className={styles.cardTitle}>
                 <span className={styles.number}>{index + 1}</span>
                 {category.title}
@@ -69,7 +70,7 @@ export const MeasurementFramework: React.FC = () => {
                   <li key={idx}>{item}</li>
                 ))}
               </ul>
-            </div>
+            </FadeCard>
           ))}
         </div>
 
