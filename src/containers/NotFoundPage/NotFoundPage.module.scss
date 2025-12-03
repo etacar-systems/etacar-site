@@ -1,3 +1,4 @@
+@import '../../styles/design-tokens.scss';
 @import '../../styles/colors.scss';
 
 .wrapper {
@@ -25,7 +26,7 @@
     color: $color--lightblue;
     font-family: Montserrat;
     font-size: 60px;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     line-height: 58px;
     text-transform: uppercase;
   }
@@ -43,7 +44,7 @@
     color: $color--lightblue;
     font-family: Montserrat;
     font-size: 22.396vw;
-    font-weight: 700;
+    font-weight: var(--font-bold);
     line-height: 29.115vw;
     left: -20.8vw;
   }

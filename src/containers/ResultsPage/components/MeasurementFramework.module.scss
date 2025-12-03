@@ -4,7 +4,7 @@
 .section {
   @include section-padding;
   background-color: var(--color-neutral-50);
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -33,11 +33,11 @@
   grid-template-columns: 1fr;
   gap: var(--space-8);
   margin-bottom: var(--space-12);
-  
+
   @include respond-above(md) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   @include respond-above(lg) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -50,7 +50,7 @@
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--color-neutral-200);
   transition: all var(--transition-base);
-  
+
   &:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
@@ -78,7 +78,7 @@
   align-items: center;
   justify-content: center;
   font-size: var(--text-base);
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 .list {
@@ -88,13 +88,13 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  
+
   li {
     @include body-base;
     color: var(--color-neutral-700);
     padding-left: var(--space-5);
     position: relative;
-    
+
     &::before {
       content: '';
       position: absolute;
@@ -112,7 +112,7 @@
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  
+
   p {
     @include body-lg;
     color: var(--color-neutral-800);

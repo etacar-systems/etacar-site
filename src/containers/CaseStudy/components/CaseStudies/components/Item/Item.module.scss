@@ -1,3 +1,4 @@
+@import '../../../../../../styles/design-tokens.scss';
 @import '../../../../../../styles/colors.scss';
 
 .container {
@@ -39,7 +40,7 @@
 .title {
   color: $color--text-dark;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: var(--font-medium);
 }
 .image {
   padding: 16px;

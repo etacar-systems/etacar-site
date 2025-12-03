@@ -1,3 +1,4 @@
+@import '../../../../styles/design-tokens.scss';
 @import '../../../../styles/colors.scss';
 
 .wrapper {
@@ -36,10 +37,10 @@
     align-items: center;
     justify-content: center;
   }
-
 }
 
-.rowTop, .rowBottom {
+.rowTop,
+.rowBottom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,17 +55,21 @@
     flex-direction: column;
     width: 100%;
   }
-
 }
 
-.smallBlock, .smallHighBlock, .bigHighBlock {
+.smallBlock,
+.smallHighBlock,
+.bigHighBlock {
   > img {
     width: 100%;
     height: 100%;
   }
 }
 
-.smallBlock, .smallHighBlock, .smallTextBlock, .smallHighTextBlock {
+.smallBlock,
+.smallHighBlock,
+.smallTextBlock,
+.smallHighTextBlock {
   display: flex;
   flex-direction: column;
   width: 17.25rem;
@@ -76,7 +81,8 @@
   }
 }
 
-.smallBlock, .smallTextBlock {
+.smallBlock,
+.smallTextBlock {
   height: 17.25rem;
 
   @media (max-width: 1200px) {
@@ -84,12 +90,14 @@
   }
 }
 
-.smallHighTextBlock, .smallTextBlock {
+.smallHighTextBlock,
+.smallTextBlock {
   border: 1px solid $color--lightblue;
   border-radius: 20px;
 }
 
-.smallHighBlock, .smallHighTextBlock {
+.smallHighBlock,
+.smallHighTextBlock {
   height: 24rem;
   @media (max-width: 1200px) {
     height: 100%;
@@ -116,7 +124,8 @@
   }
 }
 
-.primaryTextContainer, .secondaryTextContainer {
+.primaryTextContainer,
+.secondaryTextContainer {
   padding: 0 1rem;
 }
 
@@ -129,7 +138,7 @@
 
 .textPrimary {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   padding: 1rem 0;
   color: $color--lightblue;
 }

@@ -1,3 +1,4 @@
+@import '../../styles/design-tokens.scss';
 @import '../../styles/colors.scss';
 
 .section {
@@ -32,7 +33,7 @@
   font-family: Montserrat;
   font-size: 3.75rem;
   line-height: 3.625rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   text-transform: uppercase;
   color: $color--text-dark;
 

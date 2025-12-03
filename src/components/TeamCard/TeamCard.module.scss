@@ -1,3 +1,5 @@
+@import '../../styles/design-tokens.scss';
+
 .card {
   display: flex;
   gap: 16px;
@@ -30,7 +32,7 @@
   background: #e6e6e6;
   border-radius: 8px;
   color: #444;
-  font-weight: 600;
+  font-weight: var(--font-semibold);
 }
 
 .content {

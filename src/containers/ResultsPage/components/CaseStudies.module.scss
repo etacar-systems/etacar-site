@@ -4,7 +4,7 @@
 .section {
   @include section-padding;
   background-color: var(--color-white);
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -26,7 +26,7 @@
   margin-bottom: var(--space-20);
   padding-bottom: var(--space-16);
   border-bottom: 1px solid var(--color-neutral-200);
-  
+
   &:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -57,7 +57,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-12);
-  
+
   @include respond-above(lg) {
     grid-template-columns: 1fr 1fr;
   }
@@ -80,7 +80,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-2);
-  
+
   &::before {
     content: '';
     display: block;
@@ -104,19 +104,19 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  
+
   li {
     @include body-base;
     color: var(--color-neutral-700);
     padding-left: var(--space-6);
     position: relative;
-    
+
     &::before {
       content: '•';
       position: absolute;
       left: 0;
       color: var(--color-primary-500);
-      font-weight: bold;
+      font-weight: var(--font-bold);
     }
   }
 }
@@ -126,7 +126,7 @@
   padding: var(--space-8);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-neutral-200);
-  
+
   .blockTitle {
     color: var(--color-primary-700);
     &::before {

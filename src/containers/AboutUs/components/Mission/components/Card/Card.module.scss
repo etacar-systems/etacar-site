@@ -1,3 +1,4 @@
+@import '../../../../../../styles/design-tokens.scss';
 @import '../../../../../../styles/colors.scss';
 
 .container {
@@ -15,5 +16,5 @@
   color: $color--lightblue;
   font-family: $font-family-title;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }

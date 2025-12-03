@@ -1,3 +1,4 @@
+@import '../../../../styles/design-tokens.scss';
 @import '../../../../styles/colors.scss';
 
 .wrapper {
@@ -17,7 +18,7 @@
   width: 1200px;
   font-family: Montserrat;
   font-size: 3.75rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   color: $color--text-dark;
   text-transform: uppercase;
   padding: 0 0 100px;

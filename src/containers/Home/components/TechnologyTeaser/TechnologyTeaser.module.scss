@@ -1,3 +1,4 @@
+@import '../../../../styles/design-tokens.scss';
 @import '../../../../styles/colors.scss';
 
 .center {
@@ -17,7 +18,7 @@
   align-items: center;
   gap: 12px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: var(--font-semibold);
   border-radius: 100px;
   padding: 8px 16px;
   color: $color--text-blue;

@@ -1,3 +1,4 @@
+@import '../../styles/design-tokens.scss';
 @import '../../styles/colors.scss';
 
 .review {
@@ -24,7 +25,7 @@
 
 .name {
   color: $color--text-dark;
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 .company {

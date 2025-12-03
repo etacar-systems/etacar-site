@@ -32,7 +32,7 @@
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  
+
   @include fade-in;
 }
 
@@ -43,7 +43,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  
+
   @include desktop {
     font-size: var(--text-6xl);
   }
@@ -53,10 +53,10 @@
   @include body-lg;
   font-size: var(--text-xl);
   margin-bottom: var(--space-8);
-  font-weight: 500;
+  font-weight: var(--font-medium);
   color: var(--color-neutral-800);
   line-height: var(--leading-relaxed);
-  
+
   @include desktop {
     font-size: var(--text-2xl);
   }
@@ -64,7 +64,7 @@
 
 .intro {
   @include body-base;
-font-size: var(--text-lg);
+  font-size: var(--text-lg);
   color: var(--color-neutral-700);
   line-height: var(--leading-relaxed);
   text-align: center;

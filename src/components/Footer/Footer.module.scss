@@ -1,3 +1,4 @@
+@import '../../styles/design-tokens.scss';
 @import '../../styles/colors.scss';
 
 @mixin flexContainer($justify: flex-start, $align: flex-start, $direction: row, $gap: 0) {
@@ -15,7 +16,7 @@
 }
 
 @mixin primaryText {
-  font-weight: 700;
+  font-weight: var(--font-bold);
   text-align: left;
   color: $color--white;
 }

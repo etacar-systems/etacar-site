@@ -1,3 +1,4 @@
+@import '../../../../styles/design-tokens.scss';
 @import '../../../../styles/colors.scss';
 
 .wrapper {
@@ -51,7 +52,7 @@
 .aboutUs {
   font-family: Montserrat;
   font-size: 3.75rem;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   text-transform: uppercase;
   color: $color--text-dark;
   text-wrap: nowrap;
@@ -97,7 +98,7 @@
 }
 
 .infoBold {
-  font-weight: 700;
+  font-weight: var(--font-bold);
   margin-bottom: 20px;
 }
 

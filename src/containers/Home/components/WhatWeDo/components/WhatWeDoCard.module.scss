@@ -1,3 +1,4 @@
+@import '../../../../../styles/design-tokens.scss';
 @import '../../../../../styles/colors.scss';
 
 .wrapper {
@@ -25,21 +26,21 @@
 
 .title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: var(--font-bold);
   color: $color--text-dark;
   margin: 0;
 }
 
 .description {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: var(--font-medium);
   opacity: 0.9;
   margin: 0;
 }
 
 .cta {
   color: $color--blue;
-  font-weight: 600;
+  font-weight: var(--font-semibold);
   text-decoration: none;
   display: block;
   margin-top: auto;
