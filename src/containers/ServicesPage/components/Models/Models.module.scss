@@ -16,7 +16,7 @@
 
 .sectionTitle {
   width: 1200px;
-  font-family: Montserrat;
+  font-family: var(--font-heading);
   font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   color: $color--text-dark;

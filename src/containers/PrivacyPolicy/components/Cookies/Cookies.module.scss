@@ -87,7 +87,7 @@
 .title {
   width: 100%;
   color: $color--text-dark;
-  font-family: $font-family-title;
+  font-family: var(--font-heading);
   font-size: var(--text-2xl);
   font-weight: var(--font-bold);
   text-transform: uppercase;

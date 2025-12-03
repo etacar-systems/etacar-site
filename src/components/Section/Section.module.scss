@@ -29,7 +29,7 @@
 .title {
   max-width: 500px;
   color: $color--text-dark;
-  font-family: $font-family-title;
+  font-family: var(--font-heading);
   font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   margin-bottom: 100px;

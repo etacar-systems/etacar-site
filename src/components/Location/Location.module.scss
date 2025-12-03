@@ -30,7 +30,7 @@
 .sectionHeader {
   align-self: flex-start;
   padding-top: 100px;
-  font-family: Montserrat;
+  font-family: var(--font-heading);
   font-size: var(--text-6xl);
   line-height: 3.625rem;
   font-weight: var(--font-bold);

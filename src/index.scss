@@ -1,8 +1,9 @@
-@import "./styles/colors.scss";
+@import './styles/design-tokens.scss';
+@import './styles/colors.scss';
 
 body {
   margin: 0;
-  font-family: $font-family-main;
+  font-family: var(--font-primary);
   color: $color--text-light;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;

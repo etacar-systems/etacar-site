@@ -24,7 +24,7 @@
 
   & .title {
     color: $color--lightblue;
-    font-family: Montserrat;
+    font-family: var(--font-heading);
     font-size: var(--text-6xl);
     font-weight: var(--font-bold);
     line-height: 58px;
@@ -42,7 +42,7 @@
     z-index: 5;
     position: relative;
     color: $color--lightblue;
-    font-family: Montserrat;
+    font-family: var(--font-heading);
     font-size: 22.396vw;
     font-weight: var(--font-bold);
     line-height: 29.115vw;
