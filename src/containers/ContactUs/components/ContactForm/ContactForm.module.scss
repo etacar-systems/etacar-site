@@ -9,6 +9,7 @@
 .container {
   @include container;
   max-width: 800px;
+  padding-bottom: var(--space-12);
 }
 
 // Form Header
@@ -35,7 +36,7 @@
   @include card-premium;
   padding: var(--space-10);
   background: var(--color-neutral-0);
-  
+
   @include respond-above(md) {
     padding: var(--space-12);
   }
@@ -46,7 +47,7 @@
   grid-template-columns: 1fr;
   gap: var(--space-6);
   margin-bottom: var(--space-6);
-  
+
   @include respond-above(md) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -79,12 +80,12 @@
   font-size: var(--text-base);
   line-height: var(--leading-normal);
   transition: all var(--transition-base);
-  
+
   &:focus {
     border-color: var(--color-primary-500);
     box-shadow: 0 0 0 3px rgba(66, 135, 245, 0.1);
   }
-  
+
   &::placeholder {
     color: var(--color-neutral-500);
   }
@@ -113,7 +114,7 @@
   padding: var(--space-16);
   text-align: center;
   background: var(--color-neutral-0);
-  
+
   @include respond-above(md) {
     padding: var(--space-20);
   }
@@ -129,7 +130,7 @@
   background: var(--gradient-success);
   border-radius: var(--radius-full);
   color: var(--color-neutral-0);
-  
+
   svg {
     width: 48px;
     height: 48px;
@@ -147,4 +148,3 @@
   color: var(--color-neutral-700);
   margin: 0;
 }
-
