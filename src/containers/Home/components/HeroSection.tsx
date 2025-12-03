@@ -44,9 +44,7 @@ export const HeroSection: React.FC = () => {
                   fill='currentColor'
                 />
               </svg>
-              <span>
-                <i>20+ years building AI-driven products</i>
-              </span>
+              <span>20+ years building AI-driven products</span>
             </div>
             <div className={styles.fact}>
               <svg
