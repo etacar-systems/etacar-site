@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
+import { FadeCard } from '../FadeCard';
 import styles from './ServiceCard.module.scss';
 
 export interface ServiceCardProps {
@@ -12,10 +13,10 @@ export interface ServiceCardProps {
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, href, icon, className }) => {
   return (
-    <div className={classNames(styles.card, className)}>
+    <FadeCard className={classNames(styles.card, className)}>
       {icon && <div className={styles.icon}>{icon}</div>}
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
-    </div>
+    </FadeCard>
   );
 };

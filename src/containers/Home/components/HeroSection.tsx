@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../../../components/Button';
+import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import { CONTACT, RESULTS } from '../../../routes';
 import styles from './HeroSection.module.scss';
@@ -30,7 +31,7 @@ export const HeroSection: React.FC = () => {
           </div>
 
           <div className={styles.quickFacts}>
-            <div className={styles.fact}>
+            <FadeCard className={styles.fact}>
               <svg
                 className={styles.icon}
                 width='24'
@@ -45,8 +46,8 @@ export const HeroSection: React.FC = () => {
                 />
               </svg>
               <span>20+ years building AI-driven products</span>
-            </div>
-            <div className={styles.fact}>
+            </FadeCard>
+            <FadeCard className={styles.fact}>
               <svg
                 className={styles.icon}
                 width='24'
@@ -64,8 +65,8 @@ export const HeroSection: React.FC = () => {
                 />
               </svg>
               <span>From strategy to production — architecture, implementation, governance</span>
-            </div>
-            <div className={styles.fact}>
+            </FadeCard>
+            <FadeCard className={styles.fact}>
               <svg
                 className={styles.icon}
                 width='24'
@@ -97,7 +98,7 @@ export const HeroSection: React.FC = () => {
                 />
               </svg>
               <span>Designed for regulated and high-stakes environments</span>
-            </div>
+            </FadeCard>
           </div>
         </div>
       </div>

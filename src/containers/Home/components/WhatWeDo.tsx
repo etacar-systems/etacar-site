@@ -1,4 +1,5 @@
 import React from 'react';
+import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './WhatWeDo.module.scss';
 
@@ -32,11 +33,13 @@ export const WhatWeDo: React.FC = () => {
 
         <div className={styles.grid}>
           {focusAreas.map((area, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.number}>{index + 1}</div>
-              <h3 className={styles.cardTitle}>{area.title}</h3>
-              <p className={styles.cardDescription}>{area.description}</p>
-            </div>
+            <FadeCard key={index} className={styles.card}>
+              <div className={styles.card}>
+                <div className={styles.number}>{index + 1}</div>
+                <h3 className={styles.cardTitle}>{area.title}</h3>
+                <p className={styles.cardDescription}>{area.description}</p>
+              </div>
+            </FadeCard>
           ))}
         </div>
       </div>

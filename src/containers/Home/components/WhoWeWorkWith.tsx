@@ -1,4 +1,5 @@
 import React from 'react';
+import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './WhoWeWorkWith.module.scss';
 
@@ -31,18 +32,18 @@ export const WhoWeWorkWith: React.FC = () => {
           We partner with leaders who run complex, business-critical operations and can't afford AI "experiments".
         </p>
 
-        <ul className={styles.list}>
+        <div className={styles.list}>
           {targetAudience.map((item, index) => (
-            <li key={index} className={styles.listItem}>
+            <FadeCard key={index} className={styles.listItem}>
               <div className={styles.bullet}>●</div>
               <div>
                 <strong className={styles.role}>{item.role}</strong>
                 <span className={styles.separator}> – </span>
                 <span className={styles.description}>{item.description}</span>
               </div>
-            </li>
+            </FadeCard>
           ))}
-        </ul>
+        </div>
       </div>
     </SectionWrapper>
   );
