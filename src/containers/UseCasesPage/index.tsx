@@ -1,5 +1,4 @@
 import React, { lazy, Suspense, useEffect } from 'react';
-import { NavHeader } from '../../components/NavHeader';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 import styles from './UseCasesPage.module.scss';
