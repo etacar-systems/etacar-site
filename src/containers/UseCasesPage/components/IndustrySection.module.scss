@@ -1,0 +1,134 @@
+@import '../../../styles/mixins.scss';
+
+.sectionWrapper {
+}
+
+.container {
+  @include container;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.header {
+  margin-bottom: 60px;
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
+
+.index {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-primary-500);
+  font-weight: 600;
+}
+
+.title {
+  @include heading-lg;
+  color: var(--color-neutral-900);
+  text-align: center;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+
+  @include tablet {
+    gap: 40px;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.blockTitle {
+  @include heading-sm;
+  color: var(--color-primary-700);
+  font-size: 18px;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.listItem {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  @include body-base;
+  color: var(--color-neutral-700);
+  
+  .bullet {
+    color: var(--color-primary-500);
+    flex-shrink: 0;
+  }
+}
+
+.kpiBlock {
+  @extend .block;
+  background: var(--color-neutral-50);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--color-neutral-200);
+}
+
+.kpiList {
+  @extend .list;
+}
+
+.kpiItem {
+  @extend .listItem;
+  font-weight: 500;
+  color: var(--color-neutral-900);
+
+  .bullet {
+    color: var(--color-success-500);
+  }
+}
+
+.servicesBlock {
+  margin-top: auto;
+  padding-top: var(--space-4);
+  margin-top: var(--space-16);
+  border-top: 1px solid var(--color-neutral-200);
+}
+
+.tags {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tag {
+  padding: 6px 16px;
+  background: var(--color-neutral-0);
+  border-radius: 100px;
+  @include label-sm;
+  color: var(--color-neutral-700);
+  border: 1px solid var(--color-neutral-300);
+}

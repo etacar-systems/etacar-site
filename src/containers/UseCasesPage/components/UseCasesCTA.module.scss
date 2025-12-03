@@ -1,0 +1,31 @@
+@import '../../../styles/mixins.scss';
+
+.container {
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: var(--bg-primary);
+}
+
+.content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.title {
+  @include heading-lg;
+  color: var(--text-primary);
+}
+
+.text {
+  @include body-lg;
+  color: var(--text-secondary);
+}
+
+.buttonWrapper {
+  margin-top: 16px;
+}

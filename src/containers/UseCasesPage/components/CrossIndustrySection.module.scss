@@ -1,0 +1,127 @@
+@import '../../../styles/mixins.scss';
+
+.container {
+  @include container;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.header {
+  max-width: 800px;
+  margin-bottom: 60px;
+    text-align:  center;
+    margin: 0 auto 60px auto;
+}
+
+.title {
+  @include heading-lg;
+  color: var(--color-neutral-900);
+  text-align:  center;
+  margin-bottom: 24px;
+}
+
+.intro {
+  @include body-lg;
+  color: var(--color-neutral-700);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  @include card-base;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px;
+  border: 1px solid var(--color-neutral-200);
+  
+  &:hover {
+    border-color: var(--color-primary-300);
+    box-shadow: var(--shadow-lg);
+  }
+
+  @include mobile {
+    padding: 24px;
+  }
+}
+
+.cardTitle {
+  @include heading-md;
+  color: var(--color-neutral-900);
+  font-size: 24px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  @include label-sm;
+  font-weight: 600;
+  color: var(--color-primary-700);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.text {
+  @include body-base;
+  color: var(--color-neutral-700);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  li {
+    @include body-base;
+    color: var(--color-neutral-700);
+    position: relative;
+    padding-left: 16px;
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--color-primary-500);
+    }
+  }
+}
+
+.servicesSection {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-neutral-200);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tag {
+  padding: 6px 12px;
+  background: var(--color-neutral-50);
+  border-radius: 100px;
+  @include label-sm;
+  font-size: 12px;
+  color: var(--color-neutral-700);
+  border: 1px solid var(--color-neutral-200);
+}
