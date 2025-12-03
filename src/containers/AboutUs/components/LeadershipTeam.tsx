@@ -29,7 +29,7 @@ const LeadershipTeam: React.FC = () => {
     <SectionWrapper className={styles.teamSection}>
       <div className={styles.container}>
         <h2 className={styles.title}>Meat our team</h2>
-        <p className={styles.intro}>
+        {/* <p className={styles.intro}>
           Our core team combines backgrounds in AI engineering, product development, neuroscience and operations. Below is a high‑level view of the roles we typically bring into projects. You can meet specific people and profiles during an initial strategy session.
         </p>
         <div className={styles.grid}>
@@ -43,7 +43,7 @@ const LeadershipTeam: React.FC = () => {
               <p className={styles.details}>{member.details}</p>
             </div>
           ))}
-        </div>
+        </div> */}
         <FinalCTA />
       </div>
     </SectionWrapper>

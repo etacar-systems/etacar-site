@@ -2,7 +2,7 @@
 @import '../../../styles/mixins.scss';
 
 .teamSection {
-  padding-bottom: 0;
+  background: var(--color-neutral-50);
 }
 
 .container {
@@ -14,6 +14,7 @@
 .title {
   @include heading-lg;
   margin-bottom: var(--space-6);
+  margin-top: 0;
   color: var(--color-neutral-900);
 }
 

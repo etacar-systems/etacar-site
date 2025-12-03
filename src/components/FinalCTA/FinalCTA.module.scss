@@ -2,7 +2,7 @@
 @import '../../styles/mixins.scss';
 
 .wrapper {
-  padding: 48px 0;
+  padding: 0 var(--space-4);
   // background: var(--color-neutral-50);
 }
 

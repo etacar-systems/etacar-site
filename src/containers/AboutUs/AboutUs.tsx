@@ -30,10 +30,6 @@ export const AboutUs = () => {
       </FadeInSection>
 
       <FadeInSection>
-        <LeadershipTeam />
-      </FadeInSection>
-
-      <FadeInSection>
         <OurStory />
       </FadeInSection>
 
@@ -42,6 +38,10 @@ export const AboutUs = () => {
         <Expirience />
       </FadeInSection>
 
+      <FadeInSection>
+        <LeadershipTeam />
+      </FadeInSection>
+      
       <FadeInSection>
         <WhoWeAre />
         <NeuroscienceSection />
