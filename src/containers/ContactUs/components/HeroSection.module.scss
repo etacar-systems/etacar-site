@@ -1,0 +1,121 @@
+@import '../../../styles/design-tokens.scss';
+@import '../../../styles/mixins.scss';
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--color-neutral-900);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-neutral-0) 100%);
+  
+  @include respond-above(md) {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+  }
+  
+  @include respond-above(lg) {
+    padding-top: var(--space-24);
+    padding-bottom: var(--space-24);
+  }
+}
+
+.container {
+  @include container;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  
+  @include fade-in;
+}
+
+.title {
+  @include heading-xl;
+  margin-bottom: var(--space-6);
+  color: var(--color-neutral-900);
+  
+  @include desktop {
+    font-size: var(--text-6xl);
+  }
+}
+
+.subtitle {
+  @include body-lg;
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-12);
+  opacity: 0.9;
+  line-height: var(--leading-relaxed);
+  color: var(--color-neutral-700);
+  
+  @include desktop {
+    font-size: var(--text-2xl);
+  }
+}
+
+.quickFacts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+  
+  @include respond-above(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+.fact {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  text-align: left;
+  padding: var(--space-5);
+  background: var(--color-neutral-0);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-neutral-200);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  
+  &:hover {
+    border-color: var(--color-primary-300);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+  
+  @include respond-above(md) {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.icon {
+  flex-shrink: 0;
+  color: var(--color-primary-600);
+  width: 28px;
+  height: 28px;
+  
+  @include respond-above(md) {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.fact span {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: var(--leading-snug);
+  color: var(--color-neutral-700);
+  font-weight: var(--font-medium);
+  
+  @include respond-above(md) {
+    font-size: var(--text-lg);
+  }
+}
