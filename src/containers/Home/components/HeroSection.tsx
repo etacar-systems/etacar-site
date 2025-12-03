@@ -1,8 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../../../components/Button';
+import { CONTACT, RESULTS } from '../../../routes';
 import styles from './HeroSection.module.scss';
 
 export const HeroSection: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -20,12 +24,8 @@ export const HeroSection: React.FC = () => {
           </p>
 
           <div className={styles.ctaButtons}>
-            <Button
-              type='solid'
-              title='Book a 30-minute discovery call'
-              onClick={() => (window.location.href = '#contact')}
-            />
-            <Button type='bordered' title='See example results' onClick={() => (window.location.href = '#results')} />
+            <Button type='solid' title='Book a 30-minute discovery call' onClick={() => navigate(CONTACT)} />
+            <Button type='bordered' title='See example results' onClick={() => navigate(RESULTS)} />
           </div>
 
           <div className={styles.quickFacts}>

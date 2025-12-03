@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
+import disabledPaginationArrow from '../../../../assets/icons/CaseStudies/disabledPaginationArrow.svg';
+import paginationArrow from '../../../../assets/icons/CaseStudies/paginationArrow.svg';
 import { caseStudies } from '../../../../model/caseStudies';
 import { Item } from './components/Item';
 import { keySortTags, sortTags } from './data';
-import paginationArrow from '../../../../assets/icons/CaseStudies/paginationArrow.svg';
-import disabledPaginationArrow from '../../../../assets/icons/CaseStudies/disabledPaginationArrow.svg';
 
 import style from './CaseStudies.module.scss';
 
