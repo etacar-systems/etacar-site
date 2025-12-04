@@ -13,16 +13,20 @@ export const HeroSection: React.FC = () => {
     <SectionWrapper variant='gradient'>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1 className={styles.title}>AI systems for business-critical operations</h1>
+          <p className={styles.subheadline} style={{ marginBottom: 'var(--space-3)' }}>
+            Orchestrating Intelligence. Navigating Complexity.
+          </p>
+
+          <h1 className={styles.title}>Enterprise AI for business-critical decisions and processes</h1>
 
           <p className={styles.subheadline}>
-            We are a senior AI engineering team with more than 20 years in AI-powered products. We design and deliver AI
-            solutions for mission-critical processes — with measurable KPIs on speed, risk and cost.
+            We build AI systems that drive measurable impact across speed, risk, and operational cost — from LLM-driven
+            automation to decision support and high-stakes enterprise workflows.
           </p>
 
           <p className={styles.trustLine}>
-            We started with enterprise AI platforms like Autonomy and have been building AI-powered systems for European
-            and US enterprises ever since.
+            Our team has 20+ years of experience in AI engineering — from building the Autonomy.com platform to
+            delivering production-grade AI systems for leading European and US organizations.
           </p>
 
           <div className={styles.ctaButtons}>
@@ -47,6 +51,7 @@ export const HeroSection: React.FC = () => {
               </svg>
               <span>20+ years building AI-driven products</span>
             </FadeCard>
+
             <FadeCard className={styles.fact}>
               <svg
                 className={styles.icon}
@@ -66,6 +71,7 @@ export const HeroSection: React.FC = () => {
               </svg>
               <span>From strategy to production — architecture, implementation, governance</span>
             </FadeCard>
+
             <FadeCard className={styles.fact}>
               <svg
                 className={styles.icon}
