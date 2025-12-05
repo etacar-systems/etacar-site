@@ -1,7 +1,9 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
 import React from 'react';
-import style from './FinalCTA.module.scss';
 import { Button } from '../Button';
-import { useNavigate } from 'react-router';
+import style from './FinalCTA.module.scss';
 
 type FinalCTAProps = {
   title?: string;
@@ -16,14 +18,14 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({
   buttonLabel = 'Book a conversation with our team',
   to = '/contact',
 }) => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
         <p className={style.text}>{text}</p>
         <div className={style.buttonBlock}>
-          <Button title={buttonLabel} onClick={() => navigate(to)} icon={true} type='solid' />
+          <Button title={buttonLabel} onClick={() => router.push(to)} icon={true} type='solid' />
         </div>
       </div>
     </div>

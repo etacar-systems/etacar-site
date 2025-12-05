@@ -1,46 +1,51 @@
-import { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+'use client';
+
 import classNames from 'classnames';
+import Link from 'next/link';
+import { useState } from 'react';
 
-import logoIcon from '../../assets/icons/Logo.svg';
-
-import { navItems } from './data';
-import { Button } from '../Button';
-import { CONTACT, HOME } from '../../routes';
-import style from './NavHeader.module.scss';
+import { usePathname, useRouter } from 'next/navigation';
 import { useViewportSize } from '../../hooks/useViewportSize';
+import { CONTACT, HOME } from '../../routes';
+import { Button } from '../Button';
 import { Menu } from '../Menu';
+import { navItems } from './data';
+import style from './NavHeader.module.scss';
 
 export const NavHeader = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
+  const pathname = usePathname();
+
   const { width } = useViewportSize();
   const [menuActive, setMenuActive] = useState(false);
 
   return (
-    <header>
+    <header className={style.header}>
       <div className={style.container}>
         <div className={style.logo}>
-          <img onClick={() => navigate(HOME)} src={logoIcon} alt={'logo'} />
+          <img onClick={() => router.push(HOME)} src={'/icons/Logo.svg'} alt={'logo'} />
         </div>
         {width > 768 ? (
           <div className={style.navigation}>
-            {navItems.map(item => (
-              <NavLink
-                to={item.route}
-                className={({ isActive }) =>
-                  classNames({
-                    [style.item]: true,
+            {navItems.map((item, i) => {
+              const isActive = pathname === item.route;
+
+              return (
+                <Link
+                  key={i}
+                  href={item.route}
+                  className={classNames(style.item, {
                     [style.item__active]: isActive,
-                  })
-                }
-              >
-                {item.title}
-              </NavLink>
-            ))}
+                  })}
+                >
+                  {item.title}
+                </Link>
+              );
+            })}
           </div>
         ) : undefined}
         {width > 768 ? (
-          <Button onClick={() => navigate(CONTACT)} title={'Get estimation'} type={'bordered'} />
+          <Button onClick={() => router.push(CONTACT)} title={'Get estimation'} type={'bordered'} />
         ) : undefined}
         {width < 768 ? (
           <div

@@ -1,11 +1,11 @@
+import { useRouter } from 'next/navigation';
 import React from 'react';
+import { Button } from '../../../components/Button';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './UseCasesCTA.module.scss';
-import { Button } from '../../../components/Button';
-import { useNavigate } from 'react-router';
 
 const UseCasesCTA: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <SectionWrapper>
@@ -13,17 +13,11 @@ const UseCasesCTA: React.FC = () => {
         <div className={styles.content}>
           <h2 className={styles.title}>Let’s map this to your reality</h2>
           <p className={styles.text}>
-            If you recognise your own challenges in any of these examples, we can start
-            with a focused workshop: mapping your current processes, identifying
-            high‑impact AI initiatives and agreeing on how to measure success.
+            If you recognize your own challenges in any of these examples, we can start with a focused workshop: mapping
+            your current processes, identifying high‑impact AI initiatives and agreeing on how to measure success.
           </p>
           <div className={styles.buttonWrapper}>
-            <Button 
-              title="Discuss your use cases" 
-              onClick={() => navigate('/contact')} 
-              icon={true} 
-              type='solid' 
-            />
+            <Button title='Discuss your use cases' onClick={() => router.push('/contact')} icon={true} type='solid' />
           </div>
         </div>
       </div>

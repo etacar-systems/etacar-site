@@ -1,5 +1,3 @@
-import { ServicesImages } from '../../../../assets/images/Services';
-
 export const data = [
   {
     id: 1,
@@ -12,7 +10,7 @@ export const data = [
       'High-level solution concepts and roadmaps',
       'Outcome: Clear priorities, concrete next steps, and a realistic AI adoption plan',
     ],
-    image: ServicesImages.ourTeam1,
+    image: '/images/Services/ourTeam1.webp',
   },
   {
     id: 2,
@@ -25,7 +23,7 @@ export const data = [
       'Handover, documentation, and training',
       'Outcome: A production-ready AI solution that fits your environment and requirements',
     ],
-    image: ServicesImages.ourTeam2,
+    image: '/images/Services/ourTeam2.webp',
   },
   {
     id: 3,
@@ -38,7 +36,7 @@ export const data = [
       'Close collaboration with your in-house teams',
       'Outcome: Sustainable AI capability, not just a one-off project',
     ],
-    image: ServicesImages.ourTeam3,
+    image: '/images/Services/ourTeam3.webp',
   },
   // {
   //   id: 4,

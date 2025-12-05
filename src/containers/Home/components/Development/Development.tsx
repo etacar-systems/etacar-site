@@ -1,8 +1,8 @@
-import appleSet from '../../../../assets/images/appleSet.webp';
+'use client';
+
 import { SectionWrapper } from '../../../../components/SectionWrapper';
 import styles from './Development.module.scss';
 
-// Простые SVG-иконки
 const metrics = [
   {
     text: '+30–50% faster back-office operations via AI-powered workflows',
@@ -21,7 +21,7 @@ export const Development = () => {
       <div className={styles.title}>Measurable impact in weeks – not years</div>
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
-          <img className={styles.img} src={appleSet} alt='development' />
+          <img className={styles.img} src={'/images/appleSet.webp'} alt='development' />
         </div>
         <div className={styles.content}>
           <div className={styles.points}>

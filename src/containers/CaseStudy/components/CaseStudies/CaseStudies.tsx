@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+'use client';
 
-import disabledPaginationArrow from '../../../../assets/icons/CaseStudies/disabledPaginationArrow.svg';
-import paginationArrow from '../../../../assets/icons/CaseStudies/paginationArrow.svg';
+import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+
 import { caseStudies } from '../../../../model/caseStudies';
 import { Item } from './components/Item';
 import { keySortTags, sortTags } from './data';
@@ -30,13 +30,14 @@ interface CaseStudiesState {
 }
 
 export const CaseStudies = () => {
-  const location = useLocation();
-  const from = location.state as [string, string] | undefined;
+  const searchParams = useSearchParams();
+  const firstFilterParam = searchParams.get('firstFilter') || 'all';
+  const secondFilterParam = searchParams.get('secondFilter') || 'all';
 
   const initialState: CaseStudiesState = {
     currentPage: 1,
-    firstFilterKeyword: from ? from[0].toLowerCase() : 'all',
-    secondFilterKeyword: from ? from[1].toLowerCase() : 'all',
+    firstFilterKeyword: firstFilterParam.toLowerCase(),
+    secondFilterKeyword: secondFilterParam.toLowerCase(),
     filteredCases: caseStudies,
     currentItems: [],
     totalPages: 1,
@@ -80,19 +81,20 @@ export const CaseStudies = () => {
 
   useEffect(() => {
     let filteredData = caseStudies;
-    if (state.secondFilterKeyword !== 'all') {
-      filteredData = filteredData.filter(
-        item =>
-          item.keyTags.toString().toLowerCase().includes(state.secondFilterKeyword) ||
-          item.tags.toString().toLowerCase().includes(state.secondFilterKeyword)
-      );
-    }
 
     if (state.firstFilterKeyword !== 'all') {
       filteredData = filteredData.filter(
         item =>
-          item.keyTags.toString().toLowerCase().includes(state.firstFilterKeyword) ||
-          item.tags.toString().toLowerCase().includes(state.secondFilterKeyword)
+          item.keyTags.map(t => t.toLowerCase()).includes(state.firstFilterKeyword) ||
+          item.tags.map(t => t.toLowerCase()).includes(state.firstFilterKeyword)
+      );
+    }
+
+    if (state.secondFilterKeyword !== 'all') {
+      filteredData = filteredData.filter(
+        item =>
+          item.keyTags.map(t => t.toLowerCase()).includes(state.secondFilterKeyword) ||
+          item.tags.map(t => t.toLowerCase()).includes(state.secondFilterKeyword)
       );
     }
 
@@ -102,7 +104,7 @@ export const CaseStudies = () => {
       totalPages: Math.ceil(filteredData.length / ITEMS_PER_PAGE),
       currentPage: 1,
     }));
-  }, [state.secondFilterKeyword, state.firstFilterKeyword]);
+  }, [state.firstFilterKeyword, state.secondFilterKeyword]);
 
   useEffect(() => {
     const startIndex = (state.currentPage - 1) * ITEMS_PER_PAGE;
@@ -119,29 +121,31 @@ export const CaseStudies = () => {
     <div className={style.case_studies_container}>
       <div className={style.filter_section}>
         <div className={style.filter_by_paragraph_container}>
-          {keySortTags.map(string => (
+          {keySortTags.map(tag => (
             <div
-              key={string}
-              className={`${state.firstFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
-              onClick={() => handleFirstFilter(string.toLowerCase())}
+              key={tag}
+              className={`${state.firstFilterKeyword === tag.toLowerCase() ? style.active : style.sortButton}`}
+              onClick={() => handleFirstFilter(tag)}
             >
-              {string}
+              {tag}
             </div>
           ))}
         </div>
         <div className={style.filter_by_title_container}>
-          {sortTags.map(string => (
+          {sortTags.map(tag => (
             <div
-              key={string}
-              className={`${state.secondFilterKeyword === string.toLowerCase() ? style.active : style.sortButton}`}
-              onClick={() => handleSecondFilter(string.toLowerCase())}
+              key={tag}
+              className={`${state.secondFilterKeyword === tag.toLowerCase() ? style.active : style.sortButton}`}
+              onClick={() => handleSecondFilter(tag)}
             >
-              {string}
+              {tag}
             </div>
           ))}
         </div>
       </div>
+
       <div className={style.cases_count}>{state.filteredCases.length} Cases</div>
+
       {state.currentItems.map((item, index) => (
         <Item
           key={index}
@@ -154,18 +158,25 @@ export const CaseStudies = () => {
           indexOnPage={index}
         />
       ))}
+
       <div className={style.pagination_controls}>
         <div className={style.prev_button_container}>
           <button className={style.buttonPrev} onClick={handleClickPrev} disabled={state.currentPage === 1} />
           {state.currentPage === 1 ? (
-            <img className={style.disabled_arrow} src={disabledPaginationArrow} alt='prevArrow' />
+            <img
+              className={style.disabled_arrow}
+              src={'icons/CaseStudies/disabledPaginationArrow.svg'}
+              alt='prevArrow'
+            />
           ) : (
-            <img className={style.enabled_arrow} src={paginationArrow} alt='prevArrow' />
+            <img className={style.enabled_arrow} src={'icons/CaseStudies/paginationArrow.svg'} alt='prevArrow' />
           )}
         </div>
+
         <div className={style.page_number}>
           {state.totalPages === 0 ? 0 : state.currentPage} / {state.totalPages}
         </div>
+
         <div className={style.next_button_container}>
           <button
             className={style.buttonNext}
@@ -173,9 +184,13 @@ export const CaseStudies = () => {
             disabled={state.currentPage === state.totalPages}
           />
           {state.currentPage === state.totalPages ? (
-            <img className={style.disabled_arrow} src={disabledPaginationArrow} alt='nextArrow' />
+            <img
+              className={style.disabled_arrow}
+              src={'icons/CaseStudies/disabledPaginationArrow.svg'}
+              alt='nextArrow'
+            />
           ) : (
-            <img className={style.enabled_arrow} src={paginationArrow} alt='nextArrow' />
+            <img className={style.enabled_arrow} src={'icons/CaseStudies/paginationArrow.svg'} alt='nextArrow' />
           )}
         </div>
       </div>

@@ -1,35 +1,32 @@
-import { images } from '../../assets/images/Industries';
-import { icons } from '../../assets/icons/Industries';
-
 export const industries = [
   {
     description: 'Education',
-    icon: icons.book,
-    image: images.edu,
+    icon: '/icons/Industries/Book.svg',
+    image: '/images/Industries/edu.webp',
   },
   {
     description: 'Real Estate',
-    icon: icons.home,
-    image: images.estate,
+    icon: '/icons/Industries/Home.svg',
+    image: '/images/Industries/estate.webp',
   },
   {
     description: 'Enterprise applications',
-    icon: icons.enterprise,
-    image: images.enterprise,
+    icon: '/icons/Industries/Enterprise.svg',
+    image: '/images/Industries/enterprise.webp',
   },
   {
     description: 'B2C & B2B eCommerce',
-    icon: icons.cart,
-    image: images.ecom,
+    icon: '/icons/Industries/Cart.svg',
+    image: '/images/Industries/ecom.webp',
   },
   {
     description: 'FoodTech',
-    icon: icons.food,
-    image: images.foodtech,
+    icon: '/icons/Industries/Food.svg',
+    image: '/images/Industries/foodtech.webp',
   },
   {
     description: 'FinTech',
-    icon: icons.finance,
-    image: images.fintech,
+    icon: '/icons/Industries/Finance.svg',
+    image: '/images/Industries/fintech.webp',
   },
 ];

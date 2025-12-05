@@ -1,5 +1,8 @@
+'use client';
+
 import { data, table } from './data';
 
+import { Fragment } from 'react/jsx-runtime';
 import style from './Cookies.module.scss';
 
 export const Cookies = () => {
@@ -13,30 +16,34 @@ export const Cookies = () => {
         </div>
       </div>
       <div className={style.cards}>
-        {data.map(card => (
-          <div className={style.card_container}>
+        {data.map((card, i) => (
+          <div key={i} className={style.card_container}>
             <div className={style.card_title}>{card.title}</div>
             {card.paragraphs.map((string, index) => (
-              <div className={style.paragraph}>
+              <div key={index} className={style.paragraph}>
                 <div className={style.card_text}>{string}</div>
                 {card.id === 3 && index === 2 ? (
                   <div className={style.table}>
                     {table.map((row, index) => (
-                      <>
+                      <Fragment key={index}>
                         {index === 0 ? (
                           <div className={style.row}>
-                            {row.map(title => (
-                              <div className={style.row_title}>{title}</div>
+                            {row.map((title, i) => (
+                              <div key={i} className={style.row_title}>
+                                {title}
+                              </div>
                             ))}
                           </div>
                         ) : (
                           <div className={style.row}>
-                            {row.map(string => (
-                              <div className={style.row_string}>{string}</div>
+                            {row.map((string, i) => (
+                              <div key={i} className={style.row_string}>
+                                {string}
+                              </div>
                             ))}
                           </div>
                         )}
-                      </>
+                      </Fragment>
                     ))}
                   </div>
                 ) : undefined}

@@ -1,5 +1,8 @@
-import { Link } from 'react-router-dom';
-import linkArrow from '../../assets/icons/linkArrow.svg';
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
 import { CONTACT, PRIVACY_POLICY, TERMS_OF_USE } from '../../routes';
 import style from './Footer.module.scss';
 
@@ -23,12 +26,12 @@ export const Footer = () => {
         <div className={style.info__links}>
           <div className={style.linkGetInTouch}>
             <div className={style.getInTouch}>
-              <Link to={CONTACT} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <Link href={CONTACT} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 Get in touch
               </Link>
             </div>
             <div className={style.linkIcon}>
-              <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
+              <Image className={style.linkArrow} width={24} height={24} src='icons/linkArrow.svg' alt='link arrow' />
             </div>
           </div>
           <div className={style.linkGoogleMap}>
@@ -38,7 +41,7 @@ export const Footer = () => {
               </a>
             </div>
             <div className={style.linkIcon}>
-              <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
+              <Image className={style.linkArrow} width={24} height={24} src='icons/linkArrow.svg' alt='link arrow' />
             </div>
           </div>
         </div>
@@ -49,7 +52,7 @@ export const Footer = () => {
                 LinkedIn
               </a>
             </div>
-            <img className={style.linkArrow} src={linkArrow} alt='link arrow' />
+            <Image className={style.linkArrow} width={24} height={24} src='icons/linkArrow.svg' alt='link arrow' />
           </div>
         </div>
       </div>
@@ -58,11 +61,11 @@ export const Footer = () => {
           <div className={style.footerEnd__textContent}>© 2025 EtaCar Systems. All rights reserved.</div>
         </div>
         <div className={style.container__termsAndPrivacy}>
-          <Link to={TERMS_OF_USE} className={style.footerEnd__textContent}>
+          <Link href={TERMS_OF_USE} className={style.footerEnd__textContent}>
             Terms of use
           </Link>
           <div className={style.footerEnd__textContent}>|</div>
-          <Link to={PRIVACY_POLICY} className={style.footerEnd__textContent}>
+          <Link href={PRIVACY_POLICY} className={style.footerEnd__textContent}>
             Privacy policy
           </Link>
         </div>

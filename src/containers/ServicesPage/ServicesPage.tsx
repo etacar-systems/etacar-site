@@ -1,8 +1,9 @@
-import React, { lazy, Suspense, useEffect } from 'react';
+'use client';
+
+import { lazy, Suspense, useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 
-// New Services Page Components
 const ServicesHero = lazy(() => import('./components/ServicesHero'));
 const AIStrategy = lazy(() => import('./components/AIStrategy'));
 const AICopilots = lazy(() => import('./components/AICopilots'));
@@ -12,7 +13,6 @@ const SoftwareDelivery = lazy(() => import('./components/SoftwareDelivery'));
 const AIGovernance = lazy(() => import('./components/AIGovernance'));
 const Models = lazy(() => import('./components/Models'));
 
-// Shared Components
 const Footer = lazy(() => import('../../components/Footer'));
 
 export const ServicesPage = () => {

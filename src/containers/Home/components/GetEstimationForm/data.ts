@@ -1,24 +1,22 @@
-import { homePageIcons } from '../../../../assets/icons/Home';
-
 export const data = [
   {
     text: 'Sending your data',
-    icon: homePageIcons.numberIcon1,
+    icon: '/icons/Home/numberIcon.svg',
   },
   {
     text: 'Conducting a free cost and time assessment',
-    icon: homePageIcons.numberIcon2,
+    icon: '/icons/Home/numberIcon2.svg',
   },
   {
     text: 'Conclusion of the contract',
-    icon: homePageIcons.numberIcon3,
+    icon: '/icons/Home/numberIcon3.svg',
   },
   {
     text: 'Project development',
-    icon: homePageIcons.numberIcon4,
+    icon: '/icons/Home/numberIcon4.svg',
   },
   {
     text: 'Project release',
-    icon: homePageIcons.numberIcon5,
+    icon: '/icons/Home/numberIcon5.svg',
   },
 ];

@@ -1,7 +1,8 @@
-import { useState, ChangeEvent, FormEvent } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+'use client';
 
-import { homePageIcons } from '../../../../assets/icons/Home';
+import { useForm, ValidationError } from '@formspree/react';
+import { ChangeEvent, FormEvent, useState } from 'react';
+
 import { Button } from '../../../../components/Button';
 import { Input } from '../../../../components/UI/Input';
 import { data } from './data';
@@ -131,10 +132,10 @@ export const GetEstimationForm = () => {
                 </div>
               </div>
               <div className={style.radio_buttons}>
-                <input type='radio' name='budget' value='Up to $25k' checked={radioChosen.UpTo25} />
-                <input type='radio' name='budget' value='$25k - $50k' checked={radioChosen.From25To50} />
-                <input type='radio' name='budget' value='$50k - $100k' checked={radioChosen.From50To100} />
-                <input type='radio' name='budget' value='Over $100k' checked={radioChosen.Over100} />
+                <input type='radio' name='budget' value='Up to $25k' checked={radioChosen.UpTo25} readOnly />
+                <input type='radio' name='budget' value='$25k - $50k' checked={radioChosen.From25To50} readOnly />
+                <input type='radio' name='budget' value='$50k - $100k' checked={radioChosen.From50To100} readOnly />
+                <input type='radio' name='budget' value='Over $100k' checked={radioChosen.Over100} readOnly />
               </div>
             </div>
             <div className={style.tell_us_more}>
@@ -153,7 +154,7 @@ export const GetEstimationForm = () => {
               <div className={style.attach_file_header}>Attach a file</div>
               <div className={style.attach}>
                 <input className={style.attach_file_input} name='document' type='file' onChange={handleFileChange} />
-                <img className={style.attach_file_icon} src={homePageIcons.attachIcon} alt='attach file' />
+                <img className={style.attach_file_icon} src={'icons/Home/attachIcon.svg'} alt='attach file' />
               </div>
               {file && <div>{file.name}</div>}
             </div>

@@ -1,7 +1,7 @@
-import React from 'react';
+'use client';
 
-import style from './TagsContainer.module.scss';
 import { Tag } from '../Tag';
+import style from './TagsContainer.module.scss';
 
 interface TagsContainerProps {
   tags: string[];

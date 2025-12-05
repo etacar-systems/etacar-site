@@ -1,5 +1,6 @@
-import { useNavigate } from 'react-router';
-import { aboutUsImages } from '../../../../assets/images/AboutUs';
+'use client';
+
+import { useRouter } from 'next/navigation';
 import { Button } from '../../../../components/Button';
 import { CONTACT } from '../../../../routes';
 import style from './Introduction.module.scss';
@@ -12,7 +13,7 @@ const infoText = [
 ];
 
 export const Introduction = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
@@ -20,21 +21,23 @@ export const Introduction = () => {
           <div className={style.columnLeft}>
             <div className={style.aboutUs}>About Us</div>
             <div className={style.aboutUsImage}>
-              <img src={aboutUsImages.aboutUs} alt='About Us' />
+              <img src='/images/AboutUs/aboutUs.webp' alt='About Us' />
             </div>
           </div>
           <div className={style.columnRight}>
             <div className={style.ourTeamImage}>
-              <img src={aboutUsImages.ourTeam} alt='Our Team' />
+              <img src='/images/AboutUs/ourTeam.webp' alt='Our Team' />
             </div>
-            {infoText.map(string => (
-              <div className={style.info}>{string}</div>
+            {infoText.map((string, i) => (
+              <div key={i} className={style.info}>
+                {string}
+              </div>
             ))}
 
             <div className={style.infoBold}>EtaCar Systems — Orchestrating Intelligence. Navigating Complexity.</div>
 
             <div className={style.buttonBlock}>
-              <Button title='Get In Touch' type='ghost' onClick={() => navigate(CONTACT)} icon={true} />
+              <Button title='Get In Touch' type='ghost' onClick={() => router.push(CONTACT)} icon={true} />
             </div>
           </div>
         </div>

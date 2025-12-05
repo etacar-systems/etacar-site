@@ -1,4 +1,6 @@
-import React, { lazy, Suspense, useEffect } from 'react';
+'use client';
+
+import { lazy, Suspense, useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 
@@ -12,7 +14,7 @@ export const ContactUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <Suspense fallback={<Loader />}>
       <FadeInSection>
@@ -31,4 +33,3 @@ export const ContactUs = () => {
     </Suspense>
   );
 };
-

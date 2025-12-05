@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';
 import styles from './BroaderTeam.module.scss';

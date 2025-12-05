@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './CrossIndustrySection.module.scss';
@@ -23,8 +25,8 @@ const CrossIndustrySection: React.FC<CrossIndustrySectionProps> = ({ useCases })
         <div className={styles.header}>
           <h2 className={styles.title}>Cross‑industry use cases</h2>
           <p className={styles.intro}>
-            While each industry has its specifics, many of the most valuable AI initiatives
-            repeat across domains. Below are cross‑industry patterns we see most often.
+            While each industry has its specifics, many of the most valuable AI initiatives repeat across domains. Below
+            are cross‑industry patterns we see most often.
           </p>
         </div>
 
@@ -32,7 +34,7 @@ const CrossIndustrySection: React.FC<CrossIndustrySectionProps> = ({ useCases })
           {useCases.map((useCase, index) => (
             <div key={index} className={styles.card}>
               <h3 className={styles.cardTitle}>{useCase.title}</h3>
-              
+
               <div className={styles.section}>
                 <h4 className={styles.label}>What it is:</h4>
                 <p className={styles.text}>{useCase.whatItIs}</p>
@@ -82,7 +84,9 @@ const CrossIndustrySection: React.FC<CrossIndustrySectionProps> = ({ useCases })
                 <h4 className={styles.label}>Main services:</h4>
                 <div className={styles.tags}>
                   {useCase.services.map((service, i) => (
-                    <span key={i} className={styles.tag}>{service}</span>
+                    <span key={i} className={styles.tag}>
+                      {service}
+                    </span>
                   ))}
                 </div>
               </div>

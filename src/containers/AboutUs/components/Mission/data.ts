@@ -1,5 +1,3 @@
-import image from '../../../../assets/images/allTeam.svg';
-
 export const description = `We believe that teamwork and partnership are key to our joint success. 
   Our passion is to deliver stable and functional products. 
   We build viable and competitive products from A to Z using the following principles:`;
@@ -27,6 +25,6 @@ export const about = [
     subtitle: 'Client countries',
   },
   {
-    src: image,
+    src: '/images/allTeam.svg',
   },
 ];

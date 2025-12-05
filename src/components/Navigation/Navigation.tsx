@@ -1,17 +1,15 @@
-import React from 'react';
+'use client';
 
-import blackArrowIcon from '../../assets/icons/blackArrow.svg';
-import whiteArrowIcon from '../../assets/icons/arrow.svg';
+import classNames from 'classnames';
 
 import style from './Navigation.module.scss';
-import classNames from 'classnames';
 
 type NavigationProps = {
   arrowColor?: 'light' | 'dark';
 };
 
 export const Navigation = ({ arrowColor = 'light' }: NavigationProps) => {
-  const arrowImg = arrowColor === 'light' ? whiteArrowIcon : blackArrowIcon;
+  const arrowImg = arrowColor === 'light' ? '/icons/arrow.svg' : '/icons/blackArrow.svg';
   return (
     <div className={style.container}>
       <img
