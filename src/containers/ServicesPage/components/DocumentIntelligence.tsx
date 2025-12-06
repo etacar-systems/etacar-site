@@ -1,12 +1,14 @@
+'use client';
+
 import React from 'react';
 import ServiceDetail from './ServiceDetail';
 
 export const DocumentIntelligence: React.FC = () => {
   return (
     <ServiceDetail
-      id="document-intelligence"
-      title="Document & Knowledge Intelligence"
-      oneLiner="Turn your contracts, policies and technical documentation into a trusted knowledge layer."
+      id='document-intelligence'
+      title='Document & Knowledge Intelligence'
+      oneLiner='Turn your contracts, policies and technical documentation into a trusted knowledge layer.'
       problemWeSolve="Critical knowledge is often buried in documents, shared drives and legacy systems. People spend hours searching, or simply guess. That doesn't work when regulators, customers or partners expect clear answers."
       whatWeDeliver={[
         'A unified knowledge layer across contracts, policies, procedures and technical docs',

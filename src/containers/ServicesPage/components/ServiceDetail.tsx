@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';

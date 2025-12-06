@@ -1,20 +1,23 @@
-import { useState, useEffect } from 'react';
+'use client';
+
+import { useEffect, useState } from 'react';
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
   return {
-    width,
-    height,
+    width: window.innerWidth,
+    height: window.innerHeight,
   };
 }
 
 export const useViewportSize = () => {
-  const [viewportSize, setViewportSize] = useState(getWindowDimensions());
+  const [viewportSize, setViewportSize] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
     function handleResize() {
       setViewportSize(getWindowDimensions());
     }
+
+    handleResize();
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);

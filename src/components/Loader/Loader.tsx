@@ -1,3 +1,5 @@
+'use client';
+
 import { LoadingOutlined } from '@ant-design/icons';
 import { Space, Spin } from 'antd';
 

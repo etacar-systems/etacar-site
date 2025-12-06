@@ -1,12 +1,13 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+'use client';
 
-import { Section } from '../../components/Section';
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { Navigation as NavigationArrows } from '../../components/Navigation';
+import { Section } from '../../components/Section';
+import { useViewportSize } from '../../hooks/useViewportSize';
 import { Review } from './components';
 import { people } from './data';
-import { useViewportSize } from '../../hooks/useViewportSize';
 import styles from './Reviews.module.scss';
 
 interface ReviewsProps {
@@ -38,7 +39,7 @@ export const Reviews = ({ arrowColor, textColor, theme }: ReviewsProps) => {
           slidesPerView={slidesCount}
         >
           {people.map((person, index) => (
-            <SwiperSlide area-hidden key={index}>
+            <SwiperSlide aria-hidden key={index}>
               <Review
                 avatar={person.avatar}
                 company={person.company}

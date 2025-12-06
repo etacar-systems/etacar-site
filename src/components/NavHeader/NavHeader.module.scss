@@ -1,7 +1,7 @@
 @import '../../styles/design-tokens.scss';
 @import '../../styles/colors.scss';
 
-header {
+.header {
   position: sticky;
   top: 0;
   background-color: $color--white;

@@ -1,7 +1,6 @@
-import { useNavigate } from 'react-router-dom';
+'use client';
 
-import successIcon from '../../../../assets/icons/success.svg';
-
+import { useRouter } from 'next/navigation';
 import { Button } from '../../../../components/Button';
 import { Section } from '../../../../components/Section';
 import { CONTACT } from '../../../../routes';
@@ -10,16 +9,16 @@ import { about, description, principles } from './data';
 import style from './Mission.module.scss';
 
 export const Mission = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   return (
     <Section theme={'blueLight'} title={`OUR \n MISSION`}>
       <div className={style.container}>
         <div>
           <div className={style.description}>{description}</div>
           <div className={style.list}>
-            {principles.map(principle => (
-              <div>
-                <img src={successIcon} alt={'icon'} />
+            {principles.map((principle, i) => (
+              <div key={i}>
+                <img src={'icons/success.svg'} alt={'icon'} />
                 {principle}
               </div>
             ))}
@@ -31,7 +30,7 @@ export const Mission = () => {
               <Card description={data.subtitle} key={index} src={data.src} title={data.title} />
             ))}
           </div>
-          <Button fullWidth icon onClick={() => navigate(CONTACT)} title={'Contact us'} type={'ghost'} />
+          <Button fullWidth icon onClick={() => router.push(CONTACT)} title={'Contact us'} type={'ghost'} />
         </div>
       </div>
     </Section>

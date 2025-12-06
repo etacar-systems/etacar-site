@@ -1,3 +1,5 @@
+'use client';
+
 import style from './Introduction.module.scss';
 
 export const Introduction = () => {
@@ -20,9 +22,7 @@ export const Introduction = () => {
           <div className={style.textSecondary}>
             Implementation &amp; Testing <span className={style.textSecondaryBlue}>/</span>
           </div>
-          <div className={style.textSecondary}>
-            QA, Launch &amp; Continuous Optimization
-          </div>
+          <div className={style.textSecondary}>QA, Launch &amp; Continuous Optimization</div>
         </div>
       </div>
     </div>

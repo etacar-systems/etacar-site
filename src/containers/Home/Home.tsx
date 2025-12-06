@@ -1,11 +1,11 @@
+'use client';
+
 import React, { lazy, Suspense, useEffect } from 'react';
+import Reviews from '../../commonSections/Reviews';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
-import styles from './Home.module.scss';
-import Reviews from '../../commonSections/Reviews';
 import GetEstimationForm from './components/GetEstimationForm';
 
-// New Home Page Sections
 const HeroSection = lazy(() => import('./components/HeroSection'));
 const WhoWeWorkWith = lazy(() => import('./components/WhoWeWorkWith'));
 const WhatWeDo = lazy(() => import('./components/WhatWeDo'));
@@ -14,9 +14,7 @@ const Development = lazy(() => import('./components/Development'));
 const ResultsMeasure = lazy(() => import('./components/ResultsMeasure'));
 const HowWeWork = lazy(() => import('./components/HowWeWork'));
 const ExperienceSection = lazy(() => import('./components/ExperienceSection'));
-const FinalCTA = lazy(() => import('./components/FinalCTA'));
-
-// Shared Components
+const FinalCTA = lazy(() => import('./components/FinalCTA/FinalCTA'));
 const Footer = lazy(() => import('../../components/Footer'));
 
 export const Home: React.FC = () => {
@@ -26,7 +24,7 @@ export const Home: React.FC = () => {
 
   return (
     <Suspense fallback={<Loader />}>
-      <div className={styles.container}>
+      <div>
         <FadeInSection>
           <HeroSection />
         </FadeInSection>

@@ -1,3 +1,5 @@
+'use client';
+
 import { lazy, Suspense, useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
@@ -41,7 +43,7 @@ export const AboutUs = () => {
       <FadeInSection>
         <LeadershipTeam />
       </FadeInSection>
-      
+
       <FadeInSection>
         <WhoWeAre />
         <NeuroscienceSection />

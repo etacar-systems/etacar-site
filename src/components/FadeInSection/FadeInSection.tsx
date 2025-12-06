@@ -1,14 +1,20 @@
-import { ReactNode, useEffect, useRef, useState } from 'react';
+'use client';
 
+import { ReactNode, useEffect, useRef, useState } from 'react';
 import style from './FadeInSection.module.scss';
 
 interface FadeInSectionProps {
   children: ReactNode;
 }
+
 export const FadeInSection = ({ children }: FadeInSectionProps) => {
-  const [isVisible, setVisible] = useState<boolean>(false);
-  const [prevY, setPrevY] = useState<number>(window.scrollY);
+  const [isVisible, setVisible] = useState(false);
+  const [prevY, setPrevY] = useState(0); // временно 0
   const domRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    setPrevY(window.scrollY);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {

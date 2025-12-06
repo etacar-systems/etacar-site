@@ -1,6 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+'use client';
 
+import { useRouter } from 'next/navigation';
 import { Section } from '../../components/Section';
 import { CASE_STUDY } from '../../routes';
 import { IndustryCard } from './components/IndustryCard';
@@ -13,14 +13,14 @@ interface IndustryCardProps {
 }
 
 export const Industries = ({ textColor, theme }: IndustryCardProps) => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <Section textColor={textColor} theme={theme} title={'INDUSTRIES'}>
       <div className={styles.cards}>
         {industries.map((data, index) => (
           <IndustryCard
-            onClick={() => navigate(CASE_STUDY)}
+            onClick={() => router.push(CASE_STUDY)}
             description={data.description}
             icon={data.icon}
             image={data.image}

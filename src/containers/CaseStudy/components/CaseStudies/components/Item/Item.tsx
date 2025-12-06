@@ -1,6 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router';
+'use client';
 
+import { useRouter } from 'next/navigation';
 import { Button } from '../../../../../../components/Button';
 import { TagsContainer } from '../../../../../../components/TagsContainer';
 import { CONTACT } from '../../../../../../routes';
@@ -17,7 +17,7 @@ interface ItemProps {
 }
 
 export const Item = ({ indexOnPage, image, paragraphs, tags, title, orderReverse, index }: ItemProps) => {
-  const navigate = useNavigate();
+  const router = useRouter();
   return (
     <>
       {indexOnPage === 2 ? (
@@ -27,7 +27,7 @@ export const Item = ({ indexOnPage, image, paragraphs, tags, title, orderReverse
             <div>Get a free project estimation</div>
           </div>
           <div>
-            <Button type='ghost' title='Get started' icon={true} onClick={() => navigate(CONTACT)} />
+            <Button type='ghost' title='Get started' icon={true} onClick={() => router.push(CONTACT)} />
           </div>
         </div>
       ) : undefined}

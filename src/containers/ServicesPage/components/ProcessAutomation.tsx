@@ -1,12 +1,14 @@
+'use client';
+
 import React from 'react';
 import ServiceDetail from './ServiceDetail';
 
 export const ProcessAutomation: React.FC = () => {
   return (
     <ServiceDetail
-      id="process-automation"
-      title="AI-Powered Process Automation"
-      oneLiner="End-to-end AI workflows for complex, high-impact processes — with humans still in control."
+      id='process-automation'
+      title='AI-Powered Process Automation'
+      oneLiner='End-to-end AI workflows for complex, high-impact processes — with humans still in control.'
       typicalProcesses={[
         'KYC/AML and periodic customer reviews',
         'Incident and major incident management',

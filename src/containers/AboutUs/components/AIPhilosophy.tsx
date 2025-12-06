@@ -1,6 +1,8 @@
+'use client';
+
 import React from 'react';
-import styles from './AIPhilosophy.module.scss';
 import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';
+import styles from './AIPhilosophy.module.scss';
 
 const AIPhilosophy: React.FC = () => {
   const requirements = [

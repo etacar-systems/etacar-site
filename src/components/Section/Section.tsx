@@ -1,6 +1,8 @@
+'use client';
+
+import classNames from 'classnames';
 import { ReactNode } from 'react';
 import style from './Section.module.scss';
-import classNames from 'classnames';
 
 interface SectionProps {
   children: ReactNode;
@@ -11,7 +13,14 @@ interface SectionProps {
   titleClassName?: string;
 }
 
-export const Section = ({ children, theme = 'light', title, subtitle, textColor = 'light', titleClassName }: SectionProps) => {
+export const Section = ({
+  children,
+  theme = 'light',
+  title,
+  subtitle,
+  textColor = 'light',
+  titleClassName,
+}: SectionProps) => {
   return (
     <div className={style.container} data-theme={theme}>
       <div className={style.container_inner}>

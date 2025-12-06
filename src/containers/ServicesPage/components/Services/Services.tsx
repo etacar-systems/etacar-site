@@ -1,3 +1,5 @@
+'use client';
+
 import style from './Services.module.scss';
 
 const fullServices = {
@@ -145,12 +147,6 @@ export const Services = () => {
                 </ul>
               </>
             )}
-
-            {/* {section.cta && (
-              <a className={style.cta} href={section.cta.url}>
-                {section.cta.label} →
-              </a>
-            )} */}
           </div>
         ))}
       </div>

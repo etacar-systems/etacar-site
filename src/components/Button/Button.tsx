@@ -1,7 +1,6 @@
-import React from 'react';
+'use client';
 
-import arrowIcon from '../../assets/icons/arrow.svg';
-
+import { ReactElement } from 'react';
 import style from './Button.module.scss';
 
 interface ButtonProps {
@@ -12,7 +11,7 @@ interface ButtonProps {
   type: 'bordered' | 'ghost' | 'solid';
 }
 
-export const Button = ({ fullWidth = false, onClick, icon, title, type }: ButtonProps) => {
+export const Button = ({ fullWidth = false, onClick, icon, title, type }: ButtonProps): ReactElement => {
   return (
     <button
       className={`${style.button} ${type ? style[`button__${type}`] : ''}`}
@@ -20,7 +19,7 @@ export const Button = ({ fullWidth = false, onClick, icon, title, type }: Button
       onClick={onClick}
     >
       {title}
-      {icon && <img src={arrowIcon} alt={'arrow'} />}
+      {icon && <img src='/icons/arrow.svg' alt={'arrow'} />}
     </button>
   );
 };

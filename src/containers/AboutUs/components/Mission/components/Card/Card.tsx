@@ -1,3 +1,5 @@
+'use client';
+
 import style from './Card.module.scss';
 
 interface CardProps {

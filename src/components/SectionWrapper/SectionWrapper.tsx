@@ -1,5 +1,7 @@
-import React from 'react';
+'use client';
+
 import classNames from 'classnames';
+import React from 'react';
 import styles from './SectionWrapper.module.scss';
 
 export interface SectionWrapperProps {
@@ -9,12 +11,7 @@ export interface SectionWrapperProps {
   id?: string;
 }
 
-export const SectionWrapper: React.FC<SectionWrapperProps> = ({
-  children,
-  className,
-  variant = 'default',
-  id,
-}) => {
+export const SectionWrapper: React.FC<SectionWrapperProps> = ({ children, className, variant = 'default', id }) => {
   return (
     <section id={id} className={classNames(styles.section, styles[variant], className)}>
       <div className={styles.container}>{children}</div>

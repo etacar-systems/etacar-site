@@ -1,13 +1,15 @@
+'use client';
+
 import React from 'react';
 import ServiceDetail from './ServiceDetail';
 
 export const AICopilots: React.FC = () => {
   return (
     <ServiceDetail
-      id="ai-copilots"
-      title="AI Copilots for Critical Roles"
-      oneLiner="Role-specific AI assistants for people who make high-stakes decisions every day."
-      bestFor="Heads of risk, operations, sales, customer service and other leaders who need their teams to decide faster and with better use of existing knowledge."
+      id='ai-copilots'
+      title='AI Copilots for Critical Roles'
+      oneLiner='Role-specific AI assistants for people who make high-stakes decisions every day.'
+      bestFor='Heads of risk, operations, sales, customer service and other leaders who need their teams to decide faster and with better use of existing knowledge.'
       whatWeDeliver={[
         'Design of role-specific workflows: how the copilot helps in daily decisions',
         'Integration with your tools: email, chat, CRM, BI, ticketing, internal systems',
