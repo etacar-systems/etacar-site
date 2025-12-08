@@ -165,11 +165,11 @@ export const CaseStudies = () => {
           {state.currentPage === 1 ? (
             <img
               className={style.disabled_arrow}
-              src={'icons/CaseStudies/disabledPaginationArrow.svg'}
+              src={'/icons/CaseStudies/disabledPaginationArrow.svg'}
               alt='prevArrow'
             />
           ) : (
-            <img className={style.enabled_arrow} src={'icons/CaseStudies/paginationArrow.svg'} alt='prevArrow' />
+            <img className={style.enabled_arrow} src={'/icons/CaseStudies/paginationArrow.svg'} alt='prevArrow' />
           )}
         </div>
 
@@ -190,7 +190,7 @@ export const CaseStudies = () => {
               alt='nextArrow'
             />
           ) : (
-            <img className={style.enabled_arrow} src={'icons/CaseStudies/paginationArrow.svg'} alt='nextArrow' />
+            <img className={style.enabled_arrow} src={'/icons/CaseStudies/paginationArrow.svg'} alt='nextArrow' />
           )}
         </div>
       </div>

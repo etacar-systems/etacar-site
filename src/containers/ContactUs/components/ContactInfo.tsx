@@ -44,7 +44,7 @@ export const ContactInfo: React.FC = () => {
               </p>
               <a href='mailto:info@etacar.io' target='_blank' rel='noreferrer' className={styles.link}>
                 <span>Send us an email</span>
-                <img src={'icons/linkArrow.svg'} alt='arrow' className={styles.linkArrow} />
+                <img src={'/icons/linkArrow.svg'} alt='arrow' className={styles.linkArrow} />
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ export const ContactInfo: React.FC = () => {
                 className={styles.link}
               >
                 <span>View on Google Maps</span>
-                <img src={'icons/linkArrow.svg'} alt='arrow' className={styles.linkArrow} />
+                <img src={'/icons/linkArrow.svg'} alt='arrow' className={styles.linkArrow} />
               </a>
             </div>
           </div>

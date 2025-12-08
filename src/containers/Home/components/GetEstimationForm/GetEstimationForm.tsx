@@ -154,7 +154,7 @@ export const GetEstimationForm = () => {
               <div className={style.attach_file_header}>Attach a file</div>
               <div className={style.attach}>
                 <input className={style.attach_file_input} name='document' type='file' onChange={handleFileChange} />
-                <img className={style.attach_file_icon} src={'icons/Home/attachIcon.svg'} alt='attach file' />
+                <img className={style.attach_file_icon} src={'/icons/Home/attachIcon.svg'} alt='attach file' />
               </div>
               {file && <div>{file.name}</div>}
             </div>

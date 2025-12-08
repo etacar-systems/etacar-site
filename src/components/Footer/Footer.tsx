@@ -31,7 +31,7 @@ export const Footer = () => {
               </Link>
             </div>
             <div className={style.linkIcon}>
-              <Image className={style.linkArrow} width={24} height={24} src='icons/linkArrow.svg' alt='link arrow' />
+              <Image className={style.linkArrow} width={24} height={24} src='/icons/linkArrow.svg' alt='link arrow' />
             </div>
           </div>
           <div className={style.linkGoogleMap}>
@@ -41,7 +41,7 @@ export const Footer = () => {
               </a>
             </div>
             <div className={style.linkIcon}>
-              <Image className={style.linkArrow} width={24} height={24} src='icons/linkArrow.svg' alt='link arrow' />
+              <Image className={style.linkArrow} width={24} height={24} src='/icons/linkArrow.svg' alt='link arrow' />
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ export const Footer = () => {
                 LinkedIn
               </a>
             </div>
-            <Image className={style.linkArrow} width={24} height={24} src='icons/linkArrow.svg' alt='link arrow' />
+            <Image className={style.linkArrow} width={24} height={24} src='/icons/linkArrow.svg' alt='link arrow' />
           </div>
         </div>
       </div>

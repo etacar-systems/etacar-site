@@ -18,7 +18,7 @@ export const Mission = () => {
           <div className={style.list}>
             {principles.map((principle, i) => (
               <div key={i}>
-                <img src={'icons/success.svg'} alt={'icon'} />
+                <img src={'/icons/success.svg'} alt={'icon'} />
                 {principle}
               </div>
             ))}
