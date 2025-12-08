@@ -1,25 +1,15 @@
-'use client';
-
-import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import Loader from '../../components/Loader';
 
-const ServicesHero = dynamic(() => import('./components/ServicesHero'), { ssr: false, loading: () => <Loader /> });
-const AIStrategy = dynamic(() => import('./components/AIStrategy'), { ssr: false });
-const AICopilots = dynamic(() => import('./components/AICopilots'), { ssr: false });
-const ProcessAutomation = dynamic(() => import('./components/ProcessAutomation'), {
-  ssr: false,
-});
-const DocumentIntelligence = dynamic(() => import('./components/DocumentIntelligence'), {
-  ssr: false,
-});
-const SoftwareDelivery = dynamic(() => import('./components/SoftwareDelivery'), {
-  ssr: false,
-});
-const AIGovernance = dynamic(() => import('./components/AIGovernance'), { ssr: false });
-const Models = dynamic(() => import('./components/Models'), { ssr: false });
-const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
+import Footer from '../../components/Footer';
+import AICopilots from './components/AICopilots';
+import AIGovernance from './components/AIGovernance';
+import AIStrategy from './components/AIStrategy';
+import DocumentIntelligence from './components/DocumentIntelligence';
+import Models from './components/Models';
+import ProcessAutomation from './components/ProcessAutomation';
+import ServicesHero from './components/ServicesHero';
+import SoftwareDelivery from './components/SoftwareDelivery';
 
 export const ServicesPage = () => {
   useEffect(() => {

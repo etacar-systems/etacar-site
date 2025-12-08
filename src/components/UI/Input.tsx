@@ -1,5 +1,3 @@
-'use client';
-
 import style from './Input.module.scss';
 
 interface InputProps {

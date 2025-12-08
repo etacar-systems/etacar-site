@@ -1,26 +1,20 @@
-'use client';
-
-import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import Loader from '../../components/Loader';
 import { Location } from '../../components/Location';
 
-const TeamHero = dynamic(() => import('./components/TeamHero'), { ssr: false, loading: () => <Loader /> });
-const OurStory = dynamic(() => import('./components/OurStory'), { ssr: false });
-const Introduction = dynamic(() => import('./components/Introduction'), { ssr: false });
-const Expirience = dynamic(() => import('./components/Experience'), { ssr: false });
-const LeadershipTeam = dynamic(() => import('./components/LeadershipTeam'), { ssr: false });
-const WhoWeAre = dynamic(() => import('./components/WhoWeAre'), { ssr: false });
-const NeuroscienceSection = dynamic(() => import('./components/NeuroscienceSection'), {
-  ssr: false,
-});
-const AIPhilosophy = dynamic(() => import('./components/AIPhilosophy'), { ssr: false });
-const BroaderTeam = dynamic(() => import('./components/BroaderTeam'), { ssr: false });
-const ClientWork = dynamic(() => import('./components/ClientWork'), { ssr: false });
-const Mission = dynamic(() => import('./components/Mission'), { ssr: false });
-const Reviews = dynamic(() => import('../../commonSections/Reviews'), { ssr: false });
-const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
+import Reviews from '../../commonSections/Reviews';
+import Footer from '../../components/Footer';
+import AIPhilosophy from './components/AIPhilosophy';
+import BroaderTeam from './components/BroaderTeam';
+import ClientWork from './components/ClientWork';
+import Expirience from './components/Experience';
+import Introduction from './components/Introduction';
+import LeadershipTeam from './components/LeadershipTeam';
+import Mission from './components/Mission';
+import NeuroscienceSection from './components/NeuroscienceSection';
+import OurStory from './components/OurStory';
+import TeamHero from './components/TeamHero';
+import WhoWeAre from './components/WhoWeAre';
 
 export const AboutUs = () => {
   useEffect(() => {

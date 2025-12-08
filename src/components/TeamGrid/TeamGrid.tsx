@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import TeamCard, { TeamMember } from '../TeamCard/TeamCard';
 import style from './TeamGrid.module.scss';

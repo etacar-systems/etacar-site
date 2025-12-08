@@ -1,5 +1,3 @@
-'use client';
-
 import { Tag } from '../Tag';
 import style from './TagsContainer.module.scss';
 

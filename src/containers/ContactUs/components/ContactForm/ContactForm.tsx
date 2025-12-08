@@ -1,5 +1,3 @@
-'use client';
-
 import { useForm, ValidationError } from '@formspree/react';
 import { Button } from '../../../../components/Button';
 import { SectionWrapper } from '../../../../components/SectionWrapper';

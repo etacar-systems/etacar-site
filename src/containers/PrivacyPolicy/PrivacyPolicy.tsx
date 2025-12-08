@@ -1,16 +1,10 @@
-'use client';
-
-import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import Loader from '../../components/Loader';
 
-const Introduction = dynamic(() => import('./components/Introduction'), { ssr: false, loading: () => <Loader /> });
-const Cookies = dynamic(() => import('./components/Cookies'), { ssr: false });
-const InformationSecurity = dynamic(() => import('./components/InformationSecurity'), {
-  ssr: false,
-});
-const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
+import Footer from '../../components/Footer';
+import Cookies from './components/Cookies';
+import InformationSecurity from './components/InformationSecurity';
+import Introduction from './components/Introduction';
 
 export const PrivacyPolicy = () => {
   useEffect(() => {

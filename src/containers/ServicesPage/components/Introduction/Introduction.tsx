@@ -1,5 +1,3 @@
-'use client';
-
 import style from './Introduction.module.scss';
 
 export const Introduction = () => {

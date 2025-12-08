@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './IndustryCard.module.scss';
 
 interface ItemProps {

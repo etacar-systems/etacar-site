@@ -1,5 +1,3 @@
-'use client';
-
 import { data, expirience } from './data';
 import style from './Expirience.module.scss';
 

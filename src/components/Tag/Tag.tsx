@@ -1,5 +1,3 @@
-'use client';
-
 import style from './Tag.module.scss';
 
 interface TagProps {

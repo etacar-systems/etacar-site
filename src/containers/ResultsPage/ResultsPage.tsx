@@ -1,26 +1,13 @@
-'use client';
-
-import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import Loader from '../../components/Loader';
 
-// Динамический импорт компонентов
-const HeroSection = dynamic(() => import('./components/HeroSection'), { ssr: false, loading: () => <Loader /> });
-const SuccessDefinition = dynamic(() => import('./components/SuccessDefinition'), {
-  ssr: false,
-});
-const ImpactAtAGlance = dynamic(() => import('./components/ImpactAtAGlance'), {
-  ssr: false,
-});
-const CaseStudies = dynamic(() => import('./components/CaseStudies'), { ssr: false, loading: () => <Loader /> });
-const MeasurementFramework = dynamic(() => import('./components/MeasurementFramework'), {
-  ssr: false,
-});
-const DataIntegration = dynamic(() => import('./components/DataIntegration'), {
-  ssr: false,
-});
-const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
+import Footer from '../../components/Footer';
+import CaseStudies from './components/CaseStudies';
+import DataIntegration from './components/DataIntegration';
+import HeroSection from './components/HeroSection';
+import ImpactAtAGlance from './components/ImpactAtAGlance';
+import MeasurementFramework from './components/MeasurementFramework';
+import SuccessDefinition from './components/SuccessDefinition';
 
 export const ResultsPage: React.FC = () => {
   useEffect(() => {

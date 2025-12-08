@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import FinalCTA from '../../../components/FinalCTA/FinalCTA';
 import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';

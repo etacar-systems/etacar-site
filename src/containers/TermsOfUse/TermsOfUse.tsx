@@ -1,13 +1,10 @@
-'use client';
-
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import { data } from './data';
 
-import dynamic from 'next/dynamic';
 import style from './TermsOfUse.module.scss';
 
-const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
+import Footer from '../../components/Footer';
 
 export const TermsOfUse = () => {
   useEffect(() => {

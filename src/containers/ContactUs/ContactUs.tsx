@@ -1,15 +1,11 @@
-'use client';
-
-import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import Loader from '../../components/Loader';
 
-const HeroSection = dynamic(() => import('./components/HeroSection'), { ssr: false, loading: () => <Loader /> });
-const ContactInfo = dynamic(() => import('./components/ContactInfo'), { ssr: false });
-const ContactForm = dynamic(() => import('./components/ContactForm'), { ssr: false });
-const Reviews = dynamic(() => import('../../commonSections/Reviews'), { ssr: false });
-const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
+import Reviews from '../../commonSections/Reviews';
+import Footer from '../../components/Footer';
+import ContactForm from './components/ContactForm';
+import ContactInfo from './components/ContactInfo';
+import HeroSection from './components/HeroSection';
 
 export const ContactUs = () => {
   useEffect(() => {

@@ -1,5 +1,3 @@
-'use client';
-
 import { data, table } from './data';
 
 import { Fragment } from 'react/jsx-runtime';

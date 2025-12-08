@@ -1,5 +1,3 @@
-'use client';
-
 import { data } from './data';
 
 import style from './Introduction.module.scss';

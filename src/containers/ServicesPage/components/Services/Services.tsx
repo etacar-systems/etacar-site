@@ -1,5 +1,3 @@
-'use client';
-
 import style from './Services.module.scss';
 
 const fullServices = {

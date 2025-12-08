@@ -1,5 +1,3 @@
-'use client';
-
 import { useRouter } from 'next/navigation';
 import { Section } from '../../components/Section';
 import { CASE_STUDY } from '../../routes';

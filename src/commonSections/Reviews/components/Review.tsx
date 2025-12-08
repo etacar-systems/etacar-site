@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './Review.module.scss';
 
 interface ItemProps {

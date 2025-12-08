@@ -1,5 +1,3 @@
-'use client';
-
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 

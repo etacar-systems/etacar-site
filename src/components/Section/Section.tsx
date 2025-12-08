@@ -1,5 +1,3 @@
-'use client';
-
 import classNames from 'classnames';
 import { ReactNode } from 'react';
 import style from './Section.module.scss';

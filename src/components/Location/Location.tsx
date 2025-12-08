@@ -1,5 +1,3 @@
-'use client';
-
 import style from './Location.module.scss';
 
 export const Location = () => {

@@ -1,5 +1,3 @@
-'use client';
-
 import classNames from 'classnames';
 import { Dispatch, SetStateAction } from 'react';
 import { CONTACT } from '../../routes';

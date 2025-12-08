@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './Welcome.module.scss';
 export const Welcome = () => {
   return (

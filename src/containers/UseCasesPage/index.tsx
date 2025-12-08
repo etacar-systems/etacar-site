@@ -1,18 +1,12 @@
-import dynamic from 'next/dynamic';
 import React, { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import Loader from '../../components/Loader';
 import styles from './UseCasesPage.module.scss';
 
-const Hero = dynamic(() => import('./components/Hero'), { ssr: false, loading: () => <Loader /> });
-const IndustrySection = dynamic(() => import('./components/IndustrySection'), {
-  ssr: false,
-});
-const CrossIndustrySection = dynamic(() => import('./components/CrossIndustrySection'), {
-  ssr: false,
-});
-const UseCasesCTA = dynamic(() => import('./components/UseCasesCTA'), { ssr: false });
-const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
+import Footer from '../../components/Footer';
+import CrossIndustrySection from './components/CrossIndustrySection';
+import Hero from './components/Hero';
+import IndustrySection from './components/IndustrySection';
+import UseCasesCTA from './components/UseCasesCTA';
 
 const industries = [
   {

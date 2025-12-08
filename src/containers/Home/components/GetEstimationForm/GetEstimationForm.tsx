@@ -1,5 +1,3 @@
-'use client';
-
 import { useForm, ValidationError } from '@formspree/react';
 import { ChangeEvent, FormEvent, useState } from 'react';
 
