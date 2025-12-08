@@ -32,48 +32,39 @@ export const Home: React.FC = () => {
       <FadeInSection>
         <HeroSection />
       </FadeInSection>
-
       <FadeInSection>
         <WhoWeWorkWith />
       </FadeInSection>
-
       <FadeInSection>
         <WhatWeDo />
       </FadeInSection>
-
       <FadeInSection>
         <FlagshipServices />
       </FadeInSection>
-
       <FadeInSection>
         <Development />
       </FadeInSection>
-
       <FadeInSection>
         <ResultsMeasure />
       </FadeInSection>
-
       <FadeInSection>
         <HowWeWork />
       </FadeInSection>
-
       <FadeInSection>
         <ExperienceSection />
       </FadeInSection>
-
       <FadeInSection>
         <FinalCTA />
       </FadeInSection>
-
       <FadeInSection>
         <Reviews arrowColor='dark' theme='blueLight' />
       </FadeInSection>
-
       <FadeInSection>
         <GetEstimationForm />
       </FadeInSection>
-
-      <Footer />
+      <FadeInSection>
+        <Footer />
+      </FadeInSection>
     </div>
   );
 };

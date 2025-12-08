@@ -1,8 +1,7 @@
 'use client';
 
-import { Suspense, useEffect } from 'react';
+import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import Loader from '../../components/Loader';
 import { data } from './data';
 
 import dynamic from 'next/dynamic';
@@ -15,22 +14,24 @@ export const TermsOfUse = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <FadeInSection>
-      <div className={style.container}>
-        {data.map((section, i) => (
-          <div key={i} className={style.container_inner}>
-            <div className={style.title}>{section.title}</div>
-            {section.paragraphs.map((text, i) => (
-              <div key={i} className={style.secondaryText}>
-                {text}
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
-      <Suspense fallback={<Loader />}>
+    <>
+      <FadeInSection>
+        <div className={style.container}>
+          {data.map((section, i) => (
+            <div key={i} className={style.container_inner}>
+              <div className={style.title}>{section.title}</div>
+              {section.paragraphs.map((text, i) => (
+                <div key={i} className={style.secondaryText}>
+                  {text}
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </FadeInSection>
+      <FadeInSection>
         <Footer />
-      </Suspense>
-    </FadeInSection>
+      </FadeInSection>
+    </>
   );
 };

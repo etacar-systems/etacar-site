@@ -21,20 +21,18 @@ export const CaseStudy = () => {
       <FadeInSection>
         <Welcome />
       </FadeInSection>
-
       <FadeInSection>
         <CaseStudies />
       </FadeInSection>
-
       <FadeInSection>
         <Location />
       </FadeInSection>
-
       <FadeInSection>
         <Reviews textColor='dark' theme='dark' />
       </FadeInSection>
-
-      <Footer />
+      <FadeInSection>
+        <Footer />
+      </FadeInSection>
     </div>
   );
 };

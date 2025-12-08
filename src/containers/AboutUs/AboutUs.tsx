@@ -75,7 +75,9 @@ export const AboutUs = () => {
         <Reviews textColor='dark' theme='dark' />
       </FadeInSection>
 
-      <Footer />
+      <FadeInSection>
+        <Footer />
+      </FadeInSection>
     </>
   );
 };

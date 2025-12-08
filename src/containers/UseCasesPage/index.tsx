@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import React, { Suspense, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 import styles from './UseCasesPage.module.scss';
@@ -271,28 +271,25 @@ const UseCasesPage: React.FC = () => {
   }, []);
 
   return (
-    <Suspense fallback={<Loader />}>
-      <div className={styles.pageWrapper}>
-        <FadeInSection>
-          <Hero />
+    <div className={styles.pageWrapper}>
+      <FadeInSection>
+        <Hero />
+      </FadeInSection>
+      {industries.map((industry, index) => (
+        <FadeInSection key={index}>
+          <IndustrySection {...industry} index={index} />
         </FadeInSection>
-
-        {industries.map((industry, index) => (
-          <FadeInSection key={index}>
-            <IndustrySection {...industry} index={index} />
-          </FadeInSection>
-        ))}
-
-        <FadeInSection>
-          <CrossIndustrySection useCases={crossIndustryUseCases} />
-        </FadeInSection>
-
-        <FadeInSection>
-          <UseCasesCTA />
-        </FadeInSection>
+      ))}
+      <FadeInSection>
+        <CrossIndustrySection useCases={crossIndustryUseCases} />
+      </FadeInSection>
+      <FadeInSection>
+        <UseCasesCTA />
+      </FadeInSection>
+      <FadeInSection>
         <Footer />
-      </div>
-    </Suspense>
+      </FadeInSection>
+    </div>
   );
 };
 

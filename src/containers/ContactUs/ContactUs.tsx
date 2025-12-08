@@ -30,7 +30,9 @@ export const ContactUs = () => {
       <FadeInSection>
         <Reviews textColor='dark' theme='dark' />
       </FadeInSection>
-      <Footer />
+      <FadeInSection>
+        <Footer />
+      </FadeInSection>
     </>
   );
 };

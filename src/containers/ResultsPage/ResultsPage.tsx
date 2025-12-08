@@ -54,8 +54,9 @@ export const ResultsPage: React.FC = () => {
           <DataIntegration />
         </FadeInSection>
       </main>
-
-      <Footer />
+      <FadeInSection>
+        <Footer />
+      </FadeInSection>
     </div>
   );
 };

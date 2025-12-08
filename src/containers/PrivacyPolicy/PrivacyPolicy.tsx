@@ -24,8 +24,9 @@ export const PrivacyPolicy = () => {
         <Cookies />
         <InformationSecurity />
       </FadeInSection>
-
-      <Footer />
+      <FadeInSection>
+        <Footer />
+      </FadeInSection>
     </>
   );
 };

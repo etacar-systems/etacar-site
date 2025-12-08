@@ -31,36 +31,30 @@ export const ServicesPage = () => {
       <FadeInSection>
         <ServicesHero />
       </FadeInSection>
-
       <FadeInSection>
         <AIStrategy />
       </FadeInSection>
-
       <FadeInSection>
         <AICopilots />
       </FadeInSection>
-
       <FadeInSection>
         <ProcessAutomation />
       </FadeInSection>
-
       <FadeInSection>
         <DocumentIntelligence />
       </FadeInSection>
-
       <FadeInSection>
         <SoftwareDelivery />
       </FadeInSection>
-
       <FadeInSection>
         <AIGovernance />
       </FadeInSection>
-
       <FadeInSection>
         <Models />
       </FadeInSection>
-
-      <Footer />
+      <FadeInSection>
+        <Footer />
+      </FadeInSection>
     </div>
   );
 };
