@@ -1,26 +1,20 @@
-'use client';
-
-import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import Loader from '../../components/Loader';
 import GetEstimationForm from './components/GetEstimationForm';
 
-const HeroSection = dynamic(() => import('./components/HeroSection'), { ssr: false, loading: () => <Loader /> });
-const WhoWeWorkWith = dynamic(() => import('./components/WhoWeWorkWith'), { ssr: false });
-const WhatWeDo = dynamic(() => import('./components/WhatWeDo'), { ssr: false });
-const FlagshipServices = dynamic(() => import('./components/FlagshipServices'), {
-  ssr: false,
-});
-const Development = dynamic(() => import('./components/Development'), { ssr: false });
-const ResultsMeasure = dynamic(() => import('./components/ResultsMeasure'), { ssr: false });
-const HowWeWork = dynamic(() => import('./components/HowWeWork'), { ssr: false });
-const ExperienceSection = dynamic(() => import('./components/ExperienceSection'), {
-  ssr: false,
-});
-const FinalCTA = dynamic(() => import('./components/FinalCTA/FinalCTA'), { ssr: false });
-const Reviews = dynamic(() => import('../../commonSections/Reviews'), { ssr: false });
-const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
+import FlagshipServices from './components/FlagshipServices';
+import HeroSection from './components/HeroSection';
+import WhatWeDo from './components/WhatWeDo';
+import WhoWeWorkWith from './components/WhoWeWorkWith';
+
+import Development from './components/Development';
+import ExperienceSection from './components/ExperienceSection';
+import HowWeWork from './components/HowWeWork';
+import ResultsMeasure from './components/ResultsMeasure';
+
+import Reviews from '../../commonSections/Reviews';
+import Footer from '../../components/Footer';
+import FinalCTA from './components/FinalCTA/FinalCTA';
 
 export const Home: React.FC = () => {
   useEffect(() => {

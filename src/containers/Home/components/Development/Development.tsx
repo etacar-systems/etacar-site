@@ -1,5 +1,3 @@
-'use client';
-
 import { SectionWrapper } from '../../../../components/SectionWrapper';
 import styles from './Development.module.scss';
 
