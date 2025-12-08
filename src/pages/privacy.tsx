@@ -1,13 +1,11 @@
-'use client';
-
 import { NavHeader } from '@/components/NavHeader';
-import { ContactUs } from '@/containers/ContactUs';
+import { PrivacyPolicy } from '@/containers/PrivacyPolicy';
 
 export default function Page() {
   return (
     <>
       <NavHeader />
-      <ContactUs />
+      <PrivacyPolicy />
     </>
   );
 }

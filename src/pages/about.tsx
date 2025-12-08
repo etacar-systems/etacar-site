@@ -1,5 +1,3 @@
-'use client';
-
 import { NavHeader } from '@/components/NavHeader';
 import { AboutUs } from '@/containers/AboutUs';
 

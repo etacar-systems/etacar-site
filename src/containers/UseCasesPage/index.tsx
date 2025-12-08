@@ -1,13 +1,18 @@
-import React, { lazy, Suspense, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+import React, { Suspense, useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 import styles from './UseCasesPage.module.scss';
 
-const Hero = lazy(() => import('./components/Hero'));
-const IndustrySection = lazy(() => import('./components/IndustrySection'));
-const CrossIndustrySection = lazy(() => import('./components/CrossIndustrySection'));
-const UseCasesCTA = lazy(() => import('./components/UseCasesCTA'));
-const Footer = lazy(() => import('../../components/Footer'));
+const Hero = dynamic(() => import('./components/Hero'), { ssr: false, loading: () => <Loader /> });
+const IndustrySection = dynamic(() => import('./components/IndustrySection'), {
+  ssr: false,
+});
+const CrossIndustrySection = dynamic(() => import('./components/CrossIndustrySection'), {
+  ssr: false,
+});
+const UseCasesCTA = dynamic(() => import('./components/UseCasesCTA'), { ssr: false });
+const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
 
 const industries = [
   {
@@ -174,7 +179,8 @@ const industries = [
 const crossIndustryUseCases = [
   {
     title: 'AI‑assisted decision support for leaders',
-    whatItIs: 'AI copilots and workflows that help C‑level and senior managers explore scenarios, understand risks and prepare materials for decision‑making.',
+    whatItIs:
+      'AI copilots and workflows that help C‑level and senior managers explore scenarios, understand risks and prepare materials for decision‑making.',
     whoItsFor: ['CEO, COO, CFO, CSO', 'Heads of operations, risk, compliance, strategy'],
     whatItDelivers: [
       'Scenario‑based impact analysis for strategic options',
@@ -186,14 +192,12 @@ const crossIndustryUseCases = [
       'Better coverage of relevant data and documents in each decision',
       'More transparent and consistent risk discussions at the leadership level',
     ],
-    services: [
-      'AI Strategy & Architecture for Business‑Critical Processes',
-      'AI Copilots for Critical Roles',
-    ],
+    services: ['AI Strategy & Architecture for Business‑Critical Processes', 'AI Copilots for Critical Roles'],
   },
   {
     title: 'AI‑orchestrated critical processes',
-    whatItIs: 'End‑to‑end workflows where AI collects information, drafts decisions and routes cases, while humans remain in control of key steps.',
+    whatItIs:
+      'End‑to‑end workflows where AI collects information, drafts decisions and routes cases, while humans remain in control of key steps.',
     exampleProcesses: [
       'KYC/AML and customer due diligence',
       'Incident and major incident management',
@@ -206,14 +210,12 @@ const crossIndustryUseCases = [
       '30–60% fewer manual touches per case',
       'Lower error and rework rates, especially in cross‑team processes',
     ],
-    services: [
-      'AI‑Powered Process Automation',
-      'AI Copilots for Critical Roles',
-    ],
+    services: ['AI‑Powered Process Automation', 'AI Copilots for Critical Roles'],
   },
   {
     title: 'Document & knowledge intelligence',
-    whatItIs: 'A trusted knowledge layer that turns your contracts, policies, procedures and technical docs into answers, comparisons and alerts — always with citations.',
+    whatItIs:
+      'A trusted knowledge layer that turns your contracts, policies, procedures and technical docs into answers, comparisons and alerts — always with citations.',
     whoItsFor: [
       'Legal, compliance and risk teams',
       'Operations, finance, procurement',
@@ -224,62 +226,43 @@ const crossIndustryUseCases = [
       'More consistent answers and decisions across teams and regions',
       'Fewer missed clauses, outdated references and hidden risks',
     ],
-    services: [
-      'Document & Knowledge Intelligence',
-      'AI Risk, Evaluation & Governance (for critical use cases)',
-    ],
+    services: ['Document & Knowledge Intelligence', 'AI Risk, Evaluation & Governance (for critical use cases)'],
   },
   {
     title: 'AI‑augmented engineering & modernization',
-    whatItIs: 'Using AI to accelerate architecture, coding, testing and refactoring — especially for core platforms and services.',
-    whoItsFor: [
-      'CTOs and Heads of Engineering',
-      'Platform, core services and SRE teams',
-    ],
+    whatItIs:
+      'Using AI to accelerate architecture, coding, testing and refactoring — especially for core platforms and services.',
+    whoItsFor: ['CTOs and Heads of Engineering', 'Platform, core services and SRE teams'],
     impact: [
       '30–50% faster delivery for selected features and services',
       'Reduced defect rates in early production releases',
       'Better control over technical debt and refactoring',
     ],
-    services: [
-      'AI‑Augmented Software Delivery',
-      'AI Strategy & Architecture for Business‑Critical Processes',
-    ],
+    services: ['AI‑Augmented Software Delivery', 'AI Strategy & Architecture for Business‑Critical Processes'],
   },
   {
     title: 'AI governance and risk management',
     whatItIs: 'A governance and monitoring layer that keeps all AI initiatives visible, controlled and explainable.',
-    whoItsFor: [
-      'CRO, CISO, Heads of Compliance and Risk',
-      'CIOs and AI program leaders',
-    ],
+    whoItsFor: ['CRO, CISO, Heads of Compliance and Risk', 'CIOs and AI program leaders'],
     impact: [
       'Clear inventory and risk classification for AI use cases',
       'Fewer unapproved or undocumented AI systems in production',
       'Faster approval cycles for new AI initiatives',
     ],
-    services: [
-      'AI Risk, Evaluation & Governance',
-      'AI Strategy & Architecture for Business‑Critical Processes',
-    ],
+    services: ['AI Risk, Evaluation & Governance', 'AI Strategy & Architecture for Business‑Critical Processes'],
   },
   {
     title: 'AI‑augmented engineering & modernization',
-    whatItIs: 'Using AI to accelerate architecture, coding, testing and refactoring — especially for core platforms and services.',
-    whoItsFor: [
-      'CTOs and Heads of Engineering',
-      'Platform, core services and SRE teams',
-    ],
+    whatItIs:
+      'Using AI to accelerate architecture, coding, testing and refactoring — especially for core platforms and services.',
+    whoItsFor: ['CTOs and Heads of Engineering', 'Platform, core services and SRE teams'],
     impact: [
       '30–50% faster delivery for selected features and services',
       'Reduced defect rates in early production releases',
       'Better control over technical debt and refactoring',
     ],
-    services: [
-      'AI‑Augmented Software Delivery',
-      'AI Strategy & Architecture for Business‑Critical Processes',
-    ],
-  }
+    services: ['AI‑Augmented Software Delivery', 'AI Strategy & Architecture for Business‑Critical Processes'],
+  },
 ];
 
 const UseCasesPage: React.FC = () => {
@@ -290,26 +273,23 @@ const UseCasesPage: React.FC = () => {
   return (
     <Suspense fallback={<Loader />}>
       <div className={styles.pageWrapper}>
-          <FadeInSection>
-            <Hero />
-          </FadeInSection>
-          
-          {industries.map((industry, index) => (
-            <FadeInSection key={index}>
-              <IndustrySection 
-                {...industry} 
-                index={index}
-              />
-            </FadeInSection>
-          ))}
+        <FadeInSection>
+          <Hero />
+        </FadeInSection>
 
-          <FadeInSection>
-            <CrossIndustrySection useCases={crossIndustryUseCases} />
+        {industries.map((industry, index) => (
+          <FadeInSection key={index}>
+            <IndustrySection {...industry} index={index} />
           </FadeInSection>
-          
-          <FadeInSection>
-            <UseCasesCTA />
-          </FadeInSection>
+        ))}
+
+        <FadeInSection>
+          <CrossIndustrySection useCases={crossIndustryUseCases} />
+        </FadeInSection>
+
+        <FadeInSection>
+          <UseCasesCTA />
+        </FadeInSection>
         <Footer />
       </div>
     </Suspense>

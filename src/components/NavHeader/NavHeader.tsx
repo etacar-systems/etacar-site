@@ -28,7 +28,8 @@ export const NavHeader = () => {
         {width > 768 ? (
           <div className={style.navigation}>
             {navItems.map((item, i) => {
-              const isActive = pathname === item.route;
+              const isActive =
+                item.route === '/' ? pathname === '/' || pathname === '' : pathname.replace(/\/$/, '') === item.route;
 
               return (
                 <Link

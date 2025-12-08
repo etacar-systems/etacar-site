@@ -1,14 +1,15 @@
 'use client';
 
-import { lazy, Suspense, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 
-const HeroSection = lazy(() => import('./components/HeroSection'));
-const ContactInfo = lazy(() => import('./components/ContactInfo'));
-const ContactForm = lazy(() => import('./components/ContactForm'));
-const Footer = lazy(() => import('../../components/Footer'));
-const Reviews = lazy(() => import('../../commonSections/Reviews'));
+const HeroSection = dynamic(() => import('./components/HeroSection'), { ssr: false, loading: () => <Loader /> });
+const ContactInfo = dynamic(() => import('./components/ContactInfo'), { ssr: false });
+const ContactForm = dynamic(() => import('./components/ContactForm'), { ssr: false });
+const Reviews = dynamic(() => import('../../commonSections/Reviews'), { ssr: false });
+const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
 
 export const ContactUs = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ export const ContactUs = () => {
   }, []);
 
   return (
-    <Suspense fallback={<Loader />}>
+    <>
       <FadeInSection>
         <HeroSection />
       </FadeInSection>
@@ -27,9 +28,9 @@ export const ContactUs = () => {
         <ContactForm />
       </FadeInSection>
       <FadeInSection>
-        <Reviews textColor={'dark'} theme={'dark'} />
+        <Reviews textColor='dark' theme='dark' />
       </FadeInSection>
       <Footer />
-    </Suspense>
+    </>
   );
 };

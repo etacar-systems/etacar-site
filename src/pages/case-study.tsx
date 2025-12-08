@@ -1,13 +1,11 @@
-'use client';
-
 import { NavHeader } from '@/components/NavHeader';
-import { TermsOfUse } from '@/containers/TermsOfUse';
+import { CaseStudy } from '@/containers/CaseStudy';
 
 export default function Page() {
   return (
     <>
       <NavHeader />
-      <TermsOfUse />
+      <CaseStudy />
     </>
   );
 }

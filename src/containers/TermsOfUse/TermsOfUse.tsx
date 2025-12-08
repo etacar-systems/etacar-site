@@ -1,13 +1,15 @@
 'use client';
 
-import { lazy, Suspense, useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import Loader from '../../components/Loader';
 import { data } from './data';
 
+import dynamic from 'next/dynamic';
 import style from './TermsOfUse.module.scss';
 
-const Footer = lazy(() => import('../../components/Footer'));
+const Footer = dynamic(() => import('../../components/Footer'), { ssr: false });
+
 export const TermsOfUse = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -29,8 +29,8 @@ export const Menu = ({ menuActive, setMenuActive, items }: MenuProps) => {
       <div className={style.content}>
         <ul className={style.list}>
           {items.map((item, index) => {
-            const isActive = pathname === item.route;
-
+            const isActive =
+              item.route === '/' ? pathname === '/' || pathname === '' : pathname.replace(/\/$/, '') === item.route;
             return (
               <li key={index} className={style.listElement}>
                 <Link

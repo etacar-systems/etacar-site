@@ -9,7 +9,7 @@ interface FadeInSectionProps {
 
 export const FadeInSection = ({ children }: FadeInSectionProps) => {
   const [isVisible, setVisible] = useState(false);
-  const [prevY, setPrevY] = useState(0); // временно 0
+  const [prevY, setPrevY] = useState(0);
   const domRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {

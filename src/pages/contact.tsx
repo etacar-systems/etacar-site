@@ -1,13 +1,11 @@
-'use client';
-
 import { NavHeader } from '@/components/NavHeader';
-import { ServicesPage } from '@/containers/ServicesPage';
+import { ContactUs } from '@/containers/ContactUs';
 
 export default function Page() {
   return (
     <>
       <NavHeader />
-      <ServicesPage />
+      <ContactUs />
     </>
   );
 }
