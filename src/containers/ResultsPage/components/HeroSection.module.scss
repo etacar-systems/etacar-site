@@ -38,6 +38,7 @@
 
 .title {
   @include heading-xl;
+  margin: 0;
   margin-bottom: var(--space-6);
   background: linear-gradient(135deg, var(--color-neutral-900) 0%, var(--color-primary-700) 100%);
   -webkit-background-clip: text;

@@ -17,6 +17,7 @@
 
 .title {
   @include heading-xl;
+  margin: 0;
   margin-bottom: var(--space-6);
   color: var(--color-neutral-900);
 

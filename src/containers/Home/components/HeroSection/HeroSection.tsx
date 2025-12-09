@@ -13,7 +13,7 @@ export const HeroSection: React.FC = () => {
     <SectionWrapper variant='gradient'>
       <div className={styles.container}>
         <div className={styles.content}>
-          <p className={styles.subheadline} style={{ marginBottom: 'var(--space-3)' }}>
+          <p className={styles.subheadline} style={{ marginBottom: 'var(--space-3)', marginTop: 0 }}>
             Orchestrating Intelligence. Navigating Complexity.
           </p>
 
