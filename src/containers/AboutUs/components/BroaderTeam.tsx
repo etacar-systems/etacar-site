@@ -7,7 +7,7 @@ const BroaderTeam: React.FC = () => {
   const teamMembers = [
     {
       title: 'AI engineers and data scientists',
-      description: 'design and implement AI components, data pipelines and integrations with your existing systems',
+      description: 'design and implement AI components, integrations with your existing systems',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -37,7 +37,7 @@ const BroaderTeam: React.FC = () => {
       ),
     },
     {
-      title: 'Professional neuroscientists',
+      title: 'Professional neuroscientists experts',
       description: 'bring insight into human decision-making, cognition and behaviour for better AI design',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>

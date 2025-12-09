@@ -6,9 +6,9 @@ import styles from './NeuroscienceSection.module.scss';
 const NeuroscienceSection: React.FC = () => {
   const neuroPoints = [
     {
-      title: 'Our Neuroscience Background',
+      title: 'Neuroscience Roots',
       description:
-        'Several members of our team are professional neuroscientists with academic and industry backgrounds. They bring expertise in how complex systems learn, adapt and sometimes fail — from neural circuits to human behavior.',
+        'Several members of our team are professional neuroscientists with academic. They bring expertise in how complex systems learn, adapt and sometimes fail — from neural circuits to human behavior.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -54,7 +54,7 @@ const NeuroscienceSection: React.FC = () => {
     {
       title: 'Our Approach',
       description:
-        'We pay attention not only to model performance, but also to how AI interacts with teams, incentives and culture. Our solutions are not just technically advanced — they are easier for people to adopt and safer to embed into critical processes.',
+        'We pay attention not only to model performance, but also to how AI interacts with teams, incentives. Our solutions are not just technically advanced — they are easier for people to adopt.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path

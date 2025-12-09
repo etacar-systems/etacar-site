@@ -7,7 +7,8 @@ const WhoWeAre: React.FC = () => {
   const teamPoints = [
     {
       title: 'Our Team',
-      description: 'Today EtaCar Systems is a focused team of senior AI engineers, architects and product leaders.',
+      description:
+        'EtaCar Systems is a focused team of senior AI engineers, architects, and product leaders, dedicated to designing, building, and operating intelligent systems for modern enterprises.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
