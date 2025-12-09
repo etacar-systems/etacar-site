@@ -5,6 +5,7 @@ import styles from './IndustrySection.module.scss';
 
 interface IndustrySectionProps {
   title: string;
+  sectionId: string;
   challenges: string[];
   whereWeHelp: string[];
   initiatives: string[];
@@ -15,6 +16,7 @@ interface IndustrySectionProps {
 
 const IndustrySection: React.FC<IndustrySectionProps> = ({
   title,
+  sectionId,
   challenges,
   whereWeHelp,
   initiatives,
@@ -23,7 +25,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
   index,
 }) => {
   return (
-    <SectionWrapper className={styles.sectionWrapper}>
+    <SectionWrapper className={styles.sectionWrapper} id={sectionId}>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>{title}</h2>

@@ -11,6 +11,7 @@ import UseCasesCTA from './components/UseCasesCTA';
 const industries = [
   {
     title: 'Financial services & fintech',
+    sectionId: 'fintech',
     challenges: [
       'Slow and costly KYC/AML and periodic reviews',
       'Fragmented view of customer risk and exposure',
@@ -44,6 +45,7 @@ const industries = [
   },
   {
     title: 'E‑commerce & digital retail',
+    sectionId: 'ecommerce',
     challenges: [
       'Complex customer support and operations across products, regions and channels',
       'High volume of exceptions and manual handling in order, refund and return processes',
@@ -76,6 +78,7 @@ const industries = [
   },
   {
     title: 'Logistics, supply chain & operations‑heavy businesses',
+    sectionId: 'logistics',
     challenges: [
       'Complex multi‑step fulfilment, routing and exception handling',
       'Limited visibility across systems for planning and execution',
@@ -108,6 +111,7 @@ const industries = [
   },
   {
     title: 'Telecom, utilities & subscription services',
+    sectionId: 'telecom',
     challenges: [
       'High volume of customer contacts and network/service incidents',
       'Complex combinations of tariffs, products and contract terms',
@@ -139,6 +143,7 @@ const industries = [
   },
   {
     title: 'Technology & SaaS companies',
+    sectionId: 'saas',
     challenges: [
       'Pressure to deliver new features faster without increasing technical debt',
       'Complex codebases, multiple services, legacy components and partial documentation',
@@ -173,6 +178,7 @@ const industries = [
 const crossIndustryUseCases = [
   {
     title: 'AI‑assisted decision support for leaders',
+
     whatItIs:
       'AI copilots and workflows that help C‑level and senior managers explore scenarios, understand risks and prepare materials for decision‑making.',
     whoItsFor: ['CEO, COO, CFO, CSO', 'Heads of operations, risk, compliance, strategy'],
@@ -275,7 +281,8 @@ const UseCasesPage: React.FC = () => {
         </FadeInSection>
       ))}
       <FadeInSection>
-        <CrossIndustrySection useCases={crossIndustryUseCases} />
+        sectionId: 'cross-industry',
+        <CrossIndustrySection useCases={crossIndustryUseCases} sectionId='cross-industry' />
       </FadeInSection>
       <FadeInSection>
         <UseCasesCTA />

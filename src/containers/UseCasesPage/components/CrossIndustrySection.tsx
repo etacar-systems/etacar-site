@@ -14,11 +14,12 @@ interface UseCase {
 
 interface CrossIndustrySectionProps {
   useCases: UseCase[];
+  sectionId: string;
 }
 
-const CrossIndustrySection: React.FC<CrossIndustrySectionProps> = ({ useCases }) => {
+const CrossIndustrySection: React.FC<CrossIndustrySectionProps> = ({ useCases, sectionId }) => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id={sectionId}>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>Cross‑industry use cases</h2>
