@@ -281,7 +281,6 @@ const UseCasesPage: React.FC = () => {
         </FadeInSection>
       ))}
       <FadeInSection>
-        sectionId: 'cross-industry',
         <CrossIndustrySection useCases={crossIndustryUseCases} sectionId='cross-industry' />
       </FadeInSection>
       <FadeInSection>
