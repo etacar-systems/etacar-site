@@ -42,7 +42,7 @@
   flex-direction: column;
   gap: var(--space-8);
   position: relative;
-  
+
   @include respond-above(lg) {
     position: sticky;
     top: var(--space-8);
@@ -83,21 +83,21 @@
   border: 1px solid var(--color-neutral-100);
   border-radius: var(--radius-xl);
   transition: all var(--transition-base);
-  
+
   &:hover {
     background: var(--color-primary-50);
     border-color: var(--color-primary-200);
     transform: translateX(4px);
     box-shadow: var(--shadow-sm);
   }
-  
+
   img {
     width: 32px;
     height: 32px;
     flex-shrink: 0;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
   }
-  
+
   div:last-child {
     @include body-base;
     color: var(--color-neutral-800);
@@ -117,7 +117,7 @@
   padding: var(--space-6);
   position: relative;
   z-index: 1;
-  
+
   @include respond-above(md) {
     padding: var(--space-10);
   }
@@ -134,12 +134,12 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-5);
-  
+
   @include respond-above(sm) {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-6);
   }
-  
+
   & > div {
     width: 100%;
   }
@@ -176,7 +176,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-3);
-  
+
   @include respond-above(sm) {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -198,13 +198,13 @@
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  
+
   &:hover {
     border-color: var(--color-primary-400);
     background: var(--color-primary-50);
     color: var(--color-primary-700);
   }
-  
+
   label {
     cursor: pointer;
     width: 100%;
@@ -217,7 +217,7 @@
   background: var(--color-primary-600);
   color: var(--color-neutral-0);
   box-shadow: var(--shadow-md);
-  
+
   &:hover {
     background: var(--color-primary-700);
     border-color: var(--color-primary-700);
@@ -231,7 +231,7 @@
   height: 0;
   opacity: 0;
   pointer-events: none;
-  
+
   input {
     appearance: none;
   }
@@ -254,19 +254,19 @@
   resize: vertical;
   transition: all var(--transition-base);
   line-height: var(--leading-normal);
-  
+
   &:hover {
     border-color: var(--color-neutral-400);
     background: var(--color-neutral-0);
   }
-  
+
   &:focus {
     outline: none;
     border-color: var(--color-primary-500);
     background: var(--color-neutral-0);
     box-shadow: 0 0 0 4px var(--color-primary-100);
   }
-  
+
   &::placeholder {
     color: var(--color-neutral-400);
   }
@@ -295,7 +295,7 @@
   height: 32px;
   color: var(--color-primary-600);
   transition: transform var(--transition-base);
-    cursor: pointer;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.1);
@@ -329,7 +329,7 @@
   cursor: pointer;
   position: relative;
   user-select: none;
-  
+
   input {
     appearance: none;
     background-color: var(--color-neutral-0);
@@ -347,7 +347,7 @@
     cursor: pointer;
 
     &::before {
-      content: "";
+      content: '';
       width: 10px;
       height: 10px;
       transform: scale(0);
@@ -360,33 +360,33 @@
     &:checked {
       background-color: var(--color-primary-600);
       border-color: var(--color-primary-600);
-      
+
       &::before {
         transform: scale(1);
       }
     }
-    
+
     &:hover {
       border-color: var(--color-primary-500);
     }
-    
+
     &:focus-visible {
       outline: 2px solid var(--color-primary-500);
       outline-offset: 2px;
     }
   }
-  
+
   div {
     @include body-base;
     color: var(--color-neutral-700);
     line-height: var(--leading-snug);
     padding-top: 2px;
-    
+
     a {
       color: var(--color-primary-600);
       text-decoration: none;
       font-weight: var(--font-medium);
-      
+
       &:hover {
         text-decoration: underline;
       }
@@ -403,16 +403,31 @@
     padding-left: var(--space-4);
     padding-right: var(--space-4);
   }
-  
+
   .column_right {
     padding: var(--space-5);
   }
-  
+
   .buttons {
     grid-template-columns: 1fr;
   }
-  
+
   .form_row {
     grid-template-columns: 1fr;
   }
+}
+
+.number {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  color: var(--color-neutral-0);
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  font-family: var(--font-heading);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-primary);
 }

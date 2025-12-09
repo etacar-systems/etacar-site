@@ -77,11 +77,9 @@ export const GetEstimationForm = () => {
           </div>
           <div className={style.column_list}>
             {data &&
-              data.map(current => (
+              data.map((current, index) => (
                 <div key={current.text} className={style.list_element}>
-                  <div>
-                    <img src={current.icon} alt='number_icon' />
-                  </div>
+                  <div className={style.number}>{index + 1}</div>
                   <div>{current.text}</div>
                 </div>
               ))}
