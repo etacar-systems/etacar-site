@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
 import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';
 import styles from './AIPhilosophy.module.scss';
@@ -143,10 +144,10 @@ const AIPhilosophy: React.FC = () => {
 
           <div className={styles.requirementsList}>
             {requirements.map((item, index) => (
-              <div key={index} className={styles.listItem}>
+              <FadeCard key={index} className={styles.listItem}>
                 <div className={styles.icon}>{item.icon}</div>
                 <span className={styles.itemText}>{item.text}</span>
-              </div>
+              </FadeCard>
             ))}
           </div>
 
@@ -154,10 +155,10 @@ const AIPhilosophy: React.FC = () => {
 
           <div className={styles.approachesList}>
             {approaches.map((item, index) => (
-              <div key={index} className={styles.listItem}>
+              <FadeCard key={index} className={styles.listItem}>
                 <div className={styles.icon}>{item.icon}</div>
                 <span className={styles.itemText}>{item.text}</span>
-              </div>
+              </FadeCard>
             ))}
           </div>
         </div>

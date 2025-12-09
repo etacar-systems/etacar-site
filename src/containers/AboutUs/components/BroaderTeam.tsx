@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
 import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';
 import styles from './BroaderTeam.module.scss';
@@ -107,13 +108,13 @@ const BroaderTeam: React.FC = () => {
 
           <div className={styles.teamGrid}>
             {teamMembers.map((member, index) => (
-              <div key={index} className={styles.teamCard}>
+              <FadeCard key={index} className={styles.teamCard}>
                 <div className={styles.icon}>{member.icon}</div>
                 <div className={styles.cardContent}>
                   <h3 className={styles.roleTitle}>{member.title}</h3>
                   <p className={styles.roleDescription}>{member.description}</p>
                 </div>
-              </div>
+              </FadeCard>
             ))}
           </div>
 

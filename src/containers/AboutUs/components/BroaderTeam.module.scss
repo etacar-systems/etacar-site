@@ -35,17 +35,12 @@
 }
 
 .teamCard {
-  background: var(--color-neutral-50);
-  border-radius: var(--radius-lg);
   padding: var(--space-6);
-  border: 1px solid var(--color-neutral-200);
   transition: all 0.3s ease;
   text-align: left;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    background: var(--color-neutral-0);
   }
 }
 

@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './WhoWeAre.module.scss';
@@ -67,11 +68,11 @@ const WhoWeAre: React.FC = () => {
 
         <div className={styles.grid}>
           {teamPoints.map((point, index) => (
-            <div key={index} className={styles.card}>
+            <FadeCard key={index} className={styles.card}>
               <div className={styles.icon}>{point.icon}</div>
               <h3 className={styles.cardTitle}>{point.title}</h3>
               <p className={styles.cardDescription}>{point.description}</p>
-            </div>
+            </FadeCard>
           ))}
         </div>
       </div>

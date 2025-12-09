@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
 import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';
 import styles from './ClientWork.module.scss';
@@ -82,13 +83,13 @@ const ClientWork: React.FC = () => {
 
           <div className={styles.principlesGrid}>
             {principles.map((principle, index) => (
-              <div key={index} className={styles.principleCard}>
+              <FadeCard key={index} className={styles.principleCard}>
                 <div className={styles.icon}>{principle.icon}</div>
                 <div className={styles.cardContent}>
                   <h3 className={styles.principleTitle}>{principle.title}</h3>
                   <p className={styles.principleDescription}>{principle.description}</p>
                 </div>
-              </div>
+              </FadeCard>
             ))}
           </div>
 
