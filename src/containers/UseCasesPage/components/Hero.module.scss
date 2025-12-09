@@ -68,7 +68,6 @@
 .intro {
   @include body-base;
   font-size: var(--text-lg);
-
   color: var(--color-neutral-700);
   line-height: var(--leading-relaxed);
   text-align: center;
@@ -90,7 +89,8 @@
 
 .fact {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--space-3);
   text-align: left;
   padding: var(--space-4);
@@ -124,7 +124,6 @@
 }
 
 .linkButton {
-  margin-top: var(--space-3);
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
   color: var(--color-primary-700);
@@ -139,5 +138,6 @@
 
   @include respond-above(md) {
     font-size: var(--text-base);
+    margin-top: var(--space-3);
   }
 }

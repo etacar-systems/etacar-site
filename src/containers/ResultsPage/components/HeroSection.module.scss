@@ -29,7 +29,6 @@
 }
 
 .content {
-  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 
@@ -69,6 +68,73 @@
   color: var(--color-neutral-700);
   line-height: var(--leading-relaxed);
   text-align: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
+  margin-bottom: var(--space-8);
+}
+
+.quickFacts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+
+  @include respond-above(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+.fact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  text-align: left;
+  padding: var(--space-4);
+
+  @include respond-above(md) {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.icon {
+  flex-shrink: 0;
+  color: var(--color-primary-600);
+  width: 24px;
+  height: 24px;
+
+  @include respond-above(md) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.fact span {
+  font-size: var(--text-base);
+  line-height: var(--leading-snug);
+
+  @include respond-above(md) {
+    font-size: var(--text-lg);
+  }
+}
+
+.linkButton {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-primary-700);
+  text-decoration: none;
+  transition: 0.2s ease;
+  display: inline-block;
+
+  &:hover {
+    color: var(--color-primary-800);
+    text-decoration: underline;
+  }
+
+  @include respond-above(md) {
+    margin-top: var(--space-3);
+    font-size: var(--text-base);
+  }
 }

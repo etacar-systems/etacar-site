@@ -121,7 +121,7 @@ export const CaseStudies: React.FC = () => {
   ];
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='selected-case'>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>Selected case studies</h2>

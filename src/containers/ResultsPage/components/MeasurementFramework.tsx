@@ -48,7 +48,7 @@ export const MeasurementFramework: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper variant='gradient'>
+    <SectionWrapper variant='gradient' id='measure'>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>What we measure and how</h2>
