@@ -56,13 +56,13 @@
 
 .stepContent {
   flex: 1;
-  padding: var(--space-4) 0;
+  padding-top: var(--space-6);
 }
 
 .stepTitle {
   @include heading-sm;
   color: var(--color-neutral-900);
-  margin-bottom: var(--space-3);
+  margin: 0;
 }
 
 .stepDescription {
