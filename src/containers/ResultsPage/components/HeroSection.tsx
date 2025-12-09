@@ -1,5 +1,5 @@
 import { FadeCard } from '@/components/FadeCard';
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from './HeroSection.module.scss';
 
 const items = [
@@ -65,7 +65,7 @@ const items = [
   },
 ];
 
-export const HeroSection: React.FC = () => {
+export const HeroSection: React.FC = (): ReactElement => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
