@@ -13,12 +13,10 @@ export const ResultsMeasure: React.FC = () => {
 
   const miniCases = [
     {
-      title: 'Global e-commerce – customer operations',
+      title: 'Global e-commerce – operations',
       goal: 'reduce handling time for complex support cases without adding headcount',
-      approach:
-        'AI-assisted case summaries, context gathering, next-best-action suggestions and playbook search with citations',
-      result:
-        '−35% average time-to-resolution, 60% of cases processed with AI assistance, <2% re-opened tickets due to AI-related errors',
+      approach: 'AI-assisted case summaries, context gathering, next-best-action suggestions and playbook search',
+      result: '−35% average time-to-resolution, 60% of cases processed with AI assistance',
     },
     {
       title: 'Financial services – KYC reviews',
