@@ -60,7 +60,7 @@ const items = [
         />
       </svg>
     ),
-    label: 'Within your data, systems, risk',
+    label: 'Fits your data, systems & risk',
     sectionId: 'within-data',
   },
 ];

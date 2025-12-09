@@ -4,7 +4,7 @@ import ServiceDetail from './ServiceDetail';
 export const ProcessAutomation: React.FC = () => {
   return (
     <ServiceDetail
-      id='process-automation'
+      id='ai-powered'
       title='AI-Powered Process Automation'
       oneLiner='End-to-end AI workflows for complex, high-impact processes — with humans still in control.'
       typicalProcesses={[

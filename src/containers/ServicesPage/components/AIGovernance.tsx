@@ -4,7 +4,7 @@ import ServiceDetail from './ServiceDetail';
 export const AIGovernance: React.FC = () => {
   return (
     <ServiceDetail
-      id='ai-governance'
+      id='ai-risk'
       title='AI Risk, Evaluation & Governance'
       oneLiner='Bring all your AI initiatives under one governance and monitoring umbrella.'
       problemWeSolve='As AI projects multiply, it becomes difficult to answer simple questions: How many AI systems do we have? Who owns them? How do we know they are working as intended — and safely?'

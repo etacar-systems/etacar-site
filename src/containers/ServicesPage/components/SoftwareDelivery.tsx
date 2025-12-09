@@ -4,7 +4,7 @@ import ServiceDetail from './ServiceDetail';
 export const SoftwareDelivery: React.FC = () => {
   return (
     <ServiceDetail
-      id='software-delivery'
+      id='ai-augmented'
       title='AI-Augmented Software Delivery'
       oneLiner='Faster architecture, code, testing and modernization for your core systems — without lowering your standards.'
       bestFor='CTOs and Heads of Engineering who need to deliver faster while managing technical debt and risk in complex platforms.'

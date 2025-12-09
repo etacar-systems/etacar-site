@@ -4,7 +4,7 @@ import ServiceDetail from './ServiceDetail';
 export const DocumentIntelligence: React.FC = () => {
   return (
     <ServiceDetail
-      id='document-intelligence'
+      id='document'
       title='Document & Knowledge Intelligence'
       oneLiner='Turn your contracts, policies and technical documentation into a trusted knowledge layer.'
       problemWeSolve="Critical knowledge is often buried in documents, shared drives and legacy systems. People spend hours searching, or simply guess. That doesn't work when regulators, customers or partners expect clear answers."
