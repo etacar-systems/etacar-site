@@ -5,6 +5,7 @@ import { Button } from '../../../../components/Button';
 import { Input } from '../../../../components/UI/Input';
 import { data } from './data';
 
+import { FadeCard } from '@/components/FadeCard';
 import style from './GetEstimationForm.module.scss';
 
 interface RadioChosen {
@@ -78,10 +79,10 @@ export const GetEstimationForm = () => {
           <div className={style.column_list}>
             {data &&
               data.map((current, index) => (
-                <div key={current.text} className={style.list_element}>
+                <FadeCard key={current.text} className={style.list_element}>
                   <div className={style.number}>{index + 1}</div>
                   <div>{current.text}</div>
-                </div>
+                </FadeCard>
               ))}
           </div>
         </div>
@@ -163,7 +164,7 @@ export const GetEstimationForm = () => {
                 <input className={style.checkbox} type='checkbox' name='terms' required />
                 <div>I agree with Terms of use and Privacy policy</div>
               </label>
-              <Button onClick={() => {}} title='Get Estimation' type='ghost' fullWidth />
+              <Button onClick={() => {}} title='Get Estimation' type='solid' fullWidth />
             </div>
           </form>
         </div>

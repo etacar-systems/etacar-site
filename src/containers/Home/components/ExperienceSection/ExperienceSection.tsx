@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { FadeCard } from '@/components/FadeCard';
 import { SectionWrapper } from '../../../../components/SectionWrapper';
 import styles from './ExperienceSection.module.scss';
 
@@ -9,7 +10,7 @@ export const ExperienceSection: React.FC = () => {
       <div className={styles.content}>
         <h2 className={styles.title}>20+ years in AI products, not just software development</h2>
 
-        <div className={styles.textContent}>
+        <FadeCard className={styles.textContent}>
           <p className={styles.paragraph}>
             We started more than 20 years ago as certified specialists on enterprise AI platforms like Autonomy, working
             on large-scale search and analytics solutions.
@@ -24,7 +25,7 @@ export const ExperienceSection: React.FC = () => {
             Today, we bring this experience to AI-native systems for business-critical processes, combining modern AI
             models with proven engineering and governance practices.
           </p>
-        </div>
+        </FadeCard>
       </div>
     </SectionWrapper>
   );

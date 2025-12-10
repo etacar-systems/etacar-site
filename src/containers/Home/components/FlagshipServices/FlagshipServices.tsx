@@ -6,7 +6,7 @@ import styles from './FlagshipServices.module.scss';
 export const FlagshipServices: React.FC = () => {
   const services = [
     {
-      title: 'AI Strategy & Architecture for Business-Critical Processes',
+      title: 'AI Strategy & Architecture',
       description:
         'Define where AI really moves the needle — and how to implement it safely. We audit your current initiatives, identify 3–5 high-impact use cases, and design a target architecture and governance model that your IT and risk teams can support.',
       href: '/services#ai-strategy',
@@ -18,7 +18,7 @@ export const FlagshipServices: React.FC = () => {
       href: '/services#ai-copilots',
     },
     {
-      title: 'AI-Powered Process Automation',
+      title: 'AI-Orchestrated Process Automation',
       description:
         'End-to-end workflows for complex processes, not just another bot. We orchestrate AI across processes like KYC/AML reviews, incident management and complex deal creation, with clear SLAs and manual override where needed.',
       href: '/services#process-automation',

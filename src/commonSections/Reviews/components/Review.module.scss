@@ -1,18 +1,22 @@
 @import '../../../styles/design-tokens.scss';
+@import '../../../styles/mixins.scss';
 @import '../../../styles/colors.scss';
 
+.container {
+  padding: var(--space-3);
+}
 .review {
-  max-width: 500px;
   height: 300px;
-  border: 1px solid $color--text-light;
-  border-radius: var(--radius-2xl);
   padding: 16px;
+  background: var(--gradient-card) !important;
+  box-shadow: none !important;
 }
 
 .review_content {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 100%;
 }
 
 .review_header {
@@ -21,17 +25,20 @@
 }
 
 .review_body {
-  &[data-text-color='dark'] {
-    color: $color--lightgray;
-  }
+  @include body-lg-bold;
+  padding: var(--space-2);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-md);
+  color: var(--color-primary-800);
+  font-size: var(--text-sm);
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .name {
   color: $color--text-dark;
   font-weight: var(--font-bold);
-  &[data-text-color='dark'] {
-    color: $color--light;
-  }
 }
 
 .company {

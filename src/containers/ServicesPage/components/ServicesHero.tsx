@@ -29,7 +29,7 @@ const items = [
         />
       </svg>
     ),
-    label: 'Enterprise AI Strategy, Architecture',
+    label: 'AI Strategy & Architecture',
     sectionId: 'enterprise-ai',
   },
   {
@@ -55,7 +55,7 @@ const items = [
         <path d='M7 14H17' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
       </svg>
     ),
-    label: 'AI-Powered Process Automation',
+    label: 'AI-Orchestrated Process Automation',
     sectionId: 'ai-powered',
   },
   {
@@ -95,11 +95,10 @@ export const ServicesHero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Services</h1>
+        <h1 className={styles.title}>Enterprise AI Services Designed for Business-Critical Processes</h1>
 
         <p className={styles.subtitle}>
-          We design, build and operate AI solutions for business-critical operations — from strategy and architecture to
-          copilots, automation and governance.
+          From strategy to production: a complete stack for AI-driven decisions, automation, and knowledge workflows
         </p>
 
         <p className={styles.description}>
@@ -110,10 +109,12 @@ export const ServicesHero: React.FC = () => {
           {items.map((item, idx) => (
             <FadeCard key={idx} className={styles.fact}>
               {React.cloneElement(item.icon, { className: styles.icon })}
-              <span>{item.label}</span>
-              <a href={`#${item.sectionId}`} className={styles.linkButton}>
-                Learn more →
-              </a>
+              <div className={styles.content}>
+                <span>{item.label}</span>
+                <a href={`#${item.sectionId}`} className={styles.linkButton}>
+                  Learn more →
+                </a>
+              </div>
             </FadeCard>
           ))}
         </div>

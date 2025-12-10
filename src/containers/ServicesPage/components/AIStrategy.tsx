@@ -5,7 +5,7 @@ export const AIStrategy: React.FC = () => {
   return (
     <ServiceDetail
       id='enterprise-ai'
-      title='AI Strategy & Architecture for Business-Critical Processes'
+      title='AI Strategy & Architecture'
       oneLiner="From AI 'ideas' to a realistic roadmap, architecture and governance model your C-level, IT and risk teams can all agree on."
       bestFor="Organizations that are past the 'AI experimentation' stage and want a coherent plan for mission-critical workflows."
       problemWeSolve='Many organizations experiment with AI in pockets — pilots, PoCs, side projects — without a clear view of where AI truly matters, how it fits existing systems, or who owns the risk. We help you focus AI investments on business-critical processes and design an architecture that can be safely operated at scale.'

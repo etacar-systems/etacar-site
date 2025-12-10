@@ -70,11 +70,10 @@ export const HeroSection: React.FC = (): ReactElement => {
     <section className={styles.hero}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1 className={styles.title}>Results & KPIs</h1>
+          <h1 className={styles.title}>Real-World Impact: KPIs, Outcomes, and Case Studies</h1>
 
           <p className={styles.subtitle}>
-            We build AI systems for business‑critical operations — and we measure what they actually change: cycle
-            times, error rates, manual effort, risk and cost.
+            Measured improvements across speed, quality, and operational risk — validated in production environments.
           </p>
 
           <div className={styles.intro}>
@@ -92,10 +91,12 @@ export const HeroSection: React.FC = (): ReactElement => {
             {items.map((item, idx) => (
               <FadeCard key={idx} className={styles.fact}>
                 {React.cloneElement(item.icon, { className: styles.icon })}
-                <span>{item.label}</span>
-                <a href={`#${item.sectionId}`} className={styles.linkButton}>
-                  Learn more →
-                </a>
+                <div className={styles.content}>
+                  <span>{item.label}</span>
+                  <a href={`#${item.sectionId}`} className={styles.linkButton}>
+                    Learn more →
+                  </a>
+                </div>
               </FadeCard>
             ))}
           </div>

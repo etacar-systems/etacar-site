@@ -2,6 +2,9 @@
 @import '../../styles/mixins.scss';
 
 .card {
+  background: var(--gradient-card) !important;
+  display: flex;
+  flex-direction: column;
 }
 
 .icon {
@@ -12,15 +15,22 @@
 
 .title {
   @include heading-sm;
-  color: var(--color-neutral-900);
+  font-size: var(--text-xl);
+  color: var(--color-primary-700);
   margin-bottom: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 3px solid var(--color-success-500);
 }
 
 .description {
-  @include body-base;
-  color: var(--color-neutral-700);
-  margin-bottom: var(--space-4);
+  @include body-lg-bold;
+  color: var(--color-primary-800);
   line-height: var(--leading-relaxed);
+  padding: var(--space-4);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-md);
+  margin: 0;
+  height: 100%;
 }
 
 .arrow {

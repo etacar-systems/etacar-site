@@ -1,4 +1,4 @@
-import { CaseStudiesItem } from '../containers/CaseStudy/components/CaseStudies/CaseStudies';
+import { CaseStudiesItem } from '../containers/ResultsPage/components/CaseStudiesResult';
 
 export const caseStudies: CaseStudiesItem[] = [
   {

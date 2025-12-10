@@ -66,7 +66,7 @@ export const AboutUs = () => {
       </FadeInSection>
 
       <FadeInSection>
-        <Reviews textColor='dark' theme='dark' />
+        <Reviews />
       </FadeInSection>
 
       <FadeInSection>

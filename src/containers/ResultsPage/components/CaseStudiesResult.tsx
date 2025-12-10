@@ -1,13 +1,29 @@
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import { caseStudies } from '../../../../model/caseStudies';
-import { Item } from './components/Item';
-import { keySortTags, sortTags } from './data';
+import { caseStudies } from '../../../model/caseStudies';
 
-import style from './CaseStudies.module.scss';
+import { CaseStudiesItem } from './CaseStudiesItem';
+import style from './CaseStudiesResult.module.scss';
 
 const ITEMS_PER_PAGE = 6;
+export const sortTags = [
+  'All',
+  'Enterprise',
+  'Social Network',
+  'FinTech',
+  'eCommerce',
+  'EdTech',
+  'Management',
+  'FoodTech',
+  'Real estate',
+  'Marketing',
+  'Marketplace',
+  'Design',
+  'Healthcare',
+];
+
+export const keySortTags = ['All', 'Web', 'Mobile'];
 
 export interface CaseStudiesItem {
   title: string;
@@ -27,7 +43,7 @@ interface CaseStudiesState {
   totalPages: number;
 }
 
-export const CaseStudies = () => {
+export const CaseStudiesResult = () => {
   const searchParams = useSearchParams();
   const firstFilterParam = searchParams.get('firstFilter') || 'all';
   const secondFilterParam = searchParams.get('secondFilter') || 'all';
@@ -145,7 +161,7 @@ export const CaseStudies = () => {
       <div className={style.cases_count}>{state.filteredCases.length} Cases</div>
 
       {state.currentItems.map((item, index) => (
-        <Item
+        <CaseStudiesItem
           key={index}
           index={(state.currentPage - 1) * ITEMS_PER_PAGE + index}
           orderReverse={index % 2 === 1}

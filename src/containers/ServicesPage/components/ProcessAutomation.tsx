@@ -5,7 +5,7 @@ export const ProcessAutomation: React.FC = () => {
   return (
     <ServiceDetail
       id='ai-powered'
-      title='AI-Powered Process Automation'
+      title='AI-Orchestrated Process Automation'
       oneLiner='End-to-end AI workflows for complex, high-impact processes — with humans still in control.'
       typicalProcesses={[
         'KYC/AML and periodic customer reviews',

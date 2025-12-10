@@ -1,8 +1,18 @@
 @import '../../styles/design-tokens.scss';
+@import '../../styles/mixins.scss';
 @import '../../styles/colors.scss';
 
+.container {
+  text-align: center;
+}
+
+.title {
+  @include heading-lg;
+  margin-bottom: var(--space-8);
+  color: var(--color-neutral-900);
+}
+
 .review {
-  max-width: 500px;
   height: 300px;
   border: 1px solid $color--text-light;
   border-radius: var(--radius-2xl);
@@ -41,27 +51,18 @@
 }
 
 .label {
-  font-size: var(--text-2xl);
-  color: $color--text-dark;
-  &[data-text-color='dark'] {
-    color: $color--light;
-  }
+  @include body-large;
+  color: var(--color-neutral-700);
+  margin-bottom: var(--space-8);
+  line-height: var(--leading-relaxed);
+  text-align: center;
 }
 
 .arrows {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  margin-bottom: var(--space-16);
   @media (max-width: 1200px) {
     justify-content: flex-start;
-  }
-}
-
-.partners {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 24px;
-  @media (max-width: 1200px) {
-    flex-direction: column;
-    gap: 1rem;
   }
 }

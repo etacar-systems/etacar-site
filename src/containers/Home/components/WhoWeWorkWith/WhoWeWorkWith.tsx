@@ -35,11 +35,13 @@ export const WhoWeWorkWith: React.FC = () => {
         <div className={styles.list}>
           {targetAudience.map((item, index) => (
             <FadeCard key={index} className={styles.listItem}>
-              <div className={styles.bullet}>●</div>
-              <div>
-                <strong className={styles.role}>{item.role}</strong>
-                <span className={styles.separator}> – </span>
-                <span className={styles.description}>{item.description}</span>
+              <div className={styles.text}>
+                <div className={styles.bullet}>●</div>
+                <div>
+                  <strong className={styles.role}>{item.role}</strong>
+                  <span className={styles.separator}> – </span>
+                  <span className={styles.description}>{item.description}</span>
+                </div>
               </div>
             </FadeCard>
           ))}

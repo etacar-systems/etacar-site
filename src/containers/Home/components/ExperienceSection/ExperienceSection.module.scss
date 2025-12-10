@@ -15,9 +15,8 @@
 
 .textContent {
   padding: var(--space-10);
-  border-radius: var(--radius-2xl);
-  box-shadow: var(--shadow-lg);
   text-align: left;
+  background: var(--gradient-card) !important;
 
   @include respond-above(md) {
     padding: var(--space-12);
@@ -25,10 +24,13 @@
 }
 
 .paragraph {
-  @include body-lg;
-  color: var(--color-neutral-800);
+  @include body-lg-bold;
+  color: var(--color-primary-800);
   line-height: var(--leading-relaxed);
   margin-bottom: var(--space-6);
+  padding: var(--space-4);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-md);
 
   &:last-child {
     margin-bottom: 0;

@@ -1,10 +1,10 @@
 import { useRouter } from 'next/navigation';
-import { Button } from '../../../../../../components/Button';
-import { TagsContainer } from '../../../../../../components/TagsContainer';
-import { CONTACT } from '../../../../../../routes';
-import style from './Item.module.scss';
+import { Button } from '../../../components/Button';
+import { TagsContainer } from '../../../components/TagsContainer';
+import { CONTACT } from '../../../routes';
+import style from './CaseStudiesItem.module.scss';
 
-interface ItemProps {
+interface CaseStudiesItemProps {
   image: string;
   paragraphs: string[];
   tags: string[];
@@ -14,7 +14,15 @@ interface ItemProps {
   indexOnPage: number;
 }
 
-export const Item = ({ indexOnPage, image, paragraphs, tags, title, orderReverse, index }: ItemProps) => {
+export const CaseStudiesItem = ({
+  indexOnPage,
+  image,
+  paragraphs,
+  tags,
+  title,
+  orderReverse,
+  index,
+}: CaseStudiesItemProps) => {
   const router = useRouter();
   return (
     <>
@@ -25,7 +33,7 @@ export const Item = ({ indexOnPage, image, paragraphs, tags, title, orderReverse
             <div>Get a free project estimation</div>
           </div>
           <div>
-            <Button type='ghost' title='Get started' icon={true} onClick={() => router.push(CONTACT)} />
+            <Button type='solid' title='Get started' icon={true} onClick={() => router.push(CONTACT)} />
           </div>
         </div>
       ) : undefined}

@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './HeroSection.module.scss';
@@ -16,7 +17,7 @@ export const HeroSection: React.FC = () => {
           </p>
 
           <div className={styles.quickFacts}>
-            <div className={styles.fact}>
+            <FadeCard className={styles.fact}>
               <svg
                 className={styles.icon}
                 width='24'
@@ -34,8 +35,8 @@ export const HeroSection: React.FC = () => {
                 />
               </svg>
               <span>Free 30-minute discovery call to discuss your needs</span>
-            </div>
-            <div className={styles.fact}>
+            </FadeCard>
+            <FadeCard className={styles.fact}>
               <svg
                 className={styles.icon}
                 width='24'
@@ -60,8 +61,8 @@ export const HeroSection: React.FC = () => {
                 />
               </svg>
               <span>Typical response time: within 24 hours</span>
-            </div>
-            <div className={styles.fact}>
+            </FadeCard>
+            <FadeCard className={styles.fact}>
               <svg
                 className={styles.icon}
                 width='24'
@@ -100,7 +101,7 @@ export const HeroSection: React.FC = () => {
                 />
               </svg>
               <span>Work directly with senior AI engineers, not junior staff</span>
-            </div>
+            </FadeCard>
           </div>
         </div>
       </div>

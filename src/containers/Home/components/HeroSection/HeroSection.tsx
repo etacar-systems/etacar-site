@@ -30,8 +30,8 @@ export const HeroSection: React.FC = () => {
           </p>
 
           <div className={styles.ctaButtons}>
-            <Button type='solid' title='Book a 30-minute discovery call' onClick={() => router.push(CONTACT)} />
-            <Button type='bordered' title='See example results' onClick={() => router.push(RESULTS)} />
+            <Button type='solid' title='Book a 30-minute call' onClick={() => router.push(CONTACT)} />
+            <Button type='bordered' title='See real results' onClick={() => router.push(RESULTS)} />
           </div>
 
           <div className={styles.quickFacts}>

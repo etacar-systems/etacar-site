@@ -13,7 +13,7 @@ export const NotFoundPage = () => {
           onClick={() => {
             router.push(HOME);
           }}
-          type='ghost'
+          type='solid'
           title='Go Home'
           icon
         />

@@ -1,13 +1,17 @@
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 
+import Reviews from '@/commonSections/Reviews';
+import { Location } from '@/components/Location';
 import Footer from '../../components/Footer';
 import CaseStudies from './components/CaseStudies';
+import { CaseStudiesResult } from './components/CaseStudiesResult';
 import DataIntegration from './components/DataIntegration';
 import HeroSection from './components/HeroSection';
 import ImpactAtAGlance from './components/ImpactAtAGlance';
 import MeasurementFramework from './components/MeasurementFramework';
 import SuccessDefinition from './components/SuccessDefinition';
+import { Welcome } from './components/Welcome';
 
 export const ResultsPage: React.FC = () => {
   useEffect(() => {
@@ -39,6 +43,18 @@ export const ResultsPage: React.FC = () => {
 
         <FadeInSection>
           <DataIntegration />
+        </FadeInSection>
+        <FadeInSection>
+          <Welcome />
+        </FadeInSection>
+        <FadeInSection>
+          <CaseStudiesResult />
+        </FadeInSection>
+        <FadeInSection>
+          <Location />
+        </FadeInSection>
+        <FadeInSection>
+          <Reviews />
         </FadeInSection>
       </main>
       <FadeInSection>

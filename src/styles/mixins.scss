@@ -51,12 +51,12 @@
 @mixin section-padding {
   padding-top: var(--space-16);
   padding-bottom: var(--space-16);
-  
+
   @include respond-above(md) {
     padding-top: var(--space-20);
     padding-bottom: var(--space-20);
   }
-  
+
   @include respond-above(lg) {
     padding-top: var(--space-24);
     padding-bottom: var(--space-24);
@@ -79,7 +79,7 @@
 @mixin card-premium {
   @include card-base;
   border: 1px solid var(--color-neutral-200);
-  
+
   &:hover {
     @include card-hover;
     border-color: var(--color-primary-300);
@@ -131,15 +131,25 @@
 // Mobile-first approach
 @mixin respond-above($breakpoint) {
   @if $breakpoint == sm {
-    @media (min-width: 640px) { @content; }
+    @media (min-width: 640px) {
+      @content;
+    }
   } @else if $breakpoint == md {
-    @media (min-width: 768px) { @content; }
+    @media (min-width: 768px) {
+      @content;
+    }
   } @else if $breakpoint == lg {
-    @media (min-width: 1024px) { @content; }
+    @media (min-width: 1024px) {
+      @content;
+    }
   } @else if $breakpoint == xl {
-    @media (min-width: 1280px) { @content; }
+    @media (min-width: 1280px) {
+      @content;
+    }
   } @else if $breakpoint == 2xl {
-    @media (min-width: 1536px) { @content; }
+    @media (min-width: 1536px) {
+      @content;
+    }
   }
 }
 
@@ -148,8 +158,10 @@
 // ========================================
 
 @mixin hover-lift($distance: -4px) {
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
-  
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+
   &:hover {
     transform: translateY($distance);
   }
@@ -157,7 +169,7 @@
 
 @mixin hover-scale($scale: 1.05) {
   transition: transform var(--transition-base);
-  
+
   &:hover {
     transform: scale($scale);
   }
@@ -165,7 +177,7 @@
 
 @mixin hover-glow($color: var(--color-primary-500)) {
   transition: box-shadow var(--transition-base);
-  
+
   &:hover {
     box-shadow: 0 10px 40px -5px rgba($color, 0.4);
   }
@@ -188,7 +200,7 @@
 // Slide up animation
 @mixin slide-up($duration: var(--transition-base), $distance: 20px) {
   animation: slideUp $duration ease-out;
-  
+
   @keyframes slideUp {
     from {
       opacity: 0;
@@ -207,7 +219,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -247,12 +260,12 @@
   border: none;
   outline: none;
   white-space: nowrap;
-  
+
   &:focus-visible {
     outline: 2px solid var(--color-primary-500);
     outline-offset: 2px;
   }
-  
+
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
@@ -264,12 +277,12 @@
   background: var(--gradient-primary);
   color: var(--color-neutral-0);
   box-shadow: var(--shadow-md);
-  
+
   &:hover:not(:disabled) {
     box-shadow: var(--shadow-primary);
     transform: translateY(-2px);
   }
-  
+
   &:active:not(:disabled) {
     transform: translateY(0);
   }
@@ -280,13 +293,13 @@
   background: transparent;
   color: var(--color-primary-700);
   border: 2px solid var(--color-primary-500);
-  
+
   &:hover:not(:disabled) {
     background: var(--color-primary-50);
     border-color: var(--color-primary-600);
     transform: translateY(-2px);
   }
-  
+
   &:active:not(:disabled) {
     transform: translateY(0);
   }
@@ -296,7 +309,7 @@
   @include button-base;
   background: transparent;
   color: var(--color-neutral-700);
-  
+
   &:hover:not(:disabled) {
     background: var(--color-neutral-100);
   }
@@ -314,12 +327,12 @@
   padding-left: var(--space-4);
   padding-right: var(--space-4);
   box-sizing: border-box;
-  
+
   @include respond-above(md) {
     padding-left: var(--space-6);
     padding-right: var(--space-6);
   }
-  
+
   @include respond-above(lg) {
     padding-left: var(--space-8);
     padding-right: var(--space-8);
@@ -329,12 +342,12 @@
 @mixin section-spacing {
   padding-top: var(--space-16);
   padding-bottom: var(--space-16);
-  
+
   @include respond-above(md) {
     padding-top: var(--space-20);
     padding-bottom: var(--space-20);
   }
-  
+
   @include respond-above(lg) {
     padding-top: var(--space-24);
     padding-bottom: var(--space-24);
@@ -355,11 +368,11 @@
   display: grid;
   grid-template-columns: repeat($mobile, 1fr);
   gap: $gap;
-  
+
   @include tablet {
     grid-template-columns: repeat($tablet, 1fr);
   }
-  
+
   @include desktop {
     grid-template-columns: repeat($desktop, 1fr);
   }
@@ -374,11 +387,11 @@
   font-size: var(--text-4xl);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
-  
+
   @include respond-above(md) {
     font-size: var(--text-5xl);
   }
-  
+
   @include respond-above(lg) {
     font-size: var(--text-6xl);
   }
@@ -389,11 +402,11 @@
   font-size: var(--text-3xl);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
-  
+
   @include respond-above(md) {
     font-size: var(--text-4xl);
   }
-  
+
   @include respond-above(lg) {
     font-size: var(--text-5xl);
   }
@@ -404,7 +417,7 @@
   font-size: var(--text-2xl);
   font-weight: var(--font-semibold);
   line-height: var(--leading-tight);
-  
+
   @include respond-above(md) {
     font-size: var(--text-3xl);
   }
@@ -415,7 +428,7 @@
   font-size: var(--text-xl);
   font-weight: var(--font-semibold);
   line-height: var(--leading-snug);
-  
+
   @include respond-above(md) {
     font-size: var(--text-2xl);
   }
@@ -425,6 +438,13 @@
   font-family: var(--font-primary);
   font-size: var(--text-lg);
   font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+}
+
+@mixin body-lg-bold {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
   line-height: var(--leading-relaxed);
 }
 

@@ -35,7 +35,7 @@ export const Introduction = () => {
             <div className={style.infoBold}>EtaCar Systems — Orchestrating Intelligence. Navigating Complexity.</div>
 
             <div className={style.buttonBlock}>
-              <Button title='Get In Touch' type='ghost' onClick={() => router.push(CONTACT)} icon={true} />
+              <Button title='Get In Touch' type='solid' onClick={() => router.push(CONTACT)} icon={true} />
             </div>
           </div>
         </div>

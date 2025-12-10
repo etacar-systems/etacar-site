@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
 import { SectionWrapper } from '../../../../components/SectionWrapper';
 import styles from './ResultsMeasure.module.scss';
@@ -37,16 +38,18 @@ export const ResultsMeasure: React.FC = () => {
 
         <ul className={styles.kpiList}>
           {kpis.map((kpi, index) => (
-            <li key={index} className={styles.kpiItem}>
-              <span className={styles.bullet}>●</span>
-              <span>{kpi}</span>
-            </li>
+            <FadeCard key={index} className={styles.kpiItem}>
+              <div className={styles.text}>
+                <span className={styles.bullet}>●</span>
+                <span>{kpi}</span>
+              </div>
+            </FadeCard>
           ))}
         </ul>
 
         <div className={styles.casesGrid}>
           {miniCases.map((caseStudy, index) => (
-            <div key={index} className={styles.caseCard}>
+            <FadeCard key={index} className={styles.caseCard}>
               <h3 className={styles.caseTitle}>{caseStudy.title}</h3>
               <div className={styles.caseSection}>
                 <strong>Goal:</strong> {caseStudy.goal}
@@ -57,7 +60,7 @@ export const ResultsMeasure: React.FC = () => {
               <div className={styles.caseResult}>
                 <strong>Result:</strong> {caseStudy.result}
               </div>
-            </div>
+            </FadeCard>
           ))}
         </div>
       </div>

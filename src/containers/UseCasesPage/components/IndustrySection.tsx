@@ -33,7 +33,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
 
         <div className={styles.contentGrid}>
           <div className={styles.block}>
-            <h3 className={styles.blockTitle}>Typical challenges</h3>
+            <h3 className={styles.blockTitle}>What makes this hard today</h3>
             <ul className={styles.list}>
               {challenges.map((item, i) => (
                 <li key={i} className={styles.listItem}>
@@ -57,7 +57,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
           </div>
 
           <div className={styles.block}>
-            <h3 className={styles.blockTitle}>Example initiatives</h3>
+            <h3 className={styles.blockTitle}>Where AI delivers measurable impact</h3>
             <ul className={styles.list}>
               {initiatives.map((item, i) => (
                 <li key={i} className={styles.listItem}>

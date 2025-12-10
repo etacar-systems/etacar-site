@@ -51,10 +51,10 @@ export const Home: React.FC = () => {
         <FinalCTA />
       </FadeInSection>
       <FadeInSection>
-        <Reviews arrowColor='dark' theme='blueLight' />
+        <GetEstimationForm />
       </FadeInSection>
       <FadeInSection>
-        <GetEstimationForm />
+        <Reviews />
       </FadeInSection>
       <FadeInSection>
         <Footer />

@@ -111,10 +111,9 @@ const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Use cases & industries</h1>
+        <h1 className={styles.title}>Where AI Makes the Biggest Impact in Your Business</h1>
         <h2 className={styles.subtitle}>
-          We focus on AI for business‑critical operations in industries where speed, quality and risk all matter at the
-          same time.
+          Typical high-value problems we solve across industries — from operations to risk, finance, and engineering
         </h2>
         <p className={styles.intro}>
           Below are examples of how we apply our services in different industries. Each use case is tied to specific
@@ -124,10 +123,12 @@ const Hero: React.FC = () => {
           {items.map((item, idx) => (
             <FadeCard key={idx} className={styles.fact}>
               {React.cloneElement(item.icon, { className: styles.icon })}
-              <span>{item.label}</span>
-              <a href={`#${item.sectionId}`} className={styles.linkButton}>
-                Learn more →
-              </a>
+              <div className={styles.content}>
+                <span>{item.label}</span>
+                <a href={`#${item.sectionId}`} className={styles.linkButton}>
+                  Learn more →
+                </a>
+              </div>
             </FadeCard>
           ))}
         </div>

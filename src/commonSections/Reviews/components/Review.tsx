@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import styles from './Review.module.scss';
 
 interface ItemProps {
@@ -11,7 +12,7 @@ interface ItemProps {
 export const Review = ({ avatar, company, description, name, textColor }: ItemProps) => {
   return (
     <div className={styles.container}>
-      <div className={styles.review}>
+      <FadeCard className={styles.review}>
         <div className={styles.review_content}>
           <div className={styles.review_header}>
             <img alt='avatar' className={styles.avatar} src={avatar} />
@@ -26,7 +27,7 @@ export const Review = ({ avatar, company, description, name, textColor }: ItemPr
             {description}
           </div>
         </div>
-      </div>
+      </FadeCard>
     </div>
   );
 };

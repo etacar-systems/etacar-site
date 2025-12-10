@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import { SectionWrapper } from '../../../../components/SectionWrapper';
 import styles from './Development.module.scss';
 
@@ -24,7 +25,7 @@ export const Development = () => {
         <div className={styles.content}>
           <div className={styles.points}>
             {metrics.map((metric, idx) => (
-              <div key={idx} className={styles.point}>
+              <FadeCard key={idx} className={styles.point}>
                 <span className={styles.metricText}>
                   {metric.text.split(/([+\d–×%]+)/g).map((part, i) =>
                     /[+\d–×%]/.test(part) ? (
@@ -36,7 +37,7 @@ export const Development = () => {
                     )
                   )}
                 </span>
-              </div>
+              </FadeCard>
             ))}
           </div>
           <div className={styles.description}>

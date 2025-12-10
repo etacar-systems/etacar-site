@@ -48,22 +48,18 @@
 }
 
 .point {
+  @include body-lg-bold;
   display: flex;
   align-items: center;
   gap: 16px;
-  font-weight: var(--font-medium);
-  font-size: var(--text-xl);
   padding: 12px 16px;
-  border-radius: var(--radius-lg);
   transition:
     transform 0.2s,
     box-shadow 0.2s;
-  border: 1px solid #d8e3ff;
-  background-color: $color--extra-lightblue;
+  background: var(--gradient-card-light) !important;
 
   &:hover {
     transform: translateY(-1px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -71,7 +67,7 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  color: $color--text-blue;
+  color: var(--color-success-500);
 }
 
 .description {
@@ -81,10 +77,15 @@
 }
 
 .metricText {
-  display: inline;
+  color: var(--color-primary-800);
+  display: inline-block;
+  width: 100%;
+  padding: var(--space-4);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-md);
 }
 
 .highlightNumber {
-  color: $color--text-blue;
+  color: var(--color-success-500);
   font-weight: var(--font-bold);
 }

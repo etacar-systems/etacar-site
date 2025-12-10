@@ -34,7 +34,7 @@ export const WhatWeDo: React.FC = () => {
         <div className={styles.grid}>
           {focusAreas.map((area, index) => (
             <FadeCard key={index} className={styles.card}>
-              <div className={styles.card}>
+              <div className={styles.cardItem}>
                 <div className={styles.number}>{index + 1}</div>
                 <h3 className={styles.cardTitle}>{area.title}</h3>
                 <p className={styles.cardDescription}>{area.description}</p>

@@ -1,7 +1,6 @@
 export const HOME = '/';
 export const SERVICES = '/services';
 export const RESULTS = '/results';
-export const CASE_STUDY = '/case-study';
 export const USE_CASES = '/use-cases';
 export const ABOUT = `/about`;
 export const CONTACT = `/contact`;
