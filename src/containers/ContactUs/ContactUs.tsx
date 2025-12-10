@@ -24,7 +24,7 @@ export const ContactUs = () => {
         <ContactForm />
       </FadeInSection>
       <FadeInSection>
-        <Reviews textColor='dark' theme='dark' />
+        <Reviews />
       </FadeInSection>
       <FadeInSection>
         <Footer />
