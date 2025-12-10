@@ -3,10 +3,6 @@
 
 .container {
   @include container;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 .header {
@@ -44,12 +40,7 @@
   flex-direction: column;
   gap: 24px;
   padding: 40px;
-  border: 1px solid var(--color-neutral-200);
-
-  &:hover {
-    border-color: var(--color-primary-300);
-    box-shadow: var(--shadow-lg);
-  }
+  background: var(--gradient-card) !important;
 
   @include mobile {
     padding: 24px;
@@ -57,15 +48,28 @@
 }
 
 .cardTitle {
-  @include heading-md;
-  color: var(--color-neutral-900);
-  font-size: var(--text-2xl);
+  @include heading-sm;
+  color: var(--color-primary-700);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 3px solid var(--color-success-500);
 }
 
 .section {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.content {
+  padding: var(--space-3);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-md);
+  color: var(--color-primary-800);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .label {
@@ -77,8 +81,8 @@
 }
 
 .text {
-  @include body-base;
-  color: var(--color-neutral-700);
+  @include body-lg-bold;
+  color: var(--color-primary-800);
 }
 
 .list {
@@ -90,8 +94,8 @@
   gap: 8px;
 
   li {
-    @include body-base;
-    color: var(--color-neutral-700);
+    @include body-lg-bold;
+    color: var(--color-primary-800);
     position: relative;
     padding-left: 16px;
 
@@ -107,7 +111,7 @@
 .servicesSection {
   margin-top: auto;
   padding-top: 24px;
-  border-top: 1px solid var(--color-neutral-200);
+  border-top: 3px solid var(--color-success-500);
 }
 
 .tags {
@@ -119,10 +123,10 @@
 
 .tag {
   padding: 6px 12px;
-  background: var(--color-neutral-50);
+  background: var(--gradient-card);
   border-radius: var(--radius-full);
   @include label-sm;
   font-size: var(--text-xs);
-  color: var(--color-neutral-700);
-  border: 1px solid var(--color-neutral-200);
+  color: var(--color-primary-800);
+  border: 2px solid var(--color-primary-600);
 }

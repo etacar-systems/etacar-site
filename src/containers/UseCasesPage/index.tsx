@@ -277,7 +277,7 @@ const UseCasesPage: React.FC = () => {
       </FadeInSection>
       {industries.map((industry, index) => (
         <FadeInSection key={index}>
-          <IndustrySection {...industry} index={index} />
+          <IndustrySection {...industry} isEven={index % 2 === 0} index={index} />
         </FadeInSection>
       ))}
       <FadeInSection>

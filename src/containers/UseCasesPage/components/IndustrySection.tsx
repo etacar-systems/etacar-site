@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
@@ -12,6 +13,7 @@ interface IndustrySectionProps {
   kpis: string[];
   services: string[];
   index: number;
+  isEven: boolean;
 }
 
 const IndustrySection: React.FC<IndustrySectionProps> = ({
@@ -22,10 +24,14 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
   initiatives,
   kpis,
   services,
+  isEven,
   index,
 }) => {
   return (
-    <SectionWrapper className={styles.sectionWrapper} id={sectionId}>
+    <SectionWrapper
+      className={classNames(styles.sectionWrapper, { [styles.even]: isEven, [styles.odd]: !isEven })}
+      id={sectionId}
+    >
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>{title}</h2>
