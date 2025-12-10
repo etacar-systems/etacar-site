@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import { useRouter } from 'next/navigation';
 import { Button } from '../../../components/Button';
 import { TagsContainer } from '../../../components/TagsContainer';
@@ -27,21 +28,21 @@ export const CaseStudiesItem = ({
   return (
     <>
       {indexOnPage === 2 ? (
-        <div className={style.getStarted}>
+        <FadeCard className={style.getStarted}>
           <div className={style.textContainer}>
             <div className={style.title}>Will your idea be next?</div>
-            <div>Get a free project estimation</div>
+            <div className={style.subtitle}>Get a free project estimation</div>
           </div>
           <div>
             <Button type='solid' title='Get started' icon={true} onClick={() => router.push(CONTACT)} />
           </div>
-        </div>
+        </FadeCard>
       ) : undefined}
-      <div order-reverse={orderReverse.toString()} className={style.container}>
+      <FadeCard order-reverse={orderReverse.toString()} className={style.container}>
         <div className={style.outer}>
           <div className={style.inner}>
             <div className={style.title}>{title}</div>
-            <div>
+            <div className={style.paragraphs}>
               {paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
@@ -52,7 +53,7 @@ export const CaseStudiesItem = ({
         <div className={style.image}>
           <img src={image} alt={`${title}_icon`} />
         </div>
-      </div>
+      </FadeCard>
     </>
   );
 };

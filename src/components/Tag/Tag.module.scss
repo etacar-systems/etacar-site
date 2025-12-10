@@ -6,13 +6,8 @@
   padding: 8px 12px;
   height: fit-content;
   white-space: nowrap;
-
-  &[data-theme='light'] {
-    color: $color--text-blue;
-    background: $color--light;
-  }
-  &[data-theme='blue'] {
-    color: $color--container-blue;
-    background: $color--lightblue;
-  }
+  border: 2px solid var(--color-primary-500);
+  background: var(--color-primary-200);
+  color: var(--color-primary-700);
+  font-weight: var(--font-semibold);
 }
