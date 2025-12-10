@@ -1,6 +1,9 @@
 import { FadeCard } from '@/components/FadeCard';
+import { useRouter } from 'next/navigation';
+
 import React from 'react';
 import { SectionWrapper } from '../../../components/SectionWrapper';
+import { SERVICES } from '../../../routes';
 import styles from './CrossIndustrySection.module.scss';
 
 interface UseCase {
@@ -9,7 +12,7 @@ interface UseCase {
   whoItsFor: string[];
   whatItDelivers?: string[];
   impact: string[];
-  services: string[];
+  services: { title: string; sectionId: string }[];
   exampleProcesses?: string[];
 }
 
@@ -86,9 +89,7 @@ const CrossIndustrySection: React.FC<CrossIndustrySectionProps> = ({ useCases, s
                 <h4 className={styles.label}>Main services:</h4>
                 <div className={styles.tags}>
                   {useCase.services.map((service, i) => (
-                    <span key={i} className={styles.tag}>
-                      {service}
-                    </span>
+                    <ServiceTag key={i} title={service.title} sectionId={service.sectionId} />
                   ))}
                 </div>
               </div>
@@ -97,6 +98,20 @@ const CrossIndustrySection: React.FC<CrossIndustrySectionProps> = ({ useCases, s
         </div>
       </div>
     </SectionWrapper>
+  );
+};
+
+const ServiceTag: React.FC<{ title: string; sectionId: string }> = ({ title, sectionId }) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`${SERVICES}#${sectionId}`);
+  };
+
+  return (
+    <button type='button' className={styles.tag} onClick={handleClick}>
+      {title}
+    </button>
   );
 };
 

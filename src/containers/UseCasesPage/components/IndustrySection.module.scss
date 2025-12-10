@@ -124,6 +124,7 @@
   padding: 6px 16px;
   background: var(--gradient-card);
   border-radius: var(--radius-full);
+  cursor: pointer;
   @include label-sm;
   color: var(--color-primary-800);
   border: 2px solid var(--color-primary-600);

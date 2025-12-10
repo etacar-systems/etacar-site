@@ -13,7 +13,22 @@ import SoftwareDelivery from './components/SoftwareDelivery';
 
 export const ServicesPage = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const scrollToHash = () => {
+      const hash = typeof window !== 'undefined' ? window.location.hash : '';
+      const id = hash ? hash.replace('#', '') : '';
+      if (id) {
+        const el = document.getElementById(id);
+        if (el) {
+          setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 50);
+          return;
+        }
+      }
+      window.scrollTo(0, 0);
+    };
+
+    scrollToHash();
+    window.addEventListener('hashchange', scrollToHash);
+    return () => window.removeEventListener('hashchange', scrollToHash);
   }, []);
 
   return (

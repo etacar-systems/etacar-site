@@ -1,7 +1,9 @@
 import classNames from 'classnames';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
+import { SERVICES } from '../../../routes';
 import styles from './IndustrySection.module.scss';
 
 interface IndustrySectionProps {
@@ -11,7 +13,7 @@ interface IndustrySectionProps {
   whereWeHelp: string[];
   initiatives: string[];
   kpis: string[];
-  services: string[];
+  services: { title: string; sectionId: string }[];
   index: number;
   isEven: boolean;
 }
@@ -90,14 +92,26 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
           <h3 className={styles.blockTitle}>Relevant services</h3>
           <div className={styles.tags}>
             {services.map((service, i) => (
-              <span key={i} className={styles.tag}>
-                {service}
-              </span>
+              <ServiceTag key={i} title={service.title} sectionId={service.sectionId} />
             ))}
           </div>
         </div>
       </div>
     </SectionWrapper>
+  );
+};
+
+const ServiceTag: React.FC<{ title: string; sectionId: string }> = ({ title, sectionId }) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`${SERVICES}#${sectionId}`);
+  };
+
+  return (
+    <button type='button' className={styles.tag} onClick={handleClick}>
+      {title}
+    </button>
   );
 };
 
