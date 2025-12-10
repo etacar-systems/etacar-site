@@ -1,477 +1,144 @@
-import { CaseStudiesItem } from '../containers/ResultsPage/components/CaseStudiesResult';
+export interface CaseStudiesItemType {
+  title: string;
+  image: string;
+  paragraphs: string[];
+  features: string[];
+  results: string;
+  tags: string[];
+  keyTags: string[];
+}
 
-export const caseStudies: CaseStudiesItem[] = [
+export const caseStudies: CaseStudiesItemType[] = [
   {
-    image: '/images/businessMarketplace.svg',
-    paragraphs: [
-      'Building a business marketplace connecting Clients and Suppliers for professional services. Platform provides intelligent tools that use company data, performance history, ratings and reviews, and service descriptions to project them on performance evaluation charts.',
-      'If a company needs services from another business, it can explore the online platform for the best match or use AI-enhanced search tool.',
-    ],
-    tags: ['Ruby on Rails', 'PostgreSQL', 'React', 'Twilio', 'Stripe', 'Sidekiq', 'Apollo'],
-    keyTags: ['Web', 'Marketplace'],
-    title: 'AI-backed B2B Marketplace',
-  },
-  {
-    image: '/images/productStockManagement.svg',
-    paragraphs: [
-      'Inventory management app for food businesses.',
-      'Possibility to create Purchase orders or Internal transfers | Creating of the Inventory (Stock) take with additional features | Easy to use filtering with multiple options | Flexible customization settings.',
-    ],
-    tags: ['Ruby on Rails', 'PostgreSQL', 'jQuery', 'Sidekiq'],
-    keyTags: ['Web', 'Management'],
-    title: 'Product stock management app',
-  },
-  {
-    image: '/images/onDemandSupermarket.svg',
-    paragraphs: [
-      'Developing online supermarket platform designed for on-demand grocery shopping.',
-      'Buyers can select products from thousands of brands and order fresh organic fruits, vegetables, home essentials, OTC pharmaceuticals, and much more conveniently. Users can choose their favorite local supermarkets or stores and get products delivered to their doorsteps. Buyers can pay for their orders in multiple convenient and flexible payment modes, such as online banking, UPI payment, card payments, and cash on delivery options.',
-    ],
-    tags: ['Ruby on Rails', 'PostgreSQL', 'Stripe', 'Sidekiq', 'Twilio', 'RailsAdmin', 'Odoo'],
-    keyTags: ['Mobile', 'FoodTech', 'Web', 'eCommerce'],
-    title: 'On-demand supermarket',
-  },
-  {
+    title: 'AI-Driven Innovation Intelligence Platform (Anonymized Case)',
     image: '/images/personalLearningPlan.svg',
     paragraphs: [
-      'Building an online tool for managing a Personal Learning Plan for your applicants or students.',
-      'Flexible lesson planning | intuitive, easy-to-use interface | rich export functionality.',
-      'With its easy-to-use course creator tool, you can quickly create beautiful online training and immersive lessons to tailor to every learner’s needs.',
+      'A global organization needed to track emerging technologies, consolidate scattered research, and turn complex information into clear innovation decisions. Their teams worked with thousands of documents and expert inputs but lacked a system that could transform this volume into reliable, explainable insights.',
+      'EtaCar Systems built an AI-native innovation intelligence platform powered by a cognitive orchestration layer. It ingests research materials and signals from multiple sources, normalizes them into a structured knowledge model, and uses AI pipelines to evaluate technologies across impact, maturity, risk, and strategic fit.',
     ],
-    tags: ['Ruby on Rails', 'Angular', 'PostgreSQL', 'React', 'Sidekiq', 'TypeScript'],
-    keyTags: ['Web', 'EdTech'],
-    title: 'Personal Learning Plan',
+    features: [
+      'Multi-source ingestion of reports, studies, and internal documents',
+      'AI-assisted scoring and ranking of technologies and trends',
+      'Explainable insights with transparent reasoning and source citations',
+      'Configurable evaluation frameworks aligned with the organization’s strategy',
+      'Enterprise-grade governance for accuracy, traceability, and safety',
+    ],
+    results:
+      'Manual research cycles that previously took weeks were reduced to hours, decision-making became more consistent and data-backed, and the platform evolved into a central hub for innovation strategy.',
+    tags: ['Enterprise AI', 'R&D', 'Cognitive Orchestration', 'Explainable AI', 'Governance'],
+    keyTags: ['Enterprise', 'AI', 'Analytics'],
   },
   {
+    title: 'AI-Powered B2B Services Marketplace',
     image: '/images/enterpriseProcurement.svg',
     paragraphs: [
-      'Building an innovative platform that simplifies corporate procurement processes and B2B payments, providing tools for pre-approved purchases, automated documentation, and spend management. Payment solution is integrated within the MasterCard ICCP which is connected with over 70 banks globally.',
+      'A large organization needed a smarter way to match companies that provide professional services with companies that need them. Traditional directories and static listings made it hard to compare vendors objectively, understand real performance, or quickly find the best-fit partner for a specific project.',
+      'EtaCar Systems delivered an AI-driven B2B services marketplace that connects clients and suppliers through intelligent matching and evaluation. The platform ingests company profiles, service descriptions, performance history, ratings, and reviews, and projects this data onto dynamic performance evaluation charts.',
     ],
-    tags: [
-      'React',
-      'Ruby on Rails',
-      'MongoDB',
-      'GraphQL',
-      'Docker',
-      'jQuery',
-      'SASS',
-      'Workarea',
-      'ElasticSearch',
-      'HAML',
+    features: [
+      'AI-enhanced search and discovery that understands business needs and context, not just keywords',
+      'Intelligent ranking and matching of suppliers based on quality, track record, and service fit',
+      'Visual performance dashboards showing strengths, reliability, and risk indicators for each vendor',
+      'Continuous learning from new projects, feedback, and outcomes to refine future recommendations',
     ],
-    keyTags: ['Web', 'FinTech', 'B2B', 'Enterprise', 'Management'],
-    title: 'Procurement and B2B payments management solution',
+    results:
+      'Companies can quickly identify the most suitable partners, reduce time spent on vendor selection, and make data-driven, AI-assisted procurement decisions.',
+    tags: ['B2B', 'AI Matching', 'Smart Search', 'Performance Analytics'],
+    keyTags: ['Web', 'Marketplace', 'AI'],
   },
   {
+    title: 'AI-Powered Inventory Management for Food Businesses',
     image: '/images/deliveryManagementSystem.png',
     paragraphs: [
-      'Delivery management system with automated order-to-delivery process.',
-      'Marketplace for bottled water delivery from your favorite local retail places to America’s counter spaces within 2 or 4 hours daily. System offers an easy to use ordering, convenience and delivery process all at the touch of a few buttons; from the Brands you already know from the places you already go!',
+      'A growing food business needed a smarter way to manage stock across products, locations, and suppliers. Manual spreadsheets and basic tools couldn’t keep up with fast-changing demand, shelf-life constraints, and frequent internal transfers between stores and kitchens.',
+      'EtaCar Systems delivered an AI-driven inventory management application tailored for food operations. The platform centralizes product stock data and uses intelligent logic to suggest optimal stock levels, highlight anomalies, and support purchasing decisions.',
     ],
-    tags: [
-      'Ruby on Rails',
-      'PostgreSQL',
-      'Stripe',
-      'Twilio',
-      'Cypress',
-      'Remix',
-      'Node.js',
-      'Prisma',
-      'Capacitor',
-      'React Native',
-      'tRPC',
+    features: [
+      'Smart purchase order recommendations based on historical demand, stock levels, and configured rules',
+      'AI-assisted stock takes that surface discrepancies and prioritize checks where issues are most likely',
+      'Support for internal transfers between locations, guided by utilization patterns and spoilage risk',
+      'Powerful, easy-to-use filtering across products, categories, locations, and statuses',
+      'Flexible configuration of units, categories, thresholds, and workflows to match each business model',
     ],
-    keyTags: ['Mobile', 'FoodTech', 'Management', 'Web'],
-    title: 'Delivery management system with automated order-to-delivery process',
+    results:
+      'Food businesses gain better stock visibility, reduce waste and stockouts, and move from reactive firefighting to proactive, AI-supported inventory control.',
+    tags: ['FoodTech', 'Inventory AI', 'Demand Forecasting', 'Anomaly Detection'],
+    keyTags: ['Web', 'FoodTech', 'Management'],
   },
   {
+    title: 'AI-Orchestrated Same-Day Delivery for Local Retailers',
     image: '/images/restarauntReservations.webp',
     paragraphs: [
-      "Mobile app designed to streamline the table reservation process for restaurants and bars. With its interactive map feature, customers can easily book a table by selecting it from the restaurant's floor plan. The system also offers pre-order and deposit options, making it a convenient all-in-one solution for customers and business owners alike.",
+      'A consumer-focused startup wanted to turn local bottled water purchases into an ultra-convenient, 2–4 hour delivery experience — connecting neighborhood retailers with offices and homes across the city. The challenge was to automate the entire order-to-delivery chain while keeping operations efficient and scalable.',
+      'EtaCar Systems built an AI-powered delivery management platform that orchestrates the full lifecycle from order placement to final drop-off. The marketplace lets customers order from familiar local brands in just a few taps, while AI optimizes routing, batching, and courier assignment in the background.',
     ],
-    tags: [
-      'React',
-      'Cypress',
-      'Node.js',
-      'MongoDB',
-      'Prisma',
-      'Capacitor',
-      'React Native',
-      'PostgreSQL',
-      'tRPC',
-      'StripeB',
+    features: [
+      'End-to-end automated order flow from purchase to delivery confirmation',
+      'AI-driven route and slot optimization to meet 2- or 4-hour delivery windows',
+      'Smart courier assignment and load balancing based on location, capacity, and traffic patterns',
+      'Real-time status tracking for customers, retailers, and operations teams',
+      'Configurable marketplace logic for pricing, availability, and partner onboarding',
     ],
-    keyTags: ['Mobile', 'FoodTech', 'Web'],
-    title: 'Restaurant reservations and pre-orders platform',
+    results:
+      'The client launched a frictionless, AI-orchestrated delivery experience that turns local retail shelves into an on-demand water marketplace.',
+    tags: ['Logistics', 'Same-Day Delivery', 'Route Optimization', 'Marketplace'],
+    keyTags: ['Mobile', 'Logistics', 'AI'],
   },
   {
+    title: 'AI-Driven Performance Analytics for Professional Athletes',
     image: '/images/reitInvestment.webp',
     paragraphs: [
-      'We developed a secure online portal where investors can easily manage their investments and track their returns. System gives non accredited investors the ability to diversify into real estate investing for as little as $500. Using this platform, users buy shares in REIT, a public non listed real estate investment trust.',
+      'A sports-tech company wanted to give professional baseball players more than just raw stats — they needed player-centric, actionable insights to improve performance on the field. Traditional dashboards were overloaded with numbers but lacked contextual recommendations and intuitive exploration.',
+      'EtaCar Systems delivered an AI-powered analytics SaaS platform tailored for professional athletes and coaching staff. The system ingests game events, tracking data, and historical performance, then uses advanced analytics and machine learning to surface patterns that matter for each individual player.',
     ],
-    tags: ['Playwright', 'Ruby on Rails', 'React', 'MongoDB'],
-    keyTags: ['Web', 'FinTech', 'Real Estate'],
-    title: 'REIT Investment Platform',
+    features: [
+      'AI-generated performance insights highlighting strengths, weaknesses, and trends for each athlete',
+      'Play-by-play, real-time data processing to update metrics and evaluations as games unfold',
+      'Advanced analytics models for pitch recognition, situational effectiveness, and fatigue indicators',
+      'Interactive visualizations — charts, graphs, and comparative views — making complex data intuitive and engaging',
+      'Personalized views for players, coaches, and analysts, focused on decision-ready information',
+    ],
+    results:
+      'Teams gain a high-impact, AI-assisted performance layer on top of traditional stats — turning raw data into clear decisions and targeted training actions.',
+    tags: ['Sports Analytics', 'Machine Learning', 'Real-time', 'Data Visualization'],
+    keyTags: ['Web', 'SportTech', 'AI'],
   },
   {
-    image: '/images/platformForInfluencers.webp',
-    paragraphs: [
-      "Building a digital platform intended to serve influencers, athletes, artists, bloggers and musicians. The company's platform allows the creation of a custom media kit online with real-time data and analytics, thereby enabling clients to pitch and present themselves in a better manner.",
-    ],
-    tags: ['TypeScript', 'React Native Web', 'Serverless', 'Postgresql'],
-    keyTags: ['Mobile', 'Social Network', 'Web', 'Data Analytics'],
-    title: 'SaaS-based platform offering data analytics solutions for influencers',
-  },
-  {
-    image: '/images/edtechPlatform.webp',
-    paragraphs: [
-      'Building an one-on-one online language platform that connects learners with our professional tutors.',
-      'Teachers can set their rates, create profiles highlighting their qualifications, and have a flexible schedule. System provides tools for customized lesson creation, marketing, and student management, enabling teachers to build their brand.',
-    ],
-    tags: ['Ruby on Rails', 'React', 'MongoDB'],
-    keyTags: ['Web', 'EdTech'],
-    title: 'SaaS-based language platform',
-  },
-  {
-    image: '/images/educationalPlatform.webp',
-    paragraphs: [
-      'Building a dynamic social network for language learners and educators who want to connect across cultures and countries. Users can connect with other learners and engage in audio and video conferencing to practice their speaking skills. The app also offers a unique audio player that allows users to listen to the pronunciation of words and sentences.',
-    ],
-    tags: ['Ruby on Rails', 'MongoDB', 'React', 'Playwright'],
-    keyTags: ['Web', 'EdTech', 'Social Network'],
-    title: 'Language learning and teaching software',
-  },
-  {
-    image: '/images/baseballStatisticManagement.webp',
-    paragraphs: [
-      'Building a SaaS platform to empower professional baseball players with actionable, player-centric analytics to improve their game performance. App offers in-depth player statistics, play-by-play updates, and even advanced analytics. Interactive charts, graphs, and visualisations make the data more engaging and understandable for users, enhancing their experience.',
-    ],
-    tags: ['React', 'R', 'Node.js', 'Postgres', 'Redis'],
-    keyTags: ['Web', 'Management', 'Data Analytics', 'Statistics'],
-    title: 'Professional sport analytics SaaS platform',
-  },
-  {
-    image: '/images/marketingPlatform.webp',
-    paragraphs: [
-      'System harnesses location data to build a precise understanding of consumers’ physical world behavior. Fortune 500 companies and marquee brands, activate this customer intelligence through audience targeting, measurement, insights and data licensing solutions. By filling the massive gap in understanding how consumers spend the majority of their time, the system provides marketers a comprehensive new model of the customer journey for impactful engagement.',
-    ],
-    tags: ['Hadoop', 'Python', 'Django'],
-    keyTags: ['Web', 'Marketing'],
-    title: 'Marketing platform powered by location data',
-  },
-  {
-    image: '/images/ecommerceMicroservices.webp',
-    paragraphs: [
-      'Building a scalable end-to-end commerce platform composed of loosely coupled Ruby on Rails Microservices. The project included developing the comprehensive ecommerce customer site, the portal for direct sales representatives, and the admin tools to manage products, customers, and orders.',
-    ],
-    tags: ['Ruby on Rails', 'MongoDB', 'Angular'],
-    keyTags: ['Web', 'eCommerce'],
-    title: 'Multi-brand eCommerce platform',
-  },
-  {
-    image: '/images/industrialSupplier.webp',
-    paragraphs: [
-      'We helped in creating a high-functioning feature rich eCommerce site for Fortune 500 company. Company supplies products and services to various industries including medical, chemical and electronic manufacturers. The new eCommerce experience elevates the brand’s digital presence, and guides users to revamped product detail pages, through a streamlined site architecture.',
-    ],
-    tags: ['Javascript', 'Knockout', 'OCC', 'jQuery'],
-    keyTags: ['Web', 'eCommerce'],
-    title: 'Industrial Supplier eCommerce Solution',
-  },
-  {
-    image: '/images/ecommerceB2BSolution.webp',
-    paragraphs: [
-      'Providing customers with the latest B2B technology which also addressed some of the industrial intricacies without the need for bespoke development was a key consideration in selecting the Workarea B2B solution. This allowed to go live quickly and easily with a system that is fully integrated with their ERP solution removing the need for additional administration whilst giving customers access to real-time information.',
-    ],
-    tags: ['Ruby on Rails', 'MongoDB', 'jQuery', 'ElasticSearch', 'HAML', 'SASS'],
-    keyTags: ['Web', 'eCommerce', 'Enterprise'],
-    title: 'B2B Solution based on Workarea Platform',
-  },
-  {
-    title: 'Digital Trust Registration Platform',
-    image: '/images/illuminote.png',
-    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'S3', 'Terraform'],
-    keyTags: ['Web', 'FinTech', 'Enterprise'],
-    paragraphs: [
-      'We built a solution to address the shortcomings of an outdated legal system that lacks robust mechanisms for verifying the legitimacy of paper-based legal documents such as trusts, powers of attorney, wills, and deeds. System allows users to register, authenticate, and protect legal records, establishing an immutable chain of evidence that safeguards client data and keeps all stakeholders informed',
-    ],
-  },
-  {
-    title: 'Advanced subterranean operations monitoring solution',
-    paragraphs: [
-      'Underground update is a reliable, secure, and adaptive tool with on-the-go access, tailored to the challenges and dynamics of subterranean operations. The application provides an integrated view in real-time, aligning with the stringent standards of underground activities. Leveraging data-driven insights and algorithms, the platform ensures optimal monitoring of vital weather conditions, taking into account the unique circumstances and constraints of underground work.',
-    ],
-    tags: ['Next.js', 'PWA', 'Konsta UI', 'Prisma', 'AWS', 'Nest.js'],
-    keyTags: ['Mobile', 'Enterprise', 'Web', 'Monitoring'],
-    image: '/images/file.jpg',
-  },
-  {
-    title: 'Wet cat food feeder app',
-    paragraphs: [
-      'Through the app, insights are provided to define the cat’s feeding time preferences and recipe preferences. This allows cat parents to adjust based on their cat’s desires. Additionally, the device will track how much and how quickly the cat eats. When a feeding trend is shifted or out of the norm, the app will notify users that a vet visit may be needed.',
-    ],
-    tags: [
-      'React Native',
-      'Nest.js',
-      'Prisma',
-      'TypeScript',
-      'PostgreSQL',
-      'Terraform',
-      'Azure IOT hub',
-      'Amazon Video Streaming with WebRTC',
-    ],
-    keyTags: ['Mobile', 'eCommerce', 'Enterprise'],
-    image: '/images/BistroCat.png',
-  },
-  {
-    title: 'Non-Emergency Medical Transportation',
-    paragraphs: [
-      'A project for privately held medical transportation company to digitize processes required for planning, requesting, reviewing, dispatching and tracking scheduled medical appointments. Platform covers complete lifecycle of NEMT Operations from trip parsing and execution to billing documents.',
-    ],
-    tags: ['TypeScript', 'Node.js', 'React', 'GraphQL'],
-    keyTags: ['Web', 'Healthcare', 'Enterprise'],
-    image: '/images/AcadianNemt.png',
-  },
-  {
-    image: '/images/sprintApp.webp',
-    paragraphs: [
-      'Building a diversified payment acceptance solution designed to provide an affordable and secure way for online transactions. System provides payment processing through virtual terminals, invoice payments, chargeback management, multiple processor connectivity, and more. ',
-    ],
-    tags: ['Ruby on Rails', 'React', 'Electron', 'PostgreSQL', 'Stripe'],
-    keyTags: ['Web', 'FinTech', 'eCommerce', 'Enterprise'],
-    title: 'Next generation commerce hub',
-  },
-  {
-    image: '/images/buzzyBooth.png',
-    paragraphs: [
-      'Building a social marketing kiosk tool for the customers to easily promote for the business through personal visual contents. The company devices are installed in more than 500 enterprises, including hotels, restaurants, and bars. all-in-one web and mobile platform allows employees and ambassadors to actively participate in the brand’s content marketing, social selling, social recruiting',
-    ],
-    tags: ['Angular', 'AI', 'Social Services'],
-    keyTags: ['Web', 'Marketing', 'Social Network'],
-    title: 'A smart social photo marketing platform',
-  },
-  {
-    image: '/images/ecommerceB2CSolution.webp',
-    paragraphs: [
-      'Online language learning system. Developed cutting edge platform connects students with the most dedicated teachers around the world for one-on-one online language lessons.',
-    ],
-    tags: ['Ruby on Rails', 'MongoDB', 'React'],
-    keyTags: ['Web', 'eCommerce'],
-    title: 'eCommerce B2C Solution based on Workarea Platform',
-  },
-  {
-    image: '/images/auctionHouseSoftware.webp',
-    paragraphs: [
-      'Next generation software for a London based auction house. A web-based platform for online bidding and auction management. System supports eBay integration. The software provides complete detailed reports for sellers, giving access to vital information on auctions and sales. The solution is available with a perpetual license along with additional annual license renewal costs.',
-    ],
-    tags: ['Ruby on Rails', 'MongoDB', 'React'],
-    keyTags: ['Web', 'Management', 'FinTech'],
-    title: 'Cloud-based auction house software',
-  },
-  // {
-  //   ima/ge: "i/ages.discountApplication.webp",
-  //   paragraphs: ['Commerce app that brings users fresh local deals and discounts.'],
-  //   tags: ['Ruby on Rails', 'MongoDB', 'React', 'Web'],
-  //   title: 'Discount Application',
-  // },
-  {
-    image: '/images/instagramMarketing.webp',
-    paragraphs: [
-      'We designed and developed a comprehensive solution that redefines social media management for brands, marketing agencies, and local businesses. System focuses on increasing followers, likes, and views organically, without fake accounts or bots. It offers analytics to track performance, making it easy to optimize growth strategy and boost engagement.',
-    ],
-    tags: ['Ruby on Rails', 'MongoDB', 'React', 'Google Analytics'],
-    keyTags: ['Web', 'Marketing', 'Social Network', 'SaaS'],
-    title: 'Instagram Marketing Automation Toolset',
-  },
-  {
-    image: '/images/saasInfluencerManagement.webp',
-    paragraphs: [
-      'We developed and maintained an innovative system that creates, manages, and analyzes influencer campaigns on Instagram. From tracking data, managing posting & content schedules, to working with the many large Shopify catalogs and products, the system helps to organize the influencer marketing campaigns.',
-    ],
-    tags: ['NestJS', 'ExpressJS', 'MongoDB', 'React', 'Java'],
-    keyTags: ['Web', 'Marketing', 'Social Network', 'SaaS'],
-    title: 'SaaS influencer management tool',
-  },
-  {
-    image: '/images/ecommerceSolutionBasedOnOCCPlatform.webp',
-    paragraphs: [
-      'We helped in creating a high-functioning feature rich eCommerce site for Fortune 500 company. Company supplies products and services to various industries including medical, chemical and electronic manufacturers. The new eCommerce experience elevates the brand’s digital presence, and guides users to revamped product detail pages, through a streamlined site architecture.',
-    ],
-    tags: ['Oracle Commerce Cloud', 'RequireJS', 'Knockout.js'],
-    keyTags: ['Web', 'eCommerce'],
-    title: 'eCommerce Solution based on OCC Platform',
-  },
-  {
-    image: '/images/newGenCouponingSystem.webp',
-    paragraphs: [
-      'Designing and developing game-changing, disruptive platform that enables business owners to do marketing and advertising on their own terms, for free. The platform provides businesses worldwide the ability to compete with larger enterprises despite limited marketing budgets.',
-    ],
-    tags: ['Java', 'Ruby on Rails', 'MySQL', 'jQuery', 'Coffeescript', 'Heroku'],
-    keyTags: ['Web', 'Marketing', 'Management'],
-    title: 'New Gen Couponing System',
-  },
-  {
-    image: '/images/educationalSystem.webp',
-    paragraphs: [
-      'Developing a specialized content management system for an educational content provider. The system includes two primary web-based components: an end-user interface for educators and consumers to browse, search, and export educational materials, and an administrative interface for importing content from various sources and managing the existing content library.',
-    ],
-    tags: ['Ruby on Rails', 'RSpec', 'PostgreSQL', 'React'],
-    keyTags: ['Web', 'EdTech', 'Management'],
-    title: 'Educational System',
-  },
-  // {
-  //   ima/ge: "i/ages.migrationFromLegacy.webp",
-  //   paragraphs: [
-  //     'Designing and building migration from legacy low automated deployment processes to containerization with Kubernetes, and developing a monitoring system based on the ELK stack (Elasticsearch, Logstash, Kibana) and Apache Hive. The project also includes implementing fully automated CI/CD processes. As a result, time to market has improved by 3.5 times within one year, achieving a 100% production SLA.',
-  //   ],
-  //   tags: ['Kubernetes', 'Helm', 'Docker', 'AWS', 'ELK', 'Apache Hive', 'Apache Kafka', 'Terraform'],
-  //   title: 'Migration from Legacy',
-  // },
-  {
-    image: '/images/infrastructureMaintenance.webp',
-    paragraphs: [
-      'Maintaining and improving the infrastructure of a large social network, including migrating from legacy systems to a dockerized infrastructure with orchestration, automating numerous manual tasks using Ansible, supporting AWS ECS environments, and developing Jenkins pipeline infrastructure from scratch. Full AWS support is provided, covering EC2, VPC, CloudWatch, ELB, ElasticCache, RDS, ElasticSearch, and more.',
-    ],
-    tags: ['Docker', 'AWS', 'ECS', 'Ansible', 'Jenkins Pipelines', 'Terraform'],
-    keyTags: ['Web', 'Social Network'],
-    title: 'Infrastructure Maintenance',
-  },
-  {
-    image: '/images/MLStartup.webp',
-    paragraphs: [
-      'AI-powered tool designed to enhance content shareability among specific audiences. The system suggests optimal headlines, content optimization strategies, and distribution channels to achieve exponential traffic growth. It serves as an innovative instrument for marketers, editors, and publishers, automating manual tasks, providing insights from big data, and helping beat competitors with unexpected popularity.',
-    ],
-    tags: ['Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
-    keyTags: ['Web', 'Management'],
-    title: 'ML Based Startup',
-  },
-  {
-    image: '/images/singaporeStartup.webp',
-    paragraphs: [
-      'Supporting a Singapore-based startup company by designing and developing a CI/CD process to improve their existing weakly automated EC2 infrastructure. The goal of continuous delivery is to minimize time to market for innovative features. All teams including developers, DevOps, and QA were involved in the continuous process. The project aimed to achieve a 99.9% SLA for the production environment and successfully reduced feature to market time from 1 month to 2 days.',
-    ],
-    tags: ['Ruby on Rails', 'MySQL', 'Python', 'Pandas', 'Scipy', 'NumPy', 'NLTK'],
-    keyTags: ['Web', 'Management'],
-    title: 'Singapore-based Startup Support',
-  },
-  {
-    image: '/images/ecommerceSocialPlatform.webp',
-    paragraphs: [
-      'Online marketplace enabling social influencers, individual entrepreneurs, and shop brands to curate, organize, and showcase multimedia content within interest-based communities such as Food, Events, Travel, Fitness, Beauty, and Fashion. The platform encourages users to monetize their popularity, passion, or expertise through media-rich micro channels.',
-    ],
-    tags: ['Django', 'MySQL', 'jQuery', 'AWS', 'Cypress', 'Angular'],
-    keyTags: ['Web', 'eCommerce', 'Marketing'],
-    title: 'eCommerce Social Platform',
-  },
-  {
-    image: '/images/contentManagementSolution.webp',
-    paragraphs: [
-      'Developing and maintaining a proprietary content management solution for a European media company. The solution automates editorial processes for news, posts, and columns, manages proprietary comments, handles publishing schedules, tracks content activity, and supports complex branding requirements. It includes customizable workflows, roles, and content types, making it easy to build, manage, and coordinate a content team.',
-    ],
-    tags: ['Ruby on Rails', 'RSpec', 'Angular', 'MySQL', 'GCP'],
-    keyTags: ['Web', 'Management'],
-    title: 'Content Management Solution',
-  },
-  {
-    image: '/images/ITJobOnlineMarketplace.webp',
-    paragraphs: [
-      'Developing and supporting an online marketplace platform that aggregates, organizes, and showcases a national pool of live talent to top IT companies. Companies create profiles detailing their business and brand, post specific job listings including details, dates, and pricing. Verified jobs are published for the talent pool to view and apply. Professionals can showcase their career strengths, goals, skills, work styles, aspirations, and job-change receptivity. Job seekers connect with employers and hiring managers via in-app chat. The platform, powered by intelligent machine-learning algorithms, provides daily recommendations for opportunities tailored to user profiles and interests.',
-    ],
-    tags: ['Ruby on Rails', 'PostgreSQL', 'Capistrano', 'jQuery', 'Redis'],
-    keyTags: ['Web', 'Enterprise', 'Marketplace'],
-    title: 'IT Job Online Marketplace Platform',
-  },
-  {
-    image: '/images/communityWebPlatform.webp',
-    paragraphs: [
-      'Developing and maintaining a web platform dedicated to an independent community centered around Information and Communication Technology (ICT), where professionals, enthusiasts, students, and employers interact and engage. The platform specialists curate and share important industry news, articles, reviews, and other content daily, fostering interaction and knowledge-sharing among community members.',
-    ],
-    tags: ['Ruby on Rails', 'MySQL', 'Capistrano', 'jQuery', 'Redis'],
-    keyTags: ['Web', 'Social Network'],
-    title: 'Community Web Platform',
-  },
-  {
-    image: '/images/onlineJournal.webp',
-    paragraphs: [
-      'Developing and deploying the flagship product of a European government organization: an online journal dedicated to a professional juridical audience. The journal provides high-quality content covering the state of the national legal landscape, legal institutions, scientific research, and case studies.',
-    ],
-    tags: ['Ruby on Rails', 'MySQL', 'Capistrano', 'React'],
-    keyTags: ['Web', 'Enterprise', 'Social Network'],
-    title: 'Online Journal',
-  },
-  {
-    image: '/images/platformToSocialGifts.webp',
-    paragraphs: [
-      'Developing and maintaining an online scalable platform for co-creating physical, personalized "social gifts" for key life events like birthdays, graduations, weddings, and corporate appreciations. The platform facilitates high-scale collaboration to create beautifully designed cards.',
-    ],
-    tags: ['Ruby on Rails', 'Javascript', 'Backbone.js', 'PostgreSQL', 'Heroku'],
-    keyTags: ['Web', 'Social Network'],
-    title: 'Platform to Co-create Social Gifts',
-  },
-  {
-    image: '/images/ecommerceSystemForHealthcare.webp',
-    paragraphs: [
-      'Designing, developing, and maintaining an online eCommerce system for a company specializing in healthcare and diabetic supplies. The system caters to consumers, professionals, and doctors with specific features tailored to different customer groups such as bronze, silver, and gold, each with distinct pricing policies. It implements a price surcharge mechanism instead of built-in discount rules, customizes group membership logic including subscription expiration checks, and includes features like reward points and superpoints functionality. Payment processing is handled via Authorize.net.',
-    ],
-    tags: ['Django', 'Javascript', 'jQuery', 'MySQL', 'AWS'],
-    keyTags: ['Web', 'eCommerce', 'Management'],
-    title: 'eCommerce System for Healthcare Supplier',
-  },
-  {
-    image: '/images/cloudMarketingSolution.webp',
-    paragraphs: [
-      'Working on a software platform that offers brands, publishers, and civic institutions publishing tools for creating social, place-based experiences. The dynamic open platform intuitively delivers media-rich experiences, integrating video, image, sound, mapping, and text features in one cohesive environment. Currently developing an ESRI-based prototype of a cloud marketing solution that combines content with data intelligence to automate marketing efforts and generate leads.',
-    ],
-    tags: ['PHP', 'Javascript', 'Docker', 'ESRI Maps', 'AWS'],
-    keyTags: ['Web', 'Marketing'],
-    title: 'DevOps',
-  },
-  {
-    image: '/images/packagingDesign.webp',
-    paragraphs: [
-      'Packaging design for an accessories brand based in Milan.',
-      'Product photographs are taken in a professional studio and graphics are applied on a capboard box. The dimensions of the box are selected according to the requirements of the client.',
-      'Banners and animations created for the product promotion in web and on printed materials.',
-    ],
-    tags: ['React Native', 'Node.js', 'MongoDB'],
-    keyTags: ['Web', 'Marketing', 'Packaging Design'],
-    title: 'Packaging Design, Banners & SMM',
-  },
-  {
-    image: '/images/UXUIAndSMM.webp',
-    paragraphs: [
-      'UX/UI Design and Social Media Marketing plan are designed after careful target audience research based on the identity of the brand for interior design studio in Pisa, using existing visual content of the brand.',
-    ],
-    tags: ['React Native', 'Java', 'PostgreSQL'],
-    keyTags: ['Web', 'Marketing', 'UX/UI Design', 'Branding', 'Interior Design'],
-    title: 'UX/UI & SMM',
-  },
-  {
-    image: '/images/digitalProductPresentation.webp',
-    paragraphs: [
-      'Full cicle of market analysis and brand identity development, based on the target audience research. UX and GUI development based on the brand identity and user testing. Digital product presentation with 3D mockups and aminated graphics.',
-    ],
-    tags: ['React', 'Three.js', 'Python', 'Motion Graphics'],
-    keyTags: ['Web', 'Marketing', 'UX/UI Design', '3D Modeling'],
-    title: 'Brand Identity & UX/UI Design, Digital Product Presentation',
-  },
-  {
+    title: 'AI-Enhanced Reservations & Pre-Order Platform for Hospitality',
     image: '/images/brandIdentityDesign.webp',
     paragraphs: [
-      'Complete brand identity development or rebranding, including brand identity kit with style guides, business cards and packaging design for a clothing brand based in Moscow.',
+      'A hospitality operator wanted to go beyond simple table bookings and build a smart reservation experience that boosts revenue and improves guest flow. They needed a mobile-first solution that could handle real-time table selection, pre-orders, and deposits — while giving the business better visibility into demand.',
+      'EtaCar Systems delivered an AI-augmented restaurant and bar reservations platform with an interactive floor-plan interface and intelligent demand insights. Guests can see the venue layout, select a specific table, place pre-orders, and pay deposits in a few taps, while AI helps the business optimize seating and service.',
     ],
-    tags: ['React', 'React Native', 'Node.js', 'MongoDB'],
-    keyTags: ['Web', 'eCommerce', 'Marketing', 'Rebranding', 'Style Guide', 'Packaging Design', 'Fashion'],
-    title: 'Brand Identity Design',
+    features: [
+      'Interactive floor-plan booking so guests can choose their exact table in real time',
+      'AI-assisted demand forecasting to highlight peak periods and inform staffing and inventory decisions',
+      'Smart pre-order and deposit flows that reduce no-shows and smooth kitchen load',
+      'Dynamic availability and seating suggestions based on party size, timing, and current reservations',
+      'Owner and staff dashboards with operational insights and reservation analytics',
+    ],
+    results:
+      'Venues gain higher table utilization, fewer no-shows, and better guest experiences, powered by AI-driven insights and orchestration.',
+    tags: ['Hospitality', 'AI Forecasting', 'Floor-Plan Booking', 'Pre-order'],
+    keyTags: ['Mobile', 'FoodTech', 'AI'],
   },
   {
+    title: 'AI-Powered Monitoring for Subterranean Operations',
     image: '/images/visualIdentityKit.webp',
     paragraphs: [
-      'Design concept of the poster, catalogue and invitations for the design exhibition develped based on the style of the designer - Ettore Sottsass.',
-      'Product photography made in professional studio with a shaping light, edited for the perfect cleanliness in Adobe Photoshop.',
-      'Special types of paper are chosen for the print of envelopes and invitations.',
+      'A critical infrastructure operator needed a way to monitor underground operations in real time, under strict safety and reliability constraints. Traditional monitoring tools struggled to combine environmental data, operational signals, and fast-changing conditions into a clear, actionable picture for teams working below ground.',
+      'EtaCar Systems delivered an AI-driven subterranean operations monitoring platform tailored to the unique dynamics of underground sites. The solution fuses sensor data, weather feeds, and operational inputs into a single, secure interface accessible on the move, helping teams anticipate risk instead of reacting to it.',
     ],
-    tags: ['React', 'Flask', 'PostgreSQL'],
-    keyTags: ['Web', 'Marketing', 'Visual Identity', 'Graphic Design'],
-    title: 'Visual identity kit: poster, catalogue & invitation',
+    features: [
+      'Real-time, integrated operational view across tunnels, shafts, and work zones',
+      'AI-based anomaly detection for key environmental and safety indicators',
+      'Forecasting of critical conditions (e.g., weather-related and environmental changes) using advanced algorithms',
+      'Adaptive alerting and escalation rules tuned to underground operational standards',
+      'Mobile-ready access for engineers and supervisors working on site',
+    ],
+    results:
+      'The operator gains higher situational awareness, earlier risk detection, and more resilient underground operations, powered by AI orchestration.',
+    tags: ['Industrial IoT', 'Anomaly Detection', 'Safety', 'Real-time Monitoring'],
+    keyTags: ['Mobile', 'Enterprise', 'AI'],
   },
 ];

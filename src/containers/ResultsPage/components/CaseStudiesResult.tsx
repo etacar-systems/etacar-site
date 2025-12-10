@@ -1,7 +1,7 @@
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import { caseStudies } from '../../../model/caseStudies';
+import { caseStudies, CaseStudiesItemType } from '../../../model/caseStudies';
 
 import { CaseStudiesItem } from './CaseStudiesItem';
 import style from './CaseStudiesResult.module.scss';
@@ -10,36 +10,27 @@ const ITEMS_PER_PAGE = 6;
 export const sortTags = [
   'All',
   'Enterprise',
-  'Social Network',
-  'FinTech',
-  'eCommerce',
-  'EdTech',
+  // 'Social Network',
+  // 'FinTech',
+  // 'eCommerce',
+  // 'EdTech',
   'Management',
   'FoodTech',
-  'Real estate',
-  'Marketing',
+  // 'Real estate',
+  // 'Marketing',
   'Marketplace',
-  'Design',
-  'Healthcare',
+  // 'Design',
+  // 'Healthcare',
 ];
 
 export const keySortTags = ['All', 'Web', 'Mobile'];
-
-export interface CaseStudiesItem {
-  title: string;
-  image: string;
-  paragraphs: string[];
-  tags: string[];
-  type?: string;
-  keyTags: string[];
-}
 
 interface CaseStudiesState {
   currentPage: number;
   firstFilterKeyword: string;
   secondFilterKeyword: string;
-  filteredCases: CaseStudiesItem[];
-  currentItems: CaseStudiesItem[];
+  filteredCases: CaseStudiesItemType[];
+  currentItems: CaseStudiesItemType[];
   totalPages: number;
 }
 
@@ -169,6 +160,8 @@ export const CaseStudiesResult = () => {
           paragraphs={item.paragraphs}
           tags={[...item.keyTags, ...item.tags]}
           title={item.title}
+          features={item.features}
+          results={item.results}
           indexOnPage={index}
         />
       ))}
