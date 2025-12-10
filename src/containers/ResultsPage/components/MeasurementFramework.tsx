@@ -67,7 +67,10 @@ export const MeasurementFramework: React.FC = () => {
               </h3>
               <ul className={styles.list}>
                 {category.items.map((item, idx) => (
-                  <li key={idx}>{item}</li>
+                  <li key={idx} className={styles.listItem}>
+                    <span className={styles.bullet}>●</span>
+                    <span>{item}</span>
+                  </li>
                 ))}
               </ul>
             </FadeCard>

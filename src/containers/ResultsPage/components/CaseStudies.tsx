@@ -28,7 +28,10 @@ const CaseStudyItem: React.FC<CaseStudyProps> = ({ industry, headline, challenge
           <h4 className={styles.blockTitle}>What we did</h4>
           <ul className={styles.list}>
             {whatWeDid.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li className={styles.listItem} key={index}>
+                <span className={styles.bullet}>●</span>
+                <span>{item}</span>
+              </li>
             ))}
           </ul>
         </div>
@@ -39,7 +42,10 @@ const CaseStudyItem: React.FC<CaseStudyProps> = ({ industry, headline, challenge
           <h4 className={styles.blockTitle}>Results</h4>
           <ul className={styles.list}>
             {results.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li className={styles.listItem} key={index}>
+                <span className={styles.bullet}>●</span>
+                <span>{item}</span>
+              </li>
             ))}
           </ul>
         </FadeCard>

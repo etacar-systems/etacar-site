@@ -16,27 +16,35 @@ export const SuccessDefinition: React.FC = () => {
 
         <div className={styles.grid}>
           <FadeCard className={styles.card}>
-            <h3 className={styles.cardTitle}>Operational impact</h3>
-            <p className={styles.cardText}>Faster decisions and processes</p>
+            <div className={styles.cardContent}>
+              <h3 className={styles.cardTitle}>Operational impact</h3>
+              <p className={styles.cardText}>Faster decisions and processes</p>
+            </div>
           </FadeCard>
 
           <FadeCard className={styles.card}>
-            <h3 className={styles.cardTitle}>Quality & risk</h3>
-            <p className={styles.cardText}>Fewer errors, better use of existing knowledge, more consistent decisions</p>
+            <div className={styles.cardContent}>
+              <h3 className={styles.cardTitle}>Quality & risk</h3>
+              <p className={styles.cardText}>
+                Fewer errors, better use of existing knowledge, more consistent decisions
+              </p>
+            </div>
           </FadeCard>
 
           <FadeCard className={styles.card}>
-            <h3 className={styles.cardTitle}>Cost & productivity</h3>
-            <p className={styles.cardText}>Less manual effort, more work done with the same team</p>
+            <div className={styles.cardContent}>
+              <h3 className={styles.cardTitle}>Cost & productivity</h3>
+              <p className={styles.cardText}>Less manual effort, more work done with the same team</p>
+            </div>
           </FadeCard>
         </div>
 
-        <div className={styles.closing}>
+        <FadeCard className={styles.closing}>
           <p>
             For business‑critical processes we always add risk and compliance metrics, so your risk and audit teams can
             stand behind the solution.
           </p>
-        </div>
+        </FadeCard>
       </div>
     </section>
   );

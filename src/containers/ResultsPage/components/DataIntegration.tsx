@@ -1,3 +1,4 @@
+import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
 import styles from './DataIntegration.module.scss';
 
@@ -25,12 +26,12 @@ export const DataIntegration: React.FC = () => {
             ))}
           </ul>
 
-          <div className={styles.closing}>
+          <FadeCard className={styles.closing}>
             <p>
               This is what allows us — and you — to stand behind the KPIs and the decisions your AI systems help to
               make.
             </p>
-          </div>
+          </FadeCard>
         </div>
       </div>
     </section>
