@@ -25,8 +25,8 @@ export const HeroSection: React.FC = () => {
           </p>
 
           <p className={styles.trustLine}>
-            Our team has 20+ years of experience in AI engineering — from building the Autonomy.com platform to
-            delivering production-grade AI systems for leading European and US organizations.
+            Our team has 20+ years of experience in AI engineering — from building solutions on top of the Autonomy
+            platform to delivering production-grade AI systems for leading European and US organizations.
           </p>
 
           <div className={styles.ctaButtons}>
