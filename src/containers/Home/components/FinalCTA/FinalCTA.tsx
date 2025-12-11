@@ -14,8 +14,11 @@ export const FinalCTA: React.FC = () => {
         <h2 className={styles.title}>Let's talk about your business-critical processes</h2>
 
         <p className={styles.text}>
-          We won't sell you "AI for everything". We will help you choose 1–3 initiatives that really matter, define how
-          to measure success, and get from idea to production.
+          We don’t push “AI everywhere”. We help you choose 1–3 initiatives that truly matter, define how to measure
+          success, and take them from idea to production.
+        </p>
+        <p className={styles.text}>
+          Starting with a focused 30-minute conversation about your most critical processes.
         </p>
 
         <div className={styles.buttons}>

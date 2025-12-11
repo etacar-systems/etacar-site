@@ -8,7 +8,7 @@ export const WhatWeDo: React.FC = () => {
     {
       title: 'AI Strategy & Architecture',
       description:
-        'From "we need AI somewhere" to a realistic roadmap, architecture and governance for your mission-critical processes.',
+        'From vague AI ideas to a realistic roadmap, architecture and governance for your mission-critical processes.',
     },
     {
       title: 'AI for Decisions & Operations',
@@ -28,7 +28,8 @@ export const WhatWeDo: React.FC = () => {
         <h2 className={styles.title}>What we do</h2>
 
         <p className={styles.subtext}>
-          We focus on AI where it really matters: decisions, operations and core systems.
+          We focus on AI where it truly matters: high-stakes decisions, core operations and the systems that run your
+          business.
         </p>
 
         <div className={styles.grid}>

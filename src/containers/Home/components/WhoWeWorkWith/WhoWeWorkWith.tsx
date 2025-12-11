@@ -7,19 +7,19 @@ export const WhoWeWorkWith: React.FC = () => {
   const targetAudience = [
     {
       role: 'COO / Head of Operations',
-      description: 'wants faster, more reliable processes end-to-end',
+      description: 'is accountable for end-to-end process performance and wants faster, more reliable operations',
     },
     {
       role: 'CIO / Head of IT & Architecture',
-      description: 'needs AI that fits existing systems, not shadow IT',
+      description: 'needs AI that fits enterprise architecture and controls, not shadow IT experiments',
     },
     {
       role: 'CRO / Risk & Compliance leaders',
-      description: 'must keep AI auditable and regulator-friendly',
+      description: 'must keep AI measurable, auditable and regulator-ready',
     },
     {
       role: 'CTO / Head of Product & Engineering',
-      description: 'looks to speed up delivery without sacrificing quality',
+      description: 'wants to speed up delivery of AI-enabled features without compromising quality or stability',
     },
   ];
 

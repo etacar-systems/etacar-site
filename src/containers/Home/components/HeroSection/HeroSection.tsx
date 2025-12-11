@@ -20,8 +20,8 @@ export const HeroSection: React.FC = () => {
           <h1 className={styles.title}>Enterprise AI for business-critical decisions and processes</h1>
 
           <p className={styles.subheadline}>
-            We build AI systems that drive measurable impact across speed, risk, and operational cost — from LLM-driven
-            automation to decision support and high-stakes enterprise workflows.
+            We design and operate AI systems that measurably improve cycle times, risk controls and operating costs in
+            your most critical processes — not just experiments or prototypes
           </p>
 
           <p className={styles.trustLine}>
