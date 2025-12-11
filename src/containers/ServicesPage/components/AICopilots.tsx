@@ -15,9 +15,9 @@ export const AICopilots: React.FC = () => {
         'Safety and boundaries: what the copilot can decide, suggest or only prepare',
       ]}
       exampleKPIs={[
-        'Time to prepare key decisions or responses reduced by 20–40%',
-        'Higher coverage of relevant documents/data in each decision',
-        'Fewer escalations due to missing information or inconsistent decisions',
+        '20–40% increase in productivity for targeted roles (operations, risk, product)',
+        '30–50% reduction in time spent on repetitive cognitive tasks',
+        '2× improvement in decision turnaround time for complex, multi-step tasks',
       ]}
     />
   );

@@ -16,9 +16,9 @@ export const AIStrategy: React.FC = () => {
         'A 12–24 month roadmap with phases, dependencies and indicative budgets',
       ]}
       exampleKPIs={[
-        'Clear alignment between C-level, IT and risk on AI priorities and architecture',
-        'Less "random" AI experimentation; more initiatives tied to the agreed roadmap',
-        'Faster go/no-go decisions for AI pilots and production rollouts',
+        '40–60% faster go/no-go cycle for AI initiatives',
+        '70–90% of AI investments aligned to the agreed enterprise AI roadmap',
+        '50–70% reduction in duplicated, conflicting or ad-hoc AI experiments',
       ]}
     />
   );

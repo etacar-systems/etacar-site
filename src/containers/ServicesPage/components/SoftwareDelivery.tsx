@@ -16,9 +16,9 @@ export const SoftwareDelivery: React.FC = () => {
         'Claims handling, customer onboarding, KYC reviews, exception handling',
       ]}
       exampleKPIs={[
-        '30–50% faster delivery for selected features and services',
-        'Reduced defect rates in early production releases',
-        'Lower time spent on repetitive tasks such as boilerplate, tests and migrations',
+        '30–50% reduction in delivery time for AI-enabled features and systems',
+        '40–70% decrease in bugs and defects through automated testing & AI code quality checks',
+        '2× improvement in deployment reliability across staging and production',
       ]}
     />
   );

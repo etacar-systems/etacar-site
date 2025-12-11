@@ -15,9 +15,9 @@ export const DocumentIntelligence: React.FC = () => {
         'Optional alerts on changes in key documents (e.g. policies, SLAs, regulations)',
       ]}
       exampleKPIs={[
-        '50–70% less time spent searching and reading documents for recurring questions',
-        'Higher consistency of answers across teams and regions',
-        'Fewer missed clauses or outdated references in critical decisions',
+        '40–70% faster retrieval of critical documents, facts and decisions',
+        '30–60% reduction in manual document review time',
+        '25–50% fewer compliance or documentation errors',
       ]}
     />
   );

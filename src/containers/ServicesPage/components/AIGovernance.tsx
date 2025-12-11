@@ -16,9 +16,9 @@ export const AIGovernance: React.FC = () => {
         'Documentation you can show to risk committees, auditors and boards',
       ]}
       exampleKPIs={[
-        '100% of business-critical AI use cases with named owners, KPIs and logs',
-        'Fewer unapproved or undocumented AI systems in production',
-        'Faster approval cycles for new AI initiatives due to clearer documentation',
+        '100% visibility and ownership for all business-critical AI systems',
+        '40–60% faster approval cycle for new AI initiatives',
+        '50–70% reduction in unapproved or untracked AI usage across the organization',
       ]}
     />
   );

@@ -20,9 +20,9 @@ export const ProcessAutomation: React.FC = () => {
         'Dashboards and alerts for performance, bottlenecks and risk',
       ]}
       exampleKPIs={[
-        '20–40% reduction in end-to-end cycle time for selected processes',
-        '30–60% fewer manual touches per case',
-        'Lower rework rate due to missing data or inconsistent decisions',
+        '30–60% reduction in manual workload across target processes',
+        '20–40% decrease in operational errors and exceptions',
+        '25–50% faster throughput for data-heavy or approval-driven workflows',
       ]}
     />
   );
