@@ -7,7 +7,7 @@ const LeadershipTeam: React.FC = () => {
   return (
     <SectionWrapper className={styles.teamSection} variant='gradient'>
       <div className={styles.container}>
-        <h2 className={styles.title}>Meat our team</h2>
+        <h2 className={styles.title}>Meet our team</h2>
         <FinalCTA />
       </div>
     </SectionWrapper>
