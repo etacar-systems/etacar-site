@@ -28,7 +28,13 @@ export const Mission = () => {
               <Card description={data.subtitle} key={index} src={data.src} title={data.title} />
             ))}
           </div>
-          <Button fullWidth icon onClick={() => router.push(CONTACT)} title={'Contact us'} type={'solid'} />
+          <Button
+            fullWidth
+            icon
+            onClick={() => router.push(CONTACT)}
+            title={'Book an AI use case workshop'}
+            type={'solid'}
+          />
         </div>
       </div>
     </Section>

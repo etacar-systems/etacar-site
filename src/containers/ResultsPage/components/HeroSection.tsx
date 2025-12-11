@@ -78,8 +78,8 @@ export const HeroSection: React.FC = (): ReactElement => {
 
           <div className={styles.intro}>
             <p>
-              Together with your team, we define 3–5 concrete KPIs before we design the system. Then we implement,
-              measure and iterate until the numbers move — or we stop the project instead of hiding behind buzzwords.
+              We start every project by agreeing on 3–5 concrete KPIs (cycle time, error rate, cost, satisfaction) and
+              how we will measure them in your systems
             </p>
             <p style={{ marginTop: '1rem' }}>
               Every engagement with us starts with a simple question:

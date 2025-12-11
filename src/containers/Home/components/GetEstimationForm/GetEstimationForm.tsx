@@ -143,7 +143,7 @@ export const GetEstimationForm = () => {
                   className={style.textarea}
                   required
                   name='message'
-                  placeholder='Message'
+                  placeholder='A few sentences about your processes, systems and what you want to improve.'
                 ></textarea>
               </div>
             </div>
@@ -158,15 +158,18 @@ export const GetEstimationForm = () => {
             <div className={style.additional}>
               <label className={style.checkbox_container}>
                 <input className={style.checkbox} type='checkbox' name='nda' />
-                <div>Do you need an NDA first?</div>
+                <div>Do you need an NDA before we see the details?</div>
               </label>
               <label className={style.checkbox_container}>
                 <input className={style.checkbox} type='checkbox' name='terms' required />
-                <div>I agree with Terms of use and Privacy policy</div>
+                <div>I agree with Terms of Use and Privacy Policy</div>
               </label>
               <Button onClick={() => {}} title='Get Estimation' type='solid' fullWidth />
             </div>
           </form>
+          <div className={style.response_time_hint}>
+            We usually respond within 1–2 business days with a proposed time for a call.
+          </div>
         </div>
       </div>
     </div>

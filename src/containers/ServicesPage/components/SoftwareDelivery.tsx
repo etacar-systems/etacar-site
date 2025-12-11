@@ -13,6 +13,7 @@ export const SoftwareDelivery: React.FC = () => {
         'AI-assisted implementation: code, tests and migrations aligned with your stack and guidelines',
         'Safe refactoring: modernization of existing services with tests and impact analysis',
         'Integration with your existing CI/CD and review processes',
+        'Claims handling, customer onboarding, KYC reviews, exception handling',
       ]}
       exampleKPIs={[
         '30–50% faster delivery for selected features and services',

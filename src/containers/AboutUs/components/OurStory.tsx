@@ -112,10 +112,11 @@ const OurStory: React.FC = () => {
         <h2 className={styles.title}>Our story</h2>
         <p className={styles.subtext}>
           We started in the early 2000s working with enterprise AI platforms such as Autonomy as certified specialists.
-          Since then, we’ve built and operated AI‑driven systems across finance, e‑commerce, logistics, telecom and
-          SaaS. Today we use that experience — and our background in neuroscience and complex systems — to design AI
-          solutions that work in real organizations, not just in demos. More than two decades of AI experience, from
-          enterprise search to modern AI solutions.
+          Since then, we’ve built and operated AI-driven systems across finance, e-commerce, logistics, telecom and
+          SaaS. The same disciplines we applied to high-stakes search and analytics — clear owners, measurable KPIs,
+          robust governance — are now built into every AI system we deliver. Today we use that experience — and our
+          background in neuroscience and complex systems — to design AI solutions that work in real organizations, not
+          just in demos. More than two decades of AI experience, from enterprise search to modern AI solutions.
         </p>
         <div className={styles.grid}>
           {storyPoints.map((point, index) => (

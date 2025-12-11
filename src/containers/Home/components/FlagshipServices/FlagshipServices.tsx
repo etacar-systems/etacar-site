@@ -20,13 +20,13 @@ export const FlagshipServices: React.FC = () => {
     {
       title: 'AI-Orchestrated Process Automation',
       description:
-        'End-to-end workflows for complex processes, not just another bot. We orchestrate AI across processes like KYC/AML reviews, incident management and complex deal creation, with clear SLAs and manual override where needed.',
+        'End-to-end workflows for complex processes, not just another chatbot or isolated dashboard, but orchestrated workflows that connect to your real systems. We orchestrate AI across processes like KYC/AML reviews, incident management and complex deal creation, with clear SLAs and manual override where needed.',
       href: '/services#process-automation',
     },
     {
       title: 'Document & Knowledge Intelligence',
       description:
-        'Turn your documents and internal knowledge into decisions, not manual search. We connect contracts, policies, technical documentation and reports into a trusted knowledge layer with answers, comparisons and risk alerts — always with citations.',
+        'Turn your documents and internal knowledge into decisions — not just search. It delivers answers, comparisons and risk alerts. Always with citations your risk and legal teams can verify',
       href: '/services#document-intelligence',
     },
     {
@@ -38,7 +38,7 @@ export const FlagshipServices: React.FC = () => {
     {
       title: 'AI Risk, Evaluation & Governance',
       description:
-        'Make your AI landscape measurable, auditable and under control. We help you put all AI projects under one governance and monitoring framework, aligned with your risk, compliance and security expectations.',
+        'Make your AI landscape measurable, auditable and under control — with clear ownership, risk ratings and approval workflows for every business-critical use case.',
       href: '/services#ai-governance',
     },
   ];
