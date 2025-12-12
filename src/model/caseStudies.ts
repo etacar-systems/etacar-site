@@ -30,7 +30,7 @@ export const caseStudies: CaseStudiesItemType[] = [
   },
   {
     title: 'AI-Powered B2B Services Marketplace',
-    image: '/images/enterpriseProcurement.svg',
+    image: '/images/businessMarketplace.svg',
     paragraphs: [
       'A large organization needed a smarter way to match companies that provide professional services with companies that need them. Traditional directories and static listings made it hard to compare vendors objectively, understand real performance, or quickly find the best-fit partner for a specific project.',
       'EtaCar Systems delivered an AI-driven B2B services marketplace that connects clients and suppliers through intelligent matching and evaluation. The platform ingests company profiles, service descriptions, performance history, ratings, and reviews, and projects this data onto dynamic performance evaluation charts.',
@@ -48,7 +48,7 @@ export const caseStudies: CaseStudiesItemType[] = [
   },
   {
     title: 'AI-Powered Inventory Management for Food Businesses',
-    image: '/images/deliveryManagementSystem.png',
+    image: '/images/productStockManagement.svg',
     paragraphs: [
       'A growing food business needed a smarter way to manage stock across products, locations, and suppliers. Manual spreadsheets and basic tools couldn’t keep up with fast-changing demand, shelf-life constraints, and frequent internal transfers between stores and kitchens.',
       'EtaCar Systems delivered an AI-driven inventory management application tailored for food operations. The platform centralizes product stock data and uses intelligent logic to suggest optimal stock levels, highlight anomalies, and support purchasing decisions.',
@@ -67,7 +67,7 @@ export const caseStudies: CaseStudiesItemType[] = [
   },
   {
     title: 'AI-Orchestrated Same-Day Delivery for Local Retailers',
-    image: '/images/restarauntReservations.webp',
+    image: '/images/deliveryManagementSystem.png',
     paragraphs: [
       'A consumer-focused startup wanted to turn local bottled water purchases into an ultra-convenient, 2–4 hour delivery experience — connecting neighborhood retailers with offices and homes across the city. The challenge was to automate the entire order-to-delivery chain while keeping operations efficient and scalable.',
       'EtaCar Systems built an AI-powered delivery management platform that orchestrates the full lifecycle from order placement to final drop-off. The marketplace lets customers order from familiar local brands in just a few taps, while AI optimizes routing, batching, and courier assignment in the background.',
@@ -86,7 +86,7 @@ export const caseStudies: CaseStudiesItemType[] = [
   },
   {
     title: 'AI-Driven Performance Analytics for Professional Athletes',
-    image: '/images/reitInvestment.webp',
+    image: '/images/baseballStatisticManagement.webp',
     paragraphs: [
       'A sports-tech company wanted to give professional baseball players more than just raw stats — they needed player-centric, actionable insights to improve performance on the field. Traditional dashboards were overloaded with numbers but lacked contextual recommendations and intuitive exploration.',
       'EtaCar Systems delivered an AI-powered analytics SaaS platform tailored for professional athletes and coaching staff. The system ingests game events, tracking data, and historical performance, then uses advanced analytics and machine learning to surface patterns that matter for each individual player.',
@@ -105,7 +105,7 @@ export const caseStudies: CaseStudiesItemType[] = [
   },
   {
     title: 'AI-Enhanced Reservations & Pre-Order Platform for Hospitality',
-    image: '/images/brandIdentityDesign.webp',
+    image: '/images/restarauntReservations.webp',
     paragraphs: [
       'A hospitality operator wanted to go beyond simple table bookings and build a smart reservation experience that boosts revenue and improves guest flow. They needed a mobile-first solution that could handle real-time table selection, pre-orders, and deposits — while giving the business better visibility into demand.',
       'EtaCar Systems delivered an AI-augmented restaurant and bar reservations platform with an interactive floor-plan interface and intelligent demand insights. Guests can see the venue layout, select a specific table, place pre-orders, and pay deposits in a few taps, while AI helps the business optimize seating and service.',
@@ -124,7 +124,7 @@ export const caseStudies: CaseStudiesItemType[] = [
   },
   {
     title: 'AI-Powered Monitoring for Subterranean Operations',
-    image: '/images/visualIdentityKit.webp',
+    image: '/images/file.jpg',
     paragraphs: [
       'A critical infrastructure operator needed a way to monitor underground operations in real time, under strict safety and reliability constraints. Traditional monitoring tools struggled to combine environmental data, operational signals, and fast-changing conditions into a clear, actionable picture for teams working below ground.',
       'EtaCar Systems delivered an AI-driven subterranean operations monitoring platform tailored to the unique dynamics of underground sites. The solution fuses sensor data, weather feeds, and operational inputs into a single, secure interface accessible on the move, helping teams anticipate risk instead of reacting to it.',
