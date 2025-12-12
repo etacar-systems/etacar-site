@@ -11,7 +11,7 @@ export interface CaseStudiesItemType {
 export const caseStudies: CaseStudiesItemType[] = [
   {
     title: 'AI-Driven Innovation Intelligence Platform (Anonymized Case)',
-    image: '/images/personalLearningPlan.svg',
+    image: '/images/innovation.png',
     paragraphs: [
       'A global organization needed to track emerging technologies, consolidate scattered research, and turn complex information into clear innovation decisions. Their teams worked with thousands of documents and expert inputs but lacked a system that could transform this volume into reliable, explainable insights.',
       'EtaCar Systems built an AI-native innovation intelligence platform powered by a cognitive orchestration layer. It ingests research materials and signals from multiple sources, normalizes them into a structured knowledge model, and uses AI pipelines to evaluate technologies across impact, maturity, risk, and strategic fit.',
