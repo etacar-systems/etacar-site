@@ -73,7 +73,7 @@ export const HeroSection: React.FC = (): ReactElement => {
           <h1 className={styles.title}>Real-World Impact: KPIs, Outcomes, and Case Studies</h1>
 
           <p className={styles.subtitle}>
-            Measured improvements across speed, quality, and operational risk — validated in production environments.
+            Measured improvements across speed, quality, and operational risk - validated in production environments.
           </p>
 
           <div className={styles.intro}>

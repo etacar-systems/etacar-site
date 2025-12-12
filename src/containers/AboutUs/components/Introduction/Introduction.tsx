@@ -5,9 +5,9 @@ import style from './Introduction.module.scss';
 
 const infoText = [
   'EtaCar Systems is an AI solutions company focused on designing, building, and operating intelligent systems for modern enterprises.',
-  'We specialize in AI orchestration, autonomous enterprise agents, and knowledge intelligence — helping organizations automate complex workflows, enhance decision-making, and unlock the value of their data.',
+  'We specialize in AI orchestration, autonomous enterprise agents, and knowledge intelligence - helping organizations automate complex workflows, enhance decision-making, and unlock the value of their data.',
   'Our leadership team brings over a decade of experience working with clients across North America and the European Union.',
-  'We believe in partnership over transactions. By keeping an open attitude and putting people first — clients, teams, and end-users — we create solutions that are not only technologically advanced, but also practical, trusted, and sustainable.',
+  'We believe in partnership over transactions. By keeping an open attitude and putting people first - clients, teams, and end-users - we create solutions that are not only technologically advanced, but also practical, trusted, and sustainable.',
 ];
 
 export const Introduction = () => {
@@ -32,7 +32,7 @@ export const Introduction = () => {
               </div>
             ))}
 
-            <div className={style.infoBold}>EtaCar Systems — Orchestrating Intelligence. Navigating Complexity.</div>
+            <div className={style.infoBold}>EtaCar Systems - Orchestrating Intelligence. Navigating Complexity.</div>
 
             <div className={style.buttonBlock}>
               <Button title='Get In Touch' type='solid' onClick={() => router.push(CONTACT)} icon={true} />

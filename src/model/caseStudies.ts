@@ -69,7 +69,7 @@ export const caseStudies: CaseStudiesItemType[] = [
     title: 'AI-Orchestrated Same-Day Delivery for Local Retailers',
     image: '/images/deliveryManagementSystem.png',
     paragraphs: [
-      'A consumer-focused startup wanted to turn local bottled water purchases into an ultra-convenient, 2–4 hour delivery experience — connecting neighborhood retailers with offices and homes across the city. The challenge was to automate the entire order-to-delivery chain while keeping operations efficient and scalable.',
+      'A consumer-focused startup wanted to turn local bottled water purchases into an ultra-convenient, 2–4 hour delivery experience - connecting neighborhood retailers with offices and homes across the city. The challenge was to automate the entire order-to-delivery chain while keeping operations efficient and scalable.',
       'EtaCar Systems built an AI-powered delivery management platform that orchestrates the full lifecycle from order placement to final drop-off. The marketplace lets customers order from familiar local brands in just a few taps, while AI optimizes routing, batching, and courier assignment in the background.',
     ],
     features: [
@@ -88,18 +88,18 @@ export const caseStudies: CaseStudiesItemType[] = [
     title: 'AI-Driven Performance Analytics for Professional Athletes',
     image: '/images/baseballStatisticManagement.webp',
     paragraphs: [
-      'A sports-tech company wanted to give professional baseball players more than just raw stats — they needed player-centric, actionable insights to improve performance on the field. Traditional dashboards were overloaded with numbers but lacked contextual recommendations and intuitive exploration.',
+      'A sports-tech company wanted to give professional baseball players more than just raw stats - they needed player-centric, actionable insights to improve performance on the field. Traditional dashboards were overloaded with numbers but lacked contextual recommendations and intuitive exploration.',
       'EtaCar Systems delivered an AI-powered analytics SaaS platform tailored for professional athletes and coaching staff. The system ingests game events, tracking data, and historical performance, then uses advanced analytics and machine learning to surface patterns that matter for each individual player.',
     ],
     features: [
       'AI-generated performance insights highlighting strengths, weaknesses, and trends for each athlete',
       'Play-by-play, real-time data processing to update metrics and evaluations as games unfold',
       'Advanced analytics models for pitch recognition, situational effectiveness, and fatigue indicators',
-      'Interactive visualizations — charts, graphs, and comparative views — making complex data intuitive and engaging',
+      'Interactive visualizations - charts, graphs, and comparative views - making complex data intuitive and engaging',
       'Personalized views for players, coaches, and analysts, focused on decision-ready information',
     ],
     results:
-      'Teams gain a high-impact, AI-assisted performance layer on top of traditional stats — turning raw data into clear decisions and targeted training actions.',
+      'Teams gain a high-impact, AI-assisted performance layer on top of traditional stats - turning raw data into clear decisions and targeted training actions.',
     tags: ['Sports Analytics', 'Machine Learning', 'Real-time', 'Data Visualization'],
     keyTags: ['Web', 'SportTech', 'AI'],
   },
@@ -107,7 +107,7 @@ export const caseStudies: CaseStudiesItemType[] = [
     title: 'AI-Enhanced Reservations & Pre-Order Platform for Hospitality',
     image: '/images/restarauntReservations.webp',
     paragraphs: [
-      'A hospitality operator wanted to go beyond simple table bookings and build a smart reservation experience that boosts revenue and improves guest flow. They needed a mobile-first solution that could handle real-time table selection, pre-orders, and deposits — while giving the business better visibility into demand.',
+      'A hospitality operator wanted to go beyond simple table bookings and build a smart reservation experience that boosts revenue and improves guest flow. They needed a mobile-first solution that could handle real-time table selection, pre-orders, and deposits - while giving the business better visibility into demand.',
       'EtaCar Systems delivered an AI-augmented restaurant and bar reservations platform with an interactive floor-plan interface and intelligent demand insights. Guests can see the venue layout, select a specific table, place pre-orders, and pay deposits in a few taps, while AI helps the business optimize seating and service.',
     ],
     features: [

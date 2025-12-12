@@ -21,11 +21,11 @@ export const HeroSection: React.FC = () => {
 
           <p className={styles.subheadline}>
             We design and operate AI systems that measurably improve cycle times, risk controls and operating costs in
-            your most critical processes — not just experiments or prototypes
+            your most critical processes - not just experiments or prototypes
           </p>
 
           <p className={styles.trustLine}>
-            Our team has 20+ years of experience in AI engineering — from building solutions on top of the Autonomy
+            Our team has 20+ years of experience in AI engineering - from building solutions on top of the Autonomy
             platform to delivering production-grade AI systems for leading organizations around the world.
           </p>
 
@@ -69,7 +69,7 @@ export const HeroSection: React.FC = () => {
                   strokeLinejoin='round'
                 />
               </svg>
-              <span>From strategy to production — architecture, implementation, governance</span>
+              <span>From strategy to production - architecture, implementation, governance</span>
             </FadeCard>
 
             <FadeCard className={styles.fact}>

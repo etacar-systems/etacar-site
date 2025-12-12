@@ -46,7 +46,7 @@ export const ImpactAtAGlance: React.FC = () => {
 
         <div className={styles.closing}>
           <p>
-            These numbers are not “theoretical potential” — they are measured before/after deltas on real processes.
+            These numbers are not “theoretical potential” - they are measured before/after deltas on real processes.
             Exact values differ by client and domain.
           </p>
         </div>

@@ -8,7 +8,7 @@ const ClientWork: React.FC = () => {
     {
       title: 'Partnership Approach',
       description:
-        'We see every engagement as a partnership, not a one-off project. We start with your reality — existing systems, constraints, risk and culture.',
+        'We see every engagement as a partnership, not a one-off project. We start with your reality - existing systems, constraints, risk and culture.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -59,7 +59,7 @@ const ClientWork: React.FC = () => {
     {
       title: 'Sustainable Design',
       description:
-        'We design AI systems that are operationally sustainable — with clear ownership, monitoring and governance for long-term success.',
+        'We design AI systems that are operationally sustainable - with clear ownership, monitoring and governance for long-term success.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path

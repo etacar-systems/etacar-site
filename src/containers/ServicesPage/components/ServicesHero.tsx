@@ -103,7 +103,7 @@ export const ServicesHero: React.FC = () => {
 
         <p className={styles.description}>
           Below are our flagship services. Each is designed to solve a specific class of problems for C-level,
-          operations, IT and risk leaders — with clear KPIs and ownership.
+          operations, IT and risk leaders - with clear KPIs and ownership.
         </p>
         <div className={styles.quickFacts}>
           {items.map((item, idx) => (

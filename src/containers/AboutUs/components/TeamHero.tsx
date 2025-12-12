@@ -8,7 +8,7 @@ const TeamHero: React.FC = () => {
         <h1 className={styles.title}>A Senior AI Team with 20+ Years Building Production-Grade Systems</h1>
 
         <p className={styles.subtitle}>
-          From Autonomy.com to today — experience across high-stakes, regulated, and operations- heavy environments.
+          From Autonomy.com to today - experience across high-stakes, regulated, and operations- heavy environments.
         </p>
       </div>
     </section>

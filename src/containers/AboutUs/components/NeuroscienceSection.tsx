@@ -8,7 +8,7 @@ const NeuroscienceSection: React.FC = () => {
     {
       title: 'Neuroscience Roots',
       description:
-        'Several members of our team are professional neuroscientists with academic. They bring expertise in how complex systems learn, adapt and sometimes fail — from neural circuits to human behavior.',
+        'Several members of our team are professional neuroscientists with academic. They bring expertise in how complex systems learn, adapt and sometimes fail - from neural circuits to human behavior.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -54,7 +54,7 @@ const NeuroscienceSection: React.FC = () => {
     {
       title: 'Our Approach',
       description:
-        'We pay attention not only to model performance, but also to how AI interacts with teams, incentives. Our solutions are not just technically advanced — they are easier for people to adopt.',
+        'We pay attention not only to model performance, but also to how AI interacts with teams, incentives. Our solutions are not just technically advanced - they are easier for people to adopt.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -72,7 +72,7 @@ const NeuroscienceSection: React.FC = () => {
   return (
     <SectionWrapper className={styles.neuroscienceSection} variant='gradient'>
       <div className={styles.content}>
-        <h2 className={styles.title}>Neuroscience and AI — why it matters</h2>
+        <h2 className={styles.title}>Neuroscience and AI - why it matters</h2>
 
         <p className={styles.subtext}>
           Understanding how complex systems learn, adapt and interact with human behavior.

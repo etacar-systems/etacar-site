@@ -292,7 +292,7 @@ const crossIndustryUseCases = [
   {
     title: 'Document & knowledge intelligence',
     whatItIs:
-      'A trusted knowledge layer that turns your contracts, policies, procedures and technical docs into answers, comparisons and alerts — always with citations.',
+      'A trusted knowledge layer that turns your contracts, policies, procedures and technical docs into answers, comparisons and alerts - always with citations.',
     whoItsFor: [
       'Legal, compliance and risk teams',
       'Operations, finance, procurement',
@@ -317,7 +317,7 @@ const crossIndustryUseCases = [
   {
     title: 'AI-augmented engineering & modernization',
     whatItIs:
-      'Using AI to accelerate architecture, coding, testing and refactoring — especially for core platforms and services.',
+      'Using AI to accelerate architecture, coding, testing and refactoring - especially for core platforms and services.',
     whoItsFor: ['CTOs and Heads of Engineering', 'Platform, core services and SRE teams'],
     impact: [
       '30–50% faster delivery for selected features and services',
@@ -358,7 +358,7 @@ const crossIndustryUseCases = [
   {
     title: 'AI-augmented engineering & modernization',
     whatItIs:
-      'Using AI to accelerate architecture, coding, testing and refactoring — especially for core platforms and services.',
+      'Using AI to accelerate architecture, coding, testing and refactoring - especially for core platforms and services.',
     whoItsFor: ['CTOs and Heads of Engineering', 'Platform, core services and SRE teams'],
     impact: [
       '30–50% faster delivery for selected features and services',

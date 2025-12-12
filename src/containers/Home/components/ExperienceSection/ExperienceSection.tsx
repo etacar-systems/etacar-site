@@ -18,7 +18,7 @@ export const ExperienceSection: React.FC = () => {
 
           <p className={styles.paragraph}>
             Since then, we’ve built and operated AI-powered systems for online businesses and large organizations across
-            Europe, the US and other international markets — from information retrieval and recommendations to
+            Europe, the US and other international markets - from information retrieval and recommendations to
             automation and risk scoring.
           </p>
 

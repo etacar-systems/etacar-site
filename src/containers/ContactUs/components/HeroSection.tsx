@@ -13,7 +13,7 @@ export const HeroSection: React.FC = () => {
           <p className={styles.subtitle}>
             We're a senior AI engineering team with 20+ years of experience building AI-powered systems for
             business-critical operations. Whether you need strategic guidance, technical implementation, or end-to-end
-            delivery — we're here to help.
+            delivery - we're here to help.
           </p>
 
           <div className={styles.quickFacts}>

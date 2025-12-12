@@ -113,11 +113,11 @@ const Hero: React.FC = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>Where AI Makes the Biggest Impact in Your Business</h1>
         <h2 className={styles.subtitle}>
-          Typical high-value problems we solve across industries — from operations to risk, finance, and engineering
+          Typical high-value problems we solve across industries - from operations to risk, finance, and engineering
         </h2>
         <p className={styles.intro}>
           Below are examples of how we apply our services in different industries. Each use case is tied to specific
-          processes, roles and KPIs — not just generic “AI for everything”.
+          processes, roles and KPIs - not just generic “AI for everything”.
         </p>
         <div className={styles.quickFacts}>
           {items.map((item, idx) => (

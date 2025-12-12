@@ -80,7 +80,7 @@ export const MeasurementFramework: React.FC = () => {
         <div className={styles.closing}>
           <p>
             For each project we pick the relevant metrics, define baselines together with your team, and track progress
-            over time. If the numbers don’t move in the right direction, we adjust the solution — or stop it, instead of
+            over time. If the numbers don’t move in the right direction, we adjust the solution - or stop it, instead of
             scaling something that doesn’t work.
           </p>
         </div>

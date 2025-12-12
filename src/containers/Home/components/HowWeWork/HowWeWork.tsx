@@ -8,7 +8,7 @@ export const HowWeWork: React.FC = () => {
       number: 1,
       title: 'Discover & Prioritize',
       description:
-        'We run focused workshops with your leadership and key teams to map out AI opportunities and risks — and prioritize where to start.',
+        'We run focused workshops with your leadership and key teams to map out AI opportunities and risks - and prioritize where to start.',
     },
     {
       number: 2,

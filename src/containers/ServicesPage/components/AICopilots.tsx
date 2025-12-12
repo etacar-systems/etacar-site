@@ -7,7 +7,7 @@ export const AICopilots: React.FC = () => {
       id='ai-copilots'
       title='AI Copilots for Critical Roles'
       oneLiner='Role-specific AI assistants for people who make high-stakes decisions every day.'
-      bestFor='Best for leaders and teams who need copilots designed around their actual workflows, systems and risk constraints — not generic chatbots.'
+      bestFor='Best for leaders and teams who need copilots designed around their actual workflows, systems and risk constraints - not generic chatbots.'
       whatWeDeliver={[
         'Design of role-specific workflows: how the copilot helps in daily decisions',
         'Integration with your tools: email, chat, CRM, BI, ticketing, internal systems',

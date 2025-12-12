@@ -14,7 +14,7 @@ export const FlagshipServices: React.FC = () => {
     {
       title: 'AI Copilots for Critical Roles',
       description:
-        'AI assistants for leaders and teams who make high-stakes decisions. We build role-specific copilots for risk, operations, sales and service — integrated into your existing tools, with clear boundaries and explanations.',
+        'AI assistants for leaders and teams who make high-stakes decisions. We build role-specific copilots for risk, operations, sales and service - integrated into your existing tools, with clear boundaries and explanations.',
       href: '/services#ai-copilots',
     },
     {
@@ -26,19 +26,19 @@ export const FlagshipServices: React.FC = () => {
     {
       title: 'Document & Knowledge Intelligence',
       description:
-        'Turn your documents and internal knowledge into decisions — not just search. It delivers answers, comparisons and risk alerts. Always with citations your risk and legal teams can verify',
+        'Turn your documents and internal knowledge into decisions - not just search. It delivers answers, comparisons and risk alerts. Always with citations your risk and legal teams can verify',
       href: '/services#document-intelligence',
     },
     {
       title: 'AI-Augmented Software Delivery',
       description:
-        'Faster architecture, code and modernization for your core systems. We use AI to accelerate design, implementation, testing and refactoring — with your standards for security, performance and maintainability built in.',
+        'Faster architecture, code and modernization for your core systems. We use AI to accelerate design, implementation, testing and refactoring - with your standards for security, performance and maintainability built in.',
       href: '/services#software-delivery',
     },
     {
       title: 'AI Risk, Evaluation & Governance',
       description:
-        'Make your AI landscape measurable, auditable and under control — with clear ownership, risk ratings and approval workflows for every business-critical use case.',
+        'Make your AI landscape measurable, auditable and under control - with clear ownership, risk ratings and approval workflows for every business-critical use case.',
       href: '/services#ai-governance',
     },
   ];

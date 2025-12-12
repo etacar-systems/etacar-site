@@ -96,7 +96,7 @@ export const CaseStudies: React.FC = () => {
       industry: 'Online business (document & knowledge intelligence)',
       headline: 'Turning scattered documents into a trusted knowledge layer',
       challenge:
-        'A digital services company had thousands of contracts, policies and technical documents spread across different tools and repositories. Teams were spending hours searching, re‑reading and copying fragments into new documents — or they were simply guessing.',
+        'A digital services company had thousands of contracts, policies and technical documents spread across different tools and repositories. Teams were spending hours searching, re‑reading and copying fragments into new documents - or they were simply guessing.',
       whatWeDid: [
         'Implemented a document ingestion pipeline for contracts, policies, procedures and technical documentation',
         'Built a knowledge layer on top, allowing users to ask questions and receive answers with citations',

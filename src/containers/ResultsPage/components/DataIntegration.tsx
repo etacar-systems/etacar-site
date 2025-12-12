@@ -28,7 +28,7 @@ export const DataIntegration: React.FC = () => {
 
           <FadeCard className={styles.closing}>
             <p>
-              This is what allows us — and you — to stand behind the KPIs and the decisions your AI systems help to
+              This is what allows us - and you - to stand behind the KPIs and the decisions your AI systems help to
               make.
             </p>
           </FadeCard>

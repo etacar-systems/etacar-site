@@ -16,7 +16,7 @@ type TeamCardProps = {
 
 export const TeamCard: React.FC<TeamCardProps> = ({ member }) => {
   return (
-    <article className={style.card} aria-label={`${member.name} — ${member.role}`}>
+    <article className={style.card} aria-label={`${member.name} - ${member.role}`}>
       {member.imageSrc ? (
         <div className={style.avatar}>
           <img src={member.imageSrc} alt={member.imageAlt || member.name} />

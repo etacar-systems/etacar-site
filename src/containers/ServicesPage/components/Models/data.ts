@@ -29,7 +29,7 @@ export const data = [
     id: 3,
     title: 'Dedicated AI Team',
     description:
-      'A long-term, embedded team focused on your AI initiatives — combining architecture, development, and continuous optimization.',
+      'A long-term, embedded team focused on your AI initiatives - combining architecture, development, and continuous optimization.',
     advantages: [
       'Dedicated experts aligned with your roadmap',
       'Continuous improvement and feature evolution',

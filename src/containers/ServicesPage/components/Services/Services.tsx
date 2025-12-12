@@ -4,7 +4,7 @@ const fullServices = {
   fullServicesPage: {
     title: 'Engineering Intelligent Systems for the Enterprise',
     subtitle:
-      'AI orchestration, autonomous agents, and cognitive automation — built to help organizations operate with greater clarity, efficiency, and intelligence.',
+      'AI orchestration, autonomous agents, and cognitive automation - built to help organizations operate with greater clarity, efficiency, and intelligence.',
     ctaPrimary: 'Talk to an AI Architect',
     ctaSecondary: 'Request a Demo',
     sections: [
@@ -28,7 +28,7 @@ const fullServices = {
         id: 'autonomous-enterprise-agents',
         title: 'Autonomous Enterprise Agents',
         description:
-          'Software agents capable of planning, reasoning, using tools, and executing tasks — all while maintaining enterprise-grade reliability.',
+          'Software agents capable of planning, reasoning, using tools, and executing tasks - all while maintaining enterprise-grade reliability.',
         items: [
           'Research & summarization',
           'Monitoring, analysis, and diagnostics',
@@ -78,7 +78,7 @@ const fullServices = {
         id: 'ai-strategy-advisory',
         title: 'AI Strategy & Advisory',
         description:
-          'A strategic consulting and advisory service designed to help organizations understand where AI delivers the highest value — and how to implement it safely, effectively, and sustainably.',
+          'A strategic consulting and advisory service designed to help organizations understand where AI delivers the highest value - and how to implement it safely, effectively, and sustainably.',
         items: [
           'Identify high-impact opportunities for AI adoption',
           'Assess data, infrastructure, and operational readiness',
@@ -100,7 +100,7 @@ const fullServices = {
         id: 'ai-lifecycle-management',
         title: 'AI Lifecycle Management & Optimization',
         description:
-          'A continuous management and optimization service for organizations that rely on AI systems in production. We ensure your AI stays efficient, compliant, secure, up to date — and aligned with evolving business needs.',
+          'A continuous management and optimization service for organizations that rely on AI systems in production. We ensure your AI stays efficient, compliant, secure, up to date - and aligned with evolving business needs.',
         items: [
           'Monitor performance, reliability, and quality',
           'Optimize workflows, agents, and orchestration pipelines',

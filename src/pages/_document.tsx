@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
           <meta
             name='description'
-            content='EtaCar Systems designs, builds and operates enterprise-grade AI systems for business-critical decisions and processes. Senior AI engineering team with 20+ years of experience — from Autonomy.com to modern LLM architectures. Proven impact on cycle time, error rates and operational risk.'
+            content='EtaCar Systems designs, builds and operates enterprise-grade AI systems for business-critical decisions and processes. Senior AI engineering team with 20+ years of experience - from Autonomy.com to modern LLM architectures. Proven impact on cycle time, error rates and operational risk.'
           />
 
           <meta property='og:type' content='website' />
@@ -18,7 +18,7 @@ class MyDocument extends Document {
           <meta property='og:title' content='Enterprise AI for Business-Critical Decisions and Processes' />
           <meta
             property='og:description'
-            content='Senior AI engineering team with 20+ years of experience — from Autonomy.com to modern LLM systems. We design, build and operate AI solutions with measurable impact on speed, risk and accuracy in regulated environments.'
+            content='Senior AI engineering team with 20+ years of experience - from Autonomy.com to modern LLM systems. We design, build and operate AI solutions with measurable impact on speed, risk and accuracy in regulated environments.'
           />
           <meta property='og:url' content='https://etacar.io' />
           <meta property='og:image' content='/og-image.jpg' />
@@ -29,7 +29,7 @@ class MyDocument extends Document {
           <meta name='twitter:title' content='Enterprise AI for Business-Critical Decisions' />
           <meta
             name='twitter:description'
-            content='EtaCar Systems — senior AI engineering team with 20+ years of experience. We build enterprise AI systems with measurable impact on operational performance and risk.'
+            content='EtaCar Systems - senior AI engineering team with 20+ years of experience. We build enterprise AI systems with measurable impact on operational performance and risk.'
           />
           <meta name='twitter:image' content='/twitter-card.jpg' />
           <meta name='format-detection' content='telephone=no' />

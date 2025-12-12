@@ -7,7 +7,7 @@ export const AIGovernance: React.FC = () => {
       id='ai-risk'
       title='AI Risk, Evaluation & Governance'
       oneLiner='Bring all your AI initiatives under one governance and monitoring umbrella.'
-      problemWeSolve='As AI projects multiply, it becomes difficult to answer simple questions: How many AI systems do we have? Who owns them? How do we know they are working as intended — and safely?'
+      problemWeSolve='As AI projects multiply, it becomes difficult to answer simple questions: How many AI systems do we have? Who owns them? How do we know they are working as intended - and safely?'
       whatWeDeliver={[
         'An inventory of AI systems and use cases across the organization',
         'A risk classification for each system and corresponding controls',
