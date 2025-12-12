@@ -45,7 +45,7 @@ const industries = [
         sectionId: 'ai-copilots',
       },
       {
-        title: 'AI-Orchestrated Process Automation',
+        title: 'AI Process Orchestration',
         sectionId: 'ai-powered',
       },
       {
@@ -69,7 +69,7 @@ const industries = [
     ],
     whereWeHelp: [
       'AI-assisted workflows for complex customer support cases',
-      'AI-Orchestrated Process Automation for order exceptions, refunds and claims',
+      'AI Process Orchestration for order exceptions, refunds and claims',
       'Knowledge intelligence over help centre, internal playbooks and policies',
       'AI copilots for operations managers to monitor bottlenecks and risks',
     ],
@@ -90,7 +90,7 @@ const industries = [
         sectionId: 'ai-copilots',
       },
       {
-        title: 'AI-Orchestrated Process Automation',
+        title: 'AI Process Orchestration',
         sectionId: 'ai-powered',
       },
       {
@@ -135,7 +135,7 @@ const industries = [
         sectionId: 'enterprise-ai',
       },
       {
-        title: 'AI-Orchestrated Process Automation',
+        title: 'AI Process Orchestration',
         sectionId: 'ai-powered',
       },
       {
@@ -179,7 +179,7 @@ const industries = [
         sectionId: 'ai-copilots',
       },
       {
-        title: 'AI-Orchestrated Process Automation',
+        title: 'AI Process Orchestration',
         sectionId: 'ai-powered',
       },
       {
@@ -280,7 +280,7 @@ const crossIndustryUseCases = [
     ],
     services: [
       {
-        title: 'AI-Orchestrated Process Automation',
+        title: 'AI Process Orchestration',
         sectionId: 'ai-powered',
       },
       {

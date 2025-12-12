@@ -5,11 +5,11 @@ import styles from './ResultsMeasure.module.scss';
 
 export const ResultsMeasure: React.FC = () => {
   const kpis = [
-    '20–40% faster end-to-end execution for selected processes',
-    '30–50% less manual effort for recurring analysis and reporting',
-    '30–50% shorter time-to-delivery for selected development tasks',
-    '50–70% less time spent searching and reading internal documents',
-    'Fewer escalations and errors, thanks to better use of existing knowledge',
+    'Process documents 20–40% faster and cut search time by up to 70%.',
+    'Reduce hallucinations by 40–60% and escalations by 30–50%.',
+    'Achieve near-zero leakage risk and 100% malware detection.',
+    'Ship features 30–50% faster with 30–50% less manual rework.',
+    'Turn internal data into insight faster, improving decisions across the organization.',
   ];
 
   const miniCases = [

@@ -55,7 +55,7 @@ const items = [
         <path d='M7 14H17' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
       </svg>
     ),
-    label: 'AI-Orchestrated Process Automation',
+    label: 'AI Process Orchestration',
     sectionId: 'ai-powered',
   },
   {

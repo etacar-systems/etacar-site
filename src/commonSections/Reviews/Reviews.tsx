@@ -16,7 +16,7 @@ export const Reviews = () => {
       <div className={styles.container}>
         <h2 className={styles.title}>Reviews</h2>
         <div className={styles.swiper}>
-          <div className={styles.label}>Insights from our partners about the quality of our work and collaboration</div>
+          <div className={styles.label}>Insights from our clients about the quality of our work and collaboration</div>
           <Swiper
             direction={'horizontal'}
             wrapperClass={styles.swiper_wrapper}

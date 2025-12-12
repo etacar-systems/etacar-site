@@ -8,7 +8,7 @@ const OurStory: React.FC = () => {
     {
       title: 'Our Roots',
       description:
-        'Our roots go back more than two decades, when "AI" mostly meant enterprise search, text analytics and recommendation engines.',
+        'Our roots go back more than two decades, when “AI” mostly meant enterprise information retrieval, text analytics and recommendation engines.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -21,7 +21,7 @@ const OurStory: React.FC = () => {
     {
       title: 'Early Experience',
       description:
-        'We started as certified specialists on platforms like Autonomy, helping large organizations turn unstructured text into search, alerts and decision support.',
+        'We started as certified specialists on platforms like Autonomy, helping large organizations turn unstructured text into actionable insights, alerts and decision support.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -37,7 +37,7 @@ const OurStory: React.FC = () => {
     {
       title: 'Building Systems',
       description:
-        "Over the years we've worked with online businesses and enterprises across Europe and the US, building and maintaining systems for search, analytics, automation and content management.",
+        'Over the years we’ve worked with online businesses and enterprises across Europe and the US, building and maintaining systems for information retrieval, analytics, automation and content management.',
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -113,10 +113,11 @@ const OurStory: React.FC = () => {
         <p className={styles.subtext}>
           We started in the early 2000s working with enterprise AI platforms such as Autonomy as certified specialists.
           Since then, we’ve built and operated AI-driven systems across finance, e-commerce, logistics, telecom and
-          SaaS. The same disciplines we applied to high-stakes search and analytics — clear owners, measurable KPIs,
-          robust governance — are now built into every AI system we deliver. Today we use that experience — and our
-          background in neuroscience and complex systems — to design AI solutions that work in real organizations, not
-          just in demos. More than two decades of AI experience, from enterprise search to modern AI solutions.
+          SaaS. The same disciplines we applied to high-stakes decision and analytics systems — clear owners, measurable
+          KPIs, robust governance — are now built into every AI system we deliver. Today we use that experience — and
+          our background in neuroscience and complex systems — to design AI solutions that work in real organizations,
+          not just in demos. More than two decades of AI experience, from enterprise decision systems to modern AI
+          solutions.
         </p>
         <div className={styles.grid}>
           {storyPoints.map((point, index) => (

@@ -8,7 +8,7 @@ export const FlagshipServices: React.FC = () => {
     {
       title: 'AI Strategy & Architecture',
       description:
-        'Define where AI really moves the needle — and how to implement it safely. We audit your current initiatives, identify 3–5 high-impact use cases, and design a target architecture and governance model that your IT and risk teams can support.',
+        'Define where AI truly moves the needle through structured analysis, quantum-inspired modeling, and predictive simulation. We assess your current initiatives, pinpoint 3–5 high-impact use cases, and design a target architecture and governance model. The result is a scalable, secure approach your IT and risk teams can confidently support.',
       href: '/services#ai-strategy',
     },
     {
@@ -18,7 +18,7 @@ export const FlagshipServices: React.FC = () => {
       href: '/services#ai-copilots',
     },
     {
-      title: 'AI-Orchestrated Process Automation',
+      title: 'AI Process Orchestration',
       description:
         'End-to-end workflows for complex processes, not just another chatbot or isolated dashboard, but orchestrated workflows that connect to your real systems. We orchestrate AI across processes like KYC/AML reviews, incident management and complex deal creation, with clear SLAs and manual override where needed.',
       href: '/services#process-automation',
