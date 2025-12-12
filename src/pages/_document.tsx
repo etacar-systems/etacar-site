@@ -8,13 +8,6 @@ class MyDocument extends Document {
           <link rel='icon' href='/favicon.ico' />
           <link rel='manifest' href='/manifest.json' />
 
-          <link rel='preconnect' href='https://fonts.googleapis.com' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='anonymous' />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap'
-            rel='stylesheet'
-          />
-
           <meta
             name='description'
             content='EtaCar Systems designs, builds and operates enterprise-grade AI systems for business-critical decisions and processes. Senior AI engineering team with 20+ years of experience — from Autonomy.com to modern LLM architectures. Proven impact on cycle time, error rates and operational risk.'
