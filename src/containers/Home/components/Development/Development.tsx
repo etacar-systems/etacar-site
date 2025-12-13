@@ -43,9 +43,12 @@ export const Development = () => {
           </div>
           <div className={styles.description}>
             <i>
-            We combine enterprise-grade orchestration, safety, and observability with fast iteration cycles, so your first AI solution goes live in <b>6–10 weeks — not months or years</b>.
-            ****NL! This early impact creates momentum before large-scale rollout begins.
+              We combine enterprise-grade orchestration, safety, and observability with fast iteration cycles, so your
+              first AI solution goes live in <b>6–10 weeks — not months or years</b>.
             </i>
+          </div>
+          <div className={styles.description}>
+            <i>This early impact creates momentum before large-scale rollout begins.</i>
           </div>
         </div>
       </div>

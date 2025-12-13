@@ -30,7 +30,17 @@ const CaseStudyItem: React.FC<CaseStudyProps> = ({ industry, headline, challenge
             {whatWeDid.map((item, index) => (
               <li className={styles.listItem} key={index}>
                 <span className={styles.bullet}>●</span>
-                <span>{item}</span>
+                <span>
+                  {item.split(/([+\d–×%]+)/g).map((part, i) =>
+                    /[+\d–×%]/.test(part) ? (
+                      <strong key={i} className={styles.highlightNumber}>
+                        {part}
+                      </strong>
+                    ) : (
+                      part
+                    )
+                  )}
+                </span>
               </li>
             ))}
           </ul>
@@ -44,7 +54,17 @@ const CaseStudyItem: React.FC<CaseStudyProps> = ({ industry, headline, challenge
             {results.map((item, index) => (
               <li className={styles.listItem} key={index}>
                 <span className={styles.bullet}>●</span>
-                <span>{item}</span>
+                <span>
+                  {item.split(/([+\d–×%]+)/g).map((part, i) =>
+                    /[+\d–×%]/.test(part) ? (
+                      <strong key={i} className={styles.highlightNumber}>
+                        {part}
+                      </strong>
+                    ) : (
+                      part
+                    )
+                  )}
+                </span>
               </li>
             ))}
           </ul>
@@ -68,7 +88,7 @@ export const CaseStudies: React.FC = () => {
         'Connected internal playbooks and policies as a trusted knowledge source with citations',
       ],
       results: [
-        '−35% average time‑to‑resolution for complex cases in the pilot region',
+        '–35% average time‑to‑resolution for complex cases in the pilot region',
         '60% of cases processed with AI assistance in the first 3 months',
         '<2% re‑opened tickets due to AI‑related errors',
         'Higher satisfaction scores from both agents and customers',
@@ -87,7 +107,7 @@ export const CaseStudies: React.FC = () => {
         'Ensured that every recommendation came with traceable references to underlying data and policies',
       ],
       results: [
-        '−30–40% reduction in review cycle time',
+        '–30–40% reduction in review cycle time',
         'More consistent risk assessments across analysts and regions',
         'Better transparency for internal audit: clearer records of what was reviewed and why decisions were made',
       ],

@@ -82,7 +82,17 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
               {kpis.map((item, i) => (
                 <li key={i} className={styles.kpiItem}>
                   <span className={styles.bullet}>●</span>
-                  <span>{item}</span>
+                  <span>
+                    {item.split(/([+\d–×%]+)/g).map((part, i) =>
+                      /[+\d–×%]/.test(part) ? (
+                        <strong key={i} className={styles.highlightNumber}>
+                          {part}
+                        </strong>
+                      ) : (
+                        part
+                      )
+                    )}
+                  </span>
                 </li>
               ))}
             </ul>

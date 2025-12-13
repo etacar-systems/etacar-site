@@ -16,7 +16,17 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, hr
     <FadeCard className={classNames(styles.card, className)}>
       {icon && <div className={styles.icon}>{icon}</div>}
       <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{description}</p>
+      <p className={styles.description}>
+        {description.split(/([+\d–×%]+)/g).map((part, i) =>
+          /[+\d–×%]/.test(part) ? (
+            <strong key={i} className={styles.highlightNumber}>
+              {part}
+            </strong>
+          ) : (
+            part
+          )
+        )}
+      </p>
     </FadeCard>
   );
 };

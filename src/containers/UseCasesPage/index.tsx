@@ -30,7 +30,7 @@ const industries = [
       'Knowledge layer that connects policies, procedures and local regulations into one searchable source',
     ],
     kpis: [
-      '−30–40% review cycle time for KYC/AML processes',
+      '–30–40% review cycle time for KYC/AML processes',
       'More consistent risk assessments across analysts and locations',
       '50–70% less time spent preparing responses and reports for regulators',
       'Better audit trail: every AI-supported assessment linked back to data and documents',
@@ -79,7 +79,7 @@ const industries = [
       'Knowledge layer connecting help centre, internal guidelines and policy updates',
     ],
     kpis: [
-      '−30–40% time-to-resolution for complex cases',
+      '–30–40% time-to-resolution for complex cases',
       '30–50% less manual effort per ticket for selected queues',
       'Higher first-contact resolution and fewer re-opened tickets',
       'More consistent policy application across regions and teams',

@@ -80,7 +80,17 @@ export const ServiceDetail: React.FC<ServiceDetailProps> = ({
               {exampleKPIs.map((kpi, index) => (
                 <li key={index} className={styles.kpiItem}>
                   <span className={styles.bullet}>●</span>
-                  <span>{kpi}</span>
+                  <span>
+                    {kpi.split(/([+\d–×%]+)/g).map((part, i) =>
+                      /[+\d–×%]/.test(part) ? (
+                        <strong key={i} className={styles.highlightNumber}>
+                          {part}
+                        </strong>
+                      ) : (
+                        part
+                      )
+                    )}
+                  </span>
                 </li>
               ))}
             </ul>

@@ -17,13 +17,13 @@ export const ResultsMeasure: React.FC = () => {
       title: 'Global e-commerce – operations',
       goal: 'reduce handling time for complex support cases without adding headcount',
       approach: 'AI-assisted case summaries, context gathering, next-best-action suggestions and playbook search',
-      result: '−35% average time-to-resolution, 60% of cases processed with AI assistance',
+      result: '–35% average time-to-resolution, 60% of cases processed with AI assistance',
     },
     {
       title: 'Financial services – KYC reviews',
       goal: 'speed up periodic KYC reviews while keeping risk under control',
       approach: 'AI workflow that collects data, drafts risk summaries and flags edge cases for human review',
-      result: '−30–40% review cycle time, more consistent risk assessments, better audit trail',
+      result: '–30–40% review cycle time, more consistent risk assessments, better audit trail',
     },
   ];
 
@@ -33,8 +33,10 @@ export const ResultsMeasure: React.FC = () => {
         <h2 className={styles.title}>Results you can measure</h2>
 
         <p className={styles.subtext}>
-        Every engagement starts with <b>3–5 concrete KPIs tied to business outcomes</b>, not demos.
-        ****NL! We don’t ship AI unless impact can be measured, reviewed, and governed over time.
+          Every engagement starts with <b>3–5 concrete KPIs tied to business outcomes</b>, not demos.
+        </p>
+        <p className={styles.subtext}>
+          We don’t ship AI unless impact can be measured, reviewed, and governed over time.
         </p>
 
         <ul className={styles.kpiList}>
@@ -42,7 +44,17 @@ export const ResultsMeasure: React.FC = () => {
             <FadeCard key={index} className={styles.kpiItem}>
               <div className={styles.text}>
                 <span className={styles.bullet}>●</span>
-                <span>{kpi}</span>
+                <span>
+                  {kpi.split(/([+\d–×%]+)/g).map((part, i) =>
+                    /[+\d–×%]/.test(part) ? (
+                      <strong key={i} className={styles.highlightNumber}>
+                        {part}
+                      </strong>
+                    ) : (
+                      part
+                    )
+                  )}
+                </span>
               </div>
             </FadeCard>
           ))}
@@ -59,7 +71,16 @@ export const ResultsMeasure: React.FC = () => {
                 <strong>Approach:</strong> {caseStudy.approach}
               </div>
               <div className={styles.caseResult}>
-                <strong>Result:</strong> {caseStudy.result}
+                <strong>Result:</strong>{' '}
+                {caseStudy.result.split(/([+\d–×%]+)/g).map((part, i) =>
+                  /[+\d–×%]/.test(part) ? (
+                    <strong key={i} className={styles.highlightNumber}>
+                      {part}
+                    </strong>
+                  ) : (
+                    part
+                  )
+                )}
               </div>
             </FadeCard>
           ))}

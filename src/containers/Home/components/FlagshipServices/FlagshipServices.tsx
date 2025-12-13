@@ -14,7 +14,7 @@ export const FlagshipServices: React.FC = () => {
     {
       title: 'AI Copilots for Critical Roles',
       description:
-        'Role-specific AI copilots for teams making high-stakes decisions. Built around real workflows and enterprise data, they reduce hallucinations by <b>40–60%</b>, cut escalations by **30–50%, and help decisions move faster with confidence.',
+        'Role-specific AI copilots for teams making high-stakes decisions. Built around real workflows and enterprise data, they reduce hallucinations by 40–60%, cut escalations by 30–50%, and help decisions move faster with confidence.',
       href: '/services#ai-copilots',
     },
     {

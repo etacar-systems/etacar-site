@@ -1,16 +1,19 @@
-import React from 'react';
 import styles from './CaseStudies.module.scss';
 
 const cases = [
   {
     title: 'Global e‑commerce (customer operations)',
     headline: 'Reducing handling time for complex support cases',
-    results: ['−35% average time‑to‑resolution', '60% of cases processed with AI assistance', '<2% re‑opened tickets'],
+    results: ['–35% average time‑to‑resolution', '60% of cases processed with AI assistance', '<2% re‑opened tickets'],
   },
   {
     title: 'Financial services (KYC reviews)',
     headline: 'Speeding up KYC reviews while keeping risk under control',
-    results: ['−30–40% reduction in review cycle time', 'More consistent risk assessments', 'Better transparency for audit'],
+    results: [
+      '–30–40% reduction in review cycle time',
+      'More consistent risk assessments',
+      'Better transparency for audit',
+    ],
   },
   {
     title: 'Document & knowledge intelligence',

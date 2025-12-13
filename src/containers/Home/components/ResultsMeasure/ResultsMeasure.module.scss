@@ -25,6 +25,7 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: var(--space-2);
 }
 
 .kpiList {
@@ -114,7 +115,11 @@
   color: var(--color-primary-800);
   strong {
     color: var(--color-success-500);
-    display: block;
     margin-bottom: var(--space-2);
   }
+}
+
+.highlightNumber {
+  color: var(--color-success-500);
+  font-weight: var(--font-bold);
 }

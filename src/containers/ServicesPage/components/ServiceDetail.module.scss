@@ -19,8 +19,12 @@
   font-size: var(--text-xl);
   color: var(--color-neutral-800);
   margin-bottom: var(--space-10);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semibold);
   line-height: var(--leading-relaxed);
+}
+
+.highlightNumber {
+  color: var(--color-success-500);
 }
 
 .section {

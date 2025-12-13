@@ -79,7 +79,17 @@ const CrossIndustrySection: React.FC<CrossIndustrySectionProps> = ({ useCases, s
                   <h4 className={styles.label}>Typical impact:</h4>
                   <ul className={styles.list}>
                     {useCase.impact.map((item, i) => (
-                      <li key={i}>{item}</li>
+                      <li key={i}>
+                        {item.split(/([+\d–×%]+)/g).map((part, i) =>
+                          /[+\d–×%]/.test(part) ? (
+                            <strong key={i} className={styles.highlightNumber}>
+                              {part}
+                            </strong>
+                          ) : (
+                            part
+                          )
+                        )}
+                      </li>
                     ))}
                   </ul>
                 </div>
