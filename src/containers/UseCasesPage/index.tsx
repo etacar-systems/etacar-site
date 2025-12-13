@@ -46,11 +46,11 @@ const industries = [
       },
       {
         title: 'AI Process Orchestration',
-        sectionId: 'ai-powered',
+        sectionId: 'ai-orchestration',
       },
       {
-        title: 'Document & Knowledge Intelligence',
-        sectionId: 'document',
+        title: 'Knowledge Intelligence',
+        sectionId: 'knowledge-intelligence',
       },
       {
         title: 'AI Risk, Evaluation & Governance',
@@ -91,15 +91,15 @@ const industries = [
       },
       {
         title: 'AI Process Orchestration',
-        sectionId: 'ai-powered',
+        sectionId: 'ai-orchestration',
       },
       {
-        title: 'Document & Knowledge Intelligence',
-        sectionId: 'document',
+        title: 'Knowledge Intelligence',
+        sectionId: 'knowledge-intelligence',
       },
       {
-        title: 'AI-Augmented Software Delivery',
-        sectionId: 'ai-augmented',
+        title: 'AI-Accelerated Software Delivery',
+        sectionId: 'ai-software',
       },
     ],
   },
@@ -136,15 +136,15 @@ const industries = [
       },
       {
         title: 'AI Process Orchestration',
-        sectionId: 'ai-powered',
+        sectionId: 'ai-orchestration',
       },
       {
         title: 'AI Copilots for Critical Roles',
         sectionId: 'ai-copilots',
       },
       {
-        title: 'Document & Knowledge Intelligence',
-        sectionId: 'document',
+        title: 'Knowledge Intelligence',
+        sectionId: 'knowledge-intelligence',
       },
     ],
   },
@@ -180,11 +180,11 @@ const industries = [
       },
       {
         title: 'AI Process Orchestration',
-        sectionId: 'ai-powered',
+        sectionId: 'ai-orchestration',
       },
       {
-        title: 'Document & Knowledge Intelligence',
-        sectionId: 'document',
+        title: 'Knowledge Intelligence',
+        sectionId: 'knowledge-intelligence',
       },
       {
         title: 'AI Risk, Evaluation & Governance',
@@ -202,7 +202,7 @@ const industries = [
       'Need to keep core platform stable while evolving quickly',
     ],
     whereWeHelp: [
-      'AI-augmented software delivery for core services and platforms',
+      'AI-аccelerated software delivery for core services and platforms',
       'Architecture & strategy support for platform modernization',
       'Document & knowledge intelligence for internal docs, runbooks and design decisions',
       'AI copilots for support and success teams working with complex configurations',
@@ -220,16 +220,16 @@ const industries = [
     ],
     services: [
       {
-        title: 'AI-Augmented Software Delivery',
-        sectionId: 'ai-augmented',
+        title: 'AI-Accelerated Software Delivery',
+        sectionId: 'ai-software',
       },
       {
         title: 'AI Strategy & Architecture',
         sectionId: 'enterprise-ai',
       },
       {
-        title: 'Document & Knowledge Intelligence',
-        sectionId: 'document',
+        title: 'Knowledge Intelligence',
+        sectionId: 'knowledge-intelligence',
       },
     ],
   },
@@ -281,7 +281,7 @@ const crossIndustryUseCases = [
     services: [
       {
         title: 'AI Process Orchestration',
-        sectionId: 'ai-powered',
+        sectionId: 'ai-orchestration',
       },
       {
         title: 'AI Copilots for Critical Roles',
@@ -305,8 +305,8 @@ const crossIndustryUseCases = [
     ],
     services: [
       {
-        title: 'Document & Knowledge Intelligence',
-        sectionId: 'document',
+        title: 'Knowledge Intelligence',
+        sectionId: 'knowledge-intelligence',
       },
       {
         title: 'AI Risk, Evaluation & Governance',
@@ -315,7 +315,7 @@ const crossIndustryUseCases = [
     ],
   },
   {
-    title: 'AI-augmented engineering & modernization',
+    title: 'AI-accelerated engineering & modernization',
     whatItIs:
       'Using AI to accelerate architecture, coding, testing and refactoring - especially for core platforms and services.',
     whoItsFor: ['CTOs and Heads of Engineering', 'Platform, core services and SRE teams'],
@@ -326,8 +326,8 @@ const crossIndustryUseCases = [
     ],
     services: [
       {
-        title: 'AI-Augmented Software Delivery',
-        sectionId: 'ai-augmented',
+        title: 'AI-Accelerated Software Delivery',
+        sectionId: 'ai-software',
       },
       {
         title: 'AI Strategy & Architecture',

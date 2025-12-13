@@ -4,18 +4,19 @@ import ServiceDetail from './ServiceDetail';
 export const DocumentIntelligence: React.FC = () => {
   return (
     <ServiceDetail
-      id='document'
-      title='Document & Knowledge Intelligence'
-      oneLiner='Turn your contracts, policies and technical documentation into a trusted knowledge layer.'
-      problemWeSolve="Critical knowledge is often buried in documents, shared drives and legacy systems. People spend hours searching, or simply guess. That doesn't work when regulators, customers or partners expect clear answers."
+      id='knowledge-intelligence'
+      title='Knowledge Intelligence'
+      oneLiner='From scattered documents to trusted, context-aware answers that cut search time by up to 70% and support real decisions.'
+      bestFor="Teams working with large volumes of documents, policies, contracts, technical documentation, and internal knowledge."
+      problemWeSolve="Critical information is locked inside documents and siloed systems. Searching is slow, answers are inconsistent, and decisions lack traceability."
       whatWeDeliver={[
-        'A unified knowledge layer across contracts, policies, procedures and technical docs',
-        'Search and Q&A with answers backed by citations and document snippets',
-        'Tools for comparing versions, spotting changes and detecting potential risks',
-        'Optional alerts on changes in key documents (e.g. policies, SLAs, regulations)',
+        'Deep semantic understanding of documents and knowledge bases',
+        'Context-aware answers with references and citations',
+        'Side-by-side comparison and reasoning across documents',
+        'Secure access to internal knowledge across teams',
       ]}
       exampleKPIs={[
-        '40–70% faster retrieval of critical documents, facts and decisions',
+        'Up to 70% faster information retrieval',
         '30–60% reduction in manual document review time',
         '25–50% fewer compliance or documentation errors',
       ]}

@@ -1,4 +1,5 @@
-import { FadeCard } from '@/components/FadeCard';
+'use client';
+
 import { SectionWrapper } from '../../../../components/SectionWrapper';
 import styles from './Development.module.scss';
 
@@ -25,7 +26,7 @@ export const Development = () => {
         <div className={styles.content}>
           <div className={styles.points}>
             {metrics.map((metric, idx) => (
-              <FadeCard key={idx} className={styles.point}>
+              <div key={idx} className={styles.point}>
                 <span className={styles.metricText}>
                   {metric.text.split(/([+\d–×%]+)/g).map((part, i) =>
                     /[+\d–×%]/.test(part) ? (
@@ -37,13 +38,13 @@ export const Development = () => {
                     )
                   )}
                 </span>
-              </FadeCard>
+              </div>
             ))}
           </div>
           <div className={styles.description}>
             <i>
-              We combine enterprise-grade orchestration, safety, and observability with fast iteration cycles, so your
-              first AI solution goes live in 6–10 weeks.
+            We combine enterprise-grade orchestration, safety, and observability with fast iteration cycles, so your first AI solution goes live in <b>6–10 weeks — not months or years</b>.
+            ****NL! This early impact creates momentum before large-scale rollout begins.
             </i>
           </div>
         </div>

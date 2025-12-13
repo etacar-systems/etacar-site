@@ -6,14 +6,14 @@ export const AIGovernance: React.FC = () => {
     <ServiceDetail
       id='ai-risk'
       title='AI Risk, Evaluation & Governance'
-      oneLiner='Bring all your AI initiatives under one governance and monitoring umbrella.'
-      problemWeSolve='As AI projects multiply, it becomes difficult to answer simple questions: How many AI systems do we have? Who owns them? How do we know they are working as intended - and safely?'
+      oneLiner='From unmanaged AI risk to secure, auditable systems with near-zero leakage risk and enterprise-grade control.'
+      bestFor="Security, compliance, risk, and leadership teams responsible for AI oversight and regulatory readiness."
+      problemWeSolve='AI systems introduce new risks — data leakage, malware exposure, and unpredictable behavior — without sufficient visibility, ownership, or control.'
       whatWeDeliver={[
-        'An inventory of AI systems and use cases across the organization',
-        'A risk classification for each system and corresponding controls',
-        'A set of metrics and dashboards: quality, cost, usage, incidents and drift',
-        'Processes for review, approval and rollback of AI changes',
-        'Documentation you can show to risk committees, auditors and boards',
+        'Continuous AI risk evaluation and monitoring',
+        'Security controls across data, models, and workflows',
+        'Governance frameworks aligned with enterprise and regulatory standards',
+        'Clear ownership and accountability for AI systems'
       ]}
       exampleKPIs={[
         '100% visibility and ownership for all business-critical AI systems',

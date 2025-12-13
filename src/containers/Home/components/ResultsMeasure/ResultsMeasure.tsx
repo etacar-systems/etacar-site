@@ -33,7 +33,8 @@ export const ResultsMeasure: React.FC = () => {
         <h2 className={styles.title}>Results you can measure</h2>
 
         <p className={styles.subtext}>
-          Every engagement starts with 3–5 concrete KPIs. We don't ship AI without a way to measure impact.
+        Every engagement starts with <b>3–5 concrete KPIs tied to business outcomes</b>, not demos.
+        ****NL! We don’t ship AI unless impact can be measured, reviewed, and governed over time.
         </p>
 
         <ul className={styles.kpiList}>

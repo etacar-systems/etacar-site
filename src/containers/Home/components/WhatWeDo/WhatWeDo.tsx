@@ -8,17 +8,17 @@ export const WhatWeDo: React.FC = () => {
     {
       title: 'AI Strategy & Architecture',
       description:
-        'From vague AI ideas to a realistic roadmap, architecture and governance for your mission-critical processes.',
+        'From AI ideas to a realistic roadmap, architecture, and governance model for mission-critical decisions and processes.',
     },
     {
       title: 'AI for Decisions & Operations',
       description:
-        'Role-specific copilots and AI-orchestrated workflows that support risk, finance, operations, customer service and more.',
+        'Role-specific AI copilots and orchestrated workflows supporting high-stakes decisions across risk, finance, operations, and customer service.',
     },
     {
-      title: 'AI for Engineering & Modernization',
+      title: 'AI for Engineering',
       description:
-        'AI-augmented delivery that accelerates architecture, coding and refactoring for your core platforms.',
+        'AI-accelerated delivery that speeds up architecture, development, and modernization of your core platforms.',
     },
   ];
 

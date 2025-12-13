@@ -8,37 +8,37 @@ export const FlagshipServices: React.FC = () => {
     {
       title: 'AI Strategy & Architecture',
       description:
-        'Define where AI truly moves the needle through structured analysis, quantum-inspired modeling, and predictive simulation. We assess your current initiatives, pinpoint 3–5 high-impact use cases, and design a target architecture and governance model. The result is a scalable, secure approach your IT and risk teams can confidently support.',
+        'Design AI systems that scale from idea to execution. Using structured analysis, quantum-inspired modeling, and predictive simulation, we align architecture, governance, and risk to deliver 20–40% faster processing and 40–60% fewer AI errors before production.',
       href: '/services#ai-strategy',
     },
     {
       title: 'AI Copilots for Critical Roles',
       description:
-        'AI assistants for leaders and teams who make high-stakes decisions. We build role-specific copilots for risk, operations, sales and service - integrated into your existing tools, with clear boundaries and explanations.',
+        'Role-specific AI copilots for teams making high-stakes decisions. Built around real workflows and enterprise data, they reduce hallucinations by <b>40–60%</b>, cut escalations by **30–50%, and help decisions move faster with confidence.',
       href: '/services#ai-copilots',
     },
     {
       title: 'AI Process Orchestration',
       description:
-        'End-to-end workflows for complex processes, not just another chatbot or isolated dashboard, but orchestrated workflows that connect to your real systems. We orchestrate AI across processes like KYC/AML reviews, incident management and complex deal creation, with clear SLAs and manual override where needed.',
+        'End-to-end AI orchestration for complex business processes. We connect documents, systems, and decisions into unified workflows that run 20–40% faster, reduce manual effort by up to 60%, and cut search and retrieval time by up to 70%.',
       href: '/services#process-automation',
     },
     {
-      title: 'Document & Knowledge Intelligence',
+      title: 'Knowledge Intelligence',
       description:
-        'Turn your documents and internal knowledge into decisions - not just search. It delivers answers, comparisons and risk alerts. Always with citations your risk and legal teams can verify',
+        'Turn documents and internal data into insight teams can actually use. Our knowledge intelligence reduces search time by up to 70%, speeds up access to critical information, and improves decision quality across the organization.',
       href: '/services#document-intelligence',
     },
     {
-      title: 'AI-Augmented Software Delivery',
+      title: 'AI-Accelerated Software Delivery',
       description:
-        'Faster architecture, code and modernization for your core systems. We use AI to accelerate design, implementation, testing and refactoring - with your standards for security, performance and maintainability built in.',
+        'Ship software faster without sacrificing quality or control. By embedding AI into architecture, development, and testing, teams deliver features 30–50% faster with 30–50% less manual rework and higher deployment reliability.',
       href: '/services#software-delivery',
     },
     {
-      title: 'AI Risk, Evaluation & Governance',
+      title: 'AI Security, Risk & Governance',
       description:
-        'Make your AI landscape measurable, auditable and under control - with clear ownership, risk ratings and approval workflows for every business-critical use case.',
+        'Make AI secure, auditable, and enterprise-ready. We provide continuous risk evaluation and governance that achieves near-zero leakage risk, 100% malware detection, and full visibility across all business-critical AI systems.',
       href: '/services#ai-governance',
     },
   ];

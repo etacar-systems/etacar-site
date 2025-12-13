@@ -4,16 +4,16 @@ import ServiceDetail from './ServiceDetail';
 export const SoftwareDelivery: React.FC = () => {
   return (
     <ServiceDetail
-      id='ai-augmented'
-      title='AI-Augmented Software Delivery'
-      oneLiner='Faster architecture, code, testing and modernization for your core systems - without lowering your standards.'
+      id='ai-software'
+      title='AI-Accelerated Software Delivery'
+      oneLiner='From slow, manual delivery to AI-accelerated engineering that ships features 30–50% faster with significantly less rework.'
       bestFor='CTOs and Heads of Engineering who need to deliver faster while managing technical debt and risk in complex platforms.'
+      problemWeSolve="Software delivery is slowed by manual processes, fragmented tooling, and late-stage quality issues. AI is often added without improving delivery fundamentals."
       whatWeDeliver={[
-        'Architecture support: from requirements to design options and trade-off analysis',
-        'AI-assisted implementation: code, tests and migrations aligned with your stack and guidelines',
-        'Safe refactoring: modernization of existing services with tests and impact analysis',
-        'Integration with your existing CI/CD and review processes',
-        'Claims handling, customer onboarding, KYC reviews, exception handling',
+        'AI-assisted architecture, development, and modernization workflows',
+        'Automated quality, security, and testing integrated into CI/CD',
+        'Support for legacy system modernization and refactoring',
+        'Guardrails that improve speed without sacrificing reliability'
       ]}
       exampleKPIs={[
         '30–50% reduction in delivery time for AI-enabled features and systems',

@@ -56,7 +56,7 @@ const items = [
       </svg>
     ),
     label: 'AI Process Orchestration',
-    sectionId: 'ai-powered',
+    sectionId: 'ai-orchestration',
   },
   {
     icon: (
@@ -66,8 +66,8 @@ const items = [
         <path d='M8 14H16' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
       </svg>
     ),
-    label: 'Document & Knowledge Intelligence',
-    sectionId: 'document',
+    label: 'Knowledge Intelligence',
+    sectionId: 'knowledge-intelligence',
   },
   {
     icon: (
@@ -76,8 +76,8 @@ const items = [
         <path d='M7 8H17V16H7V8Z' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
       </svg>
     ),
-    label: 'AI-Augmented Software Delivery',
-    sectionId: 'ai-augmented',
+    label: 'AI-Accelerated Software Delivery',
+    sectionId: 'ai-software',
   },
   {
     icon: (

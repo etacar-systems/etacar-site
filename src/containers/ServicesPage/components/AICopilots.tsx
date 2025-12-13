@@ -6,17 +6,18 @@ export const AICopilots: React.FC = () => {
     <ServiceDetail
       id='ai-copilots'
       title='AI Copilots for Critical Roles'
-      oneLiner='Role-specific AI assistants for people who make high-stakes decisions every day.'
-      bestFor='Best for leaders and teams who need copilots designed around their actual workflows, systems and risk constraints - not generic chatbots.'
+      oneLiner='From generic assistants to role-specific AI copilots that teams can rely on for critical decisions.'
+      bestFor='Operations, risk, compliance, engineering, and leadership teams making frequent, high-impact decisions.'
+      problemWeSolve='Generic AI tools lack context, hallucinate, and create operational and compliance risk. Teams spend time validating outputs or escalating issues instead of acting on insights.'
       whatWeDeliver={[
-        'Design of role-specific workflows: how the copilot helps in daily decisions',
-        'Integration with your tools: email, chat, CRM, BI, ticketing, internal systems',
-        'Explainable recommendations: summaries, options and flags with clear references',
-        'Safety and boundaries: what the copilot can decide, suggest or only prepare',
+        'Role-specific AI copilots embedded into existing tools and workflows',
+        'Context-aware reasoning grounded in verified enterprise data',
+        'Clear boundaries, escalation paths, and explainable outputs',
+        'Built-in controls for auditability and accountability',
       ]}
       exampleKPIs={[
-        '20–40% increase in productivity for targeted roles (operations, risk, product)',
-        '30–50% reduction in time spent on repetitive cognitive tasks',
+        '40–60% reduction in hallucinations',
+        '30–50% fewer escalations to human experts',
         '2× improvement in decision turnaround time for complex, multi-step tasks',
       ]}
     />

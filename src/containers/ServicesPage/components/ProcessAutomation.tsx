@@ -4,25 +4,21 @@ import ServiceDetail from './ServiceDetail';
 export const ProcessAutomation: React.FC = () => {
   return (
     <ServiceDetail
-      id='ai-powered'
+      id='ai-orchestration'
       title='AI Process Orchestration'
-      oneLiner='End-to-end AI workflows for complex, high-impact processes - with humans still in control.'
-      typicalProcesses={[
-        'KYC/AML and periodic customer reviews',
-        'Incident and major incident management',
-        'Complex deal / proposal creation',
-        'Claims and exception handling',
-      ]}
+      oneLiner='From fragmented automation to end-to-end AI-orchestrated workflows that move decisions and processes 20–40% faster.'
+      bestFor="Organizations with complex, multi-step workflows spanning documents, systems, and teams."
+      problemWeSolve="Traditional automation breaks at scale. Isolated AI models create bottlenecks, slow handoffs, and limited visibility across end-to-end business processes."
       whatWeDeliver={[
-        'A mapped process with clear AI vs human responsibilities',
-        'An AI-enabled workflow that collects data, drafts decisions and routes cases',
-        'Integration with existing systems (CRM, ticketing, core platforms)',
-        'Dashboards and alerts for performance, bottlenecks and risk',
+        'AI-driven orchestration across entire workflows, not isolated tasks',
+        'Integration of documents, systems, and decisions into unified pipelines',
+        'Human-in-the-loop controls with full observability and audit trails',
+        'SLA-aware automation for business-critical operations',
       ]}
       exampleKPIs={[
         '30–60% reduction in manual workload across target processes',
         '20–40% decrease in operational errors and exceptions',
-        '25–50% faster throughput for data-heavy or approval-driven workflows',
+        'Up to 70% reduction in search and retrieval time',
       ]}
     />
   );

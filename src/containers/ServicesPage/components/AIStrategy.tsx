@@ -7,18 +7,18 @@ export const AIStrategy: React.FC = () => {
       id='enterprise-ai'
       title='AI Strategy & Architecture'
       oneLiner='From AI ideas to a realistic roadmap, architecture and governance model that C-level, IT and risk can stand behind.'
-      bestFor="Organizations that are past the 'AI experimentation' stage and want a coherent plan for mission-critical workflows."
-      problemWeSolve='Many organizations experiment with AI in pockets - pilots, PoCs, side projects - without a clear view of where AI truly matters, how it fits existing systems, or who owns the risk. We help you focus AI investments on business-critical processes and design an architecture that can be safely operated at scale.'
+      bestFor="Executives, CIOs, CTOs, and strategy teams designing AI systems for complex, high-impact decision environments."
+      problemWeSolve='AI initiatives often fail because they start without structured analysis, realistic architecture, or a way to validate decisions before deployment. Enterprises struggle to align AI with business priorities, manage risk, and predict outcomes in complex, interdependent systems.'
       whatWeDeliver={[
-        'A prioritized list of 3–5 high-impact AI use cases for your business-critical operations',
-        'A target architecture: models, data, integrations and boundaries to your core systems',
-        'A governance model: roles, responsibilities, policies and decision-making processes',
-        'A 12–24 month roadmap with phases, dependencies and indicative budgets',
+        'Structured analysis to decompose complex business problems into measurable, AI-ready components',
+        'Quantum-inspired modeling to explore complex constraints, trade-offs, and decision spaces beyond linear approaches',
+        'Predictive simulation to test scenarios, decisions, and system behavior before production rollout',
+        'Enterprise-grade AI architecture integrated with existing systems, data, and governance frameworks',
       ]}
       exampleKPIs={[
-        '40–60% faster go/no-go cycle for AI initiatives',
-        '70–90% of AI investments aligned to the agreed enterprise AI roadmap',
-        '50–70% reduction in duplicated, conflicting or ad-hoc AI experiments',
+        '20–40% faster data processing through structured problem decomposition',
+        '40–60% fewer AI errors validated through predictive simulation',
+        '30–50% faster delivery with less architectural rework',
       ]}
     />
   );
