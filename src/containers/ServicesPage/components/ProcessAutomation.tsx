@@ -6,9 +6,9 @@ export const ProcessAutomation: React.FC = () => {
     <ServiceDetail
       id='ai-orchestration'
       title='AI Process Orchestration'
-      oneLiner='From fragmented automation to end-to-end AI-orchestrated workflows that move decisions and processes 20–40% faster.'
-      bestFor="Organizations with complex, multi-step workflows spanning documents, systems, and teams."
-      problemWeSolve="Traditional automation breaks at scale. Isolated AI models create bottlenecks, slow handoffs, and limited visibility across end-to-end business processes."
+      oneLiner='From fragmented automation to end-to-end AI-orchestrated workflows for mission-critical decisions and processes.'
+      bestFor='Organizations with complex, multi-step workflows spanning documents, systems, and teams.'
+      problemWeSolve='Traditional automation breaks at scale. Isolated AI models create bottlenecks, slow handoffs, and limited visibility across end-to-end business processes.'
       whatWeDeliver={[
         'AI-driven orchestration across entire workflows, not isolated tasks',
         'Integration of documents, systems, and decisions into unified pipelines',
