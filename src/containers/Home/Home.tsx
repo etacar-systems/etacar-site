@@ -9,7 +9,6 @@ import WhoWeWorkWith from './components/WhoWeWorkWith';
 
 import Development from './components/Development';
 import ExperienceSection from './components/ExperienceSection';
-import HowWeWork from './components/HowWeWork';
 import ResultsMeasure from './components/ResultsMeasure';
 
 import Reviews from '../../commonSections/Reviews';
@@ -42,17 +41,14 @@ export const Home: React.FC = () => {
         <ResultsMeasure />
       </FadeInSection>
       <FadeInSection>
-        <HowWeWork />
-      </FadeInSection>
-      <FadeInSection>
         <ExperienceSection />
       </FadeInSection>
       <FadeInSection>
         <FinalCTA />
       </FadeInSection>
-      <FadeInSection>
+      {/* <FadeInSection>
         <GetEstimationForm />
-      </FadeInSection>
+      </FadeInSection> */}
       <FadeInSection>
         <Reviews />
       </FadeInSection>

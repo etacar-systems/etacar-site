@@ -6,9 +6,17 @@ import styles from './ExperienceSection.module.scss';
 
 export const ExperienceSection: React.FC = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper variant='gradient'>
       <div className={styles.content}>
-        <h2 className={styles.title}>20+ years in AI products, not just software development</h2>
+        <h2 className={styles.title}>20+ years building AI systems with real ownership</h2>
+
+        <p className={styles.text}>
+          We’ve been working with AI long before it became a trend — building and operating systems where incorrect
+          decisions carry financial, legal, and reputational consequences.
+        </p>
+        <p className={styles.text}>
+         Product mindset. Long-term accountability. Not just software delivery.
+        </p>
 
         <FadeCard className={styles.textContent}>
           <p className={styles.paragraph}>

@@ -9,7 +9,7 @@ export const FinalCTA: React.FC = () => {
   const router = useRouter();
 
   return (
-    <SectionWrapper variant='gradient'>
+    <SectionWrapper variant='light'>
       <div className={styles.content}>
         <h2 className={styles.title}>Let's talk about your business-critical processes</h2>
 

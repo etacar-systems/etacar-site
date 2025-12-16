@@ -6,7 +6,6 @@ import AICopilots from './components/AICopilots';
 import AIGovernance from './components/AIGovernance';
 import AIStrategy from './components/AIStrategy';
 import DocumentIntelligence from './components/DocumentIntelligence';
-import Models from './components/Models';
 import ProcessAutomation from './components/ProcessAutomation';
 import ServicesHero from './components/ServicesHero';
 import SoftwareDelivery from './components/SoftwareDelivery';
@@ -53,9 +52,6 @@ export const ServicesPage = () => {
       </FadeInSection>
       <FadeInSection>
         <AIGovernance />
-      </FadeInSection>
-      <FadeInSection>
-        <Models />
       </FadeInSection>
       <FadeInSection>
         <Footer />

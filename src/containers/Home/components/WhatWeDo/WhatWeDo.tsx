@@ -23,7 +23,7 @@ export const WhatWeDo: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper variant='gradient'>
+    <SectionWrapper variant='light'>
       <div className={styles.content}>
         <h2 className={styles.title}>What we do</h2>
 

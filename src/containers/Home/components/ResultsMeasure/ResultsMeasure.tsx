@@ -14,21 +14,55 @@ export const ResultsMeasure: React.FC = () => {
 
   const miniCases = [
     {
-      title: 'Global e-commerce – operations',
-      goal: 'reduce handling time for complex support cases without adding headcount',
-      approach: 'AI-assisted case summaries, context gathering, next-best-action suggestions and playbook search',
-      result: '–35% average time-to-resolution, 60% of cases processed with AI assistance',
+      title: 'Financial services – KYC reviews',
+      goal: (
+        <>
+          AI-assisted KYC review processes in regulated financial environments, where incorrect decisions lead to{' '}
+          <strong>compliance breaches</strong>, fines, and reputational risk.
+        </>
+      ),
+      approach: (
+        <>
+          Built to support human reviewers in <strong>high-stakes decisions</strong>, not to replace accountability.
+        </>
+      ),
+      result: [
+        '35% reduction in average KYC review time',
+        'Less than 2% case re-open rate',
+        'Improved auditability and decision consistency',
+      ],
     },
     {
-      title: 'Financial services – KYC reviews',
-      goal: 'speed up periodic KYC reviews while keeping risk under control',
-      approach: 'AI workflow that collects data, drafts risk summaries and flags edge cases for human review',
-      result: '–30–40% review cycle time, more consistent risk assessments, better audit trail',
+      title: 'Global e-commerce – operations',
+      goal: (
+        <>
+          AI supporting operational decisions in large-scale e-commerce environments, where{' '}
+          <strong>errors cascade</strong> across fulfillment, refunds, customer trust, and revenue.
+        </>
+      ),
+      approach:
+        'Designed for high-volume operations with strict SLA, where decision quality matters more than raw speed.',
+      result: [
+        '30–40% reduction in decision cycle time',
+        'Fewer SLA breaches across critical operations',
+        'Improved consistency in high-risk operational decisions',
+      ],
     },
+    // {
+    //   title: 'Enterprise decision governance',
+    //   goal: 'AI supporting executive and cross-functional decisions in environments where incorrect outcomes lead to financial, legal, or reputational damage.',
+    //   approach:
+    //     'Designed for decision transparency, auditability, and long-term accountability — not black-box automation.',
+    //   result: [
+    //     'Faster alignment across executive stakeholders',
+    //     'Reduced risk of inconsistent or ad-hoc decisions',
+    //     'Clear audit trail for high-impact decisions',
+    //   ],
+    // },
   ];
 
   return (
-    <SectionWrapper id='results' className={styles.results}>
+    <SectionWrapper id='results' className={styles.results} variant='light'>
       <div className={styles.content}>
         <h2 className={styles.title}>Results you can measure</h2>
 
@@ -64,23 +98,27 @@ export const ResultsMeasure: React.FC = () => {
           {miniCases.map((caseStudy, index) => (
             <FadeCard key={index} className={styles.caseCard}>
               <h3 className={styles.caseTitle}>{caseStudy.title}</h3>
-              <div className={styles.caseSection}>
-                <strong>Goal:</strong> {caseStudy.goal}
-              </div>
-              <div className={styles.caseSection}>
-                <strong>Approach:</strong> {caseStudy.approach}
-              </div>
+              <div className={styles.caseSection}>{caseStudy.goal}</div>
+              <div className={styles.caseSection}>{caseStudy.approach}</div>
               <div className={styles.caseResult}>
-                <strong>Result:</strong>{' '}
-                {caseStudy.result.split(/([+\d–×%]+)/g).map((part, i) =>
-                  /[+\d–×%]/.test(part) ? (
-                    <strong key={i} className={styles.highlightNumber}>
-                      {part}
-                    </strong>
-                  ) : (
-                    part
-                  )
-                )}
+                <ul className={styles.list}>
+                  {caseStudy.result.map(item => (
+                    <li key={index} className={styles.listItem}>
+                      <span className={styles.bullet}>●</span>
+                      <span>
+                        {item.split(/([+\d–×%]+)/g).map((part, i) =>
+                          /[+\d–×%]/.test(part) ? (
+                            <strong key={i} className={styles.highlightNumber}>
+                              {part}
+                            </strong>
+                          ) : (
+                            part
+                          )
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </FadeCard>
           ))}

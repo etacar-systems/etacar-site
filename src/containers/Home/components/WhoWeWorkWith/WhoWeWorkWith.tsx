@@ -6,22 +6,16 @@ import styles from './WhoWeWorkWith.module.scss';
 export const WhoWeWorkWith: React.FC = () => {
   const targetAudience = [
     {
-      role: 'COO / Head of Operations',
-      description:
-        'is accountable for end-to-end process performance and wants faster, more reliable and more flexible operations.',
+      description: 'Operations leaders accountable for end-to-end performance.',
     },
     {
-      role: 'CIO / Head of IT & Architecture',
-      description:
-        'needs AI that respects, aligns with and optimizes enterprise architecture and controls, not shadow IT experiments.',
+      description: 'Technology leaders owning secure and scalable AI architecture.',
     },
     {
-      role: 'CRO / Risk & Compliance leaders',
-      description: 'must keep AI measurable, auditable and regulator-ready.',
+      description: 'Risk & Compliance leaders responsible for auditability and regulation.',
     },
     {
-      role: 'CTO / Head of Product & Engineering',
-      description: 'wants to speed up delivery of AI-enabled features without compromising quality or stability.',
+      description: 'Product & Engineering leaders delivering AI into core workflows.',
     },
   ];
 
@@ -30,9 +24,7 @@ export const WhoWeWorkWith: React.FC = () => {
       <div className={styles.content}>
         <h2 className={styles.title}>Who we work with</h2>
 
-        <p className={styles.intro}>
-          We partner with leaders who run complex, business-critical operations and can't afford AI "experiments".
-        </p>
+        <p className={styles.intro}>Decision-makers who can’t afford AI experiments.</p>
 
         <div className={styles.list}>
           {targetAudience.map((item, index) => (
@@ -40,8 +32,6 @@ export const WhoWeWorkWith: React.FC = () => {
               <div className={styles.text}>
                 <div className={styles.bullet}>●</div>
                 <div>
-                  <strong className={styles.role}>{item.role}</strong>
-                  <span className={styles.separator}> – </span>
                   <span className={styles.description}>{item.description}</span>
                 </div>
               </div>

@@ -44,7 +44,7 @@ export const FlagshipServices: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper variant='light'>
+    <SectionWrapper variant='gradient'>
       <div className={styles.content}>
         <h2 className={styles.title}>Flagship services</h2>
 
