@@ -2,6 +2,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { Button } from '../../../../components/Button';
 import { SectionWrapper } from '../../../../components/SectionWrapper';
 import { Input } from '../../../../components/UI/Input';
+import { Select } from '../../../../components/UI/Select';
 import style from './ContactForm.module.scss';
 
 export const ContactForm = () => {
@@ -61,10 +62,10 @@ export const ContactForm = () => {
               <Input
                 name='companyName'
                 type='text'
-                label='Company Name'
+                label='Company Name*'
                 placeholder='Your Company'
                 theme={'dark'}
-                required={false}
+                required
               />
               <ValidationError prefix='Company Name' field='companyName' errors={state.errors} />
             </div>
@@ -82,8 +83,18 @@ export const ContactForm = () => {
             </div>
 
             <div className={style.formField}>
-              <Input name='phone' type='phone' label='Phone Number' placeholder='+1 (831) 333-6202' theme={'dark'} />
-              <ValidationError prefix='Phone' field='phone' errors={state.errors} />
+              <Select
+                name='lookingFor'
+                label='What are you looking for?'
+                options={[
+                  { label: 'Strategy', value: 'Strategy' },
+                  { label: 'Implementation', value: 'Implementation' },
+                  { label: 'Governance', value: 'Governance' },
+                  { label: 'Other', value: 'Other' },
+                ]}
+                theme={'dark'}
+              />
+              <ValidationError prefix='What are you looking for' field='lookingFor' errors={state.errors} />
             </div>
           </div>
 
@@ -104,7 +115,7 @@ export const ContactForm = () => {
           </div>
 
           <div className={style.formActions}>
-            <Button onClick={() => {}} title={state.submitting ? 'Sending...' : 'Send Message'} type={'solid'} />
+            <Button onClick={() => {}} title={state.submitting ? 'Scheduling...' : 'Schedule a 30-Minute Call'} type={'solid'} />
             <p className={style.privacyNote}>
               By submitting this form, you agree to our privacy policy. We'll never share your information.
             </p>

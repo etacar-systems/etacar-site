@@ -33,17 +33,13 @@ export const ContactInfo: React.FC = () => {
               <p className={styles.infoText}>
                 <strong>Email:</strong>
                 <br />
-                info@etacar.io
+                <a className={styles.link} href="mailto:info@etacar.io" target='_blank' rel='noreferrer'>info@etacar.io</a>
               </p>
               <p className={styles.infoText}>
                 <strong>Phone:</strong>
                 <br />
-                +1 (831) 333-6202
+                <a className={styles.link} href="tel:+1 (831) 333-6202"  target='_blank' rel='noreferrer'>+1 (831) 333-6202</a>
               </p>
-              <a href='mailto:info@etacar.io' target='_blank' rel='noreferrer' className={styles.link}>
-                <span>Send us an email</span>
-                <img src={'/icons/linkArrow.svg'} alt='arrow' className={styles.linkArrow} />
-              </a>
             </div>
           </div>
 

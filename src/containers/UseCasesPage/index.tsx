@@ -10,228 +10,521 @@ import UseCasesCTA from './components/UseCasesCTA';
 
 const industries = [
   {
-    title: 'Financial services & fintech',
+    title: 'Financial Services / FinTech',
+    subtitle: 'AI-Driven Decision Execution for Regulated Financial Operations',
     sectionId: 'fintech',
-    challenges: [
-      'Slow and costly KYC/AML and periodic reviews',
-      'Fragmented view of customer risk and exposure',
-      'Heavy reliance on manual work for compliance reporting and investigations',
-      'Pressure from regulators to explain and document decisions',
-    ],
-    whereWeHelp: [
-      'AI-orchestrated KYC/AML reviews and customer due diligence',
-      'AI copilots for risk analysts, compliance teams and internal audit',
-      'Document & knowledge intelligence for policies, regulations, contracts',
-      'AI-supported incident and investigation workflows',
-    ],
-    initiatives: [
-      'Periodic KYC review workflow with AI-drafted risk summaries and clear flags',
-      'Copilot for compliance teams to answer regulator and internal audit questions with references',
-      'Knowledge layer that connects policies, procedures and local regulations into one searchable source',
-    ],
-    kpis: [
-      '–30–40% review cycle time for KYC/AML processes',
-      'More consistent risk assessments across analysts and locations',
-      '50–70% less time spent preparing responses and reports for regulators',
-      'Better audit trail: every AI-supported assessment linked back to data and documents',
-    ],
-    services: [
-      {
-        title: 'AI Strategy & Architecture',
-        sectionId: 'enterprise-ai',
-      },
-      {
-        title: 'AI Copilots for Critical Roles',
-        sectionId: 'ai-copilots',
-      },
-      {
-        title: 'AI Process Orchestration',
-        sectionId: 'ai-orchestration',
-      },
-      {
-        title: 'Knowledge Intelligence',
-        sectionId: 'knowledge-intelligence',
-      },
-      {
-        title: 'AI Risk, Evaluation & Governance',
-        sectionId: 'ai-risk',
-      },
-    ],
+    challenges: {
+      description: (
+        <>
+          <div>
+            Financial institutions handle large volumes of regulated decisions — including onboarding, KYC/AML checks,
+            risk assessments, fraud reviews, and reporting — under strict requirements for accuracy, explainability, and
+            auditability.
+          </div>
+          <div>These processes are often:</div>
+        </>
+      ),
+      options: [
+        'Slow and manual',
+        'Spread across fragmented systems',
+        'Heavily dependent on human reviewers',
+        'Inconsistent across teams and regions',
+      ],
+      footer: 'This results in higher operational costs, slower customer journeys, and increased regulatory risk.',
+    },
+    whereWeHelp: {
+      description: <>Financial services impose constraints that most automation and AI solutions cannot address:</>,
+      options: [
+        'Regulatory demands require decisions to be explainable and auditable',
+        'Rule-based automation breaks on edge cases and policy nuances',
+        'BI tools provide insight, but do not execute decisions',
+        'LLM chatbots lack governance and traceability',
+        'Fully autonomous AI is unacceptable in regulated workflows',
+      ],
+      footer: "What's needed is AI that operates inside controlled decision processes.",
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems acts as a controlled AI execution layer for financial operations.</div>
+          <div>
+            It integrates with existing banking, compliance, and risk systems to orchestrate AI-assisted decisions
+            within predefined workflows. AI supports analysis and policy interpretation, while humans remain in control
+            at critical decision points.
+          </div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Unified ingestion of financial and compliance data',
+        'Context- and policy-aware AI analysis',
+        'Human-in-the-loop decision routing',
+        'End-to-end traceability and audit readiness',
+      ],
+    },
+    kpis: {
+      options: [
+        '30–50% faster onboarding and compliance reviews',
+        'More consistent decisions across teams and regions',
+        'Lower operational risk through explainable AI',
+        'Audit-ready workflows with full traceability',
+        'Reduced cost per review without loss of control',
+      ],
+    },
   },
   {
-    title: 'E-commerce & digital retail',
-    sectionId: 'ecommerce',
-    challenges: [
-      'Complex customer support and operations across products, regions and channels',
-      'High volume of exceptions and manual handling in order, refund and return processes',
-      'Knowledge spread across playbooks, policies and legacy tools',
-      'Need to maintain service levels without unlimited headcount growth',
-    ],
-    whereWeHelp: [
-      'AI-assisted workflows for complex customer support cases',
-      'AI Process Orchestration for order exceptions, refunds and claims',
-      'Knowledge intelligence over help centre, internal playbooks and policies',
-      'AI copilots for operations managers to monitor bottlenecks and risks',
-    ],
-    initiatives: [
-      'AI assistant that prepares case context, summaries and suggested next actions for agents',
-      'Workflow that classifies and routes complex order issues, collecting all relevant data automatically',
-      'Knowledge layer connecting help centre, internal guidelines and policy updates',
-    ],
-    kpis: [
-      '–30–40% time-to-resolution for complex cases',
-      '30–50% less manual effort per ticket for selected queues',
-      'Higher first-contact resolution and fewer re-opened tickets',
-      'More consistent policy application across regions and teams',
-    ],
-    services: [
-      {
-        title: 'AI Copilots for Critical Roles',
-        sectionId: 'ai-copilots',
-      },
-      {
-        title: 'AI Process Orchestration',
-        sectionId: 'ai-orchestration',
-      },
-      {
-        title: 'Knowledge Intelligence',
-        sectionId: 'knowledge-intelligence',
-      },
-      {
-        title: 'AI-Accelerated Software Delivery',
-        sectionId: 'ai-software',
-      },
-    ],
+    title: 'Insurance',
+    subtitle: 'Controlled AI Decision Execution for Claims, Underwriting and Risk Operations',
+    sectionId: 'insurance',
+    challenges: {
+      description: (
+        <>
+          <div>
+            Insurance organizations manage high volumes of document-heavy and risk-sensitive processes, including claims
+            handling, underwriting reviews, policy servicing, and fraud detection.
+          </div>
+          <div>These processes are often:</div>
+        </>
+      ),
+      options: [
+        'Slow and manual',
+        'Dependent on unstructured documents',
+        'Inconsistent across teams',
+        'Costly to scale without increasing risk',
+      ],
+      footer: 'This leads to longer claim cycles, higher loss ratios, and reduced customer satisfaction.',
+    },
+    whereWeHelp: {
+      description: <>Insurance operations are difficult to automate due to:</>,
+      options: [
+        'Complex policy language and contextual interpretation',
+        'High variance of cases and frequent exceptions',
+        'Rule-based systems that fail on non-standard claims',
+        'LLM tools that lack governance and auditability',
+        'Low tolerance for errors in financial decisions',
+      ],
+      footer: "What's needed is AI embedded into controlled insurance workflows.",
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems acts as a controlled AI execution layer for insurance operations.</div>
+          <div>
+            It orchestrates AI-assisted decisions across claims, underwriting, and fraud workflows while keeping humans
+            in control at critical checkpoints.
+          </div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Unified ingestion of claims, policies, and supporting documents',
+        'Context-aware interpretation of policy and coverage rules',
+        'AI-assisted triage and decision routing',
+        'Full traceability and audit readiness',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster claims processing and underwriting cycles',
+        'More consistent decisions across regions and teams',
+        'Reduced operational cost without increased risk',
+        'Improved customer experience through shorter turnaround times',
+      ],
+    },
   },
   {
-    title: 'Logistics, supply chain & operations-heavy businesses',
+    title: 'Legal Compliance & RegTech',
+    subtitle: 'Explainable AI for Regulated Legal and Compliance Decisions',
+    sectionId: 'legal-compliance',
+    challenges: {
+      description: (
+        <>
+          <div>
+            Legal and compliance teams must continuously interpret regulations, review documents, and enforce controls
+            across rapidly changing regulatory environments.
+          </div>
+          <div>These activities are often:</div>
+        </>
+      ),
+      options: [
+        'Document-intensive',
+        'Slow to adapt to regulatory changes',
+        'Dependent on expert manual review',
+        'Difficult to audit at scale',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Legal and compliance work resists automation because:</>,
+      options: [
+        'Regulatory texts are complex and ambiguous',
+        'Static rules cannot capture legal nuance',
+        'Search tools retrieve documents, not decisions',
+        'LLMs without guardrails lack legal defensibility',
+        'Auditors require full traceability',
+      ],
+      footer: 'AI must operate within controlled compliance processes.',
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems provides a controlled AI execution layer for legal and compliance workflows.</div>
+          <div>
+            It embeds AI into regulatory interpretation, review, and enforcement processes while ensuring explainability
+            and governance.
+          </div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Centralized regulatory and policy knowledge',
+        'Evidence-backed AI-assisted interpretation',
+        'Structured compliance decision workflows',
+        'End-to-end audit trails',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster regulatory analysis and reviews',
+        'Lower compliance risk through consistent decisions',
+        'Improved audit readiness',
+        'Reduced manual workload for legal teams',
+      ],
+    },
+  },
+  {
+    title: 'Logistics & Supply Chain',
+    subtitle: 'AI-Orchestrated Decision Execution for Complex Supply Networks',
     sectionId: 'logistics',
-    challenges: [
-      'Complex multi-step fulfilment, routing and exception handling',
-      'Limited visibility across systems for planning and execution',
-      'Operational teams relying on manual spreadsheets and ad-hoc tools',
-      'Need to react quickly to disruptions (delays, shortages, capacity issues)',
-    ],
-    whereWeHelp: [
-      'AI-orchestrated workflows for exception handling and incident management',
-      'Decision support for demand and capacity planning',
-      'Knowledge intelligence over SOPs, contracts, SLAs and operational guidelines',
-      'AI copilots for operations leaders to understand impact and scenarios',
-    ],
-    initiatives: [
-      'Workflow that recognises and routes delivery exceptions, suggests handling steps and updates stakeholders',
-      'Copilot that helps planners evaluate what-if scenarios using historical and real-time data',
-      'Knowledge layer with SLAs and contracts, highlighting risk of non-compliance for specific cases',
-    ],
-    kpis: [
-      '20–40% reduction in time to resolve operational incidents and exceptions',
-      'Fewer manual escalations and less time spent on ad-hoc investigations',
-      'Reduced penalties and SLA breaches thanks to earlier detection and action',
-      'Better planning accuracy and fewer last-minute surprises',
-    ],
-    services: [
-      {
-        title: 'AI Strategy & Architecture',
-        sectionId: 'enterprise-ai',
-      },
-      {
-        title: 'AI Process Orchestration',
-        sectionId: 'ai-orchestration',
-      },
-      {
-        title: 'AI Copilots for Critical Roles',
-        sectionId: 'ai-copilots',
-      },
-      {
-        title: 'Knowledge Intelligence',
-        sectionId: 'knowledge-intelligence',
-      },
-    ],
+    challenges: {
+      description: (
+        <>
+          <div>
+            Logistics and supply chain teams manage complex, time-sensitive operations across multiple partners,
+            systems, and geographies.
+          </div>
+          <div>They face:</div>
+        </>
+      ),
+      options: [
+        'Limited real-time visibility',
+        'Manual exception handling',
+        'Slow decision-making during disruptions',
+        'High operational overhead',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Supply chain automation breaks down because:</>,
+      options: [
+        'Data is fragmented across systems and partners',
+        'Rule-based workflows cannot handle dynamic disruptions',
+        'Dashboards inform but do not act',
+        'Manual coordination does not scale',
+      ],
+      footer: 'Operational AI must connect insight to execution.',
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems acts as a controlled AI execution layer for logistics operations.</div>
+          <div>It orchestrates AI-driven decisions across planning, execution, and exception handling workflows.</div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Unified ingestion of operational and event data',
+        'AI-assisted detection of delays and risks',
+        'Decision routing and escalation workflows',
+        'Coordinated execution across systems',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster response to disruptions',
+        'Improved delivery reliability',
+        'Reduced manual coordination',
+        'Lower operational costs',
+      ],
+    },
   },
   {
-    title: 'Telecom, utilities & subscription services',
+    title: 'Manufacturing & Industrial Operations',
+    subtitle: 'Controlled AI Execution for Production and Quality Decisions',
+    sectionId: 'manufacturing',
+    challenges: {
+      description: (
+        <>
+          <div>
+            Manufacturers operate complex production environments where small deviations can cause significant quality
+            issues, downtime, or waste.
+          </div>
+          <div>Challenges include:</div>
+        </>
+      ),
+      options: [
+        'Massive operational data streams',
+        'Delayed detection of anomalies',
+        'Slow response to issues',
+        'Siloed decision-making',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Manufacturing environments are hard to automate because:</>,
+      options: [
+        'Static thresholds miss early signals',
+        'Manual monitoring does not scale',
+        'AI insights are disconnected from action',
+        'Operational decisions require accountability',
+      ],
+      footer: 'AI must be integrated into production decision loops.',
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems provides a controlled AI execution layer for industrial operations.</div>
+          <div>It connects AI analysis directly to operational decision workflows with human oversight.</div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Ingestion of production and quality data',
+        'AI-assisted anomaly detection',
+        'Structured response and escalation workflows',
+        'Traceable operational decisions',
+      ],
+    },
+    kpis: {
+      options: [
+        'Reduced downtime and waste',
+        'Faster issue resolution',
+        'More consistent operational decisions',
+        'Improved production efficiency',
+      ],
+    },
+  },
+  {
+    title: 'Telecommunications & Cloud Services',
+    subtitle: 'AI-Orchestrated Operations for High-Availability Environments',
     sectionId: 'telecom',
-    challenges: [
-      'High volume of customer contacts and network/service incidents',
-      'Complex combinations of tariffs, products and contract terms',
-      'Strict regulatory and service-level obligations',
-      'Need to quickly identify and handle systemic issues vs one-off problems',
-    ],
-    whereWeHelp: [
-      'AI-assisted incident management and proactive issue identification',
-      'Copilots for support and retention teams to navigate products and contracts',
-      'Knowledge intelligence over tariff catalogs, SLAs, contracts, network policies',
-      'AI governance to keep automated decisions explainable to regulators',
-    ],
-    initiatives: [
-      'Workflow that classifies incidents, correlates them with known problems and suggests action plans',
-      'Copilot that helps agents handle complex billing and retention cases with clear recommendations',
-      'Knowledge layer that connects tariffs, options, restrictions and legal terms',
-    ],
-    kpis: [
-      'Faster incident response and resolution for priority issues',
-      'Lower churn and escalations in complex customer cases',
-      'Fewer compliance findings related to inconsistent handling or unclear decisions',
-    ],
-    services: [
-      {
-        title: 'AI Copilots for Critical Roles',
-        sectionId: 'ai-copilots',
-      },
-      {
-        title: 'AI Process Orchestration',
-        sectionId: 'ai-orchestration',
-      },
-      {
-        title: 'Knowledge Intelligence',
-        sectionId: 'knowledge-intelligence',
-      },
-      {
-        title: 'AI Risk, Evaluation & Governance',
-        sectionId: 'ai-risk',
-      },
-    ],
+    challenges: {
+      description: (
+        <>
+          <div>
+            Telecom and cloud providers must maintain highly available, large-scale infrastructure while responding
+            rapidly to incidents and demand changes.
+          </div>
+          <div>They face:</div>
+        </>
+      ),
+      options: [
+        'Complex distributed systems',
+        'High incident volumes',
+        'Manual operational workflows',
+        'Strict SLA requirements',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Operational automation struggles because:</>,
+      options: [
+        'Systems are highly interdependent',
+        'Alert fatigue overwhelms teams',
+        'Dashboards lack execution logic',
+        'Autonomous AI is risky in production systems',
+      ],
+      footer: 'Controlled AI is required for reliability.',
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems acts as a controlled AI execution layer for infrastructure operations.</div>
+          <div>
+            It orchestrates AI-assisted incident response and operational decisions across cloud and network
+            environments.
+          </div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Unified ingestion of telemetry and alerts',
+        'AI-assisted incident classification',
+        'Structured response workflows',
+        'Full operational traceability',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster incident resolution',
+        'Improved SLA compliance',
+        'Reduced operational load on teams',
+        'Higher infrastructure reliability',
+      ],
+    },
   },
   {
-    title: 'Technology & SaaS companies',
+    title: 'Retail & E-commerce',
+    subtitle: 'AI-Driven Decision Execution Across Customer and Operations Workflows',
+    sectionId: 'retail',
+    challenges: {
+      description: (
+        <>
+          <div>
+            Retailers must manage fast-moving customer interactions, inventory decisions, and omnichannel operations at
+            scale.
+          </div>
+          <div>They face:</div>
+        </>
+      ),
+      options: [
+        'Fragmented customer and operational data',
+        'Manual exception handling',
+        'Inconsistent decision-making',
+        'Pressure to improve customer experience',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Retail automation fails because:</>,
+      options: [
+        'Customer context is fragmented',
+        'Rules cannot adapt to demand volatility',
+        'Chatbots lack operational authority',
+        'Human teams do not scale efficiently',
+      ],
+      footer: 'AI must bridge insight and execution.',
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems provides a controlled AI execution layer for retail operations.</div>
+          <div>
+            It orchestrates AI-assisted decisions across customer service, inventory, and fulfillment workflows.
+          </div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Unified customer and operational data',
+        'Context-aware AI recommendations',
+        'Decision routing with human oversight',
+        'Coordinated execution across channels',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster customer issue resolution',
+        'More consistent operational decisions',
+        'Improved customer satisfaction',
+        'Lower operational cost',
+      ],
+    },
+  },
+  {
+    title: 'Healthcare & Life Sciences',
+    subtitle: 'Controlled AI Decision Execution for Clinical and Operational Workflows',
+    sectionId: 'healthcare',
+    challenges: {
+      description: (
+        <>
+          <div>
+            Healthcare organizations manage critical clinical and administrative decisions under strict safety, privacy,
+            and regulatory requirements.
+          </div>
+          <div>Challenges include:</div>
+        </>
+      ),
+      options: [
+        'Heavy documentation burden',
+        'Fragmented clinical data',
+        'Slow decision processes',
+        'High compliance risk',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Healthcare workflows resist automation because:</>,
+      options: [
+        'Unstructured clinical data dominates',
+        'Decisions require human accountability',
+        'LLMs lack clinical governance',
+        'Regulatory requirements are strict',
+      ],
+      footer: 'AI must support—not replace—clinical decisions.',
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems acts as a controlled AI execution layer for healthcare workflows.</div>
+          <div>It embeds AI into clinical and operational decision processes with strong governance.</div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Ingestion of clinical and policy data',
+        'AI-assisted decision support',
+        'Structured approval and escalation workflows',
+        'Full compliance traceability',
+      ],
+    },
+    kpis: {
+      options: [
+        'Reduced administrative burden',
+        'Faster access to critical information',
+        'Improved decision consistency',
+        'Higher compliance confidence',
+      ],
+    },
+  },
+  {
+    title: 'SaaS & Enterprise Software Platforms',
+    subtitle: 'Production-Grade AI Execution for Enterprise Products',
     sectionId: 'saas',
-    challenges: [
-      'Pressure to deliver new features faster without increasing technical debt',
-      'Complex codebases, multiple services, legacy components and partial documentation',
-      'Difficulty in aligning architecture, product and delivery across teams',
-      'Need to keep core platform stable while evolving quickly',
-    ],
-    whereWeHelp: [
-      'AI-аccelerated software delivery for core services and platforms',
-      'Architecture & strategy support for platform modernization',
-      'Document & knowledge intelligence for internal docs, runbooks and design decisions',
-      'AI copilots for support and success teams working with complex configurations',
-    ],
-    initiatives: [
-      'AI-assisted design and implementation for new critical services, including tests and basic CI',
-      'Refactoring and modernization of legacy modules with regression-aware workflows',
-      'Knowledge layer that connects architecture docs, runbooks and troubleshooting guides',
-    ],
-    kpis: [
-      '30–50% faster delivery for selected features and services',
-      'Lower defect rates in early production releases',
-      'Less time spent on manual digging through internal documentation',
-      'More time for senior engineers to focus on architecture and complex design',
-    ],
-    services: [
-      {
-        title: 'AI-Accelerated Software Delivery',
-        sectionId: 'ai-software',
-      },
-      {
-        title: 'AI Strategy & Architecture',
-        sectionId: 'enterprise-ai',
-      },
-      {
-        title: 'Knowledge Intelligence',
-        sectionId: 'knowledge-intelligence',
-      },
-    ],
+    challenges: {
+      description: (
+        <>
+          <div>
+            SaaS and enterprise software companies want to embed AI into products while maintaining reliability,
+            security, and scalability.
+          </div>
+          <div>They face:</div>
+        </>
+      ),
+      options: [
+        'Difficulty moving from prototypes to production',
+        'Governance and observability gaps',
+        'High operational complexity',
+        'Enterprise customer expectations',
+      ],
+    },
+    whereWeHelp: {
+      description: <>AI delivery struggles because:</>,
+      options: [
+        'Experiments do not scale to production',
+        'AI logic is hard to control and observe',
+        'Enterprise requirements demand governance',
+        'Teams lack an execution layer for AI',
+      ],
+      footer: 'AI must be treated as an operational system.',
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems provides a controlled AI execution layer for enterprise software platforms.</div>
+          <div>It enables teams to build, deploy, and operate AI-driven features with control and visibility.</div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Orchestrated AI decision workflows',
+        'Human-in-the-loop governance',
+        'Observability and traceability',
+        'Enterprise-ready AI operations',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster delivery of AI features',
+        'Higher reliability in production',
+        'Lower technical and operational risk',
+        'Scalable AI governance across products',
+      ],
+    },
   },
 ];
 

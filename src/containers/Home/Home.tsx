@@ -27,13 +27,13 @@ export const Home: React.FC = () => {
         <HeroSection />
       </FadeInSection>
       <FadeInSection>
-        <WhoWeWorkWith />
-      </FadeInSection>
-      <FadeInSection>
         <WhatWeDo />
       </FadeInSection>
       <FadeInSection>
         <FlagshipServices />
+      </FadeInSection>
+      <FadeInSection>
+        <WhoWeWorkWith />
       </FadeInSection>
       <FadeInSection>
         <Development />

@@ -1,33 +1,36 @@
 import classNames from 'classnames';
-import { useRouter } from 'next/navigation';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
-import { SERVICES } from '../../../routes';
 import styles from './IndustrySection.module.scss';
+
+type Section = {
+  description?: ReactNode;
+  options: Array<string>;
+  footer?: string;
+};
 
 interface IndustrySectionProps {
   title: string;
+  subtitle: string;
   sectionId: string;
-  challenges: string[];
-  whereWeHelp: string[];
-  initiatives: string[];
-  kpis: string[];
-  services: { title: string; sectionId: string }[];
+  challenges: Section;
+  whereWeHelp: Section;
+  initiatives: Section;
+  kpis: Section;
   index: number;
   isEven: boolean;
 }
 
 const IndustrySection: React.FC<IndustrySectionProps> = ({
   title,
+  subtitle,
   sectionId,
   challenges,
   whereWeHelp,
   initiatives,
   kpis,
-  services,
   isEven,
-  index,
 }) => {
   return (
     <SectionWrapper
@@ -37,49 +40,58 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>{title}</h2>
+          <h2 className={styles.subtitle}>{subtitle}</h2>
         </div>
 
         <div className={styles.contentGrid}>
           <div className={styles.block}>
-            <h3 className={styles.blockTitle}>What makes this hard today</h3>
+            <h3 className={styles.blockTitle}>The Challenge</h3>
+
+            {challenges.description}
             <ul className={styles.list}>
-              {challenges.map((item, i) => (
+              {challenges.options.map((item, i) => (
                 <li key={i} className={styles.listItem}>
                   <span className={styles.bullet}>●</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
+            {challenges.footer}
           </div>
 
           <div className={styles.block}>
-            <h3 className={styles.blockTitle}>Where we help</h3>
+            <h3 className={styles.blockTitle}>Why Traditional Approaches Fail</h3>
+
+            {whereWeHelp.description}
             <ul className={styles.list}>
-              {whereWeHelp.map((item, i) => (
+              {whereWeHelp.options.map((item, i) => (
                 <li key={i} className={styles.listItem}>
                   <span className={styles.bullet}>●</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
+            {whereWeHelp.footer}
           </div>
 
           <div className={styles.block}>
-            <h3 className={styles.blockTitle}>Where AI delivers measurable impact</h3>
+            <h3 className={styles.blockTitle}>How EtaCar Systems helps</h3>
             <ul className={styles.list}>
-              {initiatives.map((item, i) => (
+              {initiatives.description}
+              {initiatives.options.map((item, i) => (
                 <li key={i} className={styles.listItem}>
                   <span className={styles.bullet}>●</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
+            {initiatives.footer}
           </div>
 
           <FadeCard className={styles.kpiBlock}>
-            <h3 className={styles.blockTitle}>Typical KPIs</h3>
+            <h3 className={styles.blockTitle}>Impact</h3>
             <ul className={styles.kpiList}>
-              {kpis.map((item, i) => (
+              {kpis.options.map((item, i) => (
                 <li key={i} className={styles.kpiItem}>
                   <span className={styles.bullet}>●</span>
                   <span>
@@ -98,30 +110,8 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
             </ul>
           </FadeCard>
         </div>
-        <div className={styles.servicesBlock}>
-          <h3 className={styles.blockTitle}>Relevant services</h3>
-          <div className={styles.tags}>
-            {services.map((service, i) => (
-              <ServiceTag key={i} title={service.title} sectionId={service.sectionId} />
-            ))}
-          </div>
-        </div>
       </div>
     </SectionWrapper>
-  );
-};
-
-const ServiceTag: React.FC<{ title: string; sectionId: string }> = ({ title, sectionId }) => {
-  const router = useRouter();
-
-  const handleClick = () => {
-    router.push(`${SERVICES}#${sectionId}`);
-  };
-
-  return (
-    <button type='button' className={styles.tag} onClick={handleClick}>
-      {title}
-    </button>
   );
 };
 

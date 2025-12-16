@@ -8,7 +8,7 @@ export const HeroSection: React.FC = () => {
     <SectionWrapper variant='gradient'>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1 className={styles.title}>Let's Talk About Your AI Strategy</h1>
+          <h1 className={styles.title}>Discuss Your Business-Critical AI Initiatives</h1>
 
           <p className={styles.subtitle}>
             We're a senior AI engineering team with 20+ years of experience building AI-powered systems for

@@ -6,7 +6,7 @@ import styles from './AIPhilosophy.module.scss';
 const AIPhilosophy: React.FC = () => {
   const requirements = [
     {
-      text: 'fit your existing architecture and data',
+      text: 'Fit your existing architecture and data',
       icon: (
         <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -20,7 +20,7 @@ const AIPhilosophy: React.FC = () => {
       ),
     },
     {
-      text: 'respect your risk and compliance boundaries',
+      text: 'Respect your risk and compliance boundaries',
       icon: (
         <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -34,7 +34,7 @@ const AIPhilosophy: React.FC = () => {
       ),
     },
     {
-      text: 'and support your people instead of replacing their judgement',
+      text: 'Support your people instead of replacing their judgement',
       icon: (
         <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -58,7 +58,7 @@ const AIPhilosophy: React.FC = () => {
 
   const approaches = [
     {
-      text: 'start from your workflows and decisions, not from a specific model',
+      text: 'Start from your workflows and decisions, not from a specific model',
       icon: (
         <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -86,7 +86,7 @@ const AIPhilosophy: React.FC = () => {
       ),
     },
     {
-      text: 'design clear roles for AI, humans and existing systems',
+      text: 'Design clear roles for AI, humans and existing systems',
       icon: (
         <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -103,7 +103,7 @@ const AIPhilosophy: React.FC = () => {
       ),
     },
     {
-      text: 'and insist on measurable KPIs and governance from the beginning',
+      text: 'Insist on measurable KPIs and governance from the beginning',
       icon: (
         <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path

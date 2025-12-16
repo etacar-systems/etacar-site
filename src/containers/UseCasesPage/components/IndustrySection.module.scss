@@ -28,6 +28,12 @@
   text-align: center;
 }
 
+.subtitle {
+  margin-top: 8px;
+  color: var(--color-neutral-900);
+  text-align: center;
+}
+
 .contentGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
