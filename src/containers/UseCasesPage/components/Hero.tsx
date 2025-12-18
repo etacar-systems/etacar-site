@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           Typical high-value problems we solve across industries - from operations to risk, finance, and engineering
         </h2>
         <p className={styles.intro}>
-          Below are examples of how we apply our services in different industries. Each use case is tied to specific
+          Below are examples of how we apply our services across different industries and knowledge domains. Each use case is tied to specific
           processes, roles and KPIs - not just generic “AI for everything”.
         </p>
         <div className={styles.quickFacts}>

@@ -66,7 +66,7 @@ const items = [
         <path d='M8 14H16' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
       </svg>
     ),
-    label: 'Knowledge Intelligence',
+    label: 'Process-Aware Knowledge AI',
     sectionId: 'knowledge-intelligence',
   },
   {

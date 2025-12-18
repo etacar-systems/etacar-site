@@ -5,15 +5,15 @@ export const DocumentIntelligence: React.FC = () => {
   return (
     <ServiceDetail
       id='knowledge-intelligence'
-      title='Knowledge Intelligence'
-      oneLiner='From scattered documents to trusted, context-aware answers that cut search time by up to 70% and support real decisions.'
-      bestFor="Teams working with large volumes of documents, policies, contracts, technical documentation, and internal knowledge."
-      problemWeSolve="Critical information is locked inside documents and siloed systems. Searching is slow, answers are inconsistent, and decisions lack traceability."
+      title='Process-Aware Knowledge AI'
+      oneLiner='From scattered documents to process-aware, trusted answers that cut search time by up to 70%.'
+      bestFor="Teams and leaders working with large volumes of documents, policies, contracts, technical documentation, and internal knowledge."
+      problemWeSolve="Critical information is locked inside documents and siloed systems, detached from how business processes actually run. Searching is slow, answers are inconsistent, and decisions lack traceability."
       whatWeDeliver={[
-        'Deep semantic understanding of documents and knowledge bases',
-        'Context-aware answers with references and citations',
-        'Side-by-side comparison and reasoning across documents',
-        'Secure access to internal knowledge across teams',
+        'Ontology-driven semantic understanding of documents, data, and knowledge bases',
+        'Context-aware answers scoped to business processes and decision contexts, with references and citations',
+        'Side-by-side comparison and reasoning across documents within a shared business process context',
+        'Secure, role-based access to internal knowledge across teams and workflows',
       ]}
       exampleKPIs={[
         'Up to 70% faster information retrieval',

@@ -4,7 +4,7 @@ export const expirience = [
     desc: 'Completed projects',
   },
   {
-    number: '9+',
+    number: '20+',
     desc: 'Years of experience',
   },
   {

@@ -123,10 +123,8 @@ const OurStory: React.FC = () => {
           {storyPoints.map((point, index) => (
             <FadeCard key={index} className={styles.card}>
               <div className={styles.icon}>{point.icon}</div>
-              <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>{point.title}</h3>
-                <p className={styles.cardDescription}>{point.description}</p>
-              </div>
+              <h3 className={styles.cardTitle}>{point.title}</h3>
+              <p className={styles.cardDescription}>{point.description}</p>
             </FadeCard>
           ))}
         </div>

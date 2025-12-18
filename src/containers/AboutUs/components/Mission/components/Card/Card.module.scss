@@ -1,7 +1,9 @@
 @import '../../../../../../styles/design-tokens.scss';
 @import '../../../../../../styles/colors.scss';
+@import '../../../../../../styles/mixins.scss';
 
 .container {
+  @include card-premium;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -11,6 +13,12 @@
   border: 1px solid $color--white;
   padding: 16px;
   box-sizing: border-box;
+
+  &:hover {
+    transform: none;
+    border: 1px solid $color--white;
+    box-shadow: var(--shadow-md);
+  }
 }
 .title {
   color: $color--lightblue;

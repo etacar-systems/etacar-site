@@ -1,26 +1,27 @@
 import { useRouter } from 'next/navigation';
 import { Button } from '../../../../components/Button';
-import { Section } from '../../../../components/Section';
 import { CONTACT } from '../../../../routes';
 import { Card } from './components/Card';
 import { about, description, principles } from './data';
 import style from './Mission.module.scss';
+import { SectionWrapper } from '@/components/SectionWrapper';
 
 export const Mission = () => {
   const router = useRouter();
   return (
-    <Section theme={'blueLight'} title={`OUR \n MISSION`}>
+    <SectionWrapper variant='gradient'>
+      <h2 className={style.title}>Our mission</h2>
       <div className={style.container}>
         <div>
           <div className={style.description}>{description}</div>
-          <div className={style.list}>
-            {principles.map((principle, i) => (
-              <div key={i}>
-                <img src={'/icons/success.svg'} alt={'icon'} />
-                {principle}
-              </div>
+          <ul className={style.list}>
+            {principles.map((principle, index) => (
+              <li key={index} className={style.listItem}>
+                <span className={style.bullet}>●</span>
+                <span>{principle}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
         <div>
           <div className={style.cards}>
@@ -37,6 +38,6 @@ export const Mission = () => {
           />
         </div>
       </div>
-    </Section>
+    </SectionWrapper>
   );
 };

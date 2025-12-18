@@ -36,10 +36,9 @@
   margin-bottom: var(--space-8);
 }
 
-.principleCard {
-  padding: var(--space-6);
+.card {
+  padding: var(--space-8);
   transition: all 0.3s ease;
-  text-align: left;
 
   &:hover {
     transform: translateY(-2px);
@@ -49,31 +48,23 @@
 .icon {
   width: 48px;
   height: 48px;
+  margin: 0 auto var(--space-6);
   color: var(--color-primary-500);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-primary-50);
-  border-radius: var(--radius-md);
+}
+
+.cardTitle {
+  @include heading-md;
+  color: var(--color-neutral-900);
   margin-bottom: var(--space-4);
 }
 
-.cardContent {
-  flex: 1;
-}
-
-.principleTitle {
-  @include heading-md;
-  color: var(--color-neutral-900);
-  margin-bottom: var(--space-3);
-  font-weight: var(--font-semibold);
-}
-
-.principleDescription {
+.cardDescription {
   @include body-base;
   color: var(--color-neutral-700);
   line-height: var(--leading-relaxed);
-  margin: 0;
 }
 
 .conclusion {

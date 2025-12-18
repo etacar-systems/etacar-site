@@ -17,7 +17,7 @@ export const about = [
     subtitle: 'Completed projects',
   },
   {
-    title: '9+',
+    title: '20+',
     subtitle: 'Years of experience',
   },
   {

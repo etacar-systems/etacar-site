@@ -1,7 +1,7 @@
 export const industries = [
   {
-    title: 'Financial Services / FinTech',
-    subtitle: 'AI-Driven Decision Execution for Regulated Financial Operations',
+    title: 'Regulated Financial & Compliance Environments',
+    subtitle: 'Process-Aware Decision Support for Regulated Environments',
     sectionId: 'fintech',
     icon: (
       <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -15,28 +15,26 @@ export const industries = [
       description: (
         <>
           <div>
-            Financial institutions handle large volumes of regulated decisions — including onboarding, KYC/AML checks,
-            risk assessments, fraud reviews, and reporting — under strict requirements for accuracy, explainability, and
-            auditability.
+          Regulated organizations operate across complex financial, insurance, and compliance processes where decisions must be accurate, explainable, and auditable.
+          These decisions rely on extensive policies, regulations, and procedures across core operational workflows.
           </div>
           <div>These processes are often:</div>
         </>
       ),
       options: [
         'Slow and manual',
-        'Spread across fragmented systems',
-        'Heavily dependent on human reviewers',
-        'Inconsistent across teams and regions',
+        'Fragmented across documents, systems, and teams',
+        'Highly dependent on human interpretation',
+        'Inconsistent across regions, products, and regulatory frameworks',
       ],
-      footer: 'This results in higher operational costs, slower customer journeys, and increased regulatory risk.',
     },
     whereWeHelp: {
-      description: <>Financial services impose constraints that most automation and AI solutions cannot address:</>,
+      description: <>Regulated financial and compliance environments impose constraints that most automation and AI solutions cannot address:</>,
       options: [
-        'Regulatory demands require decisions to be explainable and auditable',
-        'Rule-based automation breaks on edge cases and policy nuances',
-        'BI tools provide insight, but do not execute decisions',
-        'LLM chatbots lack governance and traceability',
+        'Regulatory requirements demand explainable, auditable decisions',
+        'Rule-based automation breaks on policy nuances and exceptions',
+        'BI and analytics provide insight, not in-process governance',
+        'Generic LLM tools lack governance and traceability',
         'Fully autonomous AI is unacceptable in regulated workflows',
       ],
       footer: "What's needed is AI that operates inside controlled decision processes.",
@@ -44,11 +42,8 @@ export const industries = [
     initiatives: {
       description: (
         <>
-          <div>EtaCar Systems acts as a controlled AI execution layer for financial operations.</div>
           <div>
-            It integrates with existing banking, compliance, and risk systems to orchestrate AI-assisted decisions
-            within predefined workflows. AI supports analysis and policy interpretation, while humans remain in control
-            at critical decision points.
+            EtaCar Systems acts as a controlled, process-aware AI layer for regulated financial and compliance environments. It integrates with existing systems to support AI-assisted decisions within auditable workflows, keeping humans in control at critical decision points.
           </div>
           <div>EtaCar Systems enables:</div>
         </>
@@ -62,18 +57,18 @@ export const industries = [
     },
     kpis: {
       options: [
-        '30–50% faster onboarding and compliance reviews',
+        '30–50% faster regulated decisions',
         'More consistent decisions across teams and regions',
-        'Lower operational risk through explainable AI',
-        'Audit-ready workflows with full traceability',
+        'Lower compliance risk with explainable AI',
+        'Audit-ready workflows with traceability',
         'Reduced cost per review without loss of control',
       ],
     },
   },
   {
-    title: 'Insurance',
-    subtitle: 'Controlled AI Decision Execution for Claims, Underwriting and Risk Operations',
-    sectionId: 'insurance',
+    title: 'Education & Research',
+    subtitle: 'Verified, Explainable Knowledge for Learning and Research',
+    sectionId: 'edtech_research',
     icon: (
       <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <path
@@ -86,62 +81,59 @@ export const industries = [
       description: (
         <>
           <div>
-            Insurance organizations manage high volumes of document-heavy and risk-sensitive processes, including claims
-            handling, underwriting reviews, policy servicing, and fraud detection.
+            Education and research organizations operate in knowledge-intensive environments where outcomes must be accurate, explainable, and verifiable. Decisions rely on large volumes of academic materials and data across teaching, assessment, research, and writing.
           </div>
           <div>These processes are often:</div>
         </>
       ),
       options: [
-        'Slow and manual',
-        'Dependent on unstructured documents',
-        'Inconsistent across teams',
-        'Costly to scale without increasing risk',
+        'Fragmented across documents, platforms, and sources',
+        'Highly dependent on manual review and expert judgment',
+        'Prone to inconsistent interpretations and hidden bias',
+        'Difficult to verify, reproduce, and audit',
       ],
-      footer: 'This leads to longer claim cycles, higher loss ratios, and reduced customer satisfaction.',
     },
     whereWeHelp: {
-      description: <>Insurance operations are difficult to automate due to:</>,
+      description: <>Education and research environments impose constraints that most AI and automation approaches cannot meet:</>,
       options: [
-        'Complex policy language and contextual interpretation',
-        'High variance of cases and frequent exceptions',
-        'Rule-based systems that fail on non-standard claims',
-        'LLM tools that lack governance and auditability',
-        'Low tolerance for errors in financial decisions',
+        'Academic standards require accurate, verifiable, cited knowledge',
+        'Generic LLMs can fabricate facts, sources, or reasoning paths',
+        'Search and retrieval tools lack academic context and continuity',
+        'Analytics tools summarize data, not knowledge or learning goals',
+        'Autonomous AI undermines academic integrity and credibility',
       ],
-      footer: "What's needed is AI embedded into controlled insurance workflows.",
+      footer: "What’s needed is AI that reasons over verified knowledge, with transparent logic and full traceability.",
     },
     initiatives: {
       description: (
         <>
-          <div>EtaCar Systems acts as a controlled AI execution layer for insurance operations.</div>
           <div>
-            It orchestrates AI-assisted decisions across claims, underwriting, and fraud workflows while keeping humans
-            in control at critical checkpoints.
+            EtaCar Systems applies process-aware, ontology-driven knowledge intelligence to support education and research workflows where accuracy and trust are critical. We structure academic and scientific knowledge around explicit learning ontologies, linking sources, concepts, and reasoning into a verifiable framework.
           </div>
-          <div>EtaCar Systems enables:</div>
+          <div>This allows AI systems to:</div>
         </>
       ),
       options: [
-        'Unified ingestion of claims, policies, and supporting documents',
-        'Context-aware interpretation of policy and coverage rules',
-        'AI-assisted triage and decision routing',
-        'Full traceability and audit readiness',
+        'Reason only over verified sources and cited materials',
+        'Preserve context across education and research workflows',
+        'Provide explainable outputs with clear reasoning paths',
+        'Enable human oversight without slowing learning or discovery',
       ],
     },
     kpis: {
       options: [
-        'Faster claims processing and underwriting cycles',
-        'More consistent decisions across regions and teams',
-        'Reduced operational cost without increased risk',
-        'Improved customer experience through shorter turnaround times',
+        '25–40% improvement in learning efficiency',
+        '30–50% higher academic content accuracy',
+        '50–65% faster research synthesis',
+        '40–55% lower student dropout rates',
+        '35–45% increase in educator and researcher productivity',
       ],
     },
   },
-  {
-    title: 'Legal Compliance & RegTech',
-    subtitle: 'Explainable AI for Regulated Legal and Compliance Decisions',
-    sectionId: 'legal-compliance',
+    {
+    title: 'Healthcare & Life Sciences',
+    subtitle: 'Controlled AI Decision Execution for Clinical and Operational Workflows',
+    sectionId: 'healthcare',
     icon: (
       <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <path
@@ -154,54 +146,117 @@ export const industries = [
       description: (
         <>
           <div>
-            Legal and compliance teams must continuously interpret regulations, review documents, and enforce controls
-            across rapidly changing regulatory environments.
+            Healthcare organizations manage critical clinical and administrative decisions under strict safety, privacy,
+            and regulatory requirements.
           </div>
-          <div>These activities are often:</div>
+          <div>Challenges include:</div>
         </>
       ),
       options: [
-        'Document-intensive',
-        'Slow to adapt to regulatory changes',
-        'Dependent on expert manual review',
-        'Difficult to audit at scale',
+        'Heavy documentation burden',
+        'Fragmented clinical data',
+        'Slow decision processes',
+        'High compliance risk',
       ],
     },
     whereWeHelp: {
-      description: <>Legal and compliance work resists automation because:</>,
+      description: <>Healthcare workflows resist automation because:</>,
       options: [
-        'Regulatory texts are complex and ambiguous',
-        'Static rules cannot capture legal nuance',
-        'Search tools retrieve documents, not decisions',
-        'LLMs without guardrails lack legal defensibility',
-        'Auditors require full traceability',
+        'Unstructured clinical data dominates',
+        'Decisions require human accountability',
+        'LLMs lack clinical governance',
+        'Regulatory requirements are strict',
+      ],
+      footer: 'AI must support—not replace—clinical decisions.',
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>EtaCar Systems acts as a controlled AI execution layer for healthcare workflows.</div>
+          <div>It embeds AI into clinical and operational decision processes with strong governance.</div>
+          <div>EtaCar Systems enables:</div>
+        </>
+      ),
+      options: [
+        'Ingestion of clinical and policy data',
+        'AI-assisted decision support',
+        'Structured approval and escalation workflows',
+        'Full compliance traceability',
+      ],
+    },
+    kpis: {
+      options: [
+        'Reduced administrative burden',
+        'Faster access to critical information',
+        'Improved decision consistency',
+        'Higher compliance confidence',
+      ],
+    },
+  },
+  {
+    title: 'Corporate Project Management',
+    subtitle: 'Explainable Decision Intelligence for Complex Project Portfolios',
+    sectionId: 'corporate-pm',
+    icon: (
+      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <path
+          d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
+          fill='currentColor'
+        />
+      </svg>
+    ),
+    challenges: {
+      description: (
+        <>
+          <div>
+          Corporate organizations manage complex portfolios of interdependent projects where decisions must balance cost, timelines, resources, and strategic priorities.
+          These decisions rely on fragmented data from project tools, financial systems, risk registers, and communications — applied across planning, execution, forecasting, and reporting.
+          </div>
+          <div>As a result, project and portfolio processes are often:</div>
+        </>
+      ),
+      options: [
+        'Fragmented across tools, teams, and initiatives',
+        'Reactive rather than proactive',
+        'Difficult to assess in terms of impact and dependencies',
+        'Hard to explain, justify, and trace at the executive level',        
+      ],
+    },
+    whereWeHelp: {
+      description: <>Corporate project management imposes constraints that most AI and automation tools cannot address:</>,
+      options: [
+        'Project data is scattered across tools, lacking shared context',
+        'PM and BI tools report the past, not future risks or dependencies',
+        'Generic AI can\'t link financial, operational, and human factors',
+        'Forecasts are based on correlations, not causal reasoning',
+        'Executive decisions lack traceability and audit-ready justification',
       ],
       footer: 'AI must operate within controlled compliance processes.',
     },
     initiatives: {
       description: (
         <>
-          <div>EtaCar Systems provides a controlled AI execution layer for legal and compliance workflows.</div>
           <div>
-            It embeds AI into regulatory interpretation, review, and enforcement processes while ensuring explainability
-            and governance.
+          EtaCar Systems acts as a controlled, process-aware decision intelligence layer for enterprise project and portfolio management.
+          We apply ontology-driven reasoning to connect project data, financial constraints, resource availability, and strategic objectives into a unified decision framework.
           </div>
-          <div>EtaCar Systems enables:</div>
+          <div>This enables AI to:</div>
         </>
       ),
       options: [
-        'Centralized regulatory and policy knowledge',
-        'Evidence-backed AI-assisted interpretation',
-        'Structured compliance decision workflows',
-        'End-to-end audit trails',
+        'Identify and explain emerging risks before they materialize',
+        'Generate logic-based budget and schedule forecasts',
+        'Optimize resource allocation across portfolios without bias',
+        'Provide decision support with clear reasoning and traceability'
       ],
     },
     kpis: {
       options: [
-        'Faster regulatory analysis and reviews',
-        'Lower compliance risk through consistent decisions',
-        'Improved audit readiness',
-        'Reduced manual workload for legal teams',
+        '40–60% higher risk detection accuracy',
+        '25–40% reduction in budget deviations',
+        '30–50% improvement in resource utilization',
+        '60–70% faster reporting and portfolio visibility',
+        '45–65% increase in decision traceability and executive trust'
       ],
     },
   },
@@ -487,69 +542,6 @@ export const industries = [
     },
   },
   {
-    title: 'Healthcare & Life Sciences',
-    subtitle: 'Controlled AI Decision Execution for Clinical and Operational Workflows',
-    sectionId: 'healthcare',
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path
-          d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
-          fill='currentColor'
-        />
-      </svg>
-    ),
-    challenges: {
-      description: (
-        <>
-          <div>
-            Healthcare organizations manage critical clinical and administrative decisions under strict safety, privacy,
-            and regulatory requirements.
-          </div>
-          <div>Challenges include:</div>
-        </>
-      ),
-      options: [
-        'Heavy documentation burden',
-        'Fragmented clinical data',
-        'Slow decision processes',
-        'High compliance risk',
-      ],
-    },
-    whereWeHelp: {
-      description: <>Healthcare workflows resist automation because:</>,
-      options: [
-        'Unstructured clinical data dominates',
-        'Decisions require human accountability',
-        'LLMs lack clinical governance',
-        'Regulatory requirements are strict',
-      ],
-      footer: 'AI must support—not replace—clinical decisions.',
-    },
-    initiatives: {
-      description: (
-        <>
-          <div>EtaCar Systems acts as a controlled AI execution layer for healthcare workflows.</div>
-          <div>It embeds AI into clinical and operational decision processes with strong governance.</div>
-          <div>EtaCar Systems enables:</div>
-        </>
-      ),
-      options: [
-        'Ingestion of clinical and policy data',
-        'AI-assisted decision support',
-        'Structured approval and escalation workflows',
-        'Full compliance traceability',
-      ],
-    },
-    kpis: {
-      options: [
-        'Reduced administrative burden',
-        'Faster access to critical information',
-        'Improved decision consistency',
-        'Higher compliance confidence',
-      ],
-    },
-  },
-  {
     title: 'SaaS & Enterprise Software Platforms',
     subtitle: 'Production-Grade AI Execution for Enterprise Products',
     sectionId: 'saas',
@@ -687,7 +679,7 @@ export const crossIndustryUseCases = [
     ],
     services: [
       {
-        title: 'Knowledge Intelligence',
+        title: 'Process-Aware Knowledge AI',
         sectionId: 'knowledge-intelligence',
       },
       {
@@ -759,4 +751,3 @@ export const crossIndustryUseCases = [
     ],
   },
 ];
-

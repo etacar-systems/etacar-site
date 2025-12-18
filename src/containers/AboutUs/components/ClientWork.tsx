@@ -83,12 +83,10 @@ const ClientWork: React.FC = () => {
 
           <div className={styles.principlesGrid}>
             {principles.map((principle, index) => (
-              <FadeCard key={index} className={styles.principleCard}>
+              <FadeCard key={index} className={styles.card}>
                 <div className={styles.icon}>{principle.icon}</div>
-                <div className={styles.cardContent}>
-                  <h3 className={styles.principleTitle}>{principle.title}</h3>
-                  <p className={styles.principleDescription}>{principle.description}</p>
-                </div>
+                <h3 className={styles.cardTitle}>{principle.title}</h3>
+                <p className={styles.cardDescription}>{principle.description}</p>
               </FadeCard>
             ))}
           </div>

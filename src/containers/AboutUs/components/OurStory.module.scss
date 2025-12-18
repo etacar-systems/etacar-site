@@ -26,16 +26,18 @@
 }
 
 .grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: var(--space-4);
+
+  @include respond-above(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+  }
 }
 
 .card {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: var(--space-2);
+  padding: var(--space-8);
   transition: all 0.3s ease;
 
   &:hover {
@@ -46,7 +48,7 @@
 .icon {
   width: 48px;
   height: 48px;
-  margin: 0 var(--space-6);
+  margin: 0 auto var(--space-6);
   color: var(--color-primary-500);
   display: flex;
   align-items: center;
@@ -56,13 +58,11 @@
 .cardTitle {
   @include heading-md;
   color: var(--color-neutral-900);
-  text-align: left;
-  margin: var(--space-2) 0 0 0;
+  margin-bottom: var(--space-4);
 }
 
 .cardDescription {
   @include body-base;
-  text-align: left;
   color: var(--color-neutral-700);
   line-height: var(--leading-relaxed);
 }

@@ -108,12 +108,10 @@ const BroaderTeam: React.FC = () => {
 
           <div className={styles.teamGrid}>
             {teamMembers.map((member, index) => (
-              <FadeCard key={index} className={styles.teamCard}>
+              <FadeCard key={index} className={styles.card}>
                 <div className={styles.icon}>{member.icon}</div>
-                <div className={styles.cardContent}>
-                  <h3 className={styles.roleTitle}>{member.title}</h3>
-                  <p className={styles.roleDescription}>{member.description}</p>
-                </div>
+                <h3 className={styles.cardTitle}>{member.title}</h3>
+                <p className={styles.cardDescription}>{member.description}</p>
               </FadeCard>
             ))}
           </div>

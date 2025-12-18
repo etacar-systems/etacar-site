@@ -6,9 +6,11 @@ import styles from './AIPhilosophy.module.scss';
 const AIPhilosophy: React.FC = () => {
   const requirements = [
     {
-      text: 'Fit your existing architecture and data',
+      title: 'Integration',
+      description:
+        'Integrate with your existing systems, data formats and pipelines to minimize disruption while preserving current workflows and interfaces.',
       icon: (
-        <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
             d='M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17'
             stroke='currentColor'
@@ -20,9 +22,11 @@ const AIPhilosophy: React.FC = () => {
       ),
     },
     {
-      text: 'Respect your risk and compliance boundaries',
+      title: 'Risk & Compliance',
+      description:
+        'Operate within regulatory and internal policy constraints (privacy, security, auditability) to keep solutions safe and compliant.',
       icon: (
-        <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
             d='M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z'
             stroke='currentColor'
@@ -34,9 +38,11 @@ const AIPhilosophy: React.FC = () => {
       ),
     },
     {
-      text: 'Support your people instead of replacing their judgement',
+      title: 'Human-centered',
+      description:
+        'Augment human expertise with explainable recommendations and interfaces that support decisions rather than replace judgement.',
       icon: (
-        <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
             d='M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z'
             stroke='currentColor'
@@ -58,9 +64,11 @@ const AIPhilosophy: React.FC = () => {
 
   const approaches = [
     {
-      text: 'Start from your workflows and decisions, not from a specific model',
+      title: 'Workflow-first',
+      description:
+        'Design around your decision points and workflows, selecting models that directly support concrete outcomes instead of forcing processes to fit a model.',
       icon: (
-        <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
             d='M9 19V13C9 11.8954 9.89543 11 11 11H16L20 15V19C20 20.1046 19.1046 21 18 21H11C9.89543 21 9 20.1046 9 19Z'
             stroke='currentColor'
@@ -86,9 +94,11 @@ const AIPhilosophy: React.FC = () => {
       ),
     },
     {
-      text: 'Design clear roles for AI, humans and existing systems',
+      title: 'Clear Roles',
+      description:
+        'Define responsibilities, handoffs and guardrails so AI, people and systems complement each other with predictable interactions.',
       icon: (
-        <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
             d='M17 20H7C5.89543 20 5 19.1046 5 18V9C5 7.89543 5.89543 7 7 7H17C18.1046 7 19 7.89543 19 9V18C19 19.1046 18.1046 20 17 20Z'
             stroke='currentColor'
@@ -103,9 +113,11 @@ const AIPhilosophy: React.FC = () => {
       ),
     },
     {
-      text: 'Insist on measurable KPIs and governance from the beginning',
+      title: 'Measure & Govern',
+      description:
+        'Establish KPIs, monitoring and governance early to measure value, detect regressions and ensure long-term accountability.',
       icon: (
-        <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
             d='M9 19V13C9 11.8954 9.89543 11 11 11H16L20 15V19C20 20.1046 19.1046 21 18 21H11C9.89543 21 9 20.1046 9 19Z'
             stroke='currentColor'
@@ -146,7 +158,8 @@ const AIPhilosophy: React.FC = () => {
             {requirements.map((item, index) => (
               <FadeCard key={index} className={styles.listItem}>
                 <div className={styles.icon}>{item.icon}</div>
-                <span className={styles.itemText}>{item.text}</span>
+                <h3 className={styles.cardTitle}>{item.title}</h3>
+                <p className={styles.cardDescription}>{item.description}</p>
               </FadeCard>
             ))}
           </div>
@@ -157,7 +170,8 @@ const AIPhilosophy: React.FC = () => {
             {approaches.map((item, index) => (
               <FadeCard key={index} className={styles.listItem}>
                 <div className={styles.icon}>{item.icon}</div>
-                <span className={styles.itemText}>{item.text}</span>
+                <h3 className={styles.cardTitle}>{item.title}</h3>
+                <p className={styles.cardDescription}>{item.description}</p>
               </FadeCard>
             ))}
           </div>

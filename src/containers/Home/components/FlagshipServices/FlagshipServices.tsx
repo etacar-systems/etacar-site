@@ -24,9 +24,9 @@ export const FlagshipServices: React.FC = () => {
       href: '/services#process-automation',
     },
     {
-      title: 'Knowledge Intelligence',
+      title: 'Process-Aware Knowledge AI',
       description:
-        'Turn documents and internal data into insight teams can actually use. Our knowledge intelligence reduces search time by up to 70%, speeds up access to critical information, and improves decision quality across the organization.',
+        'Turn enterprise documents and data into process-aware insight teams can trust. Our knowledge intelligence is grounded in business process ontologies, reducing search time by up to 70% and improving decision quality at each step of critical workflows.',
       href: '/services#document-intelligence',
     },
     {
