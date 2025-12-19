@@ -1,199 +1,5 @@
 export const industries = [
   {
-    title: 'Regulated Financial & Compliance Environments',
-    subtitle: 'Process-Aware Decision Support for Regulated Environments',
-    sectionId: 'fintech',
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path
-          d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
-          fill='currentColor'
-        />
-      </svg>
-    ),
-    challenges: {
-      description: (
-        <>
-          <div>
-          Regulated organizations operate across complex financial, insurance, and compliance processes where decisions must be accurate, explainable, and auditable.
-          These decisions rely on extensive policies, regulations, and procedures across core operational workflows.
-          </div>
-          <div>These processes are often:</div>
-        </>
-      ),
-      options: [
-        'Slow and manual',
-        'Fragmented across documents, systems, and teams',
-        'Highly dependent on human interpretation',
-        'Inconsistent across regions, products, and regulatory frameworks',
-      ],
-    },
-    whereWeHelp: {
-      description: <>Regulated financial and compliance environments impose constraints that most automation and AI solutions cannot address:</>,
-      options: [
-        'Regulatory requirements demand explainable, auditable decisions',
-        'Rule-based automation breaks on policy nuances and exceptions',
-        'BI and analytics provide insight, not in-process governance',
-        'Generic LLM tools lack governance and traceability',
-        'Fully autonomous AI is unacceptable in regulated workflows',
-      ],
-      footer: "What's needed is AI that operates inside controlled decision processes.",
-    },
-    initiatives: {
-      description: (
-        <>
-          <div>
-            EtaCar Systems acts as a controlled, process-aware AI layer for regulated financial and compliance environments. It integrates with existing systems to support AI-assisted decisions within auditable workflows, keeping humans in control at critical decision points.
-          </div>
-          <div>EtaCar Systems enables:</div>
-        </>
-      ),
-      options: [
-        'Unified ingestion of financial and compliance data',
-        'Context- and policy-aware AI analysis',
-        'Human-in-the-loop decision routing',
-        'End-to-end traceability and audit readiness',
-      ],
-    },
-    kpis: {
-      options: [
-        '30–50% faster regulated decisions',
-        'More consistent decisions across teams and regions',
-        'Lower compliance risk with explainable AI',
-        'Audit-ready workflows with traceability',
-        'Reduced cost per review without loss of control',
-      ],
-    },
-  },
-  {
-    title: 'Education & Research',
-    subtitle: 'Verified, Explainable Knowledge for Learning and Research',
-    sectionId: 'edtech_research',
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path
-          d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
-          fill='currentColor'
-        />
-      </svg>
-    ),
-    challenges: {
-      description: (
-        <>
-          <div>
-            Education and research organizations operate in knowledge-intensive environments where outcomes must be accurate, explainable, and verifiable. Decisions rely on large volumes of academic materials and data across teaching, assessment, research, and writing.
-          </div>
-          <div>These processes are often:</div>
-        </>
-      ),
-      options: [
-        'Fragmented across documents, platforms, and sources',
-        'Highly dependent on manual review and expert judgment',
-        'Prone to inconsistent interpretations and hidden bias',
-        'Difficult to verify, reproduce, and audit',
-      ],
-    },
-    whereWeHelp: {
-      description: <>Education and research environments impose constraints that most AI and automation approaches cannot meet:</>,
-      options: [
-        'Academic standards require accurate, verifiable, cited knowledge',
-        'Generic LLMs can fabricate facts, sources, or reasoning paths',
-        'Search and retrieval tools lack academic context and continuity',
-        'Analytics tools summarize data, not knowledge or learning goals',
-        'Autonomous AI undermines academic integrity and credibility',
-      ],
-      footer: "What’s needed is AI that reasons over verified knowledge, with transparent logic and full traceability.",
-    },
-    initiatives: {
-      description: (
-        <>
-          <div>
-            EtaCar Systems applies process-aware, ontology-driven knowledge intelligence to support education and research workflows where accuracy and trust are critical. We structure academic and scientific knowledge around explicit learning ontologies, linking sources, concepts, and reasoning into a verifiable framework.
-          </div>
-          <div>This allows AI systems to:</div>
-        </>
-      ),
-      options: [
-        'Reason only over verified sources and cited materials',
-        'Preserve context across education and research workflows',
-        'Provide explainable outputs with clear reasoning paths',
-        'Enable human oversight without slowing learning or discovery',
-      ],
-    },
-    kpis: {
-      options: [
-        '25–40% improvement in learning efficiency',
-        '30–50% higher academic content accuracy',
-        '50–65% faster research synthesis',
-        '40–55% lower student dropout rates',
-        '35–45% increase in educator and researcher productivity',
-      ],
-    },
-  },
-    {
-    title: 'Healthcare & Life Sciences',
-    subtitle: 'Controlled AI Decision Execution for Clinical and Operational Workflows',
-    sectionId: 'healthcare',
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path
-          d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
-          fill='currentColor'
-        />
-      </svg>
-    ),
-    challenges: {
-      description: (
-        <>
-          <div>
-            Healthcare organizations manage critical clinical and administrative decisions under strict safety, privacy,
-            and regulatory requirements.
-          </div>
-          <div>Challenges include:</div>
-        </>
-      ),
-      options: [
-        'Heavy documentation burden',
-        'Fragmented clinical data',
-        'Slow decision processes',
-        'High compliance risk',
-      ],
-    },
-    whereWeHelp: {
-      description: <>Healthcare workflows resist automation because:</>,
-      options: [
-        'Unstructured clinical data dominates',
-        'Decisions require human accountability',
-        'LLMs lack clinical governance',
-        'Regulatory requirements are strict',
-      ],
-      footer: 'AI must support—not replace—clinical decisions.',
-    },
-    initiatives: {
-      description: (
-        <>
-          <div>EtaCar Systems acts as a controlled AI execution layer for healthcare workflows.</div>
-          <div>It embeds AI into clinical and operational decision processes with strong governance.</div>
-          <div>EtaCar Systems enables:</div>
-        </>
-      ),
-      options: [
-        'Ingestion of clinical and policy data',
-        'AI-assisted decision support',
-        'Structured approval and escalation workflows',
-        'Full compliance traceability',
-      ],
-    },
-    kpis: {
-      options: [
-        'Reduced administrative burden',
-        'Faster access to critical information',
-        'Improved decision consistency',
-        'Higher compliance confidence',
-      ],
-    },
-  },
-  {
     title: 'Corporate Project Management',
     subtitle: 'Explainable Decision Intelligence for Complex Project Portfolios',
     sectionId: 'corporate-pm',
@@ -209,54 +15,111 @@ export const industries = [
       description: (
         <>
           <div>
-          Corporate organizations manage complex portfolios of interdependent projects where decisions must balance cost, timelines, resources, and strategic priorities.
-          These decisions rely on fragmented data from project tools, financial systems, risk registers, and communications — applied across planning, execution, forecasting, and reporting.
+            Enterprises manage many interconnected projects with dependencies across cost, schedule, resources, and
+            strategy.
           </div>
-          <div>As a result, project and portfolio processes are often:</div>
         </>
       ),
       options: [
-        'Fragmented across tools, teams, and initiatives',
-        'Reactive rather than proactive',
-        'Difficult to assess in terms of impact and dependencies',
-        'Hard to explain, justify, and trace at the executive level',        
+        'Project data is scattered across tools and teams.',
+        'Planning and forecasting are often reactive.',
+        'Risks and dependencies lack executive-level visibility.',
+        'Decisions lack traceability.',
       ],
     },
     whereWeHelp: {
-      description: <>Corporate project management imposes constraints that most AI and automation tools cannot address:</>,
+      description: <>Traditional project management and BI tools have limits:</>,
       options: [
-        'Project data is scattered across tools, lacking shared context',
-        'PM and BI tools report the past, not future risks or dependencies',
-        'Generic AI can\'t link financial, operational, and human factors',
-        'Forecasts are based on correlations, not causal reasoning',
-        'Executive decisions lack traceability and audit-ready justification',
+        'They show past performance, not future risks.',
+        'Data stays siloed and context-less across platforms.',
+        'Generic AI can correlate data but cannot reason about causes.',
+        'Leadership decisions remain hard to justify and audit.',
       ],
-      footer: 'AI must operate within controlled compliance processes.',
     },
     initiatives: {
       description: (
         <>
           <div>
-          EtaCar Systems acts as a controlled, process-aware decision intelligence layer for enterprise project and portfolio management.
-          We apply ontology-driven reasoning to connect project data, financial constraints, resource availability, and strategic objectives into a unified decision framework.
+            EtaCar introduces a <b>controlled decision intelligence layer</b> that unifies project, financial, and
+            resource data into a single reasoning framework.
           </div>
-          <div>This enables AI to:</div>
         </>
       ),
       options: [
-        'Identify and explain emerging risks before they materialize',
-        'Generate logic-based budget and schedule forecasts',
-        'Optimize resource allocation across portfolios without bias',
-        'Provide decision support with clear reasoning and traceability'
+        'Detects emerging risks early.',
+        'Generates logic-based forecasts for budgets and schedules.',
+        'Optimizes resource allocation across the portfolio.',
+        'Provides traceable, explainable decision support.',
       ],
     },
     kpis: {
       options: [
-        '40–60% higher risk detection accuracy',
-        '25–40% reduction in budget deviations',
-        '30–50% improvement in resource utilization',
+        '40–60% more accurate early risk detection.',
+        '25–40% reduction in budget deviations.',
+        '30–50% improvement in resource utilization.',
         '60–70% faster reporting and portfolio visibility',
-        '45–65% increase in decision traceability and executive trust'
+        '45–65% increase in traceable, explainable decisions.',
+      ],
+    },
+  },
+  {
+    title: 'Healthcare & Life Sciences',
+    subtitle: 'Governed AI for Clinical and Operational Decisions',
+    sectionId: 'healthcare',
+    icon: (
+      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <path
+          d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
+          fill='currentColor'
+        />
+      </svg>
+    ),
+    challenges: {
+      description: (
+        <>
+          <div>
+            Healthcare organizations operate in highly regulated environments with complex clinical and operational
+            workflows.
+          </div>
+        </>
+      ),
+      options: [
+        'Data is fragmented across systems and departments.',
+        'Decisions must align with policies, protocols, and regulations.',
+        'Manual processes increase administrative burden.',
+        'AI adoption requires strict control and transparency.',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Traditional healthcare systems and AI tools fall short:</>,
+      options: [
+        'They focus on automation, not decision governance.',
+        'AI outputs lack explainability and traceability.',
+        'Compliance checks are manual and time-consuming.',
+        'Clinical and operational decisions remain siloed.',
+      ],
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>
+            EtaCar Systems acts as a <b>controlled decision intelligence layer</b> for healthcare workflows.
+          </div>
+        </>
+      ),
+      options: [
+        'Structures clinical, operational, and policy data.',
+        'Embeds AI into governed decision processes.',
+        'Supports approval and escalation by design.',
+        'Ensures full traceability and compliance readiness.',
+      ],
+    },
+    kpis: {
+      options: [
+        'Reduced administrative burden across workflows',
+        'Faster access to validated clinical information',
+        'Improved consistency in clinical and operational decisions',
+        'Higher trust in AI-supported healthcare processes',
       ],
     },
   },
@@ -341,9 +204,9 @@ export const industries = [
     },
   },
   {
-    title: 'Manufacturing & Industrial Operations',
-    subtitle: 'Controlled AI Execution for Production and Quality Decisions',
-    sectionId: 'manufacturing',
+    title: 'Industrial Operations & Supply Chain',
+    subtitle: 'Explainable AI for End-to-End Operational Decisions',
+    sectionId: 'industrial',
     icon: (
       <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
         <path
@@ -355,57 +218,111 @@ export const industries = [
     challenges: {
       description: (
         <>
-          <div>
-            Manufacturers operate complex production environments where small deviations can cause significant quality
-            issues, downtime, or waste.
-          </div>
-          <div>Challenges include:</div>
+          <div>Industrial and supply chain operations span production and logistics.</div>
         </>
       ),
       options: [
-        'Massive operational data streams',
-        'Delayed detection of anomalies',
-        'Slow response to issues',
-        'Siloed decision-making',
+        'Data is fragmented across plants, warehouses, and partners.',
+        'Disruptions propagate quickly across the entire operation.',
+        'Decisions must balance speed, cost, and reliability.',
+        'Scaling AI requires governance and consistency.',
       ],
     },
     whereWeHelp: {
-      description: <>Manufacturing environments are hard to automate because:</>,
+      description: <>Traditional industrial and supply chain systems fall short:</>,
       options: [
-        'Static thresholds miss early signals',
-        'Manual monitoring does not scale',
-        'AI insights are disconnected from action',
-        'Operational decisions require accountability',
+        'They monitor operations but do not reason about decisions.',
+        'AI outputs lack transparency and control.',
+        'Dependencies across production and logistics are hard to manage.',
+        'Decision logic does not scale across sites and regions.',
       ],
-      footer: 'AI must be integrated into production decision loops.',
     },
     initiatives: {
       description: (
         <>
-          <div>EtaCar Systems provides a controlled AI execution layer for industrial operations.</div>
-          <div>It connects AI analysis directly to operational decision workflows with human oversight.</div>
-          <div>EtaCar Systems enables:</div>
+          <div>
+            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to industrial and supply chain
+            operations.
+          </div>
         </>
       ),
       options: [
-        'Ingestion of production and quality data',
-        'AI-assisted anomaly detection',
-        'Structured response and escalation workflows',
-        'Traceable operational decisions',
+        'Connects production, logistics, and operational data.',
+        'Supports AI-assisted decisions with clear, explainable logic.',
+        'Embeds governance into automated workflows.',
+        'Enables consistent decisions across end-to-end operations.',
       ],
     },
     kpis: {
       options: [
-        'Reduced downtime and waste',
-        'Faster issue resolution',
-        'More consistent operational decisions',
-        'Improved production efficiency',
+        'Faster and more resilient operational decisions',
+        'Improved coordination across production and logistics',
+        'Reduced disruption impact and manual intervention',
+        'Higher confidence in AI-driven industrial operations',
+      ],
+    },
+  },
+  {
+    title: 'Regulated Financial & Compliance Environments',
+    subtitle: 'Explainable AI for Governed Financial Decisions',
+    sectionId: 'fintech',
+    icon: (
+      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <path
+          d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
+          fill='currentColor'
+        />
+      </svg>
+    ),
+    challenges: {
+      description: (
+        <>
+          <div>Financial institutions operate under strict regulatory and compliance requirements.</div>
+        </>
+      ),
+      options: [
+        'Decision processes are complex and highly scrutinized.',
+        'Data is spread across systems and teams.',
+        'Manual controls slow down operations.',
+        'Every decision must be auditable and defensible.',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Traditional financial systems and analytics tools fall short:</>,
+      options: [
+        'They automate workflows but not decision logic.',
+        'AI outputs lack transparency and explainability.',
+        'Compliance checks are reactive and manual.',
+        'Traceability across decisions is difficult to maintain.',
+      ],
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>
+            EtaCar Systems provides a <b>controlled decision intelligence layer</b> for regulated financial workflows.
+          </div>
+        </>
+      ),
+      options: [
+        'Structures financial, regulatory, and policy data.',
+        'Supports AI-assisted decisions with clear reasoning.',
+        'Embeds approval and escalation rules by design.',
+        'Ensures full auditability and compliance traceability.',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster, compliant financial decision cycles',
+        'Reduced manual compliance workload',
+        'Higher transparency and audit readiness',
+        'Greater confidence in AI-supported financial decisions',
       ],
     },
   },
   {
     title: 'Telecommunications & Cloud Services',
-    subtitle: 'AI-Orchestrated Operations for High-Availability Environments',
+    subtitle: 'Explainable AI for Network and Service Decisions',
     sectionId: 'telecom',
     icon: (
       <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -422,128 +339,52 @@ export const industries = [
     challenges: {
       description: (
         <>
-          <div>
-            Telecom and cloud providers must maintain highly available, large-scale infrastructure while responding
-            rapidly to incidents and demand changes.
-          </div>
-          <div>They face:</div>
+          <div>Telecom and cloud providers operate large-scale, dynamic infrastructures.</div>
         </>
       ),
       options: [
-        'Complex distributed systems',
-        'High incident volumes',
-        'Manual operational workflows',
-        'Strict SLA requirements',
+        'Data comes from many network, service, and customer systems.',
+        'Decisions must be made quickly and at scale.',
+        'Service reliability and performance are business-critical.',
+        'Governance across automated decisions is hard to maintain.',
       ],
     },
     whereWeHelp: {
-      description: <>Operational automation struggles because:</>,
+      description: <>Traditional network management and analytics tools fall short:</>,
       options: [
-        'Systems are highly interdependent',
-        'Alert fatigue overwhelms teams',
-        'Dashboards lack execution logic',
-        'Autonomous AI is risky in production systems',
+        'They monitor systems but do not reason about decisions.',
+        'AI outputs lack transparency and control.',
+        'Root causes are hard to identify across complex environments.',
+        'Scaling decision logic across services and regions is difficult.',
       ],
-      footer: 'Controlled AI is required for reliability.',
     },
     initiatives: {
       description: (
         <>
-          <div>EtaCar Systems acts as a controlled AI execution layer for infrastructure operations.</div>
           <div>
-            It orchestrates AI-assisted incident response and operational decisions across cloud and network
-            environments.
+            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to telecom and cloud operations.
           </div>
-          <div>EtaCar Systems enables:</div>
         </>
       ),
       options: [
-        'Unified ingestion of telemetry and alerts',
-        'AI-assisted incident classification',
-        'Structured response workflows',
-        'Full operational traceability',
+        'Connects network, service, and operational data.',
+        'Supports AI-assisted decisions with clear, explainable logic.',
+        'Embeds governance into automated workflows.',
+        'Enables consistent decision-making across platforms.',
       ],
     },
     kpis: {
       options: [
-        'Faster incident resolution',
-        'Improved SLA compliance',
-        'Reduced operational load on teams',
-        'Higher infrastructure reliability',
-      ],
-    },
-  },
-  {
-    title: 'Retail & E-commerce',
-    subtitle: 'AI-Driven Decision Execution Across Customer and Operations Workflows',
-    sectionId: 'retail',
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path
-          d='M9 11L12 14L22 4M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-        />
-      </svg>
-    ),
-    challenges: {
-      description: (
-        <>
-          <div>
-            Retailers must manage fast-moving customer interactions, inventory decisions, and omnichannel operations at
-            scale.
-          </div>
-          <div>They face:</div>
-        </>
-      ),
-      options: [
-        'Fragmented customer and operational data',
-        'Manual exception handling',
-        'Inconsistent decision-making',
-        'Pressure to improve customer experience',
-      ],
-    },
-    whereWeHelp: {
-      description: <>Retail automation fails because:</>,
-      options: [
-        'Customer context is fragmented',
-        'Rules cannot adapt to demand volatility',
-        'Chatbots lack operational authority',
-        'Human teams do not scale efficiently',
-      ],
-      footer: 'AI must bridge insight and execution.',
-    },
-    initiatives: {
-      description: (
-        <>
-          <div>EtaCar Systems provides a controlled AI execution layer for retail operations.</div>
-          <div>
-            It orchestrates AI-assisted decisions across customer service, inventory, and fulfillment workflows.
-          </div>
-          <div>EtaCar Systems enables:</div>
-        </>
-      ),
-      options: [
-        'Unified customer and operational data',
-        'Context-aware AI recommendations',
-        'Decision routing with human oversight',
-        'Coordinated execution across channels',
-      ],
-    },
-    kpis: {
-      options: [
-        'Faster customer issue resolution',
-        'More consistent operational decisions',
-        'Improved customer satisfaction',
-        'Lower operational cost',
+        'Faster and more reliable operational decisions',
+        'Improved service stability and performance consistency',
+        'Reduced operational complexity and manual intervention',
+        'Higher confidence in AI-driven network and service management',
       ],
     },
   },
   {
     title: 'SaaS & Enterprise Software Platforms',
-    subtitle: 'Production-Grade AI Execution for Enterprise Products',
+    subtitle: 'Explainable AI for Product and Platform Decisions',
     sectionId: 'saas',
     icon: (
       <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -559,51 +400,222 @@ export const industries = [
     challenges: {
       description: (
         <>
-          <div>
-            SaaS and enterprise software companies want to embed AI into products while maintaining reliability,
-            security, and scalability.
-          </div>
-          <div>They face:</div>
+          <div>SaaS and enterprise platforms operate at scale across complex product and delivery environments.</div>
         </>
       ),
       options: [
-        'Difficulty moving from prototypes to production',
-        'Governance and observability gaps',
-        'High operational complexity',
-        'Enterprise customer expectations',
+        'Data is distributed across product, engineering, and operations teams.',
+        'Decisions must balance speed, reliability, and risk.',
+        'AI adoption increases complexity and governance needs.',
+        'Ensuring consistent decisions across systems is difficult.',
       ],
     },
     whereWeHelp: {
-      description: <>AI delivery struggles because:</>,
+      description: <>Traditional platform tools and analytics fall short:</>,
       options: [
-        'Experiments do not scale to production',
-        'AI logic is hard to control and observe',
-        'Enterprise requirements demand governance',
-        'Teams lack an execution layer for AI',
+        'They monitor performance but do not guide decisions.',
+        'AI outputs lack transparency and control.',
+        'Root causes are hard to trace across services.',
+        'Decision logic does not scale across teams and products.',
       ],
-      footer: 'AI must be treated as an operational system.',
     },
     initiatives: {
       description: (
         <>
-          <div>EtaCar Systems provides a controlled AI execution layer for enterprise software platforms.</div>
-          <div>It enables teams to build, deploy, and operate AI-driven features with control and visibility.</div>
-          <div>EtaCar Systems enables:</div>
+          <div>
+            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to SaaS and enterprise platforms.
+          </div>
         </>
       ),
       options: [
-        'Orchestrated AI decision workflows',
-        'Human-in-the-loop governance',
-        'Observability and traceability',
-        'Enterprise-ready AI operations',
+        'Connects product, operational, and delivery data.',
+        'Supports AI-assisted decisions with clear, explainable logic.',
+        'Embeds governance into automated workflows.',
+        'Enables consistent decision-making across platforms.',
       ],
     },
     kpis: {
       options: [
-        'Faster delivery of AI features',
-        'Higher reliability in production',
-        'Lower technical and operational risk',
-        'Scalable AI governance across products',
+        'Faster and more reliable product and operational decisions',
+        'Improved platform stability and delivery consistency',
+        'Reduced operational complexity and manual intervention',
+        'Higher confidence in AI-driven platform management',
+      ],
+    },
+  },
+  {
+    title: 'Retail & E-commerce',
+    subtitle: 'Explainable AI for Demand, Operations, and Customer Decisions',
+    sectionId: 'retail',
+    icon: (
+      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <path
+          d='M9 11L12 14L22 4M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16'
+          stroke='currentColor'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+        />
+      </svg>
+    ),
+    challenges: {
+      description: (
+        <>
+          <div>Retail and e-commerce businesses operate across fast-changing markets and channels.</div>
+        </>
+      ),
+      options: [
+        'Data is fragmented across sales, inventory, marketing, and logistics systems.',
+        'Demand is volatile and hard to predict.',
+        'Decisions must balance speed, accuracy, and margins.',
+        'Scaling AI requires control and consistency.',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Traditional retail platforms and analytics tools fall short:</>,
+      options: [
+        'They focus on reporting, not decision reasoning.',
+        'Forecasts lack transparency and context.',
+        'AI recommendations are hard to explain and trust.',
+        'Decision logic does not scale across channels and regions.',
+      ],
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>
+            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to retail operations.
+          </div>
+        </>
+      ),
+      options: [
+        'Connects demand, inventory, pricing, and operational data.',
+        'Supports AI-assisted decisions with clear, explainable logic.',
+        'Aligns automated actions with business rules and policies.',
+        'Ensures consistent decisions across channels.',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster, more confident demand and inventory decisions',
+        'Improved consistency across pricing and fulfillment',
+        'Reduced manual decision-making effort',
+        'Higher trust in AI-supported retail operations',
+      ],
+    },
+  },
+  {
+    title: 'R&D',
+    subtitle: 'Explainable AI for Research and Innovation Decisions',
+    sectionId: 'rnd',
+    icon: (
+      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <path
+          d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
+          fill='currentColor'
+        />
+      </svg>
+    ),
+    challenges: {
+      description: 'R&D teams operate across complex research, data, and experimentation workflows.',
+      options: [
+        'Information is scattered across tools, datasets, and teams.',
+        'Decisions depend on incomplete or rapidly changing data.',
+        'Manual analysis slows discovery and validation.',
+        'AI adoption requires trust and transparency.',
+      ],
+    },
+    whereWeHelp: {
+      description: 'Traditional R&D tools and analytics fall short:',
+      options: [
+        'They support analysis but not decision reasoning.',
+        'AI outputs are hard to explain and validate.',
+        'Knowledge remains siloed across projects.',
+        'Decision logic does not scale across research domains.',
+      ],
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>
+            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to R&D workflows.
+          </div>
+        </>
+      ),
+      options: [
+        'Connects research data, models, and experimental results.',
+        'Supports AI-assisted decisions with clear, explainable logic.',
+        'Structures review, approval, and iteration cycles.',
+        'Ensures traceability across research decisions.',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster research and validation cycles',
+        'Improved consistency in R&D decision-making',
+        'Reduced manual analysis effort',
+        'Higher trust in AI-supported research processes',
+      ],
+    },
+  },
+  {
+    title: 'Education',
+    subtitle: 'Explainable AI for Learning, Research, and Academic Operations',
+    sectionId: 'edtech_research',
+    icon: (
+      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <path
+          d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
+          fill='currentColor'
+        />
+      </svg>
+    ),
+    challenges: {
+      description: (
+        <>
+          <div>
+            Educational institutions manage large volumes of learning content, research data, and administrative
+            processes.
+          </div>
+        </>
+      ),
+      options: [
+        'Information is fragmented across systems and departments.',
+        'Decision-making is time-consuming and often manual.',
+        'Educators and researchers lack clear, trusted AI support.',
+        'Governance and transparency are difficult to maintain.',
+      ],
+    },
+    whereWeHelp: {
+      description: <>Traditional educational platforms and analytics tools fall short:</>,
+      options: [
+        'Focus on content delivery, not decision support.',
+        'Provide insights without clear reasoning or traceability.',
+        'Rely heavily on manual review and human coordination.',
+        'Struggle to scale across programs and research domains.',
+      ],
+    },
+    initiatives: {
+      description: (
+        <>
+          <div>
+            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to educational workflows.
+          </div>
+        </>
+      ),
+      options: [
+        'Structures and connects learning, research, and policy data.',
+        'Supports AI-assisted academic and operational decisions.',
+        'Ensures transparent reasoning behind recommendations.',
+        'Maintains governance across educational processes.',
+      ],
+    },
+    kpis: {
+      options: [
+        'Faster access to educational and research insights',
+        'Reduced workload for educators and administrators',
+        'Improved consistency in academic decision-making',
+        'Greater trust in AI-supported learning and research',
       ],
     },
   },

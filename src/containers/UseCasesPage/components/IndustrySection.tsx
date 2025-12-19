@@ -46,68 +46,74 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
         <div className={styles.contentGrid}>
           <div className={styles.block}>
             <h3 className={styles.blockTitle}>The Challenge</h3>
-
-            {challenges.description}
-            <ul className={styles.list}>
-              {challenges.options.map((item, i) => (
-                <li key={i} className={styles.listItem}>
-                  <span className={styles.bullet}>●</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            {challenges.footer}
+            <div className={styles.content}>
+              {challenges.description}
+              <ul className={styles.list}>
+                {challenges.options.map((item, i) => (
+                  <li key={i} className={styles.listItem}>
+                    <span className={styles.bullet}>●</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              {challenges.footer}
+            </div>
           </div>
 
           <div className={styles.block}>
             <h3 className={styles.blockTitle}>Why Traditional Approaches Fail</h3>
-
-            {whereWeHelp.description}
-            <ul className={styles.list}>
-              {whereWeHelp.options.map((item, i) => (
-                <li key={i} className={styles.listItem}>
-                  <span className={styles.bullet}>●</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            {whereWeHelp.footer}
+            <div className={styles.content}>
+              {whereWeHelp.description}
+              <ul className={styles.list}>
+                {whereWeHelp.options.map((item, i) => (
+                  <li key={i} className={styles.listItem}>
+                    <span className={styles.bullet}>●</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              {whereWeHelp.footer}
+            </div>
           </div>
 
           <div className={styles.block}>
             <h3 className={styles.blockTitle}>How EtaCar Systems helps</h3>
-            <ul className={styles.list}>
-              {initiatives.description}
-              {initiatives.options.map((item, i) => (
-                <li key={i} className={styles.listItem}>
-                  <span className={styles.bullet}>●</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            {initiatives.footer}
+            <div className={styles.content}>
+              <ul className={styles.list}>
+                {initiatives.description}
+                {initiatives.options.map((item, i) => (
+                  <li key={i} className={styles.listItem}>
+                    <span className={styles.bullet}>●</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              {initiatives.footer}
+            </div>
           </div>
 
           <FadeCard className={styles.kpiBlock}>
             <h3 className={styles.blockTitle}>Impact</h3>
-            <ul className={styles.kpiList}>
-              {kpis.options.map((item, i) => (
-                <li key={i} className={styles.kpiItem}>
-                  <span className={styles.bullet}>●</span>
-                  <span>
-                    {item.split(/([+\d–×%]+)/g).map((part, i) =>
-                      /[+\d–×%]/.test(part) ? (
-                        <strong key={i} className={styles.highlightNumber}>
-                          {part}
-                        </strong>
-                      ) : (
-                        part
-                      )
-                    )}
-                  </span>
-                </li>
-              ))}
-            </ul>
+            <div className={styles.content}>
+              <ul className={styles.kpiList}>
+                {kpis.options.map((item, i) => (
+                  <li key={i} className={styles.kpiItem}>
+                    <span className={styles.bullet}>●</span>
+                    <span>
+                      {item.split(/([+\d–×%]+)/g).map((part, i) =>
+                        /[+\d–×%]/.test(part) ? (
+                          <strong key={i} className={styles.highlightNumber}>
+                            {part}
+                          </strong>
+                        ) : (
+                          part
+                        )
+                      )}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </FadeCard>
         </div>
       </div>

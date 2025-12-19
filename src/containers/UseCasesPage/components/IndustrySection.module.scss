@@ -140,6 +140,12 @@
   color: var(--color-success-500);
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .even {
   & .kpiBlock {
     @extend .block;
@@ -149,6 +155,13 @@
 
 .odd {
   background: var(--gradient-card) !important;
+
+  .content {
+    color: var(--color-neutral-900);
+    .listItem {
+      color: var(--color-neutral-900);
+    }
+  }
 
   & .kpiBlock {
     @extend .block;
