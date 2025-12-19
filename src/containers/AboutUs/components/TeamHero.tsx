@@ -8,7 +8,8 @@ const TeamHero: React.FC = () => {
         <h1 className={styles.title}>Enterprise AI Experts — Trusted in Business-Critical Systems for 20+ Years</h1>
 
         <p className={styles.subtitle}>
-          From early enterprise AI platforms to modern production deployment — trusted across regulated, high-stake environments.
+          From <strong>early enterprise AI platforms</strong> to <strong>modern production deployment</strong> — trusted
+          across <strong>regulated, high-stake environments</strong>.
         </p>
       </div>
     </section>

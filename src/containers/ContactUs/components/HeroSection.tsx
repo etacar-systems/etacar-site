@@ -11,9 +11,10 @@ export const HeroSection: React.FC = () => {
           <h1 className={styles.title}>Discuss Your Business-Critical AI Initiatives</h1>
 
           <p className={styles.subtitle}>
-            We're a senior AI engineering team with 20+ years of experience building AI-powered systems for
-            business-critical operations. Whether you need strategic guidance, technical implementation, or end-to-end
-            delivery - we're here to help.
+            We're a <strong>senior AI engineering team</strong> with <strong>20+ years of experience</strong> building{' '}
+            <strong>AI-powered systems</strong> for
+            <strong> business-critical operations</strong>. Whether you need <strong>strategic guidance</strong>,{' '}
+            <strong>technical implementation</strong>, or <strong>end-to-end delivery</strong> - we're here to help.
           </p>
 
           <div className={styles.quickFacts}>

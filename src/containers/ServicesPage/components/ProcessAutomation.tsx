@@ -10,7 +10,9 @@ export const ProcessAutomation: React.FC = () => {
       bestFor='Organizations with complex, multi-step workflows spanning documents, systems, and teams.'
       problemWeSolve='Traditional automation breaks at scale. Isolated AI models create bottlenecks, slow handoffs, and limited visibility across end-to-end business processes.'
       whatWeDeliver={[
-        'AI-driven orchestration across entire workflows, not isolated tasks',
+        <>
+          <strong>AI-driven orchestration</strong> across entire workflows, not isolated tasks
+        </>,
         'Integration of documents, systems, and decisions into unified pipelines',
         'Human-in-the-loop controls with full observability and audit trails',
         'SLA-aware automation for business-critical operations',

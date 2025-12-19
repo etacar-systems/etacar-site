@@ -4,7 +4,10 @@ import { CONTACT } from '../../../../routes';
 import style from './Introduction.module.scss';
 
 const infoText = [
-  'EtaCar Systems is an AI solutions company focused on designing, building, and operating intelligent systems for modern enterprises.',
+  <>
+    <strong>EtaCar Systems</strong> is an <strong>AI solutions company</strong> focused on{' '}
+    <strong>designing, building, and operating intelligent systems</strong> for modern enterprises.
+  </>,
   'We specialize in AI orchestration, autonomous enterprise agents, and knowledge intelligence - helping organizations automate complex workflows, enhance decision-making, and unlock the value of their data.',
   'Our leadership team brings over a decade of experience working with clients across North America and the European Union.',
   'We believe in partnership over transactions. By keeping an open attitude and putting people first - clients, teams, and end-users - we create solutions that are not only technologically advanced, but also practical, trusted, and sustainable.',

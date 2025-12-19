@@ -13,8 +13,12 @@ export const AIGovernance: React.FC = () => {
         <>
           <strong>Continuous AI risk evaluation</strong> and monitoring
         </>,
-        'Security controls across data, models, and workflows',
-        'Governance frameworks aligned with enterprise and regulatory standards',
+        <>
+          <strong>Security controls</strong> across data, models, and workflows
+        </>,
+        <>
+          <strong>Governance frameworks</strong> aligned with enterprise and regulatory standards
+        </>,
         'Clear ownership and accountability for AI systems',
       ]}
       exampleKPIs={[

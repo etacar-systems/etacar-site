@@ -150,7 +150,10 @@ const AIPhilosophy: React.FC = () => {
     <SectionWrapper className={styles.philosophySection}>
       <div className={styles.container}>
         <h2 className={styles.title}>How we think about AI in organizations</h2>
-        <p className={styles.subtitle}>We do not treat AI as a magic layer you can sprinkle on top of everything.</p>
+        <p className={styles.subtitle}>
+          We do <strong>not</strong> treat AI as a <span style={{ fontStyle: 'italic' }}>magic layer</span> you can
+          sprinkle on top of everything.
+        </p>
         <div className={styles.content}>
           <p className={styles.intro}>We see it as an additional capability inside your organization that must:</p>
 

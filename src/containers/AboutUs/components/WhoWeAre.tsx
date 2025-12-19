@@ -43,8 +43,13 @@ const WhoWeAre: React.FC = () => {
     },
     {
       title: 'Our Focus',
-      description:
-        'Our work centers on business-critical workflows - the ones that affect revenue, risk, operations and compliance. We help leadership teams decide where AI can safely amplify their people.',
+      description: (
+        <>
+          Our work centers on <strong>business-critical workflows</strong> - the ones that affect{' '}
+          <strong>revenue, risk, operations and compliance</strong>. We help leadership teams decide where AI can safely
+          amplify their people.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path

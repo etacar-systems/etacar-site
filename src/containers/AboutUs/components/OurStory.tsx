@@ -88,8 +88,13 @@ const OurStory: React.FC = () => {
     },
     {
       title: 'Your AI Partner',
-      description:
-        'Today, we partner with businesses to bring AI into their most important workflows, ensuring that it delivers real value while being safe, reliable and compliant.',
+      description: (
+        <>
+          Today, we partner with businesses to <strong>bring AI into their most important workflows</strong>, ensuring
+          that it delivers
+          <strong> real value</strong> while being <strong>safe, reliable and compliant</strong>.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -111,11 +116,12 @@ const OurStory: React.FC = () => {
       <div className={styles.content}>
         <h2 className={styles.title}>Our story</h2>
         <p className={styles.subtext}>
-          We started in the early 2000s working with enterprise AI platforms such as Autonomy as certified specialists.
-          Since then, we’ve built and operated AI-driven systems across finance, e-commerce, logistics, telecom and
-          SaaS. The same disciplines we applied to high-stakes decision and analytics systems - clear owners, measurable
-          KPIs, robust governance - are now built into every AI system we deliver. Today we use that experience - and
-          our background in neuroscience and complex systems - to design AI solutions that work in real organizations,
+          We started in the <strong>early 2000s</strong> working with <strong>enterprise AI platforms</strong> such as
+          Autonomy as certified specialists. Since then, we’ve built and operated AI-driven systems across finance,
+          e-commerce, logistics, telecom and SaaS. The same disciplines we applied to high-stakes decision and analytics
+          systems - clear owners, measurable KPIs, robust governance - are now built into every AI system we deliver.
+          Today we use <strong>that experience</strong> - and our background in{' '}
+          <strong>neuroscience and complex systems</strong> - to design AI solutions that work in real organizations,
           not just in demos. More than two decades of AI experience, from enterprise decision systems to modern AI
           solutions.
         </p>

@@ -11,14 +11,16 @@ export const DocumentIntelligence: React.FC = () => {
       problemWeSolve='Critical information is locked inside documents and siloed systems, detached from how business processes actually run. Searching is slow, answers are inconsistent, and decisions lack traceability.'
       whatWeDeliver={[
         <>
-          Ontology-driven <strong>semantic understanding of documents</strong>, data, and knowledge bases
+          Ontology-driven <strong>semantic understanding</strong> of documents, data, and knowledge bases
         </>,
         <>
           <strong>Context-aware answers</strong> scoped to business processes and decision contexts, with references and
           citations
         </>,
         'Side-by-side comparison and reasoning across documents within a shared business process context',
-        'Secure, role-based access to internal knowledge across teams and workflows',
+        <>
+          <strong>Secure, role-based access</strong> to internal knowledge across teams and workflows
+        </>,
       ]}
       exampleKPIs={[
         'Up to 70% faster information retrieval',
