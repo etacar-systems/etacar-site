@@ -10,9 +10,15 @@ export const AICopilots: React.FC = () => {
       bestFor='Operations, risk, compliance, engineering, and leadership teams making frequent, high-impact decisions.'
       problemWeSolve='Generic AI tools lack context, hallucinate, and create operational and compliance risk. Teams spend time validating outputs or escalating issues instead of acting on insights.'
       whatWeDeliver={[
-        'Role-specific AI copilots embedded into existing tools and workflows',
-        'Context-aware reasoning grounded in verified enterprise data',
-        'Clear boundaries, escalation paths, and explainable outputs',
+        <>
+          <strong>Role-specific AI copilots</strong> embedded into existing tools and workflows
+        </>,
+        <>
+          <strong>Context-aware reasoning</strong> grounded in verified enterprise data
+        </>,
+        <>
+          Clear boundaries, escalation paths, and <strong>explainable outputs</strong>
+        </>,
         'Built-in controls for auditability and accountability',
       ]}
       exampleKPIs={[

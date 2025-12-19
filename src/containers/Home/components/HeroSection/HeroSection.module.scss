@@ -36,47 +36,54 @@
 
 .title {
   @include heading-xl;
+  margin: 0;
   margin-bottom: var(--space-6);
   background: linear-gradient(135deg, var(--color-neutral-900) 0%, var(--color-primary-700) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-align: center;
 
   @include desktop {
-    font-size: var(--text-7xl);
+    font-size: var(--text-6xl);
   }
 }
 
-.subheadline {
+.subtitle {
   @include body-lg;
   font-size: var(--text-xl);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-8);
+  font-weight: var(--font-medium);
+  color: var(--color-neutral-800);
   line-height: var(--leading-relaxed);
-  font-weight: var(--font-semibold);
-  color: var(--color-primary-800);
 
   @include desktop {
     font-size: var(--text-2xl);
   }
 }
 
-.trustLine {
+.intro {
   @include body-base;
   font-size: var(--text-lg);
+  color: var(--color-neutral-700);
+  line-height: var(--leading-relaxed);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
   margin-bottom: var(--space-8);
-  font-weight: var(--font-semibold);
-  color: var(--color-primary-800);
+}
 
-  @include desktop {
-    font-size: var(--text-xl);
-  }
+.cta {
+  margin-bottom: var(--space-12);
+  font-style: italic;
+  font-size: var(--text-sm);
 }
 
 .ctaButtons {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
-  margin-bottom: var(--space-12);
+  margin-bottom: var(--space-4);
 
   @include respond-above(sm) {
     flex-direction: row;

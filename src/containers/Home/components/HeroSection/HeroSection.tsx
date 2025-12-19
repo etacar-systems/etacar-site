@@ -13,25 +13,21 @@ export const HeroSection: React.FC = () => {
     <SectionWrapper variant='gradient'>
       <div className={styles.container}>
         <div className={styles.content}>
-          <p className={styles.subheadline} style={{ marginBottom: 'var(--space-3)', marginTop: 0 }}>
-            Orchestrating Intelligence. Navigating Complexity.
+          <h1 className={styles.title}>Explainable AI for Business-Critical Decisions</h1>
+          <h2 className={styles.subtitle}>
+            A <strong>controlled decision intelligence layer</strong> that embeds AI into complex workflows — with{' '}
+            <strong>governance</strong>,<strong>traceability</strong>, and <strong>measurable impact</strong>
+          </h2>
+          <p className={styles.intro}>
+            EtaCar helps enterprises <strong>reason, decide, and act</strong> — not just automate tasks.
           </p>
 
-          <h1 className={styles.title}>Enterprise AI for business-critical decisions and processes</h1>
-
-          <p className={styles.subheadline}>
-            We design and operate AI systems that measurably improve cycle times, risk controls and operating costs in
-            your most critical processes - not just experiments or prototypes
-          </p>
-
-          <p className={styles.trustLine}>
-            Our team has 20+ years of experience in AI engineering - from building solutions on top of the Autonomy
-            platform to delivering production-grade AI systems for leading organizations around the world.
-          </p>
-
-          <div className={styles.ctaButtons}>
-            <Button type='solid' title='Book a 30-minute call' onClick={() => router.push(CONTACT)} />
-            <Button type='bordered' title='See real results' onClick={() => router.push(RESULTS)} />
+          <div className={styles.cta}>
+            <div className={styles.ctaButtons}>
+              <Button type='solid' title='Book a 30-minute call' onClick={() => router.push(CONTACT)} />
+              <Button type='bordered' title='See real results' onClick={() => router.push(RESULTS)} />
+            </div>
+            Designed for regulated, high-stakes environments where decisions must be explainable.
           </div>
 
           <div className={styles.quickFacts}>

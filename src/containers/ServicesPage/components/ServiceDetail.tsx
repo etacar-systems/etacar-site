@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './ServiceDetail.module.scss';
@@ -9,7 +9,7 @@ export interface ServiceDetailProps {
   oneLiner: string;
   bestFor?: string;
   problemWeSolve?: string;
-  whatWeDeliver?: string[];
+  whatWeDeliver?: Array<string | ReactNode>;
   exampleKPIs?: string[];
   typicalProcesses?: string[];
 }
