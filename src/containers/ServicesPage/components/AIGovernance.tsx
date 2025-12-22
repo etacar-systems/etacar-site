@@ -6,9 +6,24 @@ export const AIGovernance: React.FC = () => {
     <ServiceDetail
       id='ai-risk'
       title='AI Risk, Evaluation & Governance'
-      oneLiner='From unmanaged AI risk to secure, auditable systems with near-zero leakage risk and enterprise-grade control.'
-      bestFor='Security, compliance, risk, and leadership teams responsible for AI oversight and regulatory readiness.'
-      problemWeSolve='AI systems introduce new risks — data leakage, malware exposure, and unpredictable behavior — without sufficient visibility, ownership, or control.'
+      oneLiner={
+        <>
+          From unmanaged AI risk to <strong>secure, auditable systems</strong> with near-zero leakage risk and
+          enterprise-grade control.
+        </>
+      }
+      bestFor={
+        <>
+          <strong>Security</strong>, <strong>compliance</strong>, <strong>risk</strong>, and leadership teams
+          responsible for AI oversight and regulatory readiness.
+        </>
+      }
+      problemWeSolve={
+        <>
+          <strong>AI systems introduce new risks</strong> — data leakage, malware exposure, and unpredictable behavior —
+          without sufficient visibility, ownership, or control.
+        </>
+      }
       whatWeDeliver={[
         <>
           <strong>Continuous AI risk evaluation</strong> and monitoring
@@ -19,7 +34,9 @@ export const AIGovernance: React.FC = () => {
         <>
           <strong>Governance frameworks</strong> aligned with enterprise and regulatory standards
         </>,
-        'Clear ownership and accountability for AI systems',
+        <>
+          <strong>Clear ownership and accountability</strong> for AI systems
+        </>,
       ]}
       exampleKPIs={[
         '100% visibility and ownership for all business-critical AI systems',

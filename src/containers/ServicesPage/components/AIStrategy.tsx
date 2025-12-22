@@ -6,9 +6,25 @@ export const AIStrategy: React.FC = () => {
     <ServiceDetail
       id='enterprise-ai'
       title='AI Strategy & Architecture'
-      oneLiner='From AI ideas to a realistic roadmap, architecture and governance model that C-level, IT and risk can stand behind.'
-      bestFor='Executives, CIOs, CTOs, and strategy teams designing AI systems for complex, high-impact decision environments.'
-      problemWeSolve='AI initiatives often fail because they start without structured analysis, realistic architecture, or a way to validate decisions before deployment. Enterprises struggle to align AI with business priorities, manage risk, and predict outcomes in complex, interdependent systems.'
+      oneLiner={
+        <>
+          From <strong>AI ideas</strong> to a realistic roadmap, architecture and governance model that C-level, IT and
+          risk can stand behind.
+        </>
+      }
+      bestFor={
+        <>
+          <strong>Executives</strong>, <strong>CIOs</strong>, <strong>CTOs</strong>, and strategy teams designing AI
+          systems for <strong>complex, high-impact decision environments</strong>.
+        </>
+      }
+      problemWeSolve={
+        <>
+          <strong>AI initiatives often fail</strong> because they start without structured analysis, realistic
+          architecture, or a way to validate decisions before deployment. Enterprises struggle to align AI with business
+          priorities, manage risk, and predict outcomes in complex, interdependent systems.
+        </>
+      }
       whatWeDeliver={[
         <>
           <strong>Structured analysis</strong> to decompose complex business problems into measurable, AI-ready

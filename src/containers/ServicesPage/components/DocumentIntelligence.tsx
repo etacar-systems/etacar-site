@@ -6,9 +6,23 @@ export const DocumentIntelligence: React.FC = () => {
     <ServiceDetail
       id='knowledge-intelligence'
       title='Process-Aware Knowledge AI'
-      oneLiner='From scattered documents to process-aware, trusted answers that cut search time by up to 70%.'
-      bestFor='Teams and leaders working with large volumes of documents, policies, contracts, technical documentation, and internal knowledge.'
-      problemWeSolve='Critical information is locked inside documents and siloed systems, detached from how business processes actually run. Searching is slow, answers are inconsistent, and decisions lack traceability.'
+      oneLiner={
+        <>
+          From scattered documents to <strong>process-aware, trusted answers</strong> that cut search time by up to 70%.
+        </>
+      }
+      bestFor={
+        <>
+          <strong>Teams and leaders</strong> working with <strong>large volumes</strong> of documents, policies,
+          contracts, technical documentation, and internal knowledge.
+        </>
+      }
+      problemWeSolve={
+        <>
+          <strong>Critical information</strong> is locked inside documents and siloed systems, detached from how
+          business processes actually run. Searching is slow, answers are inconsistent, and decisions lack traceability.
+        </>
+      }
       whatWeDeliver={[
         <>
           Ontology-driven <strong>semantic understanding</strong> of documents, data, and knowledge bases
@@ -17,7 +31,10 @@ export const DocumentIntelligence: React.FC = () => {
           <strong>Context-aware answers</strong> scoped to business processes and decision contexts, with references and
           citations
         </>,
-        'Side-by-side comparison and reasoning across documents within a shared business process context',
+        <>
+          <strong>Side-by-side comparison and reasoning</strong> across documents within a shared business process
+          context
+        </>,
         <>
           <strong>Secure, role-based access</strong> to internal knowledge across teams and workflows
         </>,

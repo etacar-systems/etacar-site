@@ -11,10 +11,9 @@ export const HeroSection: React.FC = () => {
           <h1 className={styles.title}>Discuss Your Business-Critical AI Initiatives</h1>
 
           <p className={styles.subtitle}>
-            We're a <strong>senior AI engineering team</strong> with <strong>20+ years of experience</strong> building{' '}
-            <strong>AI-powered systems</strong> for
-            <strong> business-critical operations</strong>. Whether you need <strong>strategic guidance</strong>,{' '}
-            <strong>technical implementation</strong>, or <strong>end-to-end delivery</strong> - we're here to help.
+            We’re a <strong>senior AI engineering team</strong> with <strong>20+ years of experience</strong> building
+            AI for <strong>business-critical operations</strong>. From strategy to implementation, we support end-to-end
+            delivery.
           </p>
 
           <div className={styles.quickFacts}>
@@ -101,7 +100,7 @@ export const HeroSection: React.FC = () => {
                   strokeLinejoin='round'
                 />
               </svg>
-              <span>Work directly with senior AI engineers, not junior staff</span>
+              <span>Work directly with senior AI engineers</span>
             </FadeCard>
           </div>
         </div>

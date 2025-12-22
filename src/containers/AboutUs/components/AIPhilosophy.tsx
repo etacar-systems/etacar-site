@@ -7,8 +7,11 @@ const AIPhilosophy: React.FC = () => {
   const requirements = [
     {
       title: 'Integration',
-      description:
-        'Integrate with your existing systems, data formats and pipelines to minimize disruption while preserving current workflows and interfaces.',
+      description: (
+        <>
+          Fits into <strong>existing systems and workflows</strong> without unnecessary disruption.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -23,8 +26,11 @@ const AIPhilosophy: React.FC = () => {
     },
     {
       title: 'Risk & Compliance',
-      description:
-        'Operate within regulatory and internal policy constraints (privacy, security, auditability) to keep solutions safe and compliant.',
+      description: (
+        <>
+          Designed to meet <strong>regulatory, security, and audit</strong> requirements from day one.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -39,8 +45,11 @@ const AIPhilosophy: React.FC = () => {
     },
     {
       title: 'Human-centered',
-      description:
-        'Augment human expertise with explainable recommendations and interfaces that support decisions rather than replace judgement.',
+      description: (
+        <>
+          Supports <strong>human decision-making</strong> with explainable, trustworthy AI.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -65,8 +74,11 @@ const AIPhilosophy: React.FC = () => {
   const approaches = [
     {
       title: 'Workflow-first',
-      description:
-        'Design around your decision points and workflows, selecting models that directly support concrete outcomes instead of forcing processes to fit a model.',
+      description: (
+        <>
+          We design around <strong>real workflows and decisions</strong>, selecting models that support clear outcomes.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -95,8 +107,11 @@ const AIPhilosophy: React.FC = () => {
     },
     {
       title: 'Clear Roles',
-      description:
-        'Define responsibilities, handoffs and guardrails so AI, people and systems complement each other with predictable interactions.',
+      description: (
+        <>
+          We define <strong>clear responsibilities</strong> so AI, people, and systems work predictably together.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -114,8 +129,11 @@ const AIPhilosophy: React.FC = () => {
     },
     {
       title: 'Measure & Govern',
-      description:
-        'Establish KPIs, monitoring and governance early to measure value, detect regressions and ensure long-term accountability.',
+      description: (
+        <>
+          We set <strong>KPIs and governance</strong> early to track value and ensure accountability.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path

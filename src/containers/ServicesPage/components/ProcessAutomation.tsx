@@ -6,16 +6,37 @@ export const ProcessAutomation: React.FC = () => {
     <ServiceDetail
       id='ai-orchestration'
       title='AI Process Orchestration'
-      oneLiner='From fragmented automation to end-to-end AI-orchestrated workflows for mission-critical decisions and processes.'
-      bestFor='Organizations with complex, multi-step workflows spanning documents, systems, and teams.'
-      problemWeSolve='Traditional automation breaks at scale. Isolated AI models create bottlenecks, slow handoffs, and limited visibility across end-to-end business processes.'
+      oneLiner={
+        <>
+          From fragmented automation to <strong>end-to-end AI-orchestrated workflows</strong> for mission-critical
+          decisions and processes.
+        </>
+      }
+      bestFor={
+        <>
+          Organizations with <strong>complex, multi-step workflows</strong> spanning{' '}
+          <strong>documents, systems, and teams</strong>.
+        </>
+      }
+      problemWeSolve={
+        <>
+          <strong>Traditional automation breaks at scale.</strong> Isolated AI models create bottlenecks, slow handoffs,
+          and limited visibility across end-to-end business processes.
+        </>
+      }
       whatWeDeliver={[
         <>
           <strong>AI-driven orchestration</strong> across entire workflows, not isolated tasks
         </>,
-        'Integration of documents, systems, and decisions into unified pipelines',
-        'Human-in-the-loop controls with full observability and audit trails',
-        'SLA-aware automation for business-critical operations',
+        <>
+          <strong>Integration</strong> of documents, systems, and decisions into unified pipelines
+        </>,
+        <>
+          <strong>Human-in-the-loop controls</strong> with full observability and audit trails
+        </>,
+        <>
+          <strong>SLA-aware automation</strong> for business-critical operations
+        </>,
       ]}
       exampleKPIs={[
         '30–60% reduction in manual workload across target processes',

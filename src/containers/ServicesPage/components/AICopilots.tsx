@@ -20,8 +20,8 @@ export const AICopilots: React.FC = () => {
       }
       problemWeSolve={
         <>
-          <strong>Generic AI tools lack context</strong>, hallucinating outputs or escalating issues instead of acting
-          on insights.
+          <strong>Generic AI tools lack context</strong>, hallucinate...ing outputs or escalating issues instead of
+          acting on insights.
         </>
       }
       whatWeDeliver={[
