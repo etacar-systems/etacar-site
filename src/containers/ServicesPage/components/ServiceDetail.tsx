@@ -6,9 +6,9 @@ import styles from './ServiceDetail.module.scss';
 export interface ServiceDetailProps {
   id: string;
   title: string;
-  oneLiner: string;
-  bestFor?: string;
-  problemWeSolve?: string;
+  oneLiner: ReactNode;
+  bestFor?: ReactNode;
+  problemWeSolve?: ReactNode;
   whatWeDeliver?: Array<string | ReactNode>;
   exampleKPIs?: string[];
   typicalProcesses?: string[];

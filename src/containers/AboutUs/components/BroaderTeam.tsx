@@ -7,7 +7,11 @@ const BroaderTeam: React.FC = () => {
   const teamMembers = [
     {
       title: 'AI engineers and data scientists',
-      description: 'design and implement AI components, integrations with your existing systems',
+      description: (
+        <>
+          Design and implement <strong>AI components</strong> and integrations with existing systems.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -23,7 +27,11 @@ const BroaderTeam: React.FC = () => {
     },
     {
       title: 'Software engineers and architects',
-      description: 'ensure our solutions fit your existing systems and standards, maintaining architectural integrity',
+      description: (
+        <>
+          Ensure solutions fit <strong>existing systems and standards</strong>, preserving architectural integrity.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -38,7 +46,11 @@ const BroaderTeam: React.FC = () => {
     },
     {
       title: 'Professional neuroscientists experts',
-      description: 'bring insight into human decision-making, cognition and behaviour for better AI design',
+      description: (
+        <>
+          Provide insight into <strong>human decision-making</strong>, cognition, and behaviour.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -67,7 +79,11 @@ const BroaderTeam: React.FC = () => {
     },
     {
       title: 'Product and delivery specialists',
-      description: 'keep initiatives aligned with business goals, timelines and KPIs for successful delivery',
+      description: (
+        <>
+          Align work with <strong>business goals and KPIs</strong> for reliable delivery.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -102,8 +118,8 @@ const BroaderTeam: React.FC = () => {
         <h2 className={styles.title}>Our broader team</h2>
         <div className={styles.content}>
           <p className={styles.intro}>
-            Around the leadership team, we have a focused group of senior specialists working together on
-            cross-functional squads:
+            Alongside the leadership team, a <strong>small group of senior specialists</strong> works in
+            cross-functional squads.
           </p>
 
           <div className={styles.teamGrid}>
@@ -117,8 +133,8 @@ const BroaderTeam: React.FC = () => {
           </div>
 
           <p className={styles.conclusion}>
-            We deliberately keep the team compact and senior. For each project, we assemble a small, cross-functional
-            squad that can work end-to-end: from strategy and design to implementation, measurement and scaling.
+            We keep the team <strong>compact and senior</strong>. For each project, we form a small, cross-functional
+            squad working end-to-end — from strategy to scaling.
           </p>
         </div>
       </div>

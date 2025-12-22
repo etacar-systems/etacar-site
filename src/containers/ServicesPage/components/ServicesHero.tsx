@@ -98,12 +98,13 @@ export const ServicesHero: React.FC = () => {
         <h1 className={styles.title}>Enterprise AI Services Designed for Business-Critical Processes</h1>
 
         <p className={styles.subtitle}>
-          From strategy to production: a complete stack for AI-driven decisions, automation, and knowledge workflows
+          <strong>From strategy to production</strong>: a complete stack for AI-driven decisions, automation, and
+          knowledge workflows
         </p>
 
         <p className={styles.description}>
-          Below are our flagship services. Each is designed to solve a specific class of problems for C-level,
-          operations, IT and risk leaders - with clear KPIs and ownership.
+          Below are our flagship services. Each is designed to solve a specific class of problems for{' '}
+          <strong>C-level, operations, IT and risk leaders</strong> — with clear KPIs and ownership.
         </p>
         <div className={styles.quickFacts}>
           {items.map((item, idx) => (

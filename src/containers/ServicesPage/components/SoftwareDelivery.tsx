@@ -6,14 +6,37 @@ export const SoftwareDelivery: React.FC = () => {
     <ServiceDetail
       id='ai-software'
       title='AI-Accelerated Software Delivery'
-      oneLiner='From slow, manual delivery to AI-accelerated engineering built for faster, more reliable software delivery.'
-      bestFor='CTOs and Heads of Engineering who need to deliver faster while managing technical debt and risk in complex platforms.'
-      problemWeSolve='Software delivery is slowed by manual processes, fragmented tooling, and late-stage quality issues. AI is often added without improving delivery fundamentals.'
+      oneLiner={
+        <>
+          From <strong>slow, manual delivery</strong> to AI-accelerated engineering built for faster, more reliable
+          software delivery.
+        </>
+      }
+      bestFor={
+        <>
+          <strong>CTOs</strong> and <strong>Heads of Engineering</strong> who need to deliver faster while managing
+          technical debt and risk in <strong>complex platforms</strong>.
+        </>
+      }
+      problemWeSolve={
+        <>
+          <strong>Software delivery is slowed</strong> by manual processes, fragmented tooling, and late-stage quality
+          issues. AI is often added without improving delivery fundamentals.
+        </>
+      }
       whatWeDeliver={[
-        'AI-assisted architecture, development, and modernization workflows',
-        'Automated quality, security, and testing integrated into CI/CD',
-        'Support for legacy system modernization and refactoring',
-        'Guardrails that improve speed without sacrificing reliability',
+        <>
+          <strong>AI-assisted architecture</strong>, development, and modernization workflows
+        </>,
+        <>
+          <strong>Automated quality</strong>, security, and testing integrated into CI/CD
+        </>,
+        <>
+          <strong>Support</strong> for legacy system modernization and refactoring
+        </>,
+        <>
+          <strong>Guardrails</strong> that improve speed without sacrificing reliability
+        </>,
       ]}
       exampleKPIs={[
         '30–50% reduction in delivery time for AI-enabled features and systems',

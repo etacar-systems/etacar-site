@@ -9,8 +9,8 @@ export const SuccessDefinition: React.FC = () => {
         <div className={styles.header}>
           <h2 className={styles.title}>How we define success</h2>
           <p className={styles.description}>
-            We don’t treat “AI” as a goal in itself. For each project, we agree on measurable outcomes in three
-            dimensions:
+            We don’t treat AI as a goal in itself. For each project, we agree on
+            <strong> measurable outcomes</strong> across three dimensions:
           </p>
         </div>
 
@@ -18,7 +18,9 @@ export const SuccessDefinition: React.FC = () => {
           <FadeCard className={styles.card}>
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>Operational impact</h3>
-              <p className={styles.cardText}>Faster decisions and processes</p>
+              <p className={styles.cardText}>
+                <strong>Faster decisions</strong> and processes
+              </p>
             </div>
           </FadeCard>
 
@@ -26,7 +28,7 @@ export const SuccessDefinition: React.FC = () => {
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>Quality & risk</h3>
               <p className={styles.cardText}>
-                Fewer errors, better use of existing knowledge, more consistent decisions
+                <strong>Fewer errors</strong>, better use of existing knowledge, more consistent decisions
               </p>
             </div>
           </FadeCard>
@@ -34,15 +36,17 @@ export const SuccessDefinition: React.FC = () => {
           <FadeCard className={styles.card}>
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>Cost & productivity</h3>
-              <p className={styles.cardText}>Less manual effort, more work done with the same team</p>
+              <p className={styles.cardText}>
+                <strong>Less manual effort</strong>, more output from the same team
+              </p>
             </div>
           </FadeCard>
         </div>
 
         <FadeCard className={styles.closing}>
           <p>
-            For business‑critical processes we always add risk and compliance metrics, so your risk and audit teams can
-            stand behind the solution.
+            For <strong>business-critical processes</strong>, we always include
+            <strong> risk and compliance metrics</strong>, so your audit and risk teams can stand behind the solution.
           </p>
         </FadeCard>
       </div>

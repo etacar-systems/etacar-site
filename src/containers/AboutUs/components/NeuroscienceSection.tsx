@@ -7,8 +7,11 @@ const NeuroscienceSection: React.FC = () => {
   const neuroPoints = [
     {
       title: 'Neuroscience Roots',
-      description:
-        'Several members of our team are professional neuroscientists with academic. They bring expertise in how complex systems learn, adapt and sometimes fail - from neural circuits to human behavior.',
+      description: (
+        <>
+          Our team includes <strong>professional neuroscientists</strong> studying how complex systems learn and fail.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -37,8 +40,11 @@ const NeuroscienceSection: React.FC = () => {
     },
     {
       title: 'Why It Matters',
-      description:
-        'We design AI systems with a strong intuition for how people actually think and make decisions under pressure. We are careful about cognitive load, trust and explainability for the people who will work with AI every day.',
+      description: (
+        <>
+          We design AI around <strong>human decision-making</strong>, trust, and real-world cognitive limits.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -53,8 +59,11 @@ const NeuroscienceSection: React.FC = () => {
     },
     {
       title: 'Our Approach',
-      description:
-        'We pay attention not only to model performance, but also to how AI interacts with teams, incentives. Our solutions are not just technically advanced - they are easier for people to adopt.',
+      description: (
+        <>
+          We focus on adoption — not just models, but <strong>AI that teams actually use</strong>.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path

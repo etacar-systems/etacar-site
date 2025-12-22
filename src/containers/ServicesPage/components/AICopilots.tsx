@@ -6,9 +6,24 @@ export const AICopilots: React.FC = () => {
     <ServiceDetail
       id='ai-copilots'
       title='AI Copilots for Critical Roles'
-      oneLiner='From generic assistants to role-specific AI copilots that teams can rely on for critical decisions.'
-      bestFor='Operations, risk, compliance, engineering, and leadership teams making frequent, high-impact decisions.'
-      problemWeSolve='Generic AI tools lack context, hallucinate, and create operational and compliance risk. Teams spend time validating outputs or escalating issues instead of acting on insights.'
+      oneLiner={
+        <>
+          From generic assistants to <strong>role-specific AI copilots</strong> that teams can rely on for critical
+          decisions.
+        </>
+      }
+      bestFor={
+        <>
+          <strong>Operations</strong>, risk, compliance, <strong>engineering</strong>, and leadership teams making
+          frequent, <strong>high-impact decisions</strong>.
+        </>
+      }
+      problemWeSolve={
+        <>
+          <strong>Generic AI tools lack context</strong>, hallucinating outputs or escalating issues instead of acting
+          on insights.
+        </>
+      }
       whatWeDeliver={[
         <>
           <strong>Role-specific AI copilots</strong> embedded into existing tools and workflows
@@ -19,7 +34,9 @@ export const AICopilots: React.FC = () => {
         <>
           Clear boundaries, escalation paths, and <strong>explainable outputs</strong>
         </>,
-        'Built-in controls for auditability and accountability',
+        <>
+          <strong>Built-in controls</strong> for auditability and accountability
+        </>,
       ]}
       exampleKPIs={[
         '40–60% reduction in hallucinations',

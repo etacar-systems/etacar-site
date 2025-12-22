@@ -73,13 +73,14 @@ export const HeroSection: React.FC = (): ReactElement => {
           <h1 className={styles.title}>Real-World Impact: KPIs, Outcomes, and Case Studies</h1>
 
           <p className={styles.subtitle}>
-            Measured improvements across speed, quality, and operational risk - validated in production environments.
+            Measured improvements across speed, quality, and operational risk —{' '}
+            <strong>validated in production environments</strong>.
           </p>
 
           <div className={styles.intro}>
             <p>
-              We start every project by agreeing on 3–5 concrete KPIs (cycle time, error rate, cost, satisfaction) and
-              how we will measure them in your systems
+              We start every project by agreeing on <strong>3–5 concrete KPIs</strong> (cycle time, error rate, cost,
+              satisfaction) and how we will measure them in your systems
             </p>
             <p style={{ marginTop: '1rem' }}>
               Every engagement with us starts with a simple question:

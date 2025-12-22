@@ -7,8 +7,11 @@ const ClientWork: React.FC = () => {
   const principles = [
     {
       title: 'Partnership Approach',
-      description:
-        'We see every engagement as a partnership, not a one-off project. We start with your reality - existing systems, constraints, risk and culture.',
+      description: (
+        <>
+          We work as <strong>long-term partners</strong>, grounded in your systems, risks, and culture.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -26,8 +29,11 @@ const ClientWork: React.FC = () => {
     },
     {
       title: 'Focused Initiatives',
-      description:
-        'We focus on a small number of high-impact initiatives, not AI "everywhere". This ensures meaningful results and sustainable implementation.',
+      description: (
+        <>
+          We focus on <strong>high-impact initiatives</strong>, not AI everywhere.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -42,8 +48,11 @@ const ClientWork: React.FC = () => {
     },
     {
       title: 'Clear Alignment',
-      description:
-        'We align on KPIs and decision criteria for each initiative before we start building. This ensures measurable success and clear accountability.',
+      description: (
+        <>
+          We align on <strong>KPIs and decision criteria</strong> before building.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -58,8 +67,11 @@ const ClientWork: React.FC = () => {
     },
     {
       title: 'Sustainable Design',
-      description:
-        'We design AI systems that are operationally sustainable - with clear ownership, monitoring and governance for long-term success.',
+      description: (
+        <>
+          We design for <strong>long-term operation</strong>, with clear ownership and governance.
+        </>
+      ),
       icon: (
         <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
           <path
@@ -79,7 +91,9 @@ const ClientWork: React.FC = () => {
       <div className={styles.container}>
         <h2 className={styles.title}>How we work with clients</h2>
         <div className={styles.content}>
-          <p className={styles.intro}>We see every engagement as a partnership, not a one-off project:</p>
+          <p className={styles.intro}>
+            We see every engagement as a <strong>partnership</strong>, not a one-off project:
+          </p>
 
           <div className={styles.principlesGrid}>
             {principles.map((principle, index) => (
@@ -92,8 +106,8 @@ const ClientWork: React.FC = () => {
           </div>
 
           <p className={styles.conclusion}>
-            This is how we make sure our work is meaningful for your organization and safe for your business-critical
-            operations.
+            This is how we ensure our work is <strong>meaningful for your organization</strong> and safe for{' '}
+            <strong>business-critical operations</strong>.
           </p>
         </div>
       </div>

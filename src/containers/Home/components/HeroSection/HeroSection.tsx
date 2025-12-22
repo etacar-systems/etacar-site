@@ -15,11 +15,11 @@ export const HeroSection: React.FC = () => {
         <div className={styles.content}>
           <h1 className={styles.title}>Explainable AI for Business-Critical Decisions</h1>
           <h2 className={styles.subtitle}>
-            A <strong>controlled decision intelligence layer</strong> that embeds AI into complex workflows — with{' '}
-            <strong>governance</strong>,<strong>traceability</strong>, and <strong>measurable impact</strong>
+            A <strong>controlled decision intelligence layer</strong> that embeds AI into <em>complex workflows</em> —
+            with <strong>governance</strong>, <strong>traceability</strong>, and <strong>measurable impact</strong>
           </h2>
           <p className={styles.intro}>
-            EtaCar helps enterprises <strong>reason, decide, and act</strong> — not just automate tasks.
+            EtaCar helps enterprises <strong>reason, decide, and act</strong> — not just <em>automate tasks</em>.
           </p>
 
           <div className={styles.cta}>
@@ -27,7 +27,8 @@ export const HeroSection: React.FC = () => {
               <Button type='solid' title='Book a 30-minute call' onClick={() => router.push(CONTACT)} />
               <Button type='bordered' title='See real results' onClick={() => router.push(RESULTS)} />
             </div>
-            Designed for regulated, high-stakes environments where decisions must be explainable.
+            Built for <strong>business-critical decisions and processes</strong> — with controlled risk and
+            explainability.
           </div>
 
           <div className={styles.quickFacts}>
@@ -45,7 +46,9 @@ export const HeroSection: React.FC = () => {
                   fill='currentColor'
                 />
               </svg>
-              <span>20+ years building AI-driven products</span>
+              <span>
+                <strong>20+ years</strong> building AI-driven products
+              </span>
             </FadeCard>
 
             <FadeCard className={styles.fact}>
@@ -65,7 +68,9 @@ export const HeroSection: React.FC = () => {
                   strokeLinejoin='round'
                 />
               </svg>
-              <span>From strategy to production - architecture, implementation, governance</span>
+              <span>
+                <strong>From strategy to production</strong> — architecture, implementation, governance
+              </span>
             </FadeCard>
 
             <FadeCard className={styles.fact}>
@@ -99,7 +104,9 @@ export const HeroSection: React.FC = () => {
                   strokeLinejoin='round'
                 />
               </svg>
-              <span>Designed for regulated and high-stakes environments</span>
+              <span>
+                Designed for <strong>regulated and high-stakes environments</strong>
+              </span>
             </FadeCard>
           </div>
         </div>
