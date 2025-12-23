@@ -111,11 +111,6 @@
   @include body-lg-bold;
   margin-bottom: var(--space-4);
   color: var(--color-primary-800);
-
-  strong {
-    color: var(--color-success-500);
-    margin-bottom: var(--space-1);
-  }
 }
 
 .caseResult {
@@ -129,13 +124,4 @@
   font-size: var(--text-base);
   line-height: var(--leading-relaxed);
   color: var(--color-primary-800);
-  strong {
-    color: var(--color-success-500);
-    margin-bottom: var(--space-2);
-  }
-}
-
-.highlightNumber {
-  color: var(--color-success-500);
-  font-weight: var(--font-bold);
 }

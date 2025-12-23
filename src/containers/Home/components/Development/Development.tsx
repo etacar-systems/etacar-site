@@ -5,13 +5,26 @@ import styles from './Development.module.scss';
 
 const metrics = [
   {
-    text: '+30–50% faster back-office operations via AI-powered workflows',
+    text: (
+      <>
+        <strong>+30–50%</strong> <strong>faster back-office operations</strong> through{' '}
+        <em>AI- orchestrated workflows</em>
+      </>
+    ),
   },
   {
-    text: 'Up to 40% fewer manual errors in routine decisions',
+    text: (
+      <>
+        <strong>Up to 40%</strong> <strong>fewer manual errors</strong> in <em>routine, repeatable decisions</em>
+      </>
+    ),
   },
   {
-    text: '2–3× faster delivery of new digital products with AI-native architecture',
+    text: (
+      <>
+        <strong>2–3× faster delivery</strong> of <strong>digital products</strong> with <em>AI- ready architecture</em>
+      </>
+    ),
   },
 ];
 
@@ -27,28 +40,26 @@ export const Development = () => {
           <div className={styles.points}>
             {metrics.map((metric, idx) => (
               <div key={idx} className={styles.point}>
-                <span className={styles.metricText}>
-                  {metric.text.split(/([+\d–×%]+)/g).map((part, i) =>
-                    /[+\d–×%]/.test(part) ? (
-                      <span key={i} className={styles.highlightNumber}>
-                        {part}
-                      </span>
-                    ) : (
-                      part
-                    )
-                  )}
-                </span>
+                <span className={styles.metricText}>{metric.text}</span>
               </div>
             ))}
           </div>
           <div className={styles.description}>
             <i>
-              We combine enterprise-grade orchestration, safety, and observability with fast iteration cycles, so your
-              first AI solution goes live in <b>6–10 weeks — not months or years</b>.
+              <em>
+                We combine <strong>enterprise-grade orchestration</strong>, safety, and observability with fast
+                iteration cycles, so your first <strong>production workflow</strong> goes live in
+                <strong> 6–10 weeks</strong> — not months or years.
+              </em>
             </i>
           </div>
           <div className={styles.description}>
-            <i>This early impact creates momentum before large-scale rollout begins.</i>
+            <i>
+              <em>
+                Each <strong>flagship service</strong> is designed to produce <strong>measurable impact early</strong> —
+                before scaling across the enterprise.
+              </em>
+            </i>
           </div>
         </div>
       </div>

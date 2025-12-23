@@ -13,22 +13,19 @@ export const HeroSection: React.FC = () => {
     <SectionWrapper variant='gradient'>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1 className={styles.title}>Explainable AI for Business-Critical Decisions</h1>
+          <h1 className={styles.title}>
+            <strong>AI That Improves Critical Business Decisions</strong>
+          </h1>
           <h2 className={styles.subtitle}>
-            A <strong>controlled decision intelligence layer</strong> that embeds AI into <em>complex workflows</em> —
-            with <strong>governance</strong>, <strong>traceability</strong>, and <strong>measurable impact</strong>
+            <em>Explainable</em>, <em>auditable AI</em> embedded into <strong>core workflows</strong> — delivering{' '}
+            <strong>measurable impact</strong> on <em>speed</em>, <em>quality</em>, and <em>risk</em>.
           </h2>
-          <p className={styles.intro}>
-            EtaCar helps enterprises <strong>reason, decide, and act</strong> — not just <em>automate tasks</em>.
-          </p>
 
           <div className={styles.cta}>
             <div className={styles.ctaButtons}>
-              <Button type='solid' title='Book a 30-minute call' onClick={() => router.push(CONTACT)} />
-              <Button type='bordered' title='See real results' onClick={() => router.push(RESULTS)} />
+              <Button type='solid' title='See Value in 30 Minutes' onClick={() => router.push(CONTACT)} />
+              <Button type='bordered' title='See Real Results' onClick={() => router.push(RESULTS)} />
             </div>
-            Built for <strong>business-critical decisions and processes</strong> — with controlled risk and
-            explainability.
           </div>
 
           <div className={styles.quickFacts}>

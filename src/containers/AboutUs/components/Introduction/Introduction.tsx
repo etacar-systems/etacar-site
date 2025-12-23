@@ -8,9 +8,20 @@ const infoText = [
     <strong>EtaCar Systems</strong> is an <strong>AI solutions company</strong> focused on{' '}
     <strong>designing, building, and operating intelligent systems</strong> for modern enterprises.
   </>,
-  'We specialize in AI orchestration, autonomous enterprise agents, and knowledge intelligence - helping organizations automate complex workflows, enhance decision-making, and unlock the value of their data.',
-  'Our leadership team brings over a decade of experience working with clients across North America and the European Union.',
-  'We believe in partnership over transactions. By keeping an open attitude and putting people first - clients, teams, and end-users - we create solutions that are not only technologically advanced, but also practical, trusted, and sustainable.',
+  <>
+    We specialize in <strong>AI orchestration</strong>, autonomous enterprise agents, and knowledge intelligence —
+    helping organizations <strong>automate complex workflows</strong>, enhance decision-making, and unlock the value of
+    their data.
+  </>,
+  <>
+    Our <strong>leadership team</strong> brings over <strong>two decades of experience</strong> working with clients
+    across North America and the European Union.
+  </>,
+  <>
+    We believe in <strong>partnership over transactions</strong>. By keeping an open attitude and putting{' '}
+    <strong>people first</strong> — clients, teams, and end-users — we create solutions that are not only
+    technologically advanced, but also <strong>practical, trusted, and sustainable</strong>.
+  </>,
 ];
 
 export const Introduction = () => {

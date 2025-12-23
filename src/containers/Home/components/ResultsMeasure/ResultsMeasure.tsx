@@ -5,11 +5,24 @@ import styles from './ResultsMeasure.module.scss';
 
 export const ResultsMeasure: React.FC = () => {
   const kpis = [
-    'Process documents 20–40% faster and cut search time by up to 70%.',
-    'Reduce hallucinations by 40–60% and escalations by 30–50%.',
-    'Achieve near-zero leakage risk and 100% malware detection.',
-    'Ship features 30–50% faster with 30–50% less manual rework.',
-    'Turn internal data into insight faster, improving decisions across the organization.',
+    <>
+      Process documents <strong>20–40%</strong> faster and cut <strong>search time</strong> by up to{' '}
+      <strong>70%</strong>.
+    </>,
+    <>
+      Reduce <strong>hallucinations</strong> by <strong>40–60%</strong> and
+      <strong> escalations</strong> by <strong>30–50%</strong>.
+    </>,
+    <>
+      Achieve <strong>near-zero leakage risk</strong> and <strong>100% malware detection</strong>.
+    </>,
+    <>
+      Ship features <strong>30–50%</strong> faster with <strong>30–50% less manual rework</strong>.
+    </>,
+    <>
+      Turn <strong>internal data</strong> into <strong>insight faster</strong>, improving
+      <strong> decisions</strong> across the organization.
+    </>,
   ];
 
   const miniCases = [
@@ -18,47 +31,53 @@ export const ResultsMeasure: React.FC = () => {
       goal: (
         <>
           AI-assisted KYC review processes in regulated financial environments, where incorrect decisions lead to{' '}
-          <strong>compliance breaches</strong>, fines, and reputational risk.
+          <strong>compliance breaches</strong>, fines, and <em>reputational risk</em>.
         </>
       ),
       approach: (
         <>
-          Built to support human reviewers in <strong>high-stakes decisions</strong>, not to replace accountability.
+          Built to support human reviewers in <strong>high-stakes decisions</strong>,{' '}
+          <em>not to replace accountability</em>.
         </>
       ),
       result: [
-        '35% reduction in average KYC review time',
-        'Less than 2% case re-open rate',
-        'Improved auditability and decision consistency',
+        <>
+          <strong>35%</strong> reduction in average KYC review time
+        </>,
+        <>
+          <em>Less than</em> <strong>2%</strong> case re-open rate
+        </>,
+        <>
+          Improved <strong>auditability</strong> and <strong>decision consistency</strong>
+        </>,
       ],
     },
     {
       title: 'Global e-commerce – operations',
       goal: (
         <>
-          AI supporting operational decisions in large-scale e-commerce environments, where{' '}
-          <strong>errors cascade</strong> across fulfillment, refunds, customer trust, and revenue.
+          AI supporting operational decisions in large-scale e-commerce environments, where
+          <strong> errors cascade</strong> across fulfillment, refunds, customer trust, and <em>revenue</em>.
         </>
       ),
-      approach:
-        'Designed for high-volume operations with strict SLA, where decision quality matters more than raw speed.',
+      approach: (
+        <>
+          Designed for <strong>high-volume operations</strong> with strict <strong>SLA</strong>, where{' '}
+          <em>decision quality</em> matters more than raw speed.
+        </>
+      ),
       result: [
-        '30–40% reduction in decision cycle time',
-        'Fewer SLA breaches across critical operations',
-        'Improved consistency in high-risk operational decisions',
+        <>
+          <strong>30–40%</strong> reduction in decision cycle time
+        </>,
+        <>
+          Fewer <strong>SLA breaches</strong> across critical operations
+        </>,
+        <>
+          Improved <strong>consistency</strong> in high-risk operational decisions
+        </>,
       ],
     },
-    // {
-    //   title: 'Enterprise decision governance',
-    //   goal: 'AI supporting executive and cross-functional decisions in environments where incorrect outcomes lead to financial, legal, or reputational damage.',
-    //   approach:
-    //     'Designed for decision transparency, auditability, and long-term accountability — not black-box automation.',
-    //   result: [
-    //     'Faster alignment across executive stakeholders',
-    //     'Reduced risk of inconsistent or ad-hoc decisions',
-    //     'Clear audit trail for high-impact decisions',
-    //   ],
-    // },
   ];
 
   return (
@@ -67,10 +86,12 @@ export const ResultsMeasure: React.FC = () => {
         <h2 className={styles.title}>Results you can measure</h2>
 
         <p className={styles.subtext}>
-          Every engagement starts with <b>3–5 concrete KPIs tied to business outcomes</b>, not demos.
+          Every engagement starts with <strong>3–5 concrete KPIs</strong> tied to <strong>business outcomes</strong>,{' '}
+          <em>not demos</em>
         </p>
         <p className={styles.subtext}>
-          We don’t ship AI unless impact can be measured, reviewed, and governed over time.
+          We don’t ship AI unless <strong>impact</strong> can be <strong>measured</strong>, <strong>reviewed</strong>,
+          and <em>governed over time</em>.
         </p>
 
         <ul className={styles.kpiList}>
@@ -78,17 +99,7 @@ export const ResultsMeasure: React.FC = () => {
             <FadeCard key={index} className={styles.kpiItem}>
               <div className={styles.text}>
                 <span className={styles.bullet}>●</span>
-                <span>
-                  {kpi.split(/([+\d–×%]+)/g).map((part, i) =>
-                    /[+\d–×%]/.test(part) ? (
-                      <strong key={i} className={styles.highlightNumber}>
-                        {part}
-                      </strong>
-                    ) : (
-                      part
-                    )
-                  )}
-                </span>
+                <span>{kpi}</span>
               </div>
             </FadeCard>
           ))}
@@ -105,17 +116,7 @@ export const ResultsMeasure: React.FC = () => {
                   {caseStudy.result.map(item => (
                     <li key={index} className={styles.listItem}>
                       <span className={styles.bullet}>●</span>
-                      <span>
-                        {item.split(/([+\d–×%]+)/g).map((part, i) =>
-                          /[+\d–×%]/.test(part) ? (
-                            <strong key={i} className={styles.highlightNumber}>
-                              {part}
-                            </strong>
-                          ) : (
-                            part
-                          )
-                        )}
-                      </span>
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>

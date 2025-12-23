@@ -7,38 +7,70 @@ export const FlagshipServices: React.FC = () => {
   const services = [
     {
       title: 'AI Strategy & Architecture',
-      description:
-        'Design AI systems that scale from idea to execution. Using structured analysis, quantum-inspired modeling, and predictive simulation, we align architecture, governance, and risk to deliver 20–40% faster processing and 40–60% fewer AI errors before production.',
+      description: (
+        <>
+          <strong>Design AI systems that scale from idea to execution.</strong> Using <em>structured analysis</em>,{' '}
+          <em>quantum-inspired modeling</em>, and <em>predictive simulation</em>, we align architecture, governance, and
+          risk to deliver <strong>20–40% faster processing</strong> and <strong>40–60% fewer AI errors</strong> before
+          production.
+        </>
+      ),
       href: '/services#ai-strategy',
     },
     {
       title: 'AI Copilots for Critical Roles',
-      description:
-        'Role-specific AI copilots for teams making high-stakes decisions. Built around real workflows and enterprise data, they reduce hallucinations by 40–60%, cut escalations by 30–50%, and help decisions move faster with confidence.',
+      description: (
+        <>
+          <strong>Role-specific AI copilots for high-stakes decisions.</strong> Built around <em>real workflows</em> and{' '}
+          <em>enterprise data</em>, they reduce hallucinations by <strong>40– 60%</strong>, cut escalations by{' '}
+          <strong>30–50%</strong>, and help decisions move <strong>faster with confidence</strong>.
+        </>
+      ),
       href: '/services#ai-copilots',
     },
     {
       title: 'AI Process Orchestration',
-      description:
-        'End-to-end AI orchestration for complex business processes. We connect documents, systems, and decisions into unified workflows that run 20–40% faster, reduce manual effort by up to 60%, and cut search and retrieval time by up to 70%.',
+      description: (
+        <>
+          <strong>End-to-end AI orchestration for complex business processes.</strong> We connect documents, systems,
+          and decisions into unified workflows that run <strong>20–40% faster</strong>, reduce manual effort by{' '}
+          <strong>up to 60%</strong>, and cut search and retrieval time by <strong>up to 70%</strong>.
+        </>
+      ),
       href: '/services#process-automation',
     },
     {
       title: 'Process-Aware Knowledge AI',
-      description:
-        'Turn enterprise documents and data into process-aware insight teams can trust. Our knowledge intelligence is grounded in business process ontologies, reducing search time by up to 70% and improving decision quality at each step of critical workflows.',
+      description: (
+        <>
+          <strong>Turn enterprise documents and data into insights teams can trust.</strong> Our knowledge intelligence
+          is grounded in <em>business process ontologies</em>, reducing search time by <strong>up to 70%</strong> and
+          improving <strong>decision quality</strong> across critical workflows.
+        </>
+      ),
       href: '/services#document-intelligence',
     },
     {
       title: 'AI-Accelerated Software Delivery',
-      description:
-        'Ship software faster without sacrificing quality or control. By embedding AI into architecture, development, and testing, teams deliver features 30–50% faster with 30–50% less manual rework and higher deployment reliability.',
+      description: (
+        <>
+          <strong>Ship software 30–50% faster without sacrificing quality or control.</strong> By embedding AI into
+          architecture, development, and testing, teams achieve <strong>30–50% less manual rework</strong> and{' '}
+          <strong>higher deployment reliability</strong>.
+        </>
+      ),
       href: '/services#software-delivery',
     },
     {
       title: 'AI Security, Risk & Governance',
-      description:
-        'Make AI secure, auditable, and enterprise-ready. We provide continuous risk evaluation and governance that achieves near-zero leakage risk, 100% malware detection, and full visibility across all business-critical AI systems.',
+      description: (
+        <>
+          <strong>Make AI secure, auditable, and enterprise-ready.</strong> We provide{' '}
+          <em>continuous risk evaluation</em> and governance that achieves <strong>near-zero leakage risk</strong>,
+          <strong> 100% malware detection</strong>, and <strong>full visibility</strong> across business-critical AI
+          systems.
+        </>
+      ),
       href: '/services#ai-governance',
     },
   ];

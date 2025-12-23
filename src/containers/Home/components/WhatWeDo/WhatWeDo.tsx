@@ -9,8 +9,8 @@ export const WhatWeDo: React.FC = () => {
       title: 'AI Strategy & Architecture',
       description: (
         <>
-          From AI ideas to a realistic roadmap, architecture, and governance model for{' '}
-          <strong>mission-critical decisions and processes</strong>.
+          We define <em>realistic roadmaps</em> and <strong>enterprise-ready architectures</strong> that accelerate
+          deployment by up to <em>40% faster cycle times</em> with <strong>governance baked in</strong> from day one.
         </>
       ),
     },
@@ -18,8 +18,8 @@ export const WhatWeDo: React.FC = () => {
       title: 'AI for Decisions & Operations',
       description: (
         <>
-          Role-specific AI copilots and orchestrated workflows supporting <strong>high-stakes decisions</strong> across
-          risk, finance, operations, and customer service.
+          <strong>Role-specific AI copilots</strong> that reduce <em>decision errors</em> and <em>escalations</em> by up
+          to <strong>50%</strong>, improving <em>throughput</em> and <em>operational consistency</em>.
         </>
       ),
     },
@@ -27,8 +27,8 @@ export const WhatWeDo: React.FC = () => {
       title: 'AI for Engineering',
       description: (
         <>
-          AI-accelerated delivery that speeds up architecture, development, and modernization of your{' '}
-          <strong>core platforms</strong>.
+          Embed AI into <strong>engineering processes</strong> to deliver features <em>30–50% faster</em> with{' '}
+          <strong>significantly less manual rework</strong>.
         </>
       ),
     },
@@ -40,8 +40,8 @@ export const WhatWeDo: React.FC = () => {
         <h2 className={styles.title}>What we do</h2>
 
         <p className={styles.subtext}>
-          We focus on AI where it truly matters: <strong>high-stakes decisions</strong>,{' '}
-          <strong>core operations</strong> and <strong>the systems that run your business</strong>.
+          We focus on <strong>AI where it truly matters</strong>: <em>high-stakes decisions</em>,{' '}
+          <em>core operations</em>, and the <strong>systems that run your business</strong>.
         </p>
 
         <div className={styles.grid}>
