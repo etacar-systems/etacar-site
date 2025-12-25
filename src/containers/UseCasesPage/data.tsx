@@ -40,8 +40,8 @@ export const industries = [
       description: (
         <>
           <div>
-            EtaCar introduces a <b>controlled decision intelligence layer</b> that unifies project, financial, and
-            resource data into a single reasoning framework.
+            EtaCar introduces a <strong>controlled decision intelligence layer</strong> that unifies project, financial,
+            and resource data into a single reasoning framework.
           </div>
         </>
       ),
@@ -103,7 +103,7 @@ export const industries = [
       description: (
         <>
           <div>
-            EtaCar Systems acts as a <b>controlled decision intelligence layer</b> for healthcare workflows.
+            EtaCar Systems acts as a <strong>controlled decision intelligence layer</strong> for healthcare workflows.
           </div>
         </>
       ),
@@ -161,7 +161,7 @@ export const industries = [
       description: (
         <>
           <div>
-            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to industrial and supply chain
+            EtaCar Systems adds a <strong>controlled decision intelligence layer</strong> to industrial and supply chain
             operations.
           </div>
         </>
@@ -220,7 +220,8 @@ export const industries = [
       description: (
         <>
           <div>
-            EtaCar Systems provides a <b>controlled decision intelligence layer</b> for regulated financial workflows.
+            EtaCar Systems provides a <strong>controlled decision intelligence layer</strong> for regulated financial
+            workflows.
           </div>
         </>
       ),
@@ -282,7 +283,8 @@ export const industries = [
       description: (
         <>
           <div>
-            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to telecom and cloud operations.
+            EtaCar Systems adds a <strong>controlled decision intelligence layer</strong> to telecom and cloud
+            operations.
           </div>
         </>
       ),
@@ -343,7 +345,8 @@ export const industries = [
       description: (
         <>
           <div>
-            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to SaaS and enterprise platforms.
+            EtaCar Systems adds a <strong>controlled decision intelligence layer</strong> to SaaS and enterprise
+            platforms.
           </div>
         </>
       ),
@@ -404,7 +407,7 @@ export const industries = [
       description: (
         <>
           <div>
-            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to retail operations.
+            EtaCar Systems adds a <strong>controlled decision intelligence layer</strong> to retail operations.
           </div>
         </>
       ),
@@ -458,7 +461,7 @@ export const industries = [
       description: (
         <>
           <div>
-            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to R&D workflows.
+            EtaCar Systems adds a <strong>controlled decision intelligence layer</strong> to R&D workflows.
           </div>
         </>
       ),
@@ -519,7 +522,7 @@ export const industries = [
       description: (
         <>
           <div>
-            EtaCar Systems adds a <b>controlled decision intelligence layer</b> to educational workflows.
+            EtaCar Systems adds a <strong>controlled decision intelligence layer</strong> to educational workflows.
           </div>
         </>
       ),
