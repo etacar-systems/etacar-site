@@ -56,8 +56,9 @@
 
 .cardTitle {
   @include heading-sm;
-  color: var(--color-success-600);
   font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-primary-700);
   margin: var(--space-4) 0;
 }
 
