@@ -2,7 +2,7 @@
 @import '../../../../styles/colors.scss';
 
 .container {
-  padding: 100px 0 50px;
+  padding: 100px 0;
   margin-top: -50px;
   border-radius: var(--radius-top-left);
   @media (max-width: 1200px) {
@@ -12,21 +12,100 @@
 .container_inner {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--space-3);
   max-width: 1200px;
-  margin: 0 auto 100px;
+  margin: 0 auto var(--space-8);
   @media (max-width: 768px) {
     margin: 0 auto 50px;
   }
+
+  // Style for parsed HTML content
+  .paragraph {
+    width: 100%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    // Style for lists
+    ul,
+    ol {
+      margin: 0;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.25rem;
+        line-height: 1.6;
+      }
+    }
+
+    // Style for unordered lists
+    ul {
+      list-style-type: disc;
+    }
+
+    // Style for ordered lists
+    ol {
+      list-style-type: decimal;
+    }
+
+    // Style for list items when they appear directly (not inside ul/ol)
+    li {
+      margin-bottom: 0.25rem;
+      line-height: 1.6;
+    }
+
+    // Style for strong/bold elements
+    strong,
+    b {
+      font-weight: var(--font-semibold);
+      color: var(--color-neutral-800);
+    }
+
+    // Style for emphasized elements
+    em,
+    i {
+      font-style: italic;
+    }
+
+    // Style for other inline elements
+    u {
+      text-decoration: underline;
+    }
+
+    small {
+      font-size: 0.875rem;
+    }
+
+    sub,
+    sup {
+      font-size: 0.75rem;
+    }
+
+    del,
+    s {
+      text-decoration: line-through;
+    }
+  }
 }
 .pageTitle {
-  width: 100%;
+  width: 60%;
   color: $color--text-dark;
   font-family: var(--font-heading);
-  font-size: var(--text-6xl);
-  line-height: 58px;
+  font-size: var(--text-3xl);
   font-weight: var(--font-bold);
   text-transform: uppercase;
+  margin-bottom: var(--space-4);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: var(--text-4xl);
+    line-height: 36px;
+  }
 }
 
 .title {
@@ -36,9 +115,17 @@
   font-size: var(--text-2xl);
   font-weight: var(--font-bold);
   text-transform: uppercase;
+  margin-bottom: var(--space-4);
 
   @media (max-width: 768px) {
     font-size: var(--text-4xl);
     line-height: 36px;
+  }
+}
+
+.paragraph {
+  width: 100%;
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }

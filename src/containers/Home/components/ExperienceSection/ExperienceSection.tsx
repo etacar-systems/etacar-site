@@ -23,8 +23,7 @@ export const ExperienceSection: React.FC = () => {
         <FadeCard className={styles.textContent}>
           <p className={styles.paragraph}>
             We started more than 20 years ago as certified specialists on enterprise AI platforms like{' '}
-            <strong>Autonomy</strong>, working on large-scale information retrieval and analytics solutions for major
-            organizations.
+            <strong>Autonomy</strong>, working on large-scale information retrieval and analytics solutions.
           </p>
 
           <p className={styles.paragraph}>

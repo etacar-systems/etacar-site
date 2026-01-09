@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import parse from 'html-react-parser';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import { data } from './data';
 
@@ -17,9 +18,9 @@ export const TermsOfUse = () => {
           {data.map((section, i) => (
             <div key={i} className={style.container_inner}>
               <div className={style.title}>{section.title}</div>
-              {section.paragraphs.map((text, i) => (
-                <div key={i} className={style.secondaryText}>
-                  {text}
+              {section.paragraphs.map((text, j) => (
+                <div key={j} className={style.secondaryText}>
+                  {parse(text)}
                 </div>
               ))}
             </div>

@@ -66,9 +66,8 @@ export const FlagshipServices: React.FC = () => {
       description: (
         <>
           <strong>Make AI secure, auditable, and enterprise-ready.</strong> We provide{' '}
-          <em>continuous risk evaluation</em> and governance that achieves <strong>near-zero leakage risk</strong>,
-          <strong> 100% malware detection</strong>, and <strong>full visibility</strong> across business-critical AI
-          systems.
+          <em>continuous risk evaluation</em> and governance that delivers <strong>minimal leakage exposure</strong>,
+          <strong> high-confidence malware detection</strong>, and <strong>full operational visibility</strong>.
         </>
       ),
       href: '/services#ai-governance',

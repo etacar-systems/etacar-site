@@ -60,7 +60,7 @@ export const Footer = () => {
         </div>
         <div className={style.container__termsAndPrivacy}>
           <Link href={TERMS_OF_USE} className={style.footerEnd__textContent}>
-            Terms of use
+            Terms of service
           </Link>
           <div className={style.footerEnd__textContent}>|</div>
           <Link href={PRIVACY_POLICY} className={style.footerEnd__textContent}>

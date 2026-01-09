@@ -2,8 +2,6 @@ import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 
 import Footer from '../../components/Footer';
-import Cookies from './components/Cookies';
-import InformationSecurity from './components/InformationSecurity';
 import Introduction from './components/Introduction';
 
 export const PrivacyPolicy = () => {
@@ -15,8 +13,6 @@ export const PrivacyPolicy = () => {
     <>
       <FadeInSection>
         <Introduction />
-        <Cookies />
-        <InformationSecurity />
       </FadeInSection>
       <FadeInSection>
         <Footer />
