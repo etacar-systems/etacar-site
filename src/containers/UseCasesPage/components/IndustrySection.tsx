@@ -15,7 +15,7 @@ interface IndustrySectionProps {
   subtitle: string;
   sectionId: string;
   challenges: Section;
-  whereWeHelp: Section;
+  decisionGaps: Section;
   initiatives: Section;
   kpis: Section;
   index: number;
@@ -27,7 +27,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
   subtitle,
   sectionId,
   challenges,
-  whereWeHelp,
+  decisionGaps,
   initiatives,
   kpis,
   isEven,
@@ -52,7 +52,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
                 {challenges.options.map((item, i) => (
                   <li key={i} className={styles.listItem}>
                     <span className={styles.bullet}>●</span>
-                    <span>{item}</span>
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
                   </li>
                 ))}
               </ul>
@@ -61,18 +61,18 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
           </div>
 
           <div className={styles.block}>
-            <h3 className={styles.blockTitle}>Why Traditional Approaches Fail</h3>
+            <h3 className={styles.blockTitle}>Decision gaps</h3>
             <div className={styles.content}>
-              {whereWeHelp.description}
+              {decisionGaps.description}
               <ul className={styles.list}>
-                {whereWeHelp.options.map((item, i) => (
+                {decisionGaps.options.map((item, i) => (
                   <li key={i} className={styles.listItem}>
                     <span className={styles.bullet}>●</span>
-                    <span>{item}</span>
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
                   </li>
                 ))}
               </ul>
-              {whereWeHelp.footer}
+              {decisionGaps.footer}
             </div>
           </div>
 
@@ -84,7 +84,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
                 {initiatives.options.map((item, i) => (
                   <li key={i} className={styles.listItem}>
                     <span className={styles.bullet}>●</span>
-                    <span>{item}</span>
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
                   </li>
                 ))}
               </ul>
@@ -99,17 +99,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({
                 {kpis.options.map((item, i) => (
                   <li key={i} className={styles.kpiItem}>
                     <span className={styles.bullet}>●</span>
-                    <span>
-                      {item.split(/([+\d–×%]+)/g).map((part, i) =>
-                        /[+\d–×%]/.test(part) ? (
-                          <strong key={i} className={styles.highlightNumber}>
-                            {part}
-                          </strong>
-                        ) : (
-                          part
-                        )
-                      )}
-                    </span>
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
                   </li>
                 ))}
               </ul>

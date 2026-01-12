@@ -14,9 +14,9 @@ export const Reviews = () => {
   return (
     <SectionWrapper className={styles.reviews} variant='gradient'>
       <div className={styles.container}>
-        <h2 className={styles.title}>Reviews</h2>
+        <h2 className={styles.title}>What our clients trust us with</h2>
         <div className={styles.swiper}>
-          <div className={styles.label}>Insights from our clients about the quality of our work and collaboration</div>
+          <div className={styles.label}>Perspectives from clients on <strong>outcomes</strong>, <em>trust</em>, and delivering business-critical AI.</div>
           <Swiper
             direction={'horizontal'}
             wrapperClass={styles.swiper_wrapper}
