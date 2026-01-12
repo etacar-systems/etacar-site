@@ -8,40 +8,39 @@ export const AICopilots: React.FC = () => {
       title='AI Copilots for Critical Roles'
       oneLiner={
         <>
-          From generic assistants to <strong>role-specific AI copilots</strong> that teams can rely on for critical
-          decisions.
+          Deploy <strong>role-specific AI copilots</strong> teams can
+          <em> trust in high-stakes decisions</em>.
         </>
       }
       bestFor={
         <>
-          <strong>Operations</strong>, risk, compliance, <strong>engineering</strong>, and leadership teams making
-          frequent, <strong>high-impact decisions</strong>.
+          <strong>Operations</strong>, <strong>risk</strong>, <strong>compliance</strong>,
+          <strong> engineering</strong>, and leaders responsible for
+          <strong> critical decisions</strong>.
         </>
       }
       problemWeSolve={
         <>
-          <strong>Generic AI tools lack context</strong>, resulting in hallucinations or unnecessary issue escalation
-          instead of informed decisions.
+          <strong>Generic AI breaks trust</strong> in critical roles.
+          Lacking context and boundaries, it hallucinates, escalates unnecessarily,
+          and slows decision-making.
         </>
       }
       whatWeDeliver={[
         <>
-          <strong>Role-specific AI copilots</strong> embedded into existing tools and workflows
+          <strong>Role-specific copilots</strong> embedded into existing workflows
         </>,
         <>
-          <strong>Context-aware reasoning</strong> grounded in verified enterprise data
+          <strong>Context-grounded reasoning</strong> based on verified enterprise data
         </>,
         <>
-          Clear boundaries, escalation paths, and <strong>explainable outputs</strong>
-        </>,
-        <>
-          <strong>Built-in controls</strong> for auditability and accountability
+          <strong>Explicit boundaries</strong>, escalation paths, and explainable outputs
         </>,
       ]}
       exampleKPIs={[
-        '40–60% reduction in hallucinations',
-        '30–50% fewer escalations to human experts',
-        '2× improvement in decision turnaround time for complex, multi-step tasks',
+        '40–60% fewer hallucinations in decision workflows',
+        '30–50% reduction in unnecessary escalations',
+        'Up to 2× faster decision turnaround for complex tasks',
       ]}
     />
   );

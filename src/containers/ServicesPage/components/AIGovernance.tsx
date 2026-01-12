@@ -8,40 +8,41 @@ export const AIGovernance: React.FC = () => {
       title='AI Risk, Evaluation & Governance'
       oneLiner={
         <>
-          From unmanaged AI risk to <strong>secure, auditable systems</strong> with near-zero leakage risk and
-          enterprise-grade control.
+          Put <strong>control and accountability</strong> around AI systems
+          <em> before risk escalates</em>.
         </>
       }
       bestFor={
         <>
-          <strong>Security</strong>, <strong>compliance</strong>, <strong>risk</strong>, and leadership teams
-          responsible for AI oversight and regulatory readiness.
+          <strong>Security</strong>, <strong>risk</strong>, <strong>compliance</strong>,
+          and <strong>executive leaders</strong> accountable for AI oversight and
+          regulatory readiness.
         </>
       }
       problemWeSolve={
         <>
-          <strong>AI systems introduce new risks</strong> — data leakage, malware exposure, and unpredictable behavior —
-          without sufficient visibility, ownership, or control.
+          <strong>AI risk grows invisibly</strong> without clear ownership and controls.
+          Data leakage, misuse, and unpredictable behavior surface too late to manage.
         </>
       }
       whatWeDeliver={[
         <>
-          <strong>Continuous AI risk evaluation</strong> and monitoring
+          <strong>Continuous AI evaluation</strong> with visibility across models,
+          data, and workflows
         </>,
         <>
-          <strong>Security controls</strong> across data, models, and workflows
+          <strong>Built-in security controls</strong> to prevent leakage, misuse,
+          and unauthorized access
         </>,
         <>
-          <strong>Governance frameworks</strong> aligned with enterprise and regulatory standards
-        </>,
-        <>
-          <strong>Clear ownership and accountability</strong> for AI systems
+          <strong>Governance frameworks</strong> aligned with enterprise and
+          regulatory standards
         </>,
       ]}
       exampleKPIs={[
-        '100% visibility and ownership for all business-critical AI systems',
-        '40–60% faster approval cycle for new AI initiatives',
-        '50–70% reduction in unapproved or untracked AI usage across the organization',
+        'Full visibility and ownership across business-critical AI systems',
+        '40–60% faster approval cycles for new AI initiatives',
+        '50–70% reduction in untracked or unauthorized AI usage',
       ]}
     />
   );

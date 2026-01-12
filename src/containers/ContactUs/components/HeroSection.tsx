@@ -8,12 +8,10 @@ export const HeroSection: React.FC = () => {
     <SectionWrapper variant='gradient'>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1 className={styles.title}>Discuss Your Business-Critical AI Initiatives</h1>
+          <h1 className={styles.title}><strong>Start a focused conversation</strong> about your AI decisions.</h1>
 
           <p className={styles.subtitle}>
-            We’re a <strong>senior AI engineering team</strong> with <strong>20+ years of experience</strong> building
-            AI for <strong>business-critical operations</strong>. From strategy to implementation, we support end-to-end
-            delivery.
+            Discuss <em>use cases</em>, <strong>risks</strong>, and <em>KPIs</em> — no demos, no generic pitches.
           </p>
 
           <div className={styles.quickFacts}>

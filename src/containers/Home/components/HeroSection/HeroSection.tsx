@@ -14,11 +14,10 @@ export const HeroSection: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            <strong>AI That Improves Critical Business Decisions</strong>
+            <strong>Decisions need infrastructure</strong> — not an <em>assistant</em>.
           </h1>
           <h2 className={styles.subtitle}>
-            <em>Explainable</em>, <em>auditable AI</em> embedded into <strong>core workflows</strong> — delivering{' '}
-            <strong>measurable impact</strong> on <em>speed</em>, <em>quality</em>, and <em>risk</em>.
+            We build <strong>cognitive infrastructure</strong> for <em>reliable decisions</em> under <strong>risk</strong>.
           </h2>
 
           <div className={styles.cta}>

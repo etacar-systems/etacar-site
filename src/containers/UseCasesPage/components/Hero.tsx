@@ -6,16 +6,14 @@ export const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Where AI Makes the Biggest Impact in Your Business</h1>
+        <h1 className={styles.title}><strong>Decision intelligence</strong> with <em>measurable outcomes</em>.</h1>
 
         <h2 className={styles.subtitle}>
-          Typical <strong>high-value problems</strong> we solve across industries — from operations to risk, finance,
-          and engineering
+          Where <strong>explainable AI</strong> improves <em>speed</em>, <strong>quality</strong>, and <em>risk control</em>.
         </h2>
 
         <p className={styles.text}>
-          Each use case is tied to <strong>specific processes, roles and KPIs</strong> — not just generic “AI for
-          everything”.
+          Each use case is tied to <strong>real processes, roles, and KPIs</strong>.
         </p>
       </div>
     </section>

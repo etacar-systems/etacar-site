@@ -45,9 +45,10 @@ export const ContactForm = () => {
     <SectionWrapper variant='gradient'>
       <div className={style.container}>
         <div className={style.formHeader}>
-          <h2 className={style.formTitle}>Send Us a Message</h2>
+          <h2 className={style.formTitle}>Discuss results for your context</h2>
           <p className={style.formSubtitle}>
-            Fill out the form below and we'll respond within 24 hours. All fields marked with * are required.
+            Share the <strong>use case, process, or KPI</strong> you’re exploring.
+            We’ll respond with a focused discussion on applicability and outcomes.
           </p>
         </div>
 

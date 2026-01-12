@@ -9,32 +9,34 @@ export const ExperienceSection: React.FC = () => {
     <SectionWrapper variant='gradient'>
       <div className={styles.content}>
         <h2 className={styles.title}>
-          <strong>20+ years</strong> building AI systems with real ownership
+          <strong>20+ years</strong> building AI systems with <em>real ownership</em>
         </h2>
 
         <p className={styles.text}>
-          We’ve been working with AI long before it became a trend — building and operating systems where{' '}
-          <strong>incorrect decisions</strong> carry <em>financial, legal, and reputational consequences</em>.
+          We build and operate AI where <strong>decisions have consequences</strong> —
+          <em> financial, legal, and reputational</em>.
         </p>
+
         <p className={styles.text}>
-          Product mindset. <strong>Long-term accountability</strong>. Not just software delivery.
+          <strong>Long-term accountability.</strong> Product mindset. Governed systems.
         </p>
 
         <FadeCard className={styles.textContent}>
           <p className={styles.paragraph}>
-            We started more than 20 years ago as certified specialists on enterprise AI platforms like{' '}
-            <strong>Autonomy</strong>, working on large-scale information retrieval and analytics solutions.
+            Our work started over 20 years ago with <strong>enterprise AI platforms</strong>
+            and large-scale information retrieval and analytics.
           </p>
 
           <p className={styles.paragraph}>
-            Since then, we’ve built and operated AI-powered systems for online businesses and large organizations across
-            Europe, the US and other international markets — from information retrieval and recommendations to
+            Since then, we’ve built and operated AI systems across <strong>regulated</strong> and
+            <strong> high-risk environments</strong> — from search and recommendations to
             automation and risk scoring.
           </p>
 
           <p className={styles.paragraph}>
-            Today, we bring this experience to AI-native systems for <strong>business-critical processes</strong>,
-            combining modern AI models with proven engineering and governance practices.
+            Today, we apply this experience to <strong>AI-native systems</strong> for
+            <em> business-critical processes</em>, combining modern models with
+            proven engineering and governance.
           </p>
         </FadeCard>
       </div>

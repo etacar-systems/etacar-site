@@ -70,22 +70,18 @@ export const HeroSection: React.FC = (): ReactElement => {
     <section className={styles.hero}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1 className={styles.title}>Real-World Impact: KPIs, Outcomes, and Case Studies</h1>
+          <h1 className={styles.title}><strong>Real, measurable business impact</strong> from AI in production.</h1>
 
           <p className={styles.subtitle}>
-            Measured improvements across speed, quality, and operational risk —{' '}
-            <strong>validated in production environments</strong>.
+            Measured gains in <em>speed</em>, <strong>quality</strong>, and <em>risk control</em> — tied to outcomes you can govern.
           </p>
 
           <div className={styles.intro}>
-            <p>
-              We start every project by agreeing on <strong>3–5 concrete KPIs</strong> (cycle time, error rate, cost,
-              satisfaction) and how we will measure them in your systems
-            </p>
+          <p>
+            <strong>3–5 KPIs.</strong> Defined upfront. Measured in production.
+          </p>
             <p style={{ marginTop: '1rem' }}>
-              Every engagement with us starts with a simple question:
-              <br />
-              <strong>“How will we know this AI solution is successful?”</strong>
+              <strong>Success is explicit.</strong> Not assumed.
             </p>
           </div>
           <div className={styles.quickFacts}>

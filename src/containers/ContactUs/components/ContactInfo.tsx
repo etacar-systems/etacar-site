@@ -5,7 +5,7 @@ export const ContactInfo: React.FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>Get in Touch</h2>
+        <h2 className={styles.sectionTitle}>How we engage</h2>
 
         <div className={styles.cardsGrid}>
           {/* Email & Phone Card */}

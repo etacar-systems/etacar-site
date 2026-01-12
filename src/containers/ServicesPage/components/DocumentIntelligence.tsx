@@ -8,41 +8,38 @@ export const DocumentIntelligence: React.FC = () => {
       title='Process-Aware Knowledge AI'
       oneLiner={
         <>
-          From scattered documents to <strong>process-aware, trusted answers</strong> that cut search time by up to 70%.
+          Turn enterprise knowledge into <strong>trusted, process-aware answers</strong>
+          teams can <em>act on immediately</em>.
         </>
       }
       bestFor={
         <>
-          <strong>Teams and leaders</strong> working with <strong>large volumes</strong> of documents, policies,
-          contracts, technical documentation, and internal knowledge.
+          <strong>Teams and leaders</strong> working with large volumes of
+          <strong> policies, contracts, and technical documentation</strong>.
         </>
       }
       problemWeSolve={
         <>
-          <strong>Critical information</strong> is locked inside documents and siloed systems, detached from how
-          business processes actually run. Searching is slow, answers are inconsistent, and decisions lack traceability.
+        <strong>Enterprise knowledge is disconnected</strong> from real workflows — leaving answers slow, inconsistent, and hard to trace.
         </>
       }
       whatWeDeliver={[
         <>
-          Ontology-driven <strong>semantic understanding</strong> of documents, data, and knowledge bases
+          <strong>Process-aware knowledge models</strong> that link documents, data,
+          and decisions
         </>,
         <>
-          <strong>Context-aware answers</strong> scoped to business processes and decision contexts, with references and
-          citations
+          <strong>Context-scoped answers</strong> with references and traceability
         </>,
         <>
-          <strong>Side-by-side comparison and reasoning</strong> across documents within a shared business process
-          context
-        </>,
-        <>
-          <strong>Secure, role-based access</strong> to internal knowledge across teams and workflows
+          <strong>Comparative reasoning</strong> across documents within a shared
+          process context
         </>,
       ]}
       exampleKPIs={[
-        'Up to 70% faster information retrieval',
-        '30–60% reduction in manual document review time',
-        '25–50% fewer compliance or documentation errors',
+        'Up to 70% faster access to critical information',
+        '30–60% less manual document review',
+        '25–50% fewer documentation and compliance errors',
       ]}
     />
   );

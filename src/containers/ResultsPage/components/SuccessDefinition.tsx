@@ -9,8 +9,8 @@ export const SuccessDefinition: React.FC = () => {
         <div className={styles.header}>
           <h2 className={styles.title}>How we define success</h2>
           <p className={styles.description}>
-            We don’t treat AI as a goal in itself. For each project, we agree on
-            <strong> measurable outcomes</strong> across three dimensions:
+            <strong>Success is defined upfront.</strong> Every engagement is anchored to{" "}
+            <em>measurable KPIs</em> agreed before build — across three dimensions:
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export const SuccessDefinition: React.FC = () => {
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>Operational impact</h3>
               <p className={styles.cardText}>
-                <strong>Faster decisions</strong> and processes
+                <strong>Faster cycle time</strong> across decisions and workflows
               </p>
             </div>
           </FadeCard>
@@ -28,7 +28,7 @@ export const SuccessDefinition: React.FC = () => {
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>Quality & risk</h3>
               <p className={styles.cardText}>
-                <strong>Fewer errors</strong>, better use of existing knowledge, more consistent decisions
+                <strong>Fewer errors</strong> with consistent, traceable decisions
               </p>
             </div>
           </FadeCard>
@@ -37,7 +37,7 @@ export const SuccessDefinition: React.FC = () => {
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>Cost & productivity</h3>
               <p className={styles.cardText}>
-                <strong>Less manual effort</strong>, more output from the same team
+                <strong>Less manual effort</strong> and higher throughput per team
               </p>
             </div>
           </FadeCard>
@@ -45,12 +45,14 @@ export const SuccessDefinition: React.FC = () => {
 
         <FadeCard className={styles.closing}>
           <p>
-            For <strong>business-critical processes</strong>, we always include
-            <strong> risk and compliance metrics</strong>, so your audit and risk teams can stand behind the solution.
+            For <strong>business-critical processes</strong>, we include{" "}
+            <strong>risk and compliance KPIs</strong> so audit and risk teams can
+            <em> stand behind the outcome</em>.
           </p>
         </FadeCard>
       </div>
     </section>
+
   );
 };
 

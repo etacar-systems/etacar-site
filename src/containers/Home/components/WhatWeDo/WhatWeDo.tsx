@@ -6,29 +6,26 @@ import styles from './WhatWeDo.module.scss';
 export const WhatWeDo: React.FC = () => {
   const focusAreas = [
     {
-      title: 'AI Strategy & Architecture',
+      title: 'Engineered for Trust',
       description: (
         <>
-          We define <em>realistic roadmaps</em> and <strong>enterprise-ready architectures</strong> that accelerate
-          deployment by up to <em>40% faster cycle times</em> with <strong>governance baked in</strong> from day one.
+          <strong>Grounded outputs. Calibrated confidence. Explicit uncertainty</strong> — not hallucinations.
         </>
       ),
     },
     {
-      title: 'AI for Decisions & Operations',
+      title: 'Institutional Memory',
       description: (
         <>
-          <strong>Role-specific AI copilots</strong> that reduce <em>decision errors</em> and <em>escalations</em> by up
-          to <strong>50%</strong>, improving <em>throughput</em> and <em>operational consistency</em>.
+          We retain <strong>rationale, constraints, and decisions</strong> across time — preventing corporate amnesia.
         </>
       ),
     },
     {
-      title: 'AI for Engineering',
+      title: 'Systematic Reasoning',
       description: (
         <>
-          Embed AI into <strong>engineering processes</strong> to deliver features <em>30–50% faster</em> with{' '}
-          <strong>significantly less manual rework</strong>.
+          <strong>Coordinated cognitive agents</strong> reduce single-point failure and produce defensible outcomes.
         </>
       ),
     },
@@ -40,8 +37,7 @@ export const WhatWeDo: React.FC = () => {
         <h2 className={styles.title}>What we do</h2>
 
         <p className={styles.subtext}>
-          We focus on <strong>AI where it truly matters</strong>: <em>high-stakes decisions</em>,{' '}
-          <em>core operations</em>, and the <strong>systems that run your business</strong>.
+          We build a <strong>controlled AI operating layer</strong> inside real workflows — <em>disciplined, transparent, and accountable</em>.
         </p>
 
         <div className={styles.grid}>

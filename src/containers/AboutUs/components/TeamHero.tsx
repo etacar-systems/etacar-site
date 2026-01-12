@@ -5,11 +5,10 @@ const TeamHero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Enterprise AI Experts — Trusted in Business-Critical Systems for 20+ Years</h1>
+        <h1 className={styles.title}><strong>We build AI the way critical systems are built.</strong></h1>
 
         <p className={styles.subtitle}>
-          From <strong>early enterprise AI platforms</strong> to <strong>modern production deployment</strong> — trusted
-          across <strong>regulated, high-stake environments</strong>.
+          With discipline, ownership, and measurable outcomes — not demos or hype.
         </p>
       </div>
     </section>

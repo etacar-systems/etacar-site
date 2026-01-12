@@ -8,40 +8,41 @@ export const SoftwareDelivery: React.FC = () => {
       title='AI-Accelerated Software Delivery'
       oneLiner={
         <>
-          From <strong>slow, manual delivery</strong> to AI-accelerated engineering built for faster, more reliable
-          software delivery.
+          Accelerate <strong>software delivery</strong> with AI that
+          <em> improves speed without breaking reliability</em>.
         </>
       }
       bestFor={
         <>
-          <strong>CTOs</strong> and <strong>Heads of Engineering</strong> who need to deliver faster while managing
-          technical debt and risk in <strong>complex platforms</strong>.
+          <strong>CTOs</strong> and <strong>engineering leaders</strong> responsible
+          for delivery speed, quality, and risk across
+          <strong> complex platforms</strong>.
         </>
       }
       problemWeSolve={
         <>
-          <strong>Software delivery is slowed</strong> by manual processes, fragmented tooling, and late-stage quality
-          issues. AI is often added without improving delivery fundamentals.
+        <strong>Delivery slows down</strong> due to manual workflows, fragmented tooling,
+        and late quality checks. AI is added without fixing the fundamentals.
         </>
       }
       whatWeDeliver={[
         <>
-          <strong>AI-assisted architecture</strong>, development, and modernization workflows
+          <strong>AI-assisted engineering workflows</strong> across architecture,
+          development, and modernization
         </>,
         <>
-          <strong>Automated quality</strong>, security, and testing integrated into CI/CD
+          <strong>Built-in quality and security</strong> integrated directly into
+          CI/CD pipelines
         </>,
         <>
-          <strong>Support</strong> for legacy system modernization and refactoring
-        </>,
-        <>
-          <strong>Guardrails</strong> that improve speed without sacrificing reliability
+          <strong>Guardrails and automation</strong> that increase speed while
+          preserving system reliability
         </>,
       ]}
       exampleKPIs={[
-        '30–50% reduction in delivery time for AI-enabled features and systems',
-        '40–70% decrease in bugs and defects through automated testing & AI code quality checks',
-        '2× improvement in deployment reliability across staging and production',
+        '30–50% faster delivery of AI-enabled features and systems',
+        '40–70% fewer defects through automated testing and code quality checks',
+        'Up to 2× improvement in deployment reliability',
       ]}
     />
   );

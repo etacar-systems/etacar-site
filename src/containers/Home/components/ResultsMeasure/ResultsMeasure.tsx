@@ -6,46 +6,43 @@ import styles from './ResultsMeasure.module.scss';
 export const ResultsMeasure: React.FC = () => {
   const kpis = [
     <>
-      Process documents <strong>20–40%</strong> faster and cut <strong>search time</strong> by up to{' '}
+      <strong>Cycle time</strong>: process documents <strong>20–40%</strong> faster; cut <strong>search</strong> up to{' '}
       <strong>70%</strong>.
     </>,
     <>
-      Reduce <strong>hallucinations</strong> by <strong>40–60%</strong> and
-      <strong> escalations</strong> by <strong>30–50%</strong>.
+      <strong>Decision reliability</strong>: reduce <strong>hallucinations 40–60%</strong> and <strong>escalations 30–50%</strong>.
     </>,
     <>
-      Achieve <strong>near-zero leakage risk</strong> and <strong>100% malware detection</strong>.
+      <strong>Security</strong>: minimize <strong>leakage risk</strong> and improve <strong>malware detection</strong> in AI workflows.
     </>,
     <>
-      Ship features <strong>30–50%</strong> faster with <strong>30–50% less manual rework</strong>.
+      <strong>Delivery</strong>: ship <strong>30–50%</strong> faster with <strong>30–50%</strong> less manual rework.
     </>,
     <>
-      Turn <strong>internal data</strong> into <strong>insight faster</strong>, improving
-      <strong> decisions</strong> across the organization.
+      <strong>Insight-to-decision</strong>: turn <strong>internal data</strong> into actionable insight faster across the organization.
     </>,
   ];
+
 
   const miniCases = [
     {
       title: 'Financial services – KYC reviews',
       goal: (
         <>
-          AI-assisted KYC review processes in regulated financial environments, where incorrect decisions lead to{' '}
-          <strong>compliance breaches</strong>, fines, and <em>reputational risk</em>.
+          Reduce KYC cycle time while maintaining <strong>compliance</strong> and <strong>auditability</strong> in regulated environments.
         </>
       ),
       approach: (
         <>
-          Built to support human reviewers in <strong>high-stakes decisions</strong>,{' '}
-          <em>not to replace accountability</em>.
+          Built for <strong>human accountability</strong>: AI supports reviewers with <em>traceable</em>, evidence-based outputs.
         </>
       ),
       result: [
         <>
-          <strong>35%</strong> reduction in average KYC review time
+          <strong>35%</strong> faster KYC reviews
         </>,
         <>
-          <em>Less than</em> <strong>2%</strong> case re-open rate
+          <em>&lt; </em><strong>2%</strong> case re-open rate
         </>,
         <>
           Improved <strong>auditability</strong> and <strong>decision consistency</strong>
@@ -56,29 +53,28 @@ export const ResultsMeasure: React.FC = () => {
       title: 'Global e-commerce – operations',
       goal: (
         <>
-          AI supporting operational decisions in large-scale e-commerce environments, where
-          <strong> errors cascade</strong> across fulfillment, refunds, customer trust, and <em>revenue</em>.
+          Improve operational decision speed while reducing <strong>SLA risk</strong> across high-volume workflows.
         </>
       ),
       approach: (
         <>
-          Designed for <strong>high-volume operations</strong> with strict <strong>SLA</strong>, where{' '}
-          <em>decision quality</em> matters more than raw speed.
+          Designed for <strong>SLA-aware operations</strong> where <em>decision quality</em> matters as much as speed.
         </>
       ),
       result: [
         <>
-          <strong>30–40%</strong> reduction in decision cycle time
+          <strong>30–40%</strong> lower decision cycle time
         </>,
         <>
-          Fewer <strong>SLA breaches</strong> across critical operations
+          Fewer <strong>SLA breaches</strong> in critical operations
         </>,
         <>
-          Improved <strong>consistency</strong> in high-risk operational decisions
+          Higher <strong>consistency</strong> in high-risk decisions
         </>,
       ],
     },
   ];
+
 
   return (
     <SectionWrapper id='results' className={styles.results} variant='light'>
@@ -86,12 +82,10 @@ export const ResultsMeasure: React.FC = () => {
         <h2 className={styles.title}>Results you can measure</h2>
 
         <p className={styles.subtext}>
-          Every engagement starts with <strong>3–5 concrete KPIs</strong> tied to <strong>business outcomes</strong>,{' '}
-          <em>not demos</em>
+          <strong>3–5 business KPIs.</strong> Defined upfront. Measured in <strong>production</strong>.
         </p>
         <p className={styles.subtext}>
-          We don’t ship AI unless <strong>impact</strong> can be <strong>measured</strong>, <strong>reviewed</strong>,
-          and <em>governed over time</em>.
+          <strong>Impact must be measurable</strong>, reviewable, and <em>governed over time</em>.
         </p>
 
         <ul className={styles.kpiList}>

@@ -11,19 +11,31 @@ export const FinalCTA: React.FC = () => {
   return (
     <SectionWrapper variant='light'>
       <div className={styles.content}>
-        <h2 className={styles.title}>Let's talk about your business-critical processes</h2>
+        <h2 className={styles.title}>
+          Discuss your <strong>business-critical processes</strong>
+        </h2>
 
         <p className={styles.text}>
-          We don’t push <strong>“AI everywhere”</strong>. We help you choose 1–3 initiatives that truly matter, define
-          how to measure success, and take them from idea to production.
+          We don’t pursue <em>“AI everywhere.”</em> We help you focus on
+          <strong> 1–3 initiatives</strong>, define <strong>measurable success</strong>,
+          and move them into <em>production</em>.
         </p>
+
         <p className={styles.text}>
-          Starting with a <strong>focused 30-minute conversation</strong> about your most critical processes.
+          It starts with a <strong>focused 30-minute conversation</strong>.
         </p>
 
         <div className={styles.buttons}>
-          <Button type='solid' title='Book a discovery call' onClick={() => router.push(CONTACT)} />
-          <Button type='bordered' title='Send us your use case' onClick={() => router.push(CONTACT)} />
+          <Button
+            type='solid'
+            title='Schedule a focused discussion'
+            onClick={() => router.push(CONTACT)}
+          />
+          <Button
+            type='bordered'
+            title='Share your use case'
+            onClick={() => router.push(CONTACT)}
+          />
         </div>
       </div>
     </SectionWrapper>
