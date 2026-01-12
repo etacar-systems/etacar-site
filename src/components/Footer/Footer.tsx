@@ -56,7 +56,9 @@ export const Footer = () => {
       </div>
       <div className={style.footerEnd}>
         <div className={style.container__copyright}>
-          <div className={style.footerEnd__textContent}>© 2025 EtaCar Systems. All rights reserved.</div>
+          <div className={style.footerEnd__textContent}>
+            © {new Date().getUTCFullYear()} EtaCar Systems. All rights reserved.
+          </div>
         </div>
         <div className={style.container__termsAndPrivacy}>
           <Link href={TERMS_OF_USE} className={style.footerEnd__textContent}>
