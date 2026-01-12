@@ -22,6 +22,11 @@
   }
 }
 
+.text {
+  margin-bottom: var(--space-8);
+  font-size: var(--text-lg);
+}
+
 .container {
   @include container;
   position: relative;
@@ -30,7 +35,8 @@
 }
 
 .content {
-  max-width: 800px;
+  max-width: 1200px;
+  padding: 0 var(--space-8);
   margin: 0 auto;
   text-align: center;
 
