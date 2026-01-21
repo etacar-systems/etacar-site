@@ -1,0 +1,17 @@
+@import '../../../../styles/mixins.scss';
+
+.grid {
+  @include grid-responsive-cols(1, 2, 3);
+}
+
+.card {
+  border-radius: var(--radius-xl);
+  padding: var(--space-6) var(--space-6);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-neutral-200);
+}
+
+.cardTitle {
+  text-align: center;
+  margin-bottom: var(--space-1);
+}

@@ -2,13 +2,12 @@ import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 
 import Footer from '../../components/Footer';
-import AICopilots from './components/AICopilots';
-import AIGovernance from './components/AIGovernance';
-import AIStrategy from './components/AIStrategy';
-import DocumentIntelligence from './components/DocumentIntelligence';
-import ProcessAutomation from './components/ProcessAutomation';
 import ServicesHero from './components/ServicesHero';
-import SoftwareDelivery from './components/SoftwareDelivery';
+import { AIStrategy } from './components/AIStrategy';
+import { AIEngineering } from './components/AIEngineering';
+import { AIDecisions } from './components/AIDecisions';
+import { Capabilities } from './components/Capabilities';
+import { HowWork } from './components/HowWork';
 
 export const ServicesPage = () => {
   useEffect(() => {
@@ -39,19 +38,16 @@ export const ServicesPage = () => {
         <AIStrategy />
       </FadeInSection>
       <FadeInSection>
-        <AICopilots />
+        <AIDecisions />
       </FadeInSection>
       <FadeInSection>
-        <ProcessAutomation />
+        <AIEngineering />
       </FadeInSection>
       <FadeInSection>
-        <DocumentIntelligence />
+        <Capabilities />
       </FadeInSection>
-      <FadeInSection>
-        <SoftwareDelivery />
-      </FadeInSection>
-      <FadeInSection>
-        <AIGovernance />
+       <FadeInSection>
+        <HowWork />
       </FadeInSection>
       <FadeInSection>
         <Footer />

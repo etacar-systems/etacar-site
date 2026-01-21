@@ -1,93 +1,27 @@
-import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
+
+import { GoGear } from 'react-icons/go';
+import { PiTreeStructureLight } from 'react-icons/pi';
+import { BsClipboardData } from 'react-icons/bs';
+
+import { FadeCard } from '@/components/FadeCard';
 import styles from './ServicesHero.module.scss';
 
 const items = [
   {
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path
-          d='M12 2L2 7L12 12L22 7L12 2Z'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-        />
-        <path
-          d='M2 17L12 22L22 17'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-        />
-        <path
-          d='M2 12L12 17L22 12'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-        />
-      </svg>
-    ),
+    icon: <PiTreeStructureLight />,
     label: 'AI Strategy & Architecture',
-    sectionId: 'enterprise-ai',
+    sectionId: 'ai_strategy_architecture',
   },
   {
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <circle cx='12' cy='7' r='4' stroke='currentColor' strokeWidth='2' />
-        <path
-          d='M5 21V19C5 16 7 14 12 14C17 14 19 16 19 19V21'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-        />
-      </svg>
-    ),
-    label: 'AI Copilots for Critical Roles',
-    sectionId: 'ai-copilots',
+    icon: <BsClipboardData />,
+    label: 'Al for Decisions & Operations',
+    sectionId: 'al_for_decisions_operations',
   },
   {
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <rect x='3' y='6' width='18' height='12' rx='2' stroke='currentColor' strokeWidth='2' />
-        <path d='M3 10H21' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
-        <path d='M7 14H17' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
-      </svg>
-    ),
-    label: 'AI Process Orchestration',
-    sectionId: 'ai-orchestration',
-  },
-  {
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path d='M4 6H20V18H4V6Z' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
-        <path d='M4 10H20' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
-        <path d='M8 14H16' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
-      </svg>
-    ),
-    label: 'Process-Aware Knowledge AI',
-    sectionId: 'knowledge-intelligence',
-  },
-  {
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path d='M3 12H21' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
-        <path d='M7 8H17V16H7V8Z' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
-      </svg>
-    ),
-    label: 'AI-Accelerated Software Delivery',
-    sectionId: 'ai-software',
-  },
-  {
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <circle cx='12' cy='12' r='10' stroke='currentColor' strokeWidth='2' />
-        <path d='M8 12H12L14 16' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
-      </svg>
-    ),
-    label: 'AI Risk, Evaluation & Governance',
-    sectionId: 'ai-risk',
+    icon: <GoGear />,
+    label: 'Al for Engineering',
+    sectionId: 'al_for_engineering',
   },
 ];
 
@@ -95,15 +29,11 @@ export const ServicesHero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <h1 className={styles.title}><strong>AI services</strong> for <em>ownership</em>, <strong>control</strong>, and <em>scale</em>.</h1>
-
+        <h1 className={styles.title}>Services</h1>
         <p className={styles.subtitle}>
-        <strong>Production-ready AI</strong> turned into <em>governed systems</em> you can <strong>scale</strong>.
+          Al services structured as decision infrastructure — supporting strategy, operations, and engineering.
         </p>
-
-        <p className={styles.description}>
-          <em>From strategy and operations to engineering and risk.</em>
-        </p>
+        <p className={styles.info}>Our services define where and why Al is applied across your organization.</p>
         <div className={styles.quickFacts}>
           {items.map((item, idx) => (
             <FadeCard key={idx} className={styles.fact}>
