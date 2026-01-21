@@ -14,7 +14,7 @@ export const HowWork = () => {
       <div className={styles.cards}>
         {cards.map((card, index) => (
           <Fragment key={index}>
-            <FaArrowDown />
+            {index !== 0 && <FaArrowDown />}
             <div className={styles.card}>
               <h3 className={styles.cardTitle}>{card}</h3>
             </div>
