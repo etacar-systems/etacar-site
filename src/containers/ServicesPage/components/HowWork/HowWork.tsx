@@ -20,9 +20,6 @@ export const HowWork = () => {
             </div>
           </Fragment>
         ))}
-        <div style={{ fontStyle: 'italic' }}>
-          {'All services operate within a shared Alfa-S infrastructure for reasoning.'}
-        </div>
       </div>
     </SectionWrapper>
   );

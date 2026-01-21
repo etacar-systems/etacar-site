@@ -8,6 +8,7 @@ import { AIEngineering } from './components/AIEngineering';
 import { AIDecisions } from './components/AIDecisions';
 import { Capabilities } from './components/Capabilities';
 import { HowWork } from './components/HowWork';
+import { FlagshipServices } from './components/FlagshipServices';
 
 export const ServicesPage = () => {
   useEffect(() => {
@@ -35,18 +36,12 @@ export const ServicesPage = () => {
         <ServicesHero />
       </FadeInSection>
       <FadeInSection>
-        <AIStrategy />
-      </FadeInSection>
-      <FadeInSection>
-        <AIDecisions />
-      </FadeInSection>
-      <FadeInSection>
-        <AIEngineering />
+        <FlagshipServices />
       </FadeInSection>
       <FadeInSection>
         <Capabilities />
       </FadeInSection>
-       <FadeInSection>
+      <FadeInSection>
         <HowWork />
       </FadeInSection>
       <FadeInSection>

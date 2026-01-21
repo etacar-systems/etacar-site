@@ -33,7 +33,6 @@ export const ServicesHero: React.FC = () => {
         <p className={styles.subtitle}>
           Al services structured as decision infrastructure — supporting strategy, operations, and engineering.
         </p>
-        <p className={styles.info}>Our services define where and why Al is applied across your organization.</p>
         <div className={styles.quickFacts}>
           {items.map((item, idx) => (
             <FadeCard key={idx} className={styles.fact}>

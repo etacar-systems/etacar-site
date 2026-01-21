@@ -14,22 +14,21 @@
 
 .title {
   @include heading-lg;
+  font-size: 34px;
   border-start-start-radius: var(--radius-xl);
   border-start-end-radius: var(--radius-xl);
   text-align: center;
   color: var(--color-neutral-900);
-  background: var((--color-primary-200));
+  background: var(--color-primary-200);
   padding: var(--space-2) 0;
 }
 
 .subtitle {
   @include body-lg;
   text-align: center;
+  padding: var(--space-4) 0 0;
   font-size: var(--text-xl);
-  padding: var(--space-4) 0;
-  font-weight: var(--font-semibold);
   line-height: var(--leading-relaxed);
-  border-bottom: 3px solid var(--color-primary-500);
 }
 
 .sectionTitle {
@@ -42,7 +41,6 @@
   @include body-base;
   font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
-  margin: var(--space-4) 0;
 }
 
 .divider {

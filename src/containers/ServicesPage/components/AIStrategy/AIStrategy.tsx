@@ -1,7 +1,5 @@
 import React from 'react';
 
-import styles from './AIStrategy.module.scss';
-import { points } from './data';
 import ServiceDetail from '../ServiceDetail';
 
 export const AIStrategy: React.FC = () => {
@@ -9,22 +7,17 @@ export const AIStrategy: React.FC = () => {
     <ServiceDetail
       id={'ai_strategy_architecture'}
       title={'AI Strategy & Architecture'}
-      subtitle={'Architecting Al systems for strategic decisions under uncertainty.'}
-      text={
+      subtitle={
         <>
-          This service focuses on framing the right problems, defining constraints, and designing Al architectures that
-          remain reliable over time. The outcome is not an Al roadmap, but a <em>decision architecture</em>.
+          Designing <strong>decision-centric AI architectures</strong> for long-term reliability.
         </>
       }
-      content={
-        <ul className={styles.list}>
-          {points.map((point, index) => (
-            <li key={index} className={styles.listItem}>
-              <span className={styles.bullet}>●</span>
-              <span>{point}</span>
-            </li>
-          ))}
-        </ul>
+      text={
+        <>
+          AI initiatives often fail due to <strong>fragmented architectures</strong> and unclear constraints. <br></br>
+          We design AI systems around <strong>explicit decisions and trade-offs</strong>, ensuring they remain coherent,
+          governable, and adaptable over time.
+        </>
       }
     />
   );

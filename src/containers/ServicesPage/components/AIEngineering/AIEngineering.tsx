@@ -7,12 +7,18 @@ export const AIEngineering: React.FC = () => {
     <ServiceDetail
       id={'al_for_engineering'}
       title={'Al for Engineering'}
-      subtitle={'Al applied to engineering decisions, specifications, and execution.'}
+      subtitle={
+        <>
+          Applying AI to <strong>engineering decisions</strong>, not just delivery speed.
+        </>
+      }
       text={
         <>
-          This flagship service applies Al across the engineering decision lifecycle - from requirements and system
-          design to validation and production execution.{' '}
-          <em>Al operates as a disciplined engineering actor, producing traceable</em>.
+          Engineering teams struggle with <strong>decision consistency and traceability</strong> across complex systems
+          and long-running initiatives.<br></br>
+          We apply AI across the engineering lifecycle to support{' '}
+          <strong>specifications, design trade-offs, and validation</strong>, ensuring disciplined execution and
+          production-ready outcomes.
         </>
       }
     />

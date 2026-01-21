@@ -1,0 +1,14 @@
+.divider {
+  font-size: var(--text-2xl) !important;
+  font-weight: var(--font-semibold) !important;
+  margin: var(--space-4) 0;
+  
+  &[data-has-title='false'] {
+   background: var(--color-primary-500);
+  height: 3px;
+  }
+
+  &::after, &::before {
+    border-block-start: 3px solid var(--color-primary-500) !important;
+  }
+}

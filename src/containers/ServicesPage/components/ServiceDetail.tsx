@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './ServiceDetail.module.scss';
-import { Divider } from 'antd';
+import { Divider } from '@/components/Divider';
 
 export interface ServiceDetailProps {
   id: string;
@@ -26,10 +26,11 @@ export const ServiceDetail: React.FC<ServiceDetailProps> = ({
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.content}>
         {subtitleInDivider ? (
-          <Divider className={styles.divider}>{subtitle}</Divider>
+          <Divider title={subtitle} />
         ) : (
           <p className={styles.subtitle}>{subtitle}</p>
         )}
+        <Divider />
         <div className={styles.text}>{text}</div>
         <div>{content}</div>
       </div>
