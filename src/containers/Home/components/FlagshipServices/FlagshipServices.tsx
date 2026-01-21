@@ -9,7 +9,7 @@ export const FlagshipServices: React.FC = () => {
       title: 'AI Strategy & Architecture',
       description: (
         <>
-        Design the <strong>AI foundation</strong> — <em>operating models</em> and <strong>decision frameworks</strong> for <strong>scale</strong> and <em>ownership</em>.
+          Design the AI foundation — <strong>architectures</strong> and <em>operating models</em> for scale, ownership, and <strong>reliability</strong>.
         </>
       ),
       href: '/services#ai-strategy',
@@ -18,7 +18,7 @@ export const FlagshipServices: React.FC = () => {
       title: 'AI for Decisions & Operations',
       description: (
         <>
-          Embed <strong>process-aware reasoning</strong> into <em>workflows</em> to improve <strong>decision quality</strong> and <em>speed</em>.
+          Build <strong>decision-centric</strong> AI systems that govern operations through <em>process-aware reasoning</em> and <strong>uncertainty</strong>.
         </>
       ),
       href: '/services#ai-copilots',
@@ -27,7 +27,7 @@ export const FlagshipServices: React.FC = () => {
       title: 'AI for Engineering',
       description: (
         <>
-          Ship <strong>production-ready AI</strong> with <em>security</em> and <strong>governance</strong> built to <em>survive reality</em>.
+          Deliver <strong>production-ready</strong> AI for <em>engineering execution</em>, with security and <strong>governance</strong> built in.
         </>
       ),
       href: '/services#process-automation',
