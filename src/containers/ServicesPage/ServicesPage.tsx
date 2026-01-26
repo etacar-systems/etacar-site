@@ -3,11 +3,7 @@ import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 
 import Footer from '../../components/Footer';
 import ServicesHero from './components/ServicesHero';
-import { AIStrategy } from './components/AIStrategy';
-import { AIEngineering } from './components/AIEngineering';
-import { AIDecisions } from './components/AIDecisions';
 import { Capabilities } from './components/Capabilities';
-import { HowWork } from './components/HowWork';
 import { FlagshipServices } from './components/FlagshipServices';
 
 export const ServicesPage = () => {
