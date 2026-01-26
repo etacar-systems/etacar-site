@@ -9,16 +9,17 @@ export const AIEngineering: React.FC = () => {
       title={'Al for Engineering'}
       subtitle={
         <>
-          Applying AI to <strong>engineering decisions</strong>, not just delivery speed.
+          <em>Decision continuity for complex engineering systems.</em>
         </>
       }
       text={
         <>
-          Engineering teams struggle with <strong>decision consistency and traceability</strong> across complex systems
-          and long-running initiatives.<br></br>
-          We apply AI across the engineering lifecycle to support{' '}
-          <strong>specifications, design trade-offs, and validation</strong>, ensuring disciplined execution and
-          production-ready outcomes.
+          Engineering breaks down when{' '}
+          <strong>design decisions drift, assumptions get lost, and constraints are no longer explicit.</strong> 
+          <br></br>
+          We apply AI to support <strong>engineering decisions</strong>, preserving intent, trade-offs, and validation
+          logic across long-running systems — ensuring execution remains{' '}
+          <strong>coherent, explainable, and production-ready</strong>.
         </>
       }
     />

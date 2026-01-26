@@ -29,15 +29,6 @@
   background: var(--color-primary-200);
   padding: var(--space-2) var(--space-4);
   font-size: var(--text-lg);
-}
-
-.sectionTitle {
-  @include heading-sm;
-  margin-bottom: var(--space-1);
-  font-size: var(--text-lg);
-  color: var(--color-primary-700);
-}
-
-.text {
-  margin-bottom: var(--space-4);
+  min-height: 64px;
+  align-content: center;
 }

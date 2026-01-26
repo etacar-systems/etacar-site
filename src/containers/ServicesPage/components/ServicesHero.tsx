@@ -29,10 +29,8 @@ export const ServicesHero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Services</h1>
-        <p className={styles.subtitle}>
-          Al services structured as decision infrastructure — supporting strategy, operations, and engineering.
-        </p>
+        <h1 className={styles.title}>Cognitive Infrastructure Services</h1>
+        <p className={styles.subtitle}>Production-grade reasoning systems for high-stakes decisions</p>
         <div className={styles.quickFacts}>
           {items.map((item, idx) => (
             <FadeCard key={idx} className={styles.fact}>

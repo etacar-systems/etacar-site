@@ -9,16 +9,23 @@ export const Capabilities = () => {
 
         <p className={styles.intro}>
           {
-            'Capabilities that apply across all flagship services to ensure reliability, accountability, and compliance.'
+            'Capabilities that apply across all services to ensure reliability, accountability, and compliance.'
           }
         </p>
 
         <div className={styles.caseCard}>
-          <h3 className={styles.caseTitle}>{'Al Governance, Risk & Assurance'}</h3>
+          <h3 className={styles.caseTitle}>{'Governance, Risk & Assurance'}</h3>
           <div className={styles.caseSection}>
-            {
-              'Governance, evaluation, and risk controls embedded across all Al systems. This includes uncertainty evaluation, performonce validation, auditability, and alignment with regulatory and organizational standards.'
-            }
+            <>
+              High-stakes AI fails when{' '}
+              <strong>
+                uncertainty is implicit, performance is unvalidated, and decisions cannot be reviewed or trusted
+              </strong>
+              .<br></br>
+              We embed governance, risk, and assurance directly into decision workflows — making uncertainty explicit,
+              validating outcomes, and ensuring decisions remain{' '}
+              <strong>auditable, accountable, and aligned with organizational and regulatory standards</strong>.
+            </>
           </div>
         </div>
       </div>

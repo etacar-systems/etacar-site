@@ -25,6 +25,7 @@
 
 .subtitle {
   @include body-lg;
+  font-style: italic;
   text-align: center;
   padding: var(--space-4) 0 0;
   font-size: var(--text-xl);

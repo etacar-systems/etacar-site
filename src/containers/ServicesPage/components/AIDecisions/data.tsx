@@ -3,10 +3,7 @@ import { ReactNode } from 'react';
 type Card = {
   title: string;
   subtitle: ReactNode;
-  bestFor: ReactNode;
-  problemWeSolve: ReactNode;
-  whatWeDeliver: ReactNode;
-  exampleKPI: ReactNode;
+  content: ReactNode;
 };
 
 export const cards: Array<Card> = [
@@ -14,61 +11,45 @@ export const cards: Array<Card> = [
     title: 'AI for Decision Support in Critical Roles',
     subtitle: (
       <>
-        Decision support for <strong>high-stakes roles</strong> operating under uncertainty.
+        <em>Role-aware, review-ready decision support where accountability matters.</em>
       </>
     ),
-    bestFor: 'Executives, risk owners, operational leaders.',
-    problemWeSolve: (
+    content: (
       <>
-        Critical decisions are made with <strong>incomplete context</strong> and inconsistent reasoning, increasing risk
-        and overrides.
+        High-stakes roles operate under pressure, incomplete information, and irreversible impact. We provide{' '}
+        <strong>structured decision support</strong> tailored to role-specific responsibility, making assumptions
+        explicit and outputs <strong>auditable, explainable, and safe to act upon</strong>.
       </>
     ),
-    whatWeDeliver: (
-      <>
-        Grounded decision rationales, <strong>confidence signals</strong>, and explicit uncertainty boundaries.
-      </>
-    ),
-    exampleKPI: 'Decision cycle time, override rate, uncertainty detection accuracy.',
   },
   {
-    title: 'Decision-Centric Process Orchestration',
+    title: 'Risk-Bounded Decision Modeling',
     subtitle: (
       <>
-        Orchestrating operations around <strong>explicit decisions</strong>, not opaque automation.
+        <em>Scenario analysis, trade-offs, and explicit uncertainty handling for high-stakes decisions.</em>
       </>
     ),
-    bestFor: 'Operations, compliance-driven and regulated environments.',
-    problemWeSolve: (
+    content: (
       <>
-        Processes execute without clear <strong>decision ownership</strong>, hiding risk and breaking accountability.
+        Most failures stem from decisions made as if uncertainty did not exist. We model{' '}
+        <strong>scenarios, trade-offs, and confidence boundaries</strong>, ensuring decisions are made within{' '}
+        <strong>clearly defined risk limits</strong> and degrade safely as inputs change.
       </>
     ),
-    whatWeDeliver: (
-      <>
-        Decision-anchored workflows, <strong>escalation paths</strong>, and controlled execution logic.
-      </>
-    ),
-    exampleKPI: 'Exception rate, escalation frequency, process deviation incidents.',
   },
   {
     title: 'Decision-Aware Knowledge Systems',
     subtitle: (
       <>
-        Knowledge systems grounded in <strong>decision and process context</strong>.
+        <em>Institutional memory that preserves decision context, constraints, and rationale over time.</em>
       </>
     ),
-    bestFor: 'Organizations with long-running initiatives and high staff turnover.',
-    problemWeSolve: (
+    content: (
       <>
-        Institutional knowledge is lost as <strong>decisions and rationale</strong> are not retained over time.
+        Knowledge loses value when separated from the decisions it informed. We build{' '}
+        <strong>decision-aware knowledge systems</strong> that retain assumptions, constraints, and prior reasoning —
+        ensuring future decisions remain <strong>consistent, grounded, and aligned with original intent</strong>.
       </>
     ),
-    whatWeDeliver: (
-      <>
-        Persistent decision context, <strong>rationale capture</strong>, and context-aware retrieval.
-      </>
-    ),
-    exampleKPI: 'Knowledge reuse rate, decision recall accuracy, time to context recovery.',
   },
 ];

@@ -9,18 +9,13 @@ export const AIDecisions: React.FC = () => {
   return (
     <ServiceDetail
       id={'al_for_decisions_operations'}
-      title={'Al for Decisions & Operations'}
-      subtitle={
-        <>
-          Building <strong>decision-centric AI systems</strong> that reliably drive operations.
-        </>
-      }
+      title={'AI for Decisions & Operations'}
+      subtitle={<>Structured decision execution under uncertainty.</>}
       text={
         <>
-          Organizations execute operations without a clear link to <strong>explicit decisions</strong>, leading to
-          inconsistency, hidden risk, and loss of accountability.<br></br>
-          We design AI systems that connect <strong>decisions to execution</strong>, preserving context, surfacing
-          uncertainty, and ensuring operational actions remain governed and traceable over time.
+          Operations fail when <strong>decisions, assumptions, and execution drift apart over time</strong>.<br></br>
+          We apply AI to ensure decisions remain <strong>explicit, reviewable, and connected to action</strong>,
+          preserving context and managing uncertainty as conditions change.
         </>
       }
       content={
@@ -33,22 +28,7 @@ export const AIDecisions: React.FC = () => {
                 <div className={styles.content}>
                   <div style={{ textAlign: 'center' }}>{card.subtitle}</div>
                   <Divider />
-                  <div>
-                    <h3 className={styles.sectionTitle}>Best for:</h3>
-                    <p className={styles.text}>{card.bestFor}</p>
-                  </div>
-                  <div>
-                    <h3 className={styles.sectionTitle}>Problem we solve:</h3>
-                    <p className={styles.text}>{card.problemWeSolve}</p>
-                  </div>
-                  <div>
-                    <h3 className={styles.sectionTitle}>What we deliver:</h3>
-                    <p className={styles.text}>{card.whatWeDeliver}</p>
-                  </div>
-                  <div>
-                    <h3 className={styles.sectionTitle}>Example KPIs:</h3>
-                    <p className={styles.text}>{card.exampleKPI}</p>
-                  </div>
+                  {card.content}
                 </div>
               </div>
             ))}
