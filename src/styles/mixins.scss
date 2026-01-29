@@ -62,7 +62,7 @@
 
 @mixin card-base {
   background: var(--color-neutral-0);
-  border-radius: var(--radius-xl);
+  border-radius: 20px;
   padding: var(--space-6);
   box-shadow: var(--shadow-md);
   transition: all var(--transition-base);

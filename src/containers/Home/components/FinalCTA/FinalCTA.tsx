@@ -12,7 +12,7 @@ export const FinalCTA: React.FC = () => {
     <SectionWrapper variant='light'>
       <div className={styles.content}>
         <h2 className={styles.title}>
-          Discuss your <strong>business-critical processes</strong>
+          Discuss your business-critical processes
         </h2>
 
         <p className={styles.text}>

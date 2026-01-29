@@ -77,14 +77,12 @@ export const ResultsMeasure: React.FC = () => {
 
 
   return (
-    <SectionWrapper id='results' className={styles.results} variant='light'>
+    <SectionWrapper id='results' variant='light'>
       <div className={styles.content}>
         <h2 className={styles.title}>Results you can measure</h2>
 
         <p className={styles.subtext}>
-          <strong>3–5 business KPIs.</strong> Defined upfront. Measured in <strong>production</strong>.
-        </p>
-        <p className={styles.subtext}>
+          <strong>3–5 business KPIs.</strong> Defined upfront. Measured in <strong>production</strong>.<br></br>
           <strong>Impact must be measurable</strong>, reviewable, and governed over time.
         </p>
 
@@ -92,7 +90,6 @@ export const ResultsMeasure: React.FC = () => {
           {kpis.map((kpi, index) => (
             <FadeCard key={index} className={styles.kpiItem}>
               <div className={styles.text}>
-                <span className={styles.bullet}>●</span>
                 <span>{kpi}</span>
               </div>
             </FadeCard>
@@ -109,7 +106,6 @@ export const ResultsMeasure: React.FC = () => {
                 <ul className={styles.list}>
                   {caseStudy.result.map(item => (
                     <li key={index} className={styles.listItem}>
-                      <span className={styles.bullet}>●</span>
                       <span>{item}</span>
                     </li>
                   ))}

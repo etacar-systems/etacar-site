@@ -25,8 +25,8 @@
 
 .title {
   @include heading-lg;
-  color: var(--color-neutral-900);
-  margin-bottom: var(--space-8);
+  font-size: var(--text-6xl);
+  margin-bottom: var(--space-16);
   text-align: center;
 }
 
@@ -52,7 +52,6 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 12px;
   transition:
     transform 0.2s,
     box-shadow 0.2s;
@@ -62,13 +61,6 @@
   &:hover {
     transform: translateY(-1px);
   }
-}
-
-.icon {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  color: var(--color-success-500);
 }
 
 .description {
@@ -83,7 +75,5 @@
   color: var(--color-primary-800);
   display: inline-block;
   width: 100%;
-  padding: var(--space-4);
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 8px;
+  padding: var(--space-6);
 }

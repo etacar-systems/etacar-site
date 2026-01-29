@@ -21,6 +21,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  color:  var(--color-neutral-700);
+}
+
 html {
   scroll-behavior: smooth;
 }

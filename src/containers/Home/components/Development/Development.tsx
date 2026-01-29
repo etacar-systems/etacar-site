@@ -30,7 +30,7 @@ const metrics = [
 export const Development = () => {
   return (
     <SectionWrapper variant='gradient'>
-      <div className={styles.title}>Measurable impact in weeks – not years</div>
+      <h2 className={styles.title}>Measurable impact in weeks – not years</h2>
 
       <div className={styles.container}>
         <div className={styles.imageWrapper}>

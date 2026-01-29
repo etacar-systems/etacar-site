@@ -6,26 +6,22 @@
   margin: 0 auto;
 }
 
-.results {
-  padding: var(--space-12) 0;
-}
-
 .title {
   @include heading-lg;
-  color: var(--color-neutral-900);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
   text-align: center;
+  font-size: var(--text-6xl);
 }
 
 .subtext {
   @include body-lg;
   color: var(--color-neutral-700);
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-16);
   text-align: center;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: var(--space-2);
+  font-size: var(--text-2xl);
 }
 
 .kpiList {
@@ -42,7 +38,6 @@
   display: flex;
   align-items: flex-start;
   gap: var(--space-3);
-  padding: var(--space-4);
   background: var(--gradient-card) !important;
   transition: all var(--transition-base);
 
@@ -69,19 +64,10 @@
 }
 
 .text {
-  padding: var(--space-4);
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   gap: var(--space-4);
   width: 100%;
-}
-
-.bullet {
-  color: var(--color-success-500);
-  flex-shrink: 0;
-  font-size: var(--text-xl);
 }
 
 .casesGrid {
@@ -104,9 +90,7 @@
   font-size: var(--text-2xl);
   font-weight: 700;
   color: var(--color-primary-700);
-  margin-bottom: var(--space-4);
-  padding-bottom: var(--space-3);
-  border-bottom: 3px solid var(--color-success-500);
+  padding-bottom: var(--space-4);
 }
 
 .caseSection {
@@ -119,10 +103,6 @@
   @include body-lg-bold;
 
   margin-top: var(--space-5);
-  padding: var(--space-4);
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: var(--radius-md);
-  border-left: 4px solid var(--color-success-500);
   font-size: var(--text-base);
   line-height: var(--leading-relaxed);
   color: var(--color-primary-800);

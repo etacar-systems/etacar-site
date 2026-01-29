@@ -8,36 +8,25 @@ export const ExperienceSection: React.FC = () => {
   return (
     <SectionWrapper variant='gradient'>
       <div className={styles.content}>
-        <h2 className={styles.title}>
-          <strong>20+ years</strong> building AI systems with real ownership
-        </h2>
+        <h2 className={styles.title}>20+ years building AI systems with real ownership</h2>
 
         <p className={styles.text}>
-          We build and operate AI where <strong>decisions have consequences</strong> —
-           financial, legal, and reputational.
+          We build and operate AI where <strong>decisions have consequences</strong> — financial, legal, and
+          reputational.<br></br>
+           <strong>Long-term accountability.</strong> Product mindset. Governed systems.
         </p>
 
-        <p className={styles.text}>
-          <strong>Long-term accountability.</strong> Product mindset. Governed systems.
-        </p>
-
-        <FadeCard className={styles.textContent}>
-          <p className={styles.paragraph}>
-            Our work started over 20 years ago with <strong>enterprise AI platforms</strong>{' '}
-            and large-scale information retrieval and analytics.
-          </p>
-
-          <p className={styles.paragraph}>
-            Since then, we’ve built and operated AI systems across <strong>regulated</strong> and
-            <strong> high-risk environments</strong> — from search and recommendations to
-            automation and risk scoring.
-          </p>
-
-          <p className={styles.paragraph}>
-            Today, we apply this experience to <strong>AI-native systems</strong> for
-             business-critical processes, combining modern models with
-            proven engineering and governance.
-          </p>
+        <FadeCard className={styles.paragraph}>
+          Our work started over 20 years ago with <strong>enterprise AI platforms</strong> and large-scale information
+          retrieval and analytics.
+        </FadeCard>
+        <FadeCard className={styles.paragraph}>
+          Our work started over 20 years ago with <strong>enterprise AI platforms</strong> and large-scale information
+          retrieval and analytics.
+        </FadeCard>
+        <FadeCard className={styles.paragraph}>
+          Today, we apply this experience to <strong>AI-native systems</strong> for business-critical processes,
+          combining modern models with proven engineering and governance.
         </FadeCard>
       </div>
     </SectionWrapper>

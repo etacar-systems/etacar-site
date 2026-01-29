@@ -49,7 +49,6 @@ export const WhoWeWorkWith: React.FC = () => {
                 <ul className={styles.list}>
                   {item.options.map((option, i) => (
                     <li key={i} className={styles.listItem}>
-                      <span className={styles.bullet}>●</span>
                       <span>{option}</span>
                     </li>
                   ))}

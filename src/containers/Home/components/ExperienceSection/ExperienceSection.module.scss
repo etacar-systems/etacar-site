@@ -9,26 +9,17 @@
 
 .title {
   @include heading-lg;
-  color: var(--color-neutral-900);
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-6);
+  font-size: var(--text-6xl);
 }
 
 .text {
   @include body-lg;
   font-size: var(--text-xl);
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-16);
   opacity: 0.95;
   line-height: var(--leading-relaxed);
-}
-
-.textContent {
-  padding: var(--space-10);
-  text-align: left;
-  background: var(--gradient-card) !important;
-
-  @include respond-above(md) {
-    padding: var(--space-12);
-  }
+  font-size: var(--text-2xl);
 }
 
 .paragraph {
@@ -36,9 +27,7 @@
   color: var(--color-primary-800);
   line-height: var(--leading-relaxed);
   margin-bottom: var(--space-6);
-  padding: var(--space-4);
   background: rgba(255, 255, 255, 0.4);
-  border-radius: var(--radius-md);
 
   &:last-child {
     margin-bottom: 0;
