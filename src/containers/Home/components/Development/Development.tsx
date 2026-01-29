@@ -7,22 +7,21 @@ const metrics = [
   {
     text: (
       <>
-        <strong>+30–50%</strong> faster <strong>back-office cycle time</strong> via{' '}
-        <em>AI-orchestrated workflows</em>
+        <strong>+30–50%</strong> faster <strong>back-office cycle time</strong> via AI-orchestrated workflows
       </>
     ),
   },
   {
     text: (
       <>
-        <strong>Up to 40%</strong> fewer <strong>manual errors</strong> in <em>repeatable decisions</em>
+        <strong>Up to 40%</strong> fewer <strong>manual errors</strong> in repeatable decisions
       </>
     ),
   },
   {
     text: (
       <>
-        <strong>2–3× faster</strong> <strong>product delivery</strong> with <em>AI-ready architecture</em>
+        <strong>2–3× faster</strong> <strong>product delivery</strong> with AI-ready architecture
       </>
     ),
   },
@@ -48,12 +47,8 @@ export const Development = () => {
           </div>
 
           <div className={styles.description}>
-            <i>
-              <em>
-                First <strong>production workflow</strong> in <strong>6–10 weeks</strong>, anchored to{' '}
-                <strong>3–5 measurable KPIs</strong> — before scaling across the enterprise.
-              </em>
-            </i>
+            First <strong>production workflow</strong> in <strong>6–10 weeks</strong>, anchored to{' '}
+            <strong>3–5 measurable KPIs</strong> — before scaling across the enterprise.
           </div>
         </div>
       </div>

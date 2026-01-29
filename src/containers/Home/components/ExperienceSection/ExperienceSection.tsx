@@ -9,12 +9,12 @@ export const ExperienceSection: React.FC = () => {
     <SectionWrapper variant='gradient'>
       <div className={styles.content}>
         <h2 className={styles.title}>
-          <strong>20+ years</strong> building AI systems with <em>real ownership</em>
+          <strong>20+ years</strong> building AI systems with real ownership
         </h2>
 
         <p className={styles.text}>
           We build and operate AI where <strong>decisions have consequences</strong> —
-          <em> financial, legal, and reputational</em>.
+           financial, legal, and reputational.
         </p>
 
         <p className={styles.text}>
@@ -35,7 +35,7 @@ export const ExperienceSection: React.FC = () => {
 
           <p className={styles.paragraph}>
             Today, we apply this experience to <strong>AI-native systems</strong> for
-            <em> business-critical processes</em>, combining modern models with
+             business-critical processes, combining modern models with
             proven engineering and governance.
           </p>
         </FadeCard>

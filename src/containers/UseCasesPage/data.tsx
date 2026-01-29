@@ -48,7 +48,7 @@ export const industries = [
       options: [
         'PM and BI explain the past, not future risk.',
         'Siloed data lacks decision context.',
-        'Generic AI can’t reason about <em>causality</em>.',
+        'Generic AI can’t reason about causality.',
       ],
     },
     initiatives: {

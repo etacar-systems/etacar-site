@@ -34,7 +34,7 @@ export const ResultsMeasure: React.FC = () => {
       ),
       approach: (
         <>
-          Built for <strong>human accountability</strong>: AI supports reviewers with <em>traceable</em>, evidence-based outputs.
+          Built for <strong>human accountability</strong>: AI supports reviewers with traceable, evidence-based outputs.
         </>
       ),
       result: [
@@ -42,7 +42,7 @@ export const ResultsMeasure: React.FC = () => {
           <strong>35%</strong> faster KYC reviews
         </>,
         <>
-          <em>&lt; </em><strong>2%</strong> case re-open rate
+          &lt; <strong>2%</strong> case re-open rate
         </>,
         <>
           Improved <strong>auditability</strong> and <strong>decision consistency</strong>
@@ -58,7 +58,7 @@ export const ResultsMeasure: React.FC = () => {
       ),
       approach: (
         <>
-          Designed for <strong>SLA-aware operations</strong> where <em>decision quality</em> matters as much as speed.
+          Designed for <strong>SLA-aware operations</strong> where decision quality matters as much as speed.
         </>
       ),
       result: [
@@ -85,7 +85,7 @@ export const ResultsMeasure: React.FC = () => {
           <strong>3–5 business KPIs.</strong> Defined upfront. Measured in <strong>production</strong>.
         </p>
         <p className={styles.subtext}>
-          <strong>Impact must be measurable</strong>, reviewable, and <em>governed over time</em>.
+          <strong>Impact must be measurable</strong>, reviewable, and governed over time.
         </p>
 
         <ul className={styles.kpiList}>

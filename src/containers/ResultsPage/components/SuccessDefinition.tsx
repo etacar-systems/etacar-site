@@ -10,7 +10,7 @@ export const SuccessDefinition: React.FC = () => {
           <h2 className={styles.title}>How we define success</h2>
           <p className={styles.description}>
             <strong>Success is defined upfront.</strong> Every engagement is anchored to{" "}
-            <em>measurable KPIs</em> agreed before build — across three dimensions:
+            measurable KPIs agreed before build — across three dimensions:
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export const SuccessDefinition: React.FC = () => {
           <p>
             For <strong>business-critical processes</strong>, we include{" "}
             <strong>risk and compliance KPIs</strong> so audit and risk teams can
-            <em> stand behind the outcome</em>.
+             stand behind the outcome.
           </p>
         </FadeCard>
       </div>

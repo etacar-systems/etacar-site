@@ -11,7 +11,7 @@ export const cards: Array<Card> = [
     title: 'AI for Decision Support in Critical Roles',
     subtitle: (
       <>
-        <em>Role-aware, review-ready decision support where accountability matters.</em>
+        Role-aware, review-ready decision support where accountability matters.
       </>
     ),
     content: (
@@ -26,7 +26,7 @@ export const cards: Array<Card> = [
     title: 'Risk-Bounded Decision Modeling',
     subtitle: (
       <>
-        <em>Scenario analysis, trade-offs, and explicit uncertainty handling for high-stakes decisions.</em>
+        Scenario analysis, trade-offs, and explicit uncertainty handling for high-stakes decisions.
       </>
     ),
     content: (
@@ -41,7 +41,7 @@ export const cards: Array<Card> = [
     title: 'Decision-Aware Knowledge Systems',
     subtitle: (
       <>
-        <em>Institutional memory that preserves decision context, constraints, and rationale over time.</em>
+        Institutional memory that preserves decision context, constraints, and rationale over time.
       </>
     ),
     content: (

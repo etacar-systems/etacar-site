@@ -9,12 +9,12 @@ export const Hero: React.FC = () => {
     <section className={styles.hero}>
       <div className={styles.content}>
         <h1 className={styles.title}>
-          <strong>Decision intelligence</strong> with <em>measurable outcomes</em>.
+          <strong>Decision intelligence</strong> with measurable outcomes.
         </h1>
 
         <h2 className={styles.subtitle}>
-          Where <strong>explainable AI</strong> improves <em>speed</em>, <strong>quality</strong>, and{' '}
-          <em>risk control</em>.
+          Where <strong>explainable AI</strong> improves speed, <strong>quality</strong>, and{' '}
+          risk control.
         </h2>
 
         <p className={styles.text}>

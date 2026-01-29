@@ -37,7 +37,7 @@ export const WhatWeDo: React.FC = () => {
         <h2 className={styles.title}>What we do</h2>
 
         <p className={styles.subtext}>
-          We build a <strong>controlled AI operating layer</strong> inside real workflows — <em>disciplined, transparent, and accountable</em>.
+          We build a <strong>controlled AI operating layer</strong> inside real workflows — disciplined, transparent, and accountable.
         </p>
 
         <div className={styles.grid}>

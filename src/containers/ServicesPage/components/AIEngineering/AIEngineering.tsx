@@ -9,7 +9,7 @@ export const AIEngineering: React.FC = () => {
       title={'Al for Engineering'}
       subtitle={
         <>
-          <em>Decision continuity for complex engineering systems.</em>
+          Decision continuity for complex engineering systems.
         </>
       }
       text={

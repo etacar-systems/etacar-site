@@ -16,9 +16,9 @@ export const FinalCTA: React.FC = () => {
         </h2>
 
         <p className={styles.text}>
-          We don’t pursue <em>“AI everywhere”</em>. We help you focus on
+          We don’t pursue “AI everywhere”. We help you focus on
           <strong> 1–3 initiatives</strong>, define <strong>measurable success</strong>,
-          and move them into <em>production</em>.
+          and move them into production.
         </p>
 
         <p className={styles.text}>

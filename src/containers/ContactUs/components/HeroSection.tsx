@@ -11,7 +11,7 @@ export const HeroSection: React.FC = () => {
           <h1 className={styles.title}><strong>Start a focused conversation</strong> about your AI decisions.</h1>
 
           <p className={styles.subtitle}>
-            Discuss <em>use cases</em>, <strong>risks</strong>, and <em>KPIs</em> — no demos, no generic pitches.
+            Discuss use cases, <strong>risks</strong>, and KPIs — no demos, no generic pitches.
           </p>
 
           <div className={styles.quickFacts}>

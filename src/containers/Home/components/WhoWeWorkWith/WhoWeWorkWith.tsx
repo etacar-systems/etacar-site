@@ -7,22 +7,22 @@ export const WhoWeWorkWith: React.FC = () => {
   const targetAudience = [
     {
       title: 'Risk & Compliance Leaders',
-      description: 'Govern AI decisions with <strong>auditability</strong>, <em>controls</em>, and measurable risk reduction.',
+      description: 'Govern AI decisions with <strong>auditability</strong>, controls, and measurable risk reduction.',
       options: ['AI Security, Risk & Governance', 'Decision Intelligence Assessment'],
     },
     {
       title: 'Operations & Business Leaders',
-      description: 'Improve <strong>throughput</strong> and decision consistency across <em>end-to-end workflows</em>.',
+      description: 'Improve <strong>throughput</strong> and decision consistency across end-to-end workflows.',
       options: ['AI Process Orchestration', 'AI Copilots for Critical Roles'],
     },
     {
       title: 'Technology & Architecture Leaders',
-      description: 'Build AI that teams can <strong>own</strong>, <em>operate</em>, and scale across the enterprise.',
+      description: 'Build AI that teams can <strong>own</strong>, operate, and scale across the enterprise.',
       options: ['AI Strategy & Architecture', 'AI Governance & Scaling'],
     },
     {
       title: 'Product & Engineering Leaders',
-      description: 'Ship faster with <strong>guardrails</strong> — without increasing <em>operational risk</em>.',
+      description: 'Ship faster with <strong>guardrails</strong> — without increasing operational risk.',
       options: ['AI-Accelerated Software Delivery'],
     },
   ];
@@ -34,7 +34,7 @@ export const WhoWeWorkWith: React.FC = () => {
 
         <p className={styles.intro}>
           For teams accountable for <strong>business-critical decisions</strong> — where outcomes must be
-          <em> measurable</em> and systems must be <strong>governed</strong>.
+           measurable and systems must be <strong>governed</strong>.
         </p>
 
         <div className={styles.grid}>

@@ -73,7 +73,7 @@ export const HeroSection: React.FC = (): ReactElement => {
           <h1 className={styles.title}><strong>Real, measurable business impact</strong> from AI in production.</h1>
 
           <p className={styles.subtitle}>
-            Measured gains in <em>speed</em>, <strong>quality</strong>, and <em>risk control</em> — tied to outcomes you can govern.
+            Measured gains in speed, <strong>quality</strong>, and risk control — tied to outcomes you can govern.
           </p>
 
           <div className={styles.intro}>
