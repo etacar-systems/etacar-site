@@ -92,7 +92,7 @@ export const industries = [
     challenges: {
       description: (
         <>
-          <div>
+          <div style={{ color: '#fff' }}>
             <strong>Regulated healthcare decisions</strong> demand control, transparency, and compliance.
           </div>
         </>

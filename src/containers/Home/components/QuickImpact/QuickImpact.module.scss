@@ -1,0 +1,30 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/mixins.scss';
+
+.container {
+  text-align: center;
+}
+
+.title {
+  @include heading-lg;
+  @include gradient-primary-to-light;
+  font-size: var(--text-6xl);
+  margin-bottom: var(--space-6);
+}
+
+.subtext {
+  @include body-lg;
+  color: $color--light;
+  margin-bottom: var(--space-16);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--text-2xl);
+}
+
+.goal {
+  color: $color--text-dark;
+  padding: '16px 32px';
+  border: 1px solid $color--light;
+  max-width: fit-content;
+}

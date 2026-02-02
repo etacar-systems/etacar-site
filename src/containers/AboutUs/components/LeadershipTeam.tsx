@@ -5,7 +5,7 @@ import styles from './LeadershipTeam.module.scss';
 
 const LeadershipTeam: React.FC = () => {
   return (
-    <SectionWrapper className={styles.teamSection} variant='gradient'>
+    <SectionWrapper className={styles.teamSection} >
       <div className={styles.container}>
         <h2 className={styles.title}>Meet our team</h2>
         <FinalCTA />

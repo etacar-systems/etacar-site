@@ -1,5 +1,6 @@
 @import '../../../styles/design-tokens.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
 
 .content {
   max-width: 1200px;
@@ -9,7 +10,7 @@
   padding: 0 var(--space-6) var(--space-6);
   box-shadow: var(--shadow-md);
   border: 1px solid var(--color-neutral-200);
-  color: var(--color-neutral-900) !important;
+  color: $color--light !important;
 }
 
 .title {
@@ -46,7 +47,8 @@
 .divider {
   font-size: var(--text-2xl) !important;
   font-weight: var(--font-semibold) !important;
-  &::after, &::before {
+  &::after,
+  &::before {
     border-block-start: 3px solid var(--color-primary-500) !important;
   }
 }

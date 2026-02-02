@@ -10,7 +10,7 @@ export const HeroSection: React.FC = () => {
   const router = useRouter();
 
   return (
-    <SectionWrapper variant='gradient'>
+    <SectionWrapper >
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.title}>

@@ -1,5 +1,6 @@
 @import '../../../styles/design-tokens.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
 
 .broaderTeamSection {
 }
@@ -11,6 +12,7 @@
 
 .title {
   @include heading-lg;
+  @include gradient-primary-to-light;
   margin-bottom: var(--space-8);
   color: var(--color-neutral-900);
 }
@@ -22,7 +24,7 @@
 
 .intro {
   @include body-large;
-  color: var(--color-neutral-700);
+  color: $color--light;
   margin-bottom: var(--space-8);
   line-height: var(--leading-relaxed);
 }
@@ -67,7 +69,7 @@
 
 .conclusion {
   @include body-large;
-  color: var(--color-neutral-900);
+  color: $color--light;
   font-weight: var(--font-medium);
   line-height: var(--leading-relaxed);
 }

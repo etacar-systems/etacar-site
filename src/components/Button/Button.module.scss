@@ -8,7 +8,7 @@
   border-radius: var(--radius-4xl);
   padding: 16px 32px;
   gap: 8px;
-  color: $color--white;
+  color: $color--background;
   border: none;
   font-size: var(--text-base);
   cursor: pointer;
@@ -19,22 +19,22 @@
   }
 
   &__solid {
-    background-color: $color--blue;
+    background-color: $color--primary;
   }
   &__bordered {
-    color: $color--blue;
-    border: 2px solid $color--blue;
+    color: $color--primary;
+    border: 2px solid $color--primary;
     background-color: transparent;
     font-weight: var(--font-bold);
     &:hover {
-      background-color: $color--blue;
-      color: $color--white;
+      background-color: $color--primary;
+      color: $color--background;
     }
   }
   &__ghost {
     background-color: $color--lightblue;
     &:hover {
-      background-color: $color--blue;
+      background-color: $color--primary;
     }
   }
 }

@@ -1,0 +1,8 @@
+@import '../../styles/colors.scss';
+
+.container {
+  background-color: $color--background;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

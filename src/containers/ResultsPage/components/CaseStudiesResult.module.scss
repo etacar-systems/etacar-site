@@ -7,6 +7,7 @@
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
+  background-color: $color--background;
   padding: 30px 0 100px;
   max-width: 1200px;
   margin: 0 auto;
@@ -66,6 +67,7 @@
 
 .cases_count {
   font-size: var(--text-2xl);
+  color: $color--light;
   @media (max-width: 1200px) {
     padding: 0 20px 50px;
     margin: 0;
@@ -78,6 +80,7 @@
   width: 100%;
   display: flex;
   min-height: 40px;
+  color: $color--light;
 
   & .prev_button_container,
   & .next_button_container {

@@ -1,19 +1,22 @@
 import { useEffect } from 'react';
+import style from './Home.module.scss';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import GetEstimationForm from './components/GetEstimationForm';
+// import GetEstimationForm from './components/GetEstimationForm';
 
 import FlagshipServices from './components/FlagshipServices';
 import HeroSection from './components/HeroSection';
 import WhatWeDo from './components/WhatWeDo';
 import WhoWeWorkWith from './components/WhoWeWorkWith';
 
-import Development from './components/Development';
+// import Development from './components/Development';
 import ExperienceSection from './components/ExperienceSection';
 import ResultsMeasure from './components/ResultsMeasure';
 
 import Reviews from '../../commonSections/Reviews';
 import Footer from '../../components/Footer';
 import FinalCTA from './components/FinalCTA/FinalCTA';
+import { QuickImpact } from '@/containers/Home/components/QuickImpact';
+import Development from './components/Development';
 
 export const Home: React.FC = () => {
   useEffect(() => {
@@ -21,7 +24,7 @@ export const Home: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className={style.container}>
       <FadeInSection>
         <HeroSection />
       </FadeInSection>
@@ -33,6 +36,9 @@ export const Home: React.FC = () => {
       </FadeInSection>
       <FadeInSection>
         <WhoWeWorkWith />
+      </FadeInSection>
+      <FadeInSection>
+        <QuickImpact />
       </FadeInSection>
       <FadeInSection>
         <Development />

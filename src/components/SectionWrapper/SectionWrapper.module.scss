@@ -1,10 +1,12 @@
 @import '../../styles/design-tokens.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/colors.scss';
 
 .section {
   // @include section-spacing;
   position: relative;
   padding: var(--space-16) var(--space-4);
+  background: $color--background
 }
 
 .container {
@@ -12,21 +14,4 @@
   padding-left: 0;
   padding-right: 0;
   box-sizing: border-box;
-}
-
-.default {
-  background: var(--color-neutral-0);
-}
-
-.gradient {
-  background: var(--gradient-card);
-}
-
-.dark {
-  background: var(--gradient-dark);
-  color: var(--color-neutral-0);
-}
-
-.light {
-  background: var(--color-neutral-50);
 }

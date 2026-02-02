@@ -1,5 +1,6 @@
 @import '../../../styles/design-tokens.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
 
 .hero {
   position: relative;
@@ -8,7 +9,8 @@
   color: var(--color-neutral-900);
   padding: var(--space-12) 0 var(--space-16);
   overflow: hidden;
-  background: var(--gradient-card);
+  text-align: center;
+  background: $color--background;
 
   &::before {
     content: '';
@@ -38,12 +40,9 @@
 
 .title {
   @include heading-xl;
+  @include gradient-primary-to-light;
   margin: 0;
   margin-bottom: var(--space-6);
-  background: linear-gradient(135deg, var(--color-neutral-900) 0%, var(--color-primary-700) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   text-align: center;
 
   @include desktop {
@@ -54,7 +53,7 @@
 .subtitle {
   @include body-lg;
   font-size: var(--text-xl);
-  color: var(--color-neutral-800);
+  color: $color--light;
   margin-bottom: var(--space-6);
   line-height: var(--leading-relaxed);
   text-align: center;

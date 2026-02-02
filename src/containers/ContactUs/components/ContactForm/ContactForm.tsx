@@ -42,7 +42,7 @@ export const ContactForm = () => {
   }
 
   return (
-    <SectionWrapper variant='gradient'>
+    <SectionWrapper >
       <div className={style.container}>
         <div className={style.formHeader}>
           <h2 className={style.formTitle}>Discuss results for your context</h2>

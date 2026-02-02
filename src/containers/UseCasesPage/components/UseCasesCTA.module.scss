@@ -1,4 +1,5 @@
 @import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
 
 .container {
   padding: 100px 0;
@@ -18,12 +19,13 @@
 
 .title {
   @include heading-lg;
+  @include gradient-primary-to-light;
   color: var(--text-primary);
 }
 
 .text {
   @include body-lg;
-  color: var(--text-secondary);
+  color: $color--light;
 }
 
 .buttonWrapper {

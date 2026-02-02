@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
+import style from './ServicesPage.module.scss'
 
 import Footer from '../../components/Footer';
 import ServicesHero from './components/ServicesHero';
@@ -27,7 +28,7 @@ export const ServicesPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className={style.container}>
       <FadeInSection>
         <ServicesHero />
       </FadeInSection>

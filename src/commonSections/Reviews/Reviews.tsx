@@ -12,7 +12,7 @@ export const Reviews = () => {
   const { width } = useViewportSize();
   const slidesCount = width < 1200 ? 1 : 2;
   return (
-    <SectionWrapper className={styles.reviews} variant='gradient'>
+    <SectionWrapper className={styles.reviews} >
       <div className={styles.container}>
         <h2 className={styles.title}>What our clients trust us with</h2>
         <div className={styles.swiper}>

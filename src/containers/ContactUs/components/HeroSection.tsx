@@ -5,7 +5,7 @@ import styles from './HeroSection.module.scss';
 
 export const HeroSection: React.FC = () => {
   return (
-    <SectionWrapper variant='gradient'>
+    <SectionWrapper >
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.title}><strong>Start a focused conversation</strong> about your AI decisions.</h1>

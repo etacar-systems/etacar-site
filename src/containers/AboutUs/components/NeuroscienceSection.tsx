@@ -79,7 +79,7 @@ const NeuroscienceSection: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper className={styles.neuroscienceSection} variant='gradient'>
+    <SectionWrapper className={styles.neuroscienceSection} >
       <div className={styles.content}>
         <h2 className={styles.title}>Neuroscience and AI - why it matters</h2>
 

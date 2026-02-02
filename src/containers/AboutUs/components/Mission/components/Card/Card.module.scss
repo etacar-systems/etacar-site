@@ -10,13 +10,13 @@
   width: 285px;
   height: 149px;
   border-radius: var(--radius-2xl);
-  border: 1px solid $color--white;
+  border: 1px solid $color--background;
   padding: 16px;
   box-sizing: border-box;
 
   &:hover {
     transform: none;
-    border: 1px solid $color--white;
+    border: 1px solid $color--background;
     box-shadow: var(--shadow-md);
   }
 }

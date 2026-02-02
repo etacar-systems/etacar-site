@@ -23,7 +23,7 @@ interface CrossIndustrySectionProps {
 
 const CrossIndustrySection: React.FC<CrossIndustrySectionProps> = ({ useCases, sectionId }) => {
   return (
-    <SectionWrapper id={sectionId} variant='gradient'>
+    <SectionWrapper id={sectionId} >
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>Cross‑industry use cases</h2>

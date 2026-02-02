@@ -1,5 +1,6 @@
 @import '../../../../styles/design-tokens.scss';
 @import '../../../../styles/mixins.scss';
+@import '../../../../styles/colors.scss';
 
 .content {
   text-align: center;
@@ -8,13 +9,14 @@
 
 .title {
   @include heading-lg;
+  @include gradient-primary-to-light;
   color: var(--color-neutral-900);
   margin-bottom: var(--space-6);
 }
 
 .intro {
   @include body-lg;
-  color: var(--color-neutral-700);
+  color: $color--light;
   margin-bottom: var(--space-10);
   line-height: var(--leading-relaxed);
 }
@@ -31,7 +33,7 @@
   @include heading-sm;
   font-size: var(--text-2xl);
   font-weight: 700;
-  color: var(--color-neutral-900);
+  color: $color--light;
   margin-bottom: var(--space-4);
   padding-bottom: var(--space-3);
   border-bottom: 3px solid var(--color-primary-500);
@@ -40,5 +42,5 @@
 .caseSection {
   @include body-lg;
   margin-bottom: var(--space-4);
-  color: var(--color-neutral-900);
+  color: $color--light;
 }

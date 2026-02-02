@@ -236,6 +236,14 @@
   background-clip: text;
 }
 
+@mixin gradient-primary-to-light {
+  background: linear-gradient(135deg, $color--primary-alt, $color--neutral, $color--light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
 // ========================================
 // BUTTONS
 // ========================================

@@ -23,40 +23,42 @@ export const NavHeader = () => {
         <div className={style.logo}>
           <img onClick={() => router.push(HOME)} src={'/icons/Logo.svg'} alt={'logo'} />
         </div>
-        {width > 768 ? (
-          <div className={style.navigation}>
-            {navItems.map((item, i) => {
-              const isActive =
-                item.route === '/' ? pathname === '/' || pathname === '' : pathname.replace(/\/$/, '') === item.route;
+        <div className={style.navigation_container}>
+          {width > 768 ? (
+            <div className={style.navigation}>
+              {navItems.map((item, i) => {
+                const isActive =
+                  item.route === '/' ? pathname === '/' || pathname === '' : pathname.replace(/\/$/, '') === item.route;
 
-              return (
-                <Link
-                  key={i}
-                  href={item.route}
-                  className={classNames(style.item, {
-                    [style.item__active]: isActive,
-                  })}
-                >
-                  {item.title}
-                </Link>
-              );
-            })}
-          </div>
-        ) : undefined}
-        {width > 768 ? (
-          <Button onClick={() => router.push(CONTACT)} title={'Get estimation'} type={'bordered'} />
-        ) : undefined}
-        {width < 768 ? (
-          <div
-            onClick={() => {
-              menuActive ? setMenuActive(false) : setMenuActive(true);
-            }}
-            className={menuActive ? style.burger_button_active : style.burger_button}
-          >
-            <span />
-          </div>
-        ) : undefined}
-        <Menu menuActive={menuActive} setMenuActive={setMenuActive} items={navItems} />
+                return (
+                  <Link
+                    key={i}
+                    href={item.route}
+                    className={classNames(style.item, {
+                      [style.item__active]: isActive,
+                    })}
+                  >
+                    {item.title}
+                  </Link>
+                );
+              })}
+            </div>
+          ) : undefined}
+          {width > 768 ? (
+            <Button onClick={() => router.push(CONTACT)} title={'Get estimation'} type={'bordered'} />
+          ) : undefined}
+          {width < 768 ? (
+            <div
+              onClick={() => {
+                menuActive ? setMenuActive(false) : setMenuActive(true);
+              }}
+              className={menuActive ? style.burger_button_active : style.burger_button}
+            >
+              <span />
+            </div>
+          ) : undefined}
+          <Menu menuActive={menuActive} setMenuActive={setMenuActive} items={navItems} />
+        </div>
       </div>
     </header>
   );

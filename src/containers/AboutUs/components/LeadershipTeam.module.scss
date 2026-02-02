@@ -1,5 +1,6 @@
 @import '../../../styles/design-tokens.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
 
 .container {
   max-width: 1200px;
@@ -9,6 +10,7 @@
 
 .title {
   @include heading-lg;
+  @include gradient-primary-to-light;
   margin-bottom: var(--space-6);
   margin-top: 0;
   color: var(--color-neutral-900);
