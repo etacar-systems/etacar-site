@@ -26,7 +26,7 @@ export const AIDecisions: React.FC = () => {
               <div key={index} className={styles.card}>
                 <h4 className={styles.cardTitle}>{card.title}</h4>
                 <div className={styles.content}>
-                  <div style={{ textAlign: 'center' }}>{card.subtitle}</div>
+                  <div className={styles.subtitle}>{card.subtitle}</div>
                   <Divider />
                   {card.content}
                 </div>

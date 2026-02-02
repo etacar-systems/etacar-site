@@ -9,12 +9,13 @@
 }
 
 strong {
-  color: var(--color-primary-800);
+  color: $color--primary;
 }
 
 body {
   margin: 0;
   font-family: var(--font-primary);
+  background-color: $color--background;
   color: $color--text-light;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +23,7 @@ body {
 }
 
 h2 {
-  color:  var(--color-neutral-700);
+  color: var(--color-neutral-700);
 }
 
 html {

@@ -8,6 +8,7 @@
 
 .title {
   @include heading-lg;
+  @include gradient-primary-to-light;
   margin-bottom: var(--space-8);
   font-size: var(--text-6xl);
 }
@@ -52,7 +53,7 @@
 
 .label {
   @include body-large;
-  color: var(--color-neutral-700);
+  color: $color--light;
   margin-bottom: var(--space-8);
   line-height: var(--leading-relaxed);
   text-align: center;
@@ -61,6 +62,7 @@
 
 .arrows {
   display: flex;
+  color: $color--light;
   justify-content: center;
   margin-bottom: var(--space-16);
   @media (max-width: 1200px) {

@@ -9,7 +9,7 @@ import { SectionWrapper } from '@/components/SectionWrapper';
 export const Mission = () => {
   const router = useRouter();
   return (
-    <SectionWrapper variant='gradient'>
+    <SectionWrapper >
       <h2 className={style.title}>Our mission</h2>
       <div className={style.container}>
         <div>
@@ -18,7 +18,7 @@ export const Mission = () => {
             {principles.map((principle, index) => (
               <li key={index} className={style.listItem}>
                 <span className={style.bullet}>●</span>
-                <span>{principle}</span>
+                <span className={style.principle}>{principle}</span>
               </li>
             ))}
           </ul>

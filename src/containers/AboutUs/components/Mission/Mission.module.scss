@@ -13,13 +13,16 @@
 
 .title {
   @include heading-lg;
-  text-align: center;
+  @include gradient-primary-to-light;
+  justify-self: center;
+  display: flex;
   margin-bottom: var(--space-8);
   color: var(--color-neutral-900);
 }
 
 .description {
   text-align: justify;
+  color: $color--light;
   margin-bottom: 16px;
 }
 
@@ -55,4 +58,8 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+.principle {
+  color: $color--light;
 }

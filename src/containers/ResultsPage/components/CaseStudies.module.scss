@@ -1,9 +1,10 @@
 @import '../../../styles/design-tokens.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
 
 .section {
   @include section-padding;
-  background-color: var(--color-white);
+
   box-sizing: border-box;
 }
 
@@ -19,6 +20,7 @@
 
 .title {
   @include heading-lg;
+  @include gradient-primary-to-light;
   color: var(--color-neutral-900);
 }
 
@@ -50,7 +52,7 @@
 .headline {
   @include heading-md;
   font-size: var(--text-3xl);
-  color: var(--color-neutral-900);
+  color: $color--light;
 }
 
 .contentGrid {
@@ -82,6 +84,7 @@
 }
 
 .text {
+  color: $color--light;
 }
 
 .list {
@@ -91,7 +94,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  background: rgba(255, 255, 255, 0.4);
+  // background: rgba(255, 255, 255, 0.4);
   border-radius: var(--radius-md);
 }
 
@@ -100,7 +103,8 @@
   gap: 12px;
   align-items: flex-start;
   font-weight: var(--font-semibold);
-  color: var(--color-primary-800);
+  // color: var(--color-primary-800);
+  color: $color--light;
 
   .bullet {
     color: var(--color-primary-500);
@@ -115,6 +119,10 @@
 
   & .bullet {
     color: var(--color-success-500);
+  }
+
+  & .listItem {
+    color: var(--color-primary-800);
   }
 }
 

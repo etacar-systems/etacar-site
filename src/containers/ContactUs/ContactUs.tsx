@@ -13,7 +13,7 @@ export const ContactUs = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <FadeInSection>
         <HeroSection />
       </FadeInSection>
@@ -29,6 +29,6 @@ export const ContactUs = () => {
       <FadeInSection>
         <Footer />
       </FadeInSection>
-    </>
+    </div>
   );
 };

@@ -57,7 +57,7 @@ export const OurStory: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper variant='light'>
+    <SectionWrapper >
       <div className={styles.content}>
         <h2 className={styles.title}>Our story</h2>
 

@@ -1,18 +1,19 @@
 @import '../../../styles/design-tokens.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
 
 .section {
   @include section-spacing;
-  background: var(--color-neutral-0);
 }
 
 .container {
   @include container;
+  text-align: center;
 }
 
 .sectionTitle {
   @include heading-lg;
-  text-align: center;
+  @include gradient-primary-to-light;
   margin-bottom: var(--space-12);
   color: var(--color-neutral-900);
 }

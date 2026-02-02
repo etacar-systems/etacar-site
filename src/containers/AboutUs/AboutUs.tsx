@@ -22,7 +22,7 @@ export const AboutUs = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <FadeInSection>
         <TeamHero />
       </FadeInSection>
@@ -72,6 +72,6 @@ export const AboutUs = () => {
       <FadeInSection>
         <Footer />
       </FadeInSection>
-    </>
+    </div>
   );
 };

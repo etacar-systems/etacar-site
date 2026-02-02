@@ -6,7 +6,7 @@ import styles from './ExperienceSection.module.scss';
 
 export const ExperienceSection: React.FC = () => {
   return (
-    <SectionWrapper variant='gradient'>
+    <SectionWrapper >
       <div className={styles.content}>
         <h2 className={styles.title}>20+ years building AI systems with real ownership</h2>
 

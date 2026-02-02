@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
+import style from './ResultsPage.module.scss';
 
 import Reviews from '@/commonSections/Reviews';
 import { Location } from '@/components/Location';
@@ -19,8 +20,8 @@ export const ResultsPage: React.FC = () => {
   }, []);
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <main style={{ flex: 1, boxSizing: 'border-box' }}>
+    <div className={style.container}>
+      <main style={{ flex: 1, boxSizing: 'border-box', backgroundColor: '#0b161c' }}>
         <FadeInSection>
           <HeroSection />
         </FadeInSection>

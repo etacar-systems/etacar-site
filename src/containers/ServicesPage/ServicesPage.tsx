@@ -37,9 +37,6 @@ export const ServicesPage = () => {
       <FadeInSection>
         <Capabilities />
       </FadeInSection>
-      {/* <FadeInSection>
-        <HowWork />
-      </FadeInSection> */}
       <FadeInSection>
         <Footer />
       </FadeInSection>

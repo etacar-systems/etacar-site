@@ -1,0 +1,37 @@
+@import '../../../../../styles/design-tokens.scss';
+@import '../../../../../styles/mixins.scss';
+@import '../../../../../styles/colors.scss';
+
+.root {
+  min-width: 255px;
+}
+
+.contentContainer {
+  margin: 0 auto;
+  border-end-start-radius: var(--radius-xl);
+  border-end-end-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-neutral-200);
+  color: $color--light !important;
+}
+
+.content li {
+  text-align: left !important;
+}
+
+.title {
+  @include heading-lg;
+  font-size: 34px;
+  border-start-start-radius: var(--radius-xl);
+  border-start-end-radius: var(--radius-xl);
+  text-align: center;
+  color: var(--color-neutral-900);
+  background: var(--color-primary-200);
+  padding: var(--space-2) 16px;
+
+  &[data-is-content='false'] {
+    border-end-start-radius: var(--radius-xl);
+    border-end-end-radius: var(--radius-xl);
+  }
+}

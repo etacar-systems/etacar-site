@@ -53,7 +53,7 @@
   font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   text-transform: uppercase;
-  color: $color--text-dark;
+  color: $color--light;
   text-wrap: nowrap;
   line-height: 3.625rem;
 }
@@ -89,7 +89,7 @@
 
 .info {
   text-align: left;
-  color: $color--text-light;
+  color: $color--light;
 
   @media (max-width: 1200px) {
     text-align: center;
@@ -98,7 +98,7 @@
 
 .infoBold {
   font-weight: var(--font-bold);
-  color: var(--color-neutral-900); 
+  color: $color--light;
   margin-bottom: 20px;
 }
 

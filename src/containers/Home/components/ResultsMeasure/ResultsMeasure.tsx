@@ -77,7 +77,7 @@ export const ResultsMeasure: React.FC = () => {
 
 
   return (
-    <SectionWrapper id='results' variant='light'>
+    <SectionWrapper id='results' >
       <div className={styles.content}>
         <h2 className={styles.title}>Results you can measure</h2>
 

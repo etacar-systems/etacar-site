@@ -1,5 +1,6 @@
 @import '../../../styles/design-tokens.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
 
 .container {
   @include container;
@@ -17,12 +18,9 @@
 
 .title {
   @include heading-xl;
+  @include gradient-primary-to-light;
   margin: 0;
   margin-bottom: var(--space-6);
-  background: linear-gradient(135deg, var(--color-neutral-900) 0%, var(--color-primary-700) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   text-align: center;
 
   @include desktop {
@@ -36,7 +34,7 @@
   margin-bottom: var(--space-12);
   opacity: 0.9;
   line-height: var(--leading-relaxed);
-  color: var(--color-neutral-700);
+  color: $color--light;
 
   @include desktop {
     font-size: var(--text-2xl);

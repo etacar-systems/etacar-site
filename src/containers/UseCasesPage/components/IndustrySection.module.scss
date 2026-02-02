@@ -1,10 +1,13 @@
 @import '../../../styles/mixins.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
 
 .sectionWrapper {
 }
 
 .container {
   @include container;
+  text-align: center;
 }
 
 .header {
@@ -23,13 +26,14 @@
 
 .title {
   @include heading-lg;
+  @include gradient-primary-to-light;
   color: var(--color-neutral-900);
   text-align: center;
 }
 
 .subtitle {
   margin-top: 8px;
-  color: var(--color-neutral-900);
+  color: $color--light;
   text-align: center;
 }
 
@@ -82,7 +86,7 @@
   gap: 12px;
   align-items: flex-start;
   @include body-base;
-  color: var(--color-neutral-700);
+  color: $color--light;
 
   .bullet {
     color: var(--color-primary-500);
@@ -102,7 +106,7 @@
 .kpiItem {
   @extend .listItem;
   font-weight: var(--font-medium);
-  color: var(--color-primary-800);
+  color: var(--color-primary-800) !important;
 
   .bullet {
     color: var(--color-success-500);
@@ -139,6 +143,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  color: $color--light;
 }
 
 .even {
@@ -149,12 +154,10 @@
 }
 
 .odd {
-  background: var(--gradient-card) !important;
-
   .content {
-    color: var(--color-neutral-900);
+    color: $color--light;
     .listItem {
-      color: var(--color-neutral-900);
+      color: $color--light;
     }
   }
 

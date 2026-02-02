@@ -28,7 +28,7 @@ export const WhoWeWorkWith: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper variant='light'>
+    <SectionWrapper >
       <div className={styles.content}>
         <h2 className={styles.title}>Who This Is Built For</h2>
 

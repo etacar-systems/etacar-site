@@ -28,7 +28,7 @@ export const ImpactAtAGlance: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper variant='gradient'>
+    <SectionWrapper >
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>Impact at a glance</h2>

@@ -113,7 +113,7 @@ const BroaderTeam: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper className={styles.broaderTeamSection} variant='gradient'>
+    <SectionWrapper className={styles.broaderTeamSection} >
       <div className={styles.container}>
         <h2 className={styles.title}>Our broader team</h2>
         <div className={styles.content}>

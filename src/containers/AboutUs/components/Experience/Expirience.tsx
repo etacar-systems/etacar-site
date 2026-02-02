@@ -14,7 +14,7 @@ export const Expirience = () => {
               {expirience.map((exp, i) => (
                 <div key={i} className={style.primaryTextContainer}>
                   <div className={style.textPrimary}>{exp.number}</div>
-                  <div>{exp.desc}</div>
+                  <div className={style.description}>{exp.desc}</div>
                 </div>
               ))}
             </div>
@@ -38,7 +38,7 @@ export const Expirience = () => {
                   <div>
                     <img src='/icons/AboutUs/success.svg' alt='success' />
                   </div>
-                  <div>{string}</div>
+                  <div className={style.description}>{string}</div>
                 </div>
               ))}
             </div>
