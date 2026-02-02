@@ -1,4 +1,7 @@
 import { ReactElement } from 'react';
+
+import { FaArrowRightLong } from 'react-icons/fa6';
+
 import style from './Button.module.scss';
 
 interface ButtonProps {
@@ -26,7 +29,7 @@ export const Button = ({
       onClick={onClick}
     >
       {title}
-      {icon && <img src='/icons/arrow.svg' alt={'arrow'} />}
+      {icon && <FaArrowRightLong color={'var(--color-background)'} />}
     </button>
   );
 };
