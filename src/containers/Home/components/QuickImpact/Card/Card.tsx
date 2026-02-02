@@ -2,14 +2,15 @@ import { forwardRef, PropsWithChildren, ReactElement, ReactNode } from 'react';
 import styles from './Card.module.scss';
 
 type Props = PropsWithChildren & {
+  background?: string;
   title?: ReactNode;
   content?: ReactNode;
 };
 
-export const Card = forwardRef<HTMLDivElement, Props>(({ title, content }, ref): ReactElement => {
+export const Card = forwardRef<HTMLDivElement, Props>(({ background, title, content }, ref): ReactElement => {
   return (
     <div className={styles.root} ref={ref}>
-      <h2 className={styles.title} data-is-content={Boolean(content)}>
+      <h2 className={styles.title} data-is-content={Boolean(content)} style={{ background }}>
         {title}
       </h2>
       {content && (

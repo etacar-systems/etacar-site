@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import style from './Home.module.scss';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import FlagshipServices from './components/FlagshipServices';
 import HeroSection from './components/HeroSection';
@@ -20,7 +19,7 @@ export const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className={style.container}>
+    <div>
       <FadeInSection>
         <HeroSection />
       </FadeInSection>

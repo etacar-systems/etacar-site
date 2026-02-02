@@ -1,10 +1,19 @@
 import { Divider } from '@/components/Divider';
 import { ReactNode } from 'react';
 
-export type Key = 'goal' | 'select_process' | 'workflow' | 'achitecture' | 'launch' | 'kpis' | 'scaling' | 'optimization';
+export type Key =
+  | 'goal'
+  | 'select_process'
+  | 'workflow'
+  | 'achitecture'
+  | 'launch'
+  | 'kpis'
+  | 'scaling'
+  | 'optimization';
 
 type Card = {
   id: Key;
+  background?: string;
   title: string | ReactNode;
   content: ReactNode;
 };
@@ -23,7 +32,7 @@ export const cards: Card[] = [
     id: 'select_process',
     title: 'Select Process',
     content: (
-      <ul>
+      <ul style={{ paddingLeft: 24 }}>
         <li>Back-office</li>
         <li>Routine decisions</li>
         <li>KPI impact</li>
@@ -32,12 +41,12 @@ export const cards: Card[] = [
   },
   {
     id: 'workflow',
+    background: 'var(--color-primary)',
     title: 'AI-Workflow',
     content: (
       <>
-        <strong>+30—50%</strong> Faster cycles
-        <Divider />
-        Up to <strong>~40%</strong> Fewer errors
+        <strong>+30—50%</strong> faster cycles
+        Up to <strong>~40%</strong> fewer errors
       </>
     ),
   },
@@ -46,7 +55,7 @@ export const cards: Card[] = [
     title: 'AI-Ready Architecture',
     content: (
       <>
-        <strong>2—3x</strong> Faster product delivery
+        <strong>2—3x</strong> faster product delivery
       </>
     ),
   },
@@ -58,7 +67,7 @@ export const cards: Card[] = [
   {
     id: 'kpis',
     title: 'Measurable KPIs',
-    content: <>3—5 Key indicators</>,
+    content: <>3—5 key indicators</>,
   },
   {
     id: 'scaling',

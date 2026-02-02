@@ -45,7 +45,7 @@ export const NavHeader = () => {
             </div>
           ) : undefined}
           {width > 768 ? (
-            <Button onClick={() => router.push(CONTACT)} title={'Get estimation'} type={'bordered'} />
+            <Button onClick={() => router.push(CONTACT)} size={'medium'} title={'Get estimation'} type={'bordered'} />
           ) : undefined}
           {width < 768 ? (
             <div

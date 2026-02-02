@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
-import style from './ContactUs.module.scss';
 
 import Reviews from '../../commonSections/Reviews';
 import Footer from '../../components/Footer';
@@ -14,7 +13,7 @@ export const ContactUs = () => {
   }, []);
 
   return (
-    <div className={style.container}>
+    <div>
       <FadeInSection>
         <HeroSection />
       </FadeInSection>

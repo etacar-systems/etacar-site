@@ -55,6 +55,10 @@ export const relations: Array<Partial<Record<Key, Array<RelationType>>>> = [
         targetAnchor: 'top',
         sourceAnchor: 'bottom',
       },
+    ],
+  },
+  {
+    scaling: [
       {
         targetId: 'optimization',
         targetAnchor: 'top',
@@ -63,7 +67,6 @@ export const relations: Array<Partial<Record<Key, Array<RelationType>>>> = [
     ],
   },
   {
-    scaling: [],
     optimization: [],
   },
 ];

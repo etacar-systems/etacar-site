@@ -57,7 +57,8 @@
   padding: 100px 0 100px;
   margin-top: -50px;
   border-radius: var(--radius-top-left);
-  background-color: $color--background;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   box-shadow: 0px -4px 12px 0px #b2b2b20a;
   @media (max-width: 1200px) {

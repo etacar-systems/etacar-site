@@ -3,8 +3,7 @@
 @import '../../../../../styles/colors.scss';
 
 .root {
-  width: fit-content;
-  // width: 300px;
+  min-width: 255px;
 }
 
 .contentContainer {
