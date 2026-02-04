@@ -2,7 +2,6 @@
 @import '../../styles/mixins.scss';
 
 .card {
-  background: var(--gradient-card) !important;
   display: flex;
   flex-direction: column;
 }
@@ -17,7 +16,7 @@
   @include heading-sm;
   font-size: var(--text-xl);
   font-weight: 700;
-  color: var(--color-primary-700);
+  color: var(--color-primary);
 }
 
 .description {

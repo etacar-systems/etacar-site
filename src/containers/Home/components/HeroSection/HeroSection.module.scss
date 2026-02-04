@@ -103,7 +103,6 @@
   align-items: flex-start;
   gap: var(--space-3);
   text-align: left;
-  background: var(--gradient-card-light) !important;
 
   @include respond-above(md) {
     flex-direction: column;

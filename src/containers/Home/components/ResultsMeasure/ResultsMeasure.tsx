@@ -98,7 +98,7 @@ export const ResultsMeasure: React.FC = () => {
 
         <div className={styles.casesGrid}>
           {miniCases.map((caseStudy, index) => (
-            <FadeCard key={index} className={styles.caseCard}>
+            <FadeCard key={index}>
               <h3 className={styles.caseTitle}>{caseStudy.title}</h3>
               <div className={styles.caseSection}>{caseStudy.goal}</div>
               <div className={styles.caseSection}>{caseStudy.approach}</div>

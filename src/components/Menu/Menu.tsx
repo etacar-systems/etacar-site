@@ -37,7 +37,7 @@ export const Menu = ({ menuActive, setMenuActive, items }: MenuProps) => {
                   }}
                   href={item.route}
                   className={classNames(style.item, {
-                    [style.item__active]: isActive,
+                    [style.active]: isActive,
                   })}
                 >
                   {item.title}

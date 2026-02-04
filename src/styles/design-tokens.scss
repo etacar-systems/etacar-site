@@ -43,7 +43,10 @@
 
   // Custom
   --color-primary: #308280;
-  --color-background: #0b161c;
+  --color-background: rgb(30, 30, 34);
+  --color-light: #fff;
+  --color-primary-alt: #2f7f7d;
+  --color-neutral: #a4b3b6;
 
   // Primary Brand Colors (Deep Blue to Cyan)
   --color-primary-50: hsl(210, 100%, 98%);
@@ -98,6 +101,7 @@
   // ========================================
   // GRADIENTS
   // ========================================
+  --gradient-primary-to-light: linear-gradient(135deg, var(--color-primary-alt), var(--color-neutral), var(--color-light));
   --gradient-primary: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-accent-600) 100%);
   --gradient-hero: linear-gradient(
     135deg,
