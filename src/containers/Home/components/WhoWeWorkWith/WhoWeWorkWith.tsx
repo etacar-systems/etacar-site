@@ -26,8 +26,7 @@ export const WhoWeWorkWith: React.FC = () => {
         <h2 className={styles.title}>Who This Is Built For</h2>
 
         <p className={styles.intro}>
-          For teams accountable for <strong>business-critical decisions</strong> — where outcomes must be measurable and
-          systems must be <strong>governed</strong>.
+          Built for teams where AI decisions <strong>can’t fail silently</strong>.
         </p>
 
         <Card
@@ -46,7 +45,6 @@ export const WhoWeWorkWith: React.FC = () => {
               </div>
             </div>
           }
-          title={'Built for teams where AI decisions can’t fail silently'}
         />
       </div>
     </SectionWrapper>
