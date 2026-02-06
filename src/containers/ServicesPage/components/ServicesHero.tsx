@@ -15,12 +15,12 @@ const items = [
   },
   {
     icon: BsClipboard2DataFill,
-    label: 'Al for Decisions & Operations',
+    label: 'AI for Decisions & Operations',
     sectionId: 'al_for_decisions_operations',
   },
   {
     icon: FaGear,
-    label: 'Al for Engineering',
+    label: 'AI for Engineering',
     sectionId: 'al_for_engineering',
   },
 ];

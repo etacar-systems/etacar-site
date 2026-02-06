@@ -6,20 +6,18 @@ export const AIEngineering: React.FC = () => {
   return (
     <ServiceDetail
       id={'al_for_engineering'}
-      title={'Al for Engineering'}
+      title={'AI for Engineering'}
       subtitle={
         <>
-          Decision continuity for complex engineering systems.
+          <strong>Decision continuity</strong> for complex systems.
         </>
       }
       text={
         <>
-          Engineering breaks down when{' '}
-          <strong>design decisions drift, assumptions get lost, and constraints are no longer explicit.</strong> 
-          <br></br>
-          We apply AI to support <strong>engineering decisions</strong>, preserving intent, trade-offs, and validation
-          logic across long-running systems — ensuring execution remains{' '}
-          <strong>coherent, explainable, and production-ready</strong>.
+          Engineering breaks when <strong>decisions drift</strong> and assumptions are lost.
+          <br />
+          We apply AI to preserve <strong>intent and trade-offs</strong>, keeping execution{' '}
+          <strong>coherent and production-ready</strong> over time.
         </>
       }
     />

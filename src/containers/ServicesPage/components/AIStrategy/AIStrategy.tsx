@@ -7,11 +7,16 @@ export const AIStrategy: React.FC = () => {
     <ServiceDetail
       id={'ai_strategy_architecture'}
       title={'AI Strategy & Architecture'}
-      subtitle={<>Decision architecture for high-stakes AI systems.</>}
+      subtitle={
+        <>
+          <strong>Decision architecture</strong> for high-stakes AI systems.
+        </>
+      }
       text={
         <>
-          We help organizations define <strong>how decisions are made</strong>, not just what systems are built — making
-          assumptions explicit, managing uncertainty, and ensuring long-term coherence and control.
+          We define <strong>how decisions are made</strong>, not just what systems are built — making{' '}
+          <strong>assumptions explicit</strong>, managing <strong>uncertainty</strong>, and ensuring{' '}
+          <strong>long-term control</strong>.
         </>
       }
     />

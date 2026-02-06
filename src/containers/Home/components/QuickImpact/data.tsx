@@ -45,8 +45,8 @@ export const cards: Card[] = [
     title: 'AI-Workflow',
     content: (
       <>
-        <strong>+30—50%</strong> faster cycles
-        Up to <strong>~40%</strong> fewer errors
+        <strong>30–50% faster decision cycles</strong>
+        <strong>Up to 40% fewer production errors</strong>
       </>
     ),
   },

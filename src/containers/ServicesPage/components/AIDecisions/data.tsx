@@ -11,14 +11,14 @@ export const cards: Array<Card> = [
     title: 'AI for Decision Support in Critical Roles',
     subtitle: (
       <>
-        Role-aware, review-ready decision support where accountability matters.
+        <strong>Role-aware support</strong> where accountability matters.
       </>
     ),
     content: (
       <>
-        High-stakes roles operate under pressure, incomplete information, and irreversible impact. We provide{' '}
-        <strong>structured decision support</strong> tailored to role-specific responsibility, making assumptions
-        explicit and outputs <strong>auditable, explainable, and safe to act upon</strong>.
+        High-stakes roles operate under <strong>pressure and uncertainty</strong>.<br />
+        We provide <strong>structured decision support</strong> aligned to role responsibility, making assumptions{' '}
+        <strong>explicit</strong> and outputs <strong>auditable and explainable</strong>.
       </>
     ),
   },
@@ -26,14 +26,14 @@ export const cards: Array<Card> = [
     title: 'Risk-Bounded Decision Modeling',
     subtitle: (
       <>
-        Scenario analysis, trade-offs, and explicit uncertainty handling for high-stakes decisions.
+        <strong>Explicit uncertainty</strong> for high-stakes decisions.
       </>
     ),
     content: (
       <>
-        Most failures stem from decisions made as if uncertainty did not exist. We model{' '}
-        <strong>scenarios, trade-offs, and confidence boundaries</strong>, ensuring decisions are made within{' '}
-        <strong>clearly defined risk limits</strong> and degrade safely as inputs change.
+        Failures occur when <strong>uncertainty is ignored</strong>.<br />
+        We model <strong>scenarios and trade-offs</strong>, defining clear <strong>risk boundaries</strong> so decisions
+        degrade safely as conditions change.
       </>
     ),
   },
@@ -41,14 +41,14 @@ export const cards: Array<Card> = [
     title: 'Decision-Aware Knowledge Systems',
     subtitle: (
       <>
-        Institutional memory that preserves decision context, constraints, and rationale over time.
+        <strong>Decision context</strong> preserved over time.
       </>
     ),
     content: (
       <>
-        Knowledge loses value when separated from the decisions it informed. We build{' '}
-        <strong>decision-aware knowledge systems</strong> that retain assumptions, constraints, and prior reasoning —
-        ensuring future decisions remain <strong>consistent, grounded, and aligned with original intent</strong>.
+        Knowledge loses value when <strong>detached from decisions</strong>.<br />
+        We build <strong>decision-aware systems</strong> that retain assumptions and constraints, keeping future
+        decisions <strong>consistent and grounded</strong>.
       </>
     ),
   },

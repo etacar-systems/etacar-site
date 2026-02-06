@@ -10,12 +10,17 @@ export const AIDecisions: React.FC = () => {
     <ServiceDetail
       id={'al_for_decisions_operations'}
       title={'AI for Decisions & Operations'}
-      subtitle={<>Structured decision execution under uncertainty.</>}
+      subtitle={
+        <>
+          <strong>Structured execution</strong> under uncertainty.
+        </>
+      }
       text={
         <>
-          Operations fail when <strong>decisions, assumptions, and execution drift apart over time</strong>.<br></br>
-          We apply AI to ensure decisions remain <strong>explicit, reviewable, and connected to action</strong>,
-          preserving context and managing uncertainty as conditions change.
+          Operations fail when <strong>decisions drift</strong> from assumptions and execution over time.
+          <br />
+          We use AI to keep decisions <strong>explicit and reviewable</strong>, ensuring they stay{' '}
+          <strong>connected to action</strong> as conditions change.
         </>
       }
       content={
