@@ -2,10 +2,6 @@
 @import '../../../../../styles/mixins.scss';
 @import '../../../../../styles/colors.scss';
 
-.root {
-  min-width: 255px;
-}
-
 .contentContainer {
   margin: 0 auto;
   border-end-start-radius: var(--radius-xl);

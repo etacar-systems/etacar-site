@@ -9,7 +9,7 @@ type Props = PropsWithChildren & {
 
 export const Card = forwardRef<HTMLDivElement, Props>(({ background, title, content }, ref): ReactElement => {
   return (
-    <div className={styles.root} ref={ref}>
+    <div ref={ref}>
       <h2 className={styles.title} data-is-content={Boolean(content)} style={{ background }}>
         {title}
       </h2>

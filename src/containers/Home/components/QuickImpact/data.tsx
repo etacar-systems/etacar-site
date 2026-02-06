@@ -44,10 +44,11 @@ export const cards: Card[] = [
     background: 'var(--color-primary)',
     title: 'AI-Workflow',
     content: (
-      <>
+      <div style={{ minWidth: 'max-content', maxWidth: '100%' }}>
         <strong>30–50% faster decision cycles</strong>
+        <br />
         <strong>Up to 40% fewer production errors</strong>
-      </>
+      </div>
     ),
   },
   {
@@ -67,7 +68,7 @@ export const cards: Card[] = [
   {
     id: 'kpis',
     title: 'Measurable KPIs',
-    content: <>3—5 key indicators</>,
+    content: <div style={{ minWidth: 204 }} >3—5 key indicators</div>,
   },
   {
     id: 'scaling',
