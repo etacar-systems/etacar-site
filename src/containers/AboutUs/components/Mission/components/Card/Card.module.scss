@@ -21,7 +21,7 @@
   }
 }
 .title {
-  color: $color--lightblue;
+  color: var(--color-primary);
   font-size: var(--text-6xl);
   font-weight: var(--font-bold);
 }

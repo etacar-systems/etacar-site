@@ -3,6 +3,7 @@ import React from 'react';
 import { FadeCard } from '@/components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './OurStory.module.scss';
+import { Card } from '@/components/Card';
 
 export const OurStory: React.FC = () => {
   const story = [
@@ -57,7 +58,7 @@ export const OurStory: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper >
+    <SectionWrapper>
       <div className={styles.content}>
         <h2 className={styles.title}>Our story</h2>
 
@@ -69,10 +70,7 @@ export const OurStory: React.FC = () => {
 
         <div className={styles.grid}>
           {story.map((item, index) => (
-            <FadeCard key={index} className={styles.card}>
-              <h3 className={styles.cardTitle}>{item.title}</h3>
-              <p className={styles.cardText}>{item.description}</p>
-            </FadeCard>
+            <Card key={index} title={item.title} content={item.description} />
           ))}
         </div>
       </div>

@@ -1,5 +1,6 @@
 @import '../../../../styles/design-tokens.scss';
 @import '../../../../styles/colors.scss';
+@import '../../../../styles/mixins.scss';
 
 .wrapper {
   overflow: hidden;
@@ -50,10 +51,10 @@
 }
 
 .aboutUs {
+  @include gradient-primary-to-light;
   font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   text-transform: uppercase;
-  color: $color--light;
   text-wrap: nowrap;
   line-height: 3.625rem;
 }

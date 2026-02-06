@@ -2,6 +2,7 @@ import React from 'react';
 import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './MeasurementFramework.module.scss';
+import { Card } from '@/components/Card';
 
 export const MeasurementFramework: React.FC = () => {
   const categories = [
@@ -48,7 +49,7 @@ export const MeasurementFramework: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper  id='measure'>
+    <SectionWrapper id='measure'>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>What we measure and how</h2>
@@ -60,20 +61,20 @@ export const MeasurementFramework: React.FC = () => {
 
         <div className={styles.grid}>
           {categories.map((category, index) => (
-            <FadeCard key={index} className={styles.card}>
-              <h3 className={styles.cardTitle}>
-                <span className={styles.number}>{index + 1}</span>
-                {category.title}
-              </h3>
-              <ul className={styles.list}>
-                {category.items.map((item, idx) => (
-                  <li key={idx} className={styles.listItem}>
-                    <span className={styles.bullet}>●</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </FadeCard>
+            <Card
+              content={
+                <ul className={styles.list}>
+                  {category.items.map((item, idx) => (
+                    <li key={idx} className={styles.listItem}>
+                      <span className={styles.bullet}>●</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              }
+              key={index}
+              title={category.title}
+            />
           ))}
         </div>
 

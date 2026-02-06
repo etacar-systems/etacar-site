@@ -42,15 +42,11 @@
   left: 0;
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(90deg, var(--color-primary-alt), var(--color-neutral), var(--color-neutral));
-  color: var(--color-neutral-0);
+  text-align: center;
+  align-content: center;
+  color: var(--color-primary);
   font-size: var(--text-3xl);
   font-weight: var(--font-bold);
-  border-radius: var(--radius-full);
-  box-shadow: var(--shadow-primary);
 }
 
 .cardTitle {

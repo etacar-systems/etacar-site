@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaGear } from "react-icons/fa6";
+import { FaGear } from 'react-icons/fa6';
 import { FaBrain } from 'react-icons/fa';
 import { IoShieldCheckmark } from 'react-icons/io5';
 
@@ -9,10 +9,8 @@ import { Button } from '../../../../components/Button';
 import { FadeCard } from '../../../../components/FadeCard';
 import { SectionWrapper } from '../../../../components/SectionWrapper';
 import { CONTACT, RESULTS } from '../../../../routes';
+import { IconConfig } from '@/config/IconConfig';
 import styles from './HeroSection.module.scss';
-
-const iconSize = 48;
-const color = 'var(--color-primary)';
 
 export const HeroSection: React.FC = () => {
   const router = useRouter();
@@ -37,21 +35,27 @@ export const HeroSection: React.FC = () => {
 
           <div className={styles.quickFacts}>
             <FadeCard className={styles.fact}>
-              <FaBrain color={color} size={iconSize} />
+              <div className={styles.icon}>
+                <FaBrain {...IconConfig} />
+              </div>
               <span>
                 <strong>20+ years</strong> building AI-driven products
               </span>
             </FadeCard>
 
             <FadeCard className={styles.fact}>
-              <FaGear color={color} size={iconSize} />
+              <div className={styles.icon}>
+                <FaGear {...IconConfig} />
+              </div>
               <span>
                 <strong>From strategy to production</strong> — architecture, implementation, governance
               </span>
             </FadeCard>
 
             <FadeCard className={styles.fact}>
-              <IoShieldCheckmark color={color} size={iconSize} />
+              <div className={styles.icon}>
+                <IoShieldCheckmark {...IconConfig} />
+              </div>
               <span>
                 Designed for <strong>regulated and high-stakes environments</strong>
               </span>

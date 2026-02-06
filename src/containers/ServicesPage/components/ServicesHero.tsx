@@ -1,25 +1,25 @@
 import React from 'react';
 
-import { GoGear } from 'react-icons/go';
-import { PiTreeStructureLight } from 'react-icons/pi';
-import { BsClipboardData } from 'react-icons/bs';
+import { BsClipboard2DataFill } from 'react-icons/bs';
+import { FaGear } from 'react-icons/fa6';
+import { PiTreeStructureFill } from 'react-icons/pi';
 
-import { FadeCard } from '@/components/FadeCard';
 import styles from './ServicesHero.module.scss';
+import { Card } from '@/components/Card';
 
 const items = [
   {
-    icon: <PiTreeStructureLight />,
+    icon: PiTreeStructureFill,
     label: 'AI Strategy & Architecture',
     sectionId: 'ai_strategy_architecture',
   },
   {
-    icon: <BsClipboardData />,
+    icon: BsClipboard2DataFill,
     label: 'Al for Decisions & Operations',
     sectionId: 'al_for_decisions_operations',
   },
   {
-    icon: <GoGear />,
+    icon: FaGear,
     label: 'Al for Engineering',
     sectionId: 'al_for_engineering',
   },
@@ -33,15 +33,7 @@ export const ServicesHero: React.FC = () => {
         <p className={styles.subtitle}>Production-grade reasoning systems for high-stakes decisions</p>
         <div className={styles.quickFacts}>
           {items.map((item, idx) => (
-            <FadeCard key={idx} className={styles.fact}>
-              {React.cloneElement(item.icon, { className: styles.icon })}
-              <div className={styles.content}>
-                <span>{item.label}</span>
-                <a href={`#${item.sectionId}`} className={styles.linkButton}>
-                  Learn more →
-                </a>
-              </div>
-            </FadeCard>
+            <Card key={idx} icon={item.icon} title={item.label} sectionId={item.sectionId} />
           ))}
         </div>
       </div>

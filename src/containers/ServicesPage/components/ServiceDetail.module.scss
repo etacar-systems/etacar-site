@@ -20,7 +20,7 @@
   border-start-end-radius: var(--radius-xl);
   text-align: center;
   color: var(--color-neutral-900);
-  background: var(--color-primary-200);
+  background: var(--color-light);
   padding: var(--space-2) 0;
 }
 
@@ -42,13 +42,4 @@
   @include body-base;
   font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
-}
-
-.divider {
-  font-size: var(--text-2xl) !important;
-  font-weight: var(--font-semibold) !important;
-  &::after,
-  &::before {
-    border-block-start: 3px solid var(--color-primary-500) !important;
-  }
 }

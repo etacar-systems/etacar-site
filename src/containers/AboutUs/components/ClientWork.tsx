@@ -1,6 +1,12 @@
-import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
+
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { FaStar } from "react-icons/fa";
+import { GrClearOption } from "react-icons/gr";
+import { PiLightningFill } from "react-icons/pi";
+
 import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';
+import { Card } from '@/components/Card';
 import styles from './ClientWork.module.scss';
 
 const ClientWork: React.FC = () => {
@@ -12,20 +18,7 @@ const ClientWork: React.FC = () => {
           We work as <strong>long-term partners</strong>, grounded in your systems, risks, and culture.
         </>
       ),
-      icon: (
-        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-          <path
-            d='M17 20H7C5.89543 20 5 19.1046 5 18V9C5 7.89543 5.89543 7 7 7H17C18.1046 7 19 7.89543 19 9V18C19 19.1046 18.1046 20 17 20Z'
-            stroke='currentColor'
-            strokeWidth='2'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-          />
-          <path d='M12 3V7' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
-          <path d='M8 3V7' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
-          <path d='M16 3V7' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
-        </svg>
-      ),
+      icon: HiOutlineUserGroup,
     },
     {
       title: 'Focused Initiatives',
@@ -34,17 +27,7 @@ const ClientWork: React.FC = () => {
           We focus on <strong>high-impact initiatives</strong>, not AI everywhere.
         </>
       ),
-      icon: (
-        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-          <path
-            d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'
-            stroke='currentColor'
-            strokeWidth='2'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-          />
-        </svg>
-      ),
+      icon: FaStar,
     },
     {
       title: 'Clear Alignment',
@@ -53,17 +36,7 @@ const ClientWork: React.FC = () => {
           We align on <strong>KPIs and decision criteria</strong> before building.
         </>
       ),
-      icon: (
-        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-          <path
-            d='M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z'
-            stroke='currentColor'
-            strokeWidth='2'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-          />
-        </svg>
-      ),
+      icon: GrClearOption,
     },
     {
       title: 'Sustainable Design',
@@ -72,17 +45,7 @@ const ClientWork: React.FC = () => {
           We design for <strong>long-term operation</strong>, with clear ownership and governance.
         </>
       ),
-      icon: (
-        <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-          <path
-            d='M13 10V3L4 14H11V21L20 10H13Z'
-            stroke='currentColor'
-            strokeWidth='2'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-          />
-        </svg>
-      ),
+      icon: PiLightningFill,
     },
   ];
 
@@ -97,11 +60,7 @@ const ClientWork: React.FC = () => {
 
           <div className={styles.principlesGrid}>
             {principles.map((principle, index) => (
-              <FadeCard key={index} className={styles.card}>
-                <div className={styles.icon}>{principle.icon}</div>
-                <h3 className={styles.cardTitle}>{principle.title}</h3>
-                <p className={styles.cardDescription}>{principle.description}</p>
-              </FadeCard>
+              <Card key={index} content={principle.description} icon={principle.icon} title={principle.title} />
             ))}
           </div>
 

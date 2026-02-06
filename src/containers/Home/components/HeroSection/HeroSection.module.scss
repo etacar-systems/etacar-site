@@ -121,15 +121,7 @@
 }
 
 .icon {
-  flex-shrink: 0;
-  color: var(--color-primary-700);
-  width: 24px;
-  height: 24px;
-
-  @include respond-above(md) {
-    width: 32px;
-    height: 32px;
-  }
+  line-height: 0;
 }
 
 .fact span {

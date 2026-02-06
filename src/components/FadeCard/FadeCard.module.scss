@@ -6,26 +6,4 @@
   position: relative;
   text-decoration: none;
   overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: var(--gradient-primary);
-    transform: scaleX(0);
-    transition: transform var(--transition-base);
-  }
-
-  &:hover {
-    &::before {
-      transform: scaleX(1);
-    }
-
-    .arrow {
-      transform: translateX(4px);
-    }
-  }
 }

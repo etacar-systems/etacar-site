@@ -8,7 +8,6 @@ import WhoWeWorkWith from './components/WhoWeWorkWith';
 import ExperienceSection from './components/ExperienceSection';
 import ResultsMeasure from './components/ResultsMeasure';
 
-import Reviews from '../../commonSections/Reviews';
 import Footer from '../../components/Footer';
 import FinalCTA from './components/FinalCTA/FinalCTA';
 import { QuickImpact } from '@/containers/Home/components/QuickImpact';
@@ -43,9 +42,6 @@ export const Home: React.FC = () => {
       </FadeInSection>
       <FadeInSection>
         <FinalCTA />
-      </FadeInSection>
-      <FadeInSection>
-        <Reviews />
       </FadeInSection>
       <FadeInSection>
         <Footer />

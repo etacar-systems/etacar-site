@@ -93,8 +93,12 @@
   justify-content: space-between;
   gap: var(--space-3);
   text-align: left;
-  padding: var(--space-2) !important;
-  background: var(--gradient-card-light) !important;
+  padding: var(--space-6) !important;
+
+  span {
+    font-size: var(--text-xl) !important;
+    color: var(--color-primary);
+  }
 
   @include respond-above(md) {
     flex-direction: column;
@@ -145,13 +149,13 @@
 .linkButton {
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
-  color: var(--color-primary-700);
+  color: var(--color-primary-alt);
   text-decoration: none;
   transition: 0.2s ease;
   display: inline-block;
 
   &:hover {
-    color: var(--color-primary-800);
+    color: var(--color-primary);
     text-decoration: underline;
   }
 

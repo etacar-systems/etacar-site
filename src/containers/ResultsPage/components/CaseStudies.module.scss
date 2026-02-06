@@ -94,7 +94,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  // background: rgba(255, 255, 255, 0.4);
   border-radius: var(--radius-md);
 }
 
@@ -103,8 +102,6 @@
   gap: 12px;
   align-items: flex-start;
   font-weight: var(--font-semibold);
-  // color: var(--color-primary-800);
-  color: $color--light;
 
   .bullet {
     color: var(--color-primary-500);
@@ -113,28 +110,18 @@
 }
 
 .resultsBox {
-  & .list {
-    padding: var(--space-3);
-  }
-
   & .bullet {
     color: var(--color-success-500);
   }
 
   & .listItem {
+    text-align: left;
     color: var(--color-primary-800);
   }
 }
 
 .resultsBox {
-  background: var(--gradient-card) !important;
-  padding: var(--space-8);
-
   .blockTitle {
     color: var(--color-primary-700);
   }
-}
-
-.highlightNumber {
-  color: var(--color-primary-800);
 }

@@ -1,65 +1,24 @@
-import { FadeCard } from '@/components/FadeCard';
 import React, { ReactElement } from 'react';
+
+import { BsClipboard2DataFill } from 'react-icons/bs';
+import { FaCloud, FaClipboardList } from "react-icons/fa";
+
+import { Card } from '@/components/Card';
 import styles from './HeroSection.module.scss';
 
 const items = [
   {
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path
-          d='M12 2L2 7L12 12L22 7L12 2Z'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-        />
-        <path
-          d='M2 17L12 22L22 17'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-        />
-        <path
-          d='M2 12L12 17L22 12'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-        />
-      </svg>
-    ),
+    icon: FaClipboardList,
     label: 'Selected case studies',
     sectionId: 'selected-case',
   },
   {
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path d='M12 2V22' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
-        <path d='M5 8C7 6 9.5 5 12 5C14.5 5 17 6 19 8' stroke='currentColor' strokeWidth='2' strokeLinecap='round' />
-        <path
-          d='M7 12C8.5 10.5 10.2 10 12 10C13.8 10 15.5 10.5 17 12'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-        />
-      </svg>
-    ),
+    icon: BsClipboard2DataFill,
     label: 'What we measure and how',
     sectionId: 'measure',
   },
   {
-    icon: (
-      <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-        <path
-          d='M7 18H17C19.2 18 21 16.2 21 14C21 11.8 19.2 10 17 10C16.7 10 16.3 10 16 10.1C15.3 7.7 13.3 6 11 6C8.2 6 6 8.2 6 11C6 11.3 6 11.7 6.1 12C4.3 12.3 3 13.8 3 15.5C3 17.4 4.6 18.9 6.5 19'
-          stroke='currentColor'
-          strokeWidth='2'
-          strokeLinecap='round'
-          strokeLinejoin='round'
-        />
-      </svg>
-    ),
+    icon: FaCloud,
     label: 'Fits your data, systems & risk',
     sectionId: 'within-data',
   },
@@ -86,15 +45,7 @@ export const HeroSection: React.FC = (): ReactElement => {
           </div>
           <div className={styles.quickFacts}>
             {items.map((item, idx) => (
-              <FadeCard key={idx} className={styles.fact}>
-                {React.cloneElement(item.icon, { className: styles.icon })}
-                <div className={styles.content}>
-                  <span>{item.label}</span>
-                  <a href={`#${item.sectionId}`} className={styles.linkButton}>
-                    Learn more →
-                  </a>
-                </div>
-              </FadeCard>
+              <Card key={idx} icon={item.icon} title={item.label} sectionId={item.sectionId} />
             ))}
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+
 import { data, expirience } from './data';
 import style from './Expirience.module.scss';
 
@@ -35,8 +37,8 @@ export const Expirience = () => {
             <div className={style.smallTextBlock}>
               {data.map((string, i) => (
                 <div key={i} className={style.secondaryTextContainer}>
-                  <div>
-                    <img src='/icons/AboutUs/success.svg' alt='success' />
+                  <div style={{ lineHeight: 0 }}>
+                    <IoMdCheckmarkCircleOutline color={'var(--color-primary)'} size={28} />
                   </div>
                   <div className={style.description}>{string}</div>
                 </div>

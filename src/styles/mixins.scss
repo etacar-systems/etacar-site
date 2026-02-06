@@ -75,11 +75,9 @@
 
 @mixin card-premium {
   @include card-base;
-  border: 1px solid var(--color-neutral-200);
 
   &:hover {
     @include card-hover;
-    border-color: var(--color-primary-300);
     box-shadow: var(--shadow-primary);
   }
 }

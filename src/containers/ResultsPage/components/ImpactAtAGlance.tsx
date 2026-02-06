@@ -2,6 +2,7 @@ import React from 'react';
 import { FadeCard } from '../../../components/FadeCard';
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './ImpactAtAGlance.module.scss';
+import { Card } from '@/components/Card';
 
 export const ImpactAtAGlance: React.FC = () => {
   const metrics = [
@@ -28,7 +29,7 @@ export const ImpactAtAGlance: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper >
+    <SectionWrapper>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>Impact at a glance</h2>
@@ -37,10 +38,7 @@ export const ImpactAtAGlance: React.FC = () => {
 
         <div className={styles.grid}>
           {metrics.map((metric, index) => (
-            <FadeCard key={index} className={styles.metricCard}>
-              <div className={styles.metricValue}>{metric.value}</div>
-              <div className={styles.metricText}>{metric.text}</div>
-            </FadeCard>
+            <Card key={index} title={metric.value} content={metric.text} />
           ))}
         </div>
 

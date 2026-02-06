@@ -32,9 +32,6 @@ export const Introduction = () => {
         <div className={style.block}>
           <div className={style.columnLeft}>
             <div className={style.aboutUs}>About Us</div>
-            {/* <div className={style.aboutUsImage}>
-              <img src='/images/AboutUs/aboutUs.webp' alt='About Us' />
-            </div> */}
           </div>
           <div className={style.columnRight}>
             <div className={style.ourTeamImage}>

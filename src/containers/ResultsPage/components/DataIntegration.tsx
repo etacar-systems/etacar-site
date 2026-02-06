@@ -1,5 +1,6 @@
-import { FadeCard } from '@/components/FadeCard';
 import React from 'react';
+
+import { Card } from '@/components/Card';
 import styles from './DataIntegration.module.scss';
 
 export const DataIntegration: React.FC = () => {
@@ -26,12 +27,11 @@ export const DataIntegration: React.FC = () => {
             ))}
           </ul>
 
-          <FadeCard className={styles.closing}>
-            <p>
-              This is what allows us - and you - to stand behind the KPIs and the decisions your AI systems help to
-              make.
-            </p>
-          </FadeCard>
+          <Card
+            content={
+              ' This is what allows us - and you - to stand behind the KPIs and the decisions your AI systems help to make.'
+            }
+          />
         </div>
       </div>
     </section>

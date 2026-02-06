@@ -1,5 +1,6 @@
 import React from 'react';
-import { FadeCard } from '../../../components/FadeCard';
+
+import { Card } from '@/components/Card';
 import styles from './CaseStudies.module.scss';
 
 interface CaseStudyProps {
@@ -48,27 +49,25 @@ const CaseStudyItem: React.FC<CaseStudyProps> = ({ industry, headline, challenge
       </div>
 
       <div className={styles.column}>
-        <FadeCard className={styles.resultsBox}>
-          <h4 className={styles.blockTitle}>Results</h4>
-          <ul className={styles.list}>
-            {results.map((item, index) => (
-              <li className={styles.listItem} key={index}>
-                <span className={styles.bullet}>●</span>
-                <span>
-                  {item.split(/([+\d–×%]+)/g).map((part, i) =>
-                    /[+\d–×%]/.test(part) ? (
-                      <strong key={i} className={styles.highlightNumber}>
-                        {part}
-                      </strong>
-                    ) : (
-                      part
-                    )
-                  )}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </FadeCard>
+        <Card
+          content={
+            <div className={styles.resultsBox}>
+              <ul className={styles.list}>
+                {results.map((item, index) => (
+                  <li className={styles.listItem} key={index}>
+                    <span className={styles.bullet}>●</span>
+                    <span>
+                      {item
+                        .split(/([+\d–×%]+)/g)
+                        .map((part, i) => (/[+\d–×%]/.test(part) ? <strong key={i}>{part}</strong> : part))}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          }
+          title={'Results'}
+        />
       </div>
     </div>
   </div>

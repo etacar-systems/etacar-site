@@ -7,12 +7,12 @@
   color: $color--light !important;
 
   &[data-has-title='false'] {
-    background: var(--color-primary-500);
-    height: 3px;
+    background: var(--color-neutral-200);
+    height: 1px;
   }
 
   &::after,
   &::before {
-    border-block-start: 3px solid var(--color-primary-500) !important;
+    border-block-start: 1px solid var(--color-neutral-200) !important;
   }
 }

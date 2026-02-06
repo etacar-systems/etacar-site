@@ -21,7 +21,7 @@ export const ResultsPage: React.FC = () => {
 
   return (
     <div className={style.container}>
-      <main style={{ flex: 1, boxSizing: 'border-box', backgroundColor: '#0b161c' }}>
+      <main style={{ flex: 1, boxSizing: 'border-box' }}>
         <FadeInSection>
           <HeroSection />
         </FadeInSection>

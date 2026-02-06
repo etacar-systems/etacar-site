@@ -1,0 +1,58 @@
+@import '../../styles/design-tokens.scss';
+@import '../../styles/mixins.scss';
+
+.fact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  text-align: left;
+  padding: var(--space-6) !important;
+
+  @include respond-above(md) {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.content {
+  @include body-lg-bold;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-md);
+  color: var(--color-primary-800);
+  font-size: var(--text-base) !important;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: var(--text-xl) !important;
+  color: var(--color-primary);
+  font-weight: var(--font-bold);
+  padding-bottom: var(--space-4);
+}
+
+.link {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-primary-alt);
+  text-decoration: none;
+  transition: 0.2s ease;
+  display: inline-block;
+
+  &:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  @include respond-above(md) {
+    font-size: var(--text-base);
+  }
+}
+
+.icon {
+  line-height: 0;
+}

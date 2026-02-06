@@ -92,7 +92,7 @@
 
 .smallHighTextBlock,
 .smallTextBlock {
-  border: 1px solid $color--lightblue;
+  border: 1px solid var(--color-primary);
   border-radius: var(--radius-2xl);
 }
 
@@ -140,7 +140,7 @@
   font-size: var(--text-5xl);
   font-weight: var(--font-bold);
   padding: 1rem 0;
-  color: $color--lightblue;
+  color: var(--color-primary);
 }
 
 .secondaryTextContainer {
