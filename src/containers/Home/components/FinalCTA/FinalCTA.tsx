@@ -22,13 +22,13 @@ export const FinalCTA: React.FC = () => {
         </p>
 
         <p className={styles.text}>
-          It starts with a <strong>focused 30-minute conversation</strong>.
+          Starts with a focused <strong>30-minute conversation</strong>.
         </p>
 
         <div className={styles.buttons}>
           <Button
             type='solid'
-            title='Schedule a focused discussion'
+            title='Schedule a discussion'
             onClick={() => router.push(CONTACT)}
           />
           <Button

@@ -22,10 +22,9 @@ export const ExperienceSection: React.FC = () => {
         <Card
           content={
             <>
-              <strong>Over 20 years of experience</strong> building enterprise AI and large-scale analytics.
+              Enterprise AI experience,
               <br />
-              Applied today to <strong>AI-native, business-critical systems</strong> with proven engineering and
-              governance.
+              applied to <strong>AI-native, business-critical systems</strong> with proven governance.
             </>
           }
           className={styles.paragraph}
