@@ -1,6 +1,14 @@
 import React from 'react';
 
 import ServiceDetail from '../ServiceDetail';
+import { Divider } from '@/components/Divider';
+import { List } from '@/components/List';
+
+const options = [
+  'Clear AI roadmap tied to real decision processes',
+  'Target architecture and integration plan for production-grade AI systems',
+  'Defined risks, constraints, and governance approach from the start',
+];
 
 export const AIStrategy: React.FC = () => {
   return (
@@ -10,6 +18,12 @@ export const AIStrategy: React.FC = () => {
       subtitle={
         <>
           <strong>Decision architecture</strong> for high-stakes AI systems.
+        </>
+      }
+      content={
+        <>
+          <Divider title={'Typical outcomes'} />
+          <List options={options} />
         </>
       }
       text={

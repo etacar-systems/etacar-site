@@ -4,6 +4,18 @@ import ServiceDetail from '../ServiceDetail';
 import { cards } from './data';
 import { Divider } from '@/components/Divider';
 import styles from './AIDecisions.module.scss';
+import { List } from '@/components/List';
+
+const appliedOptions = [
+  'Operational decision support',
+  'Risk-aware prioritization',
+  'Scenario analysis and decision traceability (inputs, assumptions, outcomes)',
+];
+
+const outcomes = [
+  'More consistent and defensible decisions',
+  'Reduced exposure to critical operational and regulatory errors',
+];
 
 export const AIDecisions: React.FC = () => {
   return (
@@ -17,10 +29,9 @@ export const AIDecisions: React.FC = () => {
       }
       text={
         <>
-          Operations fail when <strong>decisions drift</strong> from assumptions and execution over time.
-          <br />
-          We use AI to keep decisions <strong>explicit and reviewable</strong>, ensuring they stay{' '}
-          <strong>connected to action</strong> as conditions change.
+          This service focuses on decisions that have financial, operational, or regulatory consequences — where errors
+          matter and accountability is required. We use AI to keep decisions <strong>explicit and reviewable</strong>, ensuring they
+          stay <strong>connected to action</strong> as conditions change.
         </>
       }
       content={
@@ -38,6 +49,10 @@ export const AIDecisions: React.FC = () => {
               </div>
             ))}
           </div>
+          <Divider title={'Applied to'} />
+          <List options={appliedOptions} />
+          <Divider title={'Outcomes'} />
+          <List options={outcomes} />
         </>
       }
     />
