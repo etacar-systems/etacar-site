@@ -9,6 +9,9 @@ export const relations: Array<Partial<Record<Key, Array<RelationType>>>> = [
         targetId: 'select_process',
         targetAnchor: 'top',
         sourceAnchor: 'bottom',
+        style: {
+          lineStyle: 'angle',
+        },
       },
     ],
   },
@@ -20,9 +23,13 @@ export const relations: Array<Partial<Record<Key, Array<RelationType>>>> = [
         sourceAnchor: 'right',
       },
       {
-        targetId: 'scaling',
-        targetAnchor: 'left',
+        targetId: 'support',
+        targetAnchor: 'top',
         sourceAnchor: 'bottom',
+        style: {
+          endMarker: false,
+          lineStyle: 'angle',
+        },
       },
     ],
     workflow: [
@@ -48,6 +55,13 @@ export const relations: Array<Partial<Record<Key, Array<RelationType>>>> = [
     ],
   },
   {
+    support: [
+      {
+        targetId: 'scaling',
+        targetAnchor: 'left',
+        sourceAnchor: 'right',
+      },
+    ],
     scaling: [
       {
         targetId: 'launch',

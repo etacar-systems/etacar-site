@@ -1,15 +1,29 @@
 import { forwardRef, PropsWithChildren, ReactElement, ReactNode } from 'react';
+import { UseResizeDetectorReturn } from 'react-resize-detector';
+
 import styles from './Card.module.scss';
 
 type Props = PropsWithChildren & {
   background?: string;
+  itemRef: UseResizeDetectorReturn<HTMLDivElement>['ref'] | undefined;
   title?: ReactNode;
   content?: ReactNode;
 };
 
-export const Card = forwardRef<HTMLDivElement, Props>(({ background, title, content }, ref): ReactElement => {
+export const Card = forwardRef<HTMLDivElement, Props>(({ background, itemRef, title, content }, ref): ReactElement => {
   return (
-    <div ref={ref}>
+    <div
+      ref={node => {
+        if (itemRef) {
+          itemRef.current = node;
+        }
+        if (typeof ref === 'function') {
+          ref(node);
+        } else if (ref) {
+          ref.current = node;
+        }
+      }}
+    >
       <h2 className={styles.title} data-is-content={Boolean(content)} style={{ background }}>
         {title}
       </h2>

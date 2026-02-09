@@ -1,4 +1,3 @@
-import { Divider } from '@/components/Divider';
 import { ReactNode } from 'react';
 
 export type Key =
@@ -9,13 +8,14 @@ export type Key =
   | 'launch'
   | 'kpis'
   | 'scaling'
-  | 'optimization';
+  | 'optimization'
+  | 'support';
 
 type Card = {
   id: Key;
   background?: string;
-  title: string | ReactNode;
-  content: ReactNode;
+  title?: string | ReactNode;
+  content?: ReactNode;
 };
 
 export const cards: Card[] = [
@@ -68,7 +68,7 @@ export const cards: Card[] = [
   {
     id: 'kpis',
     title: 'Measurable KPIs',
-    content: <div style={{ minWidth: 204 }} >3—5 key indicators</div>,
+    content: <div style={{ minWidth: 204 }}>3—5 key indicators</div>,
   },
   {
     id: 'scaling',
@@ -79,5 +79,8 @@ export const cards: Card[] = [
     id: 'optimization',
     title: 'Optimization',
     content: <>Repeat process</>,
+  },
+  {
+    id: 'support',
   },
 ];
