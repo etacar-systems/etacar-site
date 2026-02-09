@@ -1,0 +1,45 @@
+@import '../../styles/design-tokens.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/colors.scss';
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-end-start-radius: var(--radius-xl);
+  border-end-end-radius: var(--radius-xl);
+  padding: 0 var(--space-6) var(--space-6);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-neutral-200);
+  color: $color--light !important;
+  font-size: var(--text-lg);
+  padding-top: var(--space-4);
+}
+
+.title {
+  @include heading-lg;
+  font-size: 34px;
+  border-start-start-radius: var(--radius-xl);
+  border-start-end-radius: var(--radius-xl);
+  color: var(--color-neutral-900);
+  background: var(--color-light);
+  padding: var(--space-2) 0;
+  text-align: center;
+}
+
+.subtitle {
+  @include body-lg;
+  font-size: var(--text-xl);
+  line-height: var(--leading-relaxed);
+}
+
+.sectionTitle {
+  @include heading-sm;
+  margin-bottom: var(--space-4);
+  font-size: var(--text-xl);
+}
+
+.text {
+  @include body-base;
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}

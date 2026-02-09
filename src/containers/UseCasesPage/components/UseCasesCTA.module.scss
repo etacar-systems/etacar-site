@@ -2,7 +2,7 @@
 @import '../../../styles/colors.scss';
 
 .container {
-  padding: 100px 0;
+  padding: 0 0 100px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -10,24 +10,30 @@
 }
 
 .content {
-  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
 }
 
 .title {
-  @include heading-lg;
+  @include heading-xl;
   @include gradient-primary-to-light;
-  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+
+  @include desktop {
+    font-size: var(--text-6xl);
+  }
 }
 
 .text {
   @include body-lg;
   color: $color--light;
+
+  @include desktop {
+    font-size: var(--text-2xl);
+  }
 }
 
 .buttonWrapper {
-  margin-top: 16px;
+  margin-top: 32px;
 }

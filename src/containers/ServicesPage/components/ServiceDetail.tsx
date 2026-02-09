@@ -8,28 +8,16 @@ export interface ServiceDetailProps {
   id: string;
   title: string;
   subtitle: ReactNode;
-  subtitleInDivider?: boolean;
   text?: ReactNode;
   content?: ReactNode;
 }
 
-export const ServiceDetail: React.FC<ServiceDetailProps> = ({
-  id,
-  title,
-  subtitle,
-  subtitleInDivider,
-  text,
-  content,
-}) => {
+export const ServiceDetail: React.FC<ServiceDetailProps> = ({ id, title, subtitle, text, content }) => {
   return (
     <SectionWrapper id={id}>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.content}>
-        {subtitleInDivider ? (
-          <Divider title={subtitle} />
-        ) : (
-          <p className={styles.subtitle}>{subtitle}</p>
-        )}
+        <p className={styles.subtitle}>{subtitle}</p>
         <Divider />
         <div className={styles.text}>{text}</div>
         <div>{content}</div>

@@ -1,36 +1,27 @@
 import React from 'react';
 
 import styles from './Hero.module.scss';
-import { FadeCard } from '@/components/FadeCard';
-import { industries } from '../data';
+import { groups } from '../data';
+import { Card } from '@/components/Card';
 
 export const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
-        <h1 className={styles.title}>
-          <strong>Decision intelligence</strong> with measurable outcomes.
-        </h1>
+        <h1 className={styles.title}>Use Cases for High-Stakes Decision-Making</h1>
 
         <h2 className={styles.subtitle}>
-          Where <strong>explainable AI</strong> improves speed, <strong>quality</strong>, and{' '}
-          risk control.
+          Decision scenarios where generic AI tools are insufficient and structured, review-ready decision support is
+          required.
         </h2>
 
         <p className={styles.text}>
-          Each use case is tied to <strong>real processes, roles, and KPIs</strong>.
+          These use cases describe classes of decisions where outcomes matter — financially, operationally, or
+          regulatorily — and accountability cannot be delegated to black-box systems.
         </p>
         <div className={styles.quickFacts}>
-          {industries.map((item, idx) => (
-            <FadeCard key={idx} className={styles.fact}>
-              {React.cloneElement(item.icon, { className: styles.icon })}
-              <div className={styles.content}>
-                <span>{item.title}</span>
-                <a href={`#${item.sectionId}`} className={styles.linkButton}>
-                  Learn more →
-                </a>
-              </div>
-            </FadeCard>
+          {groups.map((group, idx) => (
+            <Card key={idx} icon={group.icon} sectionId={group.sectionId} title={group.title} />
           ))}
         </div>
       </div>

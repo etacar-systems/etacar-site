@@ -1,14 +1,6 @@
-@import '../../../styles/mixins.scss';
-@import '../../../styles/mixins.scss';
-@import '../../../styles/colors.scss';
-
-.grid {
-  @include grid-responsive-cols(1, 2, 2);
-}
-
-.item {
-  display: grid;
-}
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/colors.scss';
 
 .container {
   @include container;

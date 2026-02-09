@@ -11,14 +11,14 @@ const UseCasesCTA: React.FC = () => {
     <SectionWrapper>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h2 className={styles.title}>Let’s map this to your reality</h2>
+          <h2 className={styles.title}>Not sure which use case fits your situation?</h2>
           <p className={styles.text}>
-            If you recognize your own challenges in these examples, we start with a 60–90 minute workshop: mapping your
-            current processes, identifying 2–3 high-impact AI initiatives and agreeing on how to measure success
+            We start with a focused assessment of decision contexts, constraints, and risk profiles — before proposing
+            any system or implementation.
           </p>
           <div className={styles.buttonWrapper}>
             <Button
-              title='Book an AI use case workshop'
+              title='Request a decision assessment'
               onClick={() => router.push('/contact')}
               icon={true}
               type='solid'

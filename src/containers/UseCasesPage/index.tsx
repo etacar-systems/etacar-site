@@ -3,11 +3,13 @@ import { FadeInSection } from '../../components/FadeInSection/FadeInSection';
 import styles from './UseCasesPage.module.scss';
 
 import Footer from '../../components/Footer';
-import CrossIndustrySection from './components/CrossIndustrySection';
 import Hero from './components/Hero';
 import IndustrySection from './components/IndustrySection';
 import UseCasesCTA from './components/UseCasesCTA';
-import { crossIndustryUseCases, industries } from './data';
+import { groups } from './data';
+import { CardSection } from '@/components/CardSection';
+import { SectionWrapper } from '@/components/SectionWrapper';
+import { AcrossIndustries } from './components/AcrossIndustries';
 
 const UseCasesPage: React.FC = () => {
   useEffect(() => {
@@ -19,13 +21,23 @@ const UseCasesPage: React.FC = () => {
       <FadeInSection>
         <Hero />
       </FadeInSection>
-      {industries.map((industry, index) => (
+      {groups.map((group, index) => (
         <FadeInSection key={index}>
-          <IndustrySection {...industry} isEven={index % 2 === 0} index={index} />
+          <IndustrySection {...group} />
         </FadeInSection>
       ))}
       <FadeInSection>
-        <CrossIndustrySection useCases={crossIndustryUseCases} sectionId='cross-industry' />
+        <AcrossIndustries />
+      </FadeInSection>
+      <FadeInSection>
+        <SectionWrapper>
+          <CardSection
+            text={
+              'EtaCar supports these decision scenarios through structured decision-support systems designed for professional environments — emphasizing clarity, control, and accountability over automation.'
+            }
+            title={'How these use cases are addressed'}
+          />
+        </SectionWrapper>
       </FadeInSection>
       <FadeInSection>
         <UseCasesCTA />

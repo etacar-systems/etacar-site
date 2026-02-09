@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { RiTeamFill } from "react-icons/ri";
+import { RiTeamFill } from 'react-icons/ri';
 import { FaBrain } from 'react-icons/fa';
-import { IoBusiness } from "react-icons/io5";
+import { IoBusiness } from 'react-icons/io5';
 
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import { Card } from '@/components/Card';
