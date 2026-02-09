@@ -5,7 +5,7 @@ import styles from './Card.module.scss';
 
 type Props = PropsWithChildren & {
   background?: string;
-  itemRef: UseResizeDetectorReturn<HTMLDivElement>['ref'] | undefined;
+  itemRef?: UseResizeDetectorReturn<HTMLDivElement>['ref'];
   title?: ReactNode;
   content?: ReactNode;
 };
