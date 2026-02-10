@@ -29,9 +29,7 @@ export const AIDecisions: React.FC = () => {
       }
       text={
         <>
-          This service focuses on decisions that have financial, operational, or regulatory consequences — where errors
-          matter and accountability is required. We use AI to keep decisions <strong>explicit and reviewable</strong>, ensuring they
-          stay <strong>connected to action</strong> as conditions change.
+          This service supports high-consequence decisions, keeping them <strong>explicit, reviewable, and connected</strong> as conditions change.
         </>
       }
       content={

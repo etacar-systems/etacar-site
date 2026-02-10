@@ -16,9 +16,8 @@ export const cards: Array<Card> = [
     ),
     content: (
       <>
-        High-stakes roles operate under <strong>pressure and uncertainty</strong>.<br />
-        We provide <strong>structured decision support</strong> aligned to role responsibility, making assumptions{' '}
-        <strong>explicit</strong> and outputs <strong>auditable and explainable</strong>.
+        <strong>High-stakes roles</strong> operate under pressure and uncertainty.<br />
+        We provide <strong>structured decision support</strong> with explicit, auditable outputs.
       </>
     ),
   },
@@ -32,8 +31,7 @@ export const cards: Array<Card> = [
     content: (
       <>
         Failures occur when <strong>uncertainty is ignored</strong>.<br />
-        We model <strong>scenarios and trade-offs</strong>, defining clear <strong>risk boundaries</strong> so decisions
-        degrade safely as conditions change.
+        We model <strong>scenarios and trade-offs</strong> with clear <strong>risk boundaries</strong> for safe decision degradation.
       </>
     ),
   },
@@ -47,8 +45,7 @@ export const cards: Array<Card> = [
     content: (
       <>
         Knowledge loses value when <strong>detached from decisions</strong>.<br />
-        We build <strong>decision-aware systems</strong> that retain assumptions and constraints, keeping future
-        decisions <strong>consistent and grounded</strong>.
+        We build <strong>decision-aware systems</strong> that preserve assumptions and constraints for consistent decisions.
       </>
     ),
   },

@@ -37,9 +37,8 @@ export const Capabilities = () => {
           }
           text={
             <>
-              Governance, risk, and assurance are built into every service we deliver. We ensure that AI-enabled
-              decisions remain auditable, reviewable, and aligned with organizational and regulatory requirements over
-              time.
+            <strong>Governance, risk, and assurance</strong> are built into every service we deliver.
+            We ensure that <strong>AI-enabled decisions</strong> remain auditable, reviewable, and aligned with organizational and regulatory requirements over time.
             </>
           }
         />

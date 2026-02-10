@@ -28,9 +28,7 @@ export const AIStrategy: React.FC = () => {
       }
       text={
         <>
-          We define <strong>how decisions are made</strong>, not just what systems are built — making{' '}
-          <strong>assumptions explicit</strong>, managing <strong>uncertainty</strong>, and ensuring{' '}
-          <strong>long-term control</strong>.
+          We define <strong>how decisions are made</strong>, not just systems — making <strong>assumptions explicit</strong>, managing <strong>uncertainty</strong>, and ensuring <strong>long-term control</strong>.
         </>
       }
     />
