@@ -11,10 +11,9 @@ const UseCasesCTA: React.FC = () => {
     <SectionWrapper>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h2 className={styles.title}>Not sure which use case fits your situation?</h2>
+          <h2 className={styles.title}>Not sure which use case fits?</h2>
           <p className={styles.text}>
-            We start with a focused assessment of decision contexts, constraints, and risk profiles — before proposing
-            any system or implementation.
+            We begin with a focused assessment of decision contexts and risks before proposing any solution.
           </p>
           <div className={styles.buttonWrapper}>
             <Button

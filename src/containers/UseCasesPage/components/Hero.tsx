@@ -8,16 +8,14 @@ export const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Use Cases for High-Stakes Decision-Making</h1>
+        <h1 className={styles.title}>High-Stakes Decision Use Cases</h1>
 
         <h2 className={styles.subtitle}>
-          Decision scenarios where generic AI tools are insufficient and structured, review-ready decision support is
-          required.
+          Decision scenarios where generic AI tools fall short, requiring structured, review-ready support.
         </h2>
 
         <p className={styles.text}>
-          These use cases describe classes of decisions where outcomes matter — financially, operationally, or
-          regulatorily — and accountability cannot be delegated to black-box systems.
+          In all cases below, human accountability remains central.
         </p>
         <div className={styles.quickFacts}>
           {groups.map((group, idx) => (

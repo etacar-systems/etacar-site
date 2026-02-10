@@ -10,7 +10,7 @@ export const AcrossIndustries = () => {
         <h2 className={styles.title}>{'Applicable across industries'}</h2>
         <div className={styles.subtitle}>
           {
-            'These decision scenarios appear across different sectors whenever complexity, risk, and accountability converge.'
+            'These scenarios arise across sectors where complexity, risk, and accountability converge.'
           }
         </div>
       </div>

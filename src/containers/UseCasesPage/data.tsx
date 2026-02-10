@@ -1,37 +1,37 @@
-import { 
-  FaChartLine, 
-  FaShieldHalved, 
+import {
+  FaChartLine,
+  FaShieldHalved,
 } from "react-icons/fa6";
 import { RiTeamFill } from 'react-icons/ri';
 import { GrSystem } from "react-icons/gr";
 
 export const groups = [
   {
-    title: 'Operational Decisions Under Uncertainty',
+    title: 'Operational Decisions in Uncertainty',
     sectionId: 'operational_decisions_under_uncertainty',
     icon: FaChartLine,
     description:
-      'Decisions made under time pressure, incomplete information, and changing conditions, where consistency and clarity are critical.',
+      'Decisions made under time pressure and incomplete information, where clarity is critical.',
     options: [
       {
         title: 'Decision Support for Complex Operations',
         text: 'Operational decisions under uncertainty, time pressure, and real consequences.',
         whenMatters: ['Information is incomplete', 'Decisions must be consistent', 'Outcomes must be explainable'],
         howAddressed:
-          'Structured decision support with explicit assumptions and review-ready outputs. Human judgment remains central.',
+          'Structured support for in-the-moment decisions, with explicit assumptions and review-ready outputs.',
         outcomes: ['Consistency', 'Reduced risk', 'Clear decision rationale'],
         environments: 'Industrial · Cloud & Telecom · Enterprise · Regulated operations',
       },
       {
         title: 'Scenario-Based Operational Planning',
-        text: 'Planning operational actions across multiple possible future conditions with uncertainty about demand, constraints, and external factors.',
+        text: 'Planning operational actions across uncertain future scenarios.',
         whenMatters: [
           'Multiple scenarios must be considered',
           'Trade-offs are unclear or conflicting',
           'Plans need to adapt as conditions change',
         ],
         howAddressed:
-          'Structured scenario analysis with explicit assumptions and comparable, review-ready outputs. Human judgment remains central.',
+          'Structured scenario analysis across possible futures, with explicit assumptions and review-ready outputs.',
         outcomes: ['Clear trade-offs', 'Better preparedness', 'More robust plans'],
         environments:
           'Operations & supply chain · Infrastructure planning · Enterprise platforms · Regulated environments',
@@ -46,14 +46,14 @@ export const groups = [
     options: [
       {
         title: 'Risk-Aware Decision-Making in Regulated Environments',
-        text: 'Decisions made in environments where regulatory requirements, risk exposure, and accountability directly constrain available actions.',
+        text: 'Decisions made under regulatory, risk, and accountability constraints.',
         whenMatters: [
           'Regulatory or compliance impact is unavoidable',
           'Decisions must be auditable and defensible',
           'Risk boundaries cannot be violated',
         ],
         howAddressed:
-          'Structured decision support that incorporates risk constraints, makes assumptions explicit, and produces review-ready outputs. Human accountability is preserved.',
+          'Structured decision support with risk constraints and explicit assumptions, producing review-ready outputs.',
         outcomes: ['Controlled risk exposure', 'Defensible decisions', 'Clear audit trail'],
         environments:
           'Regulated finance · Healthcare & life sciences · Infrastructure & utilities · Compliance-driven operations',
@@ -67,7 +67,7 @@ export const groups = [
           'Past decisions must be reconstructed and examined',
         ],
         howAddressed:
-          'Structured decision support that records assumptions, context, and reasoning in a form suitable for professional review. Human ownership is explicit.',
+          'Structured decision support that records assumptions and context for professional review. Ownership is explicit.',
         outcomes: ['Clear decision lineage', 'Preserved accountability', 'Audit-ready records'],
         environments:
           'Regulated finance · Healthcare & life sciences · Public and enterprise governance · Compliance-driven operations',
@@ -75,7 +75,7 @@ export const groups = [
     ],
   },
   {
-    title: 'Complex Multi-Stakeholder Decisions',
+    title: 'Multi-Stakeholder Decisions',
     sectionId: 'complex_multi_stakeholder_decisions',
     icon: RiTeamFill,
     description: 'Decisions involving multiple teams, conflicting objectives, and unclear ownership.',
@@ -89,7 +89,7 @@ export const groups = [
           'Accountability is unclear or contested',
         ],
         howAddressed:
-          'Structured decision support that clarifies assumptions, constraints, and trade-offs across stakeholders. Human responsibility remains explicit.',
+          'Structured decision support with risk constraints and explicit assumptions, producing review-ready outputs.',
         outcomes: ['Shared decision context', 'Reduced friction', 'Clear ownership'],
         environments:
           'Large enterprise programs · Cross-functional operations · Regulated organizations · Complex governance settings',
@@ -103,7 +103,7 @@ export const groups = [
           'Responsibility is fragmented across teams',
         ],
         howAddressed:
-          'Structured decision support that defines roles, constraints, and decision boundaries across functions. Human accountability is clearly assigned.',
+          'Structured decision support that records assumptions and context for professional review. Ownership is explicit.',
         outcomes: ['Consistent governance', 'Clear decision authority', 'Reduced coordination risk'],
         environments:
           'Enterprise organizations · Regulated operations · Complex program governance · Multi-domain systems',
@@ -115,7 +115,7 @@ export const groups = [
     sectionId: 'advanced_mature_decision_systems',
     icon: GrSystem,
     description:
-      'For organizations that already operate complex systems and require a higher level of decision structure and control.',
+      'For organizations operating complex systems that require greater decision structure and control.',
     options: [
       {
         title: 'Structured Reasoning for Complex Problem Solving',
@@ -126,20 +126,20 @@ export const groups = [
           'Reasoning needs to be revisited over time',
         ],
         howAddressed:
-          'Structured reasoning that decomposes problems, makes assumptions explicit, and produces review-ready outputs. Human judgment guides conclusions.',
+          'Structured reasoning that decomposes complex problems and produces review-ready outputs.',
         outcomes: ['Clear problem structure', 'Defensible conclusions', 'Reduced cognitive overload'],
         environments: 'R&D · Strategy & planning · Complex engineering · High-uncertainty decision contexts',
       },
       {
         title: 'Long-Context Analysis and Review-Ready Outputs',
-        text: 'Decisions and analyses that require working with large volumes of information, extended context, and interconnected inputs over time.',
+        text: 'Decisions and analyses involving large volumes of interconnected information over time.',
         whenMatters: [
           'Context cannot be reduced to short summaries',
           'Information spans documents, systems, or time periods',
           'Outputs must remain reviewable and reusable',
         ],
         howAddressed:
-          'Structured analysis that preserves long context, makes assumptions explicit, and produces outputs suitable for professional review. Human oversight remains central.',
+          'Structured analysis that preserves long context and produces outputs for professional review.',
         outcomes: ['Preserved context', 'Clear analytical lineage', 'Reusable, review-ready outputs'],
         environments: 'Enterprise analysis · R&D · Compliance & audit · Complex knowledge domains',
       },

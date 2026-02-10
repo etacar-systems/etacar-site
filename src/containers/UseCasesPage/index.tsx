@@ -33,7 +33,7 @@ const UseCasesPage: React.FC = () => {
         <SectionWrapper>
           <CardSection
             text={
-              'EtaCar supports these decision scenarios through structured decision-support systems designed for professional environments — emphasizing clarity, control, and accountability over automation.'
+              'EtaCar Systems supports these decisions with structured systems focused on clarity, control, and accountability.'
             }
             title={'How these use cases are addressed'}
           />
