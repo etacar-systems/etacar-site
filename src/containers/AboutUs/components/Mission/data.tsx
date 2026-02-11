@@ -1,4 +1,9 @@
-export const description = `We believe in <strong>teamwork and partnership</strong> as the foundation of shared success. Our goal is to deliver <strong>stable, functional products</strong> built end-to-end on these principles:`;
+export const description = (
+  <>
+    We believe in <strong>teamwork and partnership</strong> as the foundation of shared success. Our goal is to deliver{' '}
+    <strong>stable, functional products</strong> built end-to-end on these principles:
+  </>
+);
 
 export const principles = [
   'Customer is number one',
