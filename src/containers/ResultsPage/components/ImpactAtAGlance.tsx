@@ -8,23 +8,23 @@ export const ImpactAtAGlance: React.FC = () => {
   const metrics = [
     {
       value: '20–40%',
-      text: 'Faster end‑to‑end execution for selected operational processes',
+      text: '<strong>Faster execution</strong> of operational processes',
     },
     {
       value: '30–50%',
-      text: 'Less manual effort for recurring analysis and reporting',
+      text: '<strong>Less manual effort</strong> in recurring analysis and reporting',
     },
     {
       value: '30–50%',
-      text: 'Shorter time‑to‑delivery for selected development tasks',
+      text: '<strong>Shorter delivery cycles</strong> for development tasks',
     },
     {
       value: '50–70%',
-      text: 'Less time spent searching and reading internal documents for recurring questions',
+      text: '<strong>Less time searching</strong> internal knowledge',
     },
     {
       value: 'Fewer',
-      text: 'Escalations and errors, thanks to more consistent use of existing knowledge and playbooks',
+      text: '<strong>Escalations and errors</strong> through consistent knowledge use',
     },
   ];
 
@@ -33,7 +33,7 @@ export const ImpactAtAGlance: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>Impact at a glance</h2>
-          <p className={styles.description}>Across recent projects, our AI solutions have delivered:</p>
+          <p className={styles.description}>Across recent projects, our AI has delivered:</p>
         </div>
 
         <div className={styles.grid}>
@@ -44,8 +44,7 @@ export const ImpactAtAGlance: React.FC = () => {
 
         <div className={styles.closing}>
           <p>
-            These numbers are not “theoretical potential” - they are measured before/after deltas on real processes.
-            Exact values differ by client and domain.
+            These are <strong>measured deltas</strong>, not theoretical potential. Values vary by <strong>client and domain</strong>.
           </p>
         </div>
       </div>

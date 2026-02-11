@@ -14,12 +14,12 @@ const items = [
   },
   {
     icon: BsClipboard2DataFill,
-    label: 'What we measure and how',
+    label: 'What we measure',
     sectionId: 'measure',
   },
   {
     icon: FaCloud,
-    label: 'Fits your data, systems & risk',
+    label: 'Fits your data & risk',
     sectionId: 'within-data',
   },
 ];
@@ -29,19 +29,16 @@ export const HeroSection: React.FC = (): ReactElement => {
     <section className={styles.hero}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1 className={styles.title}><strong>Real, measurable business impact</strong> from AI in production.</h1>
+          <h1 className={styles.title}><strong>Measurable business impact</strong> from AI in production.</h1>
 
           <p className={styles.subtitle}>
-            Measured gains in speed, <strong>quality</strong>, and risk control — tied to outcomes you can govern.
+            Measured gains in <strong>speed</strong>, <strong>quality</strong>, and <strong>risk control</strong> — tied to governed outcomes.
           </p>
 
           <div className={styles.intro}>
           <p>
-            <strong>3–5 KPIs.</strong> Defined upfront. Measured in production.
+            <strong>3–5 KPIs</strong>. Defined upfront. Measured in production.
           </p>
-            <p style={{ marginTop: '1rem' }}>
-              <strong>Success is explicit.</strong> Not assumed.
-            </p>
           </div>
           <div className={styles.quickFacts}>
             {items.map((item, idx) => (

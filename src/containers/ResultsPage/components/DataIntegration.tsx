@@ -5,19 +5,19 @@ import styles from './DataIntegration.module.scss';
 
 export const DataIntegration: React.FC = () => {
   const items = [
-    'Integrate with your existing systems and data sources instead of building separate “shadow tools”',
-    'Align with your risk, security and compliance teams from day one',
-    'Make sure every AI‑supported decision is traceable back to data and documents',
-    'Provide you with a clear view of how the system behaves and how it is monitored',
+    'Integrate with your systems and data — not <strong>“shadow tools”</strong>',
+    'Align with <strong>risk, security, and compliance</strong> from day one',
+    'Ensure every AI-supported decision is <strong>traceable</strong> to data and documents',
+    'Provide clear <strong>visibility</strong> into system behavior and monitoring',
   ];
 
   return (
     <section className={styles.section} id='within-data'>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h2 className={styles.title}>Working with your data, systems and risk constraints</h2>
+          <h2 className={styles.title}>Working within your <strong>data, systems, and risk constraints</strong></h2>
 
-          <p className={styles.description}>We don’t operate AI in isolation. For every engagement we:</p>
+          <p className={styles.description}>We don’t operate AI in isolation. In every engagement we:</p>
 
           <ul className={styles.list}>
             {items.map((item, index) => (
@@ -29,7 +29,7 @@ export const DataIntegration: React.FC = () => {
 
           <Card
             content={
-              ' This is what allows us - and you - to stand behind the KPIs and the decisions your AI systems help to make.'
+              'This is how we stand behind the <strong>KPIs</strong> — and the decisions AI supports.'
             }
           />
         </div>
