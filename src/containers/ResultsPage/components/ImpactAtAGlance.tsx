@@ -1,30 +1,50 @@
 import React from 'react';
-import { FadeCard } from '../../../components/FadeCard';
+
 import { SectionWrapper } from '../../../components/SectionWrapper';
-import styles from './ImpactAtAGlance.module.scss';
 import { Card } from '@/components/Card';
+import styles from './ImpactAtAGlance.module.scss';
 
 export const ImpactAtAGlance: React.FC = () => {
   const metrics = [
     {
       value: '20–40%',
-      text: '<strong>Faster execution</strong> of operational processes',
+      text: (
+        <>
+          <strong>Faster execution</strong> of operational processes
+        </>
+      ),
     },
     {
       value: '30–50%',
-      text: '<strong>Less manual effort</strong> in recurring analysis and reporting',
+      text: (
+        <>
+          <strong>Less manual effort</strong> in recurring analysis and reporting
+        </>
+      ),
     },
     {
       value: '30–50%',
-      text: '<strong>Shorter delivery cycles</strong> for development tasks',
+      text: (
+        <>
+          <strong>Shorter delivery cycles</strong> for development tasks
+        </>
+      ),
     },
     {
       value: '50–70%',
-      text: '<strong>Less time searching</strong> internal knowledge',
+      text: (
+        <>
+          <strong>Less time searching</strong> internal knowledge
+        </>
+      ),
     },
     {
       value: 'Fewer',
-      text: '<strong>Escalations and errors</strong> through consistent knowledge use',
+      text: (
+        <>
+          <strong>Escalations and errors</strong> through consistent knowledge use
+        </>
+      ),
     },
   ];
 
@@ -44,7 +64,8 @@ export const ImpactAtAGlance: React.FC = () => {
 
         <div className={styles.closing}>
           <p>
-            These are <strong>measured deltas</strong>, not theoretical potential. Values vary by <strong>client and domain</strong>.
+            These are <strong>measured deltas</strong>, not theoretical potential. Values vary by{' '}
+            <strong>client and domain</strong>.
           </p>
         </div>
       </div>
