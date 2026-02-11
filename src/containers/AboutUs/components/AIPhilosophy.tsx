@@ -16,7 +16,7 @@ const AIPhilosophy: React.FC = () => {
       title: 'Integration',
       description: (
         <>
-          Fits into <strong>existing systems and workflows</strong> without unnecessary disruption.
+          Fit into <strong>existing systems and workflows</strong> without disruption.
         </>
       ),
       icon: MdIntegrationInstructions,
@@ -25,7 +25,7 @@ const AIPhilosophy: React.FC = () => {
       title: 'Risk & Compliance',
       description: (
         <>
-          Designed to meet <strong>regulatory, security, and audit</strong> requirements from day one.
+          Meet <strong>regulatory, security, and audit</strong> requirements from day one.
         </>
       ),
       icon: IoShieldCheckmark,
@@ -34,7 +34,7 @@ const AIPhilosophy: React.FC = () => {
       title: 'Human-centered',
       description: (
         <>
-          Supports <strong>human decision-making</strong> with explainable, trustworthy AI.
+          Support <strong>human decision-making</strong> with explainable, trusted AI.
         </>
       ),
       icon: IoPerson,
@@ -46,7 +46,7 @@ const AIPhilosophy: React.FC = () => {
       title: 'Workflow-first',
       description: (
         <>
-          We design around <strong>real workflows and decisions</strong>, selecting models that support clear outcomes.
+          Design around <strong>real workflows and decisions</strong> to deliver clear outcomes.
         </>
       ),
       icon: PiTreeStructureFill,
@@ -55,7 +55,7 @@ const AIPhilosophy: React.FC = () => {
       title: 'Clear Roles',
       description: (
         <>
-          We define <strong>clear responsibilities</strong> so AI, people, and systems work predictably together.
+          Define <strong>clear responsibilities</strong> so AI and people work predictably.
         </>
       ),
       icon: GrClearOption,
@@ -64,7 +64,7 @@ const AIPhilosophy: React.FC = () => {
       title: 'Measure & Govern',
       description: (
         <>
-          We set <strong>KPIs and governance</strong> early to track value and ensure accountability.
+          Set <strong>KPIs and governance</strong> early to track value and accountability.
         </>
       ),
       icon: SiGoogleanalytics,
@@ -76,11 +76,10 @@ const AIPhilosophy: React.FC = () => {
       <div className={styles.container}>
         <h2 className={styles.title}>How we think about AI in organizations</h2>
         <p className={styles.subtitle}>
-          We do <strong>not</strong> treat AI as a magic layer you can
-          sprinkle on top of everything.
+          We do <strong>not</strong> treat AI as a layer you simply add on top.
         </p>
         <div className={styles.content}>
-          <p className={styles.intro}>We see it as an additional capability inside your organization that must:</p>
+          <p className={styles.intro}>We see AI as an organizational capability that must:</p>
 
           <div className={styles.requirementsList}>
             {requirements.map((item, index) => (
@@ -88,7 +87,7 @@ const AIPhilosophy: React.FC = () => {
             ))}
           </div>
 
-          <p className={styles.intro}>That is why we:</p>
+          <p className={styles.intro}>That’s why we:</p>
 
           <div className={styles.approachesList}>
             {approaches.map((item, index) => (

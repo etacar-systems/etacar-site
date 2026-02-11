@@ -1,6 +1,4 @@
-export const description = `We believe that teamwork and partnership are key to our joint success. 
-  Our passion is to deliver stable and functional products. 
-  We build viable and competitive products from A to Z using the following principles:`;
+export const description = `We believe in <strong>teamwork and partnership</strong> as the foundation of shared success. Our goal is to deliver <strong>stable, functional products</strong> built end-to-end on these principles:`;
 
 export const principles = [
   'Customer is number one',

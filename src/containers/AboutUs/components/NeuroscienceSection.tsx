@@ -14,7 +14,7 @@ const NeuroscienceSection: React.FC = () => {
       title: 'Neuroscience Roots',
       description: (
         <>
-          Our team includes <strong>professional neuroscientists</strong> studying how complex systems learn and fail.
+          Our team includes <strong>neuroscientists</strong> studying how systems fail.
         </>
       ),
       icon: GiMaterialsScience,
@@ -23,7 +23,7 @@ const NeuroscienceSection: React.FC = () => {
       title: 'Why It Matters',
       description: (
         <>
-          We design AI around <strong>human decision-making</strong>, trust, and real-world cognitive limits.
+          We design AI for <strong>human decision-making</strong>, trust, and cognitive limits.
         </>
       ),
       icon: FaStar,
@@ -32,7 +32,7 @@ const NeuroscienceSection: React.FC = () => {
       title: 'Our Approach',
       description: (
         <>
-          We focus on adoption — not just models, but <strong>AI that teams actually use</strong>.
+          We prioritize adoption — <strong>AI teams actually use</strong>, not just models.
         </>
       ),
       icon: FaCheckCircle,
@@ -42,10 +42,10 @@ const NeuroscienceSection: React.FC = () => {
   return (
     <SectionWrapper className={styles.neuroscienceSection} >
       <div className={styles.content}>
-        <h2 className={styles.title}>Neuroscience and AI - why it matters</h2>
+        <h2 className={styles.title}>Neuroscience & AI — why it matters</h2>
 
         <p className={styles.subtext}>
-          Understanding how complex systems learn, adapt and interact with human behavior.
+          Understanding how <strong>complex systems learn</strong> — and how people <strong>decide under constraints</strong>.
         </p>
 
         <div className={styles.grid}>

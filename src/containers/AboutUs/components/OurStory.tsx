@@ -11,7 +11,7 @@ export const OurStory: React.FC = () => {
       title: 'Our Roots',
       description: (
         <>
-          We’ve been working with AI since the <strong>early 2000s</strong>, long before it became mainstream.
+          We worked with AI before it was mainstream, building systems where <strong>reliability</strong> outweighed trends.
         </>
       ),
     },
@@ -19,7 +19,7 @@ export const OurStory: React.FC = () => {
       title: 'Early Experience',
       description: (
         <>
-          We began on <strong>enterprise AI platforms</strong>, building large-scale search and decision systems.
+          We built large-scale search and decision systems for <strong>mission-critical operations</strong>.
         </>
       ),
     },
@@ -27,7 +27,7 @@ export const OurStory: React.FC = () => {
       title: 'Building Systems',
       description: (
         <>
-          We design and run <strong>AI systems in production</strong> across real business environments.
+          We shifted from AI features to <strong>structuring real decisions</strong>.
         </>
       ),
     },
@@ -35,15 +35,15 @@ export const OurStory: React.FC = () => {
       title: 'Modern AI Expertise',
       description: (
         <>
-          Today, we focus on <strong>production AI</strong>, not experiments or prototypes.
+          We design systems for environments shaped by <strong>uncertainty</strong> and evolving constraints.
         </>
       ),
     },
     {
-      title: 'Neuroscience & Human Factors',
+      title: 'Human Decision Science',
       description: (
         <>
-          Our work is informed by <strong>neuroscience</strong> and how people actually make decisions.
+          Our approach keeps <strong>human accountability</strong> central and decisions defensible.
         </>
       ),
     },
@@ -51,7 +51,7 @@ export const OurStory: React.FC = () => {
       title: 'Your AI Partner',
       description: (
         <>
-          We embed AI into <strong>core workflows</strong> to deliver real, measurable value.
+          We build systems that evolve with organizations, ensuring <strong>consistent decisions</strong> over time.
         </>
       ),
     },
@@ -63,9 +63,7 @@ export const OurStory: React.FC = () => {
         <h2 className={styles.title}>Our story</h2>
 
         <p className={styles.subtext}>
-          We started in the <strong>early 2000s</strong> with hands-on work on <strong>enterprise AI platforms</strong>.
-          That experience shaped our approach to AI today — production systems with clear ownership, measurable KPIs,
-          and strong governance, rooted in <strong>neuroscience and complex systems</strong>.
+          Since the early 2000s, we’ve built <strong>enterprise AI platforms</strong>. Today, we focus on <strong>production systems</strong> with <strong>clear ownership</strong> and <strong>governance</strong>.
         </p>
 
         <div className={styles.grid}>
