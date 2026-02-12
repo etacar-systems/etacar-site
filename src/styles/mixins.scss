@@ -48,16 +48,6 @@
 @mixin section-padding {
   padding-top: var(--space-16);
   padding-bottom: var(--space-16);
-
-  @include respond-above(md) {
-    padding-top: var(--space-20);
-    padding-bottom: var(--space-20);
-  }
-
-  @include respond-above(lg) {
-    padding-top: var(--space-24);
-    padding-bottom: var(--space-24);
-  }
 }
 
 @mixin card-base {

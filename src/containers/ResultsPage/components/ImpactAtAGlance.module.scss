@@ -21,13 +21,16 @@
 .title {
   @include heading-lg;
   @include gradient-primary-to-light;
+  font-size: var(--text-6xl);
   margin-bottom: var(--space-6);
-  color: var(--color-neutral-900);
 }
 
 .description {
   @include body-lg;
   color: $color--light;
+  margin-bottom: var(--space-16);
+  line-height: var(--leading-relaxed);
+  font-size: var(--text-2xl);
 }
 
 .grid {

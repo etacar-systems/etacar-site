@@ -12,7 +12,6 @@
 }
 
 .content {
-  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
@@ -20,14 +19,21 @@
 .title {
   @include heading-lg;
   @include gradient-primary-to-light;
+  font-size: var(--text-6xl);
   margin-bottom: var(--space-6);
-  color: var(--color-neutral-900);
 }
 
 .description {
   @include body-lg;
   color: $color--light;
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-16);
+  line-height: var(--leading-relaxed);
+  font-size: var(--text-2xl);
+}
+
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .list {

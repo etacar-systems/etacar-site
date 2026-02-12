@@ -24,24 +24,25 @@ export const DataIntegration: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <h2 className={styles.title}>Working within your data, systems, and risk constraints</h2>
-
           <p className={styles.description}>We don’t operate AI in isolation. In every engagement we:</p>
 
-          <ul className={styles.list}>
-            {items.map((item, index) => (
-              <li key={index} className={styles.item}>
-                <span className={styles.itemText}>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <div className={styles.inner}>
+            <ul className={styles.list}>
+              {items.map((item, index) => (
+                <li key={index} className={styles.item}>
+                  <span className={styles.itemText}>{item}</span>
+                </li>
+              ))}
+            </ul>
 
-          <Card
-            content={
-              <>
-                This is how we stand behind the <strong>KPIs</strong> — and the decisions AI supports.
-              </>
-            }
-          />
+            <Card
+              content={
+                <>
+                  This is how we stand behind the <strong>KPIs</strong> — and the decisions AI supports.
+                </>
+              }
+            />
+          </div>
         </div>
       </div>
     </section>

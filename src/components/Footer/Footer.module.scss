@@ -31,7 +31,8 @@
   text-align: left;
   & a,
   & a:visited {
-    color: $color--lightblue;
+    color: var(--color-light);
+    padding-right: var(--space-1);
     text-decoration: none;
   }
 }
@@ -44,7 +45,7 @@
   cursor: pointer;
   transition: all 0.2s;
   &:hover {
-    border-bottom: 1px solid $color--lightblue;
+    border-bottom: 1px solid var(--color-light);
   }
 }
 

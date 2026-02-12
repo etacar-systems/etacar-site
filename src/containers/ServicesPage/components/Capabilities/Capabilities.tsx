@@ -1,7 +1,7 @@
 import { SectionWrapper } from '@/components/SectionWrapper';
-import ServiceDetail from '../ServiceDetail';
 import { Divider } from '@/components/Divider';
 import { List } from '@/components/List';
+import { CardSection } from '@/components/CardSection';
 import styles from './Capabilities.module.scss';
 
 const options = [
@@ -21,8 +21,7 @@ export const Capabilities = () => {
           </p>
         </div>
 
-        <ServiceDetail
-          id={'governance_risk_assurance'}
+        <CardSection
           title={'Governance, Risk & Assurance'}
           subtitle={
             <>
@@ -37,8 +36,9 @@ export const Capabilities = () => {
           }
           text={
             <>
-            <strong>Governance, risk, and assurance</strong> are built into every service we deliver.
-            We ensure that <strong>AI-enabled decisions</strong> remain auditable, reviewable, and aligned with organizational and regulatory requirements over time.
+              <strong>Governance, risk, and assurance</strong> are built into every service we deliver. We ensure that{' '}
+              <strong>AI-enabled decisions</strong> remain auditable, reviewable, and aligned with organizational and
+              regulatory requirements over time.
             </>
           }
         />

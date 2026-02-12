@@ -32,6 +32,10 @@
   margin: 0 auto;
   text-align: center;
 
+  strong {
+    color: var(--color-light);
+  }
+
   @include fade-in;
 }
 

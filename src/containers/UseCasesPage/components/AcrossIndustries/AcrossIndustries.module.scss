@@ -15,9 +15,14 @@
   }
 }
 
+.list {
+  @include grid-responsive-cols(1, 2, 2);
+  gap: var(--space-3);
+}
+
 .title {
   @include heading-xl;
-  @include gradient-primary-to-light;
+  color: var(--color-light);
   margin-bottom: var(--space-6);
 
   @include desktop {

@@ -2,9 +2,8 @@ import React from 'react';
 
 import { FaBrain } from 'react-icons/fa';
 import { FaGear } from 'react-icons/fa6';
-import { GiMaterialsScience } from "react-icons/gi";
-import { HiOutlineUserGroup } from "react-icons/hi";
-
+import { GiMaterialsScience } from 'react-icons/gi';
+import { HiOutlineUserGroup } from 'react-icons/hi';
 
 import { SectionWrapper } from '../../../components/SectionWrapper/SectionWrapper';
 import { Card } from '@/components/Card';
@@ -51,7 +50,7 @@ const BroaderTeam: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper className={styles.broaderTeamSection} >
+    <SectionWrapper className={styles.broaderTeamSection}>
       <div className={styles.container}>
         <h2 className={styles.title}>Our broader team</h2>
         <div className={styles.content}>
@@ -59,7 +58,6 @@ const BroaderTeam: React.FC = () => {
             Alongside the leadership team, a <strong>small group of senior specialists</strong> works in
             cross-functional squads.
           </p>
-
           <div className={styles.teamGrid}>
             {teamMembers.map((member, index) => (
               <Card key={index} content={member.description} icon={member.icon} title={member.title} />

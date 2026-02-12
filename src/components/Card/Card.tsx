@@ -11,10 +11,11 @@ type CardProps = {
   className?: string;
   content?: ReactNode;
   title?: string;
+  titleClassname?: string;
   sectionId?: string;
 };
 
-export const Card = ({ icon, className, content, title, sectionId }: CardProps) => {
+export const Card = ({ icon, className, content, title, titleClassname, sectionId }: CardProps) => {
   const Icon = icon;
 
   return (
@@ -25,7 +26,7 @@ export const Card = ({ icon, className, content, title, sectionId }: CardProps) 
         </div>
       )}
       <div className={styles.content}>
-        {title && <div className={styles.title}>{title}</div>}
+        {title && <div className={classNames(styles.title, titleClassname)}>{title}</div>}
         {content && <div>{content}</div>}
         {sectionId && (
           <a href={`#${sectionId}`} className={styles.link}>

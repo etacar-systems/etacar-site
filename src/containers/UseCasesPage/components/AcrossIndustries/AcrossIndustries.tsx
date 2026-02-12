@@ -9,15 +9,14 @@ export const AcrossIndustries = () => {
       <div className={styles.header}>
         <h2 className={styles.title}>{'Applicable across industries'}</h2>
         <div className={styles.subtitle}>
-          {
-            'These scenarios arise across sectors where complexity, risk, and accountability converge.'
-          }
+          {'These scenarios arise across sectors where complexity, risk, and accountability converge.'}
         </div>
       </div>
       <CardSection
         content={
           <>
             <List
+              className={styles.list}
               options={[
                 'Regulated Financial & Compliance Environments',
                 'Healthcare & Life Sciences',

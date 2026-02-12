@@ -1,8 +1,15 @@
-import Image from 'next/image';
 import Link from 'next/link';
+
+import { LiaExternalLinkAltSolid } from 'react-icons/lia';
 
 import { CONTACT, PRIVACY_POLICY, TERMS_OF_USE } from '../../routes';
 import style from './Footer.module.scss';
+import { IconBaseProps } from 'react-icons';
+
+const iconConfig: IconBaseProps = {
+  color: 'var(--color-light)',
+  size: 18,
+};
 
 export const Footer = () => {
   return (
@@ -28,9 +35,7 @@ export const Footer = () => {
                 Get in touch
               </Link>
             </div>
-            <div className={style.linkIcon}>
-              <Image className={style.linkArrow} width={24} height={24} src='/icons/linkArrow.svg' alt='link arrow' />
-            </div>
+            <LiaExternalLinkAltSolid {...iconConfig} />
           </div>
           <div className={style.linkGoogleMap}>
             <div className={style.googleMap}>
@@ -38,9 +43,7 @@ export const Footer = () => {
                 Google map
               </a>
             </div>
-            <div className={style.linkIcon}>
-              <Image className={style.linkArrow} width={24} height={24} src='/icons/linkArrow.svg' alt='link arrow' />
-            </div>
+            <LiaExternalLinkAltSolid {...iconConfig} />
           </div>
         </div>
         <div className={style.linkedIn__link}>
@@ -50,7 +53,7 @@ export const Footer = () => {
                 LinkedIn
               </a>
             </div>
-            <Image className={style.linkArrow} width={24} height={24} src='/icons/linkArrow.svg' alt='link arrow' />
+            <LiaExternalLinkAltSolid {...iconConfig} />
           </div>
         </div>
       </div>
