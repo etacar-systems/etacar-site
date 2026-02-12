@@ -3,7 +3,6 @@
 @import '../../../styles/colors.scss';
 
 .container {
-  @include container;
   position: relative;
   z-index: 1;
 }

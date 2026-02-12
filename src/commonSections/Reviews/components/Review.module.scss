@@ -4,9 +4,10 @@
 
 .container {
   padding: var(--space-3);
+  height: 100%;
 }
 .review {
-  height: 300px;
+  height: 100%;
   padding: 16px;
   background: var(--gradient-card) !important;
   box-shadow: none !important;

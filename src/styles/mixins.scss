@@ -379,27 +379,16 @@
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
 
-  @include respond-above(md) {
-    font-size: var(--text-5xl);
-  }
-
-  @include respond-above(lg) {
+  @include desktop {
     font-size: var(--text-6xl);
   }
 }
 
 @mixin heading-lg {
-  font-size: var(--text-3xl);
+  font-size: var(--text-6xl);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
-
-  @include respond-above(md) {
-    font-size: var(--text-4xl);
-  }
-
-  @include respond-above(lg) {
-    font-size: var(--text-5xl);
-  }
+  margin-bottom: var(--space-6);
 }
 
 @mixin heading-md {

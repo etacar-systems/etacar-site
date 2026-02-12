@@ -36,9 +36,7 @@
 .title {
   @include heading-lg;
   @include gradient-primary-to-light;
-  margin-bottom: var(--space-6);
   text-align: center;
-  font-size: var(--text-6xl);
 }
 
 .text {

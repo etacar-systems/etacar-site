@@ -9,6 +9,8 @@
 
 .container {
   @include container;
+  padding-left: 0;
+  padding-right: 0;
   max-width: 800px;
   padding-bottom: var(--space-12);
 }
@@ -22,8 +24,6 @@
 .formTitle {
   @include heading-lg;
   @include gradient-primary-to-light;
-  font-size: var(--text-6xl);
-  margin-bottom: var(--space-6);
 }
 
 .formSubtitle {

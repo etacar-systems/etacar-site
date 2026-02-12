@@ -19,8 +19,6 @@
 .title {
   @include heading-lg;
   @include gradient-primary-to-light;
-  font-size: var(--text-6xl);
-  margin-bottom: var(--space-6);
 }
 
 .description {

@@ -11,11 +11,12 @@
   box-shadow: var(--shadow-md);
   border: 1px solid var(--color-neutral-200);
   color: $color--light !important;
-  font-size: var(--text-lg)
+  font-size: var(--text-lg);
 }
 
 .title {
-  @include heading-lg;
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
   font-size: 34px;
   border-start-start-radius: var(--radius-xl);
   border-start-end-radius: var(--radius-xl);

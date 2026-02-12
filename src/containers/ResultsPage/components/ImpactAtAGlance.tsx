@@ -50,24 +50,22 @@ export const ImpactAtAGlance: React.FC = () => {
 
   return (
     <SectionWrapper>
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <h2 className={styles.title}>Impact at a glance</h2>
-          <p className={styles.description}>Across recent projects, our AI has delivered:</p>
-        </div>
+      <div className={styles.header}>
+        <h2 className={styles.title}>Impact at a glance</h2>
+        <p className={styles.description}>Across recent projects, our AI has delivered:</p>
+      </div>
 
-        <div className={styles.grid}>
-          {metrics.map((metric, index) => (
-            <Card key={index} title={metric.value} content={metric.text} />
-          ))}
-        </div>
+      <div className={styles.grid}>
+        {metrics.map((metric, index) => (
+          <Card key={index} title={metric.value} content={metric.text} />
+        ))}
+      </div>
 
-        <div className={styles.closing}>
-          <p>
-            These are <strong>measured deltas</strong>, not theoretical potential. Values vary by{' '}
-            <strong>client and domain</strong>.
-          </p>
-        </div>
+      <div className={styles.closing}>
+        <p>
+          These are <strong>measured deltas</strong>, not theoretical potential. Values vary by{' '}
+          <strong>client and domain</strong>.
+        </p>
       </div>
     </SectionWrapper>
   );

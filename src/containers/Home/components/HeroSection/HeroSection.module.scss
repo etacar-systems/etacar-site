@@ -22,7 +22,6 @@
 }
 
 .container {
-  @include container;
   position: relative;
   z-index: 1;
 }
@@ -40,10 +39,6 @@
   @include gradient-primary-to-light;
   margin: 0;
   margin-bottom: var(--space-6);
-
-  @include desktop {
-    font-size: var(--text-6xl);
-  }
 }
 
 .subtitle {
@@ -100,14 +95,13 @@
 
 .fact {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--space-3);
   text-align: left;
 
   @include respond-above(md) {
     flex-direction: column;
     text-align: center;
-    align-items: center;
   }
 
   span {

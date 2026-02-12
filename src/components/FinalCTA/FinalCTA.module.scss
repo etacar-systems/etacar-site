@@ -2,11 +2,6 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/colors.scss';
 
-.wrapper {
-  padding: 0 var(--space-4);
-  // background: var(--color-neutral-50);
-}
-
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -43,6 +38,6 @@
     align-items: flex-start;
   }
   .buttonBlock {
-    width: 100%;
+    margin: 0 auto;
   }
 }

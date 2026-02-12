@@ -19,12 +19,10 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({
   const router = useRouter();
 
   return (
-    <div className={style.wrapper}>
-      <div className={style.container}>
-        <p className={style.text}>{text}</p>
-        <div className={style.buttonBlock}>
-          <Button title={buttonLabel} onClick={() => router.push(to)} icon={true} type='solid' />
-        </div>
+    <div className={style.container}>
+      <p className={style.text}>{text}</p>
+      <div className={style.buttonBlock}>
+        <Button title={buttonLabel} onClick={() => router.push(to)} icon={true} type='solid' />
       </div>
     </div>
   );
