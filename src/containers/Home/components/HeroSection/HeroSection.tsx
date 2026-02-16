@@ -48,7 +48,7 @@ export const HeroSection: React.FC = () => {
                 <FaGear {...IconConfig} />
               </div>
               <span>
-                <strong>From strategy to production</strong> — architecture, implementation, governance
+                <strong>From strategy to production</strong> — architecture and governance
               </span>
             </FadeCard>
 

@@ -15,7 +15,7 @@ export const groups = [
     options: [
       {
         title: 'Decision Support for Complex Operations',
-        text: 'Operational decisions under uncertainty, time pressure, and real consequences.',
+        text: 'Operational decisions under uncertainty with real impact.',
         whenMatters: ['Information is incomplete', 'Decisions must be consistent', 'Outcomes must be explainable'],
         howAddressed:
           'Structured support for in-the-moment decisions, with explicit assumptions and review-ready outputs.',

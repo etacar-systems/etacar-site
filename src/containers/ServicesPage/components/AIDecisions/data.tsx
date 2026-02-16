@@ -6,6 +6,7 @@ type Card = {
   content: ReactNode;
 };
 
+
 export const cards: Array<Card> = [
   {
     title: 'AI for Decision Support in Critical Roles',
@@ -16,8 +17,8 @@ export const cards: Array<Card> = [
     ),
     content: (
       <>
-        <strong>High-stakes roles</strong> operate under pressure and uncertainty.<br />
-        We provide <strong>structured decision support</strong> with explicit, auditable outputs.
+        <strong>High-stakes roles</strong> operate under pressure.<br />
+        We deliver <strong>structured, auditable support</strong>.
       </>
     ),
   },
@@ -30,8 +31,8 @@ export const cards: Array<Card> = [
     ),
     content: (
       <>
-        Failures occur when <strong>uncertainty is ignored</strong>.<br />
-        We model <strong>scenarios and trade-offs</strong> with clear <strong>risk boundaries</strong> for safe decision degradation.
+        <strong>Ignored uncertainty</strong> drives failure.<br />
+        We model <strong>scenarios and risk boundaries</strong> for safe decisions.
       </>
     ),
   },
@@ -45,7 +46,7 @@ export const cards: Array<Card> = [
     content: (
       <>
         Knowledge loses value when <strong>detached from decisions</strong>.<br />
-        We build <strong>decision-aware systems</strong> that preserve assumptions and constraints for consistent decisions.
+        We build <strong>decision-aware systems</strong> for consistent outcomes.
       </>
     ),
   },

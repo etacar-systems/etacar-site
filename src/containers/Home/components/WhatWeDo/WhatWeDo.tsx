@@ -9,7 +9,8 @@ export const WhatWeDo: React.FC = () => {
       title: 'Engineered for Trust',
       description: (
         <>
-          <strong>Grounded outputs. Calibrated confidence. Explicit uncertainty</strong> — not hallucinations.
+        <strong>Grounded outputs. Explicit uncertainty. </strong>
+        No hallucinations.
         </>
       ),
     },
@@ -17,7 +18,7 @@ export const WhatWeDo: React.FC = () => {
       title: 'Institutional Memory',
       description: (
         <>
-          We retain <strong>rationale, constraints, and decisions</strong> across time — preventing corporate amnesia.
+          We retain <strong>decisions and constraints</strong> — preventing corporate amnesia.
         </>
       ),
     },
@@ -25,7 +26,7 @@ export const WhatWeDo: React.FC = () => {
       title: 'Systematic Reasoning',
       description: (
         <>
-          <strong>Coordinated cognitive agents</strong> reduce single-point failure and produce defensible outcomes.
+          <strong>Coordinated agents</strong> reduce single-point failure and produce defensible outcomes.
         </>
       ),
     },
@@ -37,7 +38,7 @@ export const WhatWeDo: React.FC = () => {
         <h2 className={styles.title}>What we do</h2>
 
         <p className={styles.subtext}>
-          We build a <strong>controlled AI operating layer</strong> inside real workflows — disciplined, transparent, and accountable.
+          We build a <strong>controlled AI layer</strong> inside real workflows.
         </p>
 
         <div className={styles.grid}>
