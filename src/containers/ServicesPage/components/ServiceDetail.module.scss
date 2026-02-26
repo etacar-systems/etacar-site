@@ -7,7 +7,7 @@
   margin: 0 auto;
   border-end-start-radius: var(--radius-xl);
   border-end-end-radius: var(--radius-xl);
-  padding: 0 var(--space-6) var(--space-6);
+  padding: var(--space-4) var(--space-6) var(--space-6);
   box-shadow: var(--shadow-md);
   border: 1px solid var(--color-neutral-200);
   color: $color--light !important;
@@ -29,7 +29,6 @@
 .subtitle {
   @include body-lg;
   text-align: center;
-  padding: var(--space-4) 0 0;
   font-size: var(--text-xl);
   line-height: var(--leading-relaxed);
 }

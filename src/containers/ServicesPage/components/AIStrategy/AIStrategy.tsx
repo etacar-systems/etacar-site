@@ -5,30 +5,23 @@ import { Divider } from '@/components/Divider';
 import { List } from '@/components/List';
 
 const options = [
-  'Clear AI roadmap tied to real decision processes',
-  'Target architecture and integration plan for production-grade AI systems',
-  'Defined risks, constraints, and governance approach from the start',
+  'Decision map tied to real workflows',
+  'Production architecture blueprint',
+  'Governance model embedded from day one',
 ];
 
 export const AIStrategy: React.FC = () => {
   return (
     <ServiceDetail
       id={'ai_strategy_architecture'}
-      title={'AI Strategy & Architecture'}
+      title={'AI Strategy & Decision Architecture'}
       subtitle={
-        <>
-          <strong>Decision architecture</strong> for high-stakes AI systems.
-        </>
+        <>Designing decision logic aligned with business objectives, risk tolerance, and operational constraints.</>
       }
       content={
         <>
-          <Divider title={'Typical outcomes'} />
+          <Divider title={'Deliverables'} />
           <List options={options} />
-        </>
-      }
-      text={
-        <>
-          We define <strong>how decisions are made</strong> — making <strong>assumptions explicit</strong>, managing <strong>uncertainty</strong>, and ensuring <strong>long-term control</strong>.
         </>
       }
     />

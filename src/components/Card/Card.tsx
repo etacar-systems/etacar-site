@@ -26,7 +26,14 @@ export const Card = ({ icon, className, content, title, titleClassname, sectionI
         </div>
       )}
       <div className={styles.content}>
-        {title && <div className={classNames(styles.title, titleClassname)}>{title}</div>}
+        {title && (
+          <div
+            className={classNames(styles.title, titleClassname)}
+            style={{ paddingBottom: !content && !sectionId ? 0 : undefined }}
+          >
+            {title}
+          </div>
+        )}
         {content && <div>{content}</div>}
         {sectionId && (
           <a href={`#${sectionId}`} className={styles.link}>

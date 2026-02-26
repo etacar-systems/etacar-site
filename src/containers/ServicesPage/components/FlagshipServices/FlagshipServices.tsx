@@ -8,8 +8,8 @@ export const FlagshipServices: React.FC = () => {
   return (
     <>
       <AIStrategy />
-      <AIDecisions />
       <AIEngineering />
+      <AIDecisions />
     </>
   );
 };

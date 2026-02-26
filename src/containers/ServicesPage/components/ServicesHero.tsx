@@ -1,27 +1,17 @@
 import React from 'react';
 
-import { BsClipboard2DataFill } from 'react-icons/bs';
-import { FaGear } from 'react-icons/fa6';
-import { PiTreeStructureFill } from 'react-icons/pi';
-
-import styles from './ServicesHero.module.scss';
 import { Card } from '@/components/Card';
+import styles from './ServicesHero.module.scss';
 
 const items = [
   {
-    icon: PiTreeStructureFill,
-    label: 'AI Strategy & Architecture',
-    sectionId: 'ai_strategy_architecture',
+    label: 'Built for regulated environments',
   },
   {
-    icon: BsClipboard2DataFill,
-    label: 'AI for Decisions & Operations',
-    sectionId: 'al_for_decisions_operations',
+    label: 'Engineered for accountability',
   },
   {
-    icon: FaGear,
-    label: 'AI for Engineering',
-    sectionId: 'al_for_engineering',
+    label: 'Designed for long-term operational control',
   },
 ];
 
@@ -29,11 +19,13 @@ export const ServicesHero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Cognitive Infrastructure Services</h1>
-        <p className={styles.subtitle}>Production-grade reasoning systems for high-stakes decisions</p>
+        <h1 className={styles.title}>Controlled AI Systems for High-Stakes Decisions</h1>
+        <p className={styles.subtitle}>
+          We design and deploy AI systems where errors are unacceptable and control is non-negotiable.
+        </p>
         <div className={styles.quickFacts}>
           {items.map((item, idx) => (
-            <Card key={idx} icon={item.icon} title={item.label} sectionId={item.sectionId} />
+            <Card key={idx} title={item.label} />
           ))}
         </div>
       </div>

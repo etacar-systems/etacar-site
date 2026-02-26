@@ -5,29 +5,14 @@ import { Card } from '@/components/Card';
 import styles from './WhoWeWorkWith.module.scss';
 
 export const WhoWeWorkWith: React.FC = () => {
-  const options = [
-    <>
-      Leaders accountable for <strong>risk, compliance, and governance</strong>
-    </>,
-    <>
-      Operators responsible for <strong>reliable business outcomes</strong>
-    </>,
-    <>
-      Architects designing <strong>systems that must last</strong>
-    </>,
-    <>
-      Engineers shipping <strong>production-grade AI</strong>
-    </>,
-  ];
+  const options = [<>Executive leadership</>, <>Operations</>, <>Architecture</>, <>Engineering</>];
 
   return (
     <SectionWrapper>
       <div className={styles.content}>
         <h2 className={styles.title}>Who This Is Built For</h2>
 
-        <p className={styles.intro}>
-          Built for teams where AI decisions <strong>can’t fail silently</strong>.
-        </p>
+        <p className={styles.intro}>For organizations where AI decisions carry risk.</p>
 
         <Card
           content={
@@ -40,9 +25,7 @@ export const WhoWeWorkWith: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <div>
-                If AI decisions affect customers, revenue, or regulation — you need infrastructure, not an assistant.
-              </div>
+              <div>If AI decisions impact the business, they become infrastructure.</div>
             </div>
           }
         />
