@@ -41,13 +41,14 @@ export const Difference = () => {
           <div className={styles.differenceRow} role='row'>
             <div
               role='columnheader'
-              className={classNames(styles.differenceCard, styles.differenceCardHeader, styles.differenceCardActive)}
+              className={classNames(styles.differenceCard, styles.differenceCardHeader, styles.differenceCardGeneric)}
             >
               <FiLoader />
               <span>Generic AI Integration</span>
             </div>
 
             <Card
+              className={styles.differenceCardActive}
               content={
                 <div className={styles.mainCardHeader}>
                   <FiCheckCircle />
@@ -59,10 +60,10 @@ export const Difference = () => {
 
           {DIFFERENCE_ROWS.map(row => (
             <div key={row.id} className={styles.differenceRow} role='row'>
-              <div role='cell' className={classNames(styles.differenceCard, styles.differenceCardActive)}>
+              <div role='cell' className={classNames(styles.differenceCard, styles.differenceCardGeneric)}>
                 {row.generic}
               </div>
-              <Card content={row.systems} />
+              <Card className={styles.differenceCardActive} content={row.systems} />
             </div>
           ))}
         </div>
