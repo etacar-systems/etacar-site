@@ -74,12 +74,9 @@ const AIPhilosophy: React.FC = () => {
   return (
     <SectionWrapper className={styles.philosophySection}>
       <div className={styles.container}>
-        <h2 className={styles.title}>How we think about AI in organizations</h2>
-        <p className={styles.subtitle}>
-          We do <strong>not</strong> treat AI as a layer you simply add on top.
-        </p>
+        <h2 className={styles.title}>AI is not an add-on</h2>
         <div className={styles.content}>
-          <p className={styles.intro}>We see AI as an organizational capability that must:</p>
+          <p className={styles.intro}>We see it as an organizational capability that must:</p>
 
           <div className={styles.requirementsList}>
             {requirements.map((item, index) => (

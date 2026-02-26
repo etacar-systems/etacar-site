@@ -63,11 +63,6 @@ const ClientWork: React.FC = () => {
               <Card key={index} content={principle.description} icon={principle.icon} title={principle.title} />
             ))}
           </div>
-
-          <p className={styles.conclusion}>
-            This is how we ensure our work is <strong>meaningful for your organization</strong> and safe for{' '}
-            <strong>business-critical operations</strong>.
-          </p>
         </div>
       </div>
     </SectionWrapper>

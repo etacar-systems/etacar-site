@@ -40,7 +40,7 @@ const BroaderTeam: React.FC = () => {
         <h2 className={styles.title}>Our broader team</h2>
         <div className={styles.content}>
           <p className={styles.intro}>
-            A senior-only, cross-functional engineering unit operating mission-critical AI systems.
+            Senior cross-functional unit for mission-critical AI.
           </p>
           <div className={styles.teamGrid}>
             {teamMembers.map((member, index) => (
