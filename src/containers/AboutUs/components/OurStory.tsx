@@ -63,7 +63,7 @@ export const OurStory: React.FC = () => {
         <h2 className={styles.title}>Our story</h2>
 
         <p className={styles.subtext}>
-          Since the early 2000s, we’ve built <strong>enterprise AI platforms</strong>. Today, we focus on <strong>production systems</strong> with <strong>clear ownership</strong> and <strong>governance</strong>.
+          Enterprise AI since the early 2000s. Built for controlled production.
         </p>
 
         <div className={styles.grid}>
