@@ -1,5 +1,55 @@
+@import '../../styles/design-tokens.scss';
+
+// ========================================
+// TAGS CONTAINER - Premium Glassmorphism Style
+// Inspired by Orion/Alfa-S design language
+// ========================================
+
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+// ========================================
+// TAG STYLES (inline since Tag component may need update)
+// ========================================
+.container > * {
+  // Tag base styles
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  transition: all var(--transition-base);
+  border: 1px solid transparent;
+  
+  // Light variant
+  &:not([type='blue']) {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.1);
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  // Blue variant
+  &[type='blue'],
+  &:has([type='blue']) {
+    background: rgba(48, 130, 128, 0.1);
+    color: var(--color-primary);
+    border-color: rgba(48, 130, 128, 0.3);
+    
+    &:hover {
+      background: rgba(48, 130, 128, 0.15);
+      border-color: rgba(48, 130, 128, 0.5);
+      box-shadow: 0 4px 16px rgba(48, 130, 128, 0.2);
+    }
+  }
 }

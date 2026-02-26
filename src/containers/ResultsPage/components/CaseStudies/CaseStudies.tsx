@@ -1,3 +1,4 @@
+import { motion, type Variants } from 'framer-motion';
 import styles from './CaseStudies.module.scss';
 
 const cases = [
@@ -27,24 +28,105 @@ const cases = [
   },
 ];
 
+// Animation variants
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
+
+const titleVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
+
 export const CaseStudies = () => {
   return (
     <section className={styles.section}>
+      {/* Background gradient effect */}
+      <div className={styles.backgroundGradient} />
+
       <div className={styles.container}>
-        <h2 className={styles.title}>Selected case studies</h2>
-        <div className={styles.grid}>
+        <motion.h2
+          className={styles.title}
+          variants={titleVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          Selected case studies
+        </motion.h2>
+
+        <motion.div
+          className={styles.grid}
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {cases.map((c, idx) => (
-            <article key={idx} className={styles.card}>
+            <motion.article
+              key={idx}
+              className={styles.card}
+              variants={cardVariants}
+              whileHover={{
+                scale: 1.02,
+                transition: { duration: 0.3 },
+              }}
+            >
               <h3 className={styles.cardTitle}>{c.headline}</h3>
               <p className={styles.cardMeta}>{c.title}</p>
               <ul>
                 {c.results.map((r, i) => (
-                  <li key={i}>{r}</li>
+                  <motion.li
+                    key={i}
+                    className={styles.resultItem}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      delay: 0.3 + idx * 0.1 + i * 0.05,
+                      duration: 0.4,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                  >
+                    {r}
+                  </motion.li>
                 ))}
               </ul>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
