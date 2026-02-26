@@ -10,10 +10,7 @@ export const WhoWeWorkWith: React.FC = () => {
   return (
     <SectionWrapper>
       <div className={styles.content}>
-        <h2 className={styles.title}>Who This Is Built For</h2>
-
-        <p className={styles.intro}>For organizations where AI decisions carry risk.</p>
-
+        <h2 className={styles.title}>Built for organizations that cannot afford uncontrolled AI decisions</h2>
         <Card
           content={
             <div className={styles.caseResult}>

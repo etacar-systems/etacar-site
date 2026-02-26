@@ -11,14 +11,6 @@
   @include gradient-primary-to-light;
 }
 
-.intro {
-  @include body-lg;
-  color: $color--light;
-  margin-bottom: var(--space-16);
-  line-height: var(--leading-relaxed);
-  font-size: var(--text-2xl);
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr;
