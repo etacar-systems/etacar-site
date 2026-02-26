@@ -2,30 +2,76 @@
 @import '../../../../styles/mixins.scss';
 @import '../../../../styles/colors.scss';
 
+/* ========================================
+   RESULTS MEASURE - Orion/Alfa-S Style
+   ======================================== */
 .content {
+  position: relative;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
 
+/* ========================================
+   BACKGROUND EFFECTS
+   ======================================== */
+.content::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(48, 130, 128, 0.06) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
 .title {
   @include heading-lg;
-  @include gradient-primary-to-light;
+  color: $color--light;
+  position: relative;
+  z-index: 1;
   text-align: center;
+  margin-bottom: var(--space-6);
+  font-size: var(--text-5xl);
+
+  @include desktop {
+    font-size: var(--text-6xl);
+  }
 }
 
 .subtext {
   @include body-lg;
-  color: $color--light;
+  color: var(--color-neutral-300);
   margin-bottom: var(--space-16);
   text-align: center;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
+  position: relative;
+  z-index: 1;
+
+  @include desktop {
+    font-size: var(--text-2xl);
+  }
 }
 
+/* ========================================
+   KPI LIST & CARDS
+   ======================================== */
 .kpiList {
+  position: relative;
+  z-index: 1;
   list-style: none;
   padding: 0;
   margin: 0 0 var(--space-12) 0;
@@ -41,9 +87,18 @@
   text-align: left;
   gap: var(--space-3);
   transition: all var(--transition-base);
+  padding: var(--space-6) var(--space-5);
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
 
   &:hover {
-    transform: translateX(4px);
+    transform: translateX(8px);
+    border-color: rgba(48, 130, 128, 0.4);
+    background: rgba(48, 130, 128, 0.06);
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.2);
   }
 }
 
@@ -61,7 +116,7 @@
   gap: var(--space-3);
   align-items: flex-start;
   line-height: var(--leading-relaxed);
-  color: var(--color-neutral-700);
+  color: var(--color-neutral-300);
 }
 
 .text {
@@ -69,6 +124,7 @@
   align-items: center;
   gap: var(--space-4);
   width: 100%;
+  color: var(--color-neutral-300);
 }
 
 .casesGrid {
@@ -84,22 +140,29 @@
 .caseTitle {
   @include heading-sm;
   font-size: var(--text-xl);
-  font-weight: 700;
-  color: var(--color-primary);
+  font-weight: var(--font-bold);
+  color: $color--light;
   padding-bottom: var(--space-4);
 }
 
 .caseSection {
   @include body-lg-bold;
   margin-bottom: var(--space-4);
-  color: var(--color-primary-800);
+  color: var(--color-neutral-300);
 }
 
 .caseResult {
   @include body-lg-bold;
-
   margin-top: var(--space-5);
   font-size: var(--text-base);
   line-height: var(--leading-relaxed);
-  color: var(--color-primary-800);
+  color: var(--color-neutral-200);
+}
+
+/* ========================================
+   STRONG TEXT HIGHLIGHTS
+   ======================================== */
+.kpiItem strong {
+  color: $color--primary;
+  font-weight: var(--font-bold);
 }

@@ -2,13 +2,16 @@
 @import '../../../../styles/mixins.scss';
 @import '../../../../styles/colors.scss';
 
+/* ========================================
+   FINAL CTA - Orion/Alfa-S Style
+   ======================================== */
 .cta {
   position: relative;
-  padding: var(--space-20) 0;
-  background: var(--gradient-hero);
-  color: var(--color-neutral-0);
+  padding: var(--space-24) 0;
+  margin-bottom: var(--space-16);
   overflow: hidden;
 
+  /* Background gradient overlay */
   &::before {
     content: '';
     position: absolute;
@@ -16,47 +19,129 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background:
-      radial-gradient(circle at top left, rgba(168, 85, 247, 0.2) 0%, transparent 50%),
-      radial-gradient(circle at bottom right, rgba(66, 135, 245, 0.2) 0%, transparent 50%);
+    background: radial-gradient(
+      ellipse at top,
+      rgba(48, 130, 128, 0.15) 0%,
+      transparent 70%
+    );
+    filter: blur(80px);
     pointer-events: none;
+    z-index: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(48, 130, 128, 0.08) 0%,
+      transparent 60%
+    );
+    pointer-events: none;
+    z-index: 0;
   }
 
   @include respond-above(md) {
-    padding: var(--space-24) 0;
+    padding: var(--space-28) 0;
   }
 }
 
 .content {
+  position: relative;
+  z-index: 1;
   max-width: 800px;
   margin: 0 auto 100px;
   text-align: center;
 }
 
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
 .title {
   @include heading-lg;
-  @include gradient-primary-to-light;
+  color: $color--light;
   text-align: center;
+  margin-bottom: var(--space-10);
+  font-size: var(--text-5xl);
+
+  @include desktop {
+    font-size: var(--text-6xl);
+  }
 }
 
 .text {
   @include body-lg;
-  color: $color--light;
+  color: var(--color-neutral-300);
   font-size: var(--text-xl);
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-8);
   opacity: 0.95;
   line-height: var(--leading-relaxed);
-  font-size: var(--text-2xl);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  strong {
+    color: $color--primary;
+    font-weight: var(--font-semibold);
+  }
+
+  @include desktop {
+    font-size: var(--text-2xl);
+  }
 }
 
+/* ========================================
+   BUTTONS
+   ======================================== */
 .buttons {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
   align-items: center;
+  margin-top: var(--space-12);
 
   @include respond-above(sm) {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+/* ========================================
+   BUTTON OVERRIDES - Gradient Style
+   ======================================== */
+.buttons button[data-size='large'] {
+  padding: 18px 40px;
+  font-size: var(--text-lg);
+  border-radius: var(--radius-2xl);
+  min-width: 240px;
+}
+
+.buttons button__solid {
+  background: linear-gradient(135deg, $color--primary, $color--neutral);
+  box-shadow: 0 8px 32px rgba(48, 130, 128, 0.3);
+  transition: all var(--transition-base);
+
+  &:hover {
+    box-shadow: 0 12px 48px rgba(48, 130, 128, 0.4);
+    transform: translateY(-2px);
+  }
+}
+
+.buttons button__bordered {
+  border: 2px solid rgba(48, 130, 128, 0.5);
+  background: rgba(48, 130, 128, 0.05);
+  backdrop-filter: blur(10px);
+  font-weight: var(--font-semibold);
+
+  &:hover {
+    background: rgba(48, 130, 128, 0.15);
+    border-color: $color--primary;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.2);
   }
 }

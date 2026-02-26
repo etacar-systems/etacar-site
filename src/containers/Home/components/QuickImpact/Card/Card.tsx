@@ -23,13 +23,14 @@ export const Card = forwardRef<HTMLDivElement, Props>(({ background, itemRef, ti
           ref.current = node;
         }
       }}
+      className={styles.cardWrapper}
     >
       <h2 className={styles.title} data-is-content={Boolean(content)} style={{ background }}>
         {title}
       </h2>
       {content && (
-        <div className={styles.contentContainer}>
-          <div className={styles.content}>{content}</div>
+        <div className={styles.content}>
+          {content}
         </div>
       )}
     </div>

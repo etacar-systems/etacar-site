@@ -2,127 +2,251 @@
 @import '../../../../styles/mixins.scss';
 @import '../../../../styles/colors.scss';
 
+/* ========================================
+   HERO SECTION - Orion/Alfa-S Style
+   ======================================== */
 .hero {
   position: relative;
   display: flex;
   align-items: center;
-  color: var(--color-neutral-900);
-  padding-bottom: var(--space-16);
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  padding: var(--space-16) 0;
   overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-  }
 }
 
 .container {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .content {
-  max-width: 980px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-
-  @include fade-in;
+  position: relative;
 }
 
+/* ========================================
+   BACKGROUND EFFECTS
+   ======================================== */
+.container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(48, 130, 128, 0.08) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 80%;
+  background: radial-gradient(
+    ellipse at top,
+    rgba(48, 130, 128, 0.1) 0%,
+    transparent 70%
+  );
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
 .title {
   @include heading-xl;
-  @include gradient-primary-to-light;
-  margin: 0;
-  margin-bottom: var(--space-6);
+  color: $color--light;
+  margin: 0 0 var(--space-6);
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+
+  @include desktop {
+    font-size: var(--text-6xl);
+  }
+
+  strong {
+    @include gradient-primary-to-light;
+  }
 }
 
 .subtitle {
   @include body-lg;
   font-size: var(--text-xl);
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-10);
   font-weight: var(--font-medium);
-  color: $color--light;
+  color: var(--color-neutral-300);
   line-height: var(--leading-relaxed);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include desktop {
     font-size: var(--text-2xl);
   }
+
+  strong {
+    color: $color--primary;
+    font-weight: var(--font-semibold);
+  }
 }
 
-.intro {
-  @include body-base;
-  font-size: var(--text-lg);
-  color: var(--color-neutral-700);
-  line-height: var(--leading-relaxed);
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: var(--space-8);
-}
-
+/* ========================================
+   CTA BUTTONS
+   ======================================== */
 .cta {
   margin-bottom: var(--space-12);
-  font-size: var(--text-sm);
 }
 
 .ctaButtons {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
-  margin-bottom: var(--space-4);
+  justify-content: center;
+  align-items: center;
 
   @include respond-above(sm) {
     flex-direction: row;
-    justify-content: center;
   }
 }
 
+/* ========================================
+   QUICK FACTS - Glassmorphism Cards
+   ======================================== */
 .quickFacts {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-6);
+  gap: var(--space-4);
+  max-width: 900px;
+  margin: 0 auto;
 
   @include respond-above(md) {
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-8);
+    gap: var(--space-6);
   }
 }
 
 .fact {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: var(--space-3);
-  text-align: left;
+  gap: var(--space-4);
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+  border-radius: var(--radius-2xl);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 
   @include respond-above(md) {
-    flex-direction: column;
-    text-align: center;
+    padding: var(--space-10) var(--space-8);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, $color--primary, $color--neutral);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-base);
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba(48, 130, 128, 0.4);
+    background: rgba(48, 130, 128, 0.06);
+    box-shadow: 0 12px 40px rgba(48, 130, 128, 0.2);
+
+    &::before {
+      transform: scaleX(1);
+    }
   }
 
   span {
     @include body-lg-bold;
-    padding: var(--space-2) 0 0;
-    border-radius: var(--radius-md);
-    color: var(--color-primary-800);
+    color: var(--color-neutral-300);
     font-size: var(--text-base) !important;
-    height: 100%;
+    line-height: var(--leading-relaxed);
+
+    strong {
+      color: $color--light;
+      font-weight: var(--font-bold);
+    }
+
+    @include desktop {
+      font-size: var(--text-lg) !important;
+    }
   }
 }
 
 .icon {
   line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(48, 130, 128, 0.2),
+    rgba(48, 130, 128, 0.1)
+  );
+  color: $color--primary;
+  box-shadow: 0 8px 32px rgba(48, 130, 128, 0.25);
+  transition: all var(--transition-base);
+
+  .fact:hover & {
+    transform: scale(1.1);
+    box-shadow: 0 12px 48px rgba(48, 130, 128, 0.35);
+  }
 }
 
-.fact span {
-  font-size: var(--text-base);
-  line-height: var(--leading-snug);
-
-  @include respond-above(md) {
-    font-size: var(--text-lg);
+/* ========================================
+   FLOATING PARTICLES (Decorative)
+   ======================================== */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
   }
+  50% {
+    transform: translateY(-30px) translateX(15px);
+    opacity: 0.6;
+  }
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $color--primary;
+  opacity: 0.3;
+  animation: float 8s ease-in-out infinite;
+  pointer-events: none;
 }

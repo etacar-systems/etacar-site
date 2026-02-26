@@ -1,9 +1,26 @@
 @import '../../styles/design-tokens.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/colors.scss';
 
+/* ========================================
+   FADE CARD - Orion/Alfa-S Style
+   ======================================== */
 .card {
-  @include card-premium;
   position: relative;
   text-decoration: none;
   overflow: hidden;
+  border-radius: var(--radius-2xl);
+  padding: var(--space-6);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  transition: all var(--transition-base);
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(48, 130, 128, 0.4);
+    background: rgba(48, 130, 128, 0.06);
+    box-shadow: 0 12px 40px rgba(48, 130, 128, 0.2);
+  }
 }
