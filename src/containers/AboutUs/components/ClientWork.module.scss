@@ -65,10 +65,3 @@
   color: var(--color-neutral-700);
   line-height: var(--leading-relaxed);
 }
-
-.conclusion {
-  @include body-large;
-  color: $color--light;
-  font-weight: var(--font-medium);
-  line-height: var(--leading-relaxed);
-}
