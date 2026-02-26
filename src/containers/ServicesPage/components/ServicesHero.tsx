@@ -1,17 +1,21 @@
 import React from 'react';
 
 import { Card } from '@/components/Card';
+import { FiSettings, FiShield, FiTarget } from 'react-icons/fi';
 import styles from './ServicesHero.module.scss';
 
 const items = [
   {
     label: 'Built for regulated environments',
+    icon: FiShield,
   },
   {
     label: 'Engineered for accountability',
+    icon: FiTarget,
   },
   {
     label: 'Designed for long-term operational control',
+    icon: FiSettings,
   },
 ];
 
@@ -25,7 +29,7 @@ export const ServicesHero: React.FC = () => {
         </p>
         <div className={styles.quickFacts}>
           {items.map((item, idx) => (
-            <Card key={idx} title={item.label} />
+            <Card key={idx} title={item.label} icon={item.icon} />
           ))}
         </div>
       </div>

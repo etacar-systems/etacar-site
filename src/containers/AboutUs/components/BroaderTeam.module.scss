@@ -62,9 +62,10 @@
   line-height: var(--leading-relaxed);
 }
 
-.conclusion {
-  @include body-large;
-  color: $color--light;
-  font-weight: var(--font-medium);
-  line-height: var(--leading-relaxed);
+.list {
+  width: fit-content;
+
+  @include respond-above(sm) {
+    margin: 0 auto;
+  }
 }

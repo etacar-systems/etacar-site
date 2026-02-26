@@ -63,8 +63,7 @@ export const MeasurementFramework: React.FC = () => {
       <div className={styles.header}>
         <h2 className={styles.title}>What we measure and how</h2>
         <p className={styles.description}>
-          Our <strong>KPI framework</strong> is designed for C-level, operations, IT, and risk teams. Metrics are
-          grouped into <strong>five categories</strong>.
+          Our <strong>KPI framework</strong> is designed for C-level, operations, IT, and risk teams.
         </p>
       </div>
 

@@ -42,3 +42,29 @@
   margin-bottom: var(--space-4);
   color: $color--light;
 }
+
+.cardsGrid {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+
+  @include respond-above(md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    &[data-size='medium'] {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    align-items: stretch;
+  }
+}
+
+.cardsConclusion {
+  @include body-lg;
+  color: $color--light;
+  margin-top: var(--space-6);
+  text-align: center;
+  line-height: var(--leading-relaxed);
+}
+
+.buildForContent {
+  padding-bottom: 100px;
+}

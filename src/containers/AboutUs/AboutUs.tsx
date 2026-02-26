@@ -9,7 +9,6 @@ import BroaderTeam from './components/BroaderTeam';
 import ClientWork from './components/ClientWork';
 import Expirience from './components/Experience';
 import Introduction from './components/Introduction';
-import LeadershipTeam from './components/LeadershipTeam';
 import Mission from './components/Mission';
 import NeuroscienceSection from './components/NeuroscienceSection';
 import OurStory from './components/OurStory';
@@ -34,10 +33,6 @@ export const AboutUs = () => {
       <FadeInSection>
         <Introduction />
         <Expirience />
-      </FadeInSection>
-
-      <FadeInSection>
-        <LeadershipTeam />
       </FadeInSection>
 
       <FadeInSection>
