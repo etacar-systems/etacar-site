@@ -5,7 +5,12 @@ import { Card } from '@/components/Card';
 import styles from './WhoWeWorkWith.module.scss';
 
 export const WhoWeWorkWith: React.FC = () => {
-  const options = [<>Executive leadership</>, <>Operations</>, <>Architecture</>, <>Engineering</>];
+  const options = [
+    <>Executive leadership (risk & revenue)</>,
+    <>Operations</>,
+    <>Infrastructure architects</>,
+    <>Production engineering</>,
+  ];
 
   return (
     <SectionWrapper>
@@ -22,10 +27,10 @@ export const WhoWeWorkWith: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <div>If AI decisions impact the business, they become infrastructure.</div>
             </div>
           }
         />
+        <div className={styles.conclusion}>If AI decisions carry risk, they require engineered control.</div>
       </div>
     </SectionWrapper>
   );
