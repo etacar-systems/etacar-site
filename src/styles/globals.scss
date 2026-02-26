@@ -20,6 +20,8 @@ body {
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  padding-top: 64px; // Offset for fixed header
 }
 
 h2 {
@@ -28,6 +30,7 @@ h2 {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 [id] {

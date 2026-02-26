@@ -43,9 +43,7 @@ export const Home: React.FC = () => {
       <FadeInSection>
         <FinalCTA />
       </FadeInSection>
-      <FadeInSection>
-        <Footer />
-      </FadeInSection>
+      <Footer />
     </div>
   );
 };

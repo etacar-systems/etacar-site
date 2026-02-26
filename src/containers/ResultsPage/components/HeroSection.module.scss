@@ -2,163 +2,139 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/colors.scss';
 
+/* ========================================
+   RESULTS PAGE HERO - Orion/Alfa-S Style
+   ======================================== */
 .hero {
   position: relative;
   display: flex;
   align-items: center;
-  color: var(--color-neutral-900);
-  padding: var(--space-12) 0 var(--space-16);
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  padding: var(--space-20) 0;
   overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    background: radial-gradient(circle at 70% 30%, rgba(var(--color-primary-500-rgb), 0.05) 0%, transparent 60%);
-  }
 }
 
 .container {
-  @include container;
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
 }
 
+/* ========================================
+   BACKGROUND EFFECTS
+   ======================================== */
+.container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(48, 130, 128, 0.08) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 80%;
+  background: radial-gradient(
+    ellipse at top,
+    rgba(48, 130, 128, 0.1) 0%,
+    transparent 70%
+  );
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
 .content {
   margin: 0 auto;
   text-align: center;
-
-  strong {
-    color: var(--color-light);
-  }
-
-  @include fade-in;
 }
 
 .title {
   @include heading-xl;
-  @include gradient-primary-to-light;
-  margin: 0;
-  margin-bottom: var(--space-6);
+  color: $color--light;
+  margin: 0 0 var(--space-8);
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
 
   @include desktop {
     font-size: var(--text-6xl);
+  }
+
+  strong {
+    @include gradient-primary-to-light;
   }
 }
 
 .subtitle {
   @include body-lg;
   font-size: var(--text-xl);
-  margin-bottom: var(--space-8);
-  font-weight: var(--font-medium);
-  color: $color--light;
+  color: var(--color-neutral-300);
+  margin-bottom: var(--space-6);
   line-height: var(--leading-relaxed);
 
   @include desktop {
     font-size: var(--text-2xl);
   }
-}
 
-.cardTitle {
-  color: var(--color-background);
+  strong {
+    color: $color--primary;
+    font-weight: var(--font-semibold);
+  }
 }
 
 .intro {
-  @include body-base;
+  @include body-lg;
   font-size: var(--text-lg);
-  color: $color--light;
+  color: var(--color-neutral-400);
   line-height: var(--leading-relaxed);
   text-align: center;
   max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: var(--space-8);
+  margin: 0 auto var(--space-10);
+
+  strong {
+    color: $color--primary;
+    font-weight: var(--font-bold);
+  }
 }
 
+/* ========================================
+   CARDS GRID
+   ======================================== */
 .quickFacts {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-6);
+  gap: var(--space-4);
 
-  @include respond-above(md) {
+  @include respond-above(sm) {
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-8);
+    gap: var(--space-6);
   }
 }
 
-.fact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-3);
-  text-align: left;
-  padding: var(--space-2) !important;
-  background: var(--gradient-card-light) !important;
-
-  @include respond-above(md) {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .content {
-    @include body-lg-bold;
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-2);
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: var(--radius-md);
-    color: var(--color-primary-800);
-    font-size: var(--text-base) !important;
-    height: 100%;
-    width: 100%;
-  }
-
-  a {
-    padding-top: var(--space-2);
-    margin-top: auto;
-  }
-}
-
-.icon {
-  flex-shrink: 0;
-  color: var(--color-primary-700);
-  width: 24px;
-  height: 24px;
-
-  @include respond-above(md) {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.fact span {
-  font-size: var(--text-base);
-  line-height: var(--leading-snug);
-
-  @include respond-above(md) {
-    font-size: var(--text-lg);
-  }
-}
-
-.linkButton {
-  font-size: var(--text-sm);
-  font-weight: var(--font-medium);
-  color: var(--color-primary-700);
-  text-decoration: none;
-  transition: 0.2s ease;
-  display: inline-block;
-
-  &:hover {
-    color: var(--color-primary-800);
-    text-decoration: underline;
-  }
-
-  @include respond-above(md) {
-    margin-top: var(--space-3);
-    font-size: var(--text-base);
-  }
+.cardTitle {
+  color: $color--light !important;
+  font-size: var(--text-base) !important;
+  line-height: var(--leading-snug) !important;
 }

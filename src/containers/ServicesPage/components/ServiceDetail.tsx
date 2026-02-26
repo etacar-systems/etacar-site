@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react';
 
 import { SectionWrapper } from '../../../components/SectionWrapper';
 import styles from './ServiceDetail.module.scss';
-import { Divider } from '@/components/Divider';
 
 export interface ServiceDetailProps {
   id: string;
@@ -15,12 +14,17 @@ export interface ServiceDetailProps {
 export const ServiceDetail: React.FC<ServiceDetailProps> = ({ id, title, subtitle, text, content }) => {
   return (
     <SectionWrapper id={id}>
-      <h2 className={styles.title}>{title}</h2>
-      <div className={styles.content}>
-        {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-        {subtitle && text && <Divider />}
-        <div className={styles.text}>{text}</div>
-        <div>{content}</div>
+      <div className={styles.cardWrapper}>
+        <div className={styles.card}>
+          <div className={styles.cardHeader}>
+            <h2 className={styles.title}>{title}</h2>
+            {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+          </div>
+          <div className={styles.cardBody}>
+            <div className={styles.text}>{text}</div>
+            <div>{content}</div>
+          </div>
+        </div>
       </div>
     </SectionWrapper>
   );

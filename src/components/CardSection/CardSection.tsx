@@ -13,7 +13,7 @@ type CardSectionProps = {
 
 export const CardSection = ({ className, title, subtitle, text, content }: CardSectionProps) => {
   return (
-    <div className={className}>
+    <div className={`${styles.cardWrapper} ${className || ''}`}>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.content}>
         {subtitle && (

@@ -2,79 +2,126 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/colors.scss';
 
+/* ========================================
+   IMPACT AT A GLANCE - Orion/Alfa-S Style
+   ======================================== */
 .section {
-  @include section-padding;
-  background-color: var(--color-neutral-50);
-  box-sizing: border-box;
+  position: relative;
+  padding: var(--space-20) 0;
+  overflow: hidden;
 }
 
 .header {
+  position: relative;
+  z-index: 1;
   max-width: 800px;
-  margin: 0 auto var(--space-12);
+  margin: 0 auto var(--space-16);
   text-align: center;
 }
 
 .title {
   @include heading-lg;
-  @include gradient-primary-to-light;
+  color: $color--light;
+  margin-bottom: var(--space-6);
+  font-size: var(--text-4xl);
+
+  @include desktop {
+    font-size: var(--text-6xl);
+  }
 }
 
 .description {
   @include body-lg;
-  color: $color--light;
+  color: var(--color-neutral-300);
   margin-bottom: var(--space-16);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--text-xl);
   line-height: var(--leading-relaxed);
-  font-size: var(--text-2xl);
+
+  @include desktop {
+    font-size: var(--text-2xl);
+  }
 }
 
 .grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-8);
-  margin-bottom: var(--space-12);
+  gap: var(--space-4);
 
   @include respond-above(md) {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
   }
 }
 
 .metricCard {
-  padding: var(--space-8);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-  background: var(--gradient-card-light) !important;
+  position: relative;
+  padding: var(--space-8) var(--space-6);
+  border-radius: var(--radius-2xl);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
   transition: all var(--transition-base);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
 
   &:hover {
+    border-color: rgba(48, 130, 128, 0.4);
+    background: rgba(48, 130, 128, 0.06);
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.2);
     transform: translateY(-4px);
   }
 }
 
 .metricValue {
-  font-size: var(--text-4xl);
+  font-size: var(--text-5xl);
   font-weight: var(--font-bold);
-  color: var(--color-primary-700);
+  color: $color--primary;
   line-height: 1;
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.02em;
 }
 
 .metricText {
-  @include body-base;
-  font-size: var(--text-lg);
-  color: var(--color-neutral-800);
+  @include body-lg;
+  font-size: var(--text-base);
+  color: var(--color-neutral-300);
   font-weight: var(--font-medium);
   padding: var(--space-4);
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
+  background: rgba(48, 130, 128, 0.05);
+  border: 1px solid rgba(48, 130, 128, 0.15);
+
+  strong {
+    color: $color--light;
+    font-weight: var(--font-bold);
+  }
 }
 
 .closing {
+  position: relative;
+  z-index: 1;
   max-width: 800px;
-  margin: 0 auto;
+  margin: var(--space-12) auto 0;
   text-align: center;
+  padding: var(--space-8) var(--space-6);
+  border-radius: var(--radius-2xl);
+  background: rgba(48, 130, 128, 0.08);
+  border: 1px solid rgba(48, 130, 128, 0.3);
+  backdrop-filter: blur(10px);
 
   p {
-    @include body-base;
-    color: $color--light;
+    @include body-lg;
+    color: var(--color-neutral-300);
+    margin: 0;
+
+    strong {
+      color: $color--primary;
+      font-weight: var(--font-bold);
+    }
   }
 }

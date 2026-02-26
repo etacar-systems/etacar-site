@@ -2,13 +2,56 @@
 @import '../../../../styles/mixins.scss';
 @import '../../../../styles/colors.scss';
 
-.header {
+/* ========================================
+   DIFFERENCE - Orion/Alfa-S Style
+   ======================================== */
+.content {
+  position: relative;
   text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   BACKGROUND EFFECTS
+   ======================================== */
+.content::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(48, 130, 128, 0.06) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+.header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--space-16);
 }
 
 .title {
   @include heading-lg;
-  @include gradient-primary-to-light;
+  color: $color--light;
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--space-6);
+  font-size: var(--text-4xl);
+
+  @include desktop {
+    font-size: var(--text-6xl);
+  }
 }
 
 .mainCardHeader {
@@ -16,51 +59,93 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: $color--light;
+  font-weight: var(--font-semibold);
+  font-size: var(--text-lg);
 }
 
 .differenceSubtitle {
   @include body-base;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-neutral-400);
   margin: 0;
   margin-top: calc(var(--space-2) * -1);
   text-align: center;
 }
 
+/* ========================================
+   DIFFERENCE TABLE
+   ======================================== */
 .differenceTable {
+  position: relative;
+  z-index: 1;
   display: grid;
   gap: var(--space-4);
   margin-top: var(--space-10);
-  max-width: 760px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .differenceRow {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-4);
+
+  @include respond-above(md) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .differenceCard {
-  @include glassmorphism-dark;
-  border-radius: var(--radius-xl);
-  padding: var(--space-5);
+  position: relative;
+  border-radius: var(--radius-2xl);
+  padding: var(--space-6) var(--space-5);
   text-align: center;
   min-height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-3);
+  transition: all var(--transition-base);
 }
 
 .differenceCardHeader {
   font-weight: var(--font-semibold);
   letter-spacing: 0.02em;
+  font-size: var(--text-lg);
 }
 
+/* ========================================
+   GENERIC AI INTEGRATION (Pale/Gray)
+   ======================================== */
+.differenceCardGeneric {
+
+  color: $color--light;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+/* ========================================
+   ETACAR SYSTEMS (Active/Green)
+   ======================================== */
 .differenceCardActive {
-  color: var(--color-light);
-  border: 1px solid rgba(48, 130, 128, 0.35);
-  background: rgba(48, 130, 128, 0.12);
+  color: $color--light;
+  border: 1px solid rgba(48, 130, 128, 0.4);
+  background: rgba(48, 130, 128, 0.08);
   font-weight: var(--font-semibold);
+  box-shadow: 0 4px 24px rgba(48, 130, 128, 0.15);
+
+  &:hover {
+    border-color: rgba(48, 130, 128, 0.6);
+    background: rgba(48, 130, 128, 0.12);
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.25);
+    transform: translateY(-2px);
+  }
 }

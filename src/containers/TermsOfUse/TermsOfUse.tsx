@@ -27,9 +27,7 @@ export const TermsOfUse = () => {
           ))}
         </div>
       </FadeInSection>
-      <FadeInSection>
-        <Footer />
-      </FadeInSection>
+      <Footer />
     </>
   );
 };

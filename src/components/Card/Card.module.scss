@@ -1,18 +1,37 @@
 @import '../../styles/design-tokens.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/colors.scss';
 
+/* ========================================
+   CARD - Orion/Alfa-S Style
+   ======================================== */
 .fact {
+  position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: var(--space-5);
   text-align: left;
-  padding: var(--space-6) !important;
+  padding: var(--space-6) var(--space-5) !important;
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  transition: all var(--transition-base);
 
   @include respond-above(md) {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: var(--space-8) var(--space-6) !important;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(48, 130, 128, 0.4);
+    background: rgba(48, 130, 128, 0.06);
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.2);
   }
 }
 
@@ -20,32 +39,40 @@
   @include body-lg-bold;
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.4);
+  background: transparent;
   border-radius: var(--radius-md);
-  color: var(--color-primary-800);
+  color: var(--color-neutral-300);
   font-size: var(--text-base) !important;
   height: 100%;
   width: 100%;
+  line-height: var(--leading-relaxed);
+
+  strong {
+    color: $color--primary;
+    font-weight: var(--font-bold);
+  }
 }
 
 .title {
-  font-size: var(--text-xl) !important;
-  color: var(--color-primary);
+  font-size: var(--text-lg) !important;
+  color: $color--light;
   font-weight: var(--font-bold);
   padding-bottom: var(--space-4);
+  margin-bottom: var(--space-3);
 }
 
 .link {
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
-  color: var(--color-primary-alt);
+  color: $color--primary;
   text-decoration: none;
-  transition: 0.2s ease;
+  transition: all var(--transition-base);
   display: inline-block;
+  margin-top: var(--space-3);
 
   &:hover {
-    color: var(--color-primary);
-    text-decoration: underline;
+    color: $color--light;
+    transform: translateX(4px);
   }
 
   @include respond-above(md) {
@@ -55,4 +82,44 @@
 
 .icon {
   line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(48, 130, 128, 0.2),
+    rgba(48, 130, 128, 0.1)
+  );
+  color: $color--primary;
+  box-shadow: 0 4px 16px rgba(48, 130, 128, 0.25);
+  flex-shrink: 0;
+
+  @include respond-above(md) {
+    margin-bottom: var(--space-4);
+  }
+}
+
+/* ========================================
+   DIFFERENCE TABLE CARD STYLES
+   ======================================== */
+.differenceCardActive {
+  border: 1px solid rgba(48, 130, 128, 0.4) !important;
+  background: rgba(48, 130, 128, 0.08) !important;
+  box-shadow: 0 4px 24px rgba(48, 130, 128, 0.15) !important;
+  color: $color--light !important;
+
+  &:hover {
+    border-color: rgba(48, 130, 128, 0.6) !important;
+    background: rgba(48, 130, 128, 0.12) !important;
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.25) !important;
+    transform: translateY(-2px) !important;
+  }
+
+  .content {
+    color: $color--light !important;
+    font-weight: var(--font-medium);
+  }
 }

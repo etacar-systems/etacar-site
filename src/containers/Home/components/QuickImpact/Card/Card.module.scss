@@ -2,33 +2,54 @@
 @import '../../../../../styles/mixins.scss';
 @import '../../../../../styles/colors.scss';
 
-.contentContainer {
-  margin: 0 auto;
-  border-end-start-radius: var(--radius-xl);
-  border-end-end-radius: var(--radius-xl);
-  padding: var(--space-6);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-neutral-200);
-  color: $color--light !important;
-}
+/* ========================================
+   QUICK IMPACT CARD - Orion/Alfa-S Style
+   ======================================== */
+.cardWrapper {
+  position: relative;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  transition: all var(--transition-base);
+  overflow: hidden;
 
-.content li {
-  text-align: left !important;
+  &:hover {
+    border-color: rgba(48, 130, 128, 0.3);
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.2);
+  }
 }
 
 .title {
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
-  font-size: 34px;
-  border-start-start-radius: var(--radius-xl);
-  border-start-end-radius: var(--radius-xl);
+  font-size: var(--text-lg);
   text-align: center;
-  color: var(--color-neutral-900);
-  background: var(--color-neutral-0);
-  padding: var(--space-2) 16px;
+  color: $color--light;
+  padding: var(--space-4) var(--space-6);
+  margin: 0;
+  background: linear-gradient(135deg, rgba(48, 130, 128, 0.3), rgba(48, 130, 128, 0.15));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-base);
 
   &[data-is-content='false'] {
-    border-end-start-radius: var(--radius-xl);
-    border-end-end-radius: var(--radius-xl);
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(48, 130, 128, 0.4), rgba(48, 130, 128, 0.2));
+  }
+}
+
+.content {
+  padding: var(--space-6) var(--space-5);
+  color: $color--light !important;
+
+  li {
+    text-align: left !important;
+    color: var(--color-neutral-300);
+    line-height: var(--leading-relaxed);
+    padding: var(--space-2) 0;
   }
 }

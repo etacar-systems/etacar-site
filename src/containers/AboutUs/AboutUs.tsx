@@ -64,9 +64,7 @@ export const AboutUs = () => {
         <Reviews />
       </FadeInSection>
 
-      <FadeInSection>
-        <Footer />
-      </FadeInSection>
+      <Footer />
     </div>
   );
 };

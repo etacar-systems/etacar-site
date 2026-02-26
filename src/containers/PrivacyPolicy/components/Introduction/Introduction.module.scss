@@ -5,16 +5,19 @@
   padding: 100px 0;
   margin-top: -50px;
   border-radius: var(--radius-top-left);
+
   @media (max-width: 1200px) {
     padding: 100px 20px 50px;
   }
 }
+
 .container_inner {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
   max-width: 1200px;
   margin: 0 auto var(--space-8);
+
   @media (max-width: 768px) {
     margin: 0 auto 50px;
   }
@@ -22,13 +25,16 @@
   // Style for parsed HTML content
   .paragraph {
     width: 100%;
+
     @media (max-width: 768px) {
       width: 100%;
     }
 
     p {
       margin-bottom: 0.5rem;
-      line-height: 1.6;
+      line-height: 1.7;
+      color: var(--color-light);
+      font-size: var(--text-base);
     }
 
     // Style for lists
@@ -38,8 +44,9 @@
       padding-left: 1.5rem;
 
       li {
-        margin-bottom: 0.25rem;
-        line-height: 1.6;
+        margin-bottom: 0.5rem;
+        line-height: 1.7;
+        color: var(--color-light);
       }
     }
 
@@ -55,15 +62,28 @@
 
     // Style for list items when they appear directly (not inside ul/ol)
     li {
-      margin-bottom: 0.25rem;
-      line-height: 1.6;
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+      color: var(--color-light);
     }
 
     // Style for strong/bold elements
     strong,
     b {
       font-weight: var(--font-semibold);
-      color: var(--color-neutral-800);
+      color: var(--color-light);
+    }
+
+    // Style for links
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: color var(--transition-base);
+
+      &:hover {
+        color: var(--color-primary-alt);
+        text-decoration: underline;
+      }
     }
 
     // Style for other inline elements
@@ -73,6 +93,7 @@
 
     small {
       font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.8);
     }
 
     sub,
@@ -83,40 +104,45 @@
     del,
     s {
       text-decoration: line-through;
+      color: rgba(255, 255, 255, 0.6);
     }
   }
 }
+
 .pageTitle {
   width: 60%;
-  color: $color--text-dark;
+  color: var(--color-light);
   font-size: var(--text-3xl);
   font-weight: var(--font-bold);
   text-transform: uppercase;
   margin-bottom: var(--space-4);
+  line-height: var(--leading-tight);
 
   @media (max-width: 768px) {
     width: 100%;
     font-size: var(--text-4xl);
-    line-height: 36px;
+    line-height: var(--leading-tight);
   }
 }
 
 .title {
   width: 100%;
-  color: $color--text-dark;
+  color: var(--color-light);
   font-size: var(--text-2xl);
   font-weight: var(--font-bold);
   text-transform: uppercase;
   margin-bottom: var(--space-4);
+  line-height: var(--leading-tight);
 
   @media (max-width: 768px) {
     font-size: var(--text-4xl);
-    line-height: 36px;
+    line-height: var(--leading-tight);
   }
 }
 
 .paragraph {
   width: 100%;
+
   @media (max-width: 768px) {
     width: 100%;
   }

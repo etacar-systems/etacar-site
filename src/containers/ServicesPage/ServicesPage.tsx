@@ -53,9 +53,7 @@ export const ServicesPage = () => {
       <FadeInSection>
         <BuildFor />
       </FadeInSection>
-      <FadeInSection>
         <Footer />
-      </FadeInSection>
     </div>
   );
 };

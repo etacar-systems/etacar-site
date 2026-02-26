@@ -2,28 +2,52 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/colors.scss';
 
-.content {
-  max-width: 1200px;
+/* ========================================
+   SERVICE DETAIL - Orion/Alfa-S Style
+   ======================================== */
+.cardWrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
   margin: 0 auto;
-  border-end-start-radius: var(--radius-xl);
-  border-end-end-radius: var(--radius-xl);
-  padding: var(--space-4) var(--space-6) var(--space-6);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-neutral-200);
-  color: $color--light !important;
-  font-size: var(--text-lg);
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  transition: all var(--transition-base);
+
+  &:hover {
+    border-color: rgba(48, 130, 128, 0.3);
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.2);
+  }
+}
+
+.cardHeader {
+  padding: var(--space-8) var(--space-8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: transparent;
 }
 
 .title {
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
-  font-size: 34px;
-  border-start-start-radius: var(--radius-xl);
-  border-start-end-radius: var(--radius-xl);
+  font-size: var(--text-2xl);
+  color: $color--light;
   text-align: center;
-  color: var(--color-neutral-900);
-  background: var(--color-light);
-  padding: var(--space-2) 0;
+  margin: 0 0 var(--space-4);
+
+  @include desktop {
+    font-size: var(--text-3xl);
+  }
 }
 
 .subtitle {
@@ -31,16 +55,35 @@
   text-align: center;
   font-size: var(--text-xl);
   line-height: var(--leading-relaxed);
+  color: var(--color-neutral-300) !important;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardBody {
+  padding: var(--space-8);
 }
 
 .sectionTitle {
   @include heading-sm;
-  margin-bottom: var(--space-4);
-  font-size: var(--text-xl);
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-lg);
+  color: $color--primary;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: var(--font-semibold);
 }
 
 .text {
   @include body-base;
   font-size: var(--text-lg);
   line-height: var(--leading-relaxed);
+  color: var(--color-neutral-300) !important;
+  margin-bottom: var(--space-6);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

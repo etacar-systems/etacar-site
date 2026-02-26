@@ -1,30 +1,32 @@
-import React from 'react';
-
-import { groups } from '../data';
-import { Card } from '@/components/Card';
+import { motion } from 'framer-motion';
 import styles from './Hero.module.scss';
 
-export const Hero: React.FC = () => {
+export const Hero = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.content}>
-        <h1 className={styles.title}>High-Stakes Decision Use Cases</h1>
+      <div className={styles.container}>
+        {/* Background effects */}
+        <div className={styles.backgroundGradient} />
+        <div className={styles.glowEffect} />
 
-        <h2 className={styles.subtitle}>
-          Decision scenarios where generic AI tools fall short, requiring structured, review-ready support.
-        </h2>
+        <div className={styles.content}>
+          <motion.h1
+            className={styles.title}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          >
+            Operational AI in <span className={styles.gradientText}>High-Stakes Environments</span>
+          </motion.h1>
 
-        <p className={styles.text}>In all cases below, human accountability remains central.</p>
-        <div className={styles.quickFacts}>
-          {groups.map((group, idx) => (
-            <Card
-              key={idx}
-              icon={group.icon}
-              sectionId={group.sectionId}
-              title={group.title}
-              titleClassname={styles.cardTitle}
-            />
-          ))}
+          <motion.p
+            className={styles.subtitle}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          >
+            Where AI decisions affect revenue, compliance, and safety — control is engineered, not assumed.
+          </motion.p>
         </div>
       </div>
     </section>

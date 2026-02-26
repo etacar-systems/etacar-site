@@ -2,57 +2,180 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/colors.scss';
 
+// ========================================
+// REVIEW COMPONENT - Premium Glassmorphism Style
+// Inspired by Orion/Alfa-S design language
+// ========================================
+
 .container {
   padding: var(--space-3);
   height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
+
 .review {
+  position: relative;
   height: 100%;
-  padding: 16px;
-  background: var(--gradient-card) !important;
-  box-shadow: none !important;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-2xl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all var(--transition-base);
+  overflow: hidden;
+
+  @media (min-width: 640px) {
+    padding: 28px;
+  }
+
+  // Hover effects
+  &:hover {
+    border-color: rgba(48, 130, 128, 0.4);
+    box-shadow: 0 16px 48px rgba(48, 130, 128, 0.15);
+    transform: translateY(-4px);
+
+    &::before {
+      opacity: 1;
+    }
+
+    .avatar {
+      transform: scale(1.05);
+    }
+  }
+
+  // Top gradient accent line
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-alt) 100%);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+  }
+
+  // Subtle inner glow
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-2xl);
+    background: radial-gradient(
+      circle at 50% 0%,
+      rgba(48, 130, 128, 0.06) 0%,
+      transparent 50%
+    );
+    pointer-events: none;
+  }
 }
 
 .review_content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .review_header {
   display: flex;
-  gap: 10px;
-}
-
-.review_body {
-  @include body-lg-bold;
-  padding: var(--space-2);
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: var(--radius-md);
-  color: var(--color-primary-800);
-  font-size: var(--text-sm);
-  display: flex;
   align-items: center;
-  height: 100%;
-}
-
-.name {
-  color: $color--text-dark;
-  font-weight: var(--font-bold);
-}
-
-.company {
-  color: $color--text-blue;
-  font-size: var(--text-xs);
+  gap: 16px;
 }
 
 .avatar {
-  width: 44px;
+  width: 56px;
+  height: 56px;
   border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: transform var(--transition-base);
+  flex-shrink: 0;
+
+  @media (min-width: 640px) {
+    width: 64px;
+    height: 64px;
+  }
 }
 
-.container {
+.person {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.name {
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  color: var(--color-light);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (min-width: 640px) {
+    font-size: var(--text-xl);
+  }
+
+  &[data-text-color='dark'] {
+    color: var(--color-neutral-900);
+  }
+}
+
+.company {
+  font-size: var(--text-sm);
+  color: var(--color-neutral);
+  font-weight: var(--font-medium);
+  opacity: 0.9;
+
+  &[data-text-color='dark'] {
+    color: var(--color-neutral-600);
+  }
+}
+
+.review_body {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  padding: var(--space-4);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: var(--font-medium);
+  transition: all var(--transition-base);
+
+  @media (min-width: 640px) {
+    padding: var(--space-5);
+    font-size: var(--text-base);
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(48, 130, 128, 0.3);
+  }
+
+  &[data-text-color='dark'] {
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--color-neutral-800);
+    border-color: rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+// ========================================
+// ANIMATION CONTAINER
+// ========================================
+.reviewWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }

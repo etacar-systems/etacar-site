@@ -1,69 +1,150 @@
 @import '../../styles/design-tokens.scss';
 @import '../../styles/colors.scss';
 
+// ========================================
+// NAV HEADER - Premium Glassmorphism Style
+// Inspired by Orion/Alfa-S design language
+// ========================================
+
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
   backdrop-filter: blur(20px);
-  background-color: rgba(0, 0, 0, 0.1);
-  z-index: 100;
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(30, 30, 34, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-base);
+
+  // Enhanced blur effect when scrolling
+  &.scrolled {
+    background: rgba(30, 30, 34, 0.95);
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  }
 }
+
 .container {
   display: flex;
   height: 64px;
-
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semibold);
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 24px;
 
-  @media (max-width: 1200px) {
-    padding: 0 20px;
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 40px;
   }
 }
+
 .navigation_container {
   display: flex;
   flex-direction: row;
   align-items: center;
   column-gap: 24px;
 }
+
 .navigation {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
 }
+
 .item {
   text-decoration: none;
-  color: $color--light;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  transition: all var(--transition-base);
+  position: relative;
+  padding: 8px 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-alt) 100%);
+    transition: width var(--transition-base);
+    border-radius: var(--radius-full);
+  }
+
+  &:hover {
+    color: var(--color-light);
+
+    &::after {
+      width: 100%;
+    }
+  }
 
   &__active {
-    color: $color--primary;
-  }
-}
+    color: var(--color-primary);
+    font-weight: var(--font-semibold);
 
-.burger_container {
-  & .active {
-    & > span {
-      width: 0;
-      height: 0;
+    &::after {
+      width: 100%;
     }
   }
 }
 
+// ========================================
+// LOGO
+// ========================================
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 40px;
+    width: auto;
+    transition: all var(--transition-base);
+    filter: drop-shadow(0 2px 8px rgba(48, 130, 128, 0.3));
+
+    &:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 4px 16px rgba(48, 130, 128, 0.5));
+    }
+  }
+}
+
+// ========================================
+// BURGER BUTTON
+// ========================================
 .burger_button,
 .burger_button_active {
   width: 30px;
   height: 20px;
   position: relative;
   cursor: pointer;
+  transition: all var(--transition-base);
 
   & span {
     position: absolute;
     top: 9px;
     width: 30px;
     height: 2px;
-    background-color: $color--primary;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-alt) 100%);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+  }
+
+  &:hover {
+    & span,
+    &::before,
+    &::after {
+      filter: brightness(1.2);
+    }
   }
 }
 
@@ -74,7 +155,9 @@
     top: 0;
     width: 30px;
     height: 2px;
-    background-color: $color--primary;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-alt) 100%);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
   }
 
   &::after {
@@ -83,13 +166,16 @@
     bottom: 0;
     width: 30px;
     height: 2px;
-    background-color: $color--primary;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-alt) 100%);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
   }
 }
 
 .burger_button_active {
   & span {
     transform: rotate(45deg);
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-alt) 100%);
   }
 
   &::before {
@@ -98,11 +184,20 @@
     top: 9px;
     width: 30px;
     height: 2px;
-    background-color: $color--primary;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-alt) 100%);
     transform: rotate(-45deg);
+  }
+
+  &::after {
+    content: none;
   }
 }
 
-.logo {
-  cursor: pointer;
+// ========================================
+// RESPONSIVE
+// ========================================
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
 }

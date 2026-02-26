@@ -26,9 +26,7 @@ export const ContactUs = () => {
       <FadeInSection>
         <Reviews />
       </FadeInSection>
-      <FadeInSection>
-        <Footer />
-      </FadeInSection>
+      <Footer />
     </div>
   );
 };
