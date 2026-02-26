@@ -1,0 +1,196 @@
+@import '../../../styles/design-tokens.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/colors.scss';
+
+/* ========================================
+   FLAGSHIP OPERATIONAL CASE - Orion/Alfa-S Style
+   ======================================== */
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/* ========================================
+   BACKGROUND EFFECTS
+   ======================================== */
+.backgroundGradient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(48, 130, 128, 0.06) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+.header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--space-16);
+}
+
+.title {
+  @include heading-xl;
+  color: $color--light;
+  margin-bottom: var(--space-6);
+  font-size: var(--text-4xl);
+
+  @include desktop {
+    font-size: var(--text-6xl);
+  }
+}
+
+.gradientText {
+  @include gradient-primary-to-light;
+}
+
+/* ========================================
+   GRID & CARDS
+   ======================================== */
+.grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+
+  @include respond-above(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  text-align: left;
+  padding: var(--space-8) var(--space-6);
+  border-radius: var(--radius-2xl);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    border-color: rgba(48, 130, 128, 0.4);
+    background: rgba(48, 130, 128, 0.06);
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.2);
+    transform: translateY(-4px);
+  }
+}
+
+.cardHighlight {
+  position: relative;
+  text-align: left;
+  padding: var(--space-8) var(--space-6);
+  border-radius: var(--radius-2xl);
+  background: rgba(48, 130, 128, 0.08);
+  border: 1px solid rgba(48, 130, 128, 0.4);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 24px rgba(48, 130, 128, 0.15);
+
+  &:hover {
+    border-color: rgba(48, 130, 128, 0.6);
+    background: rgba(48, 130, 128, 0.12);
+    box-shadow: 0 8px 32px rgba(48, 130, 128, 0.25);
+    transform: translateY(-4px);
+  }
+}
+
+.cardTitle {
+  @include heading-sm;
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  color: $color--primary;
+  margin: 0 0 var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardTitleHighlight {
+  @include heading-sm;
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  color: $color--light;
+  margin: 0 0 var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(48, 130, 128, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardContent {
+  @include body-lg;
+  color: var(--color-neutral-300);
+  line-height: var(--leading-relaxed);
+  font-size: var(--text-base) !important;
+
+  p {
+    margin: 0 0 var(--space-3);
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.list li {
+  @include body-lg;
+  color: var(--color-neutral-300);
+  font-size: var(--text-base) !important;
+  line-height: var(--leading-relaxed);
+  padding-left: var(--space-5);
+  position: relative;
+
+  &::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    color: $color--primary;
+  }
+}
+
+.listHighlight {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.listHighlight li {
+  @include body-lg;
+  color: $color--light;
+  font-size: var(--text-base) !important;
+  line-height: var(--leading-relaxed);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.bulletHighlight {
+  color: $color--primary;
+  flex-shrink: 0;
+  font-weight: var(--font-bold);
+}

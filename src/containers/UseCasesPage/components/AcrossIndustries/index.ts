@@ -1,1 +1,0 @@
-export { AcrossIndustries } from './AcrossIndustries';

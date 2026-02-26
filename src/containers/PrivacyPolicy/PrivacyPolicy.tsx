@@ -14,9 +14,7 @@ export const PrivacyPolicy = () => {
       <FadeInSection>
         <Introduction />
       </FadeInSection>
-      <FadeInSection>
-        <Footer />
-      </FadeInSection>
+      <Footer />
     </>
   );
 };

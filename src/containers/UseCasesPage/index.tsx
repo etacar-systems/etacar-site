@@ -4,12 +4,12 @@ import styles from './UseCasesPage.module.scss';
 
 import Footer from '../../components/Footer';
 import Hero from './components/Hero';
-import IndustrySection from './components/IndustrySection';
-import UseCasesCTA from './components/UseCasesCTA';
-import { groups } from './data';
-import { CardSection } from '@/components/CardSection';
-import { SectionWrapper } from '@/components/SectionWrapper';
-import { AcrossIndustries } from './components/AcrossIndustries';
+import OperationalProofMeaning from './components/OperationalProofMeaning';
+import FlagshipOperationalCase from './components/FlagshipOperationalCase';
+import TargetEnvironments from './components/TargetEnvironments';
+import BeforeAfter from './components/BeforeAfter';
+import WhatThisProves from './components/WhatThisProves';
+import FinalStatement from './components/FinalStatement';
 
 const UseCasesPage: React.FC = () => {
   useEffect(() => {
@@ -21,30 +21,25 @@ const UseCasesPage: React.FC = () => {
       <FadeInSection>
         <Hero />
       </FadeInSection>
-      {groups.map((group, index) => (
-        <FadeInSection key={index}>
-          <IndustrySection {...group} />
-        </FadeInSection>
-      ))}
       <FadeInSection>
-        <AcrossIndustries />
+        <OperationalProofMeaning />
       </FadeInSection>
       <FadeInSection>
-        <SectionWrapper>
-          <CardSection
-            text={
-              'EtaCar Systems supports these decisions with structured systems focused on clarity, control, and accountability.'
-            }
-            title={'How these use cases are addressed'}
-          />
-        </SectionWrapper>
+        <FlagshipOperationalCase />
       </FadeInSection>
       <FadeInSection>
-        <UseCasesCTA />
+        <TargetEnvironments />
       </FadeInSection>
       <FadeInSection>
-        <Footer />
+        <BeforeAfter />
       </FadeInSection>
+      <FadeInSection>
+        <WhatThisProves />
+      </FadeInSection>
+      <FadeInSection>
+        <FinalStatement />
+      </FadeInSection>
+      <Footer />
     </div>
   );
 };

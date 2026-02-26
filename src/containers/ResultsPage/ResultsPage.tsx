@@ -58,9 +58,7 @@ export const ResultsPage: React.FC = () => {
           <Reviews />
         </FadeInSection>
       </main>
-      <FadeInSection>
-        <Footer />
-      </FadeInSection>
+      <Footer />
     </div>
   );
 };

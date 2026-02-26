@@ -56,11 +56,10 @@
 
 .footer {
   padding: 100px 0 100px;
-  margin-top: -50px;
+  margin-top: 0;
   border-radius: var(--radius-top-left);
   backdrop-filter: blur(20px);
   background-color: rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   box-shadow: 0px -4px 12px 0px #b2b2b20a;
   @media (max-width: 1200px) {
     padding: 100px 20px 100px;
@@ -108,7 +107,7 @@
 
 .link__container {
   @include flexContainer(space-between, flex-start, row, 0px);
-  padding: 30px 0 80px;
+  padding: 30px 0 40px;
   @include center;
   @media (max-width: 768px) {
     @include flexContainer(flex-start, flex-start, column, 1rem);
@@ -147,7 +146,7 @@
 }
 .footerEnd {
   @include flexContainer(space-between, flex-start, row, 0px);
-  margin: 60px 0 100px 0;
+  margin: 60px 0 40px 0;
   @include center;
   @media (max-width: 768px) {
     @include flexContainer(space-between, flex-start, column, 0px);

@@ -1,18 +1,27 @@
+@import '../../styles/design-tokens.scss';
 @import '../../styles/colors.scss';
 
 .divider {
-  font-size: var(--text-2xl) !important;
+  font-size: var(--text-base) !important;
   font-weight: var(--font-semibold) !important;
-  margin: var(--space-4) 0;
-  color: $color--light !important;
+  margin: var(--space-5) 0 !important;
+  color: $color--primary !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 
   &[data-has-title='false'] {
-    background: var(--color-neutral-200);
+    background: transparent;
     height: 1px;
+    margin: var(--space-6) 0 !important;
+
+    &::after,
+    &::before {
+      border-block-start: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
   }
 
   &::after,
   &::before {
-    border-block-start: 1px solid var(--color-neutral-200) !important;
+    border-block-top: 1px solid rgba(48, 130, 128, 0.3) !important;
   }
 }
