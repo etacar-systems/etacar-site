@@ -1,6 +1,6 @@
 import classNames from 'classnames';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useState } from 'react';
 
 import { usePathname, useRouter } from 'next/navigation';
 import { useViewportSize } from '../../hooks/useViewportSize';
@@ -16,12 +16,27 @@ export const NavHeader = () => {
 
   const { width } = useViewportSize();
   const [menuActive, setMenuActive] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Handle scroll effect for header
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial scroll position
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header className={style.header}>
+    <header className={classNames(style.header, { [style.scrolled]: scrolled })}>
       <div className={style.container}>
         <div className={style.logo}>
-          <img onClick={() => router.push(HOME)} src={'/icons/Logo.svg'} alt={'logo'} />
+          <img onClick={() => router.push(HOME)} src='/icons/Logo.svg' alt='logo' />
         </div>
         <div className={style.navigation_container}>
           {width > 768 ? (
@@ -45,7 +60,7 @@ export const NavHeader = () => {
             </div>
           ) : undefined}
           {width > 768 ? (
-            <Button onClick={() => router.push(CONTACT)} size={'medium'} title={'Get estimation'} type={'bordered'} />
+            <Button onClick={() => router.push(CONTACT)} size='medium' title='Get estimation' type='bordered' />
           ) : undefined}
           {width < 768 ? (
             <div
