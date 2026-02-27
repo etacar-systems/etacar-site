@@ -52,7 +52,7 @@
   @media (min-width: 768px) {
     font-size: var(--text-5xl);
     margin-bottom: 20px;
-    line-height: var(--leading-none);
+    line-height: var(--leading-normal);
   }
 }
 
@@ -101,11 +101,7 @@
     position: absolute;
     inset: 0;
     border-radius: var(--radius-3xl);
-    background: radial-gradient(
-      circle at 50% 0%,
-      rgba(48, 130, 128, 0.06) 0%,
-      transparent 60%
-    );
+    background: radial-gradient(circle at 50% 0%, rgba(48, 130, 128, 0.06) 0%, transparent 60%);
     pointer-events: none;
   }
 }
@@ -230,11 +226,7 @@
     position: absolute;
     inset: 0;
     border-radius: var(--radius-3xl);
-    background: radial-gradient(
-      circle at 50% 0%,
-      rgba(48, 130, 128, 0.08) 0%,
-      transparent 60%
-    );
+    background: radial-gradient(circle at 50% 0%, rgba(48, 130, 128, 0.08) 0%, transparent 60%);
     pointer-events: none;
   }
 }
@@ -296,11 +288,7 @@
   transform: translate(-50%, -50%);
   width: 120%;
   height: 150%;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(48, 130, 128, 0.08) 0%,
-    transparent 60%
-  );
+  background: radial-gradient(ellipse at center, rgba(48, 130, 128, 0.08) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
