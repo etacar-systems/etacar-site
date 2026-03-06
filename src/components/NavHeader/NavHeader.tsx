@@ -36,7 +36,8 @@ export const NavHeader = () => {
     <header className={classNames(style.header, { [style.scrolled]: scrolled })}>
       <div className={style.container}>
         <div className={style.logo}>
-          <img onClick={() => router.push(HOME)} src='/icons/Logo.svg' alt='logo' />
+          <img onClick={() => router.push(HOME)} src='/icons/etacarLogo.svg' alt='logo' />
+          EtaCar Systems
         </div>
         <div className={style.navigation_container}>
           {width > 768 ? (

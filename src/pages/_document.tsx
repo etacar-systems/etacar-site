@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <link rel='icon' href='/favicon.ico' />
+          <link rel='icon' href='/etacarFavicon.svg' />
           <link rel='manifest' href='/manifest.json' />
 
           <meta
